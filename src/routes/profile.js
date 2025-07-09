@@ -3,7 +3,6 @@ const { getProfile, updateProfile, changePassword } = require('../controllers/pr
 const { authMiddleware } = require('../middleware/authMiddleware');
 const router = express.Router();
 
-router.get('/getProfile', authMiddleware, getProfile);
 router.put('/updateProfile', authMiddleware, updateProfile);
 router.post('/changePassword', authMiddleware, changePassword);
 

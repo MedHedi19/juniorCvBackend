@@ -1,17 +1,6 @@
 const User = require('../models/user');
 const bcrypt = require('bcrypt');
 
-// Get current user's profile
-const getProfile = async (req, res) => {
-    try {
-        const user = await User.findById(req.userId).select('-password');
-        if (!user) return res.status(404).json({ message: 'User not found' });
-        res.json(user);
-    } catch (error) {
-        res.status(500).json({ message: 'Server error', error });
-    }
-};
-
 // Update current user's profile
 const updateProfile = async (req, res) => {
     try {
@@ -56,4 +45,4 @@ const changePassword = async (req, res) => {
     }
 };
 
-module.exports = { getProfile, updateProfile, changePassword };
+module.exports = {  updateProfile, changePassword };

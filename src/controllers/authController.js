@@ -50,11 +50,23 @@ const login = async (req, res) => {
         // Generate token
         const token = generateToken(user._id);
 
-        res.status(200).json({ message: 'Login successful', token });
+        // Prepare user data to return (exclude password)
+        const userData = {
+            id: user._id,
+            firstName: user.firstName,
+            lastName: user.lastName,
+            phone: user.phone,
+            email: user.email,
+            createdAt: user.createdAt,
+            updatedAt: user.updatedAt,
+        };
+
+        res.status(200).json({ message: 'Login successful', token, user: userData });
     } catch (error) {
         res.status(500).json({ message: 'Server error', error });
     }
 };
+
 
 module.exports = {
     register,
