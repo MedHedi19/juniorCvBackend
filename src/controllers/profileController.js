@@ -24,25 +24,30 @@ const updateProfile = async (req, res) => {
 const changePassword = async (req, res) => {
     try {
         const { oldPassword, newPassword } = req.body;
+
         if (!oldPassword || !newPassword) {
             return res.status(400).json({ message: 'Old and new passwords are required' });
         }
 
         const user = await User.findById(req.userId);
-        if (!user) return res.status(404).json({ message: 'User not found' });
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
 
         const isMatch = await user.comparePassword(oldPassword);
         if (!isMatch) {
             return res.status(400).json({ message: 'Old password is incorrect' });
         }
 
-        user.password = newPassword;
+        user.password = newPassword; // this triggers pre-save bcrypt hook
         await user.save();
 
         res.json({ message: 'Password updated successfully' });
     } catch (error) {
-        res.status(500).json({ message: 'Server error', error });
+        console.error(error);
+        res.status(500).json({ message: 'Internal server error' });
     }
 };
+
 
 module.exports = {  updateProfile, changePassword };

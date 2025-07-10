@@ -18,12 +18,13 @@ const register = async (req, res) => {
         }
 
         // Create a new user
-        const newUser = new User({ firstName, lastName, phone, email, password });
+        const newUser = new User({ firstName, lastName, phone, email, password, profilePhoto: '', });
         await newUser.save();
 
         res.status(201).json({ message: 'User registered successfully' });
     } catch (error) {
         res.status(500).json({ message: 'Server error', error });
+        console.log(error)
     }
 };
 
@@ -57,6 +58,7 @@ const login = async (req, res) => {
             lastName: user.lastName,
             phone: user.phone,
             email: user.email,
+            profilePhoto: user.profilePhoto,
             createdAt: user.createdAt,
             updatedAt: user.updatedAt,
         };
