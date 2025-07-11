@@ -69,6 +69,23 @@ const login = async (req, res) => {
     }
 };
 
+router.post(
+  '/google-register',
+  [
+    body('email').isEmail(),
+    body('idToken').notEmpty(),
+    body('firstName').notEmpty(),
+    body('lastName').notEmpty(),
+  ],
+  async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ success: false, message: errors.array() });
+    }
+    // ... reste de l'endpoint (vérification du token, création de l'utilisateur)
+  }
+);
+
 
 module.exports = {
     register,
