@@ -1,0 +1,113 @@
+{
+  "Physique": [
+    {
+      "question": "Quelle est la durée pour un recruteur de construire une première impression selon votre apparence ?",
+      "options": ["5 minutes", "2 minutes", "30 secondes"],
+      "correct": "30 secondes"
+    },
+    {
+      "question": "Pensez vous que l’apparence physique d’un candidat peut être un facteur de discrimination ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Oui"
+    },
+    {
+      "question": "Est ce que votre apparence peut refléter votre personnalité ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Oui"
+    },
+    {
+      "question": "Pensez vous qu’une tenue appropriée est :",
+      "options": [
+        "Une tenue à la mode colorées avec des accessoires",
+        "Une tenue sobre et propre",
+        "Neutre"
+      ],
+      "correct": "Une tenue sobre et propre"
+    },
+    {
+      "question": "Même si vous êtes stagiaire :",
+      "options": [
+        "Le respect de la tenue est obligatoire",
+        "Le respect de la tenue est facultatif",
+        "Neutre"
+      ],
+      "correct": "Le respect de la tenue est obligatoire"
+    },
+    {
+      "question": "A votre avis, le gestuel :",
+      "options": [
+        "A un impact direct sur votre image",
+        "N’a aucun impact sur votre image",
+        "Neutre"
+      ],
+      "correct": "A un impact direct sur votre image"
+    },
+    {
+      "question": "Quels sont les trucs que vous pouvez faire sous stress et qui peuvent agir sur votre apparence ?",
+      "options": [
+        "Parler les yeux dans les yeux, montrer vos mains, maîtriser votre voix.",
+        "Passer la main dans les cheveux, se frotter les mains, se mordre la lèvre",
+        "Neutre"
+      ],
+      "correct": "Passer la main dans les cheveux, se frotter les mains, se mordre la lèvre"
+    },
+    {
+      "question": "Le recruteur pense à un candidat souriant et sociable :",
+      "options": [
+        "Quelqu’un qui peut s’intégrer très rapidement dans une équipe de travail",
+        "Quelqu’un qui n’est pas sérieux",
+        "Neutre"
+      ],
+      "correct": "Quelqu’un qui peut s’intégrer très rapidement dans une équipe de travail"
+    },
+    {
+      "question": "Pourquoi le recruteur s’intéresse à l’apparence d’un candidat ?",
+      "options": [
+        "Parce qu’il représente l’image de l’entreprise au futur",
+        "Parce qu’il cherche un joli profil",
+        "Parce qu’il cherche un candidat branché et à la mode"
+      ],
+      "correct": "Parce qu’il représente l’image de l’entreprise au futur"
+    },
+    {
+      "question": "La tenue vestimentaire varie-t-elle d’un poste à un autre ?",
+      "options": ["Non", "Oui", "Parfois"],
+      "correct": "Oui"
+    },
+    {
+      "question": "Pourquoi faut-il soigner son apparence ?",
+      "options": [
+        "Pour séduire",
+        "Pour faire bonne impression",
+        "Par obligation",
+        "Aucune importance"
+      ],
+      "correct": "Pour faire bonne impression"
+    },
+    {
+      "question": "Quel vêtement est déconseillé en entretien ?",
+      "options": ["Jean", "Costume", "Chemise", "Aucun"],
+      "correct": "Jean"
+    },
+    {
+      "question": "Quel est l’impact d’un sourire en entretien ?",
+      "options": [
+        "Aucun",
+        "Crée du lien",
+        "Trop informel",
+        "Inutile"
+      ],
+      "correct": "Crée du lien"
+    },
+    {
+      "question": "Quelle couleur est préférable pour un entretien ?",
+      "options": ["Noir", "Fluo", "Multicolore", "Transparent"],
+      "correct": "Noir"
+    },
+    {
+      "question": "Quel est le premier élément observé par un recruteur ?",
+      "options": ["Le regard", "La poignée de main", "Les chaussures", "La posture"],
+      "correct": "Le regard"
+    }
+  ]
+}

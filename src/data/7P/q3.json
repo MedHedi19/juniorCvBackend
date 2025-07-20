@@ -1,0 +1,117 @@
+{
+  "Prospection": [
+    {
+      "question": "La prospection est :",
+      "options": [
+        "Construire un cv et une lettre de motivation",
+        "Répondre à une offre d’emploi par un mail professionnel",
+        "Contacter des entreprises qui peuvent être intéressées par votre profil"
+      ],
+      "correct": "Contacter des entreprises qui peuvent être intéressées par votre profil"
+    },
+    {
+      "question": "La prospection se fait :",
+      "options": [
+        "Par téléphone uniquement",
+        "Porte-à-porte uniquement",
+        "Par téléphone et/ou porte-à-porte"
+      ],
+      "correct": "Par téléphone et/ou porte-à-porte"
+    },
+    {
+      "question": "Lors de la prospection porte-à-porte, vous devez vous concentrer sur :",
+      "options": [
+        "L’apparence physique",
+        "La voix et le langage",
+        "Les gestes et les mimiques"
+      ],
+      "correct": "L’apparence physique"
+    },
+    {
+      "question": "Lors d’une prospection téléphonique, vous devez vous concentrer sur :",
+      "options": [
+        "L’apparence physique",
+        "La voix et le langage",
+        "Les gestes et les mimiques"
+      ],
+      "correct": "La voix et le langage"
+    },
+    {
+      "question": "Pour une prospection fructueuse vous devez :",
+      "options": [
+        "Choisir votre cible",
+        "Contacter le maximum d’entreprises",
+        "Neutre"
+      ],
+      "correct": "Choisir votre cible"
+    },
+    {
+      "question": "Pensez-vous qu'il soit utile de préparer un scénario avant d’entrer en communication avec le recruteur ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Oui"
+    },
+    {
+      "question": "Si vous décidez de vous entraîner sur un exemple de communication, le scénario doit comporter :",
+      "options": [
+        "Une présentation, définition de la raison de la communication, fixation des arguments/ des réponses possibles pour atteindre votre objectif puis une conclusion",
+        "Une présentation, fixation des arguments/ des réponses possibles pour atteindre votre objectif puis une conclusion",
+        "Neutre"
+      ],
+      "correct": "Une présentation, définition de la raison de la communication, fixation des arguments/ des réponses possibles pour atteindre votre objectif puis une conclusion"
+    },
+    {
+      "question": "Est-il nécessaire de relancer un recruteur après une prospection par un mail ?",
+      "options": ["Oui", "Non", "S’il me demande"],
+      "correct": "Oui"
+    },
+    {
+      "question": "Est-il souhaitable de poser des questions avant la clôture d’un entretien ?",
+      "options": ["Oui", "Non", "Si le recruteur me le demande"],
+      "correct": "Oui"
+    },
+    {
+      "question": "Que cherche le recruteur en posant la question suivante « Avez-vous des questions » ?",
+      "options": [
+        "À tester votre curiosité",
+        "À doper votre concentration",
+        "À examiner vos réflexes"
+      ],
+      "correct": "À tester votre curiosité"
+    },
+    {
+      "question": "Pourquoi faut-il se renseigner sur une entreprise avant d’y postuler ?",
+      "options": [
+        "Pour éviter les erreurs",
+        "Pour impressionner",
+        "Pour vérifier l’adéquation",
+        "Toutes"
+      ],
+      "correct": "Toutes"
+    },
+    {
+      "question": "Quels éléments sont essentiels dans une recherche d’emploi ?",
+      "options": ["Secteur", "Salaire", "Localisation", "Tous"],
+      "correct": "Tous"
+    },
+    {
+      "question": "Comment contacter un recruteur efficacement ?",
+      "options": ["Mail", "Appel", "LinkedIn", "Tous"],
+      "correct": "Tous"
+    },
+    {
+      "question": "Pourquoi envoyer un message personnalisé sur LinkedIn ?",
+      "options": [
+        "Pour se démarquer",
+        "Parce que c'est obligatoire",
+        "Pour copier un modèle",
+        "Sans raison"
+      ],
+      "correct": "Pour se démarquer"
+    },
+    {
+      "question": "Quel est le principal obstacle lors d’une prospection téléphonique ?",
+      "options": ["Le gardien", "Le prix de l’appel", "Le stress", "Aucune barrière"],
+      "correct": "Le gardien"
+    }
+  ]
+}

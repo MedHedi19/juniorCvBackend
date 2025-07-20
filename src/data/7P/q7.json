@@ -1,0 +1,124 @@
+{
+  "Positivité": [
+    {
+      "question": "La positivité est comment :",
+      "options": [
+        "Relancer le recruteur",
+        "Garder son calme lors, pendant et après l’entretien",
+        "Neutre"
+      ],
+      "correct": "Relancer le recruteur"
+    },
+    {
+      "question": "Devez-vous relancer le recruteur immédiatement après l’entretien ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Non"
+    },
+    {
+      "question": "Au bout de combien de temps, vous pouvez relancer le recruteur :",
+      "options": ["1 jour", "3 jours", "7 jours"],
+      "correct": "7 jours"
+    },
+    {
+      "question": "La relance du recruteur se fait via :",
+      "options": [
+        "Un email de salutation et remerciement",
+        "Un email contenant un rappel sur vos compétences et vos expériences",
+        "Neutre"
+      ],
+      "correct": "Un email de salutation et remerciement"
+    },
+    {
+      "question": "Peut-on relancer le recruteur par téléphone  ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Oui"
+    },
+    {
+      "question": "En cas d’une réponse négative, est-ce que vous pouvez demander une explication ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Oui"
+    },
+    {
+      "question": "Le feedback d’un recruteur après une réponse négative :",
+      "options": [
+        "Peut être une source de motivation",
+        "Peut attaquer votre confiance",
+        "Les deux"
+      ],
+      "correct": "Les deux"
+    },
+    {
+      "question": "Est-ce que vous pouvez relancer le recruteur après une période par un mail montrant votre motivation et l’amélioration que vous avez faite ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Oui"
+    },
+    {
+      "question": "Comment agir suite à un résultat négatif d'un entretien ?",
+      "options": [
+        "Abandonner le dossier de candidature",
+        "Envoyer un mail de remerciement",
+        "Contacter le recruteur par téléphone"
+      ],
+      "correct": "Envoyer un mail de remerciement"
+    },
+    {
+      "question": "Pour se préparer à un nouvel entretien :",
+      "options": [
+        "Il faut faire preuve de trop de modestie​",
+        "Il faut travailler sur ses points d’efforts",
+        "Il faut bien travailler sur ses points faibles"
+      ],
+      "correct": "Il faut bien travailler sur ses points faibles"
+    },
+    {
+      "question": "Pourquoi faut-il analyser ses entretiens ?",
+      "options": [
+        "Pour progresser",
+        "Pour se critiquer",
+        "Sans intérêt",
+        "Pour raconter"
+      ],
+      "correct": "Pour progresser"
+    },
+    {
+      "question": "Comment gérer un refus ?",
+      "options": [
+        "Ignorer",
+        "Apprendre",
+        "Se décourager",
+        "Se fâcher"
+      ],
+      "correct": "Apprendre"
+    },
+    {
+      "question": "Pourquoi faut-il garder une attitude positive ?",
+      "options": [
+        "Pour la motivation",
+        "Par obligation",
+        "Pour impressionner",
+        "Sans raison"
+      ],
+      "correct": "Pour la motivation"
+    },
+    {
+      "question": "Quel est le bon réflexe après un entretien ?",
+      "options": [
+        "Envoyer un mail de remerciement",
+        "Ne rien faire",
+        "Demander un retour immédiat",
+        "Attendre"
+      ],
+      "correct": "Envoyer un mail de remerciement"
+    },
+    {
+      "question": "Pourquoi la persévérance est-elle clé ?",
+      "options": [
+        "Plus d'opportunités",
+        "Pour tester ses limites",
+        "Pour être vu",
+        "Aucune raison"
+      ],
+      "correct": "Plus d'opportunités"
+    }
+  ]
+}
