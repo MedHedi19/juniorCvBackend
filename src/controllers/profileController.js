@@ -5,14 +5,16 @@ const bcrypt = require('bcrypt');
 const updateProfile = async (req, res) => {
     try {
         const updates = req.body;
-        // Prevent password update here for security
         delete updates.password;
 
+        const userId = req.user.id; // Change from req.userId to req.user.id
+
         const user = await User.findByIdAndUpdate(
-            req.userId,
+            userId,
             { $set: updates },
             { new: true, runValidators: true, context: 'query' }
         ).select('-password');
+        
         if (!user) return res.status(404).json({ message: 'User not found' });
         res.json(user);
     } catch (error) {
@@ -29,7 +31,9 @@ const changePassword = async (req, res) => {
             return res.status(400).json({ message: 'Old and new passwords are required' });
         }
 
-        const user = await User.findById(req.userId);
+        const userId = req.user.id; // Change from req.userId to req.user.id
+        const user = await User.findById(userId);
+        
         if (!user) {
             return res.status(404).json({ message: 'User not found' });
         }
@@ -39,7 +43,7 @@ const changePassword = async (req, res) => {
             return res.status(400).json({ message: 'Old password is incorrect' });
         }
 
-        user.password = newPassword; // this triggers pre-save bcrypt hook
+        user.password = newPassword;
         await user.save();
 
         res.json({ message: 'Password updated successfully' });
