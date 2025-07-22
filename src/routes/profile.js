@@ -6,4 +6,4 @@ const router = express.Router();
 router.put('/updateProfile', authMiddleware, updateProfile);
 router.post('/changePassword', authMiddleware, changePassword);
 
-module.exports = router;const express = require('express');
+module.exports = router;
