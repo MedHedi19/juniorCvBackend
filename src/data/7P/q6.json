@@ -1,0 +1,91 @@
+{
+  "Positivité": [
+    {
+      "question": "Un entretien exige t-il une préparation psychologique ?",
+      "options": ["Oui", "Non", "Pas toujours"],
+      "correct": "Oui"
+    },
+    {
+      "question": "La psychologie avant un entretien consiste à :",
+      "options": [
+        "Savoir comment gérer vos émotions",
+        "Porter une tenue appropriée",
+        "Préparer votre candidature"
+      ],
+      "correct": "Savoir comment gérer vos émotions"
+    },
+    {
+      "question": "Quel est le facteur principal qui peut agir sur votre comportement lors d’un entretien :",
+      "options": ["L’heure d’entretien", "Le stress", "Le poste en question"],
+      "correct": "Le stress"
+    },
+    {
+      "question": "Un candidat avant un entretien se trouve dans une situation stressante, quelles sont ses causes :",
+      "options": ["La peur", "Pensées négatives", "Toutes les réponses précédentes"],
+      "correct": "Toutes les réponses précédentes"
+    },
+    {
+      "question": "Comment pouvez-vous sortir de cette situation ?",
+      "options": [
+        "Analyser les sources du stress",
+        "Améliorer votre respiration, rester concentré et aérer l’esprit",
+        "Toutes les réponses précédentes"
+      ],
+      "correct": "Analyser les sources du stress"
+    },
+    {
+      "question": "Pensez vous qu’une simulation d’un entretien avec un ami ou devant un miroir soit nécessaire ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Oui"
+    },
+    {
+      "question": "Le stress peut être positif ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Oui"
+    },
+    {
+      "question": "Le stress positif peut être une source de :",
+      "options": ["Motivation", "Perturbation", "Neutre"],
+      "correct": "Motivation"
+    },
+    {
+      "question": "Au cours d’un entretien, votre état psychologique peut agir sur la décision du recruteur :",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Oui"
+    },
+    {
+      "question": "Un recruteur utilise les questions pièges pour :",
+      "options": [
+        "Savoir comment réagir à une situation stressante",
+        "Tester vos connaissances techniques",
+        "Définir votre type de personnalité"
+      ],
+      "correct": "Savoir comment réagir à une situation stressante"
+    },
+    {
+      "question": "Pourquoi la ponctualité est-elle clé ?",
+      "options": ["Respect", "Habitude", "Détail", "Sans importance"],
+      "correct": "Respect"
+    },
+    {
+      "question": "Comment réagir à une question piège ?",
+      "options": ["Fuir", "Rester calme", "Changer de sujet", "Ignorer"],
+      "correct": "Rester calme"
+    },
+    {
+      "question": "Pourquoi faut-il garder confiance en soi ?",
+      "options": ["Pour réussir", "Pour dominer", "Pour impressionner", "Sans raison"],
+      "correct": "Pour réussir"
+    },
+    {
+      "question": "Comment gérer son stress avant un entretien ?",
+      "options": ["Respiration", "Café", "Ne pas y penser", "Dormir tard"],
+      "correct": "Respiration"
+    },
+    {
+      "question": "Quel comportement est le plus apprécié en entretien ?",
+      "options": ["Sûr de soi", "Arrogant", "Silencieux", "Mystérieux"],
+      "correct": "Sûr de soi"
+    }
+  ]
+}

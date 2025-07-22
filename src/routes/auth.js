@@ -1,11 +1,12 @@
 const express = require('express');
 const { register, login } = require('../controllers/authController');
+// const { GoogleAuth } = require('google-auth-library');
 const router = express.Router();
 // const client = new OAuth2Client(process.env.WEB_CLIENT_ID);
 // const { body, validationResult } = require('express-validator');
 
 // const { OAuth2Client } = require('google-auth-library');
-// const bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt');
 
 // Route for user registration
 router.post('/register', register);
@@ -14,7 +15,7 @@ router.post('/register', register);
 router.post('/login', login);
 
 
-// // Inscription Google
+// Inscription Google
 // router.post('/google-register', [
 //   body('email').isEmail(),
 //   body('idToken').notEmpty(),
@@ -64,7 +65,22 @@ router.post('/login', login);
 //     return res.status(400).json({ success: false, message: 'Échec inscription Google' });
 //   }
 // });
-
+// router.post(
+//   '/google-register',
+//   [
+//     body('email').isEmail(),
+//     body('idToken').notEmpty(),
+//     body('firstName').notEmpty(),
+//     body('lastName').notEmpty(),
+//   ],
+//   async (req, res) => {
+//     const errors = validationResult(req);
+//     if (!errors.isEmpty()) {
+//       return res.status(400).json({ success: false, message: errors.array() });
+//     }
+//     // ... reste de l'endpoint (vérification du token, création de l'utilisateur)
+//   }
+// );
 // // Inscription classique
 // router.post('/register', [
 //   body('email').isEmail(),
