@@ -4,7 +4,7 @@ const { getQuizByIndex, getAllQuizNames } = require('../utils/quizData');
 // Get all quizzes with user progress
 const getQuizzes = async (req, res) => {
     try {
-        const userId = req.userId;
+        const userId = req.user.id;
         const allQuizzes = getAllQuizNames();
         
         // Get or create user progress
@@ -62,7 +62,7 @@ const getQuizzes = async (req, res) => {
 const startQuiz = async (req, res) => {
     try {
         const { quizId } = req.params;
-        const userId = req.userId;
+        const userId = req.user.id;
         
         const quiz = getQuizByIndex(parseInt(quizId));
         if (!quiz) {
@@ -100,7 +100,7 @@ const submitAnswer = async (req, res) => {
     try {
         const { quizId } = req.params;
         const { questionIndex, selectedAnswer } = req.body;
-        const userId = req.userId;
+        const userId = req.user.id;
 
         const quiz = getQuizByIndex(parseInt(quizId));
         if (!quiz) {
@@ -202,7 +202,7 @@ const submitAnswer = async (req, res) => {
 const getQuizResult = async (req, res) => {
     try {
         const { quizId } = req.params;
-        const userId = req.userId;
+        const userId = req.user.id;
 
         const quiz = getQuizByIndex(parseInt(quizId));
         if (!quiz) {
@@ -244,7 +244,7 @@ const getQuizResult = async (req, res) => {
 const resetQuiz = async (req, res) => {
     try {
         const { quizId } = req.params;
-        const userId = req.userId;
+        const userId = req.user.id;
 
         const quiz = getQuizByIndex(parseInt(quizId));
         if (!quiz) {
