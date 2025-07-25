@@ -1,0 +1,112 @@
+{
+  "Test de personnalité": [
+    {
+      "question": "Lors d'un projet en équipe, que faites-vous spontanément ?",
+      "options": {
+        "R": "Prendre le leadership et organiser l'action",
+        "J": "Proposer des idées nouvelles et motiver les autres",
+        "B": "Analyser les tâches et structurer l'organisation",
+        "V": "Écouter, rassurer, veiller à la cohésion"
+      }
+    },
+    {
+      "question": "Quand une décision doit être prise rapidement, vous êtes plutôt :",
+      "options": {
+        "R": "Prendre le leadership et organiser l'action",
+        "J": "Proposer des idées nouvelles et motiver les autres",
+        "B": "Analyser les tâches et structurer l'organisation",
+        "V": "Écouter, rassurer, veiller à la cohésion"
+      }
+    },
+    {
+      "question": "Face à un imprévu, votre première réaction est :",
+      "options": {
+        "R": "Prendre le leadership et organiser l'action",
+        "J": "Proposer des idées nouvelles et motiver les autres",
+        "B": "Analyser les tâches et structurer l'organisation",
+        "V": "Écouter, rassurer, veiller à la cohésion"
+      }
+    },
+    {
+      "question": "Pour résoudre un problème complexe, vous préférez :",
+      "options": {
+        "R": "Prendre le leadership et organiser l'action",
+        "J": "Proposer des idées nouvelles et motiver les autres",
+        "B": "Analyser les tâches et structurer l'organisation",
+        "V": "Écouter, rassurer, veiller à la cohésion"
+      }
+    },
+    {
+      "question": "En réunion, votre attitude naturelle est :",
+      "options": {
+        "R": "Prendre le leadership et organiser l'action",
+        "J": "Proposer des idées nouvelles et motiver les autres",
+        "B": "Analyser les tâches et structurer l'organisation",
+        "V": "Écouter, rassurer, veiller à la cohésion"
+      }
+    },
+    {
+      "question": "Quand on vous critique, vous avez tendance à :",
+      "options": {
+        "R": "Prendre le leadership et organiser l'action",
+        "J": "Proposer des idées nouvelles et motiver les autres",
+        "B": "Analyser les tâches et structurer l'organisation",
+        "V": "Écouter, rassurer, veiller à la cohésion"
+      }
+    },
+    {
+      "question": "Votre environnement de travail idéal serait :",
+      "options": {
+        "R": "Prendre le leadership et organiser l'action",
+        "J": "Proposer des idées nouvelles et motiver les autres",
+        "B": "Analyser les tâches et structurer l'organisation",
+        "V": "Écouter, rassurer, veiller à la cohésion"
+      }
+    },
+    {
+      "question": "Lorsqu'on vous confie une tâche, vous aimez :",
+      "options": {
+        "R": "Prendre le leadership et organiser l'action",
+        "J": "Proposer des idées nouvelles et motiver les autres",
+        "B": "Analyser les tâches et structurer l'organisation",
+        "V": "Écouter, rassurer, veiller à la cohésion"
+      }
+    },
+    {
+      "question": "Devant un conflit, vous avez tendance à :",
+      "options": {
+        "R": "Prendre le leadership et organiser l'action",
+        "J": "Proposer des idées nouvelles et motiver les autres",
+        "B": "Analyser les tâches et structurer l'organisation",
+        "V": "Écouter, rassurer, veiller à la cohésion"
+      }
+    },
+    {
+      "question": "Ce qui vous motive le plus est :",
+      "options": {
+        "R": "Prendre le leadership et organiser l'action",
+        "J": "Proposer des idées nouvelles et motiver les autres",
+        "B": "Analyser les tâches et structurer l'organisation",
+        "V": "Écouter, rassurer, veiller à la cohésion"
+      }
+    },
+    {
+      "question": "Quand vous communiquez avec les autres, vous êtes :",
+      "options": {
+        "R": "Prendre le leadership et organiser l'action",
+        "J": "Proposer des idées nouvelles et motiver les autres",
+        "B": "Analyser les tâches et structurer l'organisation",
+        "V": "Écouter, rassurer, veiller à la cohésion"
+      }
+    },
+    {
+      "question": "Si vous deviez organiser un événement, vous seriez :",
+      "options": {
+        "R": "Prendre le leadership et organiser l'action",
+        "J": "Proposer des idées nouvelles et motiver les autres",
+        "B": "Analyser les tâches et structurer l'organisation",
+        "V": "Écouter, rassurer, veiller à la cohésion"
+      }
+    }
+  ]
+}

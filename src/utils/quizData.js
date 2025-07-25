@@ -43,9 +43,37 @@ const loadQuizData = () => {
     return quizzes;
 };
 
+// Load personality test
+const loadPersonalityTest = () => {
+    try {
+        const filePath = path.join(__dirname, '../data/personality/personality-test.json');
+        if (fs.existsSync(filePath)) {
+            const rawData = fs.readFileSync(filePath, 'utf8');
+            const testData = JSON.parse(rawData);
+            
+            const testName = Object.keys(testData)[0];
+            const questions = testData[testName];
+            
+            return {
+                id: 'personality',
+                name: testName.trim(),
+                questions: questions,
+                totalQuestions: questions.length
+            };
+        }
+    } catch (error) {
+        console.error('Error loading personality test:', error);
+    }
+    return null;
+};
+
 const getQuizByIndex = (index) => {
     const quizzes = loadQuizData();
     return quizzes[index] || null;
+};
+
+const getPersonalityTest = () => {
+    return loadPersonalityTest();
 };
 
 const getAllQuizNames = () => {
@@ -60,5 +88,7 @@ const getAllQuizNames = () => {
 module.exports = {
     loadQuizData,
     getQuizByIndex,
-    getAllQuizNames
+    getAllQuizNames,
+    loadPersonalityTest,
+    getPersonalityTest
 };

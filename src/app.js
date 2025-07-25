@@ -8,6 +8,7 @@ const cors = require('cors');
 const app = express();
 const quizRoutes = require('./routes/quizRoutes');
 const documentRoutes = require('./routes/documents');
+const personalityRoutes = require('./routes/personalityRoutes');
 
 // CORS Configuration
 const corsOptions = {
@@ -31,6 +32,7 @@ app.use('/auth', authRoutes);
 app.use('/profile', profileRoutes);
 app.use('/quiz', quizRoutes);
 app.use('/documents', documentRoutes);
+app.use('/personality', personalityRoutes);
 
 // Error handling middleware
 app.use(errorHandler);
