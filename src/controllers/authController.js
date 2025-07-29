@@ -1,5 +1,5 @@
 const User = require('../models/user');
-const { generateToken } = require('../utils/token');
+const { generateToken, generateTokens, verifyRefreshToken } = require('../utils/token');
 const { sendPasswordResetEmail, sendWelcomeEmail } = require('../utils/emailService');
 const crypto = require('crypto');
 
@@ -56,8 +56,12 @@ const login = async (req, res) => {
             return res.status(400).json({ message: 'Invalid password' });
         }
 
-        // Generate token
-        const token = generateToken(user._id);
+        // Generate tokens
+        const { accessToken, refreshToken } = generateTokens(user._id);
+        
+        // Save refresh token to user
+        user.refreshToken = refreshToken;
+        await user.save();
 
         // Prepare user data to return (exclude password)
         const userData = {
@@ -71,7 +75,12 @@ const login = async (req, res) => {
             updatedAt: user.updatedAt,
         };
 
-        res.status(200).json({ message: 'Login successful', token, user: userData });
+        res.status(200).json({ 
+            message: 'Login successful', 
+            token: accessToken, 
+            refreshToken, 
+            user: userData 
+        });
     } catch (error) {
         res.status(500).json({ message: 'Server error', error });
     }
@@ -157,6 +166,63 @@ const resetPassword = async (req, res) => {
     }
 };
 
+const refreshToken = async (req, res) => {
+    try {
+        const { refreshToken } = req.body;
+
+        if (!refreshToken) {
+            return res.status(401).json({ message: 'Refresh token is required' });
+        }
+
+        // Verify refresh token
+        const decoded = verifyRefreshToken(refreshToken);
+        if (!decoded) {
+            return res.status(401).json({ message: 'Invalid refresh token' });
+        }
+
+        // Find user and verify the refresh token matches
+        const user = await User.findById(decoded.id);
+        if (!user || user.refreshToken !== refreshToken) {
+            return res.status(401).json({ message: 'Invalid refresh token' });
+        }
+
+        // Generate new tokens
+        const { accessToken, refreshToken: newRefreshToken } = generateTokens(user._id);
+        
+        // Update refresh token in database (invalidates old one)
+        user.refreshToken = newRefreshToken;
+        await user.save();
+
+        res.status(200).json({ 
+            token: accessToken, 
+            refreshToken: newRefreshToken 
+        });
+    } catch (error) {
+        res.status(500).json({ message: 'Server error', error });
+        console.log(error);
+    }
+};
+
+const logout = async (req, res) => {
+    try {
+        const { refreshToken } = req.body;
+        
+        if (refreshToken) {
+            // Find user and clear refresh token
+            const user = await User.findOne({ refreshToken });
+            if (user) {
+                user.refreshToken = undefined;
+                await user.save();
+            }
+        }
+
+        res.status(200).json({ message: 'Logout successful' });
+    } catch (error) {
+        res.status(500).json({ message: 'Server error', error });
+        console.log(error);
+    }
+};
+
 
 
 
@@ -165,4 +231,6 @@ module.exports = {
     login,
     forgotPassword,
     resetPassword,
+    refreshToken,
+    logout,
 };

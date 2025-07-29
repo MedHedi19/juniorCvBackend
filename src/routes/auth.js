@@ -1,5 +1,5 @@
 const express = require('express');
-const { register, login, forgotPassword, resetPassword } = require('../controllers/authController');
+const { register, login, forgotPassword, resetPassword, refreshToken, logout } = require('../controllers/authController');
 // const { GoogleAuth } = require('google-auth-library');
 const router = express.Router();
 // const client = new OAuth2Client(process.env.WEB_CLIENT_ID);
@@ -18,6 +18,12 @@ router.post('/forgot-password', forgotPassword);
 
 // Route for reset password
 router.post('/reset-password', resetPassword);
+
+// Route for refresh token
+router.post('/refresh-token', refreshToken);
+
+// Route for logout
+router.post('/logout', logout);
 
 
 // Inscription Google

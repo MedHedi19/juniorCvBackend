@@ -12,7 +12,13 @@ const personalityRoutes = require('./routes/personalityRoutes');
 
 // CORS Configuration
 const corsOptions = {
-    origin: ['http://localhost:8081', 'http://127.0.0.1:8081'],
+    origin: [
+        'http://localhost:8081', 
+        'http://127.0.0.1:8081',
+        'https://rvtzs3o-arselaapp-8081.exp.direct',
+        'http://192.168.0.9:8081',
+        'exp://192.168.0.9:8081'
+    ],
     credentials: true,
     optionsSuccessStatus: 200,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
