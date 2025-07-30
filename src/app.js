@@ -8,10 +8,20 @@ const cors = require('cors');
 const app = express();
 const quizRoutes = require('./routes/quizRoutes');
 const documentRoutes = require('./routes/documents');
+const personalityRoutes = require('./routes/personalityRoutes');
 
 // CORS Configuration
 const corsOptions = {
-    origin: ['http://localhost:8081', 'http://127.0.0.1:8081'],
+    origin: [
+        'http://localhost:8081', 
+        'http://127.0.0.1:8081',
+        'https://rvtzs3o-arselaapp-8081.exp.direct',
+        'http://192.168.0.9:8081',
+        'exp://192.168.0.9:8081',
+        'http://192.168.0.101:8081',
+        'exp://192.168.0.101:8081',
+        'exp://vhhwnro-anonymous-8081.exp.direct'
+    ],
     credentials: true,
     optionsSuccessStatus: 200,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
@@ -31,6 +41,7 @@ app.use('/auth', authRoutes);
 app.use('/profile', profileRoutes);
 app.use('/quiz', quizRoutes);
 app.use('/documents', documentRoutes);
+app.use('/personality', personalityRoutes);
 
 // Error handling middleware
 app.use(errorHandler);

@@ -1,18 +1,29 @@
 const express = require('express');
-const { register, login } = require('../controllers/authController');
+const { register, login, forgotPassword, resetPassword, refreshToken, logout } = require('../controllers/authController');
 // const { GoogleAuth } = require('google-auth-library');
 const router = express.Router();
 // const client = new OAuth2Client(process.env.WEB_CLIENT_ID);
 // const { body, validationResult } = require('express-validator');
 
 // const { OAuth2Client } = require('google-auth-library');
-const bcrypt = require('bcrypt');
 
 // Route for user registration
 router.post('/register', register);
 
 // Route for user login
 router.post('/login', login);
+
+// Route for forgot password
+router.post('/forgot-password', forgotPassword);
+
+// Route for reset password
+router.post('/reset-password', resetPassword);
+
+// Route for refresh token
+router.post('/refresh-token', refreshToken);
+
+// Route for logout
+router.post('/logout', logout);
 
 
 // Inscription Google
