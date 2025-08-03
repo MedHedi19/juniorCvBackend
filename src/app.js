@@ -33,6 +33,15 @@ app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 // Database connection
 dbConfig();
 
+// Root route for health check
+app.get('/', (req, res) => {
+  res.json({ 
+    message: 'Junior CV Backend API is running!', 
+    status: 'success',
+    timestamp: new Date().toISOString()
+  });
+});
+
 // Routes
 app.use('/auth', authRoutes);
 app.use('/profile', profileRoutes);
