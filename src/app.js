@@ -17,10 +17,7 @@ const corsOptions = {
         'http://127.0.0.1:8081',
         'https://rvtzs3o-arselaapp-8081.exp.direct',
         'http://192.168.0.9:8081',
-        'exp://192.168.0.9:8081',
-        'http://192.168.0.101:8081',
-        'exp://192.168.0.101:8081',
-        'exp://vhhwnro-anonymous-8081.exp.direct'
+        'exp://192.168.0.9:8081'
     ],
     credentials: true,
     optionsSuccessStatus: 200,

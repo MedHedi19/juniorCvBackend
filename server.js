@@ -9,7 +9,12 @@ const PORT = process.env.PORT || 3000;
 // Connect to MongoDB
 dbConfig();
 
-// Start the server
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+// Start the server (for local development)
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(PORT, () => {
+        console.log(`Server is running on http://localhost:${PORT}`);
+    });
+}
+
+// Export for Vercel
+module.exports = app;

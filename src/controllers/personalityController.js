@@ -1,6 +1,14 @@
 const PersonalityTest = require('../models/personalityTest');
 const { getPersonalityTest } = require('../utils/quizData');
 
+// Helper function to transform options object to array format
+const transformOptionsToArray = (optionsObj) => {
+    return Object.entries(optionsObj).map(([color, text]) => ({
+        color,
+        text
+    }));
+};
+
 // Start personality test
 const startPersonalityTest = async (req, res) => {
     try {
@@ -15,7 +23,7 @@ const startPersonalityTest = async (req, res) => {
         const firstQuestion = {
             questionIndex: 0,
             question: test.questions[0].question,
-            options: test.questions[0].options,
+            options: transformOptionsToArray(test.questions[0].options),
             totalQuestions: test.questions.length,
             testName: test.name
         };
@@ -107,7 +115,7 @@ const submitPersonalityAnswer = async (req, res) => {
             response.nextQuestion = {
                 questionIndex: questionIndex + 1,
                 question: nextQuestion.question,
-                options: nextQuestion.options
+                options: transformOptionsToArray(nextQuestion.options)
             };
         }
 
