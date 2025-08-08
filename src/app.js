@@ -33,15 +33,6 @@ app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 // Database connection
 dbConfig();
 
-
-
-// Routes
-app.use('/auth', authRoutes);
-app.use('/profile', profileRoutes);
-app.use('/quiz', quizRoutes);
-app.use('/documents', documentRoutes);
-app.use('/personality', personalityRoutes);
-
 // Root route for health check
 app.get('/', (req, res) => {
     res.status(200).json({ 
@@ -56,6 +47,13 @@ app.get('/', (req, res) => {
         }
     });
 });
+
+// Routes
+app.use('/auth', authRoutes);
+app.use('/profile', profileRoutes);
+app.use('/quiz', quizRoutes);
+app.use('/documents', documentRoutes);
+app.use('/personality', personalityRoutes);
 
 // Error handling middleware
 app.use(errorHandler);
