@@ -10,7 +10,8 @@ const PORT = process.env.PORT || 3000;
 dbConfig();
 
 // Start the server (for local development)
-if (process.env.NODE_ENV !== 'production') {
+// Only start server if this file is run directly (not imported)
+if (require.main === module) {
     app.listen(PORT, () => {
         console.log(`Server is running on http://localhost:${PORT}`);
     });
