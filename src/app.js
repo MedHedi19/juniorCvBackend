@@ -33,14 +33,7 @@ app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 // Database connection
 dbConfig();
 
-// Root route for health check
-app.get('/', (req, res) => {
-  res.json({ 
-    message: 'Junior CV Backend API is running!', 
-    status: 'success',
-    timestamp: new Date().toISOString()
-  });
-});
+
 
 // Routes
 app.use('/auth', authRoutes);
@@ -48,6 +41,21 @@ app.use('/profile', profileRoutes);
 app.use('/quiz', quizRoutes);
 app.use('/documents', documentRoutes);
 app.use('/personality', personalityRoutes);
+
+// Root route for health check
+app.get('/', (req, res) => {
+    res.status(200).json({ 
+        message: 'Junior CV Backend API is running!', 
+        version: '1.0.0',
+        endpoints: {
+            auth: '/auth',
+            profile: '/profile', 
+            quiz: '/quiz',
+            documents: '/documents',
+            personality: '/personality'
+        }
+    });
+});
 
 // Error handling middleware
 app.use(errorHandler);
