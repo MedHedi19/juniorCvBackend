@@ -7,8 +7,8 @@ const dbConfig = require('./config/db');
 const cors = require('cors');
 const app = express();
 const quizRoutes = require('./routes/quizRoutes');
-const documentRoutes = require('./routes/documents');
 const personalityRoutes = require('./routes/personalityRoutes');
+const jobScrapingRoutes = require('./routes/jobScraping');
 
 // CORS Configuration
 const corsOptions = {
@@ -27,8 +27,8 @@ const corsOptions = {
 
 // Middleware
 app.use(cors(corsOptions));
-app.use(bodyParser.json({ limit: '50mb' })); // Increase limit for file uploads
-app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
+app.use(bodyParser.json({ limit: '10mb' })); // Reduced limit since no file uploads
+app.use(bodyParser.urlencoded({ extended: true, limit: '10mb' }));
 
 // Database connection
 dbConfig();
@@ -43,8 +43,8 @@ app.get('/', (req, res) => {
             auth: '/auth',
             profile: '/profile', 
             quiz: '/quiz',
-            documents: '/documents',
-            personality: '/personality'
+            personality: '/personality',
+            jobs: '/jobs'
         }
     });
 });
@@ -53,8 +53,8 @@ app.get('/', (req, res) => {
 app.use('/auth', authRoutes);
 app.use('/profile', profileRoutes);
 app.use('/quiz', quizRoutes);
-app.use('/documents', documentRoutes);
 app.use('/personality', personalityRoutes);
+app.use('/jobs', jobScrapingRoutes);
 
 // Error handling middleware
 app.use(errorHandler);
