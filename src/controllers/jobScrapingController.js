@@ -3,15 +3,17 @@ const Job = require('../models/job');
 
 const jobScraper = new JobScraper();
 
-// Scrape jobs and save to database
 const scrapeAndSaveJobs = async (req, res) => {
     try {
+        // 从请求体中解构获取搜索词、位置和每站最大职位数，位置默认为突尼斯
         const { searchTerm, location = 'Tunisia', maxJobsPerSite = 10 } = req.body;
         
+        // 检查搜索词是否存在，若不存在则返回400错误
         if (!searchTerm) {
             return res.status(400).json({ message: 'Search term is required' });
         }
         
+        // 在控制台输出开始爬取职位的日志
         console.log(`Starting job scraping for: ${searchTerm}`);
         
         // Scrape jobs from all sources

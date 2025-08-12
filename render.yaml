@@ -1,0 +1,22 @@
+# render.yaml
+services:
+  - type: web
+    name: junior-cv-backend
+    env: node
+    plan: free # optional, defaults to starter
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - fromGroup: junior-cv-secrets
+
+envVarGroups:
+  - name: junior-cv-secrets
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_REFRESH_SECRET
+        sync: false
