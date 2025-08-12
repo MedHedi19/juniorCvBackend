@@ -12,10 +12,10 @@ dbConfig();
 // Start the server (for local development)
 // Only start server if this file is run directly (not imported)
 if (require.main === module) {
-    app.listen(PORT, () => {
-        console.log(`Server is running on http://localhost:${PORT}`);
+    app.listen(PORT, '0.0.0.0', () => {
+        console.log(`Server is running on port ${PORT}`);
     });
-}
+}   
 
 // Export for Vercel
 module.exports = app;
