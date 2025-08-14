@@ -5,15 +5,18 @@ const jobScraper = new JobScraper();
 
 const scrapeAndSaveJobs = async (req, res) => {
     try {
-        // 从请求体中解构获取搜索词、位置和每站最大职位数，位置默认为突尼斯
-        const { searchTerm, location = 'Tunisia', maxJobsPerSite = 10 } = req.body;
+        // Accept parameters from both body and query for flexibility
+        const { searchTerm: bodySearchTerm, location: bodyLocation, maxJobsPerSite: bodyMaxJobs } = req.body;
+        const { searchTerm: querySearchTerm, location: queryLocation, maxJobsPerSite: queryMaxJobs } = req.query;
+
+        const searchTerm = bodySearchTerm || querySearchTerm;
+        const location = bodyLocation || queryLocation || 'Tunisia';
+        const maxJobsPerSite = bodyMaxJobs || queryMaxJobs || 10;
         
-        // 检查搜索词是否存在，若不存在则返回400错误
         if (!searchTerm) {
             return res.status(400).json({ message: 'Search term is required' });
         }
         
-        // 在控制台输出开始爬取职位的日志
         console.log(`Starting job scraping for: ${searchTerm}`);
         
         // Scrape jobs from all sources
@@ -77,23 +80,42 @@ const scrapeAndSaveJobs = async (req, res) => {
 // Get scraped jobs from database
 const getScrapedJobs = async (req, res) => {
     try {
-        const { 
-            searchTerm, 
-            source, 
-            page = 1, 
+        const {
+            searchTerm,
+            location,
+            source,
+            page = 1,
             limit = 20,
             sortBy = 'scrapedAt',
-            sortOrder = 'desc'
+            sortOrder = 'desc',
+            jobType,
+            company
         } = req.query;
         
         const filter = { isActive: true };
-        
+
         if (searchTerm) {
-            filter.searchTerm = { $regex: searchTerm, $options: 'i' };
+            filter.$or = [
+                { searchTerm: { $regex: searchTerm, $options: 'i' } },
+                { title: { $regex: searchTerm, $options: 'i' } },
+                { description: { $regex: searchTerm, $options: 'i' } }
+            ];
         }
-        
+
+        if (location) {
+            filter.location = { $regex: location, $options: 'i' };
+        }
+
         if (source) {
             filter.source = source;
+        }
+
+        if (jobType) {
+            filter.jobType = jobType;
+        }
+
+        if (company) {
+            filter.company = { $regex: company, $options: 'i' };
         }
         
         const sort = {};

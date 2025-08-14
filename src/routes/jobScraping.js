@@ -14,6 +14,9 @@ const router = express.Router();
 // POST /jobs/scrape - Scrape jobs and save to database
 router.post('/scrape', scrapeAndSaveJobs);
 
+// GET /jobs/search - Dynamic job search (simplified without auto-scraping)
+router.get('/search', getScrapedJobs);
+
 // GET /jobs - Get scraped jobs with pagination and filtering
 router.get('/', getScrapedJobs);
 

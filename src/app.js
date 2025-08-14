@@ -9,20 +9,15 @@ const app = express();
 const quizRoutes = require('./routes/quizRoutes');
 const personalityRoutes = require('./routes/personalityRoutes');
 const jobScrapingRoutes = require('./routes/jobScraping');
+const jobApplicationRoutes = require('./routes/jobApplications');
 
-// CORS Configuration
+// CORS Configuration - More permissive for development
 const corsOptions = {
-    origin: [
-        'http://localhost:8081', 
-        'http://127.0.0.1:8081',
-        'https://rvtzs3o-arselaapp-8081.exp.direct',
-        'http://192.168.0.9:8081',
-        'exp://192.168.0.9:8081'
-    ],
+    origin: true, // Allow all origins during development
     credentials: true,
     optionsSuccessStatus: 200,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
 };
 
 // Middleware
@@ -41,10 +36,11 @@ app.get('/', (req, res) => {
         timestamp: new Date().toISOString(),
         endpoints: {
             auth: '/auth',
-            profile: '/profile', 
+            profile: '/profile',
             quiz: '/quiz',
             personality: '/personality',
-            jobs: '/jobs'
+            jobs: '/jobs',
+            applications: '/applications'
         }
     });
 });
@@ -55,6 +51,7 @@ app.use('/profile', profileRoutes);
 app.use('/quiz', quizRoutes);
 app.use('/personality', personalityRoutes);
 app.use('/jobs', jobScrapingRoutes);
+app.use('/applications', jobApplicationRoutes);
 
 // Error handling middleware
 app.use(errorHandler);
