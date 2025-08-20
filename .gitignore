@@ -1,8 +1,5 @@
 # Node modules
 node_modules/
-
-tests/
-test-*
 # Environment variables
 .env
 
