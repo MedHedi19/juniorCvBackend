@@ -18,8 +18,25 @@ const register = async (req, res) => {
         }
 
         // Create a new user
-        const newUser = new User({ firstName, lastName, phone, email, password, profilePhoto: '', });
+        const newUser = new User({ firstName, lastName, phone, email, password, profilePhoto: '' });
         await newUser.save();
+
+        // Generate tokens and persist refresh token to user for rotation
+        const { accessToken, refreshToken } = generateTokens(newUser._id);
+        newUser.refreshToken = refreshToken;
+        await newUser.save();
+
+        // Prepare user data to return (exclude password)
+        const userData = {
+            id: newUser._id,
+            firstName: newUser.firstName,
+            lastName: newUser.lastName,
+            phone: newUser.phone,
+            email: newUser.email,
+            profilePhoto: newUser.profilePhoto,
+            createdAt: newUser.createdAt,
+            updatedAt: newUser.updatedAt,
+        };
 
         // Send welcome email (optional)
         try {
@@ -29,10 +46,15 @@ const register = async (req, res) => {
             // Don't fail registration if email fails
         }
 
-        res.status(201).json({ message: 'User registered successfully' });
+        return res.status(201).json({
+            message: 'User registered successfully',
+            token: accessToken,
+            refreshToken,
+            user: userData,
+        });
     } catch (error) {
         res.status(500).json({ message: 'Server error', error });
-        console.log(error)
+        console.log(error);
     }
 };
 
@@ -171,18 +193,30 @@ const refreshToken = async (req, res) => {
         const { refreshToken } = req.body;
 
         if (!refreshToken) {
+            console.warn('[auth.refresh] Missing refresh token in request body');
             return res.status(401).json({ message: 'Refresh token is required' });
         }
 
         // Verify refresh token
         const decoded = verifyRefreshToken(refreshToken);
+        const hash = (t) => {
+            try { return crypto.createHash('sha256').update(String(t)).digest('hex').slice(0, 10); } catch { return 'hash_err'; }
+        };
+        const rHash = hash(refreshToken);
         if (!decoded) {
+            console.warn(`[auth.refresh] Token verification failed; rHash=${rHash}`);
             return res.status(401).json({ message: 'Invalid refresh token' });
         }
 
         // Find user and verify the refresh token matches
         const user = await User.findById(decoded.id);
-        if (!user || user.refreshToken !== refreshToken) {
+        if (!user) {
+            console.warn(`[auth.refresh] User not found for decoded.id=${decoded.id}; rHash=${rHash}`);
+            return res.status(401).json({ message: 'Invalid refresh token' });
+        }
+        const uHash = hash(user.refreshToken);
+        if (user.refreshToken !== refreshToken) {
+            console.warn(`[auth.refresh] Token mismatch for user=${decoded.id}; provided=${rHash} stored=${uHash}`);
             return res.status(401).json({ message: 'Invalid refresh token' });
         }
 
@@ -193,13 +227,14 @@ const refreshToken = async (req, res) => {
         user.refreshToken = newRefreshToken;
         await user.save();
 
+        console.info(`[auth.refresh] Success for user=${decoded.id}; old=${rHash} new=${hash(newRefreshToken)}`);
         res.status(200).json({ 
             token: accessToken, 
             refreshToken: newRefreshToken 
         });
     } catch (error) {
-        res.status(500).json({ message: 'Server error', error });
-        console.log(error);
+        console.error('[auth.refresh] Exception:', error?.message);
+        res.status(500).json({ message: 'Server error', error: error?.message });
     }
 };
 
