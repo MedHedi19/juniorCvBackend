@@ -1,111 +1,111 @@
 {
   "Test de personnalité": [
     {
-      "question": "Lors d'un projet en équipe, que faites-vous spontanément ?",
+      "question": "Quand vous démarrez un nouveau projet, vous préférez",
       "options": {
-        "R": "Prendre le leadership et organiser l'action",
-        "J": "Proposer des idées nouvelles et motiver les autres",
-        "B": "Analyser les tâches et structurer l'organisation",
-        "V": "Écouter, rassurer, veiller à la cohésion"
+        "R": "Aller droit au but et foncer",
+        "J": "Imaginer toutes les idées possibles",
+        "B": "Organiser chaque étape avec précision",
+        "V": "Créer une ambiance d’entraide"
       }
     },
     {
-      "question": "Quand une décision doit être prise rapidement, vous êtes plutôt :",
+      "question": "Face à une difficulté, votre premier réflexe est",
       "options": {
-        "R": "Prendre le leadership et organiser l'action",
-        "J": "Proposer des idées nouvelles et motiver les autres",
-        "B": "Analyser les tâches et structurer l'organisation",
-        "V": "Écouter, rassurer, veiller à la cohésion"
+        "R": "Trouver une solution rapidement",
+        "J": "En parler autour de vous pour dédramatiser",
+        "B": "Analyser la situation calmement",
+        "V": "Chercher du soutien ou demander conseil"
       }
     },
     {
-      "question": "Face à un imprévu, votre première réaction est :",
+      "question": "Lors d’un travail en groupe, vous aimez",
       "options": {
-        "R": "Prendre le leadership et organiser l'action",
-        "J": "Proposer des idées nouvelles et motiver les autres",
-        "B": "Analyser les tâches et structurer l'organisation",
-        "V": "Écouter, rassurer, veiller à la cohésion"
+        "R": "Prendre les devants et diriger",
+        "J": "Motiver les autres et créer du lien",
+        "B": "Clarifier les règles et suivre le plan",
+        "V": "Assurer que tout le monde soit à l’aise"
       }
     },
     {
-      "question": "Pour résoudre un problème complexe, vous préférez :",
+      "question": "On vous décrit souvent comme quelqu’un de",
       "options": {
-        "R": "Prendre le leadership et organiser l'action",
-        "J": "Proposer des idées nouvelles et motiver les autres",
-        "B": "Analyser les tâches et structurer l'organisation",
-        "V": "Écouter, rassurer, veiller à la cohésion"
+        "R": "Décisif(ve) et ambitieux(se)",
+        "J": "Enthousiaste et spontané(e)",
+        "B": "Minutieux(se) et fiable",
+        "V": "Calme et bienveillant(e)"
       }
     },
     {
-      "question": "En réunion, votre attitude naturelle est :",
+      "question": "Votre manière de gérer le stress",
       "options": {
-        "R": "Prendre le leadership et organiser l'action",
-        "J": "Proposer des idées nouvelles et motiver les autres",
-        "B": "Analyser les tâches et structurer l'organisation",
-        "V": "Écouter, rassurer, veiller à la cohésion"
+        "R": "Je transforme la pression en action",
+        "J": "Je relativise et fais de l’humour",
+        "B": "Je contrôle chaque détail pour ne rien rater",
+        "V": "Je prends du recul et respire"
       }
     },
     {
-      "question": "Quand on vous critique, vous avez tendance à :",
+      "question": "Ce qui vous motive le plus dans un emploi",
       "options": {
-        "R": "Prendre le leadership et organiser l'action",
-        "J": "Proposer des idées nouvelles et motiver les autres",
-        "B": "Analyser les tâches et structurer l'organisation",
-        "V": "Écouter, rassurer, veiller à la cohésion"
+        "R": "Les challenges et les résultats",
+        "J": "L’ambiance et la créativité",
+        "B": "La précision et la qualité du travail",
+        "V": "La stabilité et l’humain"
       }
     },
     {
-      "question": "Votre environnement de travail idéal serait :",
+      "question": "En cas de désaccord, vous avez tendance à",
       "options": {
-        "R": "Prendre le leadership et organiser l'action",
-        "J": "Proposer des idées nouvelles et motiver les autres",
-        "B": "Analyser les tâches et structurer l'organisation",
-        "V": "Écouter, rassurer, veiller à la cohésion"
+        "R": "Imposer votre point de vue",
+        "J": "Chercher un compromis sans conflit",
+        "B": "Justifier votre point de vue avec des faits",
+        "V": "Écouter et comprendre l’autre"
       }
     },
     {
-      "question": "Lorsqu'on vous confie une tâche, vous aimez :",
+      "question": "Vous êtes plus à l’aise dans un environnement",
       "options": {
-        "R": "Prendre le leadership et organiser l'action",
-        "J": "Proposer des idées nouvelles et motiver les autres",
-        "B": "Analyser les tâches et structurer l'organisation",
-        "V": "Écouter, rassurer, veiller à la cohésion"
+        "R": "Compétitif et exigeant",
+        "J": "Dynamique et ludique",
+        "B": "Structuré et clair",
+        "V": "Chaleureux et rassurant"
       }
     },
     {
-      "question": "Devant un conflit, vous avez tendance à :",
+      "question": "Quand vous parlez en public, vous êtes plutôt",
       "options": {
-        "R": "Prendre le leadership et organiser l'action",
-        "J": "Proposer des idées nouvelles et motiver les autres",
-        "B": "Analyser les tâches et structurer l'organisation",
-        "V": "Écouter, rassurer, veiller à la cohésion"
+        "R": "Direct et affirmé",
+        "J": "Expressif et captivant",
+        "B": "Clair et structuré",
+        "V": "Posé et accessible"
       }
     },
     {
-      "question": "Ce qui vous motive le plus est :",
+      "question": "Face à un imprévu dans votre travail",
       "options": {
-        "R": "Prendre le leadership et organiser l'action",
-        "J": "Proposer des idées nouvelles et motiver les autres",
-        "B": "Analyser les tâches et structurer l'organisation",
-        "V": "Écouter, rassurer, veiller à la cohésion"
+        "R": "Je prends les décisions rapidement",
+        "J": "J’improvise et reste optimiste",
+        "B": "Je vérifie les procédures pour réagir",
+        "V": "Je reste calme et cherche de l’aide si besoin"
       }
     },
     {
-      "question": "Quand vous communiquez avec les autres, vous êtes :",
+      "question": "Si vous devez choisir un rôle dans une équipe",
       "options": {
-        "R": "Prendre le leadership et organiser l'action",
-        "J": "Proposer des idées nouvelles et motiver les autres",
-        "B": "Analyser les tâches et structurer l'organisation",
-        "V": "Écouter, rassurer, veiller à la cohésion"
+        "R": "Leader qui prend les décisions",
+        "J": "Animateur qui dynamise",
+        "B": "Planificateur qui structure",
+        "V": "Support qui rassure et accompagne"
       }
     },
     {
-      "question": "Si vous deviez organiser un événement, vous seriez :",
+      "question": "Votre devise personnelle serait plutôt",
       "options": {
-        "R": "Prendre le leadership et organiser l'action",
-        "J": "Proposer des idées nouvelles et motiver les autres",
-        "B": "Analyser les tâches et structurer l'organisation",
-        "V": "Écouter, rassurer, veiller à la cohésion"
+        "R": "Agir vite, réussir fort",
+        "J": "Profiter, partager, créer",
+        "B": "Chaque chose à sa place",
+        "V": "Ensemble, on va plus loin"
       }
     }
   ]
