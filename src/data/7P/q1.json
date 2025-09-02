@@ -66,11 +66,6 @@
       "correct": "Peut coûter un entretien"
     },
     {
-      "question": "Quels éléments doivent apparaître sur un CV ?",
-      "options": ["Nom, prénom, compétences", "Nom, hobbies, adresse", "Prénom, âge, photo", "Aucun critère précis"],
-      "correct": "Nom, prénom, compétences"
-    },
-    {
       "question": "Pourquoi la mise en page du CV est-elle importante ?",
       "options": ["Pour décorer", "Pour être lisible", "Pour suivre la mode", "Aucune importance"],
       "correct": "Pour être lisible"
