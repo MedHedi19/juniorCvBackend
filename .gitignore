@@ -1,8 +1,9 @@
 # Node modules
 node_modules/
 
-tests/
-test-*
+# Tests and test files - commented out for intern branch
+# tests/
+# test-*
 # Environment variables
 .env
 
