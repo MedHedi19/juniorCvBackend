@@ -11,25 +11,46 @@ const register = async (req, res) => {
             return res.status(400).json({ message: 'All fields are required' });
         }
 
-        // Check if user already exists by email or phone
-        const existingUser = await User.findOne({ $or: [{ email }, { phone }] });
-        if (existingUser) {
-            return res.status(400).json({ message: 'User already exists with this email or phone' });
+        // Check for existing email
+        const existingEmail = await User.findOne({ email });
+        if (existingEmail) {
+            return res.status(400).json({ 
+                message: 'Email address already registered',
+                field: 'email',
+                error: 'duplicate'
+            });
+        }
+        
+        // Check for existing phone number
+        const existingPhone = await User.findOne({ phone });
+        if (existingPhone) {
+            return res.status(400).json({ 
+                message: 'Phone number already registered',
+                field: 'phone',
+                error: 'duplicate'
+            });
         }
 
         // Create a new user
         const newUser = new User({ firstName, lastName, phone, email, password, profilePhoto: '', });
         await newUser.save();
 
-        // Send welcome email (optional)
+        // Send welcome email and handle success/failure
+        let emailSent = false;
         try {
-            await sendWelcomeEmail(email, firstName);
+            const emailResult = await sendWelcomeEmail(email, firstName);
+            emailSent = emailResult.success;
+            console.log(`Welcome email ${emailSent ? 'sent successfully' : 'failed to send'} to ${email}`);
         } catch (emailError) {
             console.error('Failed to send welcome email:', emailError.message);
             // Don't fail registration if email fails
         }
 
-        res.status(201).json({ message: 'User registered successfully' });
+        // Return success with email status information
+        res.status(201).json({ 
+            message: 'User registered successfully',
+            emailSent: emailSent
+        });
     } catch (error) {
         res.status(500).json({ message: 'Server error', error });
         console.log(error)

@@ -30,9 +30,9 @@ const sendPasswordResetEmail = async (email, resetPin, firstName) => {
     
     // Email content
     const mailOptions = {
-      from: `"JuniorCV Support" <${process.env.EMAIL_USER}>`,
+      from: `"JuniorsCV Support" <${process.env.EMAIL_USER}>`,
       to: email,
-      subject: 'Code de réinitialisation - JuniorCV',
+      subject: 'Code de réinitialisation - JuniorsCV',
       html: `
         <!DOCTYPE html>
         <html>
@@ -64,11 +64,11 @@ const sendPasswordResetEmail = async (email, resetPin, firstName) => {
         <body>
           <div class="container">
             <div class="header">
-              <h1>JuniorCV</h1>
+              <h1>JuniorsCV</h1>
             </div>
             <div class="content">
               <h2>Bonjour ${firstName},</h2>
-              <p>Vous avez demandé la réinitialisation de votre mot de passe pour votre compte JuniorCV.</p>
+              <p>Vous avez demandé la réinitialisation de votre mot de passe pour votre compte JuniorsCV.</p>
               
               <div class="pin-box">
                 <h3 style="margin: 0 0 10px 0; color: #003B73;">Votre code de réinitialisation :</h3>
@@ -83,7 +83,7 @@ const sendPasswordResetEmail = async (email, resetPin, firstName) => {
               <p><strong>Important :</strong> Ne partagez jamais ce code avec quelqu'un d'autre.</p>
             </div>
             <div class="footer">
-              <p>© 2025 JuniorCV. Tous droits réservés.</p>
+              <p>© 2025 JuniorsCV. Tous droits réservés.</p>
               <p>Cet email a été envoyé automatiquement, merci de ne pas y répondre.</p>
             </div>
           </div>
@@ -93,7 +93,7 @@ const sendPasswordResetEmail = async (email, resetPin, firstName) => {
       text: `
         Bonjour ${firstName},
         
-        Vous avez demandé la réinitialisation de votre mot de passe pour votre compte JuniorCV.
+        Vous avez demandé la réinitialisation de votre mot de passe pour votre compte JuniorsCV.
         
         VOTRE CODE DE RÉINITIALISATION : ${resetPin}
         
@@ -105,7 +105,7 @@ const sendPasswordResetEmail = async (email, resetPin, firstName) => {
         
         Important : Ne partagez jamais ce code avec quelqu'un d'autre.
         
-        © 2025 JuniorCV. Tous droits réservés.
+        © 2025 JuniorsCV. Tous droits réservés.
       `
     };
 
@@ -121,47 +121,73 @@ const sendPasswordResetEmail = async (email, resetPin, firstName) => {
   }
 };
 
-// Send welcome email (optional)
+// Send welcome email
 const sendWelcomeEmail = async (email, firstName) => {
   try {
     const transporter = createTransporter();
     
     const mailOptions = {
-      from: `"JuniorCV Support" <${process.env.EMAIL_USER}>`,
+      from: `"JuniorsCV Support" <${process.env.EMAIL_USER}>`,
       to: email,
-      subject: 'Bienvenue sur JuniorCV !',
+      subject: 'Bienvenue sur JuniorsCV !',
       html: `
         <!DOCTYPE html>
         <html>
         <head>
           <meta charset="utf-8">
           <style>
-            body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-            .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-            .header { background-color: #003B73; color: white; padding: 20px; text-align: center; }
-            .content { padding: 30px 20px; background-color: #f9f9f9; }
-            .footer { padding: 20px; text-align: center; font-size: 12px; color: #666; }
+            body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+            .container { max-width: 600px; margin: 0 auto; padding: 0; }
+            .header { background-color: #003B73; color: white; padding: 30px 20px; text-align: center; border-radius: 8px 8px 0 0; }
+            .header h1 { margin: 0; font-size: 28px; }
+            .logo { width: 120px; height: auto; margin-bottom: 15px; }
+            .content { padding: 35px 25px; background-color: #f9f9f9; border-left: 1px solid #ddd; border-right: 1px solid #ddd; }
+            .welcome-message { font-size: 18px; margin-bottom: 25px; color: #003B73; }
+            .features { background-color: white; padding: 20px; border-radius: 8px; margin-bottom: 25px; border: 1px solid #eaeaea; }
+            .features h3 { color: #003B73; margin-top: 0; }
+            .features ul { padding-left: 20px; }
+            .features li { margin-bottom: 10px; }
+            .button { display: inline-block; background-color: #003B73; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 15px; }
+            .footer { padding: 20px; text-align: center; font-size: 12px; color: #666; background-color: #f0f0f0; border-radius: 0 0 8px 8px; border: 1px solid #ddd; border-top: none; }
+            .social { margin: 15px 0; }
+            .social a { margin: 0 10px; text-decoration: none; }
           </style>
         </head>
         <body>
           <div class="container">
             <div class="header">
-              <h1>Bienvenue sur JuniorCV !</h1>
+              <h1>Bienvenue sur JuniorsCV !</h1>
             </div>
             <div class="content">
-              <h2>Bonjour ${firstName},</h2>
-              <p>Félicitations ! Votre compte JuniorCV a été créé avec succès.</p>
-              <p>Vous pouvez maintenant :</p>
-              <ul>
-                <li>Créer votre CV professionnel</li>
-                <li>Générer des lettres de motivation</li>
-                <li>Accéder à nos services de coaching</li>
-                <li>Passer des tests de personnalité</li>
-              </ul>
-              <p>Nous sommes ravis de vous accompagner dans votre parcours professionnel !</p>
+              <p class="welcome-message">Bonjour ${firstName},</p>
+              <p>Nous sommes ravis de vous accueillir dans la communauté JuniorsCV ! Votre compte a été créé avec succès.</p>
+              
+              <div class="features">
+                <h3>🚀 Avec JuniorsCV, vous pouvez maintenant :</h3>
+                <ul>
+                  <li><strong>Créer votre CV professionnel</strong> - Des modèles modernes adaptés à votre secteur d'activité</li>
+                  <li><strong>Générer des lettres de motivation personnalisées</strong> - Impressionnez les recruteurs</li>
+                  <li><strong>Passer des tests de personnalité</strong> - Découvrez vos forces et vos talents</li>
+                  <li><strong>Accéder à des conseils de coaching</strong> - Préparez-vous pour vos entretiens</li>
+                </ul>
+              </div>
+              
+              <p>Notre mission est de vous aider à décrocher le job de vos rêves et à développer votre carrière professionnelle.</p>
+              
+              <p>Pour commencer, connectez-vous à votre compte et explorez toutes les fonctionnalités disponibles :</p>
+              
+              <div style="text-align: center;">
+                <a href="https://juniorcv.com/login" class="button">Commencer maintenant</a>
+              </div>
             </div>
             <div class="footer">
-              <p>© 2025 JuniorCV. Tous droits réservés.</p>
+              <p>Si vous avez des questions, n'hésitez pas à nous contacter à <a href="mailto:support@juniorcv.com">support@juniorcv.com</a></p>
+              <div class="social">
+                <a href="https://facebook.com/juniorcv">Facebook</a> | 
+                <a href="https://linkedin.com/company/juniorcv">LinkedIn</a> | 
+                <a href="https://instagram.com/juniorcv">Instagram</a>
+              </div>
+              <p>© 2025 JuniorsCV. Tous droits réservés.</p>
             </div>
           </div>
         </body>
@@ -175,7 +201,7 @@ const sendWelcomeEmail = async (email, firstName) => {
     
   } catch (error) {
     console.error('Error sending welcome email:', error);
-    throw new Error('Failed to send welcome email');
+    return { success: false, error: error.message };
   }
 };
 

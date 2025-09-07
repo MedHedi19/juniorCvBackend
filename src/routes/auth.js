@@ -1,23 +1,19 @@
 const express = require('express');
 const { register, login, forgotPassword, resetPassword, refreshToken, logout } = require('../controllers/authController');
-// const { GoogleAuth } = require('google-auth-library');
+const { authLimiter } = require('../middleware/rateLimitMiddleware');
 const router = express.Router();
-// const client = new OAuth2Client(process.env.WEB_CLIENT_ID);
-// const { body, validationResult } = require('express-validator');
-
-// const { OAuth2Client } = require('google-auth-library');
 
 // Route for user registration
-router.post('/register', register);
+router.post('/register', authLimiter, register);
 
 // Route for user login
-router.post('/login', login);
+router.post('/login', authLimiter,login);
 
 // Route for forgot password
-router.post('/forgot-password', forgotPassword);
+router.post('/forgot-password', authLimiter, forgotPassword);
 
 // Route for reset password
-router.post('/reset-password', resetPassword);
+router.post('/reset-password', authLimiter, resetPassword);
 
 // Route for refresh token
 router.post('/refresh-token', refreshToken);

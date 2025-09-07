@@ -5,6 +5,9 @@ const authRoutes = require('./routes/auth');
 const profileRoutes = require('./routes/profile');
 const dbConfig = require('./config/db');
 const cors = require('cors');
+const helmet = require('helmet');
+const sanitizeInput = require('./middleware/sanitizeMiddleware');
+const { generalLimiter } = require('./middleware/rateLimitMiddleware');
 const app = express();
 const quizRoutes = require('./routes/quizRoutes');
 const personalityRoutes = require('./routes/personalityRoutes');
@@ -13,7 +16,9 @@ const jobApplicationRoutes = require('./routes/jobApplications');
 
 // CORS Configuration - More permissive for development
 const corsOptions = {
-    origin: true, // Allow all origins during development
+    origin: process.env.NODE_ENV === 'production' 
+        ? ['https://juniorcv.onrender.com', 'https://juniorcvapp.vercel.app'] // Whitelist in production
+        : true, // Allow all origins in development
     credentials: true,
     optionsSuccessStatus: 200,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
@@ -22,8 +27,11 @@ const corsOptions = {
 
 // Middleware
 app.use(cors(corsOptions));
+app.use(helmet()); // Add security headers
 app.use(bodyParser.json({ limit: '10mb' })); // Reduced limit since no file uploads
 app.use(bodyParser.urlencoded({ extended: true, limit: '10mb' }));
+app.use(sanitizeInput); // Sanitize all inputs to prevent XSS
+app.use(generalLimiter); // Apply rate limiting to all routes
 
 // Database connection
 dbConfig();
