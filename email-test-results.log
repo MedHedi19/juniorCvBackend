@@ -1,8 +1,0 @@
-[2025-09-10T18:50:00.416Z] ======== EMAIL TEST ENVIRONMENT ========
-[2025-09-10T18:50:00.416Z] EMAIL_USER: bensalahmedhedi42@gmail.com
-[2025-09-10T18:50:00.417Z] EMAIL_PASS: [DEFINED]
-[2025-09-10T18:50:00.417Z] EMAIL_HOST: smtp.gmail.com
-[2025-09-10T18:50:00.417Z] EMAIL_PORT: 587
-[2025-09-10T18:50:00.418Z] Sending welcome email to: bensalahmedhedi42@gmail.com
-[2025-09-10T18:50:16.364Z] Email result: {"success":true,"messageId":"<cd1e2407-237b-62eb-2be6-b1f9c25ddd9b@gmail.com>"}
-[2025-09-10T18:50:16.364Z] SUCCESS: Welcome email sent successfully!
