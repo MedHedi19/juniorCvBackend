@@ -17,8 +17,11 @@ module.exports = function(app) {
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     callbackURL: process.env.BASE_URL + '/auth/google/callback',
     profileFields: ['id', 'displayName', 'name', 'emails', 'photos'],
-    passReqToCallback: true
+    passReqToCallback: true,
+    proxy: true
   }, async (req, accessToken, refreshToken, profile, done) => {
+    console.log('Google auth callback received');
+    console.log('Profile:', JSON.stringify(profile));
     try {
       // Check if user already exists
       let user = await User.findOne({ 'socialAuth.googleId': profile.id });
@@ -44,6 +47,7 @@ module.exports = function(app) {
             firstName: firstName,
             lastName: lastName,
             email: email,
+            phone: undefined, // Use undefined instead of null to avoid uniqueness conflicts
             profilePhoto: profile.photos && profile.photos[0] ? profile.photos[0].value : '',
             socialAuth: {
               googleId: profile.id
@@ -70,8 +74,11 @@ module.exports = function(app) {
     clientSecret: process.env.FACEBOOK_APP_SECRET,
     callbackURL: process.env.BASE_URL + '/auth/facebook/callback',
     profileFields: ['id', 'displayName', 'name', 'emails', 'photos'],
+    enableProof: true,
     passReqToCallback: true
   }, async (req, accessToken, refreshToken, profile, done) => {
+    console.log('Facebook auth callback received');
+    console.log('Facebook profile:', JSON.stringify(profile));
     try {
       // Check if user already exists
       let user = await User.findOne({ 'socialAuth.facebookId': profile.id });
@@ -93,6 +100,7 @@ module.exports = function(app) {
             firstName: profile.name.givenName || '',
             lastName: profile.name.familyName || '',
             email: email,
+            phone: undefined, // Use undefined instead of null to avoid uniqueness conflicts
             profilePhoto: profile.photos && profile.photos[0] ? profile.photos[0].value : '',
             socialAuth: {
               facebookId: profile.id
@@ -147,6 +155,7 @@ module.exports = function(app) {
             firstName: firstName,
             lastName: lastName,
             email: email,
+            phone: undefined, // Use undefined instead of null to avoid uniqueness conflicts
             profilePhoto: profile.photos && profile.photos[0] ? profile.photos[0].value : '',
             socialAuth: {
               linkedinId: profile.id

@@ -10,6 +10,7 @@ const quizRoutes = require('./routes/quizRoutes');
 const personalityRoutes = require('./routes/personalityRoutes');
 const jobScrapingRoutes = require('./routes/jobScraping');
 const jobApplicationRoutes = require('./routes/jobApplications');
+const userDataDeletionRoutes = require('./routes/userDataDeletion');
 
 // Initialize Passport
 require('./config/passport')(app);
@@ -38,7 +39,22 @@ app.get('/api/health', (req, res) => {
             googleAuth: !!process.env.GOOGLE_CLIENT_ID,
             facebookAuth: !!process.env.FACEBOOK_APP_ID,
             linkedinAuth: !!process.env.LINKEDIN_CLIENT_ID
-        }
+        },
+        baseUrl: process.env.BASE_URL
+    });
+});
+
+// Debug route for OAuth configuration
+app.get('/debug/oauth-config', (req, res) => {
+    res.json({
+        googleClientIdExists: !!process.env.GOOGLE_CLIENT_ID,
+        googleClientIdLength: process.env.GOOGLE_CLIENT_ID ? process.env.GOOGLE_CLIENT_ID.length : 0,
+        facebookAppIdExists: !!process.env.FACEBOOK_APP_ID,
+        facebookAppIdLength: process.env.FACEBOOK_APP_ID ? process.env.FACEBOOK_APP_ID.length : 0,
+        baseUrl: process.env.BASE_URL,
+        mobileAppUrl: process.env.MOBILE_APP_URL,
+        googleCallbackUrl: `${process.env.BASE_URL}/auth/google/callback`,
+        facebookCallbackUrl: `${process.env.BASE_URL}/auth/facebook/callback`
     });
 });
 
@@ -69,6 +85,7 @@ app.use('/quiz', quizRoutes);
 app.use('/personality', personalityRoutes);
 app.use('/jobs', jobScrapingRoutes);
 app.use('/applications', jobApplicationRoutes);
+app.use('/api/user', userDataDeletionRoutes);
 
 // Error handling middleware
 app.use(errorHandler);

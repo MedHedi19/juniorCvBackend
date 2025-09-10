@@ -18,8 +18,8 @@ const userSchema = new mongoose.Schema({
             // Phone is required only for regular signup
             return !this.socialAuth.googleId && !this.socialAuth.facebookId && !this.socialAuth.linkedinId;
         },
-        unique: true,
-        sparse: true,
+        // Using sparse index so null/undefined values don't cause uniqueness conflicts
+        index: { unique: true, sparse: true },
     },
     email: {
         type: String,
