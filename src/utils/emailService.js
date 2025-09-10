@@ -2,25 +2,16 @@ const nodemailer = require('nodemailer');
 
 // Email configuration
 const createTransporter = () => {
-  // For Gmail (you can change this to other providers)
+  // Create a direct SMTP transport
   return nodemailer.createTransport({
-    service: 'gmail',
+    host: process.env.EMAIL_HOST || 'smtp.gmail.com',
+    port: parseInt(process.env.EMAIL_PORT || '587'),
+    secure: (process.env.EMAIL_PORT || '587') === '465', // true for 465, false for other ports
     auth: {
-      user: process.env.EMAIL_USER, // Your email
-      pass: process.env.EMAIL_PASS, // Your app password (not regular password)
-    },
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
+    }
   });
-
-  // Alternative configuration for other SMTP providers
-  // return nodemailer.createTransport({
-  //   host: process.env.SMTP_HOST,
-  //   port: process.env.SMTP_PORT,
-  //   secure: false,
-  //   auth: {
-  //     user: process.env.EMAIL_USER,
-  //     pass: process.env.EMAIL_PASS,
-  //   },
-  // });
 };
 
 // Send password reset email
@@ -124,6 +115,16 @@ const sendPasswordResetEmail = async (email, resetPin, firstName) => {
 // Send welcome email
 const sendWelcomeEmail = async (email, firstName) => {
   try {
+    // Validate inputs
+    if (!email) {
+      return { success: false, error: 'Missing recipient email address' };
+    }
+    
+    if (!firstName) {
+      firstName = 'User';
+    }
+    
+    // Create email transport
     const transporter = createTransporter();
     
     const mailOptions = {
@@ -194,13 +195,133 @@ const sendWelcomeEmail = async (email, firstName) => {
         </html>
       `
     };
-
+    
+    // Send email
     const info = await transporter.sendMail(mailOptions);
-    console.log('Welcome email sent successfully:', info.messageId);
     return { success: true, messageId: info.messageId };
     
   } catch (error) {
-    console.error('Error sending welcome email:', error);
+    return { 
+      success: false, 
+      error: error.message, 
+      code: error.code 
+    };
+  }
+};
+
+// Send social login welcome email
+const sendSocialWelcomeEmail = async (email, firstName, provider) => {
+  try {
+    const transporter = createTransporter();
+    
+    // Get provider information
+    const providerInfo = {
+      google: {
+        name: 'Google',
+        color: '#DB4437',
+        icon: '🔍'
+      },
+      facebook: {
+        name: 'Facebook',
+        color: '#4267B2',
+        icon: '👥'
+      },
+      linkedin: {
+        name: 'LinkedIn',
+        color: '#0077B5',
+        icon: '💼'
+      }
+    };
+    
+    const { name: providerName, icon } = providerInfo[provider] || { name: 'Social Media', icon: '🌐' };
+    
+    const mailOptions = {
+      from: `"JuniorsCV Support" <${process.env.EMAIL_USER}>`,
+      to: email,
+      subject: 'Bienvenue sur JuniorsCV !',
+      html: `
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <meta charset="utf-8">
+          <style>
+            body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+            .container { max-width: 600px; margin: 0 auto; padding: 0; }
+            .header { background-color: #003B73; color: white; padding: 30px 20px; text-align: center; border-radius: 8px 8px 0 0; }
+            .header h1 { margin: 0; font-size: 28px; }
+            .logo { width: 120px; height: auto; margin-bottom: 15px; }
+            .content { padding: 35px 25px; background-color: #f9f9f9; border-left: 1px solid #ddd; border-right: 1px solid #ddd; }
+            .welcome-message { font-size: 18px; margin-bottom: 25px; color: #003B73; }
+            .social-login-info { 
+              background-color: #e8f4fc; 
+              border-left: 4px solid #003B73; 
+              padding: 15px; 
+              margin-bottom: 25px;
+              border-radius: 4px;
+            }
+            .features { background-color: white; padding: 20px; border-radius: 8px; margin-bottom: 25px; border: 1px solid #eaeaea; }
+            .features h3 { color: #003B73; margin-top: 0; }
+            .features ul { padding-left: 20px; }
+            .features li { margin-bottom: 10px; }
+            .button { display: inline-block; background-color: #003B73; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 15px; }
+            .footer { padding: 20px; text-align: center; font-size: 12px; color: #666; background-color: #f0f0f0; border-radius: 0 0 8px 8px; border: 1px solid #ddd; border-top: none; }
+            .social { margin: 15px 0; }
+            .social a { margin: 0 10px; text-decoration: none; }
+          </style>
+        </head>
+        <body>
+          <div class="container">
+            <div class="header">
+              <h1>Bienvenue sur JuniorsCV !</h1>
+            </div>
+            <div class="content">
+              <p class="welcome-message">Bonjour ${firstName},</p>
+              
+              <div class="social-login-info">
+                <p><strong>${icon} Vous vous êtes connecté(e) avec ${providerName}</strong></p>
+                <p>Merci d'avoir choisi JuniorsCV ! Votre compte a été créé avec succès en utilisant votre compte ${providerName}.</p>
+              </div>
+              
+              <p>Nous sommes ravis de vous accueillir dans la communauté JuniorsCV !</p>
+              
+              <div class="features">
+                <h3>🚀 Avec JuniorsCV, vous pouvez maintenant :</h3>
+                <ul>
+                  <li><strong>Créer votre CV professionnel</strong> - Des modèles modernes adaptés à votre secteur d'activité</li>
+                  <li><strong>Générer des lettres de motivation personnalisées</strong> - Impressionnez les recruteurs</li>
+                  <li><strong>Passer des tests de personnalité</strong> - Découvrez vos forces et vos talents</li>
+                  <li><strong>Accéder à des conseils de coaching</strong> - Préparez-vous pour vos entretiens</li>
+                  <li><strong>Trouver des offres d'emploi</strong> - Adaptées à votre profil et vos compétences</li>
+                </ul>
+              </div>
+              
+              <p>Notre mission est de vous aider à décrocher le job de vos rêves et à développer votre carrière professionnelle.</p>
+              
+              <p>Pour commencer, explorez toutes les fonctionnalités disponibles :</p>
+              
+              <div style="text-align: center;">
+                <a href="https://juniorcv.com/login" class="button">Commencer maintenant</a>
+              </div>
+            </div>
+            <div class="footer">
+              <p>Si vous avez des questions, n'hésitez pas à nous contacter à <a href="mailto:support@juniorcv.com">support@juniorcv.com</a></p>
+              <div class="social">
+                <a href="https://facebook.com/juniorcv">Facebook</a> | 
+                <a href="https://linkedin.com/company/juniorcv">LinkedIn</a> | 
+                <a href="https://instagram.com/juniorcv">Instagram</a>
+              </div>
+              <p>© 2025 JuniorsCV. Tous droits réservés.</p>
+            </div>
+          </div>
+        </body>
+        </html>
+      `
+    };
+
+    const info = await transporter.sendMail(mailOptions);
+    return { success: true, messageId: info.messageId };
+    
+  } catch (error) {
     return { success: false, error: error.message };
   }
 };
@@ -208,4 +329,5 @@ const sendWelcomeEmail = async (email, firstName) => {
 module.exports = {
   sendPasswordResetEmail,
   sendWelcomeEmail,
+  sendSocialWelcomeEmail,
 };

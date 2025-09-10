@@ -37,23 +37,54 @@ const register = async (req, res) => {
 
         // Send welcome email and handle success/failure
         let emailSent = false;
+        let emailError = null;
+        
         try {
-            const emailResult = await sendWelcomeEmail(email, firstName);
-            emailSent = emailResult.success;
-            console.log(`Welcome email ${emailSent ? 'sent successfully' : 'failed to send'} to ${email}`);
-        } catch (emailError) {
-            console.error('Failed to send welcome email:', emailError.message);
+            // Try with direct nodemailer call
+            const nodemailer = require('nodemailer');
+            const transporter = nodemailer.createTransport({
+                service: 'gmail',
+                auth: {
+                    user: process.env.EMAIL_USER,
+                    pass: process.env.EMAIL_PASS
+                }
+            });
+            
+            const mailOptions = {
+                from: `"JuniorsCV Support" <${process.env.EMAIL_USER}>`,
+                to: email,
+                subject: 'Bienvenue sur JuniorsCV !',
+                html: `<!DOCTYPE html><html><head><style>body{font-family:Arial;}</style></head><body><h2>Bienvenue sur JuniorsCV, ${firstName}!</h2><p>Votre compte a été créé avec succès.</p><p>Merci de rejoindre notre communauté!</p></body></html>`
+            };
+            
+            try {
+                const info = await transporter.sendMail(mailOptions);
+                emailSent = true;
+            } catch (err) {
+                // Try the regular method as fallback
+                const emailResult = await sendWelcomeEmail(email, firstName);
+                emailSent = emailResult.success;
+            }
+        } catch (error) {
+            emailError = {
+                message: error.message,
+                code: error.code || 'UNKNOWN'
+            };
             // Don't fail registration if email fails
         }
 
         // Return success with email status information
         res.status(201).json({ 
             message: 'User registered successfully',
-            emailSent: emailSent
+            emailSent: emailSent,
+            emailError: emailSent ? null : emailError
         });
     } catch (error) {
-        res.status(500).json({ message: 'Server error', error });
-        console.log(error)
+        res.status(500).json({ 
+            message: 'Server error', 
+            error: error.message,
+            stack: process.env.NODE_ENV === 'production' ? null : error.stack
+        });
     }
 };
 
@@ -62,19 +93,31 @@ const login = async (req, res) => {
         const { identifier, password } = req.body; // identifier can be email or phone
 
         if (!identifier || !password) {
-            return res.status(400).json({ message: 'Identifier and password are required' });
+            return res.status(400).json({ 
+                message: 'Identifier and password are required',
+                field: !identifier ? 'identifier' : 'password',
+                error: 'required'
+            });
         }
 
         // Find the user by email or phone
         const user = await User.findOne({ $or: [{ email: identifier }, { phone: identifier }] });
         if (!user) {
-            return res.status(400).json({ message: 'Invalid credentials' });
+            return res.status(400).json({ 
+                message: 'Email or phone number not found',
+                field: 'identifier',
+                error: 'not_found'
+            });
         }
 
         // Check password
         const isMatch = await user.comparePassword(password);
         if (!isMatch) {
-            return res.status(400).json({ message: 'Invalid password' });
+            return res.status(400).json({ 
+                message: 'Incorrect password',
+                field: 'password',
+                error: 'invalid'
+            });
         }
 
         // Generate tokens
@@ -103,7 +146,11 @@ const login = async (req, res) => {
             user: userData 
         });
     } catch (error) {
-        res.status(500).json({ message: 'Server error', error });
+        res.status(500).json({ 
+            message: 'Server error', 
+            error: error.message,
+            stack: process.env.NODE_ENV === 'production' ? null : error.stack
+        });
     }
 };
 
@@ -139,20 +186,12 @@ const forgotPassword = async (req, res) => {
                 success: true
             });
         } catch (emailError) {
-            console.error('Failed to send password reset email:', emailError.message);
-            
-            // Remove the token if email fails
-            user.resetPasswordToken = undefined;
-            user.resetPasswordExpires = undefined;
-            await user.save();
-            
             res.status(500).json({ 
                 message: 'Failed to send password reset email. Please try again later.' 
             });
         }
     } catch (error) {
-        res.status(500).json({ message: 'Server error', error });
-        console.log(error);
+        res.status(500).json({ message: 'Server error', error: error.message });
     }
 };
 
@@ -182,8 +221,7 @@ const resetPassword = async (req, res) => {
 
         res.status(200).json({ message: 'Password reset successfully' });
     } catch (error) {
-        res.status(500).json({ message: 'Server error', error });
-        console.log(error);
+        res.status(500).json({ message: 'Server error', error: error.message });
     }
 };
 
@@ -219,8 +257,7 @@ const refreshToken = async (req, res) => {
             refreshToken: newRefreshToken 
         });
     } catch (error) {
-        res.status(500).json({ message: 'Server error', error });
-        console.log(error);
+        res.status(500).json({ message: 'Server error', error: error.message });
     }
 };
 
@@ -239,8 +276,7 @@ const logout = async (req, res) => {
 
         res.status(200).json({ message: 'Logout successful' });
     } catch (error) {
-        res.status(500).json({ message: 'Server error', error });
-        console.log(error);
+        res.status(500).json({ message: 'Server error', error: error.message });
     }
 };
 

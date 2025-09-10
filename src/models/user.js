@@ -14,8 +14,12 @@ const userSchema = new mongoose.Schema({
     },
     phone: {
         type: String,
-        required: true,
+        required: function() {
+            // Phone is required only for regular signup
+            return !this.socialAuth.googleId && !this.socialAuth.facebookId && !this.socialAuth.linkedinId;
+        },
         unique: true,
+        sparse: true,
     },
     email: {
         type: String,
@@ -32,8 +36,25 @@ const userSchema = new mongoose.Schema({
     },
     password: {
         type: String,
-        required: true,
+        required: function() {
+            // Password is required only for regular signup
+            return !this.socialAuth.googleId && !this.socialAuth.facebookId && !this.socialAuth.linkedinId;
+        },
         minlength: [8, 'Password must be at least 8 characters long'],
+    },
+    socialAuth: {
+        googleId: {
+            type: String,
+            sparse: true,
+        },
+        facebookId: {
+            type: String,
+            sparse: true,
+        },
+        linkedinId: {
+            type: String,
+            sparse: true,
+        },
     },
     profilePhoto: {
         type: String,

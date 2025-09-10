@@ -5,20 +5,18 @@ const authRoutes = require('./routes/auth');
 const profileRoutes = require('./routes/profile');
 const dbConfig = require('./config/db');
 const cors = require('cors');
-const helmet = require('helmet');
-const sanitizeInput = require('./middleware/sanitizeMiddleware');
-const { generalLimiter } = require('./middleware/rateLimitMiddleware');
 const app = express();
 const quizRoutes = require('./routes/quizRoutes');
 const personalityRoutes = require('./routes/personalityRoutes');
 const jobScrapingRoutes = require('./routes/jobScraping');
 const jobApplicationRoutes = require('./routes/jobApplications');
 
+// Initialize Passport
+require('./config/passport')(app);
+
 // CORS Configuration - More permissive for development
 const corsOptions = {
-    origin: process.env.NODE_ENV === 'production' 
-        ? ['https://juniorcv.onrender.com', 'https://juniorcvapp.vercel.app'] // Whitelist in production
-        : true, // Allow all origins in development
+    origin: true, // Allow all origins during development
     credentials: true,
     optionsSuccessStatus: 200,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
@@ -27,11 +25,22 @@ const corsOptions = {
 
 // Middleware
 app.use(cors(corsOptions));
-app.use(helmet()); // Add security headers
 app.use(bodyParser.json({ limit: '10mb' })); // Reduced limit since no file uploads
 app.use(bodyParser.urlencoded({ extended: true, limit: '10mb' }));
-app.use(sanitizeInput); // Sanitize all inputs to prevent XSS
-app.use(generalLimiter); // Apply rate limiting to all routes
+
+// Health check endpoint
+app.get('/api/health', (req, res) => {
+    res.json({ 
+        status: 'ok', 
+        timestamp: new Date().toISOString(),
+        environment: process.env.NODE_ENV || 'development',
+        auth: {
+            googleAuth: !!process.env.GOOGLE_CLIENT_ID,
+            facebookAuth: !!process.env.FACEBOOK_APP_ID,
+            linkedinAuth: !!process.env.LINKEDIN_CLIENT_ID
+        }
+    });
+});
 
 // Database connection
 dbConfig();
