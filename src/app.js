@@ -5,6 +5,7 @@ const authRoutes = require('./routes/auth');
 const profileRoutes = require('./routes/profile');
 const dbConfig = require('./config/db');
 const cors = require('cors');
+const session = require('express-session');
 const app = express();
 const quizRoutes = require('./routes/quizRoutes');
 const personalityRoutes = require('./routes/personalityRoutes');
@@ -28,6 +29,17 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(bodyParser.json({ limit: '10mb' })); // Reduced limit since no file uploads
 app.use(bodyParser.urlencoded({ extended: true, limit: '10mb' }));
+
+// Session middleware - required for Facebook data deletion API
+app.use(session({
+    secret: process.env.JWT_SECRET || 'your-secret-key',
+    resave: false,
+    saveUninitialized: false,
+    cookie: { 
+        secure: process.env.NODE_ENV === 'production',
+        maxAge: 24 * 60 * 60 * 1000 // 24 hours
+    }
+}));
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
