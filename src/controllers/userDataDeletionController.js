@@ -15,7 +15,6 @@ const handleFacebookDataDeletion = async (req, res) => {
     
     if (!user_id) {
       // Either find user by Facebook ID or just acknowledge the request
-      console.log('Facebook data deletion request received without user_id');
       // You should still return success even if user not found
       return res.status(200).json({
         confirmation_code: 'USER_DATA_DELETION_REQUEST_RECEIVED',

@@ -12,6 +12,7 @@ const personalityRoutes = require('./routes/personalityRoutes');
 const jobScrapingRoutes = require('./routes/jobScraping');
 const jobApplicationRoutes = require('./routes/jobApplications');
 const userDataDeletionRoutes = require('./routes/userDataDeletion');
+const facebookDataDeletionRoutes = require('./routes/facebookDataDeletion');
 
 // Initialize Passport
 require('./config/passport')(app);
@@ -56,19 +57,22 @@ app.get('/api/health', (req, res) => {
     });
 });
 
-// Debug route for OAuth configuration
-app.get('/debug/oauth-config', (req, res) => {
-    res.json({
-        googleClientIdExists: !!process.env.GOOGLE_CLIENT_ID,
-        googleClientIdLength: process.env.GOOGLE_CLIENT_ID ? process.env.GOOGLE_CLIENT_ID.length : 0,
-        facebookAppIdExists: !!process.env.FACEBOOK_APP_ID,
-        facebookAppIdLength: process.env.FACEBOOK_APP_ID ? process.env.FACEBOOK_APP_ID.length : 0,
-        baseUrl: process.env.BASE_URL,
-        mobileAppUrl: process.env.MOBILE_APP_URL,
-        googleCallbackUrl: `${process.env.BASE_URL}/auth/google/callback`,
-        facebookCallbackUrl: `${process.env.BASE_URL}/auth/facebook/callback`
+// Facebook Data Deletion endpoint at root level
+app.get('/fb-deletion', (req, res) => {
+    res.status(200).json({
+        url_confirmation: "success",
+        confirmation_code: process.env.FACEBOOK_CONFIRMATION_CODE || "1234567890"
     });
 });
+
+app.post('/fb-deletion', (req, res) => {
+    res.status(200).json({
+        url_confirmation: "success",
+        confirmation_code: process.env.FACEBOOK_CONFIRMATION_CODE || "1234567890"
+    });
+});
+
+// Database connection
 
 // Database connection
 dbConfig();
@@ -98,6 +102,10 @@ app.use('/personality', personalityRoutes);
 app.use('/jobs', jobScrapingRoutes);
 app.use('/applications', jobApplicationRoutes);
 app.use('/api/user', userDataDeletionRoutes);
+
+// Facebook Data Deletion Endpoint - Required for Facebook App Compliance
+// This is the dedicated endpoint we'll use in the Facebook Developer Console
+app.use('/data-deletion', facebookDataDeletionRoutes);
 
 // Error handling middleware
 app.use(errorHandler);

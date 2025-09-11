@@ -20,8 +20,6 @@ module.exports = function(app) {
     passReqToCallback: true,
     proxy: true
   }, async (req, accessToken, refreshToken, profile, done) => {
-    console.log('Google auth callback received');
-    console.log('Profile:', JSON.stringify(profile));
     try {
       // Check if user already exists
       let user = await User.findOne({ 'socialAuth.googleId': profile.id });
@@ -77,8 +75,6 @@ module.exports = function(app) {
     enableProof: true,
     passReqToCallback: true
   }, async (req, accessToken, refreshToken, profile, done) => {
-    console.log('Facebook auth callback received');
-    console.log('Facebook profile:', JSON.stringify(profile));
     try {
       // Check if user already exists
       let user = await User.findOne({ 'socialAuth.facebookId': profile.id });
