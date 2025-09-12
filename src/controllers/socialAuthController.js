@@ -40,9 +40,31 @@ const socialLoginCallback = async (req, res) => {
             updatedAt: user.updatedAt,
         };
         
-        // Redirect back to app with tokens
-        // Use a deep link that the mobile app can intercept
-        const redirectUrl = `${process.env.MOBILE_APP_URL}/auth/callback?token=${accessToken}&refreshToken=${refreshToken}&user=${encodeURIComponent(JSON.stringify(userData))}`;
+        // Always check for Expo development URL first - this is crucial for Expo Go testing
+        // Prepare the query params
+        const queryParams = `token=${accessToken}&refreshToken=${refreshToken}&user=${encodeURIComponent(JSON.stringify(userData))}`;
+        
+        let redirectUrl;
+        
+        // For Expo Go client during development, ALWAYS try to use the DEV_REDIRECT_URL first
+        if (process.env.DEV_REDIRECT_URL) {
+            redirectUrl = `${process.env.DEV_REDIRECT_URL}/auth/callback?${queryParams}`;
+            console.log('⚠️ Redirecting to Expo Go development URL:', redirectUrl);
+        } else if (process.env.MOBILE_APP_URL) {
+            // For standalone app or production, use the deep link
+            redirectUrl = `${process.env.MOBILE_APP_URL}/auth/callback?${queryParams}`;
+            console.log('📱 Redirecting to native app URL:', redirectUrl);
+        } else {
+            // Fallback to a default URL if none of the above are set
+            redirectUrl = `http://localhost:19006/auth/callback?${queryParams}`;
+            console.log('⚠️ Using fallback URL:', redirectUrl);
+        }
+        
+        // Log the URLs from environment for debugging
+        console.log('Environment URLs:', {
+            DEV_REDIRECT_URL: process.env.DEV_REDIRECT_URL,
+            MOBILE_APP_URL: process.env.MOBILE_APP_URL
+        });
         
         return res.redirect(redirectUrl);
     } catch (error) {
