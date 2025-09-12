@@ -45,7 +45,7 @@ module.exports = function(app) {
             firstName: firstName,
             lastName: lastName,
             email: email,
-            phone: undefined, // Use undefined instead of null to avoid uniqueness conflicts
+            // Remove the phone field entirely rather than setting it to undefined or null
             profilePhoto: profile.photos && profile.photos[0] ? profile.photos[0].value : '',
             socialAuth: {
               googleId: profile.id
@@ -96,7 +96,7 @@ module.exports = function(app) {
             firstName: profile.name.givenName || '',
             lastName: profile.name.familyName || '',
             email: email,
-            phone: undefined, // Use undefined instead of null to avoid uniqueness conflicts
+            // Remove the phone field entirely
             profilePhoto: profile.photos && profile.photos[0] ? profile.photos[0].value : '',
             socialAuth: {
               facebookId: profile.id
@@ -151,7 +151,7 @@ module.exports = function(app) {
             firstName: firstName,
             lastName: lastName,
             email: email,
-            phone: undefined, // Use undefined instead of null to avoid uniqueness conflicts
+            // Remove the phone field entirely
             profilePhoto: profile.photos && profile.photos[0] ? profile.photos[0].value : '',
             socialAuth: {
               linkedinId: profile.id

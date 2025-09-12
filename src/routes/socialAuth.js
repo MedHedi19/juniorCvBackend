@@ -4,12 +4,27 @@ const { socialLoginCallback } = require('../controllers/socialAuthController');
 const router = express.Router();
 
 // Google Auth Routes
-router.get('/google', 
-    passport.authenticate('google', { scope: ['profile', 'email'] })
-);
+router.get('/google', (req, res, next) => {
+    // Store the redirect_uri in the session if provided
+    if (req.query.redirect_uri) {
+        req.session.redirect_uri = req.query.redirect_uri;
+    }
+    
+    passport.authenticate('google', { 
+        scope: ['profile', 'email'],
+        state: req.query.redirect_uri // Pass the redirect_uri as state for extra security
+    })(req, res, next);
+});
 
 router.get('/google/callback',
     passport.authenticate('google', { failureRedirect: '/auth/social/failure', session: false }),
+    (req, res, next) => {
+        // Pass along any redirect_uri that was stored in the session
+        if (req.session && req.session.redirect_uri) {
+            req.query.redirect_uri = req.session.redirect_uri;
+        }
+        next();
+    },
     socialLoginCallback
 );
 

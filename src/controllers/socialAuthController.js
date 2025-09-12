@@ -40,31 +40,30 @@ const socialLoginCallback = async (req, res) => {
             updatedAt: user.updatedAt,
         };
         
-        // Always check for Expo development URL first - this is crucial for Expo Go testing
+        // Determine if the request is coming from Expo Go client
+        const userAgent = req.headers['user-agent'] || '';
+        const isExpoClient = userAgent.includes('Expo') || userAgent.includes('expo');
+        
         // Prepare the query params
         const queryParams = `token=${accessToken}&refreshToken=${refreshToken}&user=${encodeURIComponent(JSON.stringify(userData))}`;
         
         let redirectUrl;
         
-        // For Expo Go client during development, ALWAYS try to use the DEV_REDIRECT_URL first
-        if (process.env.DEV_REDIRECT_URL) {
-            redirectUrl = `${process.env.DEV_REDIRECT_URL}/auth/callback?${queryParams}`;
-            console.log('⚠️ Redirecting to Expo Go development URL:', redirectUrl);
-        } else if (process.env.MOBILE_APP_URL) {
-            // For standalone app or production, use the deep link
-            redirectUrl = `${process.env.MOBILE_APP_URL}/auth/callback?${queryParams}`;
-            console.log('📱 Redirecting to native app URL:', redirectUrl);
+        if (isExpoClient) {
+            // For Expo Auth Session, use the expo-auth-session redirect URL
+            // Get the redirect URI from the request query or state, or use a fallback
+            const redirectUri = req.query.redirect_uri || 
+                               (req.query.state ? decodeURIComponent(req.query.state) : null) || 
+                               process.env.EXPO_REDIRECT_URI || 
+                               'exp://exp.host/@med_hedi/JuniorsCV';
+                               
+            redirectUrl = `${redirectUri}/--/auth/callback?${queryParams}`;
+            console.log('Redirecting to Expo Auth Session URL:', redirectUrl);
         } else {
-            // Fallback to a default URL if none of the above are set
-            redirectUrl = `http://localhost:19006/auth/callback?${queryParams}`;
-            console.log('⚠️ Using fallback URL:', redirectUrl);
+            // For standalone app, use the deep link
+            redirectUrl = `${process.env.MOBILE_APP_URL}/auth/callback?${queryParams}`;
+            console.log('Redirecting to app URL:', redirectUrl);
         }
-        
-        // Log the URLs from environment for debugging
-        console.log('Environment URLs:', {
-            DEV_REDIRECT_URL: process.env.DEV_REDIRECT_URL,
-            MOBILE_APP_URL: process.env.MOBILE_APP_URL
-        });
         
         return res.redirect(redirectUrl);
     } catch (error) {
