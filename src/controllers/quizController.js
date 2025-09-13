@@ -5,10 +5,7 @@ const { getQuizByIndex, getAllQuizNames } = require('../utils/quizData');
 const getQuizzes = async (req, res) => {
     try {
         const userId = req.user.id;
-        // Get language preference from query parameter, defaulting to French
-        const language = req.query.language || 'fr';
-        
-        const allQuizzes = getAllQuizNames(language);
+        const allQuizzes = getAllQuizNames();
         
         // Get or create user progress
         let userProgress = await UserProgress.findOne({ userId });
@@ -66,10 +63,8 @@ const startQuiz = async (req, res) => {
     try {
         const { quizId } = req.params;
         const userId = req.user.id;
-        // Get language preference from query parameter, defaulting to French
-        const language = req.query.language || 'fr';
         
-        const quiz = getQuizByIndex(parseInt(quizId), language);
+        const quiz = getQuizByIndex(parseInt(quizId));
         if (!quiz) {
             return res.status(404).json({ message: 'Quiz not found' });
         }
@@ -90,8 +85,7 @@ const startQuiz = async (req, res) => {
             question: quiz.questions[0].question,
             options: quiz.questions[0].options,
             totalQuestions: quiz.questions.length,
-            quizName: quiz.name,
-            language: quiz.language
+            quizName: quiz.name
         };
 
         res.json(firstQuestion);
@@ -107,18 +101,9 @@ const submitAnswer = async (req, res) => {
         const { quizId } = req.params;
         const { questionIndex, selectedAnswer } = req.body;
         const userId = req.user.id;
-        // Get language preference from query parameter, defaulting to French
-        const language = req.query.language || 'fr';
 
-        // Get quiz in the requested language
-        const quiz = getQuizByIndex(parseInt(quizId), language);
+        const quiz = getQuizByIndex(parseInt(quizId));
         if (!quiz) {
-            return res.status(404).json({ message: 'Quiz not found' });
-        }
-
-        // Always get the French version for validation and saving in DB
-        const frenchQuiz = getQuizByIndex(parseInt(quizId), 'fr');
-        if (!frenchQuiz) {
             return res.status(404).json({ message: 'Quiz not found' });
         }
 
@@ -127,9 +112,7 @@ const submitAnswer = async (req, res) => {
         }
 
         const currentQuestion = quiz.questions[questionIndex];
-        // Always compare with the French version for correct answers
-        const frenchQuestion = frenchQuiz.questions[questionIndex];
-        const isCorrect = frenchQuestion.correct === selectedAnswer;
+        const isCorrect = currentQuestion.correct === selectedAnswer;
 
         // Update user progress
         let userProgress = await UserProgress.findOne({ userId });
@@ -198,15 +181,13 @@ const submitAnswer = async (req, res) => {
             response.finalScore = quizProgress.score;
             response.percentage = quizProgress.percentage;
             response.passed = quizProgress.percentage >= 50;
-            response.language = language;
         } else {
-            // Return next question in the requested language
+            // Return next question
             const nextQuestion = quiz.questions[questionIndex + 1];
             response.nextQuestion = {
                 questionIndex: questionIndex + 1,
                 question: nextQuestion.question,
-                options: nextQuestion.options,
-                language: language
+                options: nextQuestion.options
             };
         }
 
@@ -264,10 +245,8 @@ const resetQuiz = async (req, res) => {
     try {
         const { quizId } = req.params;
         const userId = req.user.id;
-        // Get language preference from query parameter, defaulting to French
-        const language = req.query.language || 'fr';
 
-        const quiz = getQuizByIndex(parseInt(quizId), language);
+        const quiz = getQuizByIndex(parseInt(quizId));
         if (!quiz) {
             return res.status(404).json({ message: 'Quiz not found' });
         }
