@@ -1,0 +1,112 @@
+{
+  "Personality Test": [
+    {
+      "question": "When you start a new project, you prefer",
+      "options": {
+        "R": "Getting straight to the point and moving forward",
+        "J": "Imagining all possible ideas",
+        "B": "Organizing each step with precision",
+        "V": "Creating a helpful atmosphere"
+      }
+    },
+    {
+      "question": "When facing a difficulty, your first reflex is",
+      "options": {
+        "R": "Finding a solution quickly",
+        "J": "Talking about it to lighten the situation",
+        "B": "Analyzing the situation calmly",
+        "V": "Seeking support or asking for advice"
+      }
+    },
+    {
+      "question": "When working in a group, you like to",
+      "options": {
+        "R": "Take the lead and direct",
+        "J": "Motivate others and create connections",
+        "B": "Clarify the rules and follow the plan",
+        "V": "Ensure everyone is comfortable"
+      }
+    },
+    {
+      "question": "You are often described as someone who is",
+      "options": {
+        "R": "Decisive and ambitious",
+        "J": "Enthusiastic and spontaneous",
+        "B": "Thorough and reliable",
+        "V": "Calm and caring"
+      }
+    },
+    {
+      "question": "Your way of managing stress",
+      "options": {
+        "R": "I transform pressure into action",
+        "J": "I put things in perspective and use humor",
+        "B": "I control every detail to not miss anything",
+        "V": "I take a step back and breathe"
+      }
+    },
+    {
+      "question": "What motivates you most in a job",
+      "options": {
+        "R": "Challenges and results",
+        "J": "Atmosphere and creativity",
+        "B": "Precision and quality of work",
+        "V": "Stability and human connections"
+      }
+    },
+    {
+      "question": "In case of disagreement, you tend to",
+      "options": {
+        "R": "Impose your point of view",
+        "J": "Seek a compromise without conflict",
+        "B": "Justify your point of view with facts",
+        "V": "Listen and understand the other person"
+      }
+    },
+    {
+      "question": "You are more comfortable in an environment that is",
+      "options": {
+        "R": "Competitive and demanding",
+        "J": "Dynamic and playful",
+        "B": "Structured and clear",
+        "V": "Warm and reassuring"
+      }
+    },
+    {
+      "question": "When speaking in public, you are rather",
+      "options": {
+        "R": "Direct and assertive",
+        "J": "Expressive and captivating",
+        "B": "Clear and structured",
+        "V": "Composed and accessible"
+      }
+    },
+    {
+      "question": "Facing an unexpected situation at work",
+      "options": {
+        "R": "I make decisions quickly",
+        "J": "I improvise and stay optimistic",
+        "B": "I check procedures to react accordingly",
+        "V": "I stay calm and seek help if needed"
+      }
+    },
+    {
+      "question": "If you had to choose a role in a team",
+      "options": {
+        "R": "Leader who makes decisions",
+        "J": "Facilitator who energizes",
+        "B": "Planner who structures",
+        "V": "Support who reassures and accompanies"
+      }
+    },
+    {
+      "question": "Your personal motto would be",
+      "options": {
+        "R": "Act fast, succeed strongly",
+        "J": "Enjoy, share, create",
+        "B": "Everything in its place",
+        "V": "Together, we go further"
+      }
+    }
+  ]
+}

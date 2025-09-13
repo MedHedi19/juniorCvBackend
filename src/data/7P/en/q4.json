@@ -1,0 +1,108 @@
+{
+  "Presentation": [
+    {
+      "question": "In your opinion, what is the ideal duration for a good self-presentation in a job interview?",
+      "options": ["15 minutes", "03 minutes", "10 minutes"],
+      "correct": "03 minutes"
+    },
+    {
+      "question": "During a presentation, you should:",
+      "options": [
+        "Recite the information in your CV",
+        "Talk about yourself and your journey",
+        "Neutral"
+      ],
+      "correct": "Talk about yourself and your journey"
+    },
+    {
+      "question": "A presentation should include:",
+      "options": [
+        "Your name and current situation",
+        "Your academic background",
+        "Your internships and/or professional experiences"
+      ],
+      "correct": "Your internships and/or professional experiences"
+    },
+    {
+      "question": "Do you think that in a presentation, you should:",
+      "options": [
+        "List all internships experienced",
+        "List internships that are related to the position sought",
+        "Neutral"
+      ],
+      "correct": "List internships that are related to the position sought"
+    },
+    {
+      "question": "In your opinion, what are the necessary tips to succeed in a presentation during a job interview?",
+      "options": [
+        "Self-confidence and self-knowledge",
+        "Internal energy and stress management",
+        "All of the above"
+      ],
+      "correct": "All of the above"
+    },
+    {
+      "question": "How can you reduce stress during a presentation?",
+      "options": [
+        "Create a speech structure",
+        "Be clear, neat and precise during the presentation",
+        "Focus on hand movements"
+      ],
+      "correct": "Create a speech structure"
+    },
+    {
+      "question": "To make a good impression in an interview, you should:",
+      "options": [
+        "Master body language during the exchange",
+        "Respect the arrival time for the interview",
+        "All of the above"
+      ],
+      "correct": "Master body language during the exchange"
+    },
+    {
+      "question": "Is it necessary to research questions asked in an interview that may be related to the position?",
+      "options": ["Yes", "No", "Neutral"],
+      "correct": "Yes"
+    },
+    {
+      "question": "Before going to an interview, is it necessary to research the host company?",
+      "options": ["Yes", "No", "Neutral"],
+      "correct": "Yes"
+    },
+    {
+      "question": "Do you think it is necessary to practice a similar situation before the interview?",
+      "options": ["Yes", "No", "Neutral"],
+      "correct": "Yes"
+    },
+    {
+      "question": "What is the purpose of a good presentation in an interview?",
+      "options": ["Sell yourself", "Impress", "Talk about yourself", "Tell your life story"],
+      "correct": "Sell yourself"
+    },
+    {
+      "question": "How many minutes does a good introduction last?",
+      "options": ["1 min", "2 min", "5 min", "10 min"],
+      "correct": "5 min"
+    },
+    {
+      "question": "What elements should be included in a presentation?",
+      "options": ["Name", "Experience", "Motivation", "All"],
+      "correct": "All"
+    },
+    {
+      "question": "Why should you avoid reciting a memorized text?",
+      "options": [
+        "It lacks naturalness",
+        "It's easier",
+        "Recruiters like it",
+        "No reason"
+      ],
+      "correct": "It lacks naturalness"
+    },
+    {
+      "question": "What is the secret to good oral communication?",
+      "options": ["Clarity", "Speed", "Using complicated words", "Talking a lot"],
+      "correct": "Clarity"
+    }
+  ]
+}
