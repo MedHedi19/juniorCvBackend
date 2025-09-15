@@ -1,5 +1,5 @@
 const UserProgress = require('../models/userProgress');
-const { getQuizByIndex, getAllQuizNames } = require('../utils/quizData');
+const { getQuizByIndex, getAllQuizNames, getOriginalQuizByIndex } = require('../utils/quizData');
 
 // Get all quizzes with user progress
 const getQuizzes = async (req, res) => {
@@ -63,8 +63,9 @@ const startQuiz = async (req, res) => {
     try {
         const { quizId } = req.params;
         const userId = req.user.id;
-        
-        const quiz = getQuizByIndex(parseInt(quizId));
+        const lang = req.query.lang || 'fr'; // Default to French
+
+        const quiz = getQuizByIndex(parseInt(quizId, 10), lang);
         if (!quiz) {
             return res.status(404).json({ message: 'Quiz not found' });
         }
@@ -75,7 +76,7 @@ const startQuiz = async (req, res) => {
             return res.status(400).json({ message: 'User progress not found' });
         }
 
-        if (parseInt(quizId) > userProgress.currentQuizIndex) {
+        if (parseInt(quizId, 10) > userProgress.currentQuizIndex) {
             return res.status(403).json({ message: 'Quiz is locked. Complete previous quizzes first.' });
         }
 
@@ -98,96 +99,121 @@ const startQuiz = async (req, res) => {
 // Submit answer for a question
 const submitAnswer = async (req, res) => {
     try {
-        const { quizId } = req.params;
-        const { questionIndex, selectedAnswer } = req.body;
+        const { quizId, questionIndex } = req.params;
+        const { answer } = req.body;
         const userId = req.user.id;
+        const lang = req.query.lang || 'fr';
 
-        const quiz = getQuizByIndex(parseInt(quizId));
+        const quiz = getOriginalQuizByIndex(parseInt(quizId, 10));
         if (!quiz) {
             return res.status(404).json({ message: 'Quiz not found' });
         }
 
-        if (questionIndex >= quiz.questions.length) {
-            return res.status(400).json({ message: 'Invalid question index' });
+        const question = quiz.questions[questionIndex];
+        if (!question) {
+            return res.status(404).json({ message: 'Question not found' });
         }
 
-        const currentQuestion = quiz.questions[questionIndex];
-        const isCorrect = currentQuestion.correct === selectedAnswer;
+        // Find the original French answer from the user's translated answer
+        const translatedQuiz = getQuizByIndex(parseInt(quizId, 10), lang);
+        const translatedQuestion = translatedQuiz.questions[questionIndex];
+        const optionIndex = translatedQuestion.options.indexOf(answer);
 
-        // Update user progress
-        let userProgress = await UserProgress.findOne({ userId });
+        if (optionIndex === -1) {
+            return res.status(400).json({ message: 'Invalid answer option' });
+        }
+
+        const originalAnswer = question.options[optionIndex].fr;
+        const isCorrect = originalAnswer === question.correct.fr;
+
+        // Get user progress
+        const userProgress = await UserProgress.findOne({ userId });
         if (!userProgress) {
             return res.status(400).json({ message: 'User progress not found' });
         }
 
-        // Find or create quiz progress
+        // Find the specific quiz progress
         let quizProgress = userProgress.quizProgress.find(p => p.quizName === quiz.name);
         if (!quizProgress) {
+            // Initialize if it doesn't exist (should not happen in normal flow)
             quizProgress = {
                 quizName: quiz.name,
                 completed: false,
                 score: 0,
-                totalQuestions: quiz.questions.length,
+                totalQuestions: quiz.totalQuestions,
                 percentage: 0,
                 answers: []
             };
             userProgress.quizProgress.push(quizProgress);
         }
 
-        // Update or add answer
-        const existingAnswerIndex = quizProgress.answers.findIndex(a => a.questionIndex === questionIndex);
-        if (existingAnswerIndex >= 0) {
-            quizProgress.answers[existingAnswerIndex] = {
-                questionIndex,
-                selectedAnswer,
-                isCorrect
-            };
+        // Check if answer for this question already exists
+        const existingAnswerIndex = quizProgress.answers.findIndex(a => a.questionIndex === parseInt(questionIndex, 10));
+        if (existingAnswerIndex !== -1) {
+            // Update existing answer
+            const wasCorrect = quizProgress.answers[existingAnswerIndex].isCorrect;
+            if (wasCorrect && !isCorrect) {
+                quizProgress.score -= 1;
+            } else if (!wasCorrect && isCorrect) {
+                quizProgress.score += 1;
+            }
+            quizProgress.answers[existingAnswerIndex].answer = originalAnswer;
+            quizProgress.answers[existingAnswerIndex].isCorrect = isCorrect;
         } else {
+            // Add new answer
+            if (isCorrect) {
+                quizProgress.score += 1;
+            }
             quizProgress.answers.push({
-                questionIndex,
-                selectedAnswer,
+                questionIndex: parseInt(questionIndex, 10),
+                question: question.question.fr,
+                answer: originalAnswer,
                 isCorrect
             });
         }
 
-        // Calculate current score
-        quizProgress.score = quizProgress.answers.filter(a => a.isCorrect).length;
-        quizProgress.percentage = Math.round((quizProgress.score / quiz.questions.length) * 100);
+        // Calculate percentage
+        quizProgress.percentage = (quizProgress.score / quiz.totalQuestions) * 100;
+
+        // Check if quiz is completed
+        const isQuizCompleted = quizProgress.answers.length === quiz.totalQuestions;
+        if (isQuizCompleted && !quizProgress.completed) {
+            quizProgress.completed = true;
+            quizProgress.completedAt = new Date();
+            // Unlock next quiz if this one is completed
+            if (userProgress.currentQuizIndex === parseInt(quizId, 10)) {
+                userProgress.currentQuizIndex += 1;
+            }
+        }
 
         await userProgress.save();
 
         // Prepare response
         const response = {
             isCorrect,
-            correctAnswer: currentQuestion.correct,
-            currentScore: quizProgress.score,
-            totalQuestions: quiz.questions.length
+            score: quizProgress.score,
+            totalQuestions: quiz.totalQuestions,
+            percentage: quizProgress.percentage,
+            completed: quizProgress.completed
         };
 
-        // Check if this is the last question
-        if (questionIndex === quiz.questions.length - 1) {
-            // Quiz completed
-            quizProgress.completed = true;
-            quizProgress.completedAt = new Date();
-            
-            // Unlock next quiz if this one is passed (you can set your own passing criteria)
-            if (userProgress.currentQuizIndex === parseInt(quizId)) {//quizProgress.percentage>50
-                userProgress.currentQuizIndex = Math.min(userProgress.currentQuizIndex + 1, 6); // Max 6 (0-based indexing)
-            }
-            
-            await userProgress.save();
-            
-            response.quizCompleted = true;
-            response.finalScore = quizProgress.score;
-            response.percentage = quizProgress.percentage;
-            response.passed = quizProgress.percentage >= 50;
-        } else {
-            // Return next question
-            const nextQuestion = quiz.questions[questionIndex + 1];
+        // If quiz is not completed, send next question
+        const nextQuestionIndex = parseInt(questionIndex, 10) + 1;
+        if (nextQuestionIndex < quiz.totalQuestions) {
+            const nextQuestion = getQuizByIndex(parseInt(quizId, 10), lang).questions[nextQuestionIndex];
             response.nextQuestion = {
-                questionIndex: questionIndex + 1,
+                questionIndex: nextQuestionIndex,
                 question: nextQuestion.question,
                 options: nextQuestion.options
+            };
+        } else {
+            // Send final results if quiz is completed
+            response.message = 'Quiz completed!';
+            response.finalResult = {
+                score: quizProgress.score,
+                totalQuestions: quiz.totalQuestions,
+                percentage: quizProgress.percentage,
+                answers: quizProgress.answers
             };
         }
 

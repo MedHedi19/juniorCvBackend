@@ -1,5 +1,5 @@
 const PersonalityTest = require('../models/personalityTest');
-const { getPersonalityTest } = require('../utils/quizData');
+const { getPersonalityTest, getOriginalPersonalityTest } = require('../utils/quizData');
 
 // Helper function to transform options object to array format
 const transformOptionsToArray = (optionsObj) => {
@@ -13,8 +13,9 @@ const transformOptionsToArray = (optionsObj) => {
 const startPersonalityTest = async (req, res) => {
     try {
         const userId = req.user.id;
+        const lang = req.query.lang || 'fr'; // Default to French
         
-        const test = getPersonalityTest();
+        const test = getPersonalityTest(lang);
         if (!test) {
             return res.status(404).json({ message: 'Personality test not found' });
         }
@@ -40,13 +41,17 @@ const submitPersonalityAnswer = async (req, res) => {
     try {
         const { questionIndex, selectedColor } = req.body;
         const userId = req.user.id;
+        const lang = req.query.lang || 'fr'; // Default to French
 
-        const test = getPersonalityTest();
-        if (!test) {
+        // Get both the translated and original test
+        const translatedTest = getPersonalityTest(lang);
+        const originalTest = getOriginalPersonalityTest();
+        
+        if (!translatedTest || !originalTest) {
             return res.status(404).json({ message: 'Personality test not found' });
         }
 
-        if (questionIndex >= test.questions.length) {
+        if (questionIndex >= translatedTest.questions.length) {
             return res.status(400).json({ message: 'Invalid question index' });
         }
 
@@ -95,7 +100,7 @@ const submitPersonalityAnswer = async (req, res) => {
         };
 
         // Check if this is the last question
-        if (questionIndex === test.questions.length - 1) {
+        if (questionIndex === translatedTest.questions.length - 1) {
             // Test completed
             personalityTest.completed = true;
             personalityTest.completedAt = new Date();
@@ -111,7 +116,7 @@ const submitPersonalityAnswer = async (req, res) => {
             response.dominantColor = personalityTest.dominantColor;
         } else {
             // Return next question
-            const nextQuestion = test.questions[questionIndex + 1];
+            const nextQuestion = translatedTest.questions[questionIndex + 1];
             response.nextQuestion = {
                 questionIndex: questionIndex + 1,
                 question: nextQuestion.question,
@@ -131,6 +136,7 @@ const submitPersonalityAnswer = async (req, res) => {
 const getPersonalityResult = async (req, res) => {
     try {
         const userId = req.user.id;
+        const lang = req.query.lang || 'fr'; // Default to French
 
         const personalityTest = await PersonalityTest.findOne({ userId });
         if (!personalityTest) {
@@ -157,6 +163,7 @@ const getPersonalityResult = async (req, res) => {
 const resetPersonalityTest = async (req, res) => {
     try {
         const userId = req.user.id;
+        const lang = req.query.lang || 'fr'; // Default to French
 
         const personalityTest = await PersonalityTest.findOne({ userId });
         if (!personalityTest) {

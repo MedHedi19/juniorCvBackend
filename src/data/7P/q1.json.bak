@@ -1,0 +1,79 @@
+{
+  " Paperasse": [
+    {
+      "question": "Pensez-vous qu’un stage peut être considéré comme une expérience professionnelle ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Non"
+    },
+    {
+      "question": "Dans un CV, l’ordre chronologique des dates mentionnées est :",
+      "options": ["Du plus ancien au plus récent", "Du plus récent au plus ancien", "Mixte"],
+      "correct": "Du plus récent au plus ancien"
+    },
+    {
+      "question": "Où pouvez-vous mentionner vos certifications obtenues ?",
+      "options": ["Formations académiques", "Formations complémentaires", "Compétences informatiques"],
+      "correct": "Formations complémentaires"
+    },
+    {
+      "question": "Pensez-vous qu’un seul CV peut être valide pour tous les postes ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Non"
+    },
+    {
+      "question": "Pour déclencher un entretien il faut :",
+      "options": ["Mentionner de faux diplômes, compétences..", "Être honnête et clair dans votre paperasse", "Neutre"],
+      "correct": "Être honnête et clair dans votre paperasse"
+    },
+    {
+      "question": "Pensez-vous que la lettre de motivation peut remplacer le CV ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Non"
+    },
+    {
+      "question": "Choisissez le bon ordre des sections suivantes d’une lettre de motivation :",
+      "options": ["Je me connais, je vous connais, rencontrons-nous", "Rencontrons-nous, je vous connais, je me connais", "Je vous connais, je me connais, rencontrons-nous"],
+      "correct": "Je me connais, je vous connais, rencontrons-nous"
+    },
+    {
+      "question": "Devez-vous mentionner des informations relatives à la société/l’entreprise (date de création, domaine d’activité..) dans une lettre de motivation ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Oui"
+    },
+    {
+      "question": "Faut-il mettre une photo dans une lettre de motivation ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Non"
+    },
+    {
+      "question": "Le CV et la lettre de motivation devront être envoyés en format :",
+      "options": ["PDF", "Word", "JPG"],
+      "correct": "PDF"
+    },
+    {
+      "question": "Quelle est la durée moyenne d'attention d'un recruteur sur un CV ?",
+      "options": ["10s", "20s", "30s", "1 min"],
+      "correct": "20s"
+    },
+    {
+      "question": "Quelle est la taille idéale d’un CV pour un débutant ?",
+      "options": ["1 page", "2 pages", "3 pages", "Pas de limite"],
+      "correct": "1 page"
+    },
+    {
+      "question": "Pourquoi faut-il éviter les fautes d’orthographe sur un CV ?",
+      "options": ["Sans importance", "Peut coûter un entretien", "Montre la créativité", "Rend le CV unique"],
+      "correct": "Peut coûter un entretien"
+    },
+    {
+      "question": "Pourquoi la mise en page du CV est-elle importante ?",
+      "options": ["Pour décorer", "Pour être lisible", "Pour suivre la mode", "Aucune importance"],
+      "correct": "Pour être lisible"
+    },
+    {
+      "question": "Quelle est l'erreur la plus courante dans une lettre de motivation ?",
+      "options": ["Répéter le CV", "Être trop long", "Oublier la signature", "Ne pas saluer"],
+      "correct": "Répéter le CV"
+    }
+  ]
+}

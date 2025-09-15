@@ -1,0 +1,294 @@
+{
+  "Test de personnalité": [
+    {
+      "question": {
+        "fr": "Quand vous démarrez un nouveau projet, vous préférez",
+        "en": "When starting a new project, you prefer to",
+        "ar": "عندما تبدأ مشروعًا جديدًا، تفضل"
+      },
+      "options": {
+        "R": {
+          "fr": "Aller droit au but et foncer",
+          "en": "Go straight to the point and take action",
+          "ar": "الذهاب مباشرة إلى الهدف والتصرف"
+        },
+        "J": {
+          "fr": "Imaginer toutes les idées possibles",
+          "en": "Imagine all possible ideas",
+          "ar": "تخيل جميع الأفكار الممكنة"
+        },
+        "B": {
+          "fr": "Organiser chaque étape avec précision",
+          "en": "Organize each step with precision",
+          "ar": "تنظيم كل خطوة بدقة"
+        },
+        "V": {
+          "fr": "Créer une ambiance d'entraide",
+          "en": "Create a supportive atmosphere",
+          "ar": "خلق جو من التعاون"
+        }
+      }
+    },
+    {
+      "question": {
+        "fr": "Face à une difficulté, votre premier réflexe est",
+        "en": "When facing a difficulty, your first instinct is to",
+        "ar": "عند مواجهة صعوبة، غريزتك الأولى هي"
+      },
+      "options": {
+        "R": {
+          "fr": "Trouver une solution rapidement",
+          "en": "Find a quick solution",
+          "ar": "إيجاد حل سريع"
+        },
+        "J": {
+          "fr": "En parler autour de vous pour dédramatiser",
+          "en": "Talk about it with others to defuse the situation",
+          "ar": "التحدث عنها مع الآخرين لتخفيف الموقف"
+        },
+        "B": {
+          "fr": "Analyser la situation calmement",
+          "en": "Analyze the situation calmly",
+          "ar": "تحليل الوضع بهدوء"
+        },
+        "V": {
+          "fr": "Chercher du soutien ou demander conseil",
+          "en": "Seek support or ask for advice",
+          "ar": "البحث عن الدعم أو طلب المشورة"
+        }
+      }
+    },
+    {
+      "question": {
+        "fr": "Lors d'un travail en groupe, vous aimez",
+        "en": "When working in a group, you like to",
+        "ar": "عند العمل في مجموعة، تحب أن"
+      },
+      "options": {
+        "R": {
+          "fr": "Prendre les devants et diriger",
+          "en": "Take the lead and direct",
+          "ar": "تأخذ المبادرة وتوجه"
+        },
+        "J": {
+          "fr": "Motiver les autres et créer du lien",
+          "en": "Motivate others and create connections",
+          "ar": "تحفيز الآخرين وخلق روابط"
+        },
+        "B": {
+          "fr": "Clarifier les règles et suivre le plan",
+          "en": "Clarify the rules and follow the plan",
+          "ar": "توضيح القواعد واتباع الخطة"
+        },
+        "V": {
+          "fr": "Assurer que tout le monde soit à l'aise",
+          "en": "Ensure everyone is comfortable",
+          "ar": "التأكد من أن الجميع مرتاح"
+        }
+      }
+    },
+    {
+      "question": {
+        "fr": "Pendant une discussion, vous avez tendance à",
+        "en": "During a discussion, you tend to",
+        "ar": "أثناء المناقشة، تميل إلى"
+      },
+      "options": {
+        "R": {
+          "fr": "Aller directement à l'essentiel",
+          "en": "Get straight to the point",
+          "ar": "الذهاب مباشرة إلى النقطة الأساسية"
+        },
+        "J": {
+          "fr": "Raconter des anecdotes et faire des blagues",
+          "en": "Tell anecdotes and make jokes",
+          "ar": "سرد القصص وإلقاء النكات"
+        },
+        "B": {
+          "fr": "Présenter des faits et des arguments logiques",
+          "en": "Present facts and logical arguments",
+          "ar": "تقديم الحقائق والحجج المنطقية"
+        },
+        "V": {
+          "fr": "Être attentif aux émotions des autres",
+          "en": "Be attentive to others' emotions",
+          "ar": "الانتباه لمشاعر الآخرين"
+        }
+      }
+    },
+    {
+      "question": {
+        "fr": "Au travail, ce qui vous motive le plus c'est",
+        "en": "At work, what motivates you most is",
+        "ar": "في العمل، ما يحفزك أكثر هو"
+      },
+      "options": {
+        "R": {
+          "fr": "Les défis et la compétition",
+          "en": "Challenges and competition",
+          "ar": "التحديات والمنافسة"
+        },
+        "J": {
+          "fr": "La reconnaissance et l'animation",
+          "en": "Recognition and creating excitement",
+          "ar": "التقدير وخلق الحماس"
+        },
+        "B": {
+          "fr": "L'exactitude et la maîtrise",
+          "en": "Accuracy and mastery",
+          "ar": "الدقة والإتقان"
+        },
+        "V": {
+          "fr": "La coopération et l'harmonie",
+          "en": "Cooperation and harmony",
+          "ar": "التعاون والانسجام"
+        }
+      }
+    },
+    {
+      "question": {
+        "fr": "Face à un changement important, vous",
+        "en": "Facing a significant change, you",
+        "ar": "عند مواجهة تغيير كبير، أنت"
+      },
+      "options": {
+        "R": {
+          "fr": "Vous adaptez rapidement et passez à l'action",
+          "en": "Adapt quickly and take action",
+          "ar": "تتكيف بسرعة وتتخذ إجراءات"
+        },
+        "J": {
+          "fr": "Voyez les opportunités et restez optimiste",
+          "en": "See opportunities and stay optimistic",
+          "ar": "ترى الفرص وتبقى متفائلًا"
+        },
+        "B": {
+          "fr": "Analysez les conséquences et planifiez",
+          "en": "Analyze consequences and plan",
+          "ar": "تحلل العواقب وتخطط"
+        },
+        "V": {
+          "fr": "Pensez à l'impact sur les personnes concernées",
+          "en": "Think about the impact on people involved",
+          "ar": "تفكر في التأثير على الأشخاص المعنيين"
+        }
+      }
+    },
+    {
+      "question": {
+        "fr": "Dans votre espace de travail, vous préférez",
+        "en": "In your workspace, you prefer",
+        "ar": "في مساحة عملك، تفضل"
+      },
+      "options": {
+        "R": {
+          "fr": "Un environnement dynamique et efficace",
+          "en": "A dynamic and efficient environment",
+          "ar": "بيئة ديناميكية وفعالة"
+        },
+        "J": {
+          "fr": "Un lieu convivial et stimulant",
+          "en": "A friendly and stimulating place",
+          "ar": "مكان ودي ومحفز"
+        },
+        "B": {
+          "fr": "Un espace ordonné et structuré",
+          "en": "An orderly and structured space",
+          "ar": "مساحة منظمة ومهيكلة"
+        },
+        "V": {
+          "fr": "Une atmosphère calme et harmonieuse",
+          "en": "A calm and harmonious atmosphere",
+          "ar": "جو هادئ ومتناغم"
+        }
+      }
+    },
+    {
+      "question": {
+        "fr": "Quand vous prenez une décision, vous vous basez sur",
+        "en": "When making a decision, you base it on",
+        "ar": "عند اتخاذ قرار، تستند إلى"
+      },
+      "options": {
+        "R": {
+          "fr": "Ce qui est efficace et donne des résultats",
+          "en": "What is effective and gives results",
+          "ar": "ما هو فعال ويعطي نتائج"
+        },
+        "J": {
+          "fr": "Ce qui est créatif et original",
+          "en": "What is creative and original",
+          "ar": "ما هو إبداعي وأصلي"
+        },
+        "B": {
+          "fr": "Ce qui est logique et cohérent",
+          "en": "What is logical and coherent",
+          "ar": "ما هو منطقي ومتماسك"
+        },
+        "V": {
+          "fr": "Ce qui est bénéfique pour tous",
+          "en": "What is beneficial for everyone",
+          "ar": "ما هو مفيد للجميع"
+        }
+      }
+    },
+    {
+      "question": {
+        "fr": "Ce qui vous stresse le plus c'est",
+        "en": "What stresses you the most is",
+        "ar": "ما يسبب لك أكبر قدر من التوتر هو"
+      },
+      "options": {
+        "R": {
+          "fr": "Perdre du temps ou être freiné",
+          "en": "Wasting time or being slowed down",
+          "ar": "إضاعة الوقت أو إبطائك"
+        },
+        "J": {
+          "fr": "L'ennui ou la routine",
+          "en": "Boredom or routine",
+          "ar": "الملل أو الروتين"
+        },
+        "B": {
+          "fr": "Le désordre ou l'imprécision",
+          "en": "Disorder or imprecision",
+          "ar": "الفوضى أو عدم الدقة"
+        },
+        "V": {
+          "fr": "Les conflits ou la pression",
+          "en": "Conflicts or pressure",
+          "ar": "النزاعات أو الضغط"
+        }
+      }
+    },
+    {
+      "question": {
+        "fr": "Votre plus grande qualité professionnelle est",
+        "en": "Your greatest professional quality is",
+        "ar": "أكبر صفة مهنية لديك هي"
+      },
+      "options": {
+        "R": {
+          "fr": "Votre capacité à obtenir des résultats",
+          "en": "Your ability to get results",
+          "ar": "قدرتك على تحقيق النتائج"
+        },
+        "J": {
+          "fr": "Votre créativité et votre enthousiasme",
+          "en": "Your creativity and enthusiasm",
+          "ar": "إبداعك وحماسك"
+        },
+        "B": {
+          "fr": "Votre rigueur et votre sens de l'organisation",
+          "en": "Your rigor and organizational sense",
+          "ar": "دقتك وحس التنظيم لديك"
+        },
+        "V": {
+          "fr": "Votre écoute et votre esprit d'équipe",
+          "en": "Your listening skills and team spirit",
+          "ar": "مهارات الاستماع وروح الفريق لديك"
+        }
+      }
+    }
+  ]
+}
