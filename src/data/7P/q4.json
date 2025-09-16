@@ -1,190 +1,108 @@
 {
   "Présentation": [
     {
-      "question": {
-        "fr": "A votre avis, quelle est la durée pour une bonne présentation de soi dans un entretien d’embauche ?",
-        "en": "In your opinion, what is the duration for a good self-presentation in a job interview?",
-        "ar": "في رأيك، ما هي المدة المناسبة لتقديم جيد للنفس في مقابلة عمل؟"
-      },
-      "options": [
-        { "fr": "15 minutes", "en": "15 minutes", "ar": "15 دقيقة" },
-        { "fr": "03 minutes", "en": "03 minutes", "ar": "03 دقائق" },
-        { "fr": "10 minutes", "en": "10 minutes", "ar": "10 دقائق" }
-      ],
-      "correct": { "fr": "03 minutes", "en": "03 minutes", "ar": "03 دقائق" }
+      "question": "A votre avis, quelle est la durée pour une bonne présentation de soi dans un entretien d’embauche ?",
+      "options": ["15 minutes", "03 minutes", "10 minutes"],
+      "correct": "03 minutes"
     },
     {
-      "question": {
-        "fr": "Lors d’une présentation, il faut :",
-        "en": "During a presentation, you must:",
-        "ar": "أثناء العرض التقديمي، يجب عليك:"
-      },
+      "question": "Lors d’une présentation, il faut :",
       "options": [
-        { "fr": "Réciter les informations dans le CV", "en": "Recite the information in the resume", "ar": "تلاوة المعلومات الموجودة في السيرة الذاتية" },
-        { "fr": "Parler de soi ainsi que de son parcours", "en": "Talk about yourself and your background", "ar": "تحدث عن نفسك وعن خلفيتك" },
-        { "fr": "Neutre", "en": "Neutral", "ar": "محايد" }
+        "Réciter les informations dans le CV",
+        "Parler de soi ainsi que de son parcours",
+        "Neutre"
       ],
-      "correct": { "fr": "Parler de soi ainsi que de son parcours", "en": "Talk about yourself and your background", "ar": "تحدث عن نفسك وعن خلفيتك" }
+      "correct": "Parler de soi ainsi que de son parcours"
     },
     {
-      "question": {
-        "fr": "Une présentation doit comprendre :",
-        "en": "A presentation must include:",
-        "ar": "يجب أن يتضمن العرض التقديمي:"
-      },
+      "question": "Une présentation doit comprendre :",
       "options": [
-        { "fr": "Votre nom et situation actuelle", "en": "Your name and current situation", "ar": "اسمك وحالتك الحالية" },
-        { "fr": "Votre parcours académique", "en": "Your academic background", "ar": "خلفيتك الأكاديمية" },
-        { "fr": "Vos Stages et/ou expériences professionnelles", "en": "Your internships and/or professional experiences", "ar": "تدريباتك و/أو خبراتك المهنية" }
+        "Votre nom et situation actuelle",
+        "Votre parcours académique",
+        "Vos Stages et/ou expériences professionnelles"
       ],
-      "correct": { "fr": "Vos Stages et/ou expériences professionnelles", "en": "Your internships and/or professional experiences", "ar": "تدريباتك و/أو خبراتك المهنية" }
+      "correct": "Vos Stages et/ou expériences professionnelles"
     },
     {
-      "question": {
-        "fr": "Pensez-vous que dans une présentation, il faut :",
-        "en": "Do you think that in a presentation, you should:",
-        "ar": "هل تعتقد أنه في العرض التقديمي، يجب عليك:"
-      },
+      "question": "Pensez-vous que dans une présentation, il faut :",
       "options": [
-        { "fr": "Citer tous les stages vécus", "en": "Mention all the internships you have done", "ar": "اذكر جميع التدريبات التي قمت بها" },
-        { "fr": "Citer les stages qui sont en relation avec le poste recherché", "en": "Mention the internships that are related to the desired position", "ar": "اذكر التدريبات المتعلقة بالوظيفة المطلوبة" },
-        { "fr": "Neutre", "en": "Neutral", "ar": "محايد" }
+        "Citer tous les stages vécus",
+        "Citer les stages qui sont en relation avec le poste recherché",
+        "Neutre"
       ],
-      "correct": { "fr": "Citer les stages qui sont en relation avec le poste recherché", "en": "Mention the internships that are related to the desired position", "ar": "اذكر التدريبات المتعلقة بالوظيفة المطلوبة" }
+      "correct": "Citer les stages qui sont en relation avec le poste recherché"
     },
     {
-      "question": {
-        "fr": "A votre avis, quelles sont les astuces nécessaires pour réussir une présentation lors d’un entretien d’embauche ?",
-        "en": "In your opinion, what are the necessary tips for a successful presentation during a job interview?",
-        "ar": "في رأيك، ما هي النصائح اللازمة لتقديم عرض تقديمي ناجح أثناء مقابلة العمل؟"
-      },
+      "question": "A votre avis, quelles sont les astuces nécessaires pour réussir une présentation lors d’un entretien d’embauche ?",
       "options": [
-        { "fr": "La confiance en soi et la connaissance de soi", "en": "Self-confidence and self-knowledge", "ar": "الثقة بالنفس ومعرفة الذات" },
-        { "fr": "L’énergie interne et la gestion du stress", "en": "Internal energy and stress management", "ar": "الطاقة الداخلية وإدارة الإجهاد" },
-        { "fr": "Toutes les réponses précédentes", "en": "All of the above answers", "ar": "كل الإجابات المذكورة أعلاه" }
+        "La confiance en soi et la connaissance de soi",
+        "L’énergie interne et la gestion du stress",
+        "Toutes les réponses précédentes"
       ],
-      "correct": { "fr": "Toutes les réponses précédentes", "en": "All of the above answers", "ar": "كل الإجابات المذكورة أعلاه" }
+      "correct": "Toutes les réponses précédentes"
     },
     {
-      "question": {
-        "fr": "Comment peut-on diminuer le taux du stress au cours d’une présentation ?",
-        "en": "How can we reduce the stress level during a presentation?",
-        "ar": "كيف يمكننا تقليل مستوى التوتر أثناء العرض التقديمي؟"
-      },
+      "question": "Comment peut-on diminuer le taux du stress au cours d’une présentation ?",
       "options": [
-        { "fr": "Faire une structure du discours", "en": "Structure the speech", "ar": "هيكلة الخطاب" },
-        { "fr": "Etre clair, net et précis lors de la présentation", "en": "Be clear, concise, and precise during the presentation", "ar": "كن واضحًا وموجزًا ودقيقًا أثناء العرض التقديمي" },
-        { "fr": "Se Concentrer sur le mouvement des mains", "en": "Focus on hand movement", "ar": "التركيز على حركة اليد" }
+        "Faire une structure du discours",
+        "Etre clair, net et précis lors de la présentation",
+        "Se Concentrer sur le mouvement des mains"
       ],
-      "correct": { "fr": "Faire une structure du discours", "en": "Structure the speech", "ar": "هيكلة الخطاب" }
+      "correct": "Faire une structure du discours"
     },
     {
-      "question": {
-        "fr": "Pour avoir une bonne impression en entretien, il faut :",
-        "en": "To make a good impression in an interview, you must:",
-        "ar": "لإعطاء انطباع جيد في المقابلة، يجب عليك:"
-      },
+      "question": "Pour avoir une bonne impression en entretien, il faut :",
       "options": [
-        { "fr": "Maîtriser le langage corporel durant l’échange", "en": "Master body language during the exchange", "ar": "إتقان لغة الجسد أثناء التبادل" },
-        { "fr": "Respecter l’heure d’arrivée à l'entretien", "en": "Respect the arrival time for the interview", "ar": "احترام وقت الوصول للمقابلة" },
-        { "fr": "Toutes les réponses précédentes", "en": "All of the above answers", "ar": "كل الإجابات المذكورة أعلاه" }
+        "Maîtriser le langage corporel durant l’échange",
+        "Respecter l’heure d’arrivée à l'entretien",
+        "Toutes les réponses précédentes"
       ],
-      "correct": { "fr": "Maîtriser le langage corporel durant l’échange", "en": "Master body language during the exchange", "ar": "إتقان لغة الجسد أثناء التبادل" }
+      "correct": "Maîtriser le langage corporel durant l’échange"
     },
     {
-      "question": {
-        "fr": "Est-il nécessaire de faire une recherche à propos des questions posées dans un entretien qui peuvent être en relation avec la poste ?",
-        "en": "Is it necessary to do research on the questions asked in an interview that may be related to the position?",
-        "ar": "هل من الضروري إجراء بحث حول الأسئلة المطروحة في المقابلة والتي قد تكون مرتبطة بالوظيفة؟"
-      },
-      "options": [
-        { "fr": "Oui", "en": "Yes", "ar": "نعم" },
-        { "fr": "Non", "en": "No", "ar": "لا" },
-        { "fr": "Neutre", "en": "Neutral", "ar": "محايد" }
-      ],
-      "correct": { "fr": "Oui", "en": "Yes", "ar": "نعم" }
+      "question": "Est-il nécessaire de faire une recherche à propos des questions posées dans un entretien qui peuvent être en relation avec la poste ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Oui"
     },
     {
-      "question": {
-        "fr": "Avant de passer un entretien, est-il nécessaire de faire une recherche sur l’entreprise d'accueil ?",
-        "en": "Before going to an interview, is it necessary to do research on the host company?",
-        "ar": "قبل الذهاب إلى المقابلة، هل من الضروري إجراء بحث عن الشركة المضيفة؟"
-      },
-      "options": [
-        { "fr": "Oui", "en": "Yes", "ar": "نعم" },
-        { "fr": "Non", "en": "No", "ar": "لا" },
-        { "fr": "Neutre", "en": "Neutral", "ar": "محايد" }
-      ],
-      "correct": { "fr": "Oui", "en": "Yes", "ar": "نعم" }
+      "question": "Avant de passer un entretien, est-il nécessaire de faire une recherche sur l’entreprise d'accueil ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Oui"
     },
     {
-      "question": {
-        "fr": "Pensez-vous qu’il est nécessaire de s’entraîner à une situation similaire avant l’entretien ?",
-        "en": "Do you think it is necessary to practice a similar situation before the interview?",
-        "ar": "هل تعتقد أنه من الضروري التدرب على موقف مماثل قبل المقابلة؟"
-      },
-      "options": [
-        { "fr": "Oui", "en": "Yes", "ar": "نعم" },
-        { "fr": "Non", "en": "No", "ar": "لا" },
-        { "fr": "Neutre", "en": "Neutral", "ar": "محايد" }
-      ],
-      "correct": { "fr": "Oui", "en": "Yes", "ar": "نعم" }
+      "question": "Pensez-vous qu’il est nécessaire de s’entraîner à une situation similaire avant l’entretien ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Oui"
     },
     {
-      "question": {
-        "fr": "Quel est le but d’une bonne présentation en entretien ?",
-        "en": "What is the purpose of a good presentation in an interview?",
-        "ar": "ما هو الغرض من العرض التقديمي الجيد في المقابلة؟"
-      },
-      "options": [
-        { "fr": "Se vendre", "en": "To sell yourself", "ar": "لبيع نفسك" },
-        { "fr": "Impressionner", "en": "To impress", "ar": "لإثارة الإعجاب" },
-        { "fr": "Parler de soi", "en": "To talk about yourself", "ar": "للحديث عن نفسك" },
-        { "fr": "Raconter sa vie", "en": "To tell your life story", "ar": "لتروي قصة حياتك" }
-      ],
-      "correct": { "fr": "Se vendre", "en": "To sell yourself", "ar": "لبيع نفسك" }
+      "question": "Quel est le but d’une bonne présentation en entretien ?",
+      "options": ["Se vendre", "Impressionner", "Parler de soi", "Raconter sa vie"],
+      "correct": "Se vendre"
     },
     {
-      "question": {
-        "fr": "Combien de minutes dure une bonne introduction ?",
-        "en": "How many minutes does a good introduction last?",
-        "ar": "كم دقيقة يستغرق المقدمة الجيدة؟"
-      },
-      "options": [
-        { "fr": "1 min", "en": "1 min", "ar": "1 دقيقة" },
-        { "fr": "2 min", "en": "2 min", "ar": "2 دقيقة" },
-        { "fr": "5 min", "en": "5 min", "ar": "5 دقائق" },
-        { "fr": "10 min", "en": "10 min", "ar": "10 دقائق" }
-      ],
-      "correct": { "fr": "5 min", "en": "5 min", "ar": "5 دقائق" }
+      "question": "Combien de minutes dure une bonne introduction ?",
+      "options": ["1 min", "2 min", "5 min", "10 min"],
+      "correct": "5 min"
     },
     {
-      "question": {
-        "fr": "Quels éléments doivent figurer dans une présentation ?",
-        "en": "What elements should be included in a presentation?",
-        "ar": "ما هي العناصر التي يجب تضمينها في العرض التقديمي؟"
-      },
-      "options": [
-        { "fr": "Nom", "en": "Name", "ar": "الاسم" },
-        { "fr": "Expérience", "en": "Experience", "ar": "الخبرة" },
-        { "fr": "Motivation", "en": "Motivation", "ar": "الدافع" },
-        { "fr": "Tous", "en": "All", "ar": "الكل" }
-      ],
-      "correct": { "fr": "Tous", "en": "All", "ar": "الكل" }
+      "question": "Quels éléments doivent figurer dans une présentation ?",
+      "options": ["Nom", "Expérience", "Motivation", "Tous"],
+      "correct": "Tous"
     },
     {
-      "question": {
-        "fr": "Pourquoi faut-il éviter de réciter un texte appris ?",
-        "en": "Why should you avoid reciting a learned text?",
-        "ar": "لماذا يجب تجنب تلاوة نص محفوظ؟"
-      },
+      "question": "Pourquoi faut-il éviter de réciter un texte appris ?",
       "options": [
-        { "fr": "Cela manque de naturel", "en": "It lacks naturalness", "ar": "يفتقر إلى الطبيعية" },
-        { "fr": "C’est plus facile", "en": "It's easier", "ar": "إنه أسهل" },
-        { "fr": "Les recruteurs aiment", "en": "Recruiters like it", "ar": "يحب مسؤولو التوظيف ذلك" },
-        { "fr": "Aucune raison", "en": "No reason", "ar": "لا يوجد سبب" }
+        "Cela manque de naturel",
+        "C’est plus facile",
+        "Les recruteurs aiment",
+        "Aucune raison"
       ],
-      "correct": { "fr": "Cela manque de naturel", "en": "It lacks naturalness", "ar": "يفتقر إلى الطبيعية" }
+      "correct": "Cela manque de naturel"
+    },
+    {
+      "question": "Quel est le secret d'une bonne communication orale ?",
+      "options": ["Clarté", "Vitesse", "Utiliser des mots compliqués", "Parler beaucoup"],
+      "correct": "Clarté"
     }
   ]
 }

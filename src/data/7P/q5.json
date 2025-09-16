@@ -1,176 +1,113 @@
 {
   "Physique": [
     {
-      "question": {
-        "fr": "Quelle est la durée pour un recruteur de construire une première impression selon votre apparence ?",
-        "en": "How long does it take for a recruiter to form a first impression based on your appearance?",
-        "ar": "كم من الوقت يستغرق مسؤول التوظيف لتكوين انطباع أول بناءً على مظهرك؟"
-      },
-      "options": [
-        { "fr": "5 minutes", "en": "5 minutes", "ar": "5 دقائق" },
-        { "fr": "2 minutes", "en": "2 minutes", "ar": "دقيقتان" },
-        { "fr": "30 secondes", "en": "30 seconds", "ar": "30 ثانية" }
-      ],
-      "correct": { "fr": "30 secondes", "en": "30 seconds", "ar": "30 ثانية" }
+      "question": "Quelle est la durée pour un recruteur de construire une première impression selon votre apparence ?",
+      "options": ["5 minutes", "2 minutes", "30 secondes"],
+      "correct": "30 secondes"
     },
     {
-      "question": {
-        "fr": "Pensez vous que l’apparence physique d’un candidat peut être un facteur de discrimination ?",
-        "en": "Do you think a candidate's physical appearance can be a factor of discrimination?",
-        "ar": "هل تعتقد أن المظهر الجسدي للمرشح يمكن أن يكون عاملاً للتمييز؟"
-      },
-      "options": [
-        { "fr": "Oui", "en": "Yes", "ar": "نعم" },
-        { "fr": "Non", "en": "No", "ar": "لا" },
-        { "fr": "Neutre", "en": "Neutral", "ar": "محايد" }
-      ],
-      "correct": { "fr": "Oui", "en": "Yes", "ar": "نعم" }
+      "question": "Pensez vous que l’apparence physique d’un candidat peut être un facteur de discrimination ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Oui"
     },
     {
-      "question": {
-        "fr": "Est ce que votre apparence peut refléter votre personnalité ?",
-        "en": "Can your appearance reflect your personality?",
-        "ar": "هل يمكن لمظهرك أن يعكس شخصيتك؟"
-      },
-      "options": [
-        { "fr": "Oui", "en": "Yes", "ar": "نعم" },
-        { "fr": "Non", "en": "No", "ar": "لا" },
-        { "fr": "Neutre", "en": "Neutral", "ar": "محايد" }
-      ],
-      "correct": { "fr": "Oui", "en": "Yes", "ar": "نعم" }
+      "question": "Est ce que votre apparence peut refléter votre personnalité ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Oui"
     },
     {
-      "question": {
-        "fr": "Pensez vous qu’une tenue appropriée est :",
-        "en": "Do you think an appropriate outfit is:",
-        "ar": "هل تعتقد أن الزي المناسب هو:"
-      },
+      "question": "Pensez vous qu’une tenue appropriée est :",
       "options": [
-        { "fr": "Une tenue à la mode colorées avec des accessoires", "en": "A fashionable and colorful outfit with accessories", "ar": "زي عصري وملون مع إكسسوارات" },
-        { "fr": "Une tenue sobre et propre", "en": "A sober and clean outfit", "ar": "زي بسيط ونظيف" },
-        { "fr": "Neutre", "en": "Neutral", "ar": "محايد" }
+        "Une tenue à la mode colorées avec des accessoires",
+        "Une tenue sobre et propre",
+        "Neutre"
       ],
-      "correct": { "fr": "Une tenue sobre et propre", "en": "A sober and clean outfit", "ar": "زي بسيط ونظيف" }
+      "correct": "Une tenue sobre et propre"
     },
     {
-      "question": {
-        "fr": "Même si vous êtes stagiaire :",
-        "en": "Even if you are an intern:",
-        "ar": "حتى لو كنت متدربًا:"
-      },
+      "question": "Même si vous êtes stagiaire :",
       "options": [
-        { "fr": "Le respect de la tenue est obligatoire", "en": "Respect for the dress code is mandatory", "ar": "احترام الزي إلزامي" },
-        { "fr": "Le respect de la tenue est facultatif", "en": "Respect for the dress code is optional", "ar": "احترام الزي اختياري" },
-        { "fr": "Neutre", "en": "Neutral", "ar": "محايد" }
+        "Le respect de la tenue est obligatoire",
+        "Le respect de la tenue est facultatif",
+        "Neutre"
       ],
-      "correct": { "fr": "Le respect de la tenue est obligatoire", "en": "Respect for the dress code is mandatory", "ar": "احترام الزي إلزامي" }
+      "correct": "Le respect de la tenue est obligatoire"
     },
     {
-      "question": {
-        "fr": "A votre avis, le gestuel :",
-        "en": "In your opinion, gestures:",
-        "ar": "في رأيك، الإيماءات:"
-      },
+      "question": "A votre avis, le gestuel :",
       "options": [
-        { "fr": "A un impact direct sur votre image", "en": "Have a direct impact on your image", "ar": "لها تأثير مباشر على صورتك" },
-        { "fr": "N’a aucun impact sur votre image", "en": "Have no impact on your image", "ar": "ليس لها أي تأثير على صورتك" },
-        { "fr": "Neutre", "en": "Neutral", "ar": "محايد" }
+        "A un impact direct sur votre image",
+        "N’a aucun impact sur votre image",
+        "Neutre"
       ],
-      "correct": { "fr": "A un impact direct sur votre image", "en": "Have a direct impact on your image", "ar": "لها تأثير مباشر على صورتك" }
+      "correct": "A un impact direct sur votre image"
     },
     {
-      "question": {
-        "fr": "Quels sont les trucs que vous pouvez faire sous stress et qui peuvent agir sur votre apparence ?",
-        "en": "What are the things you can do under stress that can affect your appearance?",
-        "ar": "ما هي الأشياء التي يمكنك القيام بها تحت الضغط والتي يمكن أن تؤثر على مظهرك؟"
-      },
+      "question": "Quels sont les trucs que vous pouvez faire sous stress et qui peuvent agir sur votre apparence ?",
       "options": [
-        { "fr": "Parler les yeux dans les yeux, montrer vos mains, maîtriser votre voix.", "en": "Speak eye to eye, show your hands, control your voice.", "ar": "تحدث عينًا لعين، أظهر يديك، تحكم في صوتك." },
-        { "fr": "Passer la main dans les cheveux, se frotter les mains, se mordre la lèvre", "en": "Run your hand through your hair, rub your hands, bite your lip", "ar": "مرر يدك في شعرك، افرك يديك، عض شفتك" },
-        { "fr": "Neutre", "en": "Neutral", "ar": "محايد" }
+        "Parler les yeux dans les yeux, montrer vos mains, maîtriser votre voix.",
+        "Passer la main dans les cheveux, se frotter les mains, se mordre la lèvre",
+        "Neutre"
       ],
-      "correct": { "fr": "Passer la main dans les cheveux, se frotter les mains, se mordre la lèvre", "en": "Run your hand through your hair, rub your hands, bite your lip", "ar": "مرر يدك في شعرك، افرك يديك، عض شفتك" }
+      "correct": "Passer la main dans les cheveux, se frotter les mains, se mordre la lèvre"
     },
     {
-      "question": {
-        "fr": "Le recruteur pense à un candidat souriant et sociable :",
-        "en": "The recruiter thinks of a smiling and sociable candidate:",
-        "ar": "يفكر مسؤول التوظيف في مرشح مبتسم واجتماعي:"
-      },
+      "question": "Le recruteur pense à un candidat souriant et sociable :",
       "options": [
-        { "fr": "Quelqu’un qui peut s’intégrer très rapidement dans une équipe de travail", "en": "Someone who can integrate very quickly into a work team", "ar": "شخص يمكنه الاندماج بسرعة كبيرة في فريق عمل" },
-        { "fr": "Quelqu’un qui n’est pas sérieux", "en": "Someone who is not serious", "ar": "شخص غير جاد" },
-        { "fr": "Neutre", "en": "Neutral", "ar": "محايد" }
+        "Quelqu’un qui peut s’intégrer très rapidement dans une équipe de travail",
+        "Quelqu’un qui n’est pas sérieux",
+        "Neutre"
       ],
-      "correct": { "fr": "Quelqu’un qui peut s’intégrer très rapidement dans une équipe de travail", "en": "Someone who can integrate very quickly into a work team", "ar": "شخص يمكنه الاندماج بسرعة كبيرة في فريق عمل" }
+      "correct": "Quelqu’un qui peut s’intégrer très rapidement dans une équipe de travail"
     },
     {
-      "question": {
-        "fr": "Pourquoi le recruteur s’intéresse à l’apparence d’un candidat ?",
-        "en": "Why is the recruiter interested in a candidate's appearance?",
-        "ar": "لماذا يهتم مسؤول التوظيف بمظهر المرشح؟"
-      },
+      "question": "Pourquoi le recruteur s’intéresse à l’apparence d’un candidat ?",
       "options": [
-        { "fr": "Parce qu’il représente l’image de l’entreprise au futur", "en": "Because he represents the company's image in the future", "ar": "لأنه يمثل صورة الشركة في المستقبل" },
-        { "fr": "Parce qu’il cherche un joli profil", "en": "Because he is looking for a nice profile", "ar": "لأنه يبحث عن ملف شخصي جميل" },
-        { "fr": "Parce qu’il cherche un candidat branché et à la mode", "en": "Because he is looking for a trendy and fashionable candidate", "ar": "لأنه يبحث عن مرشح عصري وعصري" }
+        "Parce qu’il représente l’image de l’entreprise au futur",
+        "Parce qu’il cherche un joli profil",
+        "Parce qu’il cherche un candidat branché et à la mode"
       ],
-      "correct": { "fr": "Parce qu’il représente l’image de l’entreprise au futur", "en": "Because he represents the company's image in the future", "ar": "لأنه يمثل صورة الشركة في المستقبل" }
+      "correct": "Parce qu’il représente l’image de l’entreprise au futur"
     },
     {
-      "question": {
-        "fr": "La tenue vestimentaire varie-t-elle d’un poste à un autre ?",
-        "en": "Does the dress code vary from one position to another?",
-        "ar": "هل يختلف الزي من منصب إلى آخر؟"
-      },
-      "options": [
-        { "fr": "Non", "en": "No", "ar": "لا" },
-        { "fr": "Oui", "en": "Yes", "ar": "نعم" },
-        { "fr": "Parfois", "en": "Sometimes", "ar": "أحيانا" }
-      ],
-      "correct": { "fr": "Oui", "en": "Yes", "ar": "نعم" }
+      "question": "La tenue vestimentaire varie-t-elle d’un poste à un autre ?",
+      "options": ["Non", "Oui", "Parfois"],
+      "correct": "Oui"
     },
     {
-      "question": {
-        "fr": "Pourquoi faut-il soigner son apparence ?",
-        "en": "Why should you take care of your appearance?",
-        "ar": "لماذا يجب أن تعتني بمظهرك؟"
-      },
+      "question": "Pourquoi faut-il soigner son apparence ?",
       "options": [
-        { "fr": "Pour séduire", "en": "To seduce", "ar": "للإغواء" },
-        { "fr": "Pour faire bonne impression", "en": "To make a good impression", "ar": "لإعطاء انطباع جيد" },
-        { "fr": "Par obligation", "en": "By obligation", "ar": "بالإلزام" },
-        { "fr": "Aucune importance", "en": "No importance", "ar": "لا أهمية" }
+        "Pour séduire",
+        "Pour faire bonne impression",
+        "Par obligation",
+        "Aucune importance"
       ],
-      "correct": { "fr": "Pour faire bonne impression", "en": "To make a good impression", "ar": "لإعطاء انطباع جيد" }
+      "correct": "Pour faire bonne impression"
     },
     {
-      "question": {
-        "fr": "Quel vêtement est déconseillé en entretien ?",
-        "en": "What clothing is not recommended in an interview?",
-        "ar": "ما هي الملابس التي لا ينصح بها في المقابلة؟"
-      },
-      "options": [
-        { "fr": "Jean", "en": "Jeans", "ar": "جينز" },
-        { "fr": "Costume", "en": "Suit", "ar": "بدلة" },
-        { "fr": "Chemise", "en": "Shirt", "ar": "قميص" },
-        { "fr": "Aucun", "en": "None", "ar": "لا شيء" }
-      ],
-      "correct": { "fr": "Jean", "en": "Jeans", "ar": "جينز" }
+      "question": "Quel vêtement est déconseillé en entretien ?",
+      "options": ["Jean", "Costume", "Chemise", "Aucun"],
+      "correct": "Jean"
     },
     {
-      "question": {
-        "fr": "Quel est l’impact d’un sourire en entretien ?",
-        "en": "What is the impact of a smile in an interview?",
-        "ar": "ما هو تأثير الابتسامة في المقابلة؟"
-      },
+      "question": "Quel est l’impact d’un sourire en entretien ?",
       "options": [
-        { "fr": "Aucun", "en": "None", "ar": "لا شيء" },
-        { "fr": "Crée du lien", "en": "Creates a bond", "ar": "يخلق رابطًا" },
-        { "fr": "Trop informel", "en": "Too informal", "ar": "غير رسمي للغاية" },
-        { "fr": "Inutile", "en": "Useless", "ar": "عديم الفائدة" }
+        "Aucun",
+        "Crée du lien",
+        "Trop informel",
+        "Inutile"
       ],
-      "correct": { "fr": "Crée du lien", "en": "Creates a bond", "ar": "يخلق رابطًا" }
+      "correct": "Crée du lien"
+    },
+    {
+      "question": "Quelle couleur est préférable pour un entretien ?",
+      "options": ["Noir", "Fluo", "Multicolore", "Transparent"],
+      "correct": "Noir"
+    },
+    {
+      "question": "Quel est le premier élément observé par un recruteur ?",
+      "options": ["Le regard", "La poignée de main", "Les chaussures", "La posture"],
+      "correct": "Le regard"
     }
   ]
 }

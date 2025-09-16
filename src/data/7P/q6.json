@@ -1,204 +1,91 @@
 {
   "Psychologique": [
     {
-      "question": {
-        "fr": "Un entretien exige t-il une préparation psychologique ?",
-        "en": "Does an interview require psychological preparation?",
-        "ar": "هل تتطلب المقابلة استعدادًا نفسيًا؟"
-      },
-      "options": [
-        { "fr": "Oui", "en": "Yes", "ar": "نعم" },
-        { "fr": "Non", "en": "No", "ar": "لا" },
-        { "fr": "Pas toujours", "en": "Not always", "ar": "ليس دائما" }
-      ],
-      "correct": { "fr": "Oui", "en": "Yes", "ar": "نعم" }
+      "question": "Un entretien exige t-il une préparation psychologique ?",
+      "options": ["Oui", "Non", "Pas toujours"],
+      "correct": "Oui"
     },
     {
-      "question": {
-        "fr": "La psychologie avant un entretien consiste à :",
-        "en": "The psychology before an interview consists of:",
-        "ar": "علم النفس قبل المقابلة يتكون من:"
-      },
+      "question": "La psychologie avant un entretien consiste à :",
       "options": [
-        { "fr": "Savoir comment gérer vos émotions", "en": "Knowing how to manage your emotions", "ar": "معرفة كيفية إدارة عواطفك" },
-        { "fr": "Porter une tenue appropriée", "en": "Wearing an appropriate outfit", "ar": "ارتداء زي مناسب" },
-        { "fr": "Préparer votre candidature", "en": "Preparing your application", "ar": "تحضير طلبك" }
+        "Savoir comment gérer vos émotions",
+        "Porter une tenue appropriée",
+        "Préparer votre candidature"
       ],
-      "correct": { "fr": "Savoir comment gérer vos émotions", "en": "Knowing how to manage your emotions", "ar": "معرفة كيفية إدارة عواطفك" }
+      "correct": "Savoir comment gérer vos émotions"
     },
     {
-      "question": {
-        "fr": "Quel est le facteur principal qui peut agir sur votre comportement lors d’un entretien :",
-        "en": "What is the main factor that can affect your behavior during an interview:",
-        "ar": "ما هو العامل الرئيسي الذي يمكن أن يؤثر على سلوكك أثناء المقابلة:"
-      },
-      "options": [
-        { "fr": "L’heure d’entretien", "en": "The interview time", "ar": "وقت المقابلة" },
-        { "fr": "Le stress", "en": "Stress", "ar": "الإجهاد" },
-        { "fr": "Le poste en question", "en": "The position in question", "ar": "الوظيفة المعنية" }
-      ],
-      "correct": { "fr": "Le stress", "en": "Stress", "ar": "الإجهاد" }
+      "question": "Quel est le facteur principal qui peut agir sur votre comportement lors d’un entretien :",
+      "options": ["L’heure d’entretien", "Le stress", "Le poste en question"],
+      "correct": "Le stress"
     },
     {
-      "question": {
-        "fr": "Un candidat avant un entretien se trouve dans une situation stressante, quelles sont ses causes :",
-        "en": "A candidate before an interview is in a stressful situation, what are its causes:",
-        "ar": "المرشح قبل المقابلة يكون في موقف مرهق، ما هي أسبابه:"
-      },
-      "options": [
-        { "fr": "La peur", "en": "Fear", "ar": "الخوف" },
-        { "fr": "Pensées négatives", "en": "Negative thoughts", "ar": "الأفكار السلبية" },
-        { "fr": "Toutes les réponses précédentes", "en": "All of the above answers", "ar": "كل الإجابات المذكورة أعلاه" }
-      ],
-      "correct": { "fr": "Toutes les réponses précédentes", "en": "All of the above answers", "ar": "كل الإجابات المذكورة أعلاه" }
+      "question": "Un candidat avant un entretien se trouve dans une situation stressante, quelles sont ses causes :",
+      "options": ["La peur", "Pensées négatives", "Toutes les réponses précédentes"],
+      "correct": "Toutes les réponses précédentes"
     },
     {
-      "question": {
-        "fr": "Comment pouvez-vous sortir de cette situation ?",
-        "en": "How can you get out of this situation?",
-        "ar": "كيف يمكنك الخروج من هذا الموقف؟"
-      },
+      "question": "Comment pouvez-vous sortir de cette situation ?",
       "options": [
-        { "fr": "Analyser les sources du stress", "en": "Analyze the sources of stress", "ar": "تحليل مصادر الإجهاد" },
-        { "fr": "Améliorer votre respiration, rester concentré et aérer l’esprit", "en": "Improve your breathing, stay focused, and clear your mind", "ar": "تحسين تنفسك، والبقاء مركزًا، وتصفية ذهنك" },
-        { "fr": "Toutes les réponses précédentes", "en": "All of the above answers", "ar": "كل الإجابات المذكورة أعلاه" }
+        "Analyser les sources du stress",
+        "Améliorer votre respiration, rester concentré et aérer l’esprit",
+        "Toutes les réponses précédentes"
       ],
-      "correct": { "fr": "Analyser les sources du stress", "en": "Analyze the sources of stress", "ar": "تحليل مصادر الإجهاد" }
+      "correct": "Analyser les sources du stress"
     },
     {
-      "question": {
-        "fr": "Pensez vous qu’une simulation d’un entretien avec un ami ou devant un miroir soit nécessaire ?",
-        "en": "Do you think that a simulation of an interview with a friend or in front of a mirror is necessary?",
-        "ar": "هل تعتقد أن محاكاة مقابلة مع صديق أو أمام المرآة ضرورية؟"
-      },
-      "options": [
-        { "fr": "Oui", "en": "Yes", "ar": "نعم" },
-        { "fr": "Non", "en": "No", "ar": "لا" },
-        { "fr": "Neutre", "en": "Neutral", "ar": "محايد" }
-      ],
-      "correct": { "fr": "Oui", "en": "Yes", "ar": "نعم" }
+      "question": "Pensez vous qu’une simulation d’un entretien avec un ami ou devant un miroir soit nécessaire ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Oui"
     },
     {
-      "question": {
-        "fr": "Le stress peut être positif ?",
-        "en": "Can stress be positive?",
-        "ar": "هل يمكن أن يكون الإجهاد إيجابيًا؟"
-      },
-      "options": [
-        { "fr": "Oui", "en": "Yes", "ar": "نعم" },
-        { "fr": "Non", "en": "No", "ar": "لا" },
-        { "fr": "Neutre", "en": "Neutral", "ar": "محايد" }
-      ],
-      "correct": { "fr": "Oui", "en": "Yes", "ar": "نعم" }
+      "question": "Le stress peut être positif ?",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Oui"
     },
     {
-      "question": {
-        "fr": "Le stress positif peut être une source de :",
-        "en": "Positive stress can be a source of:",
-        "ar": "يمكن أن يكون الإجهاد الإيجابي مصدرًا لـ:"
-      },
-      "options": [
-        { "fr": "Motivation", "en": "Motivation", "ar": "الدافع" },
-        { "fr": "Perturbation", "en": "Disturbance", "ar": "الاضطراب" },
-        { "fr": "Neutre", "en": "Neutral", "ar": "محايد" }
-      ],
-      "correct": { "fr": "Motivation", "en": "Motivation", "ar": "الدافع" }
+      "question": "Le stress positif peut être une source de :",
+      "options": ["Motivation", "Perturbation", "Neutre"],
+      "correct": "Motivation"
     },
     {
-      "question": {
-        "fr": "Au cours d’un entretien, votre état psychologique peut agir sur la décision du recruteur :",
-        "en": "During an interview, your psychological state can affect the recruiter's decision:",
-        "ar": "أثناء المقابلة، يمكن أن تؤثر حالتك النفسية على قرار مسؤول التوظيف:"
-      },
-      "options": [
-        { "fr": "Oui", "en": "Yes", "ar": "نعم" },
-        { "fr": "Non", "en": "No", "ar": "لا" },
-        { "fr": "Neutre", "en": "Neutral", "ar": "محايد" }
-      ],
-      "correct": { "fr": "Oui", "en": "Yes", "ar": "نعم" }
+      "question": "Au cours d’un entretien, votre état psychologique peut agir sur la décision du recruteur :",
+      "options": ["Oui", "Non", "Neutre"],
+      "correct": "Oui"
     },
     {
-      "question": {
-        "fr": "Un recruteur utilise les questions pièges pour :",
-        "en": "A recruiter uses trick questions to:",
-        "ar": "يستخدم مسؤول التوظيف أسئلة خادعة لـ:"
-      },
+      "question": "Un recruteur utilise les questions pièges pour :",
       "options": [
-        { "fr": "Savoir comment réagir à une situation stressante", "en": "Know how to react to a stressful situation", "ar": "معرفة كيفية الرد على موقف مرهق" },
-        { "fr": "Tester vos connaissances techniques", "en": "Test your technical knowledge", "ar": "اختبار معرفتك التقنية" },
-        { "fr": "Définir votre type de personnalité", "en": "Define your personality type", "ar": "تحديد نوع شخصيتك" }
+        "Savoir comment réagir à une situation stressante",
+        "Tester vos connaissances techniques",
+        "Définir votre type de personnalité"
       ],
-      "correct": { "fr": "Savoir comment réagir à une situation stressante", "en": "Know how to react to a stressful situation", "ar": "معرفة كيفية الرد على موقف مرهق" }
+      "correct": "Savoir comment réagir à une situation stressante"
     },
     {
-      "question": {
-        "fr": "Pourquoi la ponctualité est-elle clé ?",
-        "en": "Why is punctuality key?",
-        "ar": "لماذا يعتبر الالتزام بالمواعيد أمرًا أساسيًا؟"
-      },
-      "options": [
-        { "fr": "Respect", "en": "Respect", "ar": "احترام" },
-        { "fr": "Habitude", "en": "Habit", "ar": "عادة" },
-        { "fr": "Détail", "en": "Detail", "ar": "تفصيل" },
-        { "fr": "Sans importance", "en": "Not important", "ar": "غير مهم" }
-      ],
-      "correct": { "fr": "Respect", "en": "Respect", "ar": "احترام" }
+      "question": "Pourquoi la ponctualité est-elle clé ?",
+      "options": ["Respect", "Habitude", "Détail", "Sans importance"],
+      "correct": "Respect"
     },
     {
-      "question": {
-        "fr": "Comment réagir à une question piège ?",
-        "en": "How to react to a trick question?",
-        "ar": "كيف ترد على سؤال خادع؟"
-      },
-      "options": [
-        { "fr": "Fuir", "en": "Flee", "ar": "اهرب" },
-        { "fr": "Rester calme", "en": "Stay calm", "ar": "ابق هادئًا" },
-        { "fr": "Changer de sujet", "en": "Change the subject", "ar": "غير الموضوع" },
-        { "fr": "Ignorer", "en": "Ignore", "ar": "تجاهل" }
-      ],
-      "correct": { "fr": "Rester calme", "en": "Stay calm", "ar": "ابق هادئًا" }
+      "question": "Comment réagir à une question piège ?",
+      "options": ["Fuir", "Rester calme", "Changer de sujet", "Ignorer"],
+      "correct": "Rester calme"
     },
     {
-      "question": {
-        "fr": "Pourquoi faut-il garder confiance en soi ?",
-        "en": "Why should you keep self-confidence?",
-        "ar": "لماذا يجب أن تحافظ على ثقتك بنفسك؟"
-      },
-      "options": [
-        { "fr": "Pour réussir", "en": "To succeed", "ar": "للنجاح" },
-        { "fr": "Pour dominer", "en": "To dominate", "ar": "للسيطرة" },
-        { "fr": "Pour impressionner", "en": "To impress", "ar": "لإثارة الإعجاب" },
-        { "fr": "Sans raison", "en": "For no reason", "ar": "بدون سبب" }
-      ],
-      "correct": { "fr": "Pour réussir", "en": "To succeed", "ar": "للنجاح" }
+      "question": "Pourquoi faut-il garder confiance en soi ?",
+      "options": ["Pour réussir", "Pour dominer", "Pour impressionner", "Sans raison"],
+      "correct": "Pour réussir"
     },
     {
-      "question": {
-        "fr": "Comment gérer son stress avant un entretien ?",
-        "en": "How to manage your stress before an interview?",
-        "ar": "كيف تدير إجهادك قبل المقابلة؟"
-      },
-      "options": [
-        { "fr": "Respiration", "en": "Breathing", "ar": "التنفس" },
-        { "fr": "Café", "en": "Coffee", "ar": "قهوة" },
-        { "fr": "Ne pas y penser", "en": "Don't think about it", "ar": "لا تفكر في الأمر" },
-        { "fr": "Dormir tard", "en": "Sleep late", "ar": "النوم متأخرًا" }
-      ],
-      "correct": { "fr": "Respiration", "en": "Breathing", "ar": "التنفس" }
+      "question": "Comment gérer son stress avant un entretien ?",
+      "options": ["Respiration", "Café", "Ne pas y penser", "Dormir tard"],
+      "correct": "Respiration"
     },
     {
-      "question": {
-        "fr": "Quel comportement est le plus apprécié en entretien ?",
-        "en": "What behavior is most appreciated in an interview?",
-        "ar": "ما هو السلوك الأكثر تقديرًا في المقابلة؟"
-      },
-      "options": [
-        { "fr": "Sûr de soi", "en": "Self-confident", "ar": "واثق من نفسه" },
-        { "fr": "Arrogant", "en": "Arrogant", "ar": "متعجرف" },
-        { "fr": "Silencieux", "en": "Silent", "ar": "صامت" },
-        { "fr": "Mystérieux", "en": "Mysterious", "ar": "غامض" }
-      ],
-      "correct": { "fr": "Sûr de soi", "en": "Self-confident", "ar": "واثق من نفسه" }
+      "question": "Quel comportement est le plus apprécié en entretien ?",
+      "options": ["Sûr de soi", "Arrogant", "Silencieux", "Mystérieux"],
+      "correct": "Sûr de soi"
     }
   ]
 }
