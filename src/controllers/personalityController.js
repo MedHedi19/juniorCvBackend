@@ -13,8 +13,9 @@ const transformOptionsToArray = (optionsObj) => {
 const startPersonalityTest = async (req, res) => {
     try {
         const userId = req.user.id;
+        const language = req.query.language || 'fr'; // Get language from query param, default to 'fr'
         
-        const test = getPersonalityTest();
+        const test = getPersonalityTest(language);
         if (!test) {
             return res.status(404).json({ message: 'Personality test not found' });
         }
@@ -40,8 +41,9 @@ const submitPersonalityAnswer = async (req, res) => {
     try {
         const { questionIndex, selectedColor } = req.body;
         const userId = req.user.id;
+        const language = req.query.language || 'fr'; // Get language from query param, default to 'fr'
 
-        const test = getPersonalityTest();
+        const test = getPersonalityTest(language);
         if (!test) {
             return res.status(404).json({ message: 'Personality test not found' });
         }

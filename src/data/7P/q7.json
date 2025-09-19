@@ -1,124 +1,144 @@
 {
   "Positivité": [
     {
-      "question": "La positivité est comment :",
+      "question": {"fr": "La positivité est comment :", "en": "What is positivity:", "ar": "كيف تكون الإيجابية:"},
       "options": [
-        "Relancer le recruteur",
-        "Garder son calme lors, pendant et après l’entretien",
-        "Neutre"
+        {"fr": "Relancer le recruteur", "en": "Follow up with the recruiter", "ar": "متابعة المجند"},
+        {"fr": "Garder son calme lors, pendant et après l’entretien", "en": "Stay calm before, during and after the interview", "ar": "الحفاظ على الهدوء قبل وأثناء وبعد المقابلة"},
+        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
       ],
-      "correct": "Relancer le recruteur"
+      "correct": {"fr": "Relancer le recruteur", "en": "Follow up with the recruiter", "ar": "متابعة المجند"}
     },
     {
-      "question": "Devez-vous relancer le recruteur immédiatement après l’entretien ?",
-      "options": ["Oui", "Non", "Neutre"],
-      "correct": "Non"
-    },
-    {
-      "question": "Au bout de combien de temps, vous pouvez relancer le recruteur :",
-      "options": ["1 jour", "3 jours", "7 jours"],
-      "correct": "7 jours"
-    },
-    {
-      "question": "La relance du recruteur se fait via :",
+      "question": {"fr": "Devez-vous relancer le recruteur immédiatement après l’entretien ?", "en": "Should you follow up with the recruiter immediately after the interview?", "ar": "هل يجب عليك متابعة المجند فورًا بعد المقابلة؟"},
       "options": [
-        "Un email de salutation et remerciement",
-        "Un email contenant un rappel sur vos compétences et vos expériences",
-        "Neutre"
+        {"fr": "Oui", "en": "Yes", "ar": "نعم"},
+        {"fr": "Non", "en": "No", "ar": "لا"},
+        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
       ],
-      "correct": "Un email de salutation et remerciement"
+      "correct": {"fr": "Non", "en": "No", "ar": "لا"}
     },
     {
-      "question": "Peut-on relancer le recruteur par téléphone  ?",
-      "options": ["Oui", "Non", "Neutre"],
-      "correct": "Oui"
-    },
-    {
-      "question": "En cas d’une réponse négative, est-ce que vous pouvez demander une explication ?",
-      "options": ["Oui", "Non", "Neutre"],
-      "correct": "Oui"
-    },
-    {
-      "question": "Le feedback d’un recruteur après une réponse négative :",
+      "question": {"fr": "Au bout de combien de temps, vous pouvez relancer le recruteur :", "en": "After how long can you follow up with the recruiter:", "ar": "بعد كم من الوقت يمكنك متابعة المجند:"},
       "options": [
-        "Peut être une source de motivation",
-        "Peut attaquer votre confiance",
-        "Les deux"
+        {"fr": "1 jour", "en": "1 day", "ar": "يوم واحد"},
+        {"fr": "3 jours", "en": "3 days", "ar": "3 أيام"},
+        {"fr": "7 jours", "en": "7 days", "ar": "7 أيام"}
       ],
-      "correct": "Les deux"
+      "correct": {"fr": "7 jours", "en": "7 days", "ar": "7 أيام"}
     },
     {
-      "question": "Est-ce que vous pouvez relancer le recruteur après une période par un mail montrant votre motivation et l’amélioration que vous avez faite ?",
-      "options": ["Oui", "Non", "Neutre"],
-      "correct": "Oui"
-    },
-    {
-      "question": "Comment agir suite à un résultat négatif d'un entretien ?",
+      "question": {"fr": "La relance du recruteur se fait via :", "en": "Follow-up with the recruiter is done via:", "ar": "تتم متابعة المجند عبر:"},
       "options": [
-        "Abandonner le dossier de candidature",
-        "Envoyer un mail de remerciement",
-        "Contacter le recruteur par téléphone"
+        {"fr": "Un email de salutation et remerciement", "en": "A greeting and thank you email", "ar": "بريد إلكتروني للتحية والشكر"},
+        {"fr": "Un email contenant un rappel sur vos compétences et vos expériences", "en": "An email reminding your skills and experiences", "ar": "بريد إلكتروني يذكر مهاراتك وخبراتك"},
+        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
       ],
-      "correct": "Envoyer un mail de remerciement"
+      "correct": {"fr": "Un email de salutation et remerciement", "en": "A greeting and thank you email", "ar": "بريد إلكتروني للتحية والشكر"}
     },
     {
-      "question": "Pour se préparer à un nouvel entretien :",
+      "question": {"fr": "Peut-on relancer le recruteur par téléphone  ?", "en": "Can you follow up with the recruiter by phone?", "ar": "هل يمكنك متابعة المجند عبر الهاتف؟"},
       "options": [
-        "Il faut faire preuve de trop de modestie​",
-        "Il faut travailler sur ses points d’efforts",
-        "Il faut bien travailler sur ses points faibles"
+        {"fr": "Oui", "en": "Yes", "ar": "نعم"},
+        {"fr": "Non", "en": "No", "ar": "لا"},
+        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
       ],
-      "correct": "Il faut bien travailler sur ses points faibles"
+      "correct": {"fr": "Oui", "en": "Yes", "ar": "نعم"}
     },
     {
-      "question": "Pourquoi faut-il analyser ses entretiens ?",
+      "question": {"fr": "En cas d’une réponse négative, est-ce que vous pouvez demander une explication ?", "en": "In case of a negative response, can you ask for an explanation?", "ar": "في حالة الرد السلبي، هل يمكنك طلب تفسير؟"},
       "options": [
-        "Pour progresser",
-        "Pour se critiquer",
-        "Sans intérêt",
-        "Pour raconter"
+        {"fr": "Oui", "en": "Yes", "ar": "نعم"},
+        {"fr": "Non", "en": "No", "ar": "لا"},
+        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
       ],
-      "correct": "Pour progresser"
+      "correct": {"fr": "Oui", "en": "Yes", "ar": "نعم"}
     },
     {
-      "question": "Comment gérer un refus ?",
+      "question": {"fr": "Le feedback d’un recruteur après une réponse négative :", "en": "Feedback from a recruiter after a negative response:", "ar": "رد المجند بعد الرد السلبي:"},
       "options": [
-        "Ignorer",
-        "Apprendre",
-        "Se décourager",
-        "Se fâcher"
+        {"fr": "Peut être une source de motivation", "en": "Can be a source of motivation", "ar": "يمكن أن يكون مصدرًا للتحفيز"},
+        {"fr": "Peut attaquer votre confiance", "en": "Can attack your confidence", "ar": "يمكن أن يهاجم ثقتك بنفسك"},
+        {"fr": "Les deux", "en": "Both", "ar": "كلاهما"}
       ],
-      "correct": "Apprendre"
+      "correct": {"fr": "Les deux", "en": "Both", "ar": "كلاهما"}
     },
     {
-      "question": "Pourquoi faut-il garder une attitude positive ?",
+      "question": {"fr": "Est-ce que vous pouvez relancer le recruteur après une période par un mail montrant votre motivation et l’amélioration que vous avez faite ?", "en": "Can you follow up with the recruiter after a period with an email showing your motivation and improvement?", "ar": "هل يمكنك متابعة المجند بعد فترة برسالة تظهر حماسك والتحسن الذي حققته؟"},
       "options": [
-        "Pour la motivation",
-        "Par obligation",
-        "Pour impressionner",
-        "Sans raison"
+        {"fr": "Oui", "en": "Yes", "ar": "نعم"},
+        {"fr": "Non", "en": "No", "ar": "لا"},
+        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
       ],
-      "correct": "Pour la motivation"
+      "correct": {"fr": "Oui", "en": "Yes", "ar": "نعم"}
     },
     {
-      "question": "Quel est le bon réflexe après un entretien ?",
+      "question": {"fr": "Comment agir suite à un résultat négatif d'un entretien ?", "en": "How to act after a negative interview result?", "ar": "كيف تتصرف بعد نتيجة مقابلة سلبية؟"},
       "options": [
-        "Envoyer un mail de remerciement",
-        "Ne rien faire",
-        "Demander un retour immédiat",
-        "Attendre"
+        {"fr": "Abandonner le dossier de candidature", "en": "Abandon the application file", "ar": "التخلي عن ملف التقديم"},
+        {"fr": "Envoyer un mail de remerciement", "en": "Send a thank you email", "ar": "إرسال بريد إلكتروني للشكر"},
+        {"fr": "Contacter le recruteur par téléphone", "en": "Contact the recruiter by phone", "ar": "الاتصال بالمجند عبر الهاتف"}
       ],
-      "correct": "Envoyer un mail de remerciement"
+      "correct": {"fr": "Envoyer un mail de remerciement", "en": "Send a thank you email", "ar": "إرسال بريد إلكتروني للشكر"}
     },
     {
-      "question": "Pourquoi la persévérance est-elle clé ?",
+      "question": {"fr": "Pour se préparer à un nouvel entretien :", "en": "To prepare for a new interview:", "ar": "للاستعداد لمقابلة جديدة:"},
       "options": [
-        "Plus d'opportunités",
-        "Pour tester ses limites",
-        "Pour être vu",
-        "Aucune raison"
+        {"fr": "Il faut faire preuve de trop de modestie​", "en": "You must show too much modesty", "ar": "يجب أن تظهر الكثير من التواضع"},
+        {"fr": "Il faut travailler sur ses points d’efforts", "en": "You must work on your effort points", "ar": "يجب العمل على نقاط الجهد"},
+        {"fr": "Il faut bien travailler sur ses points faibles", "en": "You must work well on your weaknesses", "ar": "يجب العمل جيدًا على نقاط الضعف"}
       ],
-      "correct": "Plus d'opportunités"
+      "correct": {"fr": "Il faut bien travailler sur ses points faibles", "en": "You must work well on your weaknesses", "ar": "يجب العمل جيدًا على نقاط الضعف"}
+    },
+    {
+      "question": {"fr": "Pourquoi faut-il analyser ses entretiens ?", "en": "Why should you analyze your interviews?", "ar": "لماذا يجب عليك تحليل مقابلاتك؟"},
+      "options": [
+        {"fr": "Pour progresser", "en": "To progress", "ar": "للتقدم"},
+        {"fr": "Pour se critiquer", "en": "To criticize yourself", "ar": "لنقد الذات"},
+        {"fr": "Sans intérêt", "en": "No interest", "ar": "بدون فائدة"},
+        {"fr": "Pour raconter", "en": "To tell", "ar": "للحكي"}
+      ],
+      "correct": {"fr": "Pour progresser", "en": "To progress", "ar": "للتقدم"}
+    },
+    {
+      "question": {"fr": "Comment gérer un refus ?", "en": "How to handle a rejection?", "ar": "كيف تتعامل مع الرفض؟"},
+      "options": [
+        {"fr": "Ignorer", "en": "Ignore", "ar": "تجاهل"},
+        {"fr": "Apprendre", "en": "Learn", "ar": "التعلم"},
+        {"fr": "Se décourager", "en": "Get discouraged", "ar": "الإحباط"},
+        {"fr": "Se fâcher", "en": "Get angry", "ar": "الغضب"}
+      ],
+      "correct": {"fr": "Apprendre", "en": "Learn", "ar": "التعلم"}
+    },
+    {
+      "question": {"fr": "Pourquoi faut-il garder une attitude positive ?", "en": "Why should you keep a positive attitude?", "ar": "لماذا يجب الحفاظ على موقف إيجابي؟"},
+      "options": [
+        {"fr": "Pour la motivation", "en": "For motivation", "ar": "للدافع"},
+        {"fr": "Par obligation", "en": "By obligation", "ar": "إلزامًا"},
+        {"fr": "Pour impressionner", "en": "To impress", "ar": "للإبهار"},
+        {"fr": "Sans raison", "en": "No reason", "ar": "بدون سبب"}
+      ],
+      "correct": {"fr": "Pour la motivation", "en": "For motivation", "ar": "للدافع"}
+    },
+    {
+      "question": {"fr": "Quel est le bon réflexe après un entretien ?", "en": "What is the right reflex after an interview?", "ar": "ما هو التصرف الصحيح بعد المقابلة؟"},
+      "options": [
+        {"fr": "Envoyer un mail de remerciement", "en": "Send a thank you email", "ar": "إرسال بريد إلكتروني للشكر"},
+        {"fr": "Ne rien faire", "en": "Do nothing", "ar": "لا تفعل شيئًا"},
+        {"fr": "Demander un retour immédiat", "en": "Ask for immediate feedback", "ar": "طلب رد فوري"},
+        {"fr": "Attendre", "en": "Wait", "ar": "الانتظار"}
+      ],
+      "correct": {"fr": "Envoyer un mail de remerciement", "en": "Send a thank you email", "ar": "إرسال بريد إلكتروني للشكر"}
+    },
+    {
+      "question": {"fr": "Pourquoi la persévérance est-elle clé ?", "en": "Why is perseverance key?", "ar": "لماذا المثابرة أمر أساسي؟"},
+      "options": [
+        {"fr": "Plus d'opportunités", "en": "More opportunities", "ar": "المزيد من الفرص"},
+        {"fr": "Pour tester ses limites", "en": "To test your limits", "ar": "لاختبار حدودك"},
+        {"fr": "Pour être vu", "en": "To be seen", "ar": "لتكون مرئيًا"},
+        {"fr": "Aucune raison", "en": "No reason", "ar": "بدون سبب"}
+      ],
+      "correct": {"fr": "Plus d'opportunités", "en": "More opportunities", "ar": "المزيد من الفرص"}
     }
   ]
 }

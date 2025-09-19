@@ -1,79 +1,464 @@
 {
   " Paperasse": [
     {
-      "question": "Pensez-vous qu’un stage peut être considéré comme une expérience professionnelle ?",
-      "options": ["Oui", "Non", "Neutre"],
-      "correct": "Non"
+      "question": {
+        "fr": "Pensez-vous qu'un stage peut être considéré comme une expérience professionnelle ?",
+        "en": "Do you think an internship can be considered as professional experience?",
+        "ar": "هل تعتقد أن التدريب يمكن اعتباره خبرة مهنية؟"
+      },
+      "options": [
+        {
+          "fr": "Oui",
+          "en": "Yes",
+          "ar": "نعم"
+        },
+        {
+          "fr": "Non",
+          "en": "No",
+          "ar": "لا"
+        },
+        {
+          "fr": "Neutre",
+          "en": "Neutral",
+          "ar": "محايد"
+        }
+      ],
+      "correct": {
+        "fr": "Non",
+        "en": "No",
+        "ar": "لا"
+      }
     },
     {
-      "question": "Dans un CV, l’ordre chronologique des dates mentionnées est :",
-      "options": ["Du plus ancien au plus récent", "Du plus récent au plus ancien", "Mixte"],
-      "correct": "Du plus récent au plus ancien"
+      "question": {
+        "fr": "Dans un CV, l'ordre chronologique des dates mentionnées est :",
+        "en": "In a CV, the chronological order of the dates mentioned is:",
+        "ar": "في السيرة الذاتية، الترتيب الزمني للتواريخ المذكورة هو:"
+      },
+      "options": [
+        {
+          "fr": "Du plus ancien au plus récent",
+          "en": "From oldest to most recent",
+          "ar": "من الأقدم إلى الأحدث"
+        },
+        {
+          "fr": "Du plus récent au plus ancien",
+          "en": "From most recent to oldest",
+          "ar": "من الأحدث إلى الأقدم"
+        },
+        {
+          "fr": "Mixte",
+          "en": "Mixed",
+          "ar": "مختلط"
+        }
+      ],
+      "correct": {
+        "fr": "Du plus récent au plus ancien",
+        "en": "From most recent to oldest",
+        "ar": "من الأحدث إلى الأقدم"
+      }
     },
     {
-      "question": "Où pouvez-vous mentionner vos certifications obtenues ?",
-      "options": ["Formations académiques", "Formations complémentaires", "Compétences informatiques"],
-      "correct": "Formations complémentaires"
+      "question": {
+        "fr": "Où pouvez-vous mentionner vos certifications obtenues ?",
+        "en": "Where can you mention your obtained certifications?",
+        "ar": "أين يمكنك ذكر الشهادات التي حصلت عليها؟"
+      },
+      "options": [
+        {
+          "fr": "Formations académiques",
+          "en": "Academic training",
+          "ar": "التدريب الأكاديمي"
+        },
+        {
+          "fr": "Formations complémentaires",
+          "en": "Additional training",
+          "ar": "التدريب الإضافي"
+        },
+        {
+          "fr": "Compétences informatiques",
+          "en": "Computer skills",
+          "ar": "المهارات الحاسوبية"
+        }
+      ],
+      "correct": {
+        "fr": "Formations complémentaires",
+        "en": "Additional training",
+        "ar": "التدريب الإضافي"
+      }
     },
     {
-      "question": "Pensez-vous qu’un seul CV peut être valide pour tous les postes ?",
-      "options": ["Oui", "Non", "Neutre"],
-      "correct": "Non"
+      "question": {
+        "fr": "Pensez-vous qu'un seul CV peut être valide pour tous les postes ?",
+        "en": "Do you think one CV can be valid for all positions?",
+        "ar": "هل تعتقد أن سيرة ذاتية واحدة يمكن أن تكون صالحة لجميع المناصب؟"
+      },
+      "options": [
+        {
+          "fr": "Oui",
+          "en": "Yes",
+          "ar": "نعم"
+        },
+        {
+          "fr": "Non",
+          "en": "No",
+          "ar": "لا"
+        },
+        {
+          "fr": "Neutre",
+          "en": "Neutral",
+          "ar": "محايد"
+        }
+      ],
+      "correct": {
+        "fr": "Non",
+        "en": "No",
+        "ar": "لا"
+      }
     },
     {
-      "question": "Pour déclencher un entretien il faut :",
-      "options": ["Mentionner de faux diplômes, compétences..", "Être honnête et clair dans votre paperasse", "Neutre"],
-      "correct": "Être honnête et clair dans votre paperasse"
+      "question": {
+        "fr": "Pour déclencher un entretien il faut :",
+        "en": "To trigger an interview you need to:",
+        "ar": "لإثارة مقابلة تحتاج إلى:"
+      },
+      "options": [
+        {
+          "fr": "Mentionner de faux diplômes, compétences..",
+          "en": "Mention fake degrees, skills..",
+          "ar": "ذكر شهادات وهمية، مهارات.."
+        },
+        {
+          "fr": "Être honnête et clair dans votre paperasse",
+          "en": "Be honest and clear in your paperwork",
+          "ar": "كن صادقًا وواضحًا في أوراقك"
+        },
+        {
+          "fr": "Neutre",
+          "en": "Neutral",
+          "ar": "محايد"
+        }
+      ],
+      "correct": {
+        "fr": "Être honnête et clair dans votre paperasse",
+        "en": "Be honest and clear in your paperwork",
+        "ar": "كن صادقًا وواضحًا في أوراقك"
+      }
     },
     {
-      "question": "Pensez-vous que la lettre de motivation peut remplacer le CV ?",
-      "options": ["Oui", "Non", "Neutre"],
-      "correct": "Non"
+      "question": {
+        "fr": "Pensez-vous que la lettre de motivation peut remplacer le CV ?",
+        "en": "Do you think the cover letter can replace the CV?",
+        "ar": "هل تعتقد أن خطاب التحفيز يمكن أن يحل محل السيرة الذاتية؟"
+      },
+      "options": [
+        {
+          "fr": "Oui",
+          "en": "Yes",
+          "ar": "نعم"
+        },
+        {
+          "fr": "Non",
+          "en": "No",
+          "ar": "لا"
+        },
+        {
+          "fr": "Neutre",
+          "en": "Neutral",
+          "ar": "محايد"
+        }
+      ],
+      "correct": {
+        "fr": "Non",
+        "en": "No",
+        "ar": "لا"
+      }
     },
     {
-      "question": "Choisissez le bon ordre des sections suivantes d’une lettre de motivation :",
-      "options": ["Je me connais, je vous connais, rencontrons-nous", "Rencontrons-nous, je vous connais, je me connais", "Je vous connais, je me connais, rencontrons-nous"],
-      "correct": "Je me connais, je vous connais, rencontrons-nous"
+      "question": {
+        "fr": "Choisissez le bon ordre des sections suivantes d'une lettre de motivation :",
+        "en": "Choose the correct order of the following sections of a cover letter:",
+        "ar": "اختر الترتيب الصحيح للأقسام التالية من خطاب التحفيز:"
+      },
+      "options": [
+        {
+          "fr": "Je me connais, je vous connais, rencontrons-nous",
+          "en": "I know myself, I know you, let's meet",
+          "ar": "أعرف نفسي، أعرفك، دعنا نلتقي"
+        },
+        {
+          "fr": "Rencontrons-nous, je vous connais, je me connais",
+          "en": "Let's meet, I know you, I know myself",
+          "ar": "دعنا نلتقي، أعرفك، أعرف نفسي"
+        },
+        {
+          "fr": "Je vous connais, je me connais, rencontrons-nous",
+          "en": "I know you, I know myself, let's meet",
+          "ar": "أعرفك، أعرف نفسي، دعنا نلتقي"
+        }
+      ],
+      "correct": {
+        "fr": "Je me connais, je vous connais, rencontrons-nous",
+        "en": "I know myself, I know you, let's meet",
+        "ar": "أعرف نفسي، أعرفك، دعنا نلتقي"
+      }
     },
     {
-      "question": "Devez-vous mentionner des informations relatives à la société/l’entreprise (date de création, domaine d’activité..) dans une lettre de motivation ?",
-      "options": ["Oui", "Non", "Neutre"],
-      "correct": "Oui"
+      "question": {
+        "fr": "Devez-vous mentionner des informations relatives à la société/l'entreprise (date de création, domaine d'activité..) dans une lettre de motivation ?",
+        "en": "Should you mention information about the company/enterprise (creation date, field of activity..) in a cover letter?",
+        "ar": "هل يجب أن تذكر معلومات حول الشركة/المؤسسة (تاريخ الإنشاء، مجال النشاط..) في خطاب التحفيز؟"
+      },
+      "options": [
+        {
+          "fr": "Oui",
+          "en": "Yes",
+          "ar": "نعم"
+        },
+        {
+          "fr": "Non",
+          "en": "No",
+          "ar": "لا"
+        },
+        {
+          "fr": "Neutre",
+          "en": "Neutral",
+          "ar": "محايد"
+        }
+      ],
+      "correct": {
+        "fr": "Oui",
+        "en": "Yes",
+        "ar": "نعم"
+      }
     },
     {
-      "question": "Faut-il mettre une photo dans une lettre de motivation ?",
-      "options": ["Oui", "Non", "Neutre"],
-      "correct": "Non"
+      "question": {
+        "fr": "Faut-il mettre une photo dans une lettre de motivation ?",
+        "en": "Should you put a photo in a cover letter?",
+        "ar": "هل يجب وضع صورة في خطاب التحفيز؟"
+      },
+      "options": [
+        {
+          "fr": "Oui",
+          "en": "Yes",
+          "ar": "نعم"
+        },
+        {
+          "fr": "Non",
+          "en": "No",
+          "ar": "لا"
+        },
+        {
+          "fr": "Neutre",
+          "en": "Neutral",
+          "ar": "محايد"
+        }
+      ],
+      "correct": {
+        "fr": "Non",
+        "en": "No",
+        "ar": "لا"
+      }
     },
     {
-      "question": "Le CV et la lettre de motivation devront être envoyés en format :",
-      "options": ["PDF", "Word", "JPG"],
-      "correct": "PDF"
+      "question": {
+        "fr": "Le CV et la lettre de motivation devront être envoyés en format :",
+        "en": "The CV and cover letter should be sent in format:",
+        "ar": "يجب إرسال السيرة الذاتية وخطاب التحفيز بصيغة:"
+      },
+      "options": [
+        {
+          "fr": "PDF",
+          "en": "PDF",
+          "ar": "PDF"
+        },
+        {
+          "fr": "Word",
+          "en": "Word",
+          "ar": "Word"
+        },
+        {
+          "fr": "JPG",
+          "en": "JPG",
+          "ar": "JPG"
+        }
+      ],
+      "correct": {
+        "fr": "PDF",
+        "en": "PDF",
+        "ar": "PDF"
+      }
     },
     {
-      "question": "Quelle est la durée moyenne d'attention d'un recruteur sur un CV ?",
-      "options": ["10s", "20s", "30s", "1 min"],
-      "correct": "20s"
+      "question": {
+        "fr": "Quelle est la durée moyenne d'attention d'un recruteur sur un CV ?",
+        "en": "What is the average attention span of a recruiter on a CV?",
+        "ar": "ما هو متوسط مدة انتباه المجند على السيرة الذاتية؟"
+      },
+      "options": [
+        {
+          "fr": "10s",
+          "en": "10s",
+          "ar": "10 ثوان"
+        },
+        {
+          "fr": "20s",
+          "en": "20s",
+          "ar": "20 ثانية"
+        },
+        {
+          "fr": "30s",
+          "en": "30s",
+          "ar": "30 ثانية"
+        },
+        {
+          "fr": "1 min",
+          "en": "1 min",
+          "ar": "دقيقة واحدة"
+        }
+      ],
+      "correct": {
+        "fr": "20s",
+        "en": "20s",
+        "ar": "20 ثانية"
+      }
     },
     {
-      "question": "Quelle est la taille idéale d’un CV pour un débutant ?",
-      "options": ["1 page", "2 pages", "3 pages", "Pas de limite"],
-      "correct": "1 page"
+      "question": {
+        "fr": "Quelle est la taille idéale d'un CV pour un débutant ?",
+        "en": "What is the ideal size of a CV for a beginner?",
+        "ar": "ما هو الحجم المثالي للسيرة الذاتية للمبتدئ؟"
+      },
+      "options": [
+        {
+          "fr": "1 page",
+          "en": "1 page",
+          "ar": "صفحة واحدة"
+        },
+        {
+          "fr": "2 pages",
+          "en": "2 pages",
+          "ar": "صفحتان"
+        },
+        {
+          "fr": "3 pages",
+          "en": "3 pages",
+          "ar": "3 صفحات"
+        },
+        {
+          "fr": "Pas de limite",
+          "en": "No limit",
+          "ar": "لا حدود"
+        }
+      ],
+      "correct": {
+        "fr": "1 page",
+        "en": "1 page",
+        "ar": "صفحة واحدة"
+      }
     },
     {
-      "question": "Pourquoi faut-il éviter les fautes d’orthographe sur un CV ?",
-      "options": ["Sans importance", "Peut coûter un entretien", "Montre la créativité", "Rend le CV unique"],
-      "correct": "Peut coûter un entretien"
+      "question": {
+        "fr": "Pourquoi faut-il éviter les fautes d'orthographe sur un CV ?",
+        "en": "Why should you avoid spelling mistakes on a CV?",
+        "ar": "لماذا يجب تجنب الأخطاء الإملائية في السيرة الذاتية؟"
+      },
+      "options": [
+        {
+          "fr": "Sans importance",
+          "en": "Not important",
+          "ar": "غير مهم"
+        },
+        {
+          "fr": "Peut coûter un entretien",
+          "en": "Can cost an interview",
+          "ar": "يمكن أن يكلف مقابلة"
+        },
+        {
+          "fr": "Montre la créativité",
+          "en": "Shows creativity",
+          "ar": "يظهر الإبداع"
+        },
+        {
+          "fr": "Rend le CV unique",
+          "en": "Makes the CV unique",
+          "ar": "يجعل السيرة الذاتية فريدة"
+        }
+      ],
+      "correct": {
+        "fr": "Peut coûter un entretien",
+        "en": "Can cost an interview",
+        "ar": "يمكن أن يكلف مقابلة"
+      }
     },
     {
-      "question": "Pourquoi la mise en page du CV est-elle importante ?",
-      "options": ["Pour décorer", "Pour être lisible", "Pour suivre la mode", "Aucune importance"],
-      "correct": "Pour être lisible"
+      "question": {
+        "fr": "Pourquoi la mise en page du CV est-elle importante ?",
+        "en": "Why is CV layout important?",
+        "ar": "لماذا تخطيط السيرة الذاتية مهم؟"
+      },
+      "options": [
+        {
+          "fr": "Pour décorer",
+          "en": "For decoration",
+          "ar": "للزينة"
+        },
+        {
+          "fr": "Pour être lisible",
+          "en": "To be readable",
+          "ar": "لتكون قابلة للقراءة"
+        },
+        {
+          "fr": "Pour suivre la mode",
+          "en": "To follow fashion",
+          "ar": "لمتابعة الموضة"
+        },
+        {
+          "fr": "Aucune importance",
+          "en": "No importance",
+          "ar": "لا أهمية"
+        }
+      ],
+      "correct": {
+        "fr": "Pour être lisible",
+        "en": "To be readable",
+        "ar": "لتكون قابلة للقراءة"
+      }
     },
     {
-      "question": "Quelle est l'erreur la plus courante dans une lettre de motivation ?",
-      "options": ["Répéter le CV", "Être trop long", "Oublier la signature", "Ne pas saluer"],
-      "correct": "Répéter le CV"
+      "question": {
+        "fr": "Quelle est l'erreur la plus courante dans une lettre de motivation ?",
+        "en": "What is the most common mistake in a cover letter?",
+        "ar": "ما هو الخطأ الأكثر شيوعًا في خطاب التحفيز؟"
+      },
+      "options": [
+        {
+          "fr": "Répéter le CV",
+          "en": "Repeating the CV",
+          "ar": "تكرار السيرة الذاتية"
+        },
+        {
+          "fr": "Être trop long",
+          "en": "Being too long",
+          "ar": "كونه طويلاً جداً"
+        },
+        {
+          "fr": "Oublier la signature",
+          "en": "Forgetting the signature",
+          "ar": "نسيان التوقيع"
+        },
+        {
+          "fr": "Ne pas saluer",
+          "en": "Not greeting",
+          "ar": "عدم التحية"
+        }
+      ],
+      "correct": {
+        "fr": "Répéter le CV",
+        "en": "Repeating the CV",
+        "ar": "تكرار السيرة الذاتية"
+      }
     }
   ]
 }

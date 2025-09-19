@@ -1,117 +1,148 @@
 {
   "Prospection": [
     {
-      "question": "La prospection est :",
+      "question": {
+        "fr": "La prospection est :",
+        "en": "Prospecting is:",
+        "ar": "التنقيب هو:" 
+      },
       "options": [
-        "Construire un cv et une lettre de motivation",
-        "Répondre à une offre d’emploi par un mail professionnel",
-        "Contacter des entreprises qui peuvent être intéressées par votre profil"
+        {"fr": "Construire un cv et une lettre de motivation", "en": "Building a CV and cover letter", "ar": "بناء السيرة الذاتية وخطاب التحفيز"},
+        {"fr": "Répondre à une offre d’emploi par un mail professionnel", "en": "Responding to a job offer by professional email", "ar": "الرد على عرض عمل عبر بريد إلكتروني مهني"},
+        {"fr": "Contacter des entreprises qui peuvent être intéressées par votre profil", "en": "Contacting companies that may be interested in your profile", "ar": "الاتصال بشركات قد تهتم بملفك الشخصي"}
       ],
-      "correct": "Contacter des entreprises qui peuvent être intéressées par votre profil"
+      "correct": {"fr": "Contacter des entreprises qui peuvent être intéressées par votre profil", "en": "Contacting companies that may be interested in your profile", "ar": "الاتصال بشركات قد تهتم بملفك الشخصي"}
     },
     {
-      "question": "La prospection se fait :",
+      "question": {"fr": "La prospection se fait :", "en": "Prospecting is done:", "ar": "يتم التنقيب:"},
       "options": [
-        "Par téléphone uniquement",
-        "Porte-à-porte uniquement",
-        "Par téléphone et/ou porte-à-porte"
+        {"fr": "Par téléphone uniquement", "en": "By phone only", "ar": "عن طريق الهاتف فقط"},
+        {"fr": "Porte-à-porte uniquement", "en": "Door-to-door only", "ar": "عن طريق الباب إلى الباب فقط"},
+        {"fr": "Par téléphone et/ou porte-à-porte", "en": "By phone and/or door-to-door", "ar": "عن طريق الهاتف و/أو الباب إلى الباب"}
       ],
-      "correct": "Par téléphone et/ou porte-à-porte"
+      "correct": {"fr": "Par téléphone et/ou porte-à-porte", "en": "By phone and/or door-to-door", "ar": "عن طريق الهاتف و/أو الباب إلى الباب"}
     },
     {
-      "question": "Lors de la prospection porte-à-porte, vous devez vous concentrer sur :",
+      "question": {"fr": "Lors de la prospection porte-à-porte, vous devez vous concentrer sur :", "en": "During door-to-door prospecting, you should focus on:", "ar": "أثناء التنقيب من الباب إلى الباب، يجب أن تركز على:"},
       "options": [
-        "L’apparence physique",
-        "La voix et le langage",
-        "Les gestes et les mimiques"
+        {"fr": "L’apparence physique", "en": "Physical appearance", "ar": "المظهر الجسدي"},
+        {"fr": "La voix et le langage", "en": "Voice and language", "ar": "الصوت واللغة"},
+        {"fr": "Les gestes et les mimiques", "en": "Gestures and facial expressions", "ar": "الإيماءات وتعبيرات الوجه"}
       ],
-      "correct": "L’apparence physique"
+      "correct": {"fr": "L’apparence physique", "en": "Physical appearance", "ar": "المظهر الجسدي"}
     },
     {
-      "question": "Lors d’une prospection téléphonique, vous devez vous concentrer sur :",
+      "question": {"fr": "Lors d’une prospection téléphonique, vous devez vous concentrer sur :", "en": "During phone prospecting, you should focus on:", "ar": "أثناء التنقيب عبر الهاتف، يجب أن تركز على:"},
       "options": [
-        "L’apparence physique",
-        "La voix et le langage",
-        "Les gestes et les mimiques"
+        {"fr": "L’apparence physique", "en": "Physical appearance", "ar": "المظهر الجسدي"},
+        {"fr": "La voix et le langage", "en": "Voice and language", "ar": "الصوت واللغة"},
+        {"fr": "Les gestes et les mimiques", "en": "Gestures and facial expressions", "ar": "الإيماءات وتعبيرات الوجه"}
       ],
-      "correct": "La voix et le langage"
+      "correct": {"fr": "La voix et le langage", "en": "Voice and language", "ar": "الصوت واللغة"}
     },
     {
-      "question": "Pour une prospection fructueuse vous devez :",
+      "question": {"fr": "Pour une prospection fructueuse vous devez :", "en": "For successful prospecting you must:", "ar": "للتنقيب الناجح يجب عليك:"},
       "options": [
-        "Choisir votre cible",
-        "Contacter le maximum d’entreprises",
-        "Neutre"
+        {"fr": "Choisir votre cible", "en": "Choose your target", "ar": "اختر هدفك"},
+        {"fr": "Contacter le maximum d’entreprises", "en": "Contact as many companies as possible", "ar": "اتصل بأكبر عدد ممكن من الشركات"},
+        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
       ],
-      "correct": "Choisir votre cible"
+      "correct": {"fr": "Choisir votre cible", "en": "Choose your target", "ar": "اختر هدفك"}
     },
     {
-      "question": "Pensez-vous qu'il soit utile de préparer un scénario avant d’entrer en communication avec le recruteur ?",
-      "options": ["Oui", "Non", "Neutre"],
-      "correct": "Oui"
-    },
-    {
-      "question": "Si vous décidez de vous entraîner sur un exemple de communication, le scénario doit comporter :",
+      "question": {"fr": "Pensez-vous qu'il soit utile de préparer un scénario avant d’entrer en communication avec le recruteur ?", "en": "Do you think it's useful to prepare a scenario before communicating with the recruiter?", "ar": "هل تعتقد أنه من المفيد إعداد سيناريو قبل التواصل مع المجند؟"},
       "options": [
-        "Une présentation, définition de la raison de la communication, fixation des arguments/ des réponses possibles pour atteindre votre objectif puis une conclusion",
-        "Une présentation, fixation des arguments/ des réponses possibles pour atteindre votre objectif puis une conclusion",
-        "Neutre"
+        {"fr": "Oui", "en": "Yes", "ar": "نعم"},
+        {"fr": "Non", "en": "No", "ar": "لا"},
+        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
       ],
-      "correct": "Une présentation, définition de la raison de la communication, fixation des arguments/ des réponses possibles pour atteindre votre objectif puis une conclusion"
+      "correct": {"fr": "Oui", "en": "Yes", "ar": "نعم"}
     },
     {
-      "question": "Est-il nécessaire de relancer un recruteur après une prospection par un mail ?",
-      "options": ["Oui", "Non", "S’il me demande"],
-      "correct": "Oui"
-    },
-    {
-      "question": "Est-il souhaitable de poser des questions avant la clôture d’un entretien ?",
-      "options": ["Oui", "Non", "Si le recruteur me le demande"],
-      "correct": "Oui"
-    },
-    {
-      "question": "Que cherche le recruteur en posant la question suivante « Avez-vous des questions » ?",
+      "question": {"fr": "Si vous décidez de vous entraîner sur un exemple de communication, le scénario doit comporter :", "en": "If you decide to practice a communication example, the scenario should include:", "ar": "إذا قررت التدرب على مثال للتواصل، يجب أن يتضمن السيناريو:"},
       "options": [
-        "À tester votre curiosité",
-        "À doper votre concentration",
-        "À examiner vos réflexes"
+        {"fr": "Une présentation, définition de la raison de la communication, fixation des arguments/ des réponses possibles pour atteindre votre objectif puis une conclusion", "en": "A presentation, definition of the reason for communication, setting arguments/possible answers to achieve your goal, then a conclusion", "ar": "عرض، تحديد سبب التواصل، تحديد الحجج/الإجابات الممكنة لتحقيق هدفك ثم خاتمة"},
+        {"fr": "Une présentation, fixation des arguments/ des réponses possibles pour atteindre votre objectif puis une conclusion", "en": "A presentation, setting arguments/possible answers to achieve your goal, then a conclusion", "ar": "عرض، تحديد الحجج/الإجابات الممكنة لتحقيق هدفك ثم خاتمة"},
+        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
       ],
-      "correct": "À tester votre curiosité"
+      "correct": {"fr": "Une présentation, définition de la raison de la communication, fixation des arguments/ des réponses possibles pour atteindre votre objectif puis une conclusion", "en": "A presentation, definition of the reason for communication, setting arguments/possible answers to achieve your goal, then a conclusion", "ar": "عرض، تحديد سبب التواصل، تحديد الحجج/الإجابات الممكنة لتحقيق هدفك ثم خاتمة"}
     },
     {
-      "question": "Pourquoi faut-il se renseigner sur une entreprise avant d’y postuler ?",
+      "question": {"fr": "Est-il nécessaire de relancer un recruteur après une prospection par un mail ?", "en": "Is it necessary to follow up with a recruiter after prospecting by email?", "ar": "هل من الضروري متابعة المجند بعد التنقيب عبر البريد الإلكتروني؟"},
       "options": [
-        "Pour éviter les erreurs",
-        "Pour impressionner",
-        "Pour vérifier l’adéquation",
-        "Toutes"
+        {"fr": "Oui", "en": "Yes", "ar": "نعم"},
+        {"fr": "Non", "en": "No", "ar": "لا"},
+        {"fr": "S’il me demande", "en": "If he asks me", "ar": "إذا طلب مني"}
       ],
-      "correct": "Toutes"
+      "correct": {"fr": "Oui", "en": "Yes", "ar": "نعم"}
     },
     {
-      "question": "Quels éléments sont essentiels dans une recherche d’emploi ?",
-      "options": ["Secteur", "Salaire", "Localisation", "Tous"],
-      "correct": "Tous"
-    },
-    {
-      "question": "Comment contacter un recruteur efficacement ?",
-      "options": ["Mail", "Appel", "LinkedIn", "Tous"],
-      "correct": "Tous"
-    },
-    {
-      "question": "Pourquoi envoyer un message personnalisé sur LinkedIn ?",
+      "question": {"fr": "Est-il souhaitable de poser des questions avant la clôture d’un entretien ?", "en": "Is it desirable to ask questions before closing an interview?", "ar": "هل من المرغوب فيه طرح أسئلة قبل إنهاء المقابلة؟"},
       "options": [
-        "Pour se démarquer",
-        "Parce que c'est obligatoire",
-        "Pour copier un modèle",
-        "Sans raison"
+        {"fr": "Oui", "en": "Yes", "ar": "نعم"},
+        {"fr": "Non", "en": "No", "ar": "لا"},
+        {"fr": "Si le recruteur me le demande", "en": "If the recruiter asks me", "ar": "إذا طلب مني المجند"}
       ],
-      "correct": "Pour se démarquer"
+      "correct": {"fr": "Oui", "en": "Yes", "ar": "نعم"}
     },
     {
-      "question": "Quel est le principal obstacle lors d’une prospection téléphonique ?",
-      "options": ["Le gardien", "Le prix de l’appel", "Le stress", "Aucune barrière"],
-      "correct": "Le gardien"
+      "question": {"fr": "Que cherche le recruteur en posant la question suivante « Avez-vous des questions » ?", "en": "What is the recruiter looking for by asking 'Do you have any questions'?", "ar": "ماذا يبحث المجند عند طرح السؤال التالي 'هل لديك أسئلة'؟"},
+      "options": [
+        {"fr": "À tester votre curiosité", "en": "To test your curiosity", "ar": "لاختبار فضولك"},
+        {"fr": "À doper votre concentration", "en": "To boost your concentration", "ar": "لزيادة تركيزك"},
+        {"fr": "À examiner vos réflexes", "en": "To examine your reflexes", "ar": "لفحص ردود فعلك"}
+      ],
+      "correct": {"fr": "À tester votre curiosité", "en": "To test your curiosity", "ar": "لاختبار فضولك"}
+    },
+    {
+      "question": {"fr": "Pourquoi faut-il se renseigner sur une entreprise avant d’y postuler ?", "en": "Why should you research a company before applying?", "ar": "لماذا يجب عليك البحث عن شركة قبل التقديم؟"},
+      "options": [
+        {"fr": "Pour éviter les erreurs", "en": "To avoid mistakes", "ar": "لتجنب الأخطاء"},
+        {"fr": "Pour impressionner", "en": "To impress", "ar": "لإبهار"},
+        {"fr": "Pour vérifier l’adéquation", "en": "To check suitability", "ar": "للتحقق من الملاءمة"},
+        {"fr": "Toutes", "en": "All", "ar": "الكل"}
+      ],
+      "correct": {"fr": "Toutes", "en": "All", "ar": "الكل"}
+    },
+    {
+      "question": {"fr": "Quels éléments sont essentiels dans une recherche d’emploi ?", "en": "What elements are essential in a job search?", "ar": "ما هي العناصر الأساسية في البحث عن وظيفة؟"},
+      "options": [
+        {"fr": "Secteur", "en": "Sector", "ar": "القطاع"},
+        {"fr": "Salaire", "en": "Salary", "ar": "الراتب"},
+        {"fr": "Localisation", "en": "Location", "ar": "الموقع"},
+        {"fr": "Tous", "en": "All", "ar": "الكل"}
+      ],
+      "correct": {"fr": "Tous", "en": "All", "ar": "الكل"}
+    },
+    {
+      "question": {"fr": "Comment contacter un recruteur efficacement ?", "en": "How to contact a recruiter effectively?", "ar": "كيف تتواصل مع المجند بشكل فعال؟"},
+      "options": [
+        {"fr": "Mail", "en": "Email", "ar": "البريد الإلكتروني"},
+        {"fr": "Appel", "en": "Call", "ar": "مكالمة"},
+        {"fr": "LinkedIn", "en": "LinkedIn", "ar": "لينكدإن"},
+        {"fr": "Tous", "en": "All", "ar": "الكل"}
+      ],
+      "correct": {"fr": "Tous", "en": "All", "ar": "الكل"}
+    },
+    {
+      "question": {"fr": "Pourquoi envoyer un message personnalisé sur LinkedIn ?", "en": "Why send a personalized message on LinkedIn?", "ar": "لماذا ترسل رسالة مخصصة على لينكدإن؟"},
+      "options": [
+        {"fr": "Pour se démarquer", "en": "To stand out", "ar": "لتبرز"},
+        {"fr": "Parce que c'est obligatoire", "en": "Because it's mandatory", "ar": "لأنه إلزامي"},
+        {"fr": "Pour copier un modèle", "en": "To copy a template", "ar": "لنسخ نموذج"},
+        {"fr": "Sans raison", "en": "Without reason", "ar": "بدون سبب"}
+      ],
+      "correct": {"fr": "Pour se démarquer", "en": "To stand out", "ar": "لتبرز"}
+    },
+    {
+      "question": {"fr": "Quel est le principal obstacle lors d’une prospection téléphonique ?", "en": "What is the main obstacle during phone prospecting?", "ar": "ما هو العقبة الرئيسية أثناء التنقيب عبر الهاتف؟"},
+      "options": [
+        {"fr": "Le gardien", "en": "The gatekeeper", "ar": "الحارس"},
+        {"fr": "Le prix de l’appel", "en": "The cost of the call", "ar": "تكلفة المكالمة"},
+        {"fr": "Le stress", "en": "Stress", "ar": "التوتر"},
+        {"fr": "Aucune barrière", "en": "No barrier", "ar": "لا يوجد حاجز"}
+      ],
+      "correct": {"fr": "Le gardien", "en": "The gatekeeper", "ar": "الحارس"}
     }
   ]
 }

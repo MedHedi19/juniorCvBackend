@@ -1,111 +1,351 @@
 {
   "Test de personnalité": [
     {
-      "question": "Quand vous démarrez un nouveau projet, vous préférez",
+      "question": {
+        "fr": "Quand vous démarrez un nouveau projet, vous préférez",
+        "en": "When you start a new project, you prefer",
+        "ar": "عندما تبدأ مشروعًا جديدًا، تفضل"
+      },
       "options": {
-        "R": "Aller droit au but et foncer",
-        "J": "Imaginer toutes les idées possibles",
-        "B": "Organiser chaque étape avec précision",
-        "V": "Créer une ambiance d’entraide"
+        "R": {
+          "fr": "Aller droit au but et foncer",
+          "en": "Go straight to the point and charge ahead",
+          "ar": "الذهاب مباشرة إلى النقطة والمضي قدمًا"
+        },
+        "J": {
+          "fr": "Imaginer toutes les idées possibles",
+          "en": "Imagine all possible ideas",
+          "ar": "تخيل جميع الأفكار الممكنة"
+        },
+        "B": {
+          "fr": "Organiser chaque étape avec précision",
+          "en": "Organize each step with precision",
+          "ar": "تنظيم كل خطوة بدقة"
+        },
+        "V": {
+          "fr": "Créer une ambiance d'entraide",
+          "en": "Create a supportive atmosphere",
+          "ar": "خلق جو من التعاون"
+        }
       }
     },
     {
-      "question": "Face à une difficulté, votre premier réflexe est",
+      "question": {
+        "fr": "Face à une difficulté, votre premier réflexe est",
+        "en": "When facing a difficulty, your first reflex is",
+        "ar": "عند مواجهة صعوبة، ردة فعلك الأولى هي"
+      },
       "options": {
-        "R": "Trouver une solution rapidement",
-        "J": "En parler autour de vous pour dédramatiser",
-        "B": "Analyser la situation calmement",
-        "V": "Chercher du soutien ou demander conseil"
+        "R": {
+          "fr": "Trouver une solution rapidement",
+          "en": "Find a solution quickly",
+          "ar": "إيجاد حل بسرعة"
+        },
+        "J": {
+          "fr": "En parler autour de vous pour dédramatiser",
+          "en": "Talk about it with others to defuse the situation",
+          "ar": "التحدث عنها مع الآخرين لتخفيف الوضع"
+        },
+        "B": {
+          "fr": "Analyser la situation calmement",
+          "en": "Analyze the situation calmly",
+          "ar": "تحليل الوضع بهدوء"
+        },
+        "V": {
+          "fr": "Chercher du soutien ou demander conseil",
+          "en": "Seek support or ask for advice",
+          "ar": "البحث عن الدعم أو طلب المشورة"
+        }
       }
     },
     {
-      "question": "Lors d’un travail en groupe, vous aimez",
+      "question": {
+        "fr": "Lors d'un travail en groupe, vous aimez",
+        "en": "When working in a group, you like to",
+        "ar": "عند العمل في مجموعة، تحب أن"
+      },
       "options": {
-        "R": "Prendre les devants et diriger",
-        "J": "Motiver les autres et créer du lien",
-        "B": "Clarifier les règles et suivre le plan",
-        "V": "Assurer que tout le monde soit à l’aise"
+        "R": {
+          "fr": "Prendre les devants et diriger",
+          "en": "Take the lead and direct",
+          "ar": "تأخذ زمام المبادرة وتقود"
+        },
+        "J": {
+          "fr": "Motiver les autres et créer du lien",
+          "en": "Motivate others and create connections",
+          "ar": "تحفز الآخرين وتخلق الروابط"
+        },
+        "B": {
+          "fr": "Clarifier les règles et suivre le plan",
+          "en": "Clarify the rules and follow the plan",
+          "ar": "توضح القواعد وتتبع الخطة"
+        },
+        "V": {
+          "fr": "Assurer que tout le monde soit à l'aise",
+          "en": "Ensure everyone is comfortable",
+          "ar": "تتأكد من أن الجميع مرتاح"
+        }
       }
     },
     {
-      "question": "On vous décrit souvent comme quelqu’un de",
+      "question": {
+        "fr": "On vous décrit souvent comme quelqu'un de",
+        "en": "You are often described as someone who is",
+        "ar": "غالبًا ما يوصفونك بأنك شخص"
+      },
       "options": {
-        "R": "Décisif(ve) et ambitieux(se)",
-        "J": "Enthousiaste et spontané(e)",
-        "B": "Minutieux(se) et fiable",
-        "V": "Calme et bienveillant(e)"
+        "R": {
+          "fr": "Décisif(ve) et ambitieux(se)",
+          "en": "Decisive and ambitious",
+          "ar": "حاسم وطموح"
+        },
+        "J": {
+          "fr": "Enthousiaste et spontané(e)",
+          "en": "Enthusiastic and spontaneous",
+          "ar": "متحمس وعفوي"
+        },
+        "B": {
+          "fr": "Minutieux(se) et fiable",
+          "en": "Meticulous and reliable",
+          "ar": "دقيق وموثوق"
+        },
+        "V": {
+          "fr": "Calme et bienveillant(e)",
+          "en": "Calm and benevolent",
+          "ar": "هادئ وخيّر"
+        }
       }
     },
     {
-      "question": "Votre manière de gérer le stress",
+      "question": {
+        "fr": "Votre manière de gérer le stress",
+        "en": "Your way of managing stress",
+        "ar": "طريقتك في إدارة التوتر"
+      },
       "options": {
-        "R": "Je transforme la pression en action",
-        "J": "Je relativise et fais de l’humour",
-        "B": "Je contrôle chaque détail pour ne rien rater",
-        "V": "Je prends du recul et respire"
+        "R": {
+          "fr": "Je transforme la pression en action",
+          "en": "I transform pressure into action",
+          "ar": "أحول الضغط إلى عمل"
+        },
+        "J": {
+          "fr": "Je relativise et fais de l'humour",
+          "en": "I put things in perspective and use humor",
+          "ar": "أضع الأمور في نصابها وأستخدم الفكاهة"
+        },
+        "B": {
+          "fr": "Je contrôle chaque détail pour ne rien rater",
+          "en": "I control every detail to miss nothing",
+          "ar": "أتحكم في كل التفاصيل لكي لا أفوت شيئًا"
+        },
+        "V": {
+          "fr": "Je prends du recul et respire",
+          "en": "I step back and breathe",
+          "ar": "أتراجع وأتنفس"
+        }
       }
     },
     {
-      "question": "Ce qui vous motive le plus dans un emploi",
+      "question": {
+        "fr": "Ce qui vous motive le plus dans un emploi",
+        "en": "What motivates you most in a job",
+        "ar": "ما يحفزك أكثر في الوظيفة"
+      },
       "options": {
-        "R": "Les challenges et les résultats",
-        "J": "L’ambiance et la créativité",
-        "B": "La précision et la qualité du travail",
-        "V": "La stabilité et l’humain"
+        "R": {
+          "fr": "Les challenges et les résultats",
+          "en": "Challenges and results",
+          "ar": "التحديات والنتائج"
+        },
+        "J": {
+          "fr": "L'ambiance et la créativité",
+          "en": "The atmosphere and creativity",
+          "ar": "الأجواء والإبداع"
+        },
+        "B": {
+          "fr": "La précision et la qualité du travail",
+          "en": "Precision and quality of work",
+          "ar": "الدقة وجودة العمل"
+        },
+        "V": {
+          "fr": "La stabilité et l'humain",
+          "en": "Stability and human connection",
+          "ar": "الاستقرار والتواصل الإنساني"
+        }
       }
     },
     {
-      "question": "En cas de désaccord, vous avez tendance à",
+      "question": {
+        "fr": "En cas de désaccord, vous avez tendance à",
+        "en": "In case of disagreement, you tend to",
+        "ar": "في حالة الخلاف، تميل إلى"
+      },
       "options": {
-        "R": "Imposer votre point de vue",
-        "J": "Chercher un compromis sans conflit",
-        "B": "Justifier votre point de vue avec des faits",
-        "V": "Écouter et comprendre l’autre"
+        "R": {
+          "fr": "Imposer votre point de vue",
+          "en": "Impose your point of view",
+          "ar": "فرض وجهة نظرك"
+        },
+        "J": {
+          "fr": "Chercher un compromis sans conflit",
+          "en": "Seek a compromise without conflict",
+          "ar": "البحث عن حل وسط دون صراع"
+        },
+        "B": {
+          "fr": "Justifier votre point de vue avec des faits",
+          "en": "Justify your point of view with facts",
+          "ar": "تبرير وجهة نظرك بالحقائق"
+        },
+        "V": {
+          "fr": "Écouter et comprendre l'autre",
+          "en": "Listen and understand the other",
+          "ar": "الاستماع وفهم الآخر"
+        }
       }
     },
     {
-      "question": "Vous êtes plus à l’aise dans un environnement",
+      "question": {
+        "fr": "Vous êtes plus à l'aise dans un environnement",
+        "en": "You are more comfortable in an environment that is",
+        "ar": "أنت أكثر راحة في بيئة"
+      },
       "options": {
-        "R": "Compétitif et exigeant",
-        "J": "Dynamique et ludique",
-        "B": "Structuré et clair",
-        "V": "Chaleureux et rassurant"
+        "R": {
+          "fr": "Compétitif et exigeant",
+          "en": "Competitive and demanding",
+          "ar": "تنافسية ومتطلبة"
+        },
+        "J": {
+          "fr": "Dynamique et ludique",
+          "en": "Dynamic and playful",
+          "ar": "ديناميكية ومرحة"
+        },
+        "B": {
+          "fr": "Structuré et clair",
+          "en": "Structured and clear",
+          "ar": "منظمة وواضحة"
+        },
+        "V": {
+          "fr": "Chaleureux et rassurant",
+          "en": "Warm and reassuring",
+          "ar": "دافئة ومطمئنة"
+        }
       }
     },
     {
-      "question": "Quand vous parlez en public, vous êtes plutôt",
+      "question": {
+        "fr": "Quand vous parlez en public, vous êtes plutôt",
+        "en": "When you speak in public, you are rather",
+        "ar": "عندما تتحدث في العلن، أنت"
+      },
       "options": {
-        "R": "Direct et affirmé",
-        "J": "Expressif et captivant",
-        "B": "Clair et structuré",
-        "V": "Posé et accessible"
+        "R": {
+          "fr": "Direct et affirmé",
+          "en": "Direct and assertive",
+          "ar": "مباشر وحازم"
+        },
+        "J": {
+          "fr": "Expressif et captivant",
+          "en": "Expressive and captivating",
+          "ar": "معبر وجذاب"
+        },
+        "B": {
+          "fr": "Clair et structuré",
+          "en": "Clear and structured",
+          "ar": "واضح ومنظم"
+        },
+        "V": {
+          "fr": "Posé et accessible",
+          "en": "Composed and accessible",
+          "ar": "هادئ ومتاح"
+        }
       }
     },
     {
-      "question": "Face à un imprévu dans votre travail",
+      "question": {
+        "fr": "Face à un imprévu dans votre travail",
+        "en": "Faced with an unexpected situation at work",
+        "ar": "عند مواجهة موقف غير متوقع في العمل"
+      },
       "options": {
-        "R": "Je prends les décisions rapidement",
-        "J": "J’improvise et reste optimiste",
-        "B": "Je vérifie les procédures pour réagir",
-        "V": "Je reste calme et cherche de l’aide si besoin"
+        "R": {
+          "fr": "Je prends les décisions rapidement",
+          "en": "I make decisions quickly",
+          "ar": "أتخذ القرارات بسرعة"
+        },
+        "J": {
+          "fr": "J'improvise et reste optimiste",
+          "en": "I improvise and stay optimistic",
+          "ar": "أرتجل وأبقى متفائلاً"
+        },
+        "B": {
+          "fr": "Je vérifie les procédures pour réagir",
+          "en": "I check procedures to react",
+          "ar": "أتحقق من الإجراءات للتفاعل"
+        },
+        "V": {
+          "fr": "Je reste calme et cherche de l'aide si besoin",
+          "en": "I stay calm and seek help if needed",
+          "ar": "أبقى هادئًا وأطلب المساعدة إذا لزم الأمر"
+        }
       }
     },
     {
-      "question": "Si vous devez choisir un rôle dans une équipe",
+      "question": {
+        "fr": "Si vous devez choisir un rôle dans une équipe",
+        "en": "If you have to choose a role in a team",
+        "ar": "إذا كان عليك اختيار دور في فريق"
+      },
       "options": {
-        "R": "Leader qui prend les décisions",
-        "J": "Animateur qui dynamise",
-        "B": "Planificateur qui structure",
-        "V": "Support qui rassure et accompagne"
+        "R": {
+          "fr": "Leader qui prend les décisions",
+          "en": "Leader who makes decisions",
+          "ar": "قائد يتخذ القرارات"
+        },
+        "J": {
+          "fr": "Animateur qui dynamise",
+          "en": "Facilitator who energizes",
+          "ar": "منشط يحفز"
+        },
+        "B": {
+          "fr": "Planificateur qui structure",
+          "en": "Planner who structures",
+          "ar": "مخطط ينظم"
+        },
+        "V": {
+          "fr": "Support qui rassure et accompagne",
+          "en": "Support who reassures and accompanies",
+          "ar": "داعم يطمئن ويرافق"
+        }
       }
     },
     {
-      "question": "Votre devise personnelle serait plutôt",
+      "question": {
+        "fr": "Votre devise personnelle serait plutôt",
+        "en": "Your personal motto would rather be",
+        "ar": "شعارك الشخصي سيكون"
+      },
       "options": {
-        "R": "Agir vite, réussir fort",
-        "J": "Profiter, partager, créer",
-        "B": "Chaque chose à sa place",
-        "V": "Ensemble, on va plus loin"
+        "R": {
+          "fr": "Agir vite, réussir fort",
+          "en": "Act fast, succeed strong",
+          "ar": "تصرف بسرعة، انجح بقوة"
+        },
+        "J": {
+          "fr": "Profiter, partager, créer",
+          "en": "Enjoy, share, create",
+          "ar": "استمتع، شارك، أبدع"
+        },
+        "B": {
+          "fr": "Chaque chose à sa place",
+          "en": "Everything in its place",
+          "ar": "كل شيء في مكانه"
+        },
+        "V": {
+          "fr": "Ensemble, on va plus loin",
+          "en": "Together, we go further",
+          "ar": "معًا، نذهب أبعد"
+        }
       }
     }
   ]
