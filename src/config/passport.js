@@ -45,7 +45,7 @@ module.exports = function(app) {
             firstName: firstName,
             lastName: lastName,
             email: email,
-            // Remove the phone field entirely rather than setting it to undefined or null
+            phone: `google_${profile.id}`, // Temporary unique phone for Google users
             profilePhoto: profile.photos && profile.photos[0] ? profile.photos[0].value : '',
             socialAuth: {
               googleId: profile.id
@@ -96,7 +96,7 @@ module.exports = function(app) {
             firstName: profile.name.givenName || '',
             lastName: profile.name.familyName || '',
             email: email,
-            // Remove the phone field entirely
+            phone: `facebook_${profile.id}`, // Temporary unique phone for Facebook users
             profilePhoto: profile.photos && profile.photos[0] ? profile.photos[0].value : '',
             socialAuth: {
               facebookId: profile.id
@@ -122,7 +122,7 @@ module.exports = function(app) {
     clientID: process.env.LINKEDIN_CLIENT_ID,
     clientSecret: process.env.LINKEDIN_CLIENT_SECRET,
     callbackURL: process.env.BASE_URL + '/auth/linkedin/callback',
-    scope: ['r_emailaddress', 'r_liteprofile'],
+    scope: ['openid', 'profile'], // Temporarily remove 'email' until approved
     state: true,
     passReqToCallback: true
   }, async (req, accessToken, refreshToken, profile, done) => {
@@ -132,9 +132,9 @@ module.exports = function(app) {
       let isNewUser = false;
       
       if (!user) {
-        // Check if user with same email exists
+        // Check if user with same email exists (email might not be available if scope not approved)
         const email = profile.emails && profile.emails[0] ? profile.emails[0].value : '';
-        user = await User.findOne({ email });
+        user = email ? await User.findOne({ email }) : null;
         
         if (user) {
           // If user with this email exists, add LinkedIn ID to their account
@@ -151,7 +151,7 @@ module.exports = function(app) {
             firstName: firstName,
             lastName: lastName,
             email: email,
-            // Remove the phone field entirely
+            phone: `linkedin_${profile.id}`, // Temporary unique phone for LinkedIn users
             profilePhoto: profile.photos && profile.photos[0] ? profile.photos[0].value : '',
             socialAuth: {
               linkedinId: profile.id

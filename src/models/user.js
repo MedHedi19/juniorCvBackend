@@ -14,12 +14,8 @@ const userSchema = new mongoose.Schema({
     },
     phone: {
         type: String,
-        required: function() {
-            // Phone is required only for regular signup
-            return !this.socialAuth.googleId && !this.socialAuth.facebookId && !this.socialAuth.linkedinId;
-        },
-        // Using sparse index so null/undefined values don't cause uniqueness conflicts
-        index: { unique: true, sparse: true },
+        required: false, // Made optional for social auth users
+        sparse: true // Using sparse index so null/undefined values don't cause uniqueness conflicts
     },
     email: {
         type: String,
@@ -36,10 +32,6 @@ const userSchema = new mongoose.Schema({
     },
     password: {
         type: String,
-        required: function() {
-            // Password is required only for regular signup
-            return !this.socialAuth.googleId && !this.socialAuth.facebookId && !this.socialAuth.linkedinId;
-        },
         minlength: [8, 'Password must be at least 8 characters long'],
     },
     socialAuth: {
@@ -69,6 +61,12 @@ const userSchema = new mongoose.Schema({
         type: String,
     },
 }, { timestamps: true });
+
+// Create sparse indexes to allow multiple null values
+userSchema.index({ phone: 1 }, { sparse: true, unique: true });
+userSchema.index({ 'socialAuth.googleId': 1 }, { sparse: true, unique: true });
+userSchema.index({ 'socialAuth.facebookId': 1 }, { sparse: true, unique: true });
+userSchema.index({ 'socialAuth.linkedinId': 1 }, { sparse: true, unique: true });
 
 userSchema.pre('save', async function(next) {
     if (!this.isModified('password')) return next();
