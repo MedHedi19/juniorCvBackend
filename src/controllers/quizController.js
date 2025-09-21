@@ -1,6 +1,7 @@
 const UserProgress = require('../models/UserProgress');
 const { getQuizByIndex, getAllQuizNames } = require('../utils/quizData');
 
+
 // Get all quizzes with user progress
 const getQuizzes = async (req, res) => {
   console.log('Step: Entering getQuizzes');
