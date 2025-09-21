@@ -1,4 +1,4 @@
-const UserProgress = require('../models/UserProgress');
+const UserProgress = require('../models/userProgress');
 const { getQuizByIndex, getAllQuizNames } = require('../utils/quizData');
 
 
