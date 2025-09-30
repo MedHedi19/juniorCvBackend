@@ -69,32 +69,26 @@ const socialLoginCallback = async (req, res) => {
         const queryParams = `${tokenParam}&${refreshTokenParam}&${userParam}`;
         
         let redirectUrl;
-
-// Check for redirect_uri from the frontend first (this is the key fix)
+        // First check for redirect_uri from the request (passed from frontend)
 const frontendRedirectUri = req.query.redirect_uri || req.session?.redirect_uri;
 
-console.log(`[Social Auth] Frontend redirect URI:`, frontendRedirectUri);
-
 if (frontendRedirectUri) {
-    // Use the redirect URI provided by the frontend
+    // Use the redirect URI provided by the frontend (it already includes the path)
     redirectUrl = `${frontendRedirectUri}?${queryParams}`;
-    console.log(`[Social Auth] Using frontend redirect URI: ${frontendRedirectUri}`);
-} else {
-    // Fallback logic (keep your existing logic)
-    const userAgent = req.headers['user-agent'] || '';
-    const isExpoClient = userAgent.includes('Expo') || userAgent.includes('expo');
-    
-    if (isExpoClient && process.env.NODE_ENV === 'development') {
-        const redirectUri = process.env.EXPO_REDIRECT_URI || 'exp://pl7eiha-med_hedi-8081.exp.direct/--/auth/callback';
-        redirectUrl = `${redirectUri}?${queryParams}`;
-        console.log(`[Social Auth] Using fallback Expo redirect: ${redirectUrl}`);
-    } else {
-        const baseUrl = process.env.MOBILE_APP_URL || 'juniorscv://';
-        redirectUrl = `${baseUrl}auth/callback?${queryParams}`;
-        console.log(`[Social Auth] Using production redirect: ${redirectUrl}`);
-    }
+    console.log(`[Social Auth] Using frontend redirect URI: ${redirectUrl}`);
 }
-
+        
+        else if (isExpoClient && process.env.NODE_ENV === 'development') {
+    // Fallback for Expo development
+    const redirectUri = process.env.EXPO_REDIRECT_URI || 'exp://pl7eiha-med_hedi-8081.exp.direct/--/auth/callback';
+    redirectUrl = `${redirectUri}?${queryParams}`;
+    console.log(`[Social Auth] Using fallback Expo redirect: ${redirectUrl}`);
+} else {
+    // For standalone app and production
+    const baseUrl = process.env.MOBILE_APP_URL || 'juniorscv://';
+    redirectUrl = `${baseUrl}auth/callback?${queryParams}`;
+    console.log(`[Social Auth] Using production redirect: ${redirectUrl}`);
+}
 
         
         // Log the final redirect URL (without sensitive data)
