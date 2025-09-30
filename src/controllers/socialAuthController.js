@@ -70,30 +70,35 @@ const socialLoginCallback = async (req, res) => {
         
         let redirectUrl;
 
-// Check for redirect_uri from the frontend first (this is the key fix)
-const frontendRedirectUri = req.query.redirect_uri || req.session?.redirect_uri;
+// Get redirect_uri from multiple sources (state parameter is most reliable)
+const frontendRedirectUri = req.query.redirect_uri || 
+                            req.query.state || 
+                            req.session?.redirect_uri;
 
-console.log(`[Social Auth] Frontend redirect URI:`, frontendRedirectUri);
+console.log(`[Social Auth] Checking redirect_uri from query:`, req.query.redirect_uri);
+console.log(`[Social Auth] Checking state parameter:`, req.query.state);
+console.log(`[Social Auth] Checking session:`, req.session?.redirect_uri);
+console.log(`[Social Auth] Final frontendRedirectUri:`, frontendRedirectUri);
 
 if (frontendRedirectUri) {
     // Use the redirect URI provided by the frontend
     redirectUrl = `${frontendRedirectUri}?${queryParams}`;
-    console.log(`[Social Auth] Using frontend redirect URI: ${frontendRedirectUri}`);
+    console.log(`[Social Auth] ✅ Using redirect URI:`, frontendRedirectUri);
 } else {
-    // Fallback logic (keep your existing logic)
+    // Fallback logic
     const userAgent = req.headers['user-agent'] || '';
     const isExpoClient = userAgent.includes('Expo') || userAgent.includes('expo');
     
     if (isExpoClient && process.env.NODE_ENV === 'development') {
         const redirectUri = process.env.EXPO_REDIRECT_URI || 'exp://pl7eiha-med_hedi-8081.exp.direct/--/auth/callback';
         redirectUrl = `${redirectUri}?${queryParams}`;
-        console.log(`[Social Auth] Using fallback Expo redirect: ${redirectUrl}`);
     } else {
         const baseUrl = process.env.MOBILE_APP_URL || 'juniorscv://';
         redirectUrl = `${baseUrl}auth/callback?${queryParams}`;
-        console.log(`[Social Auth] Using production redirect: ${redirectUrl}`);
     }
 }
+
+console.log(`[Social Auth] 🎯 FINAL REDIRECT URL:`, redirectUrl);
 
 
         
