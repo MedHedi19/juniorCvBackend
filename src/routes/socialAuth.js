@@ -5,23 +5,39 @@ const router = express.Router();
 
 // Google Auth Routes
 router.get('/google', (req, res, next) => {
-    // Store the redirect_uri in the session if provided
+    console.log('=== GOOGLE AUTH ROUTE ===');
+    console.log('Query params:', req.query);
+    console.log('redirect_uri from query:', req.query.redirect_uri);
+    console.log('Session ID:', req.sessionID);
+    console.log('Session before save:', req.session);
+    
     if (req.query.redirect_uri) {
         req.session.redirect_uri = req.query.redirect_uri;
+        console.log('✅ Saved redirect_uri to session:', req.session.redirect_uri);
+    } else {
+        console.log('❌ NO redirect_uri in query params!');
     }
     
     passport.authenticate('google', { 
         scope: ['profile', 'email'],
-        state: req.query.redirect_uri // Pass the redirect_uri as state for extra security
+        state: req.query.redirect_uri
     })(req, res, next);
 });
 
 router.get('/google/callback',
     passport.authenticate('google', { failureRedirect: '/auth/social/failure', session: false }),
     (req, res, next) => {
-        // Pass along any redirect_uri that was stored in the session
+        console.log('=== GOOGLE CALLBACK ===');
+        console.log('Session ID:', req.sessionID);
+        console.log('Session in callback:', req.session);
+        console.log('redirect_uri from session:', req.session?.redirect_uri);
+        console.log('state from query:', req.query.state);
+        
         if (req.session && req.session.redirect_uri) {
             req.query.redirect_uri = req.session.redirect_uri;
+            console.log('✅ Restored redirect_uri to query:', req.query.redirect_uri);
+        } else {
+            console.log('❌ NO redirect_uri in session! Session may have been lost.');
         }
         next();
     },

@@ -100,7 +100,6 @@ if (frontendRedirectUri) {
 
 console.log(`[Social Auth] 🎯 FINAL REDIRECT URL:`, redirectUrl);
 
-
         
         // Log the final redirect URL (without sensitive data)
         console.log(`[Social Auth] Final redirect URL structure:`, redirectUrl.split('?')[0] + '?[PARAMS_HIDDEN]');
