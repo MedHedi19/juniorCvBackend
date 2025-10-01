@@ -45,7 +45,7 @@ module.exports = function(app) {
             firstName: firstName,
             lastName: lastName,
             email: email,
-            phone: `google_${profile.id}`, // Temporary unique phone for Google users
+            phone: undefined, // Temporary unique phone for Google users
             profilePhoto: profile.photos && profile.photos[0] ? profile.photos[0].value : '',
             socialAuth: {
               googleId: profile.id
