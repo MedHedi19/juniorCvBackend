@@ -22,7 +22,7 @@ const updateProfile = async (req, res) => {
     }
 };
 
-// Change current user's password
+// Change current user's password 
 const changePassword = async (req, res) => {
     try {
         const { oldPassword, newPassword } = req.body;
