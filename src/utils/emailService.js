@@ -324,8 +324,39 @@ const sendSocialWelcomeEmail = async (email, firstName, provider) => {
   }
 };
 
+// Send a certificate email with PDF attachment
+  const sendCertificateEmail= async (email, firstName, pdfBuffer) => {
+    try {
+      const transporter = createTransporter();
+      const mailOptions = {
+        from: `"JuniorsCV Support" <${process.env.EMAIL_USER}>`,
+        to: email,
+        subject: 'Votre certificat JuniorsCV',
+        html: `
+          <p>Bonjour ${firstName},</p>
+          <p>Félicitations pour avoir complété le parcours 7P. Veuillez trouver votre certificat en pièce jointe.</p>
+          <p>Cordialement,<br/>L'équipe JuniorsCV</p>
+        `,
+        attachments: [
+          {
+            filename: 'JuniorsCV-Certificate.pdf',
+            content: pdfBuffer,
+            contentType: 'application/pdf'
+          }
+        ]
+      };
+
+      const info = await transporter.sendMail(mailOptions);
+      return { success: true, messageId: info.messageId };
+    } catch (error) {
+      console.error('Error sending certificate email:', error);
+      return { success: false, error: error.message };
+    }
+  }
+
 module.exports = {
   sendPasswordResetEmail,
   sendWelcomeEmail,
   sendSocialWelcomeEmail,
+  sendCertificateEmail
 };

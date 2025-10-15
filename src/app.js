@@ -13,6 +13,7 @@ const jobScrapingRoutes = require('./routes/jobScraping');
 const jobApplicationRoutes = require('./routes/jobApplications');
 const userDataDeletionRoutes = require('./routes/userDataDeletion');
 const facebookDataDeletionRoutes = require('./routes/facebookDataDeletion');
+const certification = require('./routes/certification');
 
 // Initialize Passport
 require('./config/passport')(app);
@@ -89,7 +90,8 @@ app.get('/', (req, res) => {
             quiz: '/quiz',
             personality: '/personality',
             jobs: '/jobs',
-            applications: '/applications'
+            applications: '/applications',
+            certification: '/certification',
         }
     });
 });
@@ -102,6 +104,7 @@ app.use('/personality', personalityRoutes);
 app.use('/jobs', jobScrapingRoutes);
 app.use('/applications', jobApplicationRoutes);
 app.use('/api/user', userDataDeletionRoutes);
+app.use('/certification', certification);
 
 // Facebook Data Deletion Endpoint - Required for Facebook App Compliance
 // This is the dedicated endpoint we'll use in the Facebook Developer Console

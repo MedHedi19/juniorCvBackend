@@ -60,6 +60,11 @@ const userSchema = new mongoose.Schema({
     refreshToken: {
         type: String,
     },
+    // number of times a certificate was sent to this user
+    certificateSentCount: {
+        type: Number,
+        default: 0,
+    },
 }, { timestamps: true });
 
 // Create sparse indexes to allow multiple null values
