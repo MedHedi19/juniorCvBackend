@@ -1,464 +1,184 @@
 {
   " Postulation": [
     {
-      "question": {
-        "fr": "A votre avis, est ce qu'il y a une structure bien déterminée pour rédiger un mail d'accompagnement ?",
-        "en": "In your opinion, is there a well-defined structure for writing an accompanying email?",
-        "ar": "في رأيك، هل هناك هيكل محدد جيداً لكتابة بريد إلكتروني مرافق؟"
-      },
+      "question": { "fr": "Avant d’envoyer ta candidature, il est utile de :", "en": "Before sending your application, it is useful to:", "ar": "قبل إرسال طلبك، من المفيد أن:" },
       "options": [
-        {
-          "fr": "Oui",
-          "en": "Yes",
-          "ar": "نعم"
-        },
-        {
-          "fr": "Non",
-          "en": "No",
-          "ar": "لا"
-        },
-        {
-          "fr": "Neutre",
-          "en": "Neutral",
-          "ar": "محايد"
-        }
+        { "fr": "Ne rien vérifier", "en": "Check nothing", "ar": "عدم التحقق من أي شيء" },
+        { "fr": "Vérifier l’offre et personnaliser ton dossier", "en": "Check the job and customize your application", "ar": "التحقق من العرض وتخصيص ملفك" },
+        { "fr": "Envoyer le même mail à tout le monde", "en": "Send the same email to everyone", "ar": "إرسال نفس البريد الإلكتروني للجميع" }
       ],
-      "correct": {
-        "fr": "Oui",
-        "en": "Yes",
-        "ar": "نعم"
-      }
+      "correct": { "fr": "Vérifier l’offre et personnaliser ton dossier", "en": "Check the job and customize your application", "ar": "التحقق من العرض وتخصيص ملفك" }
     },
     {
-      "question": {
-        "fr": "Choisissez la forme professionnelle d'une adresse mail parmi les suivantes :",
-        "en": "Choose the professional form of an email address from the following:",
-        "ar": "اختر الشكل المهني لعنوان البريد الإلكتروني من التالي:"
-      },
+      "question": { "fr": "Quel site est essentiel pour la recherche d’emploi aujourd’hui ?", "en": "Which site is essential for job searching today?", "ar": "أي موقع ضروري للبحث عن عمل اليوم؟" },
       "options": [
-        {
-          "fr": "prenom.nom@gmail.com",
-          "en": "firstname.lastname@gmail.com",
-          "ar": "الاسم.اللقب@gmail.com"
-        },
-        {
-          "fr": "prenom123@gmail.com",
-          "en": "firstname123@gmail.com",
-          "ar": "الاسم123@gmail.com"
-        },
-        {
-          "fr": "kikouloo@gmail.com",
-          "en": "kikouloo@gmail.com",
-          "ar": "kikouloo@gmail.com"
-        }
+        { "fr": "Registre local papier", "en": "Local paper register", "ar": "سجل محلي ورقي" },
+        { "fr": "Jobboards et sites d’entreprises + LinkedIn", "en": "Job boards and company sites + LinkedIn", "ar": "مواقع الوظائف ومواقع الشركات + لينكد إن" },
+        { "fr": "Petites annonces dans le journal uniquement", "en": "Classified ads in the newspaper only", "ar": "إعلانات مبوبة في الصحيفة فقط" }
       ],
-      "correct": {
-        "fr": "prenom.nom@gmail.com",
-        "en": "firstname.lastname@gmail.com",
-        "ar": "الاسم.اللقب@gmail.com"
-      }
+      "correct": { "fr": "Jobboards et sites d’entreprises + LinkedIn", "en": "Job boards and company sites + LinkedIn", "ar": "مواقع الوظائف ومواقع الشركات + لينكد إن" }
     },
     {
-      "question": {
-        "fr": "Pensez-vous qu'il y a un horaire bien déterminé pour envoyer le mail d'accompagnement ?",
-        "en": "Do you think there is a specific time to send the accompanying email?",
-        "ar": "هل تعتقد أن هناك وقتاً محدداً لإرسال البريد الإلكتروني المرافق؟"
-      },
+      "question": { "fr": "Quel objet d’e-mail est recommandé pour postuler ?", "en": "Which email subject is recommended for applying?", "ar": "ما هو موضوع البريد الإلكتروني الموصى به للتقدم للوظيفة؟" },
       "options": [
-        {
-          "fr": "Oui",
-          "en": "Yes",
-          "ar": "نعم"
-        },
-        {
-          "fr": "Non",
-          "en": "No",
-          "ar": "لا"
-        },
-        {
-          "fr": "Neutre",
-          "en": "Neutral",
-          "ar": "محايد"
-        }
+        { "fr": "Vide", "en": "Empty", "ar": "فارغ" },
+        { "fr": "Clair et précis (poste + nom)", "en": "Clear and precise (position + name)", "ar": "واضح ودقيق (المنصب + الاسم)" },
+        { "fr": "Très long et détaillé", "en": "Very long and detailed", "ar": "طويل ومفصل جدًا" }
       ],
-      "correct": {
-        "fr": "Oui",
-        "en": "Yes",
-        "ar": "نعم"
-      }
+      "correct": { "fr": "Clair et précis (poste + nom)", "en": "Clear and precise (position + name)", "ar": "واضح ودقيق (المنصب + الاسم)" }
     },
     {
-      "question": {
-        "fr": "Dans un mail d'accompagnement, on se permet de :",
-        "en": "In an accompanying email, we allow ourselves to:",
-        "ar": "في البريد الإلكتروني المرافق، نسمح لأنفسنا بـ:"
-      },
+      "question": { "fr": "Pour une candidature spontanée, que faire en plus du CV ?", "en": "For a spontaneous application, what to do in addition to the CV?", "ar": "بالنسبة لطلب تلقائي، ماذا تفعل بالإضافة إلى السيرة الذاتية؟" },
       "options": [
-        {
-          "fr": "Tutoyer",
-          "en": "Use informal address",
-          "ar": "استخدام الخطاب غير الرسمي"
-        },
-        {
-          "fr": "Vouvoyer",
-          "en": "Use formal address",
-          "ar": "استخدام الخطاب الرسمي"
-        },
-        {
-          "fr": "Neutre",
-          "en": "Neutral",
-          "ar": "محايد"
-        }
+        { "fr": "Rien d’autre", "en": "Nothing else", "ar": "لا شيء آخر" },
+        { "fr": "Rédiger une lettre expliquant ce que tu proposes", "en": "Write a letter explaining what you offer", "ar": "كتابة رسالة توضح ما الذي تقدمه" },
+        { "fr": "Envoyer un message générique", "en": "Send a generic message", "ar": "إرسال رسالة عامة" }
       ],
-      "correct": {
-        "fr": "Vouvoyer",
-        "en": "Use formal address",
-        "ar": "استخدام الخطاب الرسمي"
-      }
+      "correct": { "fr": "Rédiger une lettre expliquant ce que tu proposes", "en": "Write a letter explaining what you offer", "ar": "كتابة رسالة توضح ما الذي تقدمه" }
     },
     {
-      "question": {
-        "fr": "A votre avis, le corps du mail d'accompagnement doit comporter :",
-        "en": "In your opinion, the body of the accompanying email should include:",
-        "ar": "في رأيك، يجب أن يتضمن نص البريد الإلكتروني المرافق:"
-      },
+      "question": { "fr": "Quel document est parfois demandé en plus du CV ?", "en": "Which document is sometimes required in addition to the CV?", "ar": "أي مستند يتم طلبه أحيانًا بالإضافة إلى السيرة الذاتية؟" },
       "options": [
-        {
-          "fr": "Bonjour, voila mon CV",
-          "en": "Hello, here is my CV",
-          "ar": "مرحباً، هذه سيرتي الذاتية"
-        },
-        {
-          "fr": "Voila mon CV, Respectueusement",
-          "en": "Here is my CV, Respectfully",
-          "ar": "هذه سيرتي الذاتية، مع الاحترام"
-        },
-        {
-          "fr": "Bonjour, veuillez trouver ci-joint mon dossier de candidature comprenant mon CV et ma LM.",
-          "en": "Hello, please find attached my application file including my CV and cover letter.",
-          "ar": "مرحباً، يرجى العثور على ملف طلبي المرفق بما في ذلك سيرتي الذاتية وخطاب التحفيز."
-        }
+        { "fr": "Ton relevé de comptes", "en": "Your bank statement", "ar": "كشف حسابك البنكي" },
+        { "fr": "Attestations de stage ou certificats", "en": "Internship certificates or attestations", "ar": "شهادات التدريب أو الشهادات" },
+        { "fr": "Tes notes complètes de lycée", "en": "Your full high school grades", "ar": "درجاتك الكاملة في المدرسة الثانوية" }
       ],
-      "correct": {
-        "fr": "Bonjour, veuillez trouver ci-joint mon dossier de candidature comprenant mon CV et ma LM.",
-        "en": "Hello, please find attached my application file including my CV and cover letter.",
-        "ar": "مرحباً، يرجى العثور على ملف طلبي المرفق بما في ذلك سيرتي الذاتية وخطاب التحفيز."
-      }
+      "correct": { "fr": "Attestations de stage ou certificats", "en": "Internship certificates or attestations", "ar": "شهادات التدريب أو الشهادات" }
     },
     {
-      "question": {
-        "fr": "Est-il nécessaire de réécrire votre parcours professionnel dans ce mail ?",
-        "en": "Is it necessary to rewrite your professional background in this email?",
-        "ar": "هل من الضروري إعادة كتابة خلفيتك المهنية في هذا البريد الإلكتروني؟"
-      },
+      "question": { "fr": "Quand postuler à une offre, il est conseillé de :", "en": "When applying to an offer, it is advisable to:", "ar": "عند التقدم لعرض عمل، من المستحسن:" },
       "options": [
-        {
-          "fr": "Oui",
-          "en": "Yes",
-          "ar": "نعم"
-        },
-        {
-          "fr": "Non",
-          "en": "No",
-          "ar": "لا"
-        },
-        {
-          "fr": "Neutre",
-          "en": "Neutral",
-          "ar": "محايد"
-        }
+        { "fr": "Répondre immédiatement si tu es intéressé", "en": "Respond immediately if you are interested", "ar": "الرد فورًا إذا كنت مهتمًا" },
+        { "fr": "Attendre des mois", "en": "Wait months", "ar": "الانتظار لعدة أشهر" },
+        { "fr": "Envoyer des messages privés sans dossier", "en": "Send private messages without an application", "ar": "إرسال رسائل خاصة بدون تقديم ملف" }
       ],
-      "correct": {
-        "fr": "Non",
-        "en": "No",
-        "ar": "لا"
-      }
+      "correct": { "fr": "Répondre immédiatement si tu es intéressé", "en": "Respond immediately if you are interested", "ar": "الرد فورًا إذا كنت مهتمًا" }
     },
     {
-      "question": {
-        "fr": "Est ce que vous devez indiquer le titre du poste recherché dans l'objet du mail ?",
-        "en": "Should you indicate the title of the position sought in the email subject?",
-        "ar": "هل يجب أن تشير إلى عنوان المنصب المطلوب في موضوع البريد الإلكتروني؟"
-      },
+      "question": { "fr": "Quel est l’avantage d’appliquer via le site de l’entreprise ?", "en": "What is the advantage of applying via the company's site?", "ar": "ما فائدة التقديم عبر موقع الشركة؟" },
       "options": [
-        {
-          "fr": "Oui",
-          "en": "Yes",
-          "ar": "نعم"
-        },
-        {
-          "fr": "Non",
-          "en": "No",
-          "ar": "لا"
-        },
-        {
-          "fr": "Neutre",
-          "en": "Neutral",
-          "ar": "محايد"
-        }
+        { "fr": "Aucune trace de ta candidature", "en": "No trace of your application", "ar": "لا أثر لطلبك" },
+        { "fr": "Ton dossier arrive directement au recruteur concerné", "en": "Your file goes directly to the relevant recruiter", "ar": "يصل ملفك مباشرة إلى المسؤول المعني" },
+        { "fr": "C’est plus long, donc meilleur", "en": "It's longer, therefore better", "ar": "أطول، لذلك أفضل" }
       ],
-      "correct": {
-        "fr": "Oui",
-        "en": "Yes",
-        "ar": "نعم"
-      }
+      "correct": { "fr": "Ton dossier arrive directement au recruteur concerné", "en": "Your file goes directly to the relevant recruiter", "ar": "يصل ملفك مباشرة إلى المسؤول المعني" }
     },
     {
-      "question": {
-        "fr": "Pour un mail professionnel vous devez utiliser une mise en page :",
-        "en": "For a professional email you should use a layout that is:",
-        "ar": "للبريد الإلكتروني المهني يجب أن تستخدم تخطيطاً:"
-      },
+      "question": { "fr": "Que signifie “postuler stratégiquement” ?", "en": "What does 'apply strategically' mean?", "ar": "ماذا يعني 'التقدم بطريقة استراتيجية'؟" },
       "options": [
-        {
-          "fr": "Sobre et professionnel",
-          "en": "Sober and professional",
-          "ar": "بسيط ومهني"
-        },
-        {
-          "fr": "Utiliser le soulignement ou gras pour le texte, glisser des images ou insérer des smileys et des symboles particuliers.",
-          "en": "Use underlining or bold for text, insert images or add smileys and special symbols.",
-          "ar": "استخدام التسطير أو الخط العريض للنص، إدراج الصور أو إضافة الرموز التعبيرية والرموز الخاصة."
-        },
-        {
-          "fr": "Neutre",
-          "en": "Neutral",
-          "ar": "محايد"
-        }
+        { "fr": "Postuler massivement sans tri", "en": "Apply massively without filtering", "ar": "التقدم بشكل جماعي دون تصفية" },
+        { "fr": "Cibler les offres correspondant réellement à ton profil", "en": "Target offers that truly match your profile", "ar": "استهداف العروض التي تتوافق حقًا مع ملفك" },
+        { "fr": "Postuler uniquement aux postes les mieux payés", "en": "Apply only to the highest paid positions", "ar": "التقدم فقط للوظائف الأعلى أجرًا" }
       ],
-      "correct": {
-        "fr": "Sobre et professionnel",
-        "en": "Sober and professional",
-        "ar": "بسيط ومهني"
-      }
+      "correct": { "fr": "Cibler les offres correspondant réellement à ton profil", "en": "Target offers that truly match your profile", "ar": "استهداف العروض التي تتوافق حقًا مع ملفك" }
     },
     {
-      "question": {
-        "fr": "Est-ce que vous pouvez remplacer une LM par un mail d'accompagnement ?",
-        "en": "Can you replace a cover letter with an accompanying email?",
-        "ar": "هل يمكنك استبدال خطاب التحفيز ببريد إلكتروني مرافق؟"
-      },
+      "question": { "fr": "Quelle info vérifier dans l’annonce avant d’envoyer ton dossier ?", "en": "What info to check in the ad before sending your application?", "ar": "أي معلومات يجب التحقق منها في الإعلان قبل إرسال طلبك؟" },
       "options": [
-        {
-          "fr": "Oui",
-          "en": "Yes",
-          "ar": "نعم"
-        },
-        {
-          "fr": "Non",
-          "en": "No",
-          "ar": "لا"
-        },
-        {
-          "fr": "Parfois",
-          "en": "Sometimes",
-          "ar": "أحياناً"
-        }
+        { "fr": "La couleur du logo de l’entreprise", "en": "The company's logo color", "ar": "لون شعار الشركة" },
+        { "fr": "Les missions, compétences requises et modalités de candidature", "en": "The tasks, required skills and application modalities", "ar": "المهام، المهارات المطلوبة، وشروط التقديم" },
+        { "fr": "Le nombre d’employés uniquement", "en": "The number of employees only", "ar": "عدد الموظفين فقط" }
       ],
-      "correct": {
-        "fr": "Non",
-        "en": "No",
-        "ar": "لا"
-      }
+      "correct": { "fr": "Les missions, compétences requises et modalités de candidature", "en": "The tasks, required skills and application modalities", "ar": "المهام، المهارات المطلوبة، وشروط التقديم" }
     },
     {
-      "question": {
-        "fr": "Qu'est ce qu'un mail de motivation ?",
-        "en": "What is a motivation email?",
-        "ar": "ما هو بريد التحفيز الإلكتروني؟"
-      },
+      "question": { "fr": "Pourquoi est-il utile d’ajouter une phrase personnalisée dans l’e-mail de candidature ?", "en": "Why is it useful to add a personalized sentence in the application email?", "ar": "لماذا من المفيد إضافة جملة مخصصة في بريد التقديم؟" },
       "options": [
-        {
-          "fr": "Un mail d'accompagnement",
-          "en": "An accompanying email",
-          "ar": "بريد إلكتروني مرافق"
-        },
-        {
-          "fr": "Une lettre de motivation",
-          "en": "A cover letter",
-          "ar": "خطاب تحفيز"
-        },
-        {
-          "fr": "Un mail de remerciement",
-          "en": "A thank you email",
-          "ar": "بريد إلكتروني للشكر"
-        }
+        { "fr": "Pour remplir des lignes", "en": "To fill lines", "ar": "لملء السطور" },
+        { "fr": "Pour montrer que tu as compris l’offre et l’entreprise", "en": "To show you understood the offer and the company", "ar": "لإظهار أنك فهمت العرض والشركة" },
+        { "fr": "Pour demander un salaire tout de suite", "en": "To ask for a salary immediately", "ar": "لطلب راتب فورًا" }
       ],
-      "correct": {
-        "fr": "Une lettre de motivation",
-        "en": "A cover letter",
-        "ar": "خطاب تحفيز"
-      }
+      "correct": { "fr": "Pour montrer que tu as compris l’offre et l’entreprise", "en": "To show you understood the offer and the company", "ar": "لإظهار أنك فهمت العرض والشركة" }
     },
     {
-      "question": {
-        "fr": "Quel canal est le plus efficace pour trouver un emploi ?",
-        "en": "Which channel is most effective for finding a job?",
-        "ar": "أي قناة هي الأكثر فعالية للعثور على وظيفة؟"
-      },
+      "question": { "fr": "Quel format doit avoir ton portfolio numérique ?", "en": "What format should your digital portfolio have?", "ar": "ما هي صيغة ملفك الرقمي؟" },
       "options": [
-        {
-          "fr": "Presse",
-          "en": "Press",
-          "ar": "الصحافة"
-        },
-        {
-          "fr": "LinkedIn",
-          "en": "LinkedIn",
-          "ar": "لينكد إن"
-        },
-        {
-          "fr": "Salons",
-          "en": "Job fairs",
-          "ar": "معارض التوظيف"
-        },
-        {
-          "fr": "Tous",
-          "en": "All",
-          "ar": "جميعها"
-        }
+        { "fr": "Un PDF ou un site web facile à parcourir", "en": "A PDF or an easy-to-navigate website", "ar": "PDF أو موقع ويب سهل التصفح" },
+        { "fr": "Un dossier compressé sans organisation", "en": "A compressed folder without organization", "ar": "مجلد مضغوط بدون تنظيم" },
+        { "fr": "Plusieurs fichiers non nommés", "en": "Multiple unnamed files", "ar": "عدة ملفات غير مسماة" }
       ],
-      "correct": {
-        "fr": "Tous",
-        "en": "All",
-        "ar": "جميعها"
-      }
+      "correct": { "fr": "Un PDF ou un site web facile à parcourir", "en": "A PDF or an easy-to-navigate website", "ar": "PDF أو موقع ويب سهل التصفح" }
     },
     {
-      "question": {
-        "fr": "Pourquoi une candidature spontanée peut-elle être efficace ?",
-        "en": "Why can a spontaneous application be effective?",
-        "ar": "لماذا يمكن أن يكون الطلب التلقائي فعالاً؟"
-      },
+      "question": { "fr": "Comment vérifier si ta candidature est parfaite ?", "en": "How to check if your application is perfect?", "ar": "كيف تتحقق مما إذا كان طلبك مثاليًا؟" },
       "options": [
-        {
-          "fr": "Elle montre la motivation",
-          "en": "It shows motivation",
-          "ar": "يظهر التحفيز"
-        },
-        {
-          "fr": "Elle est rare",
-          "en": "It is rare",
-          "ar": "نادر"
-        },
-        {
-          "fr": "Elle impressionne",
-          "en": "It impresses",
-          "ar": "يثير الإعجاب"
-        },
-        {
-          "fr": "Aucune raison",
-          "en": "No reason",
-          "ar": "لا يوجد سبب"
-        }
+        { "fr": "Envoyer sans relecture", "en": "Send without proofreading", "ar": "الإرسال بدون مراجعة" },
+        { "fr": "Faire relire par quelqu’un et vérifier orthographe", "en": "Have someone proofread and check spelling", "ar": "جعل شخص ما يراجع والتحقق من الإملاء" },
+        { "fr": "La publier sur un forum public", "en": "Publish it on a public forum", "ar": "نشرها على منتدى عام" }
       ],
-      "correct": {
-        "fr": "Elle montre la motivation",
-        "en": "It shows motivation",
-        "ar": "يظهر التحفيز"
-      }
+      "correct": { "fr": "Faire relire par quelqu’un et vérifier orthographe", "en": "Have someone proofread and check spelling", "ar": "جعل شخص ما يراجع والتحقق من الإملاء" }
     },
     {
-      "question": {
-        "fr": "Quel est l'intérêt d'un réseau professionnel ?",
-        "en": "What is the benefit of a professional network?",
-        "ar": "ما هي فائدة الشبكة المهنية؟"
-      },
+      "question": { "fr": "Quel élément augmente tes chances d’être remarqué ?", "en": "What increases your chances of being noticed?", "ar": "ما الذي يزيد فرصك في لفت الانتباه؟" },
       "options": [
-        {
-          "fr": "Se faire des amis",
-          "en": "Make friends",
-          "ar": "تكوين صداقات"
-        },
-        {
-          "fr": "Trouver des offres cachées",
-          "en": "Find hidden opportunities",
-          "ar": "العثور على فرص مخفية"
-        },
-        {
-          "fr": "Éviter de postuler",
-          "en": "Avoid applying",
-          "ar": "تجنب التقديم"
-        },
-        {
-          "fr": "Aucune importance",
-          "en": "No importance",
-          "ar": "لا أهمية"
-        }
+        { "fr": "Envoyer une candidature en retard", "en": "Send a late application", "ar": "إرسال طلب متأخر" },
+        { "fr": "Adapter ton CV au poste et mentionner un projet concret", "en": "Adapt your CV to the job and mention a concrete project", "ar": "تكييف سيرتك الذاتية للوظيفة وذكر مشروع ملموس" },
+        { "fr": "Mettre des couleurs vives partout", "en": "Use bright colors everywhere", "ar": "استخدام ألوان زاهية في كل مكان" }
       ],
-      "correct": {
-        "fr": "Trouver des offres cachées",
-        "en": "Find hidden opportunities",
-        "ar": "العثور على فرص مخفية"
-      }
+      "correct": { "fr": "Adapter ton CV au poste et mentionner un projet concret", "en": "Adapt your CV to the job and mention a concrete project", "ar": "تكييف سيرتك الذاتية للوظيفة وذكر مشروع ملموس" }
     },
     {
-      "question": {
-        "fr": "Que doit contenir un mail de candidature ?",
-        "en": "What should an application email contain?",
-        "ar": "ماذا يجب أن يحتوي بريد الطلب الإلكتروني؟"
-      },
+      "question": { "fr": "Que faire si l’annonce demande un document précis (ex. portfolio) ?", "en": "What to do if the ad requests a specific document (e.g., portfolio)?", "ar": "ماذا تفعل إذا طلب الإعلان مستندًا محددًا (مثل المحفظة)؟" },
       "options": [
-        {
-          "fr": "Présentation, CV, objet clair",
-          "en": "Introduction, CV, clear subject",
-          "ar": "مقدمة، سيرة ذاتية، موضوع واضح"
-        },
-        {
-          "fr": "Uniquement un CV",
-          "en": "Only a CV",
-          "ar": "سيرة ذاتية فقط"
-        },
-        {
-          "fr": "Une phrase rapide",
-          "en": "A quick sentence",
-          "ar": "جملة سريعة"
-        },
-        {
-          "fr": "Un lien vers LinkedIn",
-          "en": "A link to LinkedIn",
-          "ar": "رابط إلى لينكد إن"
-        }
+        { "fr": "L’ignorer", "en": "Ignore it", "ar": "تجاهله" },
+        { "fr": "Fournir exactement ce qui est demandé", "en": "Provide exactly what is requested", "ar": "توفير ما هو مطلوب تمامًا" },
+        { "fr": "Remplacer par autre chose", "en": "Replace with something else", "ar": "استبداله بشيء آخر" }
       ],
-      "correct": {
-        "fr": "Présentation, CV, objet clair",
-        "en": "Introduction, CV, clear subject",
-        "ar": "مقدمة، سيرة ذاتية، موضوع واضح"
-      }
+      "correct": { "fr": "Fournir exactement ce qui est demandé", "en": "Provide exactly what is requested", "ar": "توفير ما هو مطلوب تمامًا" }
     },
     {
-      "question": {
-        "fr": "Quel est le meilleur moment pour postuler ?",
-        "en": "What is the best time to apply?",
-        "ar": "ما هو أفضل وقت للتقديم؟"
-      },
+      "question": { "fr": "Pour un envoi par LinkedIn, que faut-il faire ?", "en": "For sending via LinkedIn, what should you do?", "ar": "لإرسال عبر LinkedIn، ماذا يجب أن تفعل؟" },
       "options": [
-        {
-          "fr": "Le matin",
-          "en": "Morning",
-          "ar": "الصباح"
-        },
-        {
-          "fr": "Le soir",
-          "en": "Evening",
-          "ar": "المساء"
-        },
-        {
-          "fr": "Le week-end",
-          "en": "Weekend",
-          "ar": "نهاية الأسبوع"
-        },
-        {
-          "fr": "N'importe quand",
-          "en": "Anytime",
-          "ar": "في أي وقت"
-        }
+        { "fr": "Envoyer le CV en message sans introduction", "en": "Send the CV in a message without introduction", "ar": "إرسال السيرة الذاتية في رسالة دون مقدمة" },
+        { "fr": "Écrire un court message personnalisé expliquant ton intérêt", "en": "Write a short personalized message explaining your interest", "ar": "اكتب رسالة قصيرة ومخصصة تشرح اهتمامك" },
+        { "fr": "Envoyer le CV en commentaire", "en": "Send the CV in a comment", "ar": "إرسال السيرة الذاتية في تعليق" }
       ],
-      "correct": {
-        "fr": "Le matin",
-        "en": "Morning",
-        "ar": "الصباح"
-      }
+      "correct": { "fr": "Écrire un court message personnalisé expliquant ton intérêt", "en": "Write a short personalized message explaining your interest", "ar": "اكتب رسالة قصيرة ومخصصة تشرح اهتمامك" }
+    },
+    {
+      "question": { "fr": "Quelle est la meilleure attitude lors de candidatures multiples ?", "en": "What is the best attitude when applying to multiple jobs?", "ar": "ما هو أفضل سلوك عند التقديم لعدة وظائف؟" },
+      "options": [
+        { "fr": "Envoyer le même message automatique", "en": "Send the same automated message", "ar": "إرسال نفس الرسالة الآلية" },
+        { "fr": "Adapter chaque candidature au poste ciblé", "en": "Adapt each application to the targeted position", "ar": "تكييف كل طلب للمنصب المستهدف" },
+        { "fr": "Postuler uniquement au hasard", "en": "Apply only randomly", "ar": "التقديم عشوائيًا فقط" }
+      ],
+      "correct": { "fr": "Adapter chaque candidature au poste ciblé", "en": "Adapt each application to the targeted position", "ar": "تكييف كل طلب للمنصب المستهدف" }
+    },
+    {
+      "question": { "fr": "Pourquoi indiquer un titre de poste précis dans ton CV ?", "en": "Why indicate a specific job title in your CV?", "ar": "لماذا تشير إلى عنوان وظيفة محدد في سيرتك الذاتية؟" },
+      "options": [
+        { "fr": "Pour tromper le recruteur", "en": "To deceive the recruiter", "ar": "لتضليل المجند" },
+        { "fr": "Pour montrer clairement le rôle que tu vises", "en": "To clearly show the role you target", "ar": "لإظهار الدور الذي تستهدفه بوضوح" },
+        { "fr": "Pour masquer ta situation", "en": "To hide your situation", "ar": "لإخفاء وضعك" }
+      ],
+      "correct": { "fr": "Pour montrer clairement le rôle que tu vises", "en": "To clearly show the role you target", "ar": "لإظهار الدور الذي تستهدفه بوضوح" }
+    },
+    {
+      "question": { "fr": "Quand suivre sa candidature après l’envoi ?", "en": "When to follow up on your application after sending?", "ar": "متى تتابع طلبك بعد الإرسال؟" },
+      "options": [
+        { "fr": "Jamais", "en": "Never", "ar": "أبدًا" },
+        { "fr": "Après une semaine ou deux, par mail poli", "en": "After a week or two, by polite email", "ar": "بعد أسبوع أو أسبوعين، عبر بريد إلكتروني مهذب" },
+        { "fr": "Tous les jours par téléphone", "en": "Every day by phone", "ar": "كل يوم عبر الهاتف" }
+      ],
+      "correct": { "fr": "Après une semaine ou deux, par mail poli", "en": "After a week or two, by polite email", "ar": "بعد أسبوع أو أسبوعين، عبر بريد إلكتروني مهذب" }
+    },
+    {
+      "question": { "fr": "Quel est l’intérêt d’écrire une accroche synthétique dans ton CV ?", "en": "What is the benefit of writing a concise headline in your CV?", "ar": "ما فائدة كتابة ملخص موجز في سيرتك الذاتية؟" },
+      "options": [
+        { "fr": "Remplir l’espace", "en": "Fill space", "ar": "ملء المساحة" },
+        { "fr": "Résumer ta proposition de valeur en 2-3 lignes", "en": "Summarize your value proposition in 2-3 lines", "ar": "تلخيص عرض القيمة الخاص بك في 2-3 أسطر" },
+        { "fr": "Mettre un slogan", "en": "Put a slogan", "ar": "وضع شعار" }
+      ],
+      "correct": { "fr": "Résumer ta proposition de valeur en 2-3 lignes", "en": "Summarize your value proposition in 2-3 lines", "ar": "تلخيص عرض القيمة الخاص بك في 2-3 أسطر" }
+    },
+    {
+      "question": { "fr": "Quel est l’impact d’un CV mal formaté pour la postulation en ligne ?", "en": "What is the impact of a poorly formatted CV for online applications?", "ar": "ما تأثير سيرة ذاتية غير منسقة بشكل جيد على التقديم عبر الإنترنت؟" },
+      "options": [
+        { "fr": "Aucun", "en": "None", "ar": "لا شيء" },
+        { "fr": "Ton CV peut être rejeté ou mal lu", "en": "Your CV may be rejected or poorly read", "ar": "قد يتم رفض سيرتك الذاتية أو قراءتها بشكل خاطئ" },
+        { "fr": "Il sera préféré car original", "en": "It will be preferred because it is original", "ar": "سيتم تفضيله لكونه أصليًا" }
+      ],
+      "correct": { "fr": "Ton CV peut être rejeté ou mal lu", "en": "Your CV may be rejected or poorly read", "ar": "قد يتم رفض سيرتك الذاتية أو قراءتها بشكل خاطئ" }
     }
   ]
 }

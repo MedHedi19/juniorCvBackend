@@ -21,7 +21,7 @@ const userProgressSchema = new mongoose.Schema({
         },
         totalQuestions: {
             type: Number,
-            default: 0
+            default: 10
         },
         percentage: {
             type: Number,
@@ -30,6 +30,9 @@ const userProgressSchema = new mongoose.Schema({
         completedAt: {
             type: Date
         },
+        selectedQuestions: [{
+            type: Number
+        }],
         answers: [{
             questionIndex: Number,
             selectedAnswer: String,

@@ -1,144 +1,185 @@
 {
   "Psychologique": [
     {
-      "question": {"fr": "Un entretien exige t-il une préparation psychologique ?", "en": "Does an interview require psychological preparation?", "ar": "هل تتطلب المقابلة إعدادًا نفسيًا؟"},
+      "question": { "fr": "Avant un entretien, la préparation mentale inclut :", "en": "Before an interview, mental preparation includes:", "ar": "قبل المقابلة، تشمل الاستعداد العقلي:" },
       "options": [
-        {"fr": "Oui", "en": "Yes", "ar": "نعم"},
-        {"fr": "Non", "en": "No", "ar": "لا"},
-        {"fr": "Pas toujours", "en": "Not always", "ar": "ليس دائمًا"}
+        { "fr": "Ne rien préparer mentalement", "en": "Prepare nothing mentally", "ar": "عدم التحضير ذهنيًا" },
+        { "fr": "Respiration, visualisation et révision des points clés", "en": "Breathing, visualization and reviewing key points", "ar": "التنفس، التصور ومراجعة النقاط الرئيسية" },
+        { "fr": "Regarder des vidéos de divertissement juste avant", "en": "Watch entertainment videos just before", "ar": "مشاهدة مقاطع ترفيهية قبل المقابلة مباشرة" }
       ],
-      "correct": {"fr": "Oui", "en": "Yes", "ar": "نعم"}
+      "correct": { "fr": "Respiration, visualisation et révision des points clés", "en": "Breathing, visualization and reviewing key points", "ar": "التنفس، التصور ومراجعة النقاط الرئيسية" }
     },
     {
-      "question": {"fr": "La psychologie avant un entretien consiste à :", "en": "Psychology before an interview consists of:", "ar": "علم النفس قبل المقابلة يتكون من:"},
+      "question": { "fr": "Quel exercice aide à réduire le stress avant l’entretien ?", "en": "Which exercise helps reduce stress before the interview?", "ar": "أي تمرين يساعد على تقليل التوتر قبل المقابلة؟" },
       "options": [
-        {"fr": "Savoir comment gérer vos émotions", "en": "Knowing how to manage your emotions", "ar": "معرفة كيفية إدارة مشاعرك"},
-        {"fr": "Porter une tenue appropriée", "en": "Wearing appropriate attire", "ar": "ارتداء ملابس مناسبة"},
-        {"fr": "Préparer votre candidature", "en": "Preparing your application", "ar": "تحضير طلبك"}
+        { "fr": "Mâcher du chewing-gum sans réfléchir", "en": "Chew gum without thinking", "ar": "مضغ العلكة دون تفكير" },
+        { "fr": "Respiration profonde et ancrage", "en": "Deep breathing and grounding", "ar": "التنفس العميق والتأريض" },
+        { "fr": "Se mettre la pression en revoyant tout", "en": "Put pressure on yourself by reviewing everything", "ar": "الضغط على نفسك بمراجعة كل شيء" }
       ],
-      "correct": {"fr": "Savoir comment gérer vos émotions", "en": "Knowing how to manage your emotions", "ar": "معرفة كيفية إدارة مشاعرك"}
+      "correct": { "fr": "Respiration profonde et ancrage", "en": "Deep breathing and grounding", "ar": "التنفس العميق والتأريض" }
     },
     {
-      "question": {"fr": "Quel est le facteur principal qui peut agir sur votre comportement lors d’un entretien :", "en": "What is the main factor that can affect your behavior during an interview:", "ar": "ما هو العامل الرئيسي الذي يمكن أن يؤثر على سلوكك أثناء المقابلة:"},
+      "question": { "fr": "Si on te demande tes points faibles, que faire ?", "en": "If asked about your weaknesses, what to do?", "ar": "إذا سُئلت عن نقاط ضعفك، ماذا تفعل؟" },
       "options": [
-        {"fr": "L’heure d’entretien", "en": "Interview time", "ar": "وقت المقابلة"},
-        {"fr": "Le stress", "en": "Stress", "ar": "التوتر"},
-        {"fr": "Le poste en question", "en": "The position in question", "ar": "الوظيفة المعنية"}
+        { "fr": "Dire “aucun”", "en": "Say 'none'", "ar": "قول 'لا يوجد'" },
+        { "fr": "Mentionner un vrai point et expliquer comment tu le travailles", "en": "Mention a real point and explain how you're working on it", "ar": "ذكر نقطة حقيقية وشرح كيف تعمل على تحسينها" },
+        { "fr": "Inventer un point non crédible", "en": "Invent a non-credible weakness", "ar": "اختراع نقطة غير قابلة للتصديق" }
       ],
-      "correct": {"fr": "Le stress", "en": "Stress", "ar": "التوتر"}
+      "correct": { "fr": "Mentionner un vrai point et expliquer comment tu le travailles", "en": "Mention a real point and explain how you're working on it", "ar": "ذكر نقطة حقيقية وشرح كيف تعمل على تحسينها" }
     },
     {
-      "question": {"fr": "Un candidat avant un entretien se trouve dans une situation stressante, quelles sont ses causes :", "en": "A candidate before an interview is in a stressful situation, what are its causes:", "ar": "المرشح قبل المقابلة يكون في وضع مرهق، ما هي أسبابه:"},
+      "question": { "fr": "Face à une question difficile, il est conseillé de :", "en": "Facing a difficult question, it is advisable to:", "ar": "أمام سؤال صعب، يُنصح بـ:" },
       "options": [
-        {"fr": "La peur", "en": "Fear", "ar": "الخوف"},
-        {"fr": "Pensées négatives", "en": "Negative thoughts", "ar": "أفكار سلبية"},
-        {"fr": "Toutes les réponses précédentes", "en": "All previous answers", "ar": "جميع الإجابات السابقة"}
+        { "fr": "Répondre immédiatement sans réfléchir", "en": "Answer immediately without thinking", "ar": "الرد فورًا دون تفكير" },
+        { "fr": "Prendre un instant, demander clarification et répondre", "en": "Take a moment, ask for clarification and answer", "ar": "أخذ لحظة، طلب توضيح ثم الرد" },
+        { "fr": "Rester silencieux", "en": "Remain silent", "ar": "البقاء صامتًا" }
       ],
-      "correct": {"fr": "Toutes les réponses précédentes", "en": "All previous answers", "ar": "جميع الإجابات السابقة"}
+      "correct": { "fr": "Prendre un instant, demander clarification et répondre", "en": "Take a moment, ask for clarification and answer", "ar": "أخذ لحظة، طلب توضيح ثم الرد" }
     },
     {
-      "question": {"fr": "Comment pouvez-vous sortir de cette situation ?", "en": "How can you get out of this situation?", "ar": "كيف يمكنك الخروج من هذا الوضع؟"},
+      "question": { "fr": "Comment gérer l’anxiété qui bloque la parole ?", "en": "How to manage anxiety that blocks speech?", "ar": "كيف تتعامل مع القلق الذي يعيق الكلام؟" },
       "options": [
-        {"fr": "Analyser les sources du stress", "en": "Analyze the sources of stress", "ar": "تحليل مصادر التوتر"},
-        {"fr": "Améliorer votre respiration, rester concentré et aérer l’esprit", "en": "Improve your breathing, stay focused and clear your mind", "ar": "تحسين التنفس، البقاء مركزًا وتصفية الذهن"},
-        {"fr": "Toutes les réponses précédentes", "en": "All previous answers", "ar": "جميع الإجابات السابقة"}
+        { "fr": "Paniquer davantage", "en": "Panic more", "ar": "الذعر أكثر" },
+        { "fr": "Respirer, reformuler la question et parler calmement", "en": "Breathe, reformulate the question and speak calmly", "ar": "التنفس، إعادة صياغة السؤال والتحدث بهدوء" },
+        { "fr": "Répondre par des monosyllabes", "en": "Answer with monosyllables", "ar": "الرد بمونوسيليفables" }
       ],
-      "correct": {"fr": "Analyser les sources du stress", "en": "Analyze the sources of stress", "ar": "تحليل مصادر التوتر"}
+      "correct": { "fr": "Respirer, reformuler la question et parler calmement", "en": "Breathe, reformulate the question and speak calmly", "ar": "التنفس، إعادة صياغة السؤال والتحدث بهدوء" }
     },
     {
-      "question": {"fr": "Pensez vous qu’une simulation d’un entretien avec un ami ou devant un miroir soit nécessaire ?", "en": "Do you think simulating an interview with a friend or in front of a mirror is necessary?", "ar": "هل تعتقد أن محاكاة المقابلة مع صديق أو أمام المرآة ضرورية؟"},
+      "question": { "fr": "Quelle attitude montre de la résilience en entretien ?", "en": "Which attitude shows resilience in an interview?", "ar": "أي سلوك يُظهر المرونة في المقابلة؟" },
       "options": [
-        {"fr": "Oui", "en": "Yes", "ar": "نعم"},
-        {"fr": "Non", "en": "No", "ar": "لا"},
-        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
+        { "fr": "Se focaliser sur les erreurs passées", "en": "Focus on past mistakes", "ar": "التركيز على الأخطاء الماضية" },
+        { "fr": "Reconnaître les difficultés et montrer comment tu as progressé", "en": "Acknowledge difficulties and show how you've progressed", "ar": "الاعتراف بالصعوبات وإظهار كيفية تقدمك" },
+        { "fr": "Dire que tout est parfait", "en": "Say everything is perfect", "ar": "قول أن كل شيء مثالي" }
       ],
-      "correct": {"fr": "Oui", "en": "Yes", "ar": "نعم"}
+      "correct": { "fr": "Reconnaître les difficultés et montrer comment tu as progressé", "en": "Acknowledge difficulties and show how you've progressed", "ar": "الاعتراف بالصعوبات وإظهار كيفية تقدمك" }
     },
     {
-      "question": {"fr": "Le stress peut être positif ?", "en": "Can stress be positive?", "ar": "هل يمكن أن يكون التوتر إيجابيًا؟"},
+      "question": { "fr": "Pourquoi est-il utile de préparer des exemples concrets ?", "en": "Why is it useful to prepare concrete examples?", "ar": "لماذا من المفيد تحضير أمثلة ملموسة؟" },
       "options": [
-        {"fr": "Oui", "en": "Yes", "ar": "نعم"},
-        {"fr": "Non", "en": "No", "ar": "لا"},
-        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
+        { "fr": "Pour meubler le silence", "en": "To fill the silence", "ar": "لملء الصمت" },
+        { "fr": "Pour illustrer tes compétences et rassurer le recruteur", "en": "To illustrate your skills and reassure the recruiter", "ar": "لتوضيح مهاراتك وطمأنة المجند" },
+        { "fr": "Pour allonger la conversation inutilement", "en": "To lengthen the conversation unnecessarily", "ar": "لإطالة المحادثة دون داع" }
       ],
-      "correct": {"fr": "Oui", "en": "Yes", "ar": "نعم"}
+      "correct": { "fr": "Pour illustrer tes compétences et rassurer le recruteur", "en": "To illustrate your skills and reassure the recruiter", "ar": "لتوضيح مهاراتك وطمأنة المجند" }
     },
     {
-      "question": {"fr": "Le stress positif peut être une source de :", "en": "Positive stress can be a source of:", "ar": "يمكن أن يكون التوتر الإيجابي مصدرًا لـ:"},
+      "question": { "fr": "Comment réagir à une question sur un échec professionnel ?", "en": "How to react to a question about a professional failure?", "ar": "كيفية الرد على سؤال حول فشل مهني؟" },
       "options": [
-        {"fr": "Motivation", "en": "Motivation", "ar": "الدافع"},
-        {"fr": "Perturbation", "en": "Disturbance", "ar": "إزعاج"},
-        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
+        { "fr": "Blâmer les autres", "en": "Blame others", "ar": "لوم الآخرين" },
+        { "fr": "Expliquer la situation, ce que tu as appris et le résultat", "en": "Explain the situation, what you learned and the outcome", "ar": "شرح الوضع، ما تعلمته والنتيجة" },
+        { "fr": "Nier l’échec", "en": "Deny the failure", "ar": "إنكار الفشل" }
       ],
-      "correct": {"fr": "Motivation", "en": "Motivation", "ar": "الدافع"}
+      "correct": { "fr": "Expliquer la situation, ce que tu as appris et le résultat", "en": "Explain the situation, what you learned and the outcome", "ar": "شرح الوضع، ما تعلمته والنتيجة" }
     },
     {
-      "question": {"fr": "Au cours d’un entretien, votre état psychologique peut agir sur la décision du recruteur :", "en": "During an interview, your psychological state can affect the recruiter's decision:", "ar": "أثناء المقابلة، يمكن أن يؤثر حالتك النفسية على قرار المجند:"},
+      "question": { "fr": "Pour être à l’aise, que faut-il travailler avant l’entretien ?", "en": "To be comfortable, what should you work on before the interview?", "ar": "لكي تكون مرتاحًا، ماذا يجب أن تعمل قبل المقابلة؟" },
       "options": [
-        {"fr": "Oui", "en": "Yes", "ar": "نعم"},
-        {"fr": "Non", "en": "No", "ar": "لا"},
-        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
+        { "fr": "Rien du tout", "en": "Nothing at all", "ar": "لا شيء على الإطلاق" },
+        { "fr": "Tes réponses principales, ton pitch et tes exemples", "en": "Your main answers, your pitch and your examples", "ar": "إجاباتك الرئيسية، عرضك وأمثلتك" },
+        { "fr": "Seulement ton CV", "en": "Only your CV", "ar": "سيرتك الذاتية فقط" }
       ],
-      "correct": {"fr": "Oui", "en": "Yes", "ar": "نعم"}
+      "correct": { "fr": "Tes réponses principales, ton pitch et tes exemples", "en": "Your main answers, your pitch and your examples", "ar": "إجاباتك الرئيسية، عرضك وأمثلتك" }
     },
     {
-      "question": {"fr": "Un recruteur utilise les questions pièges pour :", "en": "A recruiter uses trick questions to:", "ar": "يستخدم المجند الأسئلة الفخ لـ:"},
+      "question": { "fr": "Face au stress, quel comportement éviter pendant l’entretien ?", "en": "Faced with stress, which behavior to avoid during the interview?", "ar": "في مواجهة التوتر، أي سلوك يجب تجنبه أثناء المقابلة؟" },
       "options": [
-        {"fr": "Savoir comment réagir à une situation stressante", "en": "Know how you react to a stressful situation", "ar": "معرفة كيف تتفاعل مع موقف مرهق"},
-        {"fr": "Tester vos connaissances techniques", "en": "Test your technical knowledge", "ar": "اختبار معرفتك التقنية"},
-        {"fr": "Définir votre type de personnalité", "en": "Define your personality type", "ar": "تحديد نوع شخصيتك"}
+        { "fr": "Montrer que tu es tendu sans rien dire", "en": "Show that you are tense without saying anything", "ar": "إظهار أنك متوتر دون قول شيء" },
+        { "fr": "Se montrer fermé et impatient", "en": "Be closed and impatient", "ar": "الظهور بمظهر مغلق وغير صبور" },
+        { "fr": "Communiquer calmement", "en": "Communicate calmly", "ar": "التواصل بهدوء" }
       ],
-      "correct": {"fr": "Savoir comment réagir à une situation stressante", "en": "Know how you react to a stressful situation", "ar": "معرفة كيف تتفاعل مع موقف مرهق"}
+      "correct": { "fr": "Se montrer fermé et impatient", "en": "Be closed and impatient", "ar": "الظهور بمظهر مغلق وغير صبور" }
     },
     {
-      "question": {"fr": "Pourquoi la ponctualité est-elle clé ?", "en": "Why is punctuality key?", "ar": "لماذا تعتبر الدقة في المواعيد أمرًا أساسيًا؟"},
+      "question": { "fr": "Pourquoi la confiance en soi est-elle importante ?", "en": "Why is self-confidence important?", "ar": "لماذا الثقة بالنفس مهمة؟" },
       "options": [
-        {"fr": "Respect", "en": "Respect", "ar": "احترام"},
-        {"fr": "Habitude", "en": "Habit", "ar": "عادة"},
-        {"fr": "Détail", "en": "Detail", "ar": "تفصيل"},
-        {"fr": "Sans importance", "en": "No importance", "ar": "بدون أهمية"}
+        { "fr": "Elle remplace la compétence", "en": "It replaces competence", "ar": "تحل محل الكفاءة" },
+        { "fr": "Elle facilite la communication et inspire confiance", "en": "It facilitates communication and inspires confidence", "ar": "تسهل التواصل وتلهم الثقة" },
+        { "fr": "Elle permet d’éviter les questions", "en": "It allows avoiding questions", "ar": "تسمح بتجنب الأسئلة" }
       ],
-      "correct": {"fr": "Respect", "en": "Respect", "ar": "احترام"}
+      "correct": { "fr": "Elle facilite la communication et inspire confiance", "en": "It facilitates communication and inspires confidence", "ar": "تسهل التواصل وتلهم الثقة" }
     },
     {
-      "question": {"fr": "Comment réagir à une question piège ?", "en": "How to react to a trick question?", "ar": "كيف تتعامل مع سؤال فخ؟"},
+      "question": { "fr": "Que signifie “préparer des questions à poser” ?", "en": "What does 'prepare questions to ask' mean?", "ar": "ماذا يعني 'تحضير أسئلة لطرحها'؟" },
       "options": [
-        {"fr": "Fuir", "en": "Run away", "ar": "الهروب"},
-        {"fr": "Rester calme", "en": "Stay calm", "ar": "البقاء هادئًا"},
-        {"fr": "Changer de sujet", "en": "Change the subject", "ar": "تغيير الموضوع"},
-        {"fr": "Ignorer", "en": "Ignore", "ar": "تجاهل"}
+        { "fr": "Ne pas poser de questions", "en": "Not ask questions", "ar": "عدم طرح أسئلة" },
+        { "fr": "Préparer 2–3 questions pertinentes sur le poste ou l’entreprise", "en": "Prepare 2–3 relevant questions about the role or the company", "ar": "تحضير 2-3 أسئلة ذات صلة بالمنصب أو الشركة" },
+        { "fr": "Demander le salaire directement", "en": "Ask about salary directly", "ar": "طلب الراتب مباشرة" }
       ],
-      "correct": {"fr": "Rester calme", "en": "Stay calm", "ar": "البقاء هادئًا"}
+      "correct": { "fr": "Préparer 2–3 questions pertinentes sur le poste ou l’entreprise", "en": "Prepare 2–3 relevant questions about the role or the company", "ar": "تحضير 2-3 أسئلة ذات صلة بالمنصب أو الشركة" }
     },
     {
-      "question": {"fr": "Pourquoi faut-il garder confiance en soi ?", "en": "Why should you keep self-confidence?", "ar": "لماذا يجب الحفاظ على الثقة بالنفس؟"},
+      "question": { "fr": "Quel état d’esprit favorise un bon entretien ?", "en": "What mindset favors a good interview?", "ar": "أي عقلية تُعزز مقابلة جيدة؟" },
       "options": [
-        {"fr": "Pour réussir", "en": "To succeed", "ar": "للنجاح"},
-        {"fr": "Pour dominer", "en": "To dominate", "ar": "للسيطرة"},
-        {"fr": "Pour impressionner", "en": "To impress", "ar": "للإبهار"},
-        {"fr": "Sans raison", "en": "No reason", "ar": "بدون سبب"}
+        { "fr": "Se présenter comme supérieurs", "en": "Present yourself as superior", "ar": "تقديم نفسك على أنك متفوق" },
+        { "fr": "Curiosité, humilité et volonté d’apprendre", "en": "Curiosity, humility and willingness to learn", "ar": "الفضول، التواضع والرغبة في التعلم" },
+        { "fr": "Indifférence", "en": "Indifference", "ar": "اللامبالاة" }
       ],
-      "correct": {"fr": "Pour réussir", "en": "To succeed", "ar": "للنجاح"}
+      "correct": { "fr": "Curiosité, humilité et volonté d’apprendre", "en": "Curiosity, humility and willingness to learn", "ar": "الفضول، التواضع والرغبة في التعلم" }
     },
     {
-      "question": {"fr": "Comment gérer son stress avant un entretien ?", "en": "How to manage stress before an interview?", "ar": "كيف تدير التوتر قبل المقابلة؟"},
+      "question": { "fr": "Si tu échoues à un entretien, que faire ensuite ?", "en": "If you fail an interview, what to do next?", "ar": "إذا فشلت في مقابلة، ماذا تفعل بعد ذلك؟" },
       "options": [
-        {"fr": "Respiration", "en": "Breathing", "ar": "التنفس"},
-        {"fr": "Café", "en": "Coffee", "ar": "القهوة"},
-        {"fr": "Ne pas y penser", "en": "Don't think about it", "ar": "عدم التفكير فيه"},
-        {"fr": "Dormir tard", "en": "Sleep late", "ar": "النوم متأخرًا"}
+        { "fr": "Abandonner la recherche", "en": "Give up the search", "ar": "التخلي عن البحث" },
+        { "fr": "Demander un feedback et en tirer des leçons", "en": "Ask for feedback and learn from it", "ar": "طلب ملاحظات والتعلم منها" },
+        { "fr": "Blâmer le recruteur", "en": "Blame the recruiter", "ar": "لوم المجند" }
       ],
-      "correct": {"fr": "Respiration", "en": "Breathing", "ar": "التنفس"}
+      "correct": { "fr": "Demander un feedback et en tirer des leçons", "en": "Ask for feedback and learn from it", "ar": "طلب ملاحظات والتعلم منها" }
     },
     {
-      "question": {"fr": "Quel comportement est le plus apprécié en entretien ?", "en": "Which behavior is most appreciated in an interview?", "ar": "ما هو السلوك الأكثر تقديرًا في المقابلة؟"},
+      "question": { "fr": "Comment gérer une question piège ?", "en": "How to handle a trick question?", "ar": "كيفية التعامل مع سؤال فخ؟" },
       "options": [
-        {"fr": "Sûr de soi", "en": "Self-confident", "ar": "واثق من نفسه"},
-        {"fr": "Arrogant", "en": "Arrogant", "ar": "متعجرف"},
-        {"fr": "Silencieux", "en": "Silent", "ar": "صامت"},
-        {"fr": "Mystérieux", "en": "Mysterious", "ar": "غامض"}
+        { "fr": "Mentir", "en": "Lie", "ar": "الكذب" },
+        { "fr": "Prendre le temps, répondre honnêtement et montrer ton apprentissage", "en": "Take time, answer honestly and show your learning", "ar": "أخذ الوقت، الإجابة بصدق وإظهار ما تعلمته" },
+        { "fr": "Ne pas répondre", "en": "Not answer", "ar": "عدم الإجابة" }
       ],
-      "correct": {"fr": "Sûr de soi", "en": "Self-confident", "ar": "واثق من نفسه"}
+      "correct": { "fr": "Prendre le temps, répondre honnêtement et montrer ton apprentissage", "en": "Take time, answer honestly and show your learning", "ar": "أخذ الوقت، الإجابة بصدق وإظهار ما تعلمته" }
+    },
+    {
+      "question": { "fr": "Lors d’un entretien, l’écoute active signifie :", "en": "In an interview, active listening means:", "ar": "في المقابلة، ماذا يعني الاستماع النشط؟" },
+      "options": [
+        { "fr": "Attendre son tour pour parler", "en": "Wait your turn to speak", "ar": "انتظار دورك للتحدث" },
+        { "fr": "Écouter, reformuler et répondre de façon pertinente", "en": "Listen, rephrase and respond relevantly", "ar": "الاستماع، إعادة الصياغة والرد بشكل مناسب" },
+        { "fr": "Regarder son téléphone", "en": "Look at your phone", "ar": "مراقبة هاتفك" }
+      ],
+      "correct": { "fr": "Écouter, reformuler et répondre de façon pertinente", "en": "Listen, rephrase and respond relevantly", "ar": "الاستماع، إعادة الصياغة والرد بشكل مناسب" }
+    },
+    {
+      "question": { "fr": "Quelle préparation mentale aide la performance ?", "en": "Which mental preparation helps performance?", "ar": "ما الاستعداد العقلي الذي يساعد الأداء؟" },
+      "options": [
+        { "fr": "Sauter des repas pour être nerveux", "en": "Skip meals to be nervous", "ar": "تخطي الوجبات للشعور بالتوتر" },
+        { "fr": "Bien dormir, manger léger et répéter son pitch", "en": "Sleep well, eat light and rehearse your pitch", "ar": "النوم جيدًا، تناول طعامًا خفيفًا وتكرار عرضك" },
+        { "fr": "Ne rien faire la veille", "en": "Do nothing the night before", "ar": "لا تفعل شيئًا في الليلة السابقة" }
+      ],
+      "correct": { "fr": "Bien dormir, manger léger et répéter son pitch", "en": "Sleep well, eat light and rehearse your pitch", "ar": "النوم جيدًا، تناول طعامًا خفيفًا وتكرار عرضك" }
+    },
+    {
+      "question": { "fr": "Si tu es surpris par une question technique, tu peux :", "en": "If you're surprised by a technical question, you can:", "ar": "إذا فوجئت بسؤال تقني، يمكنك:" },
+      "options": [
+        { "fr": "Inventer une réponse", "en": "Invent an answer", "ar": "اختراع إجابة" },
+        { "fr": "Dire honnêtement que tu ne sais pas mais expliquer comment tu tâcherais de résoudre", "en": "Admit you don't know but explain how you'd try to solve it", "ar": "الاعتراف بأنك لا تعرف ولكن شرح كيفية محاولتك للحل" },
+        { "fr": "Changer de sujet", "en": "Change the subject", "ar": "تغيير الموضوع" }
+      ],
+      "correct": { "fr": "Dire honnêtement que tu ne sais pas mais expliquer comment tu tâcherais de résoudre", "en": "Admit you don't know but explain how you'd try to solve it", "ar": "الاعتراف بأنك لا تعرف ولكن شرح كيفية محاولتك للحل" }
+    },
+    {
+      "question": { "fr": "Quel rôle joue l’empathie en entretien ?", "en": "What role does empathy play in an interview?", "ar": "ما دور التعاطف في المقابلة؟" },
+      "options": [
+        { "fr": "Aucun rôle", "en": "No role", "ar": "لا دور" },
+        { "fr": "Aide à créer un lien et comprendre les attentes", "en": "Helps create a bond and understand expectations", "ar": "يساعد على خلق صلة وفهم التوقعات" },
+        { "fr": "Remplace toutes les compétences", "en": "Replaces all skills", "ar": "يحل محل كل المهارات" }
+      ],
+      "correct": { "fr": "Aide à créer un lien et comprendre les attentes", "en": "Helps create a bond and understand expectations", "ar": "يساعد على خلق صلة وفهم التوقعات" }
+    }
+    ,
+    {
+      "question": { "fr": "Pour rester serein, il est utile de :", "en": "To stay calm, it is useful to:", "ar": "للبقاء هادئًا، من المفيد:" },
+      "options": [
+        { "fr": "Relativiser et se rappeler que l’entretien est un échange", "en": "Put things into perspective and remember the interview is a conversation", "ar": "وضع الأمور في نصابها وتذكّر أن المقابلة حوار" },
+        { "fr": "Se dire que tout dépend uniquement du résultat", "en": "Tell yourself that everything depends only on the result", "ar": "إقناع نفسك أن كل شيء يعتمد فقط على النتيجة" },
+        { "fr": "Se comparer sans cesse aux autres", "en": "Constantly compare yourself to others", "ar": "مقارنة نفسك باستمرار بالآخرين" }
+      ],
+      "correct": { "fr": "Relativiser et se rappeler que l’entretien est un échange", "en": "Put things into perspective and remember the interview is a conversation", "ar": "وضع الأمور في نصابها وتذكّر أن المقابلة حوار" }
     }
   ]
 }

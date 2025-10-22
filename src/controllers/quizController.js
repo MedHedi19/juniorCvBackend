@@ -20,9 +20,10 @@ const getQuizzes = async (req, res) => {
         quizName: quiz.name,
         completed: false,
         score: 0,
-        totalQuestions: quiz.totalQuestions,
+        totalQuestions: 10, // Each quiz will have 10 random questions
         percentage: 0,
-        answers: []
+        answers: [],
+        selectedQuestions: []
       }));
 
       userProgress = new UserProgress({
@@ -39,13 +40,14 @@ const getQuizzes = async (req, res) => {
       const progress = userProgress.quizProgress.find(p => p.quizName === quiz.name) || {
         completed: false,
         score: 0,
-        percentage: 0
+        percentage: 0,
+        totalQuestions: 10
       };
 
       return {
         id: quiz.id,
         name: quiz.name,
-        totalQuestions: quiz.totalQuestions,
+        totalQuestions: 10, // Each quiz now has 10 questions
         completed: progress.completed,
         score: progress.score,
         percentage: progress.percentage,
@@ -101,9 +103,10 @@ const startQuiz = async (req, res) => {
         quizName: quiz.name,
         completed: false,
         score: 0,
-        totalQuestions: quiz.questions.length,
+        totalQuestions: 10, // Now we only use 10 questions
         percentage: 0,
-        answers: []
+        answers: [],
+        selectedQuestions: [] // Store which questions were selected
       };
       userProgress.quizProgress.push(quizProgress);
     } else if (!quizProgress.completed) {
@@ -113,6 +116,8 @@ const startQuiz = async (req, res) => {
       quizProgress.score = 0;
       quizProgress.percentage = 0;
       quizProgress.completedAt = null;
+      quizProgress.totalQuestions = 10;
+      quizProgress.selectedQuestions = [];
     }
 
     // Check if quiz is already completed
@@ -121,13 +126,29 @@ const startQuiz = async (req, res) => {
       return res.status(400).json({ message: 'Quiz already completed' });
     }
 
-    // Always start from first question
+    // Randomly select 10 questions from the available 20
+    const totalAvailableQuestions = quiz.questions.length;
+    const questionsToSelect = Math.min(10, totalAvailableQuestions);
+    
+    // Create array of indices [0, 1, 2, ..., 19]
+    const allIndices = Array.from({ length: totalAvailableQuestions }, (_, i) => i);
+    
+    // Shuffle and select first 10 indices
+    const shuffled = allIndices.sort(() => Math.random() - 0.5);
+    const selectedIndices = shuffled.slice(0, questionsToSelect);
+    
+    // Store the selected question indices in the quiz progress
+    quizProgress.selectedQuestions = selectedIndices;
+    console.log(`Step: Randomly selected ${questionsToSelect} questions:`, selectedIndices);
+
+    // Always start from first question (index 0 in our selected array)
     const questionIndex = 0;
+    const actualQuestionIndex = selectedIndices[questionIndex];
     const firstQuestion = {
       questionIndex,
-      question: quiz.questions[questionIndex].question[lang],
-      options: quiz.questions[questionIndex].options.map(opt => opt[lang]),
-      totalQuestions: quiz.questions.length,
+      question: quiz.questions[actualQuestionIndex].question[lang],
+      options: quiz.questions[actualQuestionIndex].options.map(opt => opt[lang]),
+      totalQuestions: questionsToSelect,
       quizName: quiz.name
     };
     console.log('Step: Prepared first question');
@@ -157,11 +178,6 @@ const submitAnswer = async (req, res) => {
       return res.status(404).json({ message: 'Quiz not found' });
     }
 
-    if (questionIndex < 0 || questionIndex >= quiz.questions.length) {
-      console.log('Step: Invalid question index');
-      return res.status(400).json({ message: 'Invalid question index' });
-    }
-
     const userProgress = await UserProgress.findOne({ userId });
     console.log(`Step: User progress found: ${!!userProgress}`);
     if (!userProgress) {
@@ -175,9 +191,10 @@ const submitAnswer = async (req, res) => {
         quizName: quiz.name,
         completed: false,
         score: 0,
-        totalQuestions: quiz.questions.length,
+        totalQuestions: 10,
         percentage: 0,
-        answers: []
+        answers: [],
+        selectedQuestions: []
       };
       userProgress.quizProgress.push(quizProgress);
     }
@@ -187,12 +204,20 @@ const submitAnswer = async (req, res) => {
       return res.status(400).json({ message: 'Quiz already completed' });
     }
 
+    // Validate question index against selected questions
+    if (questionIndex < 0 || questionIndex >= quizProgress.selectedQuestions.length) {
+      console.log('Step: Invalid question index');
+      return res.status(400).json({ message: 'Invalid question index' });
+    }
+
     if (quizProgress.answers.find(a => a.questionIndex === questionIndex)) {
       console.log(`Step: Question ${questionIndex} already answered`);
       return res.status(400).json({ message: 'Question already answered' });
     }
 
-    const currentQuestion = quiz.questions[questionIndex];
+    // Get the actual question index from the selected questions array
+    const actualQuestionIndex = quizProgress.selectedQuestions[questionIndex];
+    const currentQuestion = quiz.questions[actualQuestionIndex];
     const isCorrect = selectedAnswer ? currentQuestion.correct[lang] === selectedAnswer : false;
     console.log(`Step: Answer correct: ${isCorrect}`);
 
@@ -216,20 +241,21 @@ const submitAnswer = async (req, res) => {
     });
     console.log('Step: Answer saved in French');
 
-    // Update score and percentage
+    // Update score and percentage (based on 10 questions)
     quizProgress.score = quizProgress.answers.filter(a => a.isCorrect).length;
-    quizProgress.percentage = Math.round((quizProgress.score / quiz.questions.length) * 100);
+    const totalQuestionsInQuiz = quizProgress.selectedQuestions.length;
+    quizProgress.percentage = Math.round((quizProgress.score / totalQuestionsInQuiz) * 100);
     console.log(`Step: Updated score: ${quizProgress.score}, percentage: ${quizProgress.percentage}`);
 
     const response = {
       isCorrect,
       correctAnswer: currentQuestion.correct[lang],
       currentScore: quizProgress.score,
-      totalQuestions: quiz.questions.length
+      totalQuestions: totalQuestionsInQuiz
     };
 
     // Check if this is the last question
-    if (questionIndex + 1 >= quiz.questions.length) {
+    if (questionIndex + 1 >= totalQuestionsInQuiz) {
       console.log('Step: All questions answered, marking quiz as completed');
       quizProgress.completed = true;
       quizProgress.completedAt = new Date();
@@ -245,12 +271,14 @@ const submitAnswer = async (req, res) => {
       response.passed = quizProgress.percentage >= 50;
     } else {
       console.log('Step: Preparing next question');
-      const nextQuestion = quiz.questions[questionIndex + 1];
+      const nextQuestionIndex = questionIndex + 1;
+      const nextActualQuestionIndex = quizProgress.selectedQuestions[nextQuestionIndex];
+      const nextQuestion = quiz.questions[nextActualQuestionIndex];
       response.nextQuestion = {
-        questionIndex: questionIndex + 1,
+        questionIndex: nextQuestionIndex,
         question: nextQuestion.question[lang],
         options: nextQuestion.options.map(opt => opt[lang]),
-        totalQuestions: quiz.questions.length,
+        totalQuestions: totalQuestionsInQuiz,
         quizName: quiz.name
       };
     }
@@ -350,9 +378,10 @@ const resetQuiz = async (req, res) => {
         quizName: quiz.name,
         completed: false,
         score: 0,
-        totalQuestions: quiz.questions.length,
+        totalQuestions: 10,
         percentage: 0,
-        answers: []
+        answers: [],
+        selectedQuestions: []
       };
       await userProgress.save();
       console.log('Step: Quiz progress reset');
