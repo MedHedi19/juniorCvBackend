@@ -1,5 +1,208 @@
 {
-  " Paperasse": [
+  "Paperwork": [
+    {
+      "question": {
+        "fr": "Une CV de junior devrait idéalement être :",
+        "en": "A junior CV should ideally be:",
+        "ar": "يجب أن تتكون السيرة الذاتية للمبتدئين بشكل مثالي من:"
+      },
+      "options": [
+        {
+          "fr": "Trois pages",
+          "en": "Three pages long",
+          "ar": "ثلاث صفحات"
+        },
+        {
+          "fr": "Deux pages",
+          "en": "Two pages long",
+          "ar": "صفحتين"
+        },
+        {
+          "fr": "Une page",
+          "en": "One page long",
+          "ar": "صفحة واحدة"
+        }
+      ],
+      "correct": {
+        "fr": "Une page",
+        "en": "One page long",
+        "ar": "صفحة واحدة"
+      }
+    },
+    {
+      "question": {
+        "fr": "Qu’est-ce qui doit apparaître en haut de votre CV ?",
+        "en": "What should appear at the top of your CV?",
+        "ar": "ما العنصر الذي يجب أن يظهر في أعلى السيرة الذاتية؟"
+      },
+      "options": [
+        {
+          "fr": "Une anecdote personnelle",
+          "en": "A personal anecdote",
+          "ar": "حكاية شخصية"
+        },
+        {
+          "fr": "Votre nom et vos coordonnées",
+          "en": "Your name and contact details",
+          "ar": "الاسم وبيانات الاتصال"
+        },
+        {
+          "fr": "Une liste de vos hobbies",
+          "en": "A list of hobbies",
+          "ar": "قائمة الهوايات"
+        }
+      ],
+      "correct": {
+        "fr": "Votre nom et vos coordonnées",
+        "en": "Your name and contact details",
+        "ar": "الاسم وبيانات الاتصال"
+      }
+    },
+    {
+      "question": {
+        "fr": "Le but du paragraphe d’ouverture d’un CV est de :",
+        "en": "The purpose of a CV’s opening paragraph is to:",
+        "ar": "الغرض من الفقرة الافتتاحية في السيرة الذاتية هو:"
+      },
+      "options": [
+        {
+          "fr": "Résumer vos objectifs de carrière en quelques lignes",
+          "en": "Summarise your career goals in a few lines",
+          "ar": "تلخيص مشروعك المهني في بضع أسطر"
+        },
+        {
+          "fr": "Répéter votre parcours académique",
+          "en": "Repeat your educational background",
+          "ar": "تكرار تدريبك الأكاديمي"
+        },
+        {
+          "fr": "Lister vos hobbies",
+          "en": "List your hobbies",
+          "ar": "سرد هواياتك"
+        }
+      ],
+      "correct": {
+        "fr": "Résumer vos objectifs de carrière en quelques lignes",
+        "en": "Summarise your career goals in a few lines",
+        "ar": "تلخيص مشروعك المهني في بضع أسطر"
+      }
+    },
+    {
+      "question": {
+        "fr": "Pour qu’un recruteur lise votre CV, vous devez :",
+        "en": "For a CV to be read by a recruiter, you must:",
+        "ar": "لكي يقرأ مسؤول التوظيف سيرتك الذاتية، يجب أن:"
+      },
+      "options": [
+        {
+          "fr": "Utiliser une mise en page claire et lisible",
+          "en": "Use a clear and legible layout",
+          "ar": "استخدام تخطيط واضح ومقروء"
+        },
+        {
+          "fr": "Utiliser une police très petite pour tout faire tenir",
+          "en": "Use small print to fit everything in",
+          "ar": "استخدام خط صغير حتى يتسع كل شيء"
+        },
+        {
+          "fr": "Ajouter plusieurs images décoratives",
+          "en": "Add several decorative images",
+          "ar": "إضافة عدة صور زخرفية"
+        }
+      ],
+      "correct": {
+        "fr": "Utiliser une mise en page claire et lisible",
+        "en": "Use a clear and legible layout",
+        "ar": "استخدام تخطيط واضح ومقروء"
+      }
+    },
+    {
+      "question": {
+        "fr": "Qu’est-ce qui améliore la visibilité d’un CV dans un logiciel de tri (ATS) ?",
+        "en": "What improves the visibility of a CV in ATS (sorting software)?",
+        "ar": "ما الذي يحسن ظهور السيرة الذاتية في برامج الفرز الآلي (ATS)؟"
+      },
+      "options": [
+        {
+          "fr": "L’utilisation de mots-clés pertinents",
+          "en": "The use of relevant keywords",
+          "ar": "استخدام كلمات مفتاحية ذات صلة"
+        },
+        {
+          "fr": "Ajouter un fond coloré",
+          "en": "Adding a coloured background",
+          "ar": "إضافة خلفية ملونة"
+        },
+        {
+          "fr": "Écrire des phrases très longues",
+          "en": "Writing in long sentences",
+          "ar": "كتابة جمل طويلة"
+        }
+      ],
+      "correct": {
+        "fr": "L’utilisation de mots-clés pertinents",
+        "en": "The use of relevant keywords",
+        "ar": "استخدام كلمات مفتاحية ذات صلة"
+      }
+    },
+    {
+      "question": {
+        "fr": "Qu’est-ce qu’un portfolio ?",
+        "en": "What is a portfolio?",
+        "ar": "ما هو الملف الشخصي (Portfolio)؟"
+      },
+      "options": [
+        {
+          "fr": "Un type de CV papier",
+          "en": "A type of paper CV",
+          "ar": "نوع من السيرة الذاتية الورقية"
+        },
+        {
+          "fr": "Une collection de réalisations/projets professionnels",
+          "en": "A collection of professional achievements or projects",
+          "ar": "مجموعة من الإنجازات أو المشاريع المهنية"
+        },
+        {
+          "fr": "Un simple « cover letter »",
+          "en": "A cover letter",
+          "ar": "خطاب تحفيزي"
+        }
+      ],
+      "correct": {
+        "fr": "Une collection de réalisations/projets professionnels",
+        "en": "A collection of professional achievements or projects",
+        "ar": "مجموعة من الإنجازات أو المشاريع المهنية"
+      }
+    },
+    {
+      "question": {
+        "fr": "Un bon « cover letter » doit :",
+        "en": "A cover letter should:",
+        "ar": "يجب أن يكون خطاب التحفيز:"
+      },
+      "options": [
+        {
+          "fr": "Répéter le CV mot pour mot",
+          "en": "Repeat the CV word for word",
+          "ar": "تكرار السيرة الذاتية حرفياً"
+        },
+        {
+          "fr": "Expliquer votre motivation et ce que vous avez à offrir",
+          "en": "Explain your motivation and what you have to offer",
+          "ar": "شرح دوافعك وما تقدمه"
+        },
+        {
+          "fr": "Être une longue biographie",
+          "en": "Be a long biography",
+          "ar": "سيرة ذاتية طويلة"
+        }
+      ],
+      "correct": {
+        "fr": "Expliquer votre motivation et ce que vous avez à offrir",
+        "en": "Explain your motivation and what you have to offer",
+        "ar": "شرح دوافعك وما تقدمه"
+      }
+    },
     {
       "question": {
         "fr": "Un CV de junior doit idéalement tenir sur :",

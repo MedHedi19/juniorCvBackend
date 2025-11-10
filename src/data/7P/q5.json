@@ -1,184 +1,144 @@
 {
   "Physique": [
     {
-      "question": { "fr": "La première impression lors d’un entretien dépend surtout de :", "en": "The first impression in an interview depends mainly on:", "ar": "الانطباع الأول في المقابلة يعتمد بشكل أساسي على:" },
+      "question": {"fr": "Quelle est la durée pour un recruteur de construire une première impression selon votre apparence ?", "en": "How long does it take for a recruiter to form a first impression based on your appearance?", "ar": "كم من الوقت يستغرق المجند لتكوين انطباع أول بناءً على مظهرك؟"},
       "options": [
-        { "fr": "Ton CV seulement", "en": "Your CV only", "ar": "سيرتك الذاتية فقط" },
-        { "fr": "Ta posture et ton apparence", "en": "Your posture and appearance", "ar": "وقفتك ومظهرك" },
-        { "fr": "Le décor de la salle", "en": "The room decor", "ar": "ديكور الغرفة" }
+        {"fr": "5 minutes", "en": "5 minutes", "ar": "5 دقائق"},
+        {"fr": "2 minutes", "en": "2 minutes", "ar": "2 دقائق"},
+        {"fr": "30 secondes", "en": "30 seconds", "ar": "30 ثانية"}
       ],
-      "correct": { "fr": "Ta posture et ton apparence", "en": "Your posture and appearance", "ar": "وقفتك ومظهرك" }
+      "correct": {"fr": "30 secondes", "en": "30 seconds", "ar": "30 ثانية"}
     },
     {
-      "question": { "fr": "Pour un entretien professionnel, quelle tenue choisir ?", "en": "For a professional interview, which outfit to choose?", "ar": "لمقابلة مهنية، أي ملابس تختار؟" },
+      "question": {"fr": "Pensez vous que l’apparence physique d’un candidat peut être un facteur de discrimination ?", "en": "Do you think a candidate's physical appearance can be a factor of discrimination?", "ar": "هل تعتقد أن مظهر المرشح يمكن أن يكون عامل تمييز؟"},
       "options": [
-        { "fr": "Tenue sobre et adaptée au secteur", "en": "Sober outfit adapted to the sector", "ar": "ملابس بسيطة ومناسبة للقطاع" },
-        { "fr": "Tenue très décontractée", "en": "Very casual outfit", "ar": "ملابس غير رسمية جدًا" },
-        { "fr": "Tenue de soirée", "en": "Evening wear", "ar": "ملابس سهرة" }
+        {"fr": "Oui", "en": "Yes", "ar": "نعم"},
+        {"fr": "Non", "en": "No", "ar": "لا"},
+        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
       ],
-      "correct": { "fr": "Tenue sobre et adaptée au secteur", "en": "Sober outfit adapted to the sector", "ar": "ملابس بسيطة ومناسبة للقطاع" }
+      "correct": {"fr": "Oui", "en": "Yes", "ar": "نعم"}
     },
     {
-      "question": { "fr": "Quel conseil pour la posture en entretien ?", "en": "What advice for posture in an interview?", "ar": "ما النصيحة لوضعية الجسم في المقابلة؟" },
+      "question": {"fr": "Est ce que votre apparence peut refléter votre personnalité ?", "en": "Can your appearance reflect your personality?", "ar": "هل يمكن أن يعكس مظهرك شخصيتك؟"},
       "options": [
-        { "fr": "S’affaler sur la chaise", "en": "Slouch on the chair", "ar": "الترنح على الكرسي" },
-        { "fr": "Se tenir droit, pieds au sol, gestes naturels", "en": "Sit straight, feet on the ground, natural gestures", "ar": "الجلوس مستقيمًا، القدمين على الأرض، إيماءات طبيعية" },
-        { "fr": "Se balancer constamment", "en": "Sway constantly", "ar": "التأرجح باستمرار" }
+        {"fr": "Oui", "en": "Yes", "ar": "نعم"},
+        {"fr": "Non", "en": "No", "ar": "لا"},
+        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
       ],
-      "correct": { "fr": "Se tenir droit, pieds au sol, gestes naturels", "en": "Sit straight, feet on the ground, natural gestures", "ar": "الجلوس مستقيمًا، القدمين على الأرض، إيماءات طبيعية" }
+      "correct": {"fr": "Oui", "en": "Yes", "ar": "نعم"}
     },
     {
-      "question": { "fr": "Concernant les bijoux et accessoires, il vaut mieux :", "en": "Regarding jewelry and accessories, it is better to:", "ar": "فيما يتعلق بالمجوهرات والإكسسوارات، من الأفضل:" },
+      "question": {"fr": "Pensez vous qu’une tenue appropriée est :", "en": "Do you think appropriate attire is:", "ar": "هل تعتقد أن اللباس المناسب هو:"},
       "options": [
-        { "fr": "Porter des bijoux voyants", "en": "Wear flashy jewelry", "ar": "ارتداء مجوهرات لامعة" },
-        { "fr": "Choisir la sobriété", "en": "Choose sobriety", "ar": "اختيار البساطة" },
-        { "fr": "En porter plusieurs pour attirer l’attention", "en": "Wear several to attract attention", "ar": "ارتداء عدة لفت الانتباه" }
+        {"fr": "Une tenue à la mode colorées avec des accessoires", "en": "Fashionable colorful outfit with accessories", "ar": "ملابس عصرية ملونة مع إكسسوارات"},
+        {"fr": "Une tenue sobre et propre", "en": "Simple and clean outfit", "ar": "ملابس بسيطة ونظيفة"},
+        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
       ],
-      "correct": { "fr": "Choisir la sobriété", "en": "Choose sobriety", "ar": "اختيار البساطة" }
+      "correct": {"fr": "Une tenue sobre et propre", "en": "Simple and clean outfit", "ar": "ملابس بسيطة ونظيفة"}
     },
     {
-      "question": { "fr": "Pour un entretien en ligne (visioconférence), il faut :", "en": "For an online interview (video conference), you should:", "ar": "بالنسبة لمقابلة عبر الإنترنت (مؤتمر فيديو)، يجب عليك:" },
+      "question": {"fr": "Même si vous êtes stagiaire :", "en": "Even if you are an intern:", "ar": "حتى لو كنت متدربًا:"},
       "options": [
-        { "fr": "Ne pas tester la caméra", "en": "Do not test the camera", "ar": "عدم اختبار الكاميرا" },
-        { "fr": "Vérifier image/son, éclairage et environnement", "en": "Check video/audio, lighting and environment", "ar": "التحقق من الصورة/الصوت والإضاءة والبيئة" },
-        { "fr": "Avoir un arrière-plan désordonné pour paraître “authentique”", "en": "Have a messy background to appear 'authentic'", "ar": "وجود خلفية مزدحمة للظهور على أنه 'أصيل'" }
+        {"fr": "Le respect de la tenue est obligatoire", "en": "Respecting attire is mandatory", "ar": "احترام اللباس إلزامي"},
+        {"fr": "Le respect de la tenue est facultatif", "en": "Respecting attire is optional", "ar": "احترام اللباس اختياري"},
+        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
       ],
-      "correct": { "fr": "Vérifier image/son, éclairage et environnement", "en": "Check video/audio, lighting and environment", "ar": "التحقق من الصورة/الصوت والإضاءة والبيئة" }
+      "correct": {"fr": "Le respect de la tenue est obligatoire", "en": "Respecting attire is mandatory", "ar": "احترام اللباس إلزامي"}
     },
     {
-      "question": { "fr": "Que faut-il éviter dans la tenue pour un entretien ?", "en": "What should be avoided in clothing for an interview?", "ar": "ما الذي يجب تجنبه في الملابس للمقابلة؟" },
+      "question": {"fr": "A votre avis, le gestuel :", "en": "In your opinion, gestures:", "ar": "برأيك، الإيماءات:"},
       "options": [
-        { "fr": "Tenue propre et repassée", "en": "Clean and ironed clothes", "ar": "ملابس نظيفة ومكوية" },
-        { "fr": "Vêtements sales, trop décontractés ou trop voyants", "en": "Dirty, too casual or too flashy clothes", "ar": "ملابس قذرة، غير رسمية جدًا أو مبهرجة للغاية" },
-        { "fr": "Des vêtements sobres", "en": "Sober clothes", "ar": "ملابس بسيطة" }
+        {"fr": "A un impact direct sur votre image", "en": "Has a direct impact on your image", "ar": "لها تأثير مباشر على صورتك"},
+        {"fr": "N’a aucun impact sur votre image", "en": "Has no impact on your image", "ar": "ليس لها أي تأثير على صورتك"},
+        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
       ],
-      "correct": { "fr": "Vêtements sales, trop décontractés ou trop voyants", "en": "Dirty, too casual or too flashy clothes", "ar": "ملابس قذرة، غير رسمية جدًا أو مبهرجة للغاية" }
+      "correct": {"fr": "A un impact direct sur votre image", "en": "Has a direct impact on your image", "ar": "لها تأثير مباشر على صورتك"}
     },
     {
-      "question": { "fr": "Quelle importance donne un recruteur à la coiffure et l’hygiène ?", "en": "How important does a recruiter give to hairstyle and hygiene?", "ar": "ما مدى أهمية المظهر والنظافة بالنسبة للمجند؟" },
+      "question": {"fr": "Quels sont les trucs que vous pouvez faire sous stress et qui peuvent agir sur votre apparence ?", "en": "What things can you do under stress that can affect your appearance?", "ar": "ما هي الأشياء التي يمكنك فعلها تحت الضغط والتي يمكن أن تؤثر على مظهرك؟"},
       "options": [
-        { "fr": "Aucune, seulement le CV compte", "en": "None, only the CV matters", "ar": "لا شيء، السيرة الذاتية فقط هي المهمة" },
-        { "fr": "Importante, elles participent à la crédibilité", "en": "Important, they contribute to credibility", "ar": "مهمة، فهي تساهم في المصداقية" },
-        { "fr": "Importante seulement chez les seniors", "en": "Important only for seniors", "ar": "مهمة فقط لدى كبار السن" }
+        {"fr": "Parler les yeux dans les yeux, montrer vos mains, maîtriser votre voix.", "en": "Speak eye to eye, show your hands, control your voice.", "ar": "التحدث بالعين، إظهار اليدين، التحكم في الصوت"},
+        {"fr": "Passer la main dans les cheveux, se frotter les mains, se mordre la lèvre", "en": "Run your hand through your hair, rub your hands, bite your lip", "ar": "تمرير اليد في الشعر، فرك اليدين، عض الشفة"},
+        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
       ],
-      "correct": { "fr": "Importante, elles participent à la crédibilité", "en": "Important, they contribute to credibility", "ar": "مهمة، فهي تساهم في المصداقية" }
+      "correct": {"fr": "Passer la main dans les cheveux, se frotter les mains, se mordre la lèvre", "en": "Run your hand through your hair, rub your hands, bite your lip", "ar": "تمرير اليد في الشعر، فرك اليدين، عض الشفة"}
     },
     {
-      "question": { "fr": "Quel geste est recommandé pour saluer en présentiel ?", "en": "Which gesture is recommended to greet in person?", "ar": "أي إيماءة يوصى بها للتحية وجهًا لوجه؟" },
+      "question": {"fr": "Le recruteur pense à un candidat souriant et sociable :", "en": "The recruiter thinks of a smiling and sociable candidate as:", "ar": "يفكر المجند في المرشح المبتسم والاجتماعي كالتالي:"},
       "options": [
-        { "fr": "Ignorer l’autre", "en": "Ignore the other", "ar": "تجاهل الآخر" },
-        { "fr": "Poignée de main ferme et sourire", "en": "Firm handshake and smile", "ar": "مصافحة قوية وابتسامة" },
-        { "fr": "Étreinte", "en": "Hug", "ar": "عناق" }
+        {"fr": "Quelqu’un qui peut s’intégrer très rapidement dans une équipe de travail", "en": "Someone who can integrate very quickly into a work team", "ar": "شخص يمكنه الاندماج بسرعة في فريق العمل"},
+        {"fr": "Quelqu’un qui n’est pas sérieux", "en": "Someone who is not serious", "ar": "شخص غير جاد"},
+        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
       ],
-      "correct": { "fr": "Poignée de main ferme et sourire", "en": "Firm handshake and smile", "ar": "مصافحة قوية وابتسامة" }
+      "correct": {"fr": "Quelqu’un qui peut s’intégrer très rapidement dans une équipe de travail", "en": "Someone who can integrate very quickly into a work team", "ar": "شخص يمكنه الاندماج بسرعة في فريق العمل"}
     },
     {
-      "question": { "fr": "Pendant l’entretien, où poser les mains ?", "en": "During the interview, where to place your hands?", "ar": "أثناء المقابلة، أين تضع يديك؟" },
+      "question": {"fr": "Pourquoi le recruteur s’intéresse à l’apparence d’un candidat ?", "en": "Why does the recruiter care about a candidate's appearance?", "ar": "لماذا يهتم المجند بمظهر المرشح؟"},
       "options": [
-        { "fr": "Faire des gestes exagérés", "en": "Make exaggerated gestures", "ar": "إجراء إيماءات مبالغ فيها" },
-        { "fr": "Sur les cuisses ou la table, gestes calmes", "en": "On your thighs or the table, calm gestures", "ar": "على الفخذين أو الطاولة، إيماءات هادئة" },
-        { "fr": "Les cacher dans les poches", "en": "Hide them in your pockets", "ar": "إخفاؤها في الجيوب" }
+        {"fr": "Parce qu’il représente l’image de l’entreprise au futur", "en": "Because he represents the company's future image", "ar": "لأنه يمثل صورة الشركة في المستقبل"},
+        {"fr": "Parce qu’il cherche un joli profil", "en": "Because he is looking for a nice profile", "ar": "لأنه يبحث عن ملف جميل"},
+        {"fr": "Parce qu’il cherche un candidat branché et à la mode", "en": "Because he is looking for a trendy and fashionable candidate", "ar": "لأنه يبحث عن مرشح عصري وعلى الموضة"}
       ],
-      "correct": { "fr": "Sur les cuisses ou la table, gestes calmes", "en": "On your thighs or the table, calm gestures", "ar": "على الفخذين أو الطاولة، إيماءات هادئة" }
+      "correct": {"fr": "Parce qu’il représente l’image de l’entreprise au futur", "en": "Because he represents the company's future image", "ar": "لأنه يمثل صورة الشركة في المستقبل"}
     },
     {
-      "question": { "fr": "Pourquoi éviter des vêtements neufs trop voyants ?", "en": "Why avoid overly flashy new clothes?", "ar": "لماذا تجنب الملابس الجديدة الصارخة جدًا؟" },
+      "question": {"fr": "La tenue vestimentaire varie-t-elle d’un poste à un autre ?", "en": "Does dress code vary from one position to another?", "ar": "هل يختلف اللباس من وظيفة لأخرى؟"},
       "options": [
-        { "fr": "Ils donnent une bonne image", "en": "They give a good image", "ar": "إنها تعطي صورة جيدة" },
-        { "fr": "Ils peuvent trahir ou distraire le recruteur", "en": "They can betray or distract the recruiter", "ar": "يمكن أن تخون أو تشتت انتباه المجند" },
-        { "fr": "Ils montrent le sérieux", "en": "They show seriousness", "ar": "إنها تظهر الجدية" }
+        {"fr": "Non", "en": "No", "ar": "لا"},
+        {"fr": "Oui", "en": "Yes", "ar": "نعم"},
+        {"fr": "Parfois", "en": "Sometimes", "ar": "أحيانًا"}
       ],
-      "correct": { "fr": "Ils peuvent trahir ou distraire le recruteur", "en": "They can betray or distract the recruiter", "ar": "يمكن أن تخون أو تشتت انتباه المجند" }
+      "correct": {"fr": "Oui", "en": "Yes", "ar": "نعم"}
     },
     {
-      "question": { "fr": "Pour un entretien dans un milieu créatif, la tenue :", "en": "For an interview in a creative environment, the outfit:", "ar": "لمقابلة في بيئة إبداعية، الملابس:" },
+      "question": {"fr": "Pourquoi faut-il soigner son apparence ?", "en": "Why should you take care of your appearance?", "ar": "لماذا يجب الاهتمام بالمظهر؟"},
       "options": [
-        { "fr": "Doit toujours être très formelle", "en": "Must always be very formal", "ar": "يجب أن تكون رسمية جدًا دائمًا" },
-        { "fr": "Peut être plus créative mais soignée", "en": "Can be more creative but neat", "ar": "يمكن أن تكون أكثر إبداعًا لكنها مرتبة" },
-        { "fr": "Doit être décontractée au maximum", "en": "Must be as casual as possible", "ar": "يجب أن تكون مريحة إلى أقصى حد" }
+        {"fr": "Pour séduire", "en": "To seduce", "ar": "للإغراء"},
+        {"fr": "Pour faire bonne impression", "en": "To make a good impression", "ar": "لترك انطباع جيد"},
+        {"fr": "Par obligation", "en": "By obligation", "ar": "إلزامًا"},
+        {"fr": "Aucune importance", "en": "No importance", "ar": "بدون أهمية"}
       ],
-      "correct": { "fr": "Peut être plus créative mais soignée", "en": "Can be more creative but neat", "ar": "يمكن أن تكون أكثر إبداعًا لكنها مرتبة" }
+      "correct": {"fr": "Pour faire bonne impression", "en": "To make a good impression", "ar": "لترك انطباع جيد"}
     },
     {
-      "question": { "fr": "L’expression du visage pendant l’entretien doit être :", "en": "Facial expression during the interview should be:", "ar": "يجب أن يكون تعبير الوجه أثناء المقابلة:" },
+      "question": {"fr": "Quel vêtement est déconseillé en entretien ?", "en": "Which clothing is not recommended in an interview?", "ar": "ما هو اللباس غير الموصى به في المقابلة؟"},
       "options": [
-        { "fr": "Fermée et sérieuse uniquement", "en": "Closed and serious only", "ar": "مغلق وجاد فقط" },
-        { "fr": "Accueillante, naturelle et adaptée", "en": "Welcoming, natural and adapted", "ar": "ودودة، طبيعية ومناسبة" },
-        { "fr": "Exubérante tout le temps", "en": "Exuberant all the time", "ar": "مفرطة في الحيوية طوال الوقت" }
+        {"fr": "Jean", "en": "Jeans", "ar": "جينز"},
+        {"fr": "Costume", "en": "Suit", "ar": "بدلة"},
+        {"fr": "Chemise", "en": "Shirt", "ar": "قميص"},
+        {"fr": "Aucun", "en": "None", "ar": "لا شيء"}
       ],
-      "correct": { "fr": "Accueillante, naturelle et adaptée", "en": "Welcoming, natural and adapted", "ar": "ودودة، طبيعية ومناسبة" }
+      "correct": {"fr": "Jean", "en": "Jeans", "ar": "جينز"}
     },
     {
-      "question": { "fr": "Si tu es en retard, que faire à l’arrivée ?", "en": "If you are late, what to do upon arrival?", "ar": "إذا كنت متأخرًا، ماذا تفعل عند الوصول؟" },
+      "question": {"fr": "Quel est l’impact d’un sourire en entretien ?", "en": "What is the impact of a smile in an interview?", "ar": "ما هو تأثير الابتسامة في المقابلة؟"},
       "options": [
-        { "fr": "Ne rien dire", "en": "Say nothing", "ar": "عدم قول أي شيء" },
-        { "fr": "Présenter des excuses courtes et sincères", "en": "Offer short and sincere apologies", "ar": "تقديم اعتذار قصير وصادق" },
-        { "fr": "Trouver des excuses longues", "en": "Find long excuses", "ar": "اختلاق أعذار طويلة" }
+        {"fr": "Aucun", "en": "None", "ar": "لا شيء"},
+        {"fr": "Crée du lien", "en": "Creates a connection", "ar": "يخلق رابطًا"},
+        {"fr": "Trop informel", "en": "Too informal", "ar": "غير رسمي جدًا"},
+        {"fr": "Inutile", "en": "Useless", "ar": "غير مفيد"}
       ],
-      "correct": { "fr": "Présenter des excuses courtes et sincères", "en": "Offer short and sincere apologies", "ar": "تقديم اعتذار قصير وصادق" }
+      "correct": {"fr": "Crée du lien", "en": "Creates a connection", "ar": "يخلق رابطًا"}
     },
     {
-      "question": { "fr": "Pourquoi la posture influence la perception de confiance ?", "en": "Why does posture influence the perception of confidence?", "ar": "لماذا تؤثر الوضعية على إدراك الثقة؟" },
+      "question": {"fr": "Quelle couleur est préférable pour un entretien ?", "en": "Which color is preferable for an interview?", "ar": "ما هو اللون المفضل للمقابلة؟"},
       "options": [
-        { "fr": "Elle n’a aucun impact", "en": "It has no impact", "ar": "ليس لديها أي تأثير" },
-        { "fr": "Une posture droite montre assurance et professionnalisme", "en": "An upright posture shows assurance and professionalism", "ar": "وضعية مستقيمة تظهر الثقة والاحترافية" },
-        { "fr": "Elle montre arrogance", "en": "It shows arrogance", "ar": "تظهر غرورًا" }
+        {"fr": "Noir", "en": "Black", "ar": "أسود"},
+        {"fr": "Fluo", "en": "Fluorescent", "ar": "فلوريسنت"},
+        {"fr": "Multicolore", "en": "Multicolored", "ar": "متعدد الألوان"},
+        {"fr": "Transparent", "en": "Transparent", "ar": "شفاف"}
       ],
-      "correct": { "fr": "Une posture droite montre assurance et professionnalisme", "en": "An upright posture shows assurance and professionalism", "ar": "وضعية مستقيمة تظهر الثقة والاحترافية" }
+      "correct": {"fr": "Noir", "en": "Black", "ar": "أسود"}
     },
     {
-      "question": { "fr": "Que dire si tu n’es pas sûr de la tenue attendue ?", "en": "What to say if you're not sure about the expected outfit?", "ar": "ماذا تقول إذا لم تكن متأكدًا من الملابس المتوقعة؟" },
+      "question": {"fr": "Quel est le premier élément observé par un recruteur ?", "en": "What is the first element observed by a recruiter?", "ar": "ما هو أول عنصر يلاحظه المجند؟"},
       "options": [
-        { "fr": "Porter la plus formelle possible", "en": "Wear the most formal possible", "ar": "ارتدِ الأكثر رسمية ممكنة" },
-        { "fr": "Porter quelque chose très décontracté", "en": "Wear something very casual", "ar": "ارتداء شيء مريح جدًا" },
-        { "fr": "S’habiller de façon extravagante", "en": "Dress extravagantly", "ar": "ارتداء ملابس مبالغ فيها" }
+        {"fr": "Le regard", "en": "The look", "ar": "النظرة"},
+        {"fr": "La poignée de main", "en": "Handshake", "ar": "المصافحة"},
+        {"fr": "Les chaussures", "en": "Shoes", "ar": "الأحذية"},
+        {"fr": "La posture", "en": "Posture", "ar": "الوضعية"}
       ],
-      "correct": { "fr": "Porter la plus formelle possible", "en": "Wear the most formal possible", "ar": "ارتدِ الأكثر رسمية ممكنة" }
-    },
-    {
-      "question": { "fr": "Lors d’un entretien en personne, quel comportement éviter ?", "en": "During an in-person interview, which behavior to avoid?", "ar": "أثناء مقابلة شخصية، أي سلوك يجب تجنبه؟" },
-      "options": [
-        { "fr": "Souriant et attentif", "en": "Smiling and attentive", "ar": "مبتسم ومنتبه" },
-        { "fr": "Manger ou mâcher du chewing-gum", "en": "Eating or chewing gum", "ar": "الأكل أو مضغ العلكة" },
-        { "fr": "Prendre des notes quand nécessaire", "en": "Take notes when necessary", "ar": "تدوين الملاحظات عند الضرورة" }
-      ],
-      "correct": { "fr": "Manger ou mâcher du chewing-gum", "en": "Eating or chewing gum", "ar": "الأكل أو مضغ العلكة" }
-    },
-    {
-      "question": { "fr": "Quel conseil pour la gestuelle ?", "en": "What advice for gestures?", "ar": "ما النصيحة بشأن الإيماءات؟" },
-      "options": [
-        { "fr": "Gestes amples et désordonnés", "en": "Large and disorderly gestures", "ar": "إيماءات واسعة وفوضوية" },
-        { "fr": "Gestes mesurés et pertinents", "en": "Measured and relevant gestures", "ar": "إيماءات محسوبة وملائمة" },
-        { "fr": "Aucun geste du tout", "en": "No gestures at all", "ar": "لا إيماءات على الإطلاق" }
-      ],
-      "correct": { "fr": "Gestes mesurés et pertinents", "en": "Measured and relevant gestures", "ar": "إيماءات محسوبة وملائمة" }
-    },
-    {
-      "question": { "fr": "Si l’on te propose un café, que faire ?", "en": "If offered a coffee, what to do?", "ar": "إذا عُرض عليك قهوة، ماذا تفعل؟" },
-      "options": [
-        { "fr": "Refuser sans raison", "en": "Refuse without reason", "ar": "الرفض بدون سبب" },
-        { "fr": "Accepter poliment si cela convient, sans trop boire", "en": "Accept politely if appropriate, without drinking too much", "ar": "القبول بأدب إن كان مناسبًا، دون الإفراط في الشرب" },
-        { "fr": "Boire de façon excessive", "en": "Drink excessively", "ar": "الشرب بإفراط" }
-      ],
-      "correct": { "fr": "Accepter poliment si cela convient, sans trop boire", "en": "Accept politely if appropriate, without drinking too much", "ar": "القبول بأدب إن كان مناسبًا، دون الإفراط في الشرب" }
-    },
-    {
-      "question": { "fr": "La tenue idéale s’adapte :", "en": "The ideal outfit adapts:", "ar": "المظهر المثالي يتكيف:" },
-      "options": [
-        { "fr": "Toujours au même style", "en": "Always to the same style", "ar": "دائمًا إلى نفس النمط" },
-        { "fr": "Au secteur et à la culture de l’entreprise", "en": "To the sector and company culture", "ar": "للقطاع وثقافة الشركة" },
-        { "fr": "À la météo uniquement", "en": "To the weather only", "ar": "للطقس فقط" }
-      ],
-      "correct": { "fr": "Au secteur et à la culture de l’entreprise", "en": "To the sector and company culture", "ar": "للقطاع وثقافة الشركة" }
-    },
-    {
-      "question": { "fr": "Que penser de l’apparence pour convaincre ?", "en": "What to think of appearance to convince?", "ar": "ماذا تفكر في المظهر لإقناع الآخرين؟" },
-      "options": [
-        { "fr": "L’apparence n’a aucune influence", "en": "Appearance has no influence", "ar": "المظهر ليس له أي تأثير" },
-        { "fr": "L’apparence professionnelle renforce la crédibilité", "en": "Professional appearance reinforces credibility", "ar": "المظهر المهني يعزز المصداقية" },
-        { "fr": "L’apparence est plus importante que la compétence", "en": "Appearance is more important than competence", "ar": "المظهر أهم من الكفاءة" }
-      ],
-      "correct": { "fr": "L’apparence professionnelle renforce la crédibilité", "en": "Professional appearance reinforces credibility", "ar": "المظهر المهني يعزز المصداقية" }
+      "correct": {"fr": "Le regard", "en": "The look", "ar": "النظرة"}
     }
   ]
 }

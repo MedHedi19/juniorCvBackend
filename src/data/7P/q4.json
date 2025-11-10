@@ -1,52 +1,7 @@
 {
   "Présentation": [
     {
-      "question": { "fr": "Le storytelling en entretien permet de :", "en": "Storytelling in an interview allows you to:", "ar": "يسمح السرد القصصي في المقابلة بـ:" },
-      "options": [
-        { "fr": "Confondre le recruteur", "en": "Confuse the recruiter", "ar": "إرباك المجند" },
-        { "fr": "Structurer ton récit professionnel pour le rendre mémorable", "en": "Structure your professional story to make it memorable", "ar": "هيكلة سردك المهني لجعله لا يُنسى" },
-        { "fr": "Parler de sujets hors-sujet", "en": "Talk about off-topic subjects", "ar": "التحدث عن مواضيع غير ذات صلة" }
-      ],
-      "correct": { "fr": "Structurer ton récit professionnel pour le rendre mémorable", "en": "Structure your professional story to make it memorable", "ar": "هيكلة سردك المهني لجعله لا يُنسى" }
-    },
-    {
-      "question": { "fr": "Un bon pitch personnel doit durer environ :", "en": "A good personal pitch should last about:", "ar": "ينبغي أن تدوم مقدمة شخصية جيدة حوالي:" },
-      "options": [
-        { "fr": "3 minutes", "en": "3 minutes", "ar": "3 دقائق" },
-        { "fr": "30 minutes", "en": "30 minutes", "ar": "30 دقيقة" },
-        { "fr": "30 secondes", "en": "30 seconds", "ar": "30 ثانية" }
-      ],
-      "correct": { "fr": "3 minutes", "en": "3 minutes", "ar": "3 دقائق" }
-    },
-    {
-      "question": { "fr": "Quelles sont les composantes clés d’une présentation en entretien ?", "en": "What are the key components of a presentation in an interview?", "ar": "ما هي المكونات الأساسية للعرض في المقابلة؟" },
-      "options": [
-        { "fr": "Ton CV complet et rien d’autre", "en": "Your complete CV and nothing else", "ar": "سيرتك الذاتية الكاملة ولا شيء آخر" },
-        { "fr": "Qui tu es, ton parcours, tes apports et ton objectif", "en": "Who you are, your background, your contributions and your objective", "ar": "من أنت، ومسارك، ومساهماتك وهدفك" },
-        { "fr": "Ton salaire souhaité d’entrée", "en": "Your desired starting salary", "ar": "راتبك المطلوب عند التوظيف" }
-      ],
-      "correct": { "fr": "Qui tu es, ton parcours, tes apports et ton objectif", "en": "Who you are, your background, your contributions and your objective", "ar": "من أنت، ومسارك، ومساهماتك وهدفك" }
-    },
-    {
-      "question": { "fr": "Pour préparer ton discours, il est utile de :", "en": "To prepare your speech, it is useful to:", "ar": "لتحضير خطابك، من المفيد:" },
-      "options": [
-        { "fr": "Improviser sans préparation", "en": "Improvise without preparation", "ar": "الارتجال دون تحضير" },
-        { "fr": "Structurer en 3 à 5 points clés et s’entraîner", "en": "Structure in 3 to 5 key points and practice", "ar": "الهيكلة في 3 إلى 5 نقاط رئيسية والتدرب" },
-        { "fr": "Raconter toute ta vie", "en": "Tell your whole life story", "ar": "سرد حياتك بأكملها" }
-      ],
-      "correct": { "fr": "Structurer en 3 à 5 points clés et s’entraîner", "en": "Structure in 3 to 5 key points and practice", "ar": "الهيكلة في 3 إلى 5 نقاط رئيسية والتدرب" }
-    },
-    {
-      "question": { "fr": "Quelle technique aide à rendre une présentation convaincante ?", "en": "Which technique helps make a presentation convincing?", "ar": "أي تقنية تساعد على جعل العرض مقنعًا؟" },
-      "options": [
-        { "fr": "Lire ton CV mot à mot", "en": "Read your CV word for word", "ar": "قراءة سيرتك الذاتية كلمة بكلمة" },
-        { "fr": "Utiliser des exemples concrets et des résultats chiffrés", "en": "Use concrete examples and quantified results", "ar": "استخدام أمثلة ملموسة ونتائج رقمية" },
-        { "fr": "Parler très vite", "en": "Speak very fast", "ar": "التحدث بسرعة كبيرة" }
-      ],
-      "correct": { "fr": "Utiliser des exemples concrets et des résultats chiffrés", "en": "Use concrete examples and quantified results", "ar": "استخدام أمثلة ملموسة ونتائج رقمية" }
-    },
-    {
-      "question": { "fr": "Quand on raconte une expérience professionnelle, il est efficace de :", "en": "When telling about a professional experience, it is effective to:", "ar": "عند سرد تجربة مهنية، من الفعال أن:" },
+      "question": {"fr": "A votre avis, quelle est la durée pour une bonne présentation de soi dans un entretien d’embauche ?", "en": "In your opinion, what is the ideal duration for a good self-presentation in a job interview?", "ar": "برأيك، ما هي المدة المثالية لتقديم نفسك في مقابلة عمل؟"},
       "options": [
         { "fr": "Rester vague", "en": "Remain vague", "ar": "البقاء غامضًا" },
         { "fr": "Donner le contexte, ton rôle, l’action et le résultat (méthode CAR)", "en": "Give the context, your role, the action and the result (CAR method)", "ar": "تقديم السياق ودورك والإجراء والنتيجة (طريقة CAR)" },
@@ -55,7 +10,7 @@
       "correct": { "fr": "Donner le contexte, ton rôle, l’action et le résultat (méthode CAR)", "en": "Give the context, your role, the action and the result (CAR method)", "ar": "تقديم السياق ودورك والإجراء والنتيجة (طريقة CAR)" }
     },
     {
-      "question": { "fr": "Comment gérer un trou de mémoire pendant une présentation ?", "en": "How to handle a memory lapse during a presentation?", "ar": "كيفية التعامل مع فقدان الذاكرة أثناء العرض؟" },
+      "question": {"fr": "Lors d’une présentation, il faut :", "en": "During a presentation, you should:", "ar": "أثناء العرض، يجب:"},
       "options": [
         { "fr": "Mentir", "en": "Lie", "ar": "الكذب" },
         { "fr": "Respirer, reformuler la question et répondre calmement", "en": "Breathe, rephrase the question and answer calmly", "ar": "التنفس، إعادة صياغة السؤال والرد بهدوء" },
@@ -64,16 +19,16 @@
       "correct": { "fr": "Respirer, reformuler la question et répondre calmement", "en": "Breathe, rephrase the question and answer calmly", "ar": "التنفس، إعادة صياغة السؤال والرد بهدوء" }
     },
     {
-      "question": { "fr": "Pourquoi pratiquer son pitch à l’avance ?", "en": "Why practice your pitch in advance?", "ar": "لماذا ممارسة مقدم العرض مسبقًا؟" },
+      "question": {"fr": "Une présentation doit comprendre :", "en": "A presentation should include:", "ar": "يجب أن يتضمن العرض:"},
       "options": [
-        { "fr": "Pour réciter mécaniquement", "en": "To recite mechanically", "ar": "للحفظ الآلي" },
-        { "fr": "Pour être plus fluide et naturel en entretien", "en": "To be more fluid and natural in the interview", "ar": "لكي تكون أكثر سلاسة وطبيعية في المقابلة" },
-        { "fr": "Pour ne pas répondre aux questions", "en": "To avoid answering questions", "ar": "لتجنب الإجابة على الأسئلة" }
+        {"fr": "Votre nom et situation actuelle", "en": "Your name and current situation", "ar": "اسمك ووضعك الحالي"},
+        {"fr": "Votre parcours académique", "en": "Your academic background", "ar": "مسارك الأكاديمي"},
+        {"fr": "Vos Stages et/ou expériences professionnelles", "en": "Your internships and/or professional experiences", "ar": "تدريباتك وخبراتك المهنية"}
       ],
-      "correct": { "fr": "Pour être plus fluide et naturel en entretien", "en": "To be more fluid and natural in the interview", "ar": "لكي تكون أكثر سلاسة وطبيعية في المقابلة" }
+      "correct": {"fr": "Vos Stages et/ou expériences professionnelles", "en": "Your internships and/or professional experiences", "ar": "تدريباتك وخبراتك المهنية"}
     },
     {
-      "question": { "fr": "Quel ton adopter dans ta présentation ?", "en": "What tone to adopt in your presentation?", "ar": "ما النبرة التي تتبناها في عرضك؟" },
+      "question": {"fr": "Pensez-vous que dans une présentation, il faut :", "en": "Do you think in a presentation you should:", "ar": "هل تعتقد أنه في العرض يجب:"},
       "options": [
         { "fr": "Trop monotone", "en": "Too monotone", "ar": "رتيب جدًا" },
         { "fr": "Naturel, assuré et adapté au contexte", "en": "Natural, confident and adapted to the context", "ar": "طبيعي، واثق ومتكيف مع السياق" },
@@ -82,7 +37,7 @@
       "correct": { "fr": "Naturel, assuré et adapté au contexte", "en": "Natural, confident and adapted to the context", "ar": "طبيعي، واثق ومتكيف مع السياق" }
     },
     {
-      "question": { "fr": "Pour une présentation en 3 minutes, que privilégier ?", "en": "For a 3-minute presentation, what should you prioritize?", "ar": "لمقدمة مدتها 3 دقائق، ما الذي يجب إعطاء الأولوية له؟" },
+      "question": {"fr": "A votre avis, quelles sont les astuces nécessaires pour réussir une présentation lors d’un entretien d’embauche ?", "en": "In your opinion, what are the necessary tips for a successful presentation in a job interview?", "ar": "برأيك، ما هي النصائح اللازمة لنجاح العرض في مقابلة العمل؟"},
       "options": [
         { "fr": "Tous les détails techniques", "en": "All technical details", "ar": "جميع التفاصيل الفنية" },
         { "fr": "Les éléments qui démontrent ta valeur pour le poste", "en": "Elements that demonstrate your value for the role", "ar": "العناصر التي تُظهر قيمتك للوظيفة" },
@@ -91,25 +46,25 @@
       "correct": { "fr": "Les éléments qui démontrent ta valeur pour le poste", "en": "Elements that demonstrate your value for the role", "ar": "العناصر التي تُظهر قيمتك للوظيفة" }
     },
     {
-      "question": { "fr": "Qu’est-ce qui marque davantage un recruteur ?", "en": "What impresses a recruiter more?", "ar": "ما الذي يترك انطباعًا أكبر لدى المجند؟" },
+      "question": {"fr": "Comment peut-on diminuer le taux du stress au cours d’une présentation ?", "en": "How can you reduce stress during a presentation?", "ar": "كيف يمكن تقليل التوتر أثناء العرض؟"},
       "options": [
-        { "fr": "Une longue liste de postes", "en": "A long list of positions", "ar": "قائمة طويلة من الوظائف" },
-        { "fr": "Des exemples précis d’impacts et réalisations", "en": "Specific examples of impacts and achievements", "ar": "أمثلة دقيقة على التأثيرات والإنجازات" },
-        { "fr": "Une tenue extravagante", "en": "An extravagant outfit", "ar": "زي مبالغ فيه" }
+        {"fr": "Faire une structure du discours", "en": "Structure your speech", "ar": "هيكلة الخطاب"},
+        {"fr": "Etre clair, net et précis lors de la présentation", "en": "Be clear, concise and precise during the presentation", "ar": "كن واضحًا ودقيقًا أثناء العرض"},
+        {"fr": "Se Concentrer sur le mouvement des mains", "en": "Focus on hand movements", "ar": "التركيز على حركة اليدين"}
       ],
       "correct": { "fr": "Des exemples précis d’impacts et réalisations", "en": "Specific examples of impacts and achievements", "ar": "أمثلة دقيقة على التأثيرات والإنجازات" }
     },
     {
-      "question": { "fr": "Quelle structure utiliser pour raconter un projet scolaire ou pro ?", "en": "Which structure to use to tell a school or pro project?", "ar": "أي بنية تستخدم لسرد مشروع مدرسي أو مهني؟" },
+      "question": {"fr": "Pour avoir une bonne impression en entretien, il faut :", "en": "To make a good impression in an interview, you must:", "ar": "لترك انطباع جيد في المقابلة، يجب:"},
       "options": [
-        { "fr": "Début, milieu, fin sans lien", "en": "Beginning, middle, end without link", "ar": "بداية، وسط، نهاية بدون رابط" },
-        { "fr": "Situation / Tâche / Action / Résultat (STAR/CAR)", "en": "Situation / Task / Action / Result (STAR/CAR)", "ar": "الموقف / المهمة / الإجراء / النتيجة (STAR/CAR)" },
-        { "fr": "Lister uniquement les tâches", "en": "Only list the tasks", "ar": "سرد المهام فقط" }
+        {"fr": "Maîtriser le langage corporel durant l’échange", "en": "Master body language during the exchange", "ar": "إتقان لغة الجسد أثناء الحوار"},
+        {"fr": "Respecter l’heure d’arrivée à l'entretien", "en": "Respect the arrival time at the interview", "ar": "احترام وقت الوصول للمقابلة"},
+        {"fr": "Toutes les réponses précédentes", "en": "All previous answers", "ar": "جميع الإجابات السابقة"}
       ],
       "correct": { "fr": "Situation / Tâche / Action / Résultat (STAR/CAR)", "en": "Situation / Task / Action / Result (STAR/CAR)", "ar": "الموقف / المهمة / الإجراء / النتيجة (STAR/CAR)" }
     },
     {
-      "question": { "fr": "Que faire si on te pose une question inattendue pendant la présentation ?", "en": "What to do if you are asked an unexpected question during the presentation?", "ar": "ماذا تفعل إذا طُرحت عليك سؤال غير متوقع أثناء العرض؟" },
+      "question": {"fr": "Est-il nécessaire de faire une recherche à propos des questions posées dans un entretien qui peuvent être en relation avec la poste ?", "en": "Is it necessary to research questions asked in an interview that may be related to the position?", "ar": "هل من الضروري البحث عن الأسئلة المطروحة في المقابلة والتي قد تكون مرتبطة بالوظيفة؟"},
       "options": [
         { "fr": "Répondre n’importe quoi", "en": "Answer anything", "ar": "الإجابة بأي شيء" },
         { "fr": "Prendre un instant pour réfléchir puis répondre clairement", "en": "Take a moment to think then answer clearly", "ar": "أخذ لحظة للتفكير ثم الرد بوضوح" },
@@ -118,7 +73,7 @@
       "correct": { "fr": "Prendre un instant pour réfléchir puis répondre clairement", "en": "Take a moment to think then answer clearly", "ar": "أخذ لحظة للتفكير ثم الرد بوضوح" }
     },
     {
-      "question": { "fr": "Quel langage corporel aide ta présentation ?", "en": "Which body language helps your presentation?", "ar": "أي لغة جسدية تساعد عرضك؟" },
+      "question": {"fr": "Avant de passer un entretien, est-il nécessaire de faire une recherche sur l’entreprise d'accueil ?", "en": "Before attending an interview, is it necessary to research the host company?", "ar": "قبل إجراء المقابلة، هل من الضروري البحث عن الشركة المستضيفة؟"},
       "options": [
         { "fr": "Regarder le sol", "en": "Look at the floor", "ar": "النظر إلى الأرض" },
         { "fr": "Maintenir le regard, posture droite, gestes mesurés", "en": "Maintain eye contact, straight posture, measured gestures", "ar": "الحفاظ على التواصل البصري، وضعية مستقيمة، إيماءات محسوبة" },
@@ -127,7 +82,7 @@
       "correct": { "fr": "Maintenir le regard, posture droite, gestes mesurés", "en": "Maintain eye contact, straight posture, measured gestures", "ar": "الحفاظ على التواصل البصري، وضعية مستقيمة، إيماءات محسوبة" }
     },
     {
-      "question": { "fr": "Comment finir efficacement ta présentation ?", "en": "How to finish your presentation effectively?", "ar": "كيفية إنهاء عرضك بشكل فعال؟" },
+      "question": {"fr": "Pensez-vous qu’il est nécessaire de s’entraîner à une situation similaire avant l’entretien ?", "en": "Do you think it's necessary to practice a similar situation before the interview?", "ar": "هل تعتقد أنه من الضروري التدرب على موقف مشابه قبل المقابلة؟"},
       "options": [
         { "fr": "Sans conclusion", "en": "Without conclusion", "ar": "بدون خاتمة" },
         { "fr": "Par un résumé et une ouverture (question ou intérêt pour le poste)", "en": "With a summary and an opening (question or interest in the position)", "ar": "بملخص وفتح (سؤال أو إظهار الاهتمام بالوظيفة)" },
@@ -136,7 +91,7 @@
       "correct": { "fr": "Par un résumé et une ouverture (question ou intérêt pour le poste)", "en": "With a summary and an opening (question or interest in the position)", "ar": "بملخص وفتح (سؤال أو إظهار الاهتمام بالوظيفة)" }
     },
     {
-      "question": { "fr": "Pour rendre ton discours mémorable, il est bon de :", "en": "To make your speech memorable, it is good to:", "ar": "لجعل خطابك لا يُنسى، من الجيد:" },
+      "question": {"fr": "Quel est le but d’une bonne présentation en entretien ?", "en": "What is the purpose of a good presentation in an interview?", "ar": "ما هو هدف العرض الجيد في المقابلة؟"},
       "options": [
         { "fr": "Raconter une histoire pertinente en lien avec le poste", "en": "Tell a relevant story related to the role", "ar": "رواية قصة ذات صلة بالوظيفة" },
         { "fr": "Ajouter des blagues sans rapport", "en": "Add unrelated jokes", "ar": "إضافة نكات غير مرتبطة" },
@@ -145,7 +100,7 @@
       "correct": { "fr": "Raconter une histoire pertinente en lien avec le poste", "en": "Tell a relevant story related to the role", "ar": "رواية قصة ذات صلة بالوظيفة" }
     },
     {
-      "question": { "fr": "Comment intégrer la valeur ajoutée de tes compétences dans ton pitch ?", "en": "How to integrate the added value of your skills into your pitch?", "ar": "كيفية دمج القيمة المضافة لمهاراتك في عرضك؟" },
+      "question": {"fr": "Combien de minutes dure une bonne introduction ?", "en": "How many minutes does a good introduction last?", "ar": "كم دقيقة تستغرق المقدمة الجيدة؟"},
       "options": [
         { "fr": "En supposant que le recruteur comprend tout", "en": "Assuming the recruiter understands everything", "ar": "افتراض أن المجند يفهم كل شيء" },
         { "fr": "En donnant un exemple concret où tu as fait la différence", "en": "By giving a concrete example where you made a difference", "ar": "بتقديم مثال ملموس حيث أحدثت فرقًا" },
@@ -154,7 +109,7 @@
       "correct": { "fr": "En donnant un exemple concret où tu as fait la différence", "en": "By giving a concrete example where you made a difference", "ar": "بتقديم مثال ملموس حيث أحدثت فرقًا" }
     },
     {
-      "question": { "fr": "Quelle erreur commet-on souvent dans une présentation ?", "en": "What mistake is often made in a presentation?", "ar": "ما الخطأ الذي يُرتكب غالبًا في العرض؟" },
+      "question": {"fr": "Quels éléments doivent figurer dans une présentation ?", "en": "What elements should be included in a presentation?", "ar": "ما هي العناصر التي يجب أن تتضمنها العرض؟"},
       "options": [
         { "fr": "Trop de préparation", "en": "Too much preparation", "ar": "التحضير المفرط" },
         { "fr": "Vouloir tout dire au lieu de choisir l’essentiel", "en": "Wanting to say everything instead of choosing the essential", "ar": "الرغبة في قول كل شيء بدل اختيار الأساسي" },
@@ -163,7 +118,7 @@
       "correct": { "fr": "Vouloir tout dire au lieu de choisir l’essentiel", "en": "Wanting to say everything instead of choosing the essential", "ar": "الرغبة في قول كل شيء بدل اختيار الأساسي" }
     },
     {
-      "question": { "fr": "Lors d’une présentation, que faire avec tes documents (CV/portfolio) ?", "en": "During a presentation, what to do with your documents (CV/portfolio)?", "ar": "أثناء العرض، ماذا تفعل بمستنداتك (السيرة / المحفظة)؟" },
+      "question": {"fr": "Pourquoi faut-il éviter de réciter un texte appris ?", "en": "Why should you avoid reciting a learned text?", "ar": "لماذا يجب تجنب تلاوة نص محفوظ؟"},
       "options": [
         { "fr": "Les lire intégralement", "en": "Read them in full", "ar": "قراءتها بالكامل" },
         { "fr": "S’en servir pour illustrer quelques points clés", "en": "Use them to illustrate a few key points", "ar": "استخدامها لتوضيح بعض النقاط الرئيسية" },
@@ -172,13 +127,195 @@
       "correct": { "fr": "S’en servir pour illustrer quelques points clés", "en": "Use them to illustrate a few key points", "ar": "استخدامها لتوضيح بعض النقاط الرئيسية" }
     },
     {
-      "question": { "fr": "Quel objectif prioritaire pour une bonne présentation personnelle ?", "en": "What is the primary objective for a good personal presentation?", "ar": "ما هو الهدف الأساسي لعرض شخصي جيد؟" },
+      "question": {"fr": "Quel est le secret d'une bonne communication orale ?", "en": "What is the secret to good oral communication?", "ar": "ما هو سر التواصل الشفوي الجيد؟"},
       "options": [
         { "fr": "Placer tous les mots appris", "en": "Place all learned words", "ar": "استخدام كل الكلمات المتعلمة" },
         { "fr": "Convaincre le recruteur que tu es apte pour le poste", "en": "Convince the recruiter that you are fit for the role", "ar": "إقناع المجند بأنك مؤهل للوظيفة" },
         { "fr": "Impressionner par le vocabulaire", "en": "Impress with vocabulary", "ar": "الإبهار بالمفردات" }
       ],
       "correct": { "fr": "Convaincre le recruteur que tu es apte pour le poste", "en": "Convince the recruiter that you are fit for the role", "ar": "إقناع المجند بأنك مؤهل للوظيفة" }
+    }
+  ],
+  "Presentation": [
+    {
+      "question": {"en": "Storytelling in an interview allows you to:", "fr": "Le storytelling dans une interview vous permet de :", "ar": "يسمح سرد القصص في المقابلة بـ:"},
+      "options": [
+        {"en": "Confuse the recruiter", "fr": "Embrouiller le recruteur", "ar": "إرباك المجند"},
+        {"en": "Structure your professional narrative to make it memorable", "fr": "Structurer votre récit professionnel pour le rendre mémorable", "ar": "تنظيم سيرتك المهنية لجعلها لا تُنسى"},
+        {"en": "Talk about irrelevant topics", "fr": "Parler de sujets hors-sujet", "ar": "التحدث عن مواضيع خارج الموضوع"}
+      ],
+      "correct": {"en": "Structure your professional narrative to make it memorable", "fr": "Structurer votre récit professionnel pour le rendre mémorable", "ar": "تنظيم سيرتك المهنية لجعلها لا تُنسى"}
+    },
+    {
+      "question": {"en": "A good personal pitch should last approximately:", "fr": "Un bon pitch personnel devrait durer environ :", "ar": "يجب أن تستغرق العرض الشخصي الجيد حوالي:"},
+      "options": [
+        {"en": "3 minutes", "fr": "3 minutes", "ar": "3 دقائق"},
+        {"en": "30 minutes", "fr": "30 minutes", "ar": "30 دقيقة"},
+        {"en": "30 seconds", "fr": "30 secondes", "ar": "30 ثانية"}
+      ],
+      "correct": {"en": "3 minutes", "fr": "3 minutes", "ar": "3 دقائق"}
+    },
+    {
+      "question": {"en": "What are the key components of a presentation in an interview?", "fr": "Quels sont les composants clés d’une présentation en entretien ?", "ar": "ما هي المكونات الأساسية لعرض تقديمي في المقابلة؟"},
+      "options": [
+        {"en": "Your complete CV and nothing else", "fr": "Votre CV complet et rien d’autre", "ar": "سيرتك الذاتية الكاملة ولا شيء غيرها"},
+        {"en": "Who you are, your background, your contributions and your goal", "fr": "Qui vous êtes, votre parcours, vos contributions et votre objectif", "ar": "من أنت، مسيرتك المهنية، مساهماتك وأهدافك"},
+        {"en": "Your desired starting salary", "fr": "Le salaire de départ souhaité", "ar": "الراتب الذي ترغب في الحصول عليه عند التعيين"}
+      ],
+      "correct": {"en": "Who you are, your background, your contributions and your goal", "fr": "Qui vous êtes, votre parcours, vos contributions et votre objectif", "ar": "من أنت، مسيرتك المهنية، مساهماتك وأهدافك"}
+    },
+    {
+      "question": {"en": "To prepare your speech, it is useful to:", "fr": "Pour préparer votre discours, il est utile de :", "ar": "لإعداد خطابك، من المفيد:"},
+      "options": [
+        {"en": "Improvise without preparation", "fr": "Improviser sans préparation", "ar": "الارتجال دون تحضير"},
+        {"en": "Structure it into 3 to 5 key points and practise", "fr": "Le structurer en 3 à 5 points clés et s’entraîner", "ar": "تنظيمه في 3 إلى 5 نقاط أساسية والتدرب عليه"},
+        {"en": "Tell your whole life story", "fr": "Raconter toute votre vie", "ar": "سرد قصة حياتك بالكامل"}
+      ],
+      "correct": {"en": "Structure it into 3 to 5 key points and practise", "fr": "Le structurer en 3 à 5 points clés et s’entraîner", "ar": "تنظيمه في 3 إلى 5 نقاط أساسية والتدرب عليه"}
+    },
+    {
+      "question": {"en": "Which technique helps make a presentation convincing?", "fr": "Quelle technique aide à rendre une présentation convaincante ?", "ar": "ما هي التقنية التي تساعد في تقديم عرض مقنع؟"},
+      "options": [
+        {"en": "Reading your CV word for word", "fr": "Lire votre CV mot pour mot", "ar": "قراءة سيرتك الذاتية حرفياً"},
+        {"en": "Using concrete examples and figures", "fr": "Utiliser des exemples concrets et des chiffres", "ar": "استخدام أمثلة ملموسة ونتائج محددة بالأرقام"},
+        {"en": "Speaking very quickly", "fr": "Parler très vite", "ar": "التحدث بسرعة كبيرة"}
+      ],
+      "correct": {"en": "Using concrete examples and figures", "fr": "Utiliser des exemples concrets et des chiffres", "ar": "استخدام أمثلة ملموسة ونتائج محددة بالأرقام"}
+    },
+    {
+      "question": {"en": "When talking about a professional experience, it is effective to:", "fr": "Lorsqu’on parle d’une expérience professionnelle, il est efficace de :", "ar": "عند سرد تجربة مهنية، من الفعال:"},
+      "options": [
+        {"en": "Remain vague", "fr": "Rester vague", "ar": "البقاء غامضاً"},
+        {"en": "Give the context, your role, the action and the result (CAR method)", "fr": "Donner le contexte, votre rôle, l’action et le résultat (méthode CAR)", "ar": "تقديم السياق ودورك والإجراء والنتائج (طريقة CAR)"},
+        {"en": "Focus solely on the difficulty", "fr": "Se concentrer uniquement sur la difficulté", "ar": "التركيز فقط على الصعوبة"}
+      ],
+      "correct": {"en": "Give the context, your role, the action and the result (CAR method)", "fr": "Donner le contexte, votre rôle, l’action et le résultat (méthode CAR)", "ar": "تقديم السياق ودورك والإجراء والنتائج (طريقة CAR)"}
+    },
+    {
+      "question": {"en": "How should you handle a memory lapse during a presentation?", "fr": "Comment réagir en cas de trou de mémoire pendant une présentation ?", "ar": "كيف تتعامل مع فقدان الذاكرة أثناء العرض التقديمي؟"},
+      "options": [
+        {"en": "Lie", "fr": "Mentir", "ar": "الكذب"},
+        {"en": "Breathe, rephrase the question and answer calmly", "fr": "Respirer, reformuler la question et répondre calmement", "ar": "التنفس، إعادة صياغة السؤال والإجابة بهدوء"},
+        {"en": "Run away", "fr": "S’enfuir", "ar": "الهروب"}
+      ],
+      "correct": {"en": "Breathe, rephrase the question and answer calmly", "fr": "Respirer, reformuler la question et répondre calmement", "ar": "التنفس، إعادة صياغة السؤال والإجابة بهدوء"}
+    },
+    {
+      "question": {"en": "Why practise your pitch in advance?", "fr": "Pourquoi doit-on s’entraîner à son pitch à l’avance ?", "ar": "لماذا يجب التدرب على العرض التقديمي مسبقًا؟"},
+      "options": [
+        {"en": "To recite it mechanically", "fr": "Pour le réciter mécaniquement", "ar": "لتلاوته بشكل آلي"},
+        {"en": "To be more fluid and natural in the interview", "fr": "Pour être plus fluide et naturel en entretien", "ar": "لتكون أكثر سلاسة وطبيعية في المقابلة"},
+        {"en": "To avoid answering questions", "fr": "Pour éviter de répondre aux questions", "ar": "لعدم الإجابة على الأسئلة"}
+      ],
+      "correct": {"en": "To be more fluid and natural in the interview", "fr": "Pour être plus fluide et naturel en entretien", "ar": "لتكون أكثر سلاسة وطبيعية في المقابلة"}
+    },
+    {
+      "question": {"en": "What tone should you adopt in your presentation?", "fr": "Quelle tonalité adopter dans votre présentation ?", "ar": "ما النبرة التي يجب أن تتبناها في عرضك التقديمي؟"},
+      "options": [
+        {"en": "Too monotonous", "fr": "Trop monotone", "ar": "نبرة رتيبة للغاية"},
+        {"en": "Natural, confident and appropriate to the context", "fr": "Naturelle, confiante et adaptée au contexte", "ar": "نبرة طبيعية وواثقة ومناسبة للسياق"},
+        {"en": "Too theatrical", "fr": "Trop théâtrale", "ar": "مسرحية للغاية"}
+      ],
+      "correct": {"en": "Natural, confident and appropriate to the context", "fr": "Naturelle, confiante et adaptée au contexte", "ar": "نبرة طبيعية وواثقة ومناسبة للسياق"}
+    },
+    {
+      "question": {"en": "For a 3-minute presentation, what should you focus on?", "fr": "Pour une présentation de 3 minutes, sur quoi devez-vous vous concentrer ?", "ar": "ما الذي يجب التركيز عليه في عرض تقديمي مدته 3 دقائق؟"},
+      "options": [
+        {"en": "All the technical details", "fr": "Tous les détails techniques", "ar": "جميع التفاصيل الفنية"},
+        {"en": "Elements that demonstrate your value for the position", "fr": "Éléments qui démontrent votre valeur pour le poste", "ar": "العناصر التي تثبت جدارتك بالمنصب"},
+        {"en": "Long personal anecdotes", "fr": "Longues anecdotes personnelles", "ar": "الحكايات الشخصية الطويلة"}
+      ],
+      "correct": {"en": "Elements that demonstrate your value for the position", "fr": "Éléments qui démontrent votre valeur pour le poste", "ar": "العناصر التي تثبت جدارتك بالمنصب"}
+    },
+    {
+      "question": {"en": "What makes the biggest impression on a recruiter?", "fr": "Qu’est-ce qui fait la plus grande impression sur un recruteur ?", "ar": "ما الذي يلفت انتباه مسؤول التوظيف أكثر؟"},
+      "options": [
+        {"en": "A long list of positions", "fr": "Une longue liste de postes", "ar": "قائمة طويلة من المناصب"},
+        {"en": "Specific examples of impact and achievements", "fr": "Des exemples précis d’impact et d’accomplissements", "ar": "أمثلة محددة على التأثيرات والإنجازات"},
+        {"en": "Extravagant clothing", "fr": "Des vêtements extravagants", "ar": "ملابس غير عادية"}
+      ],
+      "correct": {"en": "Specific examples of impact and achievements", "fr": "Des exemples précis d’impact et d’accomplissements", "ar": "أمثلة محددة على التأثيرات والإنجازات"}
+    },
+    {
+      "question": {"en": "What structure should you use to describe a school or professional project?", "fr": "Quelle structure devez-vous utiliser pour décrire un projet scolaire ou professionnel ?", "ar": "ما هي البنية التي يجب استخدامها لشرح مشروع دراسي أو مهني؟"},
+      "options": [
+        {"en": "Unrelated beginning, middle and end", "fr": "Début, milieu et fin sans lien", "ar": "بداية، وسط، نهاية بدون صلة"},
+        {"en": "Situation/Task/Action/Result (STAR/CAR)", "fr": "Situation/Tâche/Action/Résultat (STAR/CAR)", "ar": "الموقف / المهمة / الإجراء / النتيجة (STAR/CAR)"},
+        {"en": "List only the tasks", "fr": "Lister uniquement les tâches", "ar": "سرد المهام فقط"}
+      ],
+      "correct": {"en": "Situation/Task/Action/Result (STAR/CAR)", "fr": "Situation/Tâche/Action/Résultat (STAR/CAR)", "ar": "الموقف / المهمة / الإجراء / النتيجة (STAR/CAR)"}
+    },
+    {
+      "question": {"en": "What should you do if you are asked an unexpected question during your presentation?", "fr": "Que devez-vous faire si une question inattendue vous est posée lors de votre présentation ?", "ar": "ماذا تفعل إذا طُرحت عليك سؤال غير متوقع أثناء العرض؟"},
+      "options": [
+        {"en": "Answer randomly", "fr": "Répondre au hasard", "ar": "الإجابة بأي شيء"},
+        {"en": "Take a moment to think and then answer clearly", "fr": "Prendre un moment pour réfléchir puis répondre clairement", "ar": "أخذ لحظة للتفكير ثم الإجابة بوضوح"},
+        {"en": "Ignore the question", "fr": "Ignorer la question", "ar": "تجاهل السؤال"}
+      ],
+      "correct": {"en": "Take a moment to think and then answer clearly", "fr": "Prendre un moment pour réfléchir puis répondre clairement", "ar": "أخذ لحظة للتفكير ثم الإجابة بوضوح"}
+    },
+    {
+      "question": {"en": "What body language helps your presentation?", "fr": "Quelle langue corporelle aide votre présentation ?", "ar": "ما هي لغة الجسد التي تساعدك في العرض التقديمي؟"},
+      "options": [
+        {"en": "Looking at the floor", "fr": "Regarder par terre", "ar": "النظر إلى الأرض"},
+        {"en": "Maintaining eye contact, standing up straight, using measured gestures", "fr": "Maintenir le contact visuel, se tenir droit, utiliser des gestes mesurés", "ar": "الحفاظ على النظر، الوقوف بشكل مستقيم، استخدام إيماءات معتدلة"},
+        {"en": "Cross your arms", "fr": "Croiser les bras", "ar": "تقاطع الذراعين"}
+      ],
+      "correct": {"en": "Maintaining eye contact, standing up straight, using measured gestures", "fr": "Maintenir le contact visuel, se tenir droit, utiliser des gestes mesurés", "ar": "الحفاظ على النظر، الوقوف بشكل مستقيم، استخدام إيماءات معتدلة"}
+    },
+    {
+      "question": {"en": "How can you effectively end your presentation?", "fr": "Comment pouvez-vous terminer votre présentation efficacement ?", "ar": "كيف تنهي العرض التقديمي بشكل فعال؟"},
+      "options": [
+        {"en": "Without a conclusion", "fr": "Sans conclusion", "ar": "بدون خاتمة"},
+        {"en": "With a summary and an opening (question or interest in the position)", "fr": "Avec un résumé et une ouverture (question ou intérêt pour le poste)", "ar": "بملخص وافتتاحية (سؤال أو اهتمام بالوظيفة)"},
+        {"en": "By asking about the salary immediately", "fr": "En demandant immédiatement le salaire", "ar": "بالسؤال عن الراتب على الفور"}
+      ],
+      "correct": {"en": "With a summary and an opening (question or interest in the position)", "fr": "Avec un résumé et une ouverture (question ou intérêt pour le poste)", "ar": "بملخص وافتتاحية (سؤال أو اهتمام بالوظيفة)"}
+    },
+    {
+      "question": {"en": "To make your speech memorable, it is a good idea to:", "fr": "Pour rendre votre discours mémorable, il est bon de :", "ar": "لجعل خطابك لا يُنسى، من الجيد:"},
+      "options": [
+        {"en": "Tell a relevant story related to the position", "fr": "Raconter une histoire pertinente liée au poste", "ar": "سرد قصة ذات صلة بالوظيفة"},
+        {"en": "Add unrelated jokes", "fr": "Ajouter des blagues hors sujet", "ar": "إضافة نكات لا علاقة لها"},
+        {"en": "List technical terms", "fr": "Lister des termes techniques", "ar": "سرد المصطلحات الفنية"}
+      ],
+      "correct": {"en": "Tell a relevant story related to the position", "fr": "Raconter une histoire pertinente liée au poste", "ar": "سرد قصة ذات صلة بالوظيفة"}
+    },
+    {
+      "question": {"en": "How can you incorporate the added value of your skills into your pitch?", "fr": "Comment pouvez-vous intégrer la valeur ajoutée de vos compétences dans votre pitch ?", "ar": "كيف يمكنك دمج القيمة المضافة لمهاراتك في عرضك التقديمي؟"},
+      "options": [
+        {"en": "Assuming that the recruiter understands everything", "fr": "Supposer que le recruteur comprend tout", "ar": "بافتراض أن المجند يفهم كل شيء"},
+        {"en": "Giving a concrete example of where you made a difference", "fr": "Donner un exemple concret de l’impact que vous avez eu", "ar": "بإعطاء مثال ملموس على كيفية إحداثك للفرق"},
+        {"en": "Talking only about responsibilities", "fr": "Parler uniquement des responsabilités", "ar": "بالتحدث عن المسؤوليات فقط"}
+      ],
+      "correct": {"en": "Giving a concrete example of where you made a difference", "fr": "Donner un exemple concret de l’impact que vous avez eu", "ar": "بإعطاء مثال ملموس على كيفية إحداثك للفرق"}
+    },
+    {
+      "question": {"en": "What mistake is often made in a presentation?", "fr": "Quelle erreur est souvent commise dans une présentation ?", "ar": "ما الخطأ الذي يُرتكب غالبًا في العروض التقديمية؟"},
+      "options": [
+        {"en": "Too much preparation", "fr": "Trop de préparation", "ar": "الإفراط في التحضير"},
+        {"en": "Wanting to say everything instead of choosing the essentials", "fr": "Vouloir tout dire au lieu de choisir l’essentiel", "ar": "الرغبة في قول كل شيء بدلاً من اختيار الأساسيات"},
+        {"en": "Being concise", "fr": "Être concis", "ar": "الإيجاز"}
+      ],
+      "correct": {"en": "Wanting to say everything instead of choosing the essentials", "fr": "Vouloir tout dire au lieu de choisir l’essentiel", "ar": "الرغبة في قول كل شيء بدلاً من اختيار الأساسيات"}
+    },
+    {
+      "question": {"en": "During a presentation, what should you do with your documents (CV/portfolio)?", "fr": "Pendant une présentation, que devez-vous faire de vos documents (CV/portfolio) ?", "ar": "أثناء العرض التقديمي، ماذا تفعل بوثائقك (السيرة الذاتية/المحفظة)؟"},
+      "options": [
+        {"en": "Read them in full", "fr": "Les lire entièrement", "ar": "قراءتها بالكامل"},
+        {"en": "Use them to illustrate a few key points", "fr": "Les utiliser pour illustrer quelques points clés", "ar": "استخدامها لتوضيح بعض النقاط الرئيسية"},
+        {"en": "Forget about them completely", "fr": "Les oublier totalement", "ar": "نسيانها تمامًا"}
+      ],
+      "correct": {"en": "Use them to illustrate a few key points", "fr": "Les utiliser pour illustrer quelques points clés", "ar": "استخدامها لتوضيح بعض النقاط الرئيسية"}
+    },
+    {
+      "question": {"en": "What is the main objective of a good personal presentation?", "fr": "Quel est l’objectif principal d’une bonne présentation personnelle ?", "ar": "ما الهدف الأولي لعرض شخصي جيد؟"},
+      "options": [
+        {"en": "Use all the words you have learnt", "fr": "Utiliser tous les mots appris", "ar": "استخدام كل الكلمات التي تعلمتها"},
+        {"en": "Convince the recruiter that you are the right person for the job", "fr": "Convaincre le recruteur que vous êtes la bonne personne pour le poste", "ar": "إقناع المسؤول بأنك مناسب للوظيفة"},
+        {"en": "Impress them with your vocabulary", "fr": "Les impressionner par votre vocabulaire", "ar": "إثارة الإعجاب بمفرداتك"}
+      ],
+      "correct": {"en": "Convince the recruiter that you are the right person for the job", "fr": "Convaincre le recruteur que vous êtes la bonne personne pour le poste", "ar": "إقناع المسؤول بأنك مناسب للوظيفة"}
     }
   ]
 }
