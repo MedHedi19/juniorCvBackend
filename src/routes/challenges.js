@@ -1,18 +1,17 @@
 const express = require('express');
 const router = express.Router();
 const challengeController = require('../controllers/challengeController');
-const { protect } = require('../middleware/authMiddleware');
+const { authMiddleware } = require('../middleware/authMiddleware');
 
 // All routes require authentication
-router.use(protect);
 
 /**
- * @route   POST /challenges/initialize
+ * @route   POST /api/challenges/initialize
  * @desc    Initialize challenges for user based on personality color
  * @access  Private
  * @body    { personalityColor: 'rouge' | 'jaune' | 'vert' | 'bleu' }
  */
-router.post('/initialize', challengeController.initializeChallenges);
+router.post('/initialize', authMiddleware, challengeController.initializeChallenges);
 
 /**
  * @route   GET /api/challenges
@@ -20,14 +19,14 @@ router.post('/initialize', challengeController.initializeChallenges);
  * @access  Private
  * @query   lang=fr|en|ar (optional, default: fr)
  */
-router.get('/', challengeController.getAllChallenges);
+router.get('/', authMiddleware, challengeController.getAllChallenges);
 
 /**
  * @route   GET /api/challenges/progress
  * @desc    Get user's challenge progress summary
  * @access  Private
  */
-router.get('/progress', challengeController.getChallengeProgress);
+router.get('/progress', authMiddleware, challengeController.getChallengeProgress);
 
 /**
  * @route   GET /api/challenges/:day
@@ -36,7 +35,7 @@ router.get('/progress', challengeController.getChallengeProgress);
  * @params  day - Day number (1-21)
  * @query   lang=fr|en|ar (optional, default: fr)
  */
-router.get('/:day', challengeController.getChallengeByDay);
+router.get('/:day', authMiddleware, challengeController.getChallengeByDay);
 
 /**
  * @route   POST /api/challenges/:day/complete
@@ -45,6 +44,6 @@ router.get('/:day', challengeController.getChallengeByDay);
  * @params  day - Day number (1-21)
  * @body    { notes: 'optional user notes' }
  */
-router.post('/:day/complete', challengeController.completeChallenge);
+router.post('/:day/complete', authMiddleware, challengeController.completeChallenge);
 
 module.exports = router;

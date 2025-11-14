@@ -3,128 +3,296 @@
   "challenges": [
     {
       "day": 1,
-      "proverb": "On n'avance jamais sans faire le premier pas.",
-      "challenge": "Propose ton aide spontanément à quelqu'un aujourd'hui.",
+      "proverb": {
+        "fr": "On n'avance jamais sans faire le premier pas.",
+        "en": "You never move forward without taking the first step.",
+        "ar": "لن تتقدم أبدًا دون أخذ الخطوة الأولى."
+      },
+      "challenge": {
+        "fr": "Propose ton aide spontanément à quelqu'un aujourd'hui.",
+        "en": "Spontaneously offer your help to someone today.",
+        "ar": "قدّم مساعدتك عفويًا لشخص ما اليوم."
+      },
       "type": "T"
     },
     {
       "day": 2,
-      "proverb": "Celui qui parle avec sincérité bâtit des ponts.",
-      "challenge": "Prends la parole une fois en réunion ou dans ton club.",
+      "proverb": {
+        "fr": "Celui qui parle avec sincérité bâtit des ponts.",
+        "en": "Those who speak with sincerity build bridges.",
+        "ar": "من يتحدث بصدق يبني الجسور."
+      },
+      "challenge": {
+        "fr": "Prends la parole une fois en réunion ou dans ton club.",
+        "en": "Speak up once in a meeting or in your club.",
+        "ar": "تحدث مرة واحدة في اجتماع أو في ناديك."
+      },
       "type": "V"
     },
     {
       "day": 3,
-      "proverb": "Qui demande conseil s'enrichit.",
-      "challenge": "Demande un feedback constructif à un camarade ou à un encadrant.",
+      "proverb": {
+        "fr": "Qui demande conseil s'enrichit.",
+        "en": "Those who seek advice enrich themselves.",
+        "ar": "من يطلب النصيحة يثري نفسه."
+      },
+      "challenge": {
+        "fr": "Demande un feedback constructif à un camarade ou à un encadrant.",
+        "en": "Ask for constructive feedback from a peer or supervisor.",
+        "ar": "اطلب تعليقات بناءة من زميل أو مشرف."
+      },
       "type": "A"
     },
     {
       "day": 4,
-      "proverb": "Le respect commence par soi-même.",
-      "challenge": "Refuse gentiment une demande qui ne te convient pas aujourd'hui.",
+      "proverb": {
+        "fr": "Le respect commence par soi-même.",
+        "en": "Respect starts with yourself.",
+        "ar": "الاحترام يبدأ بنفسك."
+      },
+      "challenge": {
+        "fr": "Refuse gentiment une demande qui ne te convient pas aujourd'hui.",
+        "en": "Gently decline a request that doesn't suit you today.",
+        "ar": "ارفض بلطف طلبًا لا يناسبك اليوم."
+      },
       "type": "A"
     },
     {
       "day": 5,
-      "proverb": "Connais-toi toi-même.",
-      "challenge": "Écris tes 3 valeurs principales et comment elles influencent tes décisions.",
+      "proverb": {
+        "fr": "Connais-toi toi-même.",
+        "en": "Know yourself.",
+        "ar": "اعرف نفسك."
+      },
+      "challenge": {
+        "fr": "Écris tes 3 valeurs principales et comment elles influencent tes décisions.",
+        "en": "Write your 3 core values and how they influence your decisions.",
+        "ar": "اكتب قيمك الثلاث الأساسية وكيف تؤثر على قراراتك."
+      },
       "type": "T"
     },
     {
       "day": 6,
-      "proverb": "L'éloge est un rayon de soleil.",
-      "challenge": "Félicite un camarade publiquement pour son effort ou succès.",
+      "proverb": {
+        "fr": "L'éloge est un rayon de soleil.",
+        "en": "Praise is a ray of sunshine.",
+        "ar": "المديح شعاع من أشعة الشمس."
+      },
+      "challenge": {
+        "fr": "Félicite un camarade publiquement pour son effort ou succès.",
+        "en": "Publicly congratulate a peer for their effort or success.",
+        "ar": "هنئ زميلاً علنًا على جهده أو نجاحه."
+      },
       "type": "V"
     },
     {
       "day": 7,
-      "proverb": "Un pas après l'autre mène loin.",
-      "challenge": "Note un mini-objectif à atteindre aujourd'hui et réalise-le.",
+      "proverb": {
+        "fr": "Un pas après l'autre mène loin.",
+        "en": "One step after another takes you far.",
+        "ar": "خطوة بعد خطوة توصلك بعيدًا."
+      },
+      "challenge": {
+        "fr": "Note un mini-objectif à atteindre aujourd'hui et réalise-le.",
+        "en": "Note a mini-goal to achieve today and accomplish it.",
+        "ar": "سجل هدفًا صغيرًا لتحقيقه اليوم وحققه."
+      },
       "type": "T"
     },
     {
       "day": 8,
-      "proverb": "Une étincelle peut allumer un feu.",
-      "challenge": "Crée un petit groupe WhatsApp ou propose une activité à plusieurs.",
+      "proverb": {
+        "fr": "Une étincelle peut allumer un feu.",
+        "en": "A spark can light a fire.",
+        "ar": "الشرارة يمكن أن تشعل النار."
+      },
+      "challenge": {
+        "fr": "Crée un petit groupe WhatsApp ou propose une activité à plusieurs.",
+        "en": "Create a small WhatsApp group or propose a group activity.",
+        "ar": "أنشئ مجموعة واتساب صغيرة أو اقترح نشاطًا جماعيًا."
+      },
       "type": "T"
     },
     {
       "day": 9,
-      "proverb": "Écouter, c'est accueillir l'autre.",
-      "challenge": "Écoute un point de vue opposé au tien sans interrompre.",
+      "proverb": {
+        "fr": "Écouter, c'est accueillir l'autre.",
+        "en": "Listening is welcoming the other.",
+        "ar": "الاستماع هو الترحيب بالآخر."
+      },
+      "challenge": {
+        "fr": "Écoute un point de vue opposé au tien sans interrompre.",
+        "en": "Listen to a viewpoint opposite to yours without interrupting.",
+        "ar": "استمع إلى وجهة نظر معارضة لك دون مقاطعة."
+      },
       "type": "A"
     },
     {
       "day": 10,
-      "proverb": "Qui propose avance.",
-      "challenge": "Identifie un petit aspect à améliorer dans ton club et fais une suggestion.",
+      "proverb": {
+        "fr": "Qui propose avance.",
+        "en": "Those who propose move forward.",
+        "ar": "من يقترح يتقدم."
+      },
+      "challenge": {
+        "fr": "Identifie un petit aspect à améliorer dans ton club et fais une suggestion.",
+        "en": "Identify a small aspect to improve in your club and make a suggestion.",
+        "ar": "حدد جانبًا صغيرًا للتحسين في ناديك وقدم اقتراحًا."
+      },
       "type": "T"
     },
     {
       "day": 11,
-      "proverb": "Seul on va plus vite, ensemble on va plus loin.",
-      "challenge": "Offre ton aide à un camarade aujourd'hui.",
+      "proverb": {
+        "fr": "Seul on va plus vite, ensemble on va plus loin.",
+        "en": "Alone we go faster, together we go further.",
+        "ar": "وحدنا نذهب أسرع، معًا نذهب أبعد."
+      },
+      "challenge": {
+        "fr": "Offre ton aide à un camarade aujourd'hui.",
+        "en": "Offer your help to a peer today.",
+        "ar": "قدّم مساعدتك لزميل اليوم."
+      },
       "type": "T"
     },
     {
       "day": 12,
-      "proverb": "Celui qui attend n'obtient que ce qu'il reste.",
-      "challenge": "Liste 3 situations où tu pourrais être plus proactif cette semaine.",
+      "proverb": {
+        "fr": "Celui qui attend n'obtient que ce qu'il reste.",
+        "en": "Those who wait only get what's left.",
+        "ar": "من ينتظر لا يحصل إلا على ما تبقى."
+      },
+      "challenge": {
+        "fr": "Liste 3 situations où tu pourrais être plus proactif cette semaine.",
+        "en": "List 3 situations where you could be more proactive this week.",
+        "ar": "اكتب قائمة بـ 3 مواقف يمكنك أن تكون فيها أكثر استباقية هذا الأسبوع."
+      },
       "type": "T"
     },
     {
       "day": 13,
-      "proverb": "La constance est la clé de la réussite.",
-      "challenge": "Fixe-toi un mini objectif quotidien et coche-le chaque soir.",
+      "proverb": {
+        "fr": "La constance est la clé de la réussite.",
+        "en": "Consistency is the key to success.",
+        "ar": "الثبات هو مفتاح النجاح."
+      },
+      "challenge": {
+        "fr": "Fixe-toi un mini objectif quotidien et coche-le chaque soir.",
+        "en": "Set a daily mini-goal and check it off every evening.",
+        "ar": "حدد هدفًا صغيرًا يوميًا وضع عليه علامة كل مساء."
+      },
       "type": "T"
     },
     {
       "day": 14,
-      "proverb": "Sans but, point de vent favorable.",
-      "challenge": "Note ce qui te motive à agir dans un petit carnet.",
+      "proverb": {
+        "fr": "Sans but, point de vent favorable.",
+        "en": "Without a goal, there's no favorable wind.",
+        "ar": "بدون هدف، لا توجد رياح مواتية."
+      },
+      "challenge": {
+        "fr": "Note ce qui te motive à agir dans un petit carnet.",
+        "en": "Note what motivates you to act in a small notebook.",
+        "ar": "سجل ما يحفزك على التصرف في دفتر صغير."
+      },
       "type": "T"
     },
     {
       "day": 15,
-      "proverb": "On peut dire la vérité avec douceur.",
-      "challenge": "Exprime ton opinion sur un sujet important calmement et clairement.",
+      "proverb": {
+        "fr": "On peut dire la vérité avec douceur.",
+        "en": "Truth can be spoken with gentleness.",
+        "ar": "يمكن قول الحقيقة بلطف."
+      },
+      "challenge": {
+        "fr": "Exprime ton opinion sur un sujet important calmement et clairement.",
+        "en": "Express your opinion on an important topic calmly and clearly.",
+        "ar": "عبّر عن رأيك في موضوع مهم بهدوء ووضوح."
+      },
       "type": "V"
     },
     {
       "day": 16,
-      "proverb": "La diversité est une richesse.",
-      "challenge": "Partage ton point de vue dans une discussion de groupe aujourd'hui.",
+      "proverb": {
+        "fr": "La diversité est une richesse.",
+        "en": "Diversity is a wealth.",
+        "ar": "التنوع ثروة."
+      },
+      "challenge": {
+        "fr": "Partage ton point de vue dans une discussion de groupe aujourd'hui.",
+        "en": "Share your point of view in a group discussion today.",
+        "ar": "شارك وجهة نظرك في نقاش جماعي اليوم."
+      },
       "type": "V"
     },
     {
       "day": 17,
-      "proverb": "Qui élève les autres s'élève lui-même.",
-      "challenge": "Mets en avant l'idée d'un camarade lors d'une réunion.",
+      "proverb": {
+        "fr": "Qui élève les autres s'élève lui-même.",
+        "en": "Those who elevate others elevate themselves.",
+        "ar": "من يرفع الآخرين يرفع نفسه."
+      },
+      "challenge": {
+        "fr": "Mets en avant l'idée d'un camarade lors d'une réunion.",
+        "en": "Highlight a peer's idea during a meeting.",
+        "ar": "سلط الضوء على فكرة زميل أثناء اجتماع."
+      },
       "type": "V"
     },
     {
       "day": 18,
-      "proverb": "Qui marche avec un sage devient sage.",
-      "challenge": "Identifie une personne inspirante et contacte-la pour un conseil.",
+      "proverb": {
+        "fr": "Qui marche avec un sage devient sage.",
+        "en": "Those who walk with the wise become wise.",
+        "ar": "من يسير مع الحكماء يصبح حكيمًا."
+      },
+      "challenge": {
+        "fr": "Identifie une personne inspirante et contacte-la pour un conseil.",
+        "en": "Identify an inspiring person and contact them for advice.",
+        "ar": "حدد شخصًا ملهمًا واتصل به للحصول على نصيحة."
+      },
       "type": "T"
     },
     {
       "day": 19,
-      "proverb": "Louer le travail d'autrui, c'est nourrir la réussite.",
-      "challenge": "Publie ou partage un succès du groupe sur les réseaux ou en réunion.",
+      "proverb": {
+        "fr": "Louer le travail d'autrui, c'est nourrir la réussite.",
+        "en": "Praising others' work is nourishing success.",
+        "ar": "مدح عمل الآخرين هو تغذية النجاح."
+      },
+      "challenge": {
+        "fr": "Publie ou partage un succès du groupe sur les réseaux ou en réunion.",
+        "en": "Post or share a group success on social media or in a meeting.",
+        "ar": "انشر أو شارك نجاح المجموعة على وسائل التواصل أو في اجتماع."
+      },
       "type": "T"
     },
     {
       "day": 20,
-      "proverb": "L'union fait la force.",
-      "challenge": "Propose une petite activité conviviale (jeux, sortie, brainstorming).",
+      "proverb": {
+        "fr": "L'union fait la force.",
+        "en": "Unity is strength.",
+        "ar": "الاتحاد قوة."
+      },
+      "challenge": {
+        "fr": "Propose une petite activité conviviale (jeux, sortie, brainstorming).",
+        "en": "Propose a small friendly activity (games, outing, brainstorming).",
+        "ar": "اقترح نشاطًا وديًا صغيرًا (ألعاب، نزهة، عصف ذهني)."
+      },
       "type": "T"
     },
     {
       "day": 21,
-      "proverb": "La reconnaissance est la mémoire du cœur.",
-      "challenge": "Écris tes progrès et remercie ceux qui t'ont aidé pendant ces 21 jours.",
+      "proverb": {
+        "fr": "La reconnaissance est la mémoire du cœur.",
+        "en": "Gratitude is the memory of the heart.",
+        "ar": "الامتنان هو ذاكرة القلب."
+      },
+      "challenge": {
+        "fr": "Écris tes progrès et remercie ceux qui t'ont aidé pendant ces 21 jours.",
+        "en": "Write down your progress and thank those who helped you during these 21 days.",
+        "ar": "اكتب تقدمك واشكر الذين ساعدوك خلال هذه الـ 21 يومًا."
+      },
       "type": "T"
     }
   ]

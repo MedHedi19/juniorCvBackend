@@ -3,128 +3,296 @@
   "challenges": [
     {
       "day": 1,
-      "proverb": "Les grandes découvertes commencent hors du chemin tracé.",
-      "challenge": "Prends aujourd'hui une décision rapidement sans trop analyser.",
+      "proverb": {
+        "fr": "Les grandes découvertes commencent hors du chemin tracé.",
+        "en": "Great discoveries begin off the beaten path.",
+        "ar": "الاكتشافات العظيمة تبدأ خارج الطريق المرسوم."
+      },
+      "challenge": {
+        "fr": "Prends aujourd'hui une décision rapidement sans trop analyser.",
+        "en": "Make a quick decision today without over-analyzing.",
+        "ar": "اتخذ قرارًا سريعًا اليوم دون تحليل مفرط."
+      },
       "type": "T"
     },
     {
       "day": 2,
-      "proverb": "La perfection est ennemie du progrès.",
-      "challenge": "Note trois choses où tu pourrais lâcher prise cette semaine.",
+      "proverb": {
+        "fr": "La perfection est ennemie du progrès.",
+        "en": "Perfection is the enemy of progress.",
+        "ar": "الكمال عدو التقدم."
+      },
+      "challenge": {
+        "fr": "Note trois choses où tu pourrais lâcher prise cette semaine.",
+        "en": "Note three things where you could let go this week.",
+        "ar": "سجل ثلاثة أشياء يمكنك التخلي عنها هذا الأسبوع."
+      },
       "type": "T"
     },
     {
       "day": 3,
-      "proverb": "L'imagination est plus importante que le savoir.",
-      "challenge": "Tente une activité nouvelle (ex : improvisation, pitch express).",
+      "proverb": {
+        "fr": "L'imagination est plus importante que le savoir.",
+        "en": "Imagination is more important than knowledge.",
+        "ar": "الخيال أهم من المعرفة."
+      },
+      "challenge": {
+        "fr": "Tente une activité nouvelle (ex : improvisation, pitch express).",
+        "en": "Try a new activity (e.g., improvisation, quick pitch).",
+        "ar": "جرب نشاطًا جديدًا (مثل: الارتجال، العرض السريع)."
+      },
       "type": "V"
     },
     {
       "day": 4,
-      "proverb": "Celui qui change de route découvre de nouveaux paysages.",
-      "challenge": "Présente une idée sous un format inhabituel (dessin, schéma, audio).",
+      "proverb": {
+        "fr": "Celui qui change de route découvre de nouveaux paysages.",
+        "en": "Those who change routes discover new landscapes.",
+        "ar": "من يغير طريقه يكتشف مناظر جديدة."
+      },
+      "challenge": {
+        "fr": "Présente une idée sous un format inhabituel (dessin, schéma, audio).",
+        "en": "Present an idea in an unusual format (drawing, diagram, audio).",
+        "ar": "اعرض فكرة بشكل غير معتاد (رسم، مخطط، صوت)."
+      },
       "type": "V"
     },
     {
       "day": 5,
-      "proverb": "Qui hésite perd.",
-      "challenge": "Choisis aujourd'hui entre deux options sans y passer plus de 5 minutes.",
+      "proverb": {
+        "fr": "Qui hésite perd.",
+        "en": "Those who hesitate lose.",
+        "ar": "من يتردد يخسر."
+      },
+      "challenge": {
+        "fr": "Choisis aujourd'hui entre deux options sans y passer plus de 5 minutes.",
+        "en": "Choose between two options today without spending more than 5 minutes.",
+        "ar": "اختر بين خيارين اليوم دون قضاء أكثر من 5 دقائق."
+      },
       "type": "T"
     },
     {
       "day": 6,
-      "proverb": "La clarté est la politesse de l'esprit.",
-      "challenge": "Résume un sujet complexe en trois bullet points.",
+      "proverb": {
+        "fr": "La clarté est la politesse de l'esprit.",
+        "en": "Clarity is the courtesy of the mind.",
+        "ar": "الوضوح هو مجاملة العقل."
+      },
+      "challenge": {
+        "fr": "Résume un sujet complexe en trois bullet points.",
+        "en": "Summarize a complex topic in three bullet points.",
+        "ar": "لخص موضوعًا معقدًا في ثلاث نقاط."
+      },
       "type": "T"
     },
     {
       "day": 7,
-      "proverb": "On n'apprend pas à nager sur le rivage.",
-      "challenge": "Essaie une activité qui t'intimide un peu.",
+      "proverb": {
+        "fr": "On n'apprend pas à nager sur le rivage.",
+        "en": "You don't learn to swim on the shore.",
+        "ar": "لا تتعلم السباحة على الشاطئ."
+      },
+      "challenge": {
+        "fr": "Essaie une activité qui t'intimide un peu.",
+        "en": "Try an activity that intimidates you a bit.",
+        "ar": "جرب نشاطًا يخيفك قليلاً."
+      },
       "type": "T"
     },
     {
       "day": 8,
-      "proverb": "Mesurer deux fois, couper une fois.",
-      "challenge": "Valide aujourd'hui une idée en demandant un feedback rapide.",
+      "proverb": {
+        "fr": "Mesurer deux fois, couper une fois.",
+        "en": "Measure twice, cut once.",
+        "ar": "قس مرتين واقطع مرة واحدة."
+      },
+      "challenge": {
+        "fr": "Valide aujourd'hui une idée en demandant un feedback rapide.",
+        "en": "Validate an idea today by asking for quick feedback.",
+        "ar": "تحقق من صحة فكرة اليوم بطلب ملاحظات سريعة."
+      },
       "type": "A"
     },
     {
       "day": 9,
-      "proverb": "Qui écoute le conseil d'autrui double son intelligence.",
-      "challenge": "Montre ton brouillon à un camarade et demande son avis.",
+      "proverb": {
+        "fr": "Qui écoute le conseil d'autrui double son intelligence.",
+        "en": "Those who listen to others' advice double their intelligence.",
+        "ar": "من يستمع إلى نصيحة الآخرين يضاعف ذكاءه."
+      },
+      "challenge": {
+        "fr": "Montre ton brouillon à un camarade et demande son avis.",
+        "en": "Show your draft to a peer and ask for their opinion.",
+        "ar": "أظهر مسودتك لزميل واطلب رأيه."
+      },
       "type": "V"
     },
     {
       "day": 10,
-      "proverb": "Un sourire ne coûte rien et rapporte beaucoup.",
-      "challenge": "Fais un compliment sincère à quelqu'un aujourd'hui.",
+      "proverb": {
+        "fr": "Un sourire ne coûte rien et rapporte beaucoup.",
+        "en": "A smile costs nothing and brings much.",
+        "ar": "الابتسامة لا تكلف شيئًا وتجلب الكثير."
+      },
+      "challenge": {
+        "fr": "Fais un compliment sincère à quelqu'un aujourd'hui.",
+        "en": "Give a sincere compliment to someone today.",
+        "ar": "قدم مجاملة صادقة لشخص ما اليوم."
+      },
       "type": "V"
     },
     {
       "day": 11,
-      "proverb": "L'urgence fait jaillir le génie.",
-      "challenge": "Donne-toi 15 minutes pour rédiger un texte et publie-le.",
+      "proverb": {
+        "fr": "L'urgence fait jaillir le génie.",
+        "en": "Urgency brings out genius.",
+        "ar": "الاستعجال يُظهر العبقرية."
+      },
+      "challenge": {
+        "fr": "Donne-toi 15 minutes pour rédiger un texte et publie-le.",
+        "en": "Give yourself 15 minutes to write a text and publish it.",
+        "ar": "امنح نفسك 15 دقيقة لكتابة نص ونشره."
+      },
       "type": "T"
     },
     {
       "day": 12,
-      "proverb": "Qui se connaît se maîtrise.",
-      "challenge": "Liste trois compétences relationnelles à travailler ce mois-ci.",
+      "proverb": {
+        "fr": "Qui se connaît se maîtrise.",
+        "en": "Those who know themselves master themselves.",
+        "ar": "من يعرف نفسه يسيطر على نفسه."
+      },
+      "challenge": {
+        "fr": "Liste trois compétences relationnelles à travailler ce mois-ci.",
+        "en": "List three relationship skills to work on this month.",
+        "ar": "اكتب قائمة بثلاث مهارات علائقية للعمل عليها هذا الشهر."
+      },
       "type": "T"
     },
     {
       "day": 13,
-      "proverb": "Tout seul on va vite, ensemble on va loin.",
-      "challenge": "Partage une idée encore imparfaite avec un camarade.",
+      "proverb": {
+        "fr": "Tout seul on va vite, ensemble on va loin.",
+        "en": "Alone we go fast, together we go far.",
+        "ar": "وحدنا نذهب بسرعة، معًا نذهب بعيدًا."
+      },
+      "challenge": {
+        "fr": "Partage une idée encore imparfaite avec un camarade.",
+        "en": "Share an imperfect idea with a peer.",
+        "ar": "شارك فكرة غير كاملة مع زميل."
+      },
       "type": "V"
     },
     {
       "day": 14,
-      "proverb": "Qui change de point de vue change de vie.",
-      "challenge": "Utilise un support visuel original pour expliquer un concept.",
+      "proverb": {
+        "fr": "Qui change de point de vue change de vie.",
+        "en": "Those who change perspective change their life.",
+        "ar": "من يغير وجهة نظره يغير حياته."
+      },
+      "challenge": {
+        "fr": "Utilise un support visuel original pour expliquer un concept.",
+        "en": "Use an original visual aid to explain a concept.",
+        "ar": "استخدم وسيلة بصرية أصلية لشرح مفهوم."
+      },
       "type": "V"
     },
     {
       "day": 15,
-      "proverb": "La nouveauté plaît et instruit.",
-      "challenge": "Suggère une nouvelle façon de faire dans un projet ou cours.",
+      "proverb": {
+        "fr": "La nouveauté plaît et instruit.",
+        "en": "Novelty pleases and teaches.",
+        "ar": "الجِدة تُسعد وتعلّم."
+      },
+      "challenge": {
+        "fr": "Suggère une nouvelle façon de faire dans un projet ou cours.",
+        "en": "Suggest a new way of doing things in a project or class.",
+        "ar": "اقترح طريقة جديدة للقيام بالأشياء في مشروع أو درس."
+      },
       "type": "V"
     },
     {
       "day": 16,
-      "proverb": "Qui observe apprend.",
-      "challenge": "Laisse un camarade prendre la tête d'une activité et analyse.",
+      "proverb": {
+        "fr": "Qui observe apprend.",
+        "en": "Those who observe learn.",
+        "ar": "من يراقب يتعلم."
+      },
+      "challenge": {
+        "fr": "Laisse un camarade prendre la tête d'une activité et analyse.",
+        "en": "Let a peer take the lead in an activity and analyze.",
+        "ar": "دع زميلاً يتولى قيادة نشاط وراقب."
+      },
       "type": "T"
     },
     {
       "day": 17,
-      "proverb": "La curiosité est le début de la sagesse.",
-      "challenge": "Pose aujourd'hui une question inattendue dans une réunion.",
+      "proverb": {
+        "fr": "La curiosité est le début de la sagesse.",
+        "en": "Curiosity is the beginning of wisdom.",
+        "ar": "الفضول هو بداية الحكمة."
+      },
+      "challenge": {
+        "fr": "Pose aujourd'hui une question inattendue dans une réunion.",
+        "en": "Ask an unexpected question in a meeting today.",
+        "ar": "اطرح سؤالاً غير متوقع في اجتماع اليوم."
+      },
       "type": "A"
     },
     {
       "day": 18,
-      "proverb": "Qui ne tente rien n'a rien.",
-      "challenge": "Teste une idée audacieuse à petite échelle aujourd'hui.",
+      "proverb": {
+        "fr": "Qui ne tente rien n'a rien.",
+        "en": "Nothing ventured, nothing gained.",
+        "ar": "من لا يجازف لا يكسب شيئًا."
+      },
+      "challenge": {
+        "fr": "Teste une idée audacieuse à petite échelle aujourd'hui.",
+        "en": "Test a bold idea on a small scale today.",
+        "ar": "اختبر فكرة جريئة على نطاق صغير اليوم."
+      },
       "type": "T"
     },
     {
       "day": 19,
-      "proverb": "Le cœur a ses raisons que la raison ignore.",
-      "challenge": "Dis à un camarade ce que tu as ressenti pendant une activité.",
+      "proverb": {
+        "fr": "Le cœur a ses raisons que la raison ignore.",
+        "en": "The heart has its reasons that reason knows not.",
+        "ar": "للقلب أسبابه التي لا يعرفها العقل."
+      },
+      "challenge": {
+        "fr": "Dis à un camarade ce que tu as ressenti pendant une activité.",
+        "en": "Tell a peer what you felt during an activity.",
+        "ar": "أخبر زميلاً بما شعرت به أثناء نشاط."
+      },
       "type": "A"
     },
     {
       "day": 20,
-      "proverb": "Qui mesure avance.",
-      "challenge": "Note chaque soir un apprentissage issu de tes expériences.",
+      "proverb": {
+        "fr": "Qui mesure avance.",
+        "en": "Those who measure progress.",
+        "ar": "من يقيس يتقدم."
+      },
+      "challenge": {
+        "fr": "Note chaque soir un apprentissage issu de tes expériences.",
+        "en": "Note every evening a lesson learned from your experiences.",
+        "ar": "سجل كل مساء درسًا تعلمته من تجاربك."
+      },
       "type": "T"
     },
     {
       "day": 21,
-      "proverb": "Qui se retourne sur son chemin voit la route parcourue.",
-      "challenge": "Résume tes trois plus grands progrès de ces 21 jours et partage-les.",
+      "proverb": {
+        "fr": "Qui se retourne sur son chemin voit la route parcourue.",
+        "en": "Those who look back on their path see the road traveled.",
+        "ar": "من ينظر إلى الوراء في طريقه يرى الطريق الذي قطعه."
+      },
+      "challenge": {
+        "fr": "Résume tes trois plus grands progrès de ces 21 jours et partage-les.",
+        "en": "Summarize your three greatest progress points from these 21 days and share them.",
+        "ar": "لخص أعظم ثلاث نقاط تقدم من هذه الـ 21 يومًا وشاركها."
+      },
       "type": "V"
     }
   ]

@@ -3,128 +3,296 @@
   "challenges": [
     {
       "day": 1,
-      "proverb": "Ce qui se conçoit bien s'énonce clairement.",
-      "challenge": "Écris ton pitch personnel en 3 phrases claires et lis-le à voix haute.",
+      "proverb": {
+        "fr": "Ce qui se conçoit bien s'énonce clairement.",
+        "en": "What is well conceived is clearly stated.",
+        "ar": "ما يُفهم جيدًا يُقال بوضوح."
+      },
+      "challenge": {
+        "fr": "Écris ton pitch personnel en 3 phrases claires et lis-le à voix haute.",
+        "en": "Write your personal pitch in 3 clear sentences and read it aloud.",
+        "ar": "اكتب عرضك الشخصي في 3 جمل واضحة واقرأه بصوت عالٍ."
+      },
       "type": "A"
     },
     {
       "day": 2,
-      "proverb": "Écouter, c'est aussi dire à l'autre qu'il existe.",
-      "challenge": "Écoute un proche pendant 5 minutes sans l'interrompre et reformule ses propos en une phrase.",
+      "proverb": {
+        "fr": "Écouter, c'est aussi dire à l'autre qu'il existe.",
+        "en": "Listening is also telling the other that they exist.",
+        "ar": "الاستماع هو أيضًا إخبار الآخر بأنه موجود."
+      },
+      "challenge": {
+        "fr": "Écoute un proche pendant 5 minutes sans l'interrompre et reformule ses propos en une phrase.",
+        "en": "Listen to someone close for 5 minutes without interrupting and rephrase their words in one sentence.",
+        "ar": "استمع إلى شخص قريب لمدة 5 دقائق دون مقاطعة وأعد صياغة كلامه في جملة واحدة."
+      },
       "type": "A"
     },
     {
       "day": 3,
-      "proverb": "Qui pose la question détient déjà la moitié de la réponse.",
-      "challenge": "Pose trois questions ouvertes dans une conversation aujourd'hui (qui, quoi, comment, pourquoi…).",
+      "proverb": {
+        "fr": "Qui pose la question détient déjà la moitié de la réponse.",
+        "en": "Those who ask the question already hold half the answer.",
+        "ar": "من يطرح السؤال يمتلك بالفعل نصف الإجابة."
+      },
+      "challenge": {
+        "fr": "Pose trois questions ouvertes dans une conversation aujourd'hui (qui, quoi, comment, pourquoi…).",
+        "en": "Ask three open-ended questions in a conversation today (who, what, how, why...).",
+        "ar": "اطرح ثلاثة أسئلة مفتوحة في محادثة اليوم (من، ماذا، كيف، لماذا...)."
+      },
       "type": "A"
     },
     {
       "day": 4,
-      "proverb": "L'ordre est le plaisir de la raison.",
-      "challenge": "Prépare une mini-présentation d'une minute sur un sujet qui te passionne.",
+      "proverb": {
+        "fr": "L'ordre est le plaisir de la raison.",
+        "en": "Order is the pleasure of reason.",
+        "ar": "النظام هو متعة العقل."
+      },
+      "challenge": {
+        "fr": "Prépare une mini-présentation d'une minute sur un sujet qui te passionne.",
+        "en": "Prepare a one-minute mini-presentation on a topic you're passionate about.",
+        "ar": "حضّر عرضًا قصيرًا لمدة دقيقة حول موضوع تحبه."
+      },
       "type": "V"
     },
     {
       "day": 5,
-      "proverb": "Les gestes parlent plus fort que les paroles.",
-      "challenge": "Observe et ajuste ton langage corporel pendant que tu parles.",
+      "proverb": {
+        "fr": "Les gestes parlent plus fort que les paroles.",
+        "en": "Actions speak louder than words.",
+        "ar": "الأفعال أبلغ من الأقوال."
+      },
+      "challenge": {
+        "fr": "Observe et ajuste ton langage corporel pendant que tu parles.",
+        "en": "Observe and adjust your body language while speaking.",
+        "ar": "راقب واضبط لغة جسدك أثناء حديثك."
+      },
       "type": "V"
     },
     {
       "day": 6,
-      "proverb": "Une idée partagée est une idée multipliée.",
-      "challenge": "Partage aujourd'hui une idée créative avec ton entourage.",
+      "proverb": {
+        "fr": "Une idée partagée est une idée multipliée.",
+        "en": "A shared idea is a multiplied idea.",
+        "ar": "الفكرة المشتركة هي فكرة مضاعفة."
+      },
+      "challenge": {
+        "fr": "Partage aujourd'hui une idée créative avec ton entourage.",
+        "en": "Share a creative idea with those around you today.",
+        "ar": "شارك فكرة إبداعية مع من حولك اليوم."
+      },
       "type": "T"
     },
     {
       "day": 7,
-      "proverb": "Qui sait écouter saura parler.",
-      "challenge": "Dans une discussion, note une idée que tu pourrais réutiliser.",
+      "proverb": {
+        "fr": "Qui sait écouter saura parler.",
+        "en": "Those who know how to listen will know how to speak.",
+        "ar": "من يعرف كيف يستمع سيعرف كيف يتحدث."
+      },
+      "challenge": {
+        "fr": "Dans une discussion, note une idée que tu pourrais réutiliser.",
+        "en": "During a discussion, note an idea you could reuse.",
+        "ar": "في مناقشة، سجل فكرة يمكنك إعادة استخدامها."
+      },
       "type": "T"
     },
     {
       "day": 8,
-      "proverb": "La parole est d'argent, l'écoute est d'or.",
-      "challenge": "Reformule 3 phrases entendues aujourd'hui dans tes propres mots.",
+      "proverb": {
+        "fr": "La parole est d'argent, l'écoute est d'or.",
+        "en": "Speech is silver, listening is golden.",
+        "ar": "الكلام من فضة والاستماع من ذهب."
+      },
+      "challenge": {
+        "fr": "Reformule 3 phrases entendues aujourd'hui dans tes propres mots.",
+        "en": "Rephrase 3 sentences you heard today in your own words.",
+        "ar": "أعد صياغة 3 جمل سمعتها اليوم بكلماتك الخاصة."
+      },
       "type": "T"
     },
     {
       "day": 9,
-      "proverb": "Celui qui pose des questions ne se perd pas en chemin.",
-      "challenge": "Demande à une personne ce qui la passionne et écoute-la.",
+      "proverb": {
+        "fr": "Celui qui pose des questions ne se perd pas en chemin.",
+        "en": "Those who ask questions don't get lost along the way.",
+        "ar": "من يطرح الأسئلة لا يضل طريقه."
+      },
+      "challenge": {
+        "fr": "Demande à une personne ce qui la passionne et écoute-la.",
+        "en": "Ask someone what they're passionate about and listen to them.",
+        "ar": "اسأل شخصًا عما يحبه واستمع إليه."
+      },
       "type": "A"
     },
     {
       "day": 10,
-      "proverb": "Ce qui est simple est souvent vrai.",
-      "challenge": "Résume un sujet complexe en 2 phrases claires.",
+      "proverb": {
+        "fr": "Ce qui est simple est souvent vrai.",
+        "en": "What is simple is often true.",
+        "ar": "ما هو بسيط غالبًا ما يكون صحيحًا."
+      },
+      "challenge": {
+        "fr": "Résume un sujet complexe en 2 phrases claires.",
+        "en": "Summarize a complex topic in 2 clear sentences.",
+        "ar": "لخص موضوعًا معقدًا في جملتين واضحتين."
+      },
       "type": "T"
     },
     {
       "day": 11,
-      "proverb": "Un mot gentil est comme un jour de printemps.",
-      "challenge": "Complimente sincèrement deux personnes aujourd'hui.",
+      "proverb": {
+        "fr": "Un mot gentil est comme un jour de printemps.",
+        "en": "A kind word is like a spring day.",
+        "ar": "الكلمة اللطيفة مثل يوم الربيع."
+      },
+      "challenge": {
+        "fr": "Complimente sincèrement deux personnes aujourd'hui.",
+        "en": "Sincerely compliment two people today.",
+        "ar": "امدح شخصين بصدق اليوم."
+      },
       "type": "V"
     },
     {
       "day": 12,
-      "proverb": "Quand tu parles aux gens, parle leur langage.",
-      "challenge": "Observe le style d'un interlocuteur et ajuste ton ton.",
+      "proverb": {
+        "fr": "Quand tu parles aux gens, parle leur langage.",
+        "en": "When you speak to people, speak their language.",
+        "ar": "عندما تتحدث مع الناس، تحدث بلغتهم."
+      },
+      "challenge": {
+        "fr": "Observe le style d'un interlocuteur et ajuste ton ton.",
+        "en": "Observe a speaker's style and adjust your tone.",
+        "ar": "راقب أسلوب محاورك واضبط نبرة صوتك."
+      },
       "type": "A"
     },
     {
       "day": 13,
-      "proverb": "Le silence est parfois la meilleure réponse.",
-      "challenge": "Pendant une discussion, laisse l'autre finir et attends 3 secondes avant de répondre.",
+      "proverb": {
+        "fr": "Le silence est parfois la meilleure réponse.",
+        "en": "Silence is sometimes the best answer.",
+        "ar": "الصمت أحيانًا هو أفضل إجابة."
+      },
+      "challenge": {
+        "fr": "Pendant une discussion, laisse l'autre finir et attends 3 secondes avant de répondre.",
+        "en": "During a discussion, let the other person finish and wait 3 seconds before responding.",
+        "ar": "في مناقشة، دع الآخر ينتهي وانتظر 3 ثوانٍ قبل الرد."
+      },
       "type": "A"
     },
     {
       "day": 14,
-      "proverb": "Qui questionne apprend.",
-      "challenge": "Prépare 3 questions pour ta prochaine réunion ou cours.",
+      "proverb": {
+        "fr": "Qui questionne apprend.",
+        "en": "Those who question learn.",
+        "ar": "من يسأل يتعلم."
+      },
+      "challenge": {
+        "fr": "Prépare 3 questions pour ta prochaine réunion ou cours.",
+        "en": "Prepare 3 questions for your next meeting or class.",
+        "ar": "حضّر 3 أسئلة لاجتماعك أو درسك القادم."
+      },
       "type": "T"
     },
     {
       "day": 15,
-      "proverb": "Les petits ruisseaux font les grandes rivières.",
-      "challenge": "Envoie un message à 2 contacts pour prendre des nouvelles.",
+      "proverb": {
+        "fr": "Les petits ruisseaux font les grandes rivières.",
+        "en": "Little streams make great rivers.",
+        "ar": "الجداول الصغيرة تصنع الأنهار الكبيرة."
+      },
+      "challenge": {
+        "fr": "Envoie un message à 2 contacts pour prendre des nouvelles.",
+        "en": "Send a message to 2 contacts to check in.",
+        "ar": "أرسل رسالة لـ 2 من جهات اتصالك للاطمئنان عليهم."
+      },
       "type": "T"
     },
     {
       "day": 16,
-      "proverb": "Raconte-moi une histoire et je m'en souviendrai.",
-      "challenge": "Mets un exemple concret ou une anecdote dans ta prochaine explication.",
+      "proverb": {
+        "fr": "Raconte-moi une histoire et je m'en souviendrai.",
+        "en": "Tell me a story and I will remember it.",
+        "ar": "أخبرني قصة وسأتذكرها."
+      },
+      "challenge": {
+        "fr": "Mets un exemple concret ou une anecdote dans ta prochaine explication.",
+        "en": "Include a concrete example or anecdote in your next explanation.",
+        "ar": "أدرج مثالاً ملموسًا أو قصة قصيرة في شرحك القادم."
+      },
       "type": "V"
     },
     {
       "day": 17,
-      "proverb": "Qui veut trop embrasser mal étreint.",
-      "challenge": "Refuse poliment une demande non prioritaire aujourd'hui.",
+      "proverb": {
+        "fr": "Qui veut trop embrasser mal étreint.",
+        "en": "Those who grasp at too much hold little.",
+        "ar": "من يريد أن يحتضن الكثير يمسك القليل."
+      },
+      "challenge": {
+        "fr": "Refuse poliment une demande non prioritaire aujourd'hui.",
+        "en": "Politely decline a non-priority request today.",
+        "ar": "ارفض بأدب طلبًا غير ذي أولوية اليوم."
+      },
       "type": "A"
     },
     {
       "day": 18,
-      "proverb": "Donner, c'est semer.",
-      "challenge": "Envoie un lien ou un conseil utile à ton réseau.",
+      "proverb": {
+        "fr": "Donner, c'est semer.",
+        "en": "Giving is sowing.",
+        "ar": "العطاء هو البذر."
+      },
+      "challenge": {
+        "fr": "Envoie un lien ou un conseil utile à ton réseau.",
+        "en": "Send a useful link or advice to your network.",
+        "ar": "أرسل رابطًا أو نصيحة مفيدة لشبكتك."
+      },
       "type": "T"
     },
     {
       "day": 19,
-      "proverb": "C'est en forgeant qu'on devient forgeron.",
-      "challenge": "Essaie un nouveau format (dessin, carte mentale, audio…) pour présenter une idée.",
+      "proverb": {
+        "fr": "C'est en forgeant qu'on devient forgeron.",
+        "en": "Practice makes perfect.",
+        "ar": "الممارسة تصنع الإتقان."
+      },
+      "challenge": {
+        "fr": "Essaie un nouveau format (dessin, carte mentale, audio…) pour présenter une idée.",
+        "en": "Try a new format (drawing, mind map, audio...) to present an idea.",
+        "ar": "جرّب شكلاً جديدًا (رسم، خريطة ذهنية، صوت...) لعرض فكرة."
+      },
       "type": "V"
     },
     {
       "day": 20,
-      "proverb": "Seul on va plus vite, ensemble on va plus loin.",
-      "challenge": "Réunis 2 amis pour réfléchir à un sujet ensemble.",
+      "proverb": {
+        "fr": "Seul on va plus vite, ensemble on va plus loin.",
+        "en": "Alone we go faster, together we go further.",
+        "ar": "وحدنا نذهب أسرع، معًا نذهب أبعد."
+      },
+      "challenge": {
+        "fr": "Réunis 2 amis pour réfléchir à un sujet ensemble.",
+        "en": "Gather 2 friends to brainstorm on a topic together.",
+        "ar": "اجمع صديقين للتفكير في موضوع معًا."
+      },
       "type": "V"
     },
     {
       "day": 21,
-      "proverb": "Qui ne sait d'où il vient ne sait où il va.",
-      "challenge": "Résume tes 3 plus gros apprentissages de ces 21 jours.",
+      "proverb": {
+        "fr": "Qui ne sait d'où il vient ne sait où il va.",
+        "en": "Those who don't know where they come from don't know where they're going.",
+        "ar": "من لا يعرف من أين أتى لا يعرف إلى أين يذهب."
+      },
+      "challenge": {
+        "fr": "Résume tes 3 plus gros apprentissages de ces 21 jours.",
+        "en": "Summarize your 3 biggest learnings from these 21 days.",
+        "ar": "لخص أكبر 3 دروس تعلمتها من هذه الـ 21 يومًا."
+      },
       "type": "T"
     }
   ]
