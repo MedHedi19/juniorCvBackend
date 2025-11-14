@@ -1,0 +1,299 @@
+{
+  "color": "rouge",
+  "challenges": [
+    {
+      "day": 1,
+      "proverb": {
+        "fr": "Qui veut gravir une montagne commence par un pas.",
+        "en": "Those who want to climb a mountain start with one step.",
+        "ar": "من يريد تسلق جبل يبدأ بخطوة واحدة."
+      },
+      "challenge": {
+        "fr": "Note trois initiatives que tu peux lancer cette semaine.",
+        "en": "Write down three initiatives you can launch this week.",
+        "ar": "اكتب ثلاث مبادرات يمكنك إطلاقها هذا الأسبوع."
+      },
+      "type": "T"
+    },
+    {
+      "day": 2,
+      "proverb": {
+        "fr": "L'action sans réflexion est vaine, la réflexion sans action est stérile.",
+        "en": "Action without reflection is futile, reflection without action is sterile.",
+        "ar": "العمل بدون تفكير عبث، والتفكير بدون عمل عقيم."
+      },
+      "challenge": {
+        "fr": "Choisis une idée et définis un plan en 3 étapes simples.",
+        "en": "Choose an idea and define a plan in 3 simple steps.",
+        "ar": "اختر فكرة وحدد خطة في 3 خطوات بسيطة."
+      },
+      "type": "T"
+    },
+    {
+      "day": 3,
+      "proverb": {
+        "fr": "Celui qui écoute construit mieux que celui qui parle.",
+        "en": "Those who listen build better than those who speak.",
+        "ar": "من يستمع يبني أفضل من الذي يتكلم."
+      },
+      "challenge": {
+        "fr": "Écoute 5 minutes un camarade sans l'interrompre et note une idée clé.",
+        "en": "Listen to a colleague for 5 minutes without interrupting and note a key idea.",
+        "ar": "استمع إلى زميل لمدة 5 دقائق دون مقاطعة واكتب فكرة رئيسية."
+      },
+      "type": "A"
+    },
+    {
+      "day": 4,
+      "proverb": {
+        "fr": "Celui qui veut tout faire seul n'accomplit rien de grand.",
+        "en": "Those who want to do everything alone accomplish nothing great.",
+        "ar": "من يريد أن يفعل كل شيء بمفرده لا ينجز شيئًا عظيمًا."
+      },
+      "challenge": {
+        "fr": "Délègue une petite tâche à un camarade et suis son avancement.",
+        "en": "Delegate a small task to a colleague and follow its progress.",
+        "ar": "فوض مهمة صغيرة لزميل وتابع تقدمها."
+      },
+      "type": "T"
+    },
+    {
+      "day": 5,
+      "proverb": {
+        "fr": "Un navire sans cap n'atteint aucun port.",
+        "en": "A ship without direction reaches no port.",
+        "ar": "سفينة بدون وجهة لا تصل إلى أي ميناء."
+      },
+      "challenge": {
+        "fr": "Écris un objectif précis (SMART) à atteindre cette semaine.",
+        "en": "Write a specific (SMART) goal to achieve this week.",
+        "ar": "اكتب هدفًا محددًا (SMART) لتحقيقه هذا الأسبوع."
+      },
+      "type": "T"
+    },
+    {
+      "day": 6,
+      "proverb": {
+        "fr": "La gratitude transforme ce que nous avons en suffisance.",
+        "en": "Gratitude transforms what we have into enough.",
+        "ar": "الامتنان يحول ما لدينا إلى كفاية."
+      },
+      "challenge": {
+        "fr": "Remercie publiquement quelqu'un pour sa contribution.",
+        "en": "Publicly thank someone for their contribution.",
+        "ar": "اشكر شخصًا علنًا على مساهمته."
+      },
+      "type": "V"
+    },
+    {
+      "day": 7,
+      "proverb": {
+        "fr": "Mieux vaut une décision imparfaite qu'une indécision parfaite.",
+        "en": "Better an imperfect decision than perfect indecision.",
+        "ar": "قرار غير مثالي أفضل من تردد مثالي."
+      },
+      "challenge": {
+        "fr": "Prends une petite décision aujourd'hui sans attendre plus d'infos.",
+        "en": "Make a small decision today without waiting for more information.",
+        "ar": "اتخذ قرارًا صغيرًا اليوم دون انتظار المزيد من المعلومات."
+      },
+      "type": "T"
+    },
+    {
+      "day": 8,
+      "proverb": {
+        "fr": "Qui veut aller loin ménage sa monture.",
+        "en": "Those who want to go far take care of their mount.",
+        "ar": "من يريد الذهاب بعيدًا يعتني بمركوبته."
+      },
+      "challenge": {
+        "fr": "Planifie ta journée de demain en 3 priorités.",
+        "en": "Plan tomorrow in 3 priorities.",
+        "ar": "خطط ليومك غدًا في 3 أولويات."
+      },
+      "type": "T"
+    },
+    {
+      "day": 9,
+      "proverb": {
+        "fr": "Là où il n'y a pas de vision, le peuple périt.",
+        "en": "Where there is no vision, the people perish.",
+        "ar": "حيث لا توجد رؤية، يهلك الناس."
+      },
+      "challenge": {
+        "fr": "Partage ton idée d'avenir pour un projet avec ton équipe.",
+        "en": "Share your future vision for a project with your team.",
+        "ar": "شارك رؤيتك المستقبلية لمشروع مع فريقك."
+      },
+      "type": "V"
+    },
+    {
+      "day": 10,
+      "proverb": {
+        "fr": "La tempérance est le courage du fort.",
+        "en": "Temperance is the courage of the strong.",
+        "ar": "الاعتدال هو شجاعة القوي."
+      },
+      "challenge": {
+        "fr": "Prends 5 minutes pour respirer profondément avant une réunion.",
+        "en": "Take 5 minutes to breathe deeply before a meeting.",
+        "ar": "خذ 5 دقائق للتنفس بعمق قبل الاجتماع."
+      },
+      "type": "A"
+    },
+    {
+      "day": 11,
+      "proverb": {
+        "fr": "Qui se remet en question progresse.",
+        "en": "Those who question themselves progress.",
+        "ar": "من يشكك في نفسه يتقدم."
+      },
+      "challenge": {
+        "fr": "Demande à un camarade ce qu'il apprécie et ce qu'il améliorerait chez toi.",
+        "en": "Ask a colleague what they appreciate and what they would improve about you.",
+        "ar": "اسأل زميلًا عما يقدره وما يمكن تحسينه فيك."
+      },
+      "type": "A"
+    },
+    {
+      "day": 12,
+      "proverb": {
+        "fr": "Montre-moi, ne me dis pas.",
+        "en": "Show me, don't tell me.",
+        "ar": "أرني، لا تخبرني."
+      },
+      "challenge": {
+        "fr": "Montre l'exemple en arrivant en avance ou en préparant un sujet.",
+        "en": "Lead by example by arriving early or preparing a topic.",
+        "ar": "كن قدوة بالوصول مبكرًا أو إعداد موضوع."
+      },
+      "type": "T"
+    },
+    {
+      "day": 13,
+      "proverb": {
+        "fr": "Ce qui est bien dit est à moitié fait.",
+        "en": "What is well said is half done.",
+        "ar": "ما يُقال جيدًا يكون نصف منجز."
+      },
+      "challenge": {
+        "fr": "Écris ton prochain message important en 3 phrases simples.",
+        "en": "Write your next important message in 3 simple sentences.",
+        "ar": "اكتب رسالتك المهمة التالية في 3 جمل بسيطة."
+      },
+      "type": "T"
+    },
+    {
+      "day": 14,
+      "proverb": {
+        "fr": "Une parole douce éteint la colère.",
+        "en": "A gentle word extinguishes anger.",
+        "ar": "الكلمة اللطيفة تطفئ الغضب."
+      },
+      "challenge": {
+        "fr": "Écoute deux personnes en désaccord et propose une solution neutre.",
+        "en": "Listen to two people in disagreement and propose a neutral solution.",
+        "ar": "استمع لشخصين مختلفين واقترح حلاً محايدًا."
+      },
+      "type": "A"
+    },
+    {
+      "day": 15,
+      "proverb": {
+        "fr": "On va plus loin ensemble que seul.",
+        "en": "We go further together than alone.",
+        "ar": "نذهب أبعد معًا من وحدنا."
+      },
+      "challenge": {
+        "fr": "Donne un encouragement personnalisé à 2 camarades aujourd'hui.",
+        "en": "Give personalized encouragement to 2 colleagues today.",
+        "ar": "قدم تشجيعًا شخصيًا لزميلين اليوم."
+      },
+      "type": "V"
+    },
+    {
+      "day": 16,
+      "proverb": {
+        "fr": "Qui cesse d'apprendre cesse de grandir.",
+        "en": "Those who stop learning stop growing.",
+        "ar": "من يتوقف عن التعلم يتوقف عن النمو."
+      },
+      "challenge": {
+        "fr": "Lis un article sur le leadership et note 1 idée à appliquer.",
+        "en": "Read an article on leadership and note 1 idea to apply.",
+        "ar": "اقرأ مقالًا عن القيادة واكتب فكرة واحدة لتطبيقها."
+      },
+      "type": "T"
+    },
+    {
+      "day": 17,
+      "proverb": {
+        "fr": "Qui veut courir longtemps ménage ses forces.",
+        "en": "Those who want to run long preserve their strength.",
+        "ar": "من يريد الجري طويلاً يحافظ على قوته."
+      },
+      "challenge": {
+        "fr": "Prends 30 minutes pour toi aujourd'hui sans écran.",
+        "en": "Take 30 minutes for yourself today without screens.",
+        "ar": "خذ 30 دقيقة لنفسك اليوم بدون شاشات."
+      },
+      "type": "T"
+    },
+    {
+      "day": 18,
+      "proverb": {
+        "fr": "La nuit porte conseil.",
+        "en": "Sleep on it.",
+        "ar": "الليل يحمل النصيحة."
+      },
+      "challenge": {
+        "fr": "Avant de répondre à un mail ou message difficile, attends 1 heure.",
+        "en": "Before responding to a difficult email or message, wait 1 hour.",
+        "ar": "قبل الرد على بريد إلكتروني أو رسالة صعبة، انتظر ساعة واحدة."
+      },
+      "type": "T"
+    },
+    {
+      "day": 19,
+      "proverb": {
+        "fr": "La critique est un art, l'encouragement une force.",
+        "en": "Criticism is an art, encouragement a force.",
+        "ar": "النقد فن، والتشجيع قوة."
+      },
+      "challenge": {
+        "fr": "Donne un feedback positif discret à un camarade.",
+        "en": "Give discreet positive feedback to a colleague.",
+        "ar": "قدم ملاحظات إيجابية سرية لزميل."
+      },
+      "type": "A"
+    },
+    {
+      "day": 20,
+      "proverb": {
+        "fr": "Enseigner, c'est apprendre deux fois.",
+        "en": "To teach is to learn twice.",
+        "ar": "التعليم هو التعلم مرتين."
+      },
+      "challenge": {
+        "fr": "Explique à un camarade une technique que tu maîtrises.",
+        "en": "Explain to a colleague a technique you master.",
+        "ar": "اشرح لزميل تقنية تتقنها."
+      },
+      "type": "V"
+    },
+    {
+      "day": 21,
+      "proverb": {
+        "fr": "La victoire appartient à ceux qui y croient.",
+        "en": "Victory belongs to those who believe in it.",
+        "ar": "النصر لمن يؤمن به."
+      },
+      "challenge": {
+        "fr": "Organise un petit moment pour célébrer la fin de ce challenge.",
+        "en": "Organize a small moment to celebrate the end of this challenge.",
+        "ar": "نظم لحظة صغيرة للاحتفال بنهاية هذا التحدي."
+      },
+      "type": "V"
+    }
+  ]
+}

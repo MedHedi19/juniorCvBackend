@@ -1,0 +1,131 @@
+{
+  "color": "vert",
+  "challenges": [
+    {
+      "day": 1,
+      "proverb": "On n'avance jamais sans faire le premier pas.",
+      "challenge": "Propose ton aide spontanément à quelqu'un aujourd'hui.",
+      "type": "T"
+    },
+    {
+      "day": 2,
+      "proverb": "Celui qui parle avec sincérité bâtit des ponts.",
+      "challenge": "Prends la parole une fois en réunion ou dans ton club.",
+      "type": "V"
+    },
+    {
+      "day": 3,
+      "proverb": "Qui demande conseil s'enrichit.",
+      "challenge": "Demande un feedback constructif à un camarade ou à un encadrant.",
+      "type": "A"
+    },
+    {
+      "day": 4,
+      "proverb": "Le respect commence par soi-même.",
+      "challenge": "Refuse gentiment une demande qui ne te convient pas aujourd'hui.",
+      "type": "A"
+    },
+    {
+      "day": 5,
+      "proverb": "Connais-toi toi-même.",
+      "challenge": "Écris tes 3 valeurs principales et comment elles influencent tes décisions.",
+      "type": "T"
+    },
+    {
+      "day": 6,
+      "proverb": "L'éloge est un rayon de soleil.",
+      "challenge": "Félicite un camarade publiquement pour son effort ou succès.",
+      "type": "V"
+    },
+    {
+      "day": 7,
+      "proverb": "Un pas après l'autre mène loin.",
+      "challenge": "Note un mini-objectif à atteindre aujourd'hui et réalise-le.",
+      "type": "T"
+    },
+    {
+      "day": 8,
+      "proverb": "Une étincelle peut allumer un feu.",
+      "challenge": "Crée un petit groupe WhatsApp ou propose une activité à plusieurs.",
+      "type": "T"
+    },
+    {
+      "day": 9,
+      "proverb": "Écouter, c'est accueillir l'autre.",
+      "challenge": "Écoute un point de vue opposé au tien sans interrompre.",
+      "type": "A"
+    },
+    {
+      "day": 10,
+      "proverb": "Qui propose avance.",
+      "challenge": "Identifie un petit aspect à améliorer dans ton club et fais une suggestion.",
+      "type": "T"
+    },
+    {
+      "day": 11,
+      "proverb": "Seul on va plus vite, ensemble on va plus loin.",
+      "challenge": "Offre ton aide à un camarade aujourd'hui.",
+      "type": "T"
+    },
+    {
+      "day": 12,
+      "proverb": "Celui qui attend n'obtient que ce qu'il reste.",
+      "challenge": "Liste 3 situations où tu pourrais être plus proactif cette semaine.",
+      "type": "T"
+    },
+    {
+      "day": 13,
+      "proverb": "La constance est la clé de la réussite.",
+      "challenge": "Fixe-toi un mini objectif quotidien et coche-le chaque soir.",
+      "type": "T"
+    },
+    {
+      "day": 14,
+      "proverb": "Sans but, point de vent favorable.",
+      "challenge": "Note ce qui te motive à agir dans un petit carnet.",
+      "type": "T"
+    },
+    {
+      "day": 15,
+      "proverb": "On peut dire la vérité avec douceur.",
+      "challenge": "Exprime ton opinion sur un sujet important calmement et clairement.",
+      "type": "V"
+    },
+    {
+      "day": 16,
+      "proverb": "La diversité est une richesse.",
+      "challenge": "Partage ton point de vue dans une discussion de groupe aujourd'hui.",
+      "type": "V"
+    },
+    {
+      "day": 17,
+      "proverb": "Qui élève les autres s'élève lui-même.",
+      "challenge": "Mets en avant l'idée d'un camarade lors d'une réunion.",
+      "type": "V"
+    },
+    {
+      "day": 18,
+      "proverb": "Qui marche avec un sage devient sage.",
+      "challenge": "Identifie une personne inspirante et contacte-la pour un conseil.",
+      "type": "T"
+    },
+    {
+      "day": 19,
+      "proverb": "Louer le travail d'autrui, c'est nourrir la réussite.",
+      "challenge": "Publie ou partage un succès du groupe sur les réseaux ou en réunion.",
+      "type": "T"
+    },
+    {
+      "day": 20,
+      "proverb": "L'union fait la force.",
+      "challenge": "Propose une petite activité conviviale (jeux, sortie, brainstorming).",
+      "type": "T"
+    },
+    {
+      "day": 21,
+      "proverb": "La reconnaissance est la mémoire du cœur.",
+      "challenge": "Écris tes progrès et remercie ceux qui t'ont aidé pendant ces 21 jours.",
+      "type": "T"
+    }
+  ]
+}

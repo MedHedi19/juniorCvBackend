@@ -1,0 +1,131 @@
+{
+  "color": "bleu",
+  "challenges": [
+    {
+      "day": 1,
+      "proverb": "Les grandes découvertes commencent hors du chemin tracé.",
+      "challenge": "Prends aujourd'hui une décision rapidement sans trop analyser.",
+      "type": "T"
+    },
+    {
+      "day": 2,
+      "proverb": "La perfection est ennemie du progrès.",
+      "challenge": "Note trois choses où tu pourrais lâcher prise cette semaine.",
+      "type": "T"
+    },
+    {
+      "day": 3,
+      "proverb": "L'imagination est plus importante que le savoir.",
+      "challenge": "Tente une activité nouvelle (ex : improvisation, pitch express).",
+      "type": "V"
+    },
+    {
+      "day": 4,
+      "proverb": "Celui qui change de route découvre de nouveaux paysages.",
+      "challenge": "Présente une idée sous un format inhabituel (dessin, schéma, audio).",
+      "type": "V"
+    },
+    {
+      "day": 5,
+      "proverb": "Qui hésite perd.",
+      "challenge": "Choisis aujourd'hui entre deux options sans y passer plus de 5 minutes.",
+      "type": "T"
+    },
+    {
+      "day": 6,
+      "proverb": "La clarté est la politesse de l'esprit.",
+      "challenge": "Résume un sujet complexe en trois bullet points.",
+      "type": "T"
+    },
+    {
+      "day": 7,
+      "proverb": "On n'apprend pas à nager sur le rivage.",
+      "challenge": "Essaie une activité qui t'intimide un peu.",
+      "type": "T"
+    },
+    {
+      "day": 8,
+      "proverb": "Mesurer deux fois, couper une fois.",
+      "challenge": "Valide aujourd'hui une idée en demandant un feedback rapide.",
+      "type": "A"
+    },
+    {
+      "day": 9,
+      "proverb": "Qui écoute le conseil d'autrui double son intelligence.",
+      "challenge": "Montre ton brouillon à un camarade et demande son avis.",
+      "type": "V"
+    },
+    {
+      "day": 10,
+      "proverb": "Un sourire ne coûte rien et rapporte beaucoup.",
+      "challenge": "Fais un compliment sincère à quelqu'un aujourd'hui.",
+      "type": "V"
+    },
+    {
+      "day": 11,
+      "proverb": "L'urgence fait jaillir le génie.",
+      "challenge": "Donne-toi 15 minutes pour rédiger un texte et publie-le.",
+      "type": "T"
+    },
+    {
+      "day": 12,
+      "proverb": "Qui se connaît se maîtrise.",
+      "challenge": "Liste trois compétences relationnelles à travailler ce mois-ci.",
+      "type": "T"
+    },
+    {
+      "day": 13,
+      "proverb": "Tout seul on va vite, ensemble on va loin.",
+      "challenge": "Partage une idée encore imparfaite avec un camarade.",
+      "type": "V"
+    },
+    {
+      "day": 14,
+      "proverb": "Qui change de point de vue change de vie.",
+      "challenge": "Utilise un support visuel original pour expliquer un concept.",
+      "type": "V"
+    },
+    {
+      "day": 15,
+      "proverb": "La nouveauté plaît et instruit.",
+      "challenge": "Suggère une nouvelle façon de faire dans un projet ou cours.",
+      "type": "V"
+    },
+    {
+      "day": 16,
+      "proverb": "Qui observe apprend.",
+      "challenge": "Laisse un camarade prendre la tête d'une activité et analyse.",
+      "type": "T"
+    },
+    {
+      "day": 17,
+      "proverb": "La curiosité est le début de la sagesse.",
+      "challenge": "Pose aujourd'hui une question inattendue dans une réunion.",
+      "type": "A"
+    },
+    {
+      "day": 18,
+      "proverb": "Qui ne tente rien n'a rien.",
+      "challenge": "Teste une idée audacieuse à petite échelle aujourd'hui.",
+      "type": "T"
+    },
+    {
+      "day": 19,
+      "proverb": "Le cœur a ses raisons que la raison ignore.",
+      "challenge": "Dis à un camarade ce que tu as ressenti pendant une activité.",
+      "type": "A"
+    },
+    {
+      "day": 20,
+      "proverb": "Qui mesure avance.",
+      "challenge": "Note chaque soir un apprentissage issu de tes expériences.",
+      "type": "T"
+    },
+    {
+      "day": 21,
+      "proverb": "Qui se retourne sur son chemin voit la route parcourue.",
+      "challenge": "Résume tes trois plus grands progrès de ces 21 jours et partage-les.",
+      "type": "V"
+    }
+  ]
+}

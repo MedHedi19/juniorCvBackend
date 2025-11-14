@@ -1,0 +1,131 @@
+{
+  "color": "jaune",
+  "challenges": [
+    {
+      "day": 1,
+      "proverb": "Ce qui se conçoit bien s'énonce clairement.",
+      "challenge": "Écris ton pitch personnel en 3 phrases claires et lis-le à voix haute.",
+      "type": "A"
+    },
+    {
+      "day": 2,
+      "proverb": "Écouter, c'est aussi dire à l'autre qu'il existe.",
+      "challenge": "Écoute un proche pendant 5 minutes sans l'interrompre et reformule ses propos en une phrase.",
+      "type": "A"
+    },
+    {
+      "day": 3,
+      "proverb": "Qui pose la question détient déjà la moitié de la réponse.",
+      "challenge": "Pose trois questions ouvertes dans une conversation aujourd'hui (qui, quoi, comment, pourquoi…).",
+      "type": "A"
+    },
+    {
+      "day": 4,
+      "proverb": "L'ordre est le plaisir de la raison.",
+      "challenge": "Prépare une mini-présentation d'une minute sur un sujet qui te passionne.",
+      "type": "V"
+    },
+    {
+      "day": 5,
+      "proverb": "Les gestes parlent plus fort que les paroles.",
+      "challenge": "Observe et ajuste ton langage corporel pendant que tu parles.",
+      "type": "V"
+    },
+    {
+      "day": 6,
+      "proverb": "Une idée partagée est une idée multipliée.",
+      "challenge": "Partage aujourd'hui une idée créative avec ton entourage.",
+      "type": "T"
+    },
+    {
+      "day": 7,
+      "proverb": "Qui sait écouter saura parler.",
+      "challenge": "Dans une discussion, note une idée que tu pourrais réutiliser.",
+      "type": "T"
+    },
+    {
+      "day": 8,
+      "proverb": "La parole est d'argent, l'écoute est d'or.",
+      "challenge": "Reformule 3 phrases entendues aujourd'hui dans tes propres mots.",
+      "type": "T"
+    },
+    {
+      "day": 9,
+      "proverb": "Celui qui pose des questions ne se perd pas en chemin.",
+      "challenge": "Demande à une personne ce qui la passionne et écoute-la.",
+      "type": "A"
+    },
+    {
+      "day": 10,
+      "proverb": "Ce qui est simple est souvent vrai.",
+      "challenge": "Résume un sujet complexe en 2 phrases claires.",
+      "type": "T"
+    },
+    {
+      "day": 11,
+      "proverb": "Un mot gentil est comme un jour de printemps.",
+      "challenge": "Complimente sincèrement deux personnes aujourd'hui.",
+      "type": "V"
+    },
+    {
+      "day": 12,
+      "proverb": "Quand tu parles aux gens, parle leur langage.",
+      "challenge": "Observe le style d'un interlocuteur et ajuste ton ton.",
+      "type": "A"
+    },
+    {
+      "day": 13,
+      "proverb": "Le silence est parfois la meilleure réponse.",
+      "challenge": "Pendant une discussion, laisse l'autre finir et attends 3 secondes avant de répondre.",
+      "type": "A"
+    },
+    {
+      "day": 14,
+      "proverb": "Qui questionne apprend.",
+      "challenge": "Prépare 3 questions pour ta prochaine réunion ou cours.",
+      "type": "T"
+    },
+    {
+      "day": 15,
+      "proverb": "Les petits ruisseaux font les grandes rivières.",
+      "challenge": "Envoie un message à 2 contacts pour prendre des nouvelles.",
+      "type": "T"
+    },
+    {
+      "day": 16,
+      "proverb": "Raconte-moi une histoire et je m'en souviendrai.",
+      "challenge": "Mets un exemple concret ou une anecdote dans ta prochaine explication.",
+      "type": "V"
+    },
+    {
+      "day": 17,
+      "proverb": "Qui veut trop embrasser mal étreint.",
+      "challenge": "Refuse poliment une demande non prioritaire aujourd'hui.",
+      "type": "A"
+    },
+    {
+      "day": 18,
+      "proverb": "Donner, c'est semer.",
+      "challenge": "Envoie un lien ou un conseil utile à ton réseau.",
+      "type": "T"
+    },
+    {
+      "day": 19,
+      "proverb": "C'est en forgeant qu'on devient forgeron.",
+      "challenge": "Essaie un nouveau format (dessin, carte mentale, audio…) pour présenter une idée.",
+      "type": "V"
+    },
+    {
+      "day": 20,
+      "proverb": "Seul on va plus vite, ensemble on va plus loin.",
+      "challenge": "Réunis 2 amis pour réfléchir à un sujet ensemble.",
+      "type": "V"
+    },
+    {
+      "day": 21,
+      "proverb": "Qui ne sait d'où il vient ne sait où il va.",
+      "challenge": "Résume tes 3 plus gros apprentissages de ces 21 jours.",
+      "type": "T"
+    }
+  ]
+}
