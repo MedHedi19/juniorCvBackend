@@ -3,6 +3,11 @@
   "challenges": [
     {
       "day": 1,
+      "intro": {
+        "fr": "Ta patience et ta loyauté sont des atouts, mais l'initiative est essentielle pour progresser.",
+        "en": "Your patience and loyalty are assets, but initiative is essential to progress.",
+        "ar": "صبرك وولائك من نقاط قوتك، لكن المبادرة ضرورية للتقدم."
+      },
       "proverb": {
         "fr": "On n'avance jamais sans faire le premier pas.",
         "en": "You never move forward without taking the first step.",
@@ -17,6 +22,11 @@
     },
     {
       "day": 2,
+      "intro": {
+        "fr": "Exprimer son avis renforce la confiance mutuelle et t'aide à prendre ta place dans un groupe.",
+        "en": "Expressing your opinion strengthens mutual trust and helps you take your place in a group.",
+        "ar": "التعبير عن رأيك يعزز الثقة المتبادلة ويساعدك على أخذ مكانك في المجموعة."
+      },
       "proverb": {
         "fr": "Celui qui parle avec sincérité bâtit des ponts.",
         "en": "Those who speak with sincerity build bridges.",
@@ -31,6 +41,11 @@
     },
     {
       "day": 3,
+      "intro": {
+        "fr": "Le feedback est une clé d'amélioration continue.",
+        "en": "Feedback is a key to continuous improvement.",
+        "ar": "الملاحظات هي مفتاح التحسين المستمر."
+      },
       "proverb": {
         "fr": "Qui demande conseil s'enrichit.",
         "en": "Those who seek advice enrich themselves.",
@@ -45,6 +60,11 @@
     },
     {
       "day": 4,
+      "intro": {
+        "fr": "Dire 'non' poliment mais fermement renforce ton assertivité.",
+        "en": "Saying 'no' politely but firmly strengthens your assertiveness.",
+        "ar": "قول 'لا' بأدب ولكن بحزم يعزز حزمك."
+      },
       "proverb": {
         "fr": "Le respect commence par soi-même.",
         "en": "Respect starts with yourself.",
@@ -59,6 +79,11 @@
     },
     {
       "day": 5,
+      "intro": {
+        "fr": "Tes valeurs sont un guide puissant. Les clarifier te rend plus sûr dans tes choix.",
+        "en": "Your values are a powerful guide. Clarifying them makes you more confident in your choices.",
+        "ar": "قيمك هي دليل قوي. توضيحها يجعلك أكثر ثقة في خياراتك."
+      },
       "proverb": {
         "fr": "Connais-toi toi-même.",
         "en": "Know yourself.",
@@ -73,6 +98,11 @@
     },
     {
       "day": 6,
+      "intro": {
+        "fr": "Encourager publiquement renforce la cohésion du groupe.",
+        "en": "Encouraging publicly strengthens group cohesion.",
+        "ar": "التشجيع علنًا يعزز تماسك المجموعة."
+      },
       "proverb": {
         "fr": "L'éloge est un rayon de soleil.",
         "en": "Praise is a ray of sunshine.",
@@ -87,6 +117,11 @@
     },
     {
       "day": 7,
+      "intro": {
+        "fr": "Fixer de petits objectifs quotidiens t'aide à développer ton initiative.",
+        "en": "Setting small daily goals helps you develop your initiative.",
+        "ar": "تحديد أهداف يومية صغيرة يساعدك على تطوير مبادرتك."
+      },
       "proverb": {
         "fr": "Un pas après l'autre mène loin.",
         "en": "One step after another takes you far.",
@@ -101,6 +136,11 @@
     },
     {
       "day": 8,
+      "intro": {
+        "fr": "Lancer une action collective te positionne en leader discret.",
+        "en": "Launching a collective action positions you as a discreet leader.",
+        "ar": "إطلاق عمل جماعي يضعك كقائد هادئ."
+      },
       "proverb": {
         "fr": "Une étincelle peut allumer un feu.",
         "en": "A spark can light a fire.",
@@ -115,6 +155,11 @@
     },
     {
       "day": 9,
+      "intro": {
+        "fr": "Écouter sans juger favorise la confiance et le dialogue.",
+        "en": "Listening without judging promotes trust and dialogue.",
+        "ar": "الاستماع دون حكم يعزز الثقة والحوار."
+      },
       "proverb": {
         "fr": "Écouter, c'est accueillir l'autre.",
         "en": "Listening is welcoming the other.",
@@ -129,6 +174,11 @@
     },
     {
       "day": 10,
+      "intro": {
+        "fr": "Proposer une amélioration concrète montre ton engagement.",
+        "en": "Proposing a concrete improvement shows your commitment.",
+        "ar": "اقتراح تحسين ملموس يظهر التزامك."
+      },
       "proverb": {
         "fr": "Qui propose avance.",
         "en": "Those who propose move forward.",
@@ -143,6 +193,11 @@
     },
     {
       "day": 11,
+      "intro": {
+        "fr": "Accompagner un camarade en difficulté développe ton empathie et ta crédibilité.",
+        "en": "Supporting a colleague in difficulty develops your empathy and credibility.",
+        "ar": "دعم زميل في صعوبة يطور تعاطفك ومصداقيتك."
+      },
       "proverb": {
         "fr": "Seul on va plus vite, ensemble on va plus loin.",
         "en": "Alone we go faster, together we go further.",
@@ -157,6 +212,11 @@
     },
     {
       "day": 12,
+      "intro": {
+        "fr": "La proactivité est une compétence clé pour progresser.",
+        "en": "Proactivity is a key skill for progress.",
+        "ar": "المبادرة مهارة أساسية للتقدم."
+      },
       "proverb": {
         "fr": "Celui qui attend n'obtient que ce qu'il reste.",
         "en": "Those who wait only get what's left.",
@@ -171,6 +231,11 @@
     },
     {
       "day": 13,
+      "intro": {
+        "fr": "Le suivi régulier montre ton sérieux et inspire la confiance.",
+        "en": "Regular follow-up shows your seriousness and inspires trust.",
+        "ar": "المتابعة المنتظمة تظهر جديتك وتلهم الثقة."
+      },
       "proverb": {
         "fr": "La constance est la clé de la réussite.",
         "en": "Consistency is the key to success.",
@@ -185,6 +250,11 @@
     },
     {
       "day": 14,
+      "intro": {
+        "fr": "Prendre conscience de ta motivation te donne de l'élan.",
+        "en": "Being aware of your motivation gives you momentum.",
+        "ar": "الوعي بحوافزك يمنحك زخمًا."
+      },
       "proverb": {
         "fr": "Sans but, point de vent favorable.",
         "en": "Without a goal, there's no favorable wind.",
@@ -199,6 +269,11 @@
     },
     {
       "day": 15,
+      "intro": {
+        "fr": "Apprendre à t'affirmer sans agresser est une force.",
+        "en": "Learning to assert yourself without aggression is a strength.",
+        "ar": "تعلم تأكيد نفسك دون عدوان هو قوة."
+      },
       "proverb": {
         "fr": "On peut dire la vérité avec douceur.",
         "en": "Truth can be spoken with gentleness.",
@@ -213,6 +288,11 @@
     },
     {
       "day": 16,
+      "intro": {
+        "fr": "Donner ton avis même s'il est différent enrichit le collectif.",
+        "en": "Giving your opinion even if it's different enriches the collective.",
+        "ar": "إبداء رأيك حتى لو كان مختلفًا يثري الجماعة."
+      },
       "proverb": {
         "fr": "La diversité est une richesse.",
         "en": "Diversity is a wealth.",
@@ -227,6 +307,11 @@
     },
     {
       "day": 17,
+      "intro": {
+        "fr": "Encourager les idées des autres crée un climat de confiance.",
+        "en": "Encouraging others' ideas creates a climate of trust.",
+        "ar": "تشجيع أفكار الآخرين يخلق مناخًا من الثقة."
+      },
       "proverb": {
         "fr": "Qui élève les autres s'élève lui-même.",
         "en": "Those who elevate others elevate themselves.",
@@ -241,6 +326,11 @@
     },
     {
       "day": 18,
+      "intro": {
+        "fr": "Chercher un mentor te permet de progresser plus vite.",
+        "en": "Seeking a mentor allows you to progress faster.",
+        "ar": "البحث عن مرشد يسمح لك بالتقدم بشكل أسرع."
+      },
       "proverb": {
         "fr": "Qui marche avec un sage devient sage.",
         "en": "Those who walk with the wise become wise.",
@@ -255,6 +345,11 @@
     },
     {
       "day": 19,
+      "intro": {
+        "fr": "Mettre en avant les réussites de ton équipe augmente la motivation collective.",
+        "en": "Highlighting your team's successes increases collective motivation.",
+        "ar": "إبراز نجاحات فريقك يزيد التحفيز الجماعي."
+      },
       "proverb": {
         "fr": "Louer le travail d'autrui, c'est nourrir la réussite.",
         "en": "Praising others' work is nourishing success.",
@@ -269,6 +364,11 @@
     },
     {
       "day": 20,
+      "intro": {
+        "fr": "Organiser une activité de groupe renforce tes qualités de fédérateur.",
+        "en": "Organizing a group activity strengthens your unifying qualities.",
+        "ar": "تنظيم نشاط جماعي يعزز صفاتك التوحيدية."
+      },
       "proverb": {
         "fr": "L'union fait la force.",
         "en": "Unity is strength.",
@@ -283,6 +383,11 @@
     },
     {
       "day": 21,
+      "intro": {
+        "fr": "Bilan et gratitude solidifient les acquis.",
+        "en": "Assessment and gratitude solidify your achievements.",
+        "ar": "التقييم والامتنان يرسخان إنجازاتك."
+      },
       "proverb": {
         "fr": "La reconnaissance est la mémoire du cœur.",
         "en": "Gratitude is the memory of the heart.",

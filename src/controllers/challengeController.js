@@ -117,6 +117,7 @@ exports.getAllChallenges = async (req, res) => {
 
             return {
                 day: challenge.day,
+                intro: challenge.intro ? (challenge.intro[lang] || challenge.intro.fr) : undefined,
                 proverb: challenge.proverb[lang] || challenge.proverb.fr,
                 challenge: challenge.challenge[lang] || challenge.challenge.fr,
                 type: challenge.type,
@@ -192,6 +193,7 @@ exports.getChallengeByDay = async (req, res) => {
             success: true,
             data: {
                 day: challenge.day,
+                intro: challenge.intro ? (challenge.intro[lang] || challenge.intro.fr) : undefined,
                 proverb: challenge.proverb[lang] || challenge.proverb.fr,
                 challenge: challenge.challenge[lang] || challenge.challenge.fr,
                 type: challenge.type,

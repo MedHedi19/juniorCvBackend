@@ -3,6 +3,11 @@
   "challenges": [
     {
       "day": 1,
+      "intro": {
+        "fr": "Tu es structuré et précis, mais sortir du confort est aussi formateur.",
+        "en": "You are structured and precise, but stepping out of your comfort zone is also educational.",
+        "ar": "أنت منظم ودقيق، لكن الخروج من منطقة الراحة مفيد أيضًا."
+      },
       "proverb": {
         "fr": "Les grandes découvertes commencent hors du chemin tracé.",
         "en": "Great discoveries begin off the beaten path.",
@@ -17,6 +22,11 @@
     },
     {
       "day": 2,
+      "intro": {
+        "fr": "Accepter l'imperfection développe ta flexibilité.",
+        "en": "Accepting imperfection develops your flexibility.",
+        "ar": "قبول النقص يطور مرونتك."
+      },
       "proverb": {
         "fr": "La perfection est ennemie du progrès.",
         "en": "Perfection is the enemy of progress.",
@@ -31,6 +41,11 @@
     },
     {
       "day": 3,
+      "intro": {
+        "fr": "La créativité stimule ta vision analytique.",
+        "en": "Creativity stimulates your analytical vision.",
+        "ar": "الإبداع يحفز رؤيتك التحليلية."
+      },
       "proverb": {
         "fr": "L'imagination est plus importante que le savoir.",
         "en": "Imagination is more important than knowledge.",
@@ -45,6 +60,11 @@
     },
     {
       "day": 4,
+      "intro": {
+        "fr": "Essayer des approches différentes élargit ton champ de vision.",
+        "en": "Trying different approaches broadens your field of vision.",
+        "ar": "تجربة أساليب مختلفة توسع مجال رؤيتك."
+      },
       "proverb": {
         "fr": "Celui qui change de route découvre de nouveaux paysages.",
         "en": "Those who change routes discover new landscapes.",
@@ -59,6 +79,11 @@
     },
     {
       "day": 5,
+      "intro": {
+        "fr": "Prendre des décisions rapides te fait gagner du temps et de l'assurance.",
+        "en": "Making quick decisions saves you time and confidence.",
+        "ar": "اتخاذ قرارات سريعة يوفر لك الوقت والثقة."
+      },
       "proverb": {
         "fr": "Qui hésite perd.",
         "en": "Those who hesitate lose.",
@@ -73,6 +98,11 @@
     },
     {
       "day": 6,
+      "intro": {
+        "fr": "Exprimer une idée complexe en peu de mots t'oblige à aller à l'essentiel.",
+        "en": "Expressing a complex idea in few words forces you to get to the point.",
+        "ar": "التعبير عن فكرة معقدة بكلمات قليلة يجبرك على الوصول للجوهر."
+      },
       "proverb": {
         "fr": "La clarté est la politesse de l'esprit.",
         "en": "Clarity is the courtesy of the mind.",
@@ -87,6 +117,11 @@
     },
     {
       "day": 7,
+      "intro": {
+        "fr": "Sortir de la zone de confort développe la créativité et la résilience.",
+        "en": "Stepping out of your comfort zone develops creativity and resilience.",
+        "ar": "الخروج من منطقة الراحة يطور الإبداع والمرونة."
+      },
       "proverb": {
         "fr": "On n'apprend pas à nager sur le rivage.",
         "en": "You don't learn to swim on the shore.",
@@ -101,6 +136,11 @@
     },
     {
       "day": 8,
+      "intro": {
+        "fr": "Tester tes hypothèses avant de les valider t'évite des erreurs.",
+        "en": "Testing your hypotheses before validating them helps you avoid mistakes.",
+        "ar": "اختبار فرضياتك قبل التحقق منها يجنبك الأخطاء."
+      },
       "proverb": {
         "fr": "Mesurer deux fois, couper une fois.",
         "en": "Measure twice, cut once.",
@@ -115,6 +155,11 @@
     },
     {
       "day": 9,
+      "intro": {
+        "fr": "Présenter ton travail avant qu'il soit fini te permet d'obtenir des retours utiles.",
+        "en": "Presenting your work before it's finished allows you to get useful feedback.",
+        "ar": "تقديم عملك قبل الانتهاء منه يتيح لك الحصول على ملاحظات مفيدة."
+      },
       "proverb": {
         "fr": "Qui écoute le conseil d'autrui double son intelligence.",
         "en": "Those who listen to others' advice double their intelligence.",
@@ -129,6 +174,11 @@
     },
     {
       "day": 10,
+      "intro": {
+        "fr": "Complimenter sans raison t'entraîne à exprimer du positif spontanément.",
+        "en": "Complimenting for no reason trains you to express positivity spontaneously.",
+        "ar": "المديح دون سبب يدربك على التعبير عن الإيجابية بشكل عفوي."
+      },
       "proverb": {
         "fr": "Un sourire ne coûte rien et rapporte beaucoup.",
         "en": "A smile costs nothing and brings much.",
@@ -143,6 +193,11 @@
     },
     {
       "day": 11,
+      "intro": {
+        "fr": "Se fixer un délai court stimule la productivité et l'audace.",
+        "en": "Setting a short deadline stimulates productivity and boldness.",
+        "ar": "تحديد موعد نهائي قصير يحفز الإنتاجية والجرأة."
+      },
       "proverb": {
         "fr": "L'urgence fait jaillir le génie.",
         "en": "Urgency brings out genius.",
@@ -157,6 +212,11 @@
     },
     {
       "day": 12,
+      "intro": {
+        "fr": "Identifier trois compétences soft à renforcer te donne un plan clair.",
+        "en": "Identifying three soft skills to strengthen gives you a clear plan.",
+        "ar": "تحديد ثلاث مهارات ناعمة لتعزيزها يمنحك خطة واضحة."
+      },
       "proverb": {
         "fr": "Qui se connaît se maîtrise.",
         "en": "Those who know themselves master themselves.",
@@ -171,6 +231,11 @@
     },
     {
       "day": 13,
+      "intro": {
+        "fr": "Partager une idée 'inachevée' ouvre la porte à la co-création.",
+        "en": "Sharing an 'unfinished' idea opens the door to co-creation.",
+        "ar": "مشاركة فكرة 'غير مكتملة' تفتح الباب للإبداع المشترك."
+      },
       "proverb": {
         "fr": "Tout seul on va vite, ensemble on va loin.",
         "en": "Alone we go fast, together we go far.",
@@ -185,6 +250,11 @@
     },
     {
       "day": 14,
+      "intro": {
+        "fr": "Essayer un nouveau format de présentation stimule ton cerveau droit.",
+        "en": "Trying a new presentation format stimulates your right brain.",
+        "ar": "تجربة تنسيق عرض جديد يحفز دماغك الأيمن."
+      },
       "proverb": {
         "fr": "Qui change de point de vue change de vie.",
         "en": "Those who change perspective change their life.",
@@ -199,6 +269,11 @@
     },
     {
       "day": 15,
+      "intro": {
+        "fr": "Proposer une méthode différente montre ton esprit d'innovation.",
+        "en": "Proposing a different method shows your innovative spirit.",
+        "ar": "اقتراح طريقة مختلفة يظهر روحك الابتكارية."
+      },
       "proverb": {
         "fr": "La nouveauté plaît et instruit.",
         "en": "Novelty pleases and teaches.",
@@ -213,6 +288,11 @@
     },
     {
       "day": 16,
+      "intro": {
+        "fr": "Laisser quelqu'un d'autre diriger et observer t'apprend beaucoup.",
+        "en": "Letting someone else lead and observing teaches you a lot.",
+        "ar": "السماح لشخص آخر بالقيادة والمراقبة يعلمك الكثير."
+      },
       "proverb": {
         "fr": "Qui observe apprend.",
         "en": "Those who observe learn.",
@@ -227,6 +307,11 @@
     },
     {
       "day": 17,
+      "intro": {
+        "fr": "Poser des questions insolites ouvre des perspectives inédites.",
+        "en": "Asking unusual questions opens up new perspectives.",
+        "ar": "طرح أسئلة غير عادية يفتح آفاقًا جديدة."
+      },
       "proverb": {
         "fr": "La curiosité est le début de la sagesse.",
         "en": "Curiosity is the beginning of wisdom.",
@@ -241,6 +326,11 @@
     },
     {
       "day": 18,
+      "intro": {
+        "fr": "Prendre un petit risque calculé te prépare aux grands défis.",
+        "en": "Taking a small calculated risk prepares you for big challenges.",
+        "ar": "أخذ مخاطرة صغيرة محسوبة يعدك للتحديات الكبيرة."
+      },
       "proverb": {
         "fr": "Qui ne tente rien n'a rien.",
         "en": "Nothing ventured, nothing gained.",
@@ -255,6 +345,11 @@
     },
     {
       "day": 19,
+      "intro": {
+        "fr": "Partager ton ressenti renforce la confiance avec les autres.",
+        "en": "Sharing your feelings strengthens trust with others.",
+        "ar": "مشاركة مشاعرك تعزز الثقة مع الآخرين."
+      },
       "proverb": {
         "fr": "Le cœur a ses raisons que la raison ignore.",
         "en": "The heart has its reasons that reason knows not.",
@@ -269,6 +364,11 @@
     },
     {
       "day": 20,
+      "intro": {
+        "fr": "Observer ton évolution te permet de mesurer ton progrès.",
+        "en": "Observing your evolution allows you to measure your progress.",
+        "ar": "مراقبة تطورك تتيح لك قياس تقدمك."
+      },
       "proverb": {
         "fr": "Qui mesure avance.",
         "en": "Those who measure progress.",
@@ -283,6 +383,11 @@
     },
     {
       "day": 21,
+      "intro": {
+        "fr": "Le bilan final t'aide à ancrer tes nouveaux comportements.",
+        "en": "The final assessment helps you anchor your new behaviors.",
+        "ar": "التقييم النهائي يساعدك على ترسيخ سلوكياتك الجديدة."
+      },
       "proverb": {
         "fr": "Qui se retourne sur son chemin voit la route parcourue.",
         "en": "Those who look back on their path see the road traveled.",

@@ -3,6 +3,11 @@
   "challenges": [
     {
       "day": 1,
+      "intro": {
+        "fr": "La communication est ton point fort, mais elle peut être encore plus impactante si tu sais la structurer.",
+        "en": "Communication is your strength, but it can be even more impactful if you know how to structure it.",
+        "ar": "التواصل هو نقطة قوتك، لكن يمكن أن يكون أكثر تأثيرًا إذا عرفت كيف تنظمه."
+      },
       "proverb": {
         "fr": "Ce qui se conçoit bien s'énonce clairement.",
         "en": "What is well conceived is clearly stated.",
@@ -17,6 +22,11 @@
     },
     {
       "day": 2,
+      "intro": {
+        "fr": "Écouter activement renforce la confiance et te permet de comprendre l'autre en profondeur.",
+        "en": "Active listening strengthens trust and allows you to understand others deeply.",
+        "ar": "الاستماع النشط يعزز الثقة ويسمح لك بفهم الآخرين بعمق."
+      },
       "proverb": {
         "fr": "Écouter, c'est aussi dire à l'autre qu'il existe.",
         "en": "Listening is also telling the other that they exist.",
@@ -31,6 +41,11 @@
     },
     {
       "day": 3,
+      "intro": {
+        "fr": "Les questions ouvertes stimulent la discussion et te donnent plus d'informations que les questions fermées.",
+        "en": "Open-ended questions stimulate discussion and give you more information than closed questions.",
+        "ar": "الأسئلة المفتوحة تحفز النقاش وتمنحك معلومات أكثر من الأسئلة المغلقة."
+      },
       "proverb": {
         "fr": "Qui pose la question détient déjà la moitié de la réponse.",
         "en": "Those who ask the question already hold half the answer.",
@@ -45,6 +60,11 @@
     },
     {
       "day": 4,
+      "intro": {
+        "fr": "Structurer ton enthousiasme rend tes idées plus claires et convaincantes.",
+        "en": "Structuring your enthusiasm makes your ideas clearer and more convincing.",
+        "ar": "هيكلة حماسك تجعل أفكارك أكثر وضوحًا وإقناعًا."
+      },
       "proverb": {
         "fr": "L'ordre est le plaisir de la raison.",
         "en": "Order is the pleasure of reason.",
@@ -59,6 +79,11 @@
     },
     {
       "day": 5,
+      "intro": {
+        "fr": "Le langage non verbal est aussi puissant que les mots.",
+        "en": "Non-verbal language is as powerful as words.",
+        "ar": "اللغة غير اللفظية قوية مثل الكلمات."
+      },
       "proverb": {
         "fr": "Les gestes parlent plus fort que les paroles.",
         "en": "Actions speak louder than words.",
@@ -73,6 +98,11 @@
     },
     {
       "day": 6,
+      "intro": {
+        "fr": "La créativité gagne en force lorsqu'elle est partagée.",
+        "en": "Creativity gains strength when shared.",
+        "ar": "الإبداع يكتسب قوة عندما يتم مشاركته."
+      },
       "proverb": {
         "fr": "Une idée partagée est une idée multipliée.",
         "en": "A shared idea is a multiplied idea.",
@@ -87,6 +117,11 @@
     },
     {
       "day": 7,
+      "intro": {
+        "fr": "Savoir écouter tes interlocuteurs nourrit tes propres idées.",
+        "en": "Knowing how to listen to your interlocutors feeds your own ideas.",
+        "ar": "معرفة كيفية الاستماع لمحاوريك يغذي أفكارك الخاصة."
+      },
       "proverb": {
         "fr": "Qui sait écouter saura parler.",
         "en": "Those who know how to listen will know how to speak.",
@@ -101,6 +136,11 @@
     },
     {
       "day": 8,
+      "intro": {
+        "fr": "Reformuler sans répéter montre que tu comprends en profondeur.",
+        "en": "Rephrasing without repeating shows that you understand deeply.",
+        "ar": "إعادة الصياغة دون تكرار تظهر أنك تفهم بعمق."
+      },
       "proverb": {
         "fr": "La parole est d'argent, l'écoute est d'or.",
         "en": "Speech is silver, listening is golden.",
@@ -115,6 +155,11 @@
     },
     {
       "day": 9,
+      "intro": {
+        "fr": "La curiosité te permet d'ouvrir de nouvelles portes.",
+        "en": "Curiosity allows you to open new doors.",
+        "ar": "الفضول يسمح لك بفتح أبواب جديدة."
+      },
       "proverb": {
         "fr": "Celui qui pose des questions ne se perd pas en chemin.",
         "en": "Those who ask questions don't get lost along the way.",
@@ -129,6 +174,11 @@
     },
     {
       "day": 10,
+      "intro": {
+        "fr": "Savoir faire simple est un art.",
+        "en": "Knowing how to keep things simple is an art.",
+        "ar": "معرفة كيفية التبسيط هي فن."
+      },
       "proverb": {
         "fr": "Ce qui est simple est souvent vrai.",
         "en": "What is simple is often true.",
@@ -143,6 +193,11 @@
     },
     {
       "day": 11,
+      "intro": {
+        "fr": "Les compliments sincères construisent des ponts.",
+        "en": "Sincere compliments build bridges.",
+        "ar": "المديح الصادق يبني الجسور."
+      },
       "proverb": {
         "fr": "Un mot gentil est comme un jour de printemps.",
         "en": "A kind word is like a spring day.",
@@ -157,6 +212,11 @@
     },
     {
       "day": 12,
+      "intro": {
+        "fr": "Adapter ton style à ton interlocuteur augmente ton impact.",
+        "en": "Adapting your style to your interlocutor increases your impact.",
+        "ar": "تكييف أسلوبك مع محاورك يزيد من تأثيرك."
+      },
       "proverb": {
         "fr": "Quand tu parles aux gens, parle leur langage.",
         "en": "When you speak to people, speak their language.",
@@ -171,6 +231,11 @@
     },
     {
       "day": 13,
+      "intro": {
+        "fr": "Gérer ton temps de parole laisse de la place aux autres.",
+        "en": "Managing your speaking time leaves room for others.",
+        "ar": "إدارة وقت حديثك تترك مجالًا للآخرين."
+      },
       "proverb": {
         "fr": "Le silence est parfois la meilleure réponse.",
         "en": "Silence is sometimes the best answer.",
@@ -185,6 +250,11 @@
     },
     {
       "day": 14,
+      "intro": {
+        "fr": "Poser des questions stimule l'engagement et l'intelligence collective.",
+        "en": "Asking questions stimulates engagement and collective intelligence.",
+        "ar": "طرح الأسئلة يحفز المشاركة والذكاء الجماعي."
+      },
       "proverb": {
         "fr": "Qui questionne apprend.",
         "en": "Those who question learn.",
@@ -199,6 +269,11 @@
     },
     {
       "day": 15,
+      "intro": {
+        "fr": "Le réseau se construit par de petites attentions régulières.",
+        "en": "Networking is built through small regular attentions.",
+        "ar": "الشبكات تبنى من خلال اهتمامات صغيرة منتظمة."
+      },
       "proverb": {
         "fr": "Les petits ruisseaux font les grandes rivières.",
         "en": "Little streams make great rivers.",
@@ -213,6 +288,11 @@
     },
     {
       "day": 16,
+      "intro": {
+        "fr": "Les histoires captivent plus que les arguments seuls.",
+        "en": "Stories captivate more than arguments alone.",
+        "ar": "القصص تأسر أكثر من الحجج وحدها."
+      },
       "proverb": {
         "fr": "Raconte-moi une histoire et je m'en souviendrai.",
         "en": "Tell me a story and I will remember it.",
@@ -227,6 +307,11 @@
     },
     {
       "day": 17,
+      "intro": {
+        "fr": "Apprendre à dire non protège ton énergie et ta crédibilité.",
+        "en": "Learning to say no protects your energy and credibility.",
+        "ar": "تعلم قول لا يحمي طاقتك ومصداقيتك."
+      },
       "proverb": {
         "fr": "Qui veut trop embrasser mal étreint.",
         "en": "Those who grasp at too much hold little.",
@@ -241,6 +326,11 @@
     },
     {
       "day": 18,
+      "intro": {
+        "fr": "Partager des ressources utiles renforce ton image d'expert.",
+        "en": "Sharing useful resources strengthens your image as an expert.",
+        "ar": "مشاركة موارد مفيدة تعزز صورتك كخبير."
+      },
       "proverb": {
         "fr": "Donner, c'est semer.",
         "en": "Giving is sowing.",
@@ -255,6 +345,11 @@
     },
     {
       "day": 19,
+      "intro": {
+        "fr": "Essayer de nouveaux formats stimule ta créativité.",
+        "en": "Trying new formats stimulates your creativity.",
+        "ar": "تجربة تنسيقات جديدة تحفز إبداعك."
+      },
       "proverb": {
         "fr": "C'est en forgeant qu'on devient forgeron.",
         "en": "Practice makes perfect.",
@@ -269,6 +364,11 @@
     },
     {
       "day": 20,
+      "intro": {
+        "fr": "Organiser un petit brainstorming développe ton esprit collectif.",
+        "en": "Organizing a small brainstorming develops your collective spirit.",
+        "ar": "تنظيم عصف ذهني صغير يطور روحك الجماعية."
+      },
       "proverb": {
         "fr": "Seul on va plus vite, ensemble on va plus loin.",
         "en": "Alone we go faster, together we go further.",
@@ -283,6 +383,11 @@
     },
     {
       "day": 21,
+      "intro": {
+        "fr": "Le bilan te permet de mesurer tes progrès.",
+        "en": "The assessment allows you to measure your progress.",
+        "ar": "التقييم يسمح لك بقياس تقدمك."
+      },
       "proverb": {
         "fr": "Qui ne sait d'où il vient ne sait où il va.",
         "en": "Those who don't know where they come from don't know where they're going.",

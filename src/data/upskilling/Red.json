@@ -3,6 +3,11 @@
   "challenges": [
     {
       "day": 1,
+      "intro": {
+        "fr": "Prendre des initiatives est ta force mais elle peut être plus efficace avec une préparation.",
+        "en": "Taking initiative is your strength but it can be more effective with preparation.",
+        "ar": "أخذ المبادرة هو قوتك لكن يمكن أن تكون أكثر فعالية مع التحضير."
+      },
       "proverb": {
         "fr": "Qui veut gravir une montagne commence par un pas.",
         "en": "Those who want to climb a mountain start with one step.",
@@ -17,6 +22,11 @@
     },
     {
       "day": 2,
+      "intro": {
+        "fr": "Ton énergie est précieuse, mais elle gagne en impact si tu sais la canaliser.",
+        "en": "Your energy is precious, but it gains impact if you know how to channel it.",
+        "ar": "طاقتك ثمينة، لكنها تكتسب تأثيرًا إذا عرفت كيف توجهها."
+      },
       "proverb": {
         "fr": "L'action sans réflexion est vaine, la réflexion sans action est stérile.",
         "en": "Action without reflection is futile, reflection without action is sterile.",
@@ -31,6 +41,11 @@
     },
     {
       "day": 3,
+      "intro": {
+        "fr": "Le leadership s'exprime aussi par l'écoute.",
+        "en": "Leadership is also expressed through listening.",
+        "ar": "القيادة تعبر عن نفسها أيضًا من خلال الاستماع."
+      },
       "proverb": {
         "fr": "Celui qui écoute construit mieux que celui qui parle.",
         "en": "Those who listen build better than those who speak.",
@@ -45,6 +60,11 @@
     },
     {
       "day": 4,
+      "intro": {
+        "fr": "Savoir déléguer est une force du leader. Cela montre la confiance et libère ton énergie pour l'essentiel.",
+        "en": "Knowing how to delegate is a leader's strength. It shows trust and frees your energy for what's essential.",
+        "ar": "معرفة كيفية التفويض هي قوة القائد. إنها تظهر الثقة وتحرر طاقتك للأساسيات."
+      },
       "proverb": {
         "fr": "Celui qui veut tout faire seul n'accomplit rien de grand.",
         "en": "Those who want to do everything alone accomplish nothing great.",
@@ -59,6 +79,11 @@
     },
     {
       "day": 5,
+      "intro": {
+        "fr": "Fixer des objectifs clairs motive ton équipe et te donne une direction.",
+        "en": "Setting clear goals motivates your team and gives you direction.",
+        "ar": "تحديد أهداف واضحة يحفز فريقك ويعطيك اتجاهًا."
+      },
       "proverb": {
         "fr": "Un navire sans cap n'atteint aucun port.",
         "en": "A ship without direction reaches no port.",
@@ -73,6 +98,11 @@
     },
     {
       "day": 6,
+      "intro": {
+        "fr": "Un bon leader reconnaît les efforts des autres. La reconnaissance renforce la cohésion.",
+        "en": "A good leader recognizes others' efforts. Recognition strengthens cohesion.",
+        "ar": "القائد الجيد يعترف بجهود الآخرين. الاعتراف يعزز التماسك."
+      },
       "proverb": {
         "fr": "La gratitude transforme ce que nous avons en suffisance.",
         "en": "Gratitude transforms what we have into enough.",
@@ -87,6 +117,11 @@
     },
     {
       "day": 7,
+      "intro": {
+        "fr": "Le courage consiste à prendre des décisions même dans l'incertitude.",
+        "en": "Courage consists of making decisions even in uncertainty.",
+        "ar": "الشجاعة تتمثل في اتخاذ قرارات حتى في عدم اليقين."
+      },
       "proverb": {
         "fr": "Mieux vaut une décision imparfaite qu'une indécision parfaite.",
         "en": "Better an imperfect decision than perfect indecision.",
@@ -101,6 +136,11 @@
     },
     {
       "day": 8,
+      "intro": {
+        "fr": "L'organisation est un levier puissant. Planifier tes actions augmente ton impact.",
+        "en": "Organization is a powerful lever. Planning your actions increases your impact.",
+        "ar": "التنظيم رافعة قوية. تخطيط أفعالك يزيد من تأثيرك."
+      },
       "proverb": {
         "fr": "Qui veut aller loin ménage sa monture.",
         "en": "Those who want to go far take care of their mount.",
@@ -115,6 +155,11 @@
     },
     {
       "day": 9,
+      "intro": {
+        "fr": "La vision inspire les autres. Savoir la communiquer les entraîne à tes côtés.",
+        "en": "Vision inspires others. Knowing how to communicate it brings them to your side.",
+        "ar": "الرؤية تلهم الآخرين. معرفة كيفية إيصالها تجلبهم إلى جانبل."
+      },
       "proverb": {
         "fr": "Là où il n'y a pas de vision, le peuple périt.",
         "en": "Where there is no vision, the people perish.",
@@ -129,6 +174,11 @@
     },
     {
       "day": 10,
+      "intro": {
+        "fr": "Gérer son stress te rend plus lucide et crédible.",
+        "en": "Managing your stress makes you more lucid and credible.",
+        "ar": "إدارة التوتر تجعلك أكثر وضوحًا ومصداقية."
+      },
       "proverb": {
         "fr": "La tempérance est le courage du fort.",
         "en": "Temperance is the courage of the strong.",
@@ -143,6 +193,11 @@
     },
     {
       "day": 11,
+      "intro": {
+        "fr": "Accepter le feedback améliore ton leadership.",
+        "en": "Accepting feedback improves your leadership.",
+        "ar": "قبول الملاحظات يحسن قيادتك."
+      },
       "proverb": {
         "fr": "Qui se remet en question progresse.",
         "en": "Those who question themselves progress.",
@@ -157,6 +212,11 @@
     },
     {
       "day": 12,
+      "intro": {
+        "fr": "L'exemplarité est la meilleure forme de leadership.",
+        "en": "Leading by example is the best form of leadership.",
+        "ar": "القدوة هي أفضل شكل من أشكال القيادة."
+      },
       "proverb": {
         "fr": "Montre-moi, ne me dis pas.",
         "en": "Show me, don't tell me.",
@@ -171,6 +231,11 @@
     },
     {
       "day": 13,
+      "intro": {
+        "fr": "Communiquer clairement tes attentes évite les malentendus.",
+        "en": "Communicating your expectations clearly avoids misunderstandings.",
+        "ar": "التواصل بوضوح حول توقعاتك يتجنب سوء الفهم."
+      },
       "proverb": {
         "fr": "Ce qui est bien dit est à moitié fait.",
         "en": "What is well said is half done.",
@@ -185,6 +250,11 @@
     },
     {
       "day": 14,
+      "intro": {
+        "fr": "Gérer les conflits avec calme renforce ton autorité.",
+        "en": "Managing conflicts calmly strengthens your authority.",
+        "ar": "إدارة النزاعات بهدوء تعزز سلطتك."
+      },
       "proverb": {
         "fr": "Une parole douce éteint la colère.",
         "en": "A gentle word extinguishes anger.",
@@ -199,6 +269,11 @@
     },
     {
       "day": 15,
+      "intro": {
+        "fr": "Motiver ton équipe est essentiel : leur succès est aussi le tien.",
+        "en": "Motivating your team is essential: their success is yours too.",
+        "ar": "تحفيز فريقك ضروري: نجاحهم هو نجاحك أيضًا."
+      },
       "proverb": {
         "fr": "On va plus loin ensemble que seul.",
         "en": "We go further together than alone.",
@@ -213,6 +288,11 @@
     },
     {
       "day": 16,
+      "intro": {
+        "fr": "Développer tes compétences en continu te rend plus crédible.",
+        "en": "Continuously developing your skills makes you more credible.",
+        "ar": "التطوير المستمر لمهاراتك يجعلك أكثر مصداقية."
+      },
       "proverb": {
         "fr": "Qui cesse d'apprendre cesse de grandir.",
         "en": "Those who stop learning stop growing.",
@@ -227,6 +307,11 @@
     },
     {
       "day": 17,
+      "intro": {
+        "fr": "L'équilibre vie perso / vie pro te rend plus efficace.",
+        "en": "Work-life balance makes you more effective.",
+        "ar": "التوازن بين الحياة الشخصية والمهنية يجعلك أكثر فعالية."
+      },
       "proverb": {
         "fr": "Qui veut courir longtemps ménage ses forces.",
         "en": "Those who want to run long preserve their strength.",
@@ -241,6 +326,11 @@
     },
     {
       "day": 18,
+      "intro": {
+        "fr": "Prendre du recul clarifie les décisions.",
+        "en": "Taking a step back clarifies decisions.",
+        "ar": "الابتعاد خطوة يوضح القرارات."
+      },
       "proverb": {
         "fr": "La nuit porte conseil.",
         "en": "Sleep on it.",
@@ -255,6 +345,11 @@
     },
     {
       "day": 19,
+      "intro": {
+        "fr": "Savoir féliciter en privé et corriger en privé construit la confiance.",
+        "en": "Knowing how to praise in private and correct in private builds trust.",
+        "ar": "معرفة كيفية الثناء على انفراد والتصحيح على انفراد تبني الثقة."
+      },
       "proverb": {
         "fr": "La critique est un art, l'encouragement une force.",
         "en": "Criticism is an art, encouragement a force.",
@@ -269,6 +364,11 @@
     },
     {
       "day": 20,
+      "intro": {
+        "fr": "Former les autres est un signe de leadership mature.",
+        "en": "Training others is a sign of mature leadership.",
+        "ar": "تدريب الآخرين علامة على قيادة ناضجة."
+      },
       "proverb": {
         "fr": "Enseigner, c'est apprendre deux fois.",
         "en": "To teach is to learn twice.",
@@ -283,6 +383,11 @@
     },
     {
       "day": 21,
+      "intro": {
+        "fr": "Célèbre les succès pour donner envie de continuer.",
+        "en": "Celebrate successes to inspire continued effort.",
+        "ar": "احتفل بالنجاحات لتحفيز الاستمرار."
+      },
       "proverb": {
         "fr": "La victoire appartient à ceux qui y croient.",
         "en": "Victory belongs to those who believe in it.",
