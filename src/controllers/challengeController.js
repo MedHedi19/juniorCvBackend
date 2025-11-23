@@ -343,4 +343,209 @@ function calculateStreak(challenges) {
     return streak;
 }
 
+// Submit text for a challenge
+exports.submitText = async (req, res) => {
+    try {
+        const userId = req.user.id;
+        const { day } = req.params;
+        const { textContent } = req.body;
+
+        const dayNumber = parseInt(day);
+        if (isNaN(dayNumber) || dayNumber < 1 || dayNumber > 21) {
+            return res.status(400).json({
+                success: false,
+                message: 'Invalid day. Must be between 1 and 21'
+            });
+        }
+
+        if (!textContent || textContent.trim().length === 0) {
+            return res.status(400).json({
+                success: false,
+                message: 'Text content is required'
+            });
+        }
+
+        const userProgress = await UpskillingProgress.findOne({ userId });
+        
+        if (!userProgress) {
+            return res.status(404).json({
+                success: false,
+                message: 'No challenges initialized'
+            });
+        }
+
+        // Find or create the challenge
+        let challengeIndex = userProgress.challenges.findIndex(c => c.day === dayNumber);
+
+        if (challengeIndex === -1) {
+            userProgress.challenges.push({
+                day: dayNumber,
+                completed: false,
+                submission: {
+                    type: 'text',
+                    textContent: textContent,
+                    uploadedAt: new Date()
+                }
+            });
+        } else {
+            if (!userProgress.challenges[challengeIndex].submission) {
+                userProgress.challenges[challengeIndex].submission = {};
+            }
+            userProgress.challenges[challengeIndex].submission.type = 'text';
+            userProgress.challenges[challengeIndex].submission.textContent = textContent;
+            userProgress.challenges[challengeIndex].submission.uploadedAt = new Date();
+        }
+
+        await userProgress.save();
+
+        res.status(200).json({
+            success: true,
+            message: 'Text submitted successfully',
+            data: {
+                day: dayNumber,
+                submissionType: 'text'
+            }
+        });
+    } catch (error) {
+        console.error('Submit text error:', error);
+        res.status(500).json({
+            success: false,
+            message: 'Error submitting text',
+            error: error.message
+        });
+    }
+};
+
+// Submit media URL for a challenge (audio/video)
+exports.submitMedia = async (req, res) => {
+    try {
+        const userId = req.user.id;
+        const { day } = req.params;
+        const { mediaUrl, mediaType, submissionType } = req.body;
+
+        const dayNumber = parseInt(day);
+        if (isNaN(dayNumber) || dayNumber < 1 || dayNumber > 21) {
+            return res.status(400).json({
+                success: false,
+                message: 'Invalid day. Must be between 1 and 21'
+            });
+        }
+
+        if (!mediaUrl || !submissionType) {
+            return res.status(400).json({
+                success: false,
+                message: 'Media URL and submission type are required'
+            });
+        }
+
+        if (!['audio', 'video'].includes(submissionType)) {
+            return res.status(400).json({
+                success: false,
+                message: 'Submission type must be audio or video'
+            });
+        }
+
+        const userProgress = await UpskillingProgress.findOne({ userId });
+        
+        if (!userProgress) {
+            return res.status(404).json({
+                success: false,
+                message: 'No challenges initialized'
+            });
+        }
+
+        // Find or create the challenge
+        let challengeIndex = userProgress.challenges.findIndex(c => c.day === dayNumber);
+
+        if (challengeIndex === -1) {
+            userProgress.challenges.push({
+                day: dayNumber,
+                completed: false,
+                submission: {
+                    type: submissionType,
+                    mediaUrl: mediaUrl,
+                    mediaType: mediaType,
+                    uploadedAt: new Date()
+                }
+            });
+        } else {
+            if (!userProgress.challenges[challengeIndex].submission) {
+                userProgress.challenges[challengeIndex].submission = {};
+            }
+            userProgress.challenges[challengeIndex].submission.type = submissionType;
+            userProgress.challenges[challengeIndex].submission.mediaUrl = mediaUrl;
+            userProgress.challenges[challengeIndex].submission.mediaType = mediaType;
+            userProgress.challenges[challengeIndex].submission.uploadedAt = new Date();
+        }
+
+        await userProgress.save();
+
+        res.status(200).json({
+            success: true,
+            message: `${submissionType.charAt(0).toUpperCase() + submissionType.slice(1)} submitted successfully`,
+            data: {
+                day: dayNumber,
+                submissionType: submissionType,
+                mediaUrl: mediaUrl
+            }
+        });
+    } catch (error) {
+        console.error('Submit media error:', error);
+        res.status(500).json({
+            success: false,
+            message: 'Error submitting media',
+            error: error.message
+        });
+    }
+};
+
+// Get submission for a specific challenge day
+exports.getSubmission = async (req, res) => {
+    try {
+        const userId = req.user.id;
+        const { day } = req.params;
+
+        const dayNumber = parseInt(day);
+        if (isNaN(dayNumber) || dayNumber < 1 || dayNumber > 21) {
+            return res.status(400).json({
+                success: false,
+                message: 'Invalid day. Must be between 1 and 21'
+            });
+        }
+
+        const userProgress = await UpskillingProgress.findOne({ userId });
+        
+        if (!userProgress) {
+            return res.status(404).json({
+                success: false,
+                message: 'No challenges initialized'
+            });
+        }
+
+        const challenge = userProgress.challenges.find(c => c.day === dayNumber);
+
+        if (!challenge || !challenge.submission || challenge.submission.type === 'none') {
+            return res.status(404).json({
+                success: false,
+                message: 'No submission found for this challenge'
+            });
+        }
+
+        res.status(200).json({
+            success: true,
+            data: {
+                day: dayNumber,
+                submission: challenge.submission
+            }
+        });
+    } catch (error) {
+        console.error('Get submission error:', error);
+        res.status(500).json({
+            success: false,
+            message: 'Error fetching submission',
+            error: error.message
+        });
+    }
+};
+
 module.exports = exports;

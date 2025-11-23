@@ -37,9 +37,26 @@ module.exports = function(app) {
         } else {
           // Create new user
           isNewUser = true;
-          const names = profile.displayName.split(' ');
-          const firstName = names[0] || '';
-          const lastName = names.length > 1 ? names.slice(1).join(' ') : '';
+          
+          // Try to get names from profile.name first, fallback to displayName
+          let firstName = '';
+          let lastName = '';
+          
+          if (profile.name) {
+            firstName = profile.name.givenName || '';
+            lastName = profile.name.familyName || '';
+          }
+          
+          // Fallback to parsing displayName if name object not available
+          if (!firstName && profile.displayName) {
+            const names = profile.displayName.split(' ');
+            firstName = names[0] || '';
+            lastName = names.length > 1 ? names.slice(1).join(' ') : '';
+          }
+          
+          // Ensure we have at least something for required fields
+          firstName = firstName || 'User';
+          lastName = lastName || 'Name';
           
           user = new User({
             firstName: firstName,
@@ -143,9 +160,26 @@ module.exports = function(app) {
         } else {
           // Create new user
           isNewUser = true;
-          const names = profile.displayName.split(' ');
-          const firstName = names[0] || '';
-          const lastName = names.length > 1 ? names.slice(1).join(' ') : '';
+          
+          // Try to get names from profile.name first, fallback to displayName
+          let firstName = '';
+          let lastName = '';
+          
+          if (profile.name) {
+            firstName = profile.name.givenName || '';
+            lastName = profile.name.familyName || '';
+          }
+          
+          // Fallback to parsing displayName if name object not available
+          if (!firstName && profile.displayName) {
+            const names = profile.displayName.split(' ');
+            firstName = names[0] || '';
+            lastName = names.length > 1 ? names.slice(1).join(' ') : '';
+          }
+          
+          // Ensure we have at least something for required fields
+          firstName = firstName || 'User';
+          lastName = lastName || 'Name';
           
           user = new User({
             firstName: firstName,

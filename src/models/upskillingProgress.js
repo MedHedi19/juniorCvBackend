@@ -29,6 +29,26 @@ const upskillingProgressSchema = new mongoose.Schema({
         notes: {
             type: String,
             default: ''
+        },
+        // Media submission fields
+        submission: {
+            type: {
+                type: String,
+                enum: ['text', 'audio', 'video', 'none'],
+                default: 'none'
+            },
+            textContent: {
+                type: String
+            },
+            mediaUrl: {
+                type: String
+            },
+            mediaType: {
+                type: String // e.g., 'audio/mp3', 'video/mp4'
+            },
+            uploadedAt: {
+                type: Date
+            }
         }
     }],
     startedAt: {

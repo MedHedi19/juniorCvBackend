@@ -46,4 +46,30 @@ router.get('/:day', authMiddleware, challengeController.getChallengeByDay);
  */
 router.post('/:day/complete', authMiddleware, challengeController.completeChallenge);
 
+/**
+ * @route   POST /api/challenges/:day/submit-text
+ * @desc    Submit text content for a challenge
+ * @access  Private
+ * @params  day - Day number (1-21)
+ * @body    { textContent: 'user text submission' }
+ */
+router.post('/:day/submit-text', authMiddleware, challengeController.submitText);
+
+/**
+ * @route   POST /api/challenges/:day/submit-media
+ * @desc    Submit media (audio/video) URL for a challenge
+ * @access  Private
+ * @params  day - Day number (1-21)
+ * @body    { mediaUrl: 'cloud storage URL', mediaType: 'mime type', submissionType: 'audio' | 'video' }
+ */
+router.post('/:day/submit-media', authMiddleware, challengeController.submitMedia);
+
+/**
+ * @route   GET /api/challenges/:day/submission
+ * @desc    Get user's submission for a specific challenge
+ * @access  Private
+ * @params  day - Day number (1-21)
+ */
+router.get('/:day/submission', authMiddleware, challengeController.getSubmission);
+
 module.exports = router;
