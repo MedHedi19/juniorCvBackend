@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
 const connectDB = async () => {
+    if (process.env.NODE_ENV === 'test') {
+        console.log('MongoDB connection skipped in test environment');
+        return;
+    }
     try {
         await mongoose.connect(process.env.MONGODB_URI, {
             useNewUrlParser: true,
