@@ -110,14 +110,16 @@ const startQuiz = async (req, res) => {
       };
       userProgress.quizProgress.push(quizProgress);
     } else if (!quizProgress.completed) {
-      // Reset progress if quiz is not completed
-      console.log('Step: Resetting incomplete quiz progress');
+      // Reset progress if quiz is not completed, but keep previously selected questions
+      console.log('Step: Resetting incomplete quiz progress (preserving selected questions)');
       quizProgress.answers = [];
       quizProgress.score = 0;
       quizProgress.percentage = 0;
       quizProgress.completedAt = null;
       quizProgress.totalQuestions = 10;
-      quizProgress.selectedQuestions = [];
+      if (!Array.isArray(quizProgress.selectedQuestions)) {
+        quizProgress.selectedQuestions = [];
+      }
     }
 
     // Check if quiz is already completed
@@ -126,24 +128,26 @@ const startQuiz = async (req, res) => {
       return res.status(400).json({ message: 'Quiz already completed' });
     }
 
-    // Randomly select 10 questions from the available 20
+    // Randomly select up to 10 unique questions from available pool
     const totalAvailableQuestions = quiz.questions.length;
-    const questionsToSelect = Math.min(10, totalAvailableQuestions);
+    let questionsToSelect = Math.min(10, totalAvailableQuestions);
     
-    // Create array of indices [0, 1, 2, ..., 19]
-    const allIndices = Array.from({ length: totalAvailableQuestions }, (_, i) => i);
-    
-    // Shuffle and select first 10 indices
-    const shuffled = allIndices.sort(() => Math.random() - 0.5);
-    const selectedIndices = shuffled.slice(0, questionsToSelect);
-    
-    // Store the selected question indices in the quiz progress
-    quizProgress.selectedQuestions = selectedIndices;
-    console.log(`Step: Randomly selected ${questionsToSelect} questions:`, selectedIndices);
+    if (!quizProgress.selectedQuestions || quizProgress.selectedQuestions.length === 0) {
+      const selectedSet = new Set();
+      while (selectedSet.size < questionsToSelect) {
+        selectedSet.add(Math.floor(Math.random() * totalAvailableQuestions));
+      }
+      quizProgress.selectedQuestions = Array.from(selectedSet);
+      console.log(`Step: Randomly selected ${questionsToSelect} unique questions:`, quizProgress.selectedQuestions);
+    } else {
+      // Reuse previously selected questions to ensure consistency
+      questionsToSelect = quizProgress.selectedQuestions.length;
+      console.log(`Step: Using previously selected questions:`, quizProgress.selectedQuestions);
+    }
 
     // Always start from first question (index 0 in our selected array)
     const questionIndex = 0;
-    const actualQuestionIndex = selectedIndices[questionIndex];
+    const actualQuestionIndex = quizProgress.selectedQuestions[questionIndex];
     const firstQuestion = {
       questionIndex,
       question: quiz.questions[actualQuestionIndex].question[lang],
@@ -322,7 +326,8 @@ const getQuizResult = async (req, res) => {
 
     // Format answers with language
     const formattedAnswers = quizProgress.answers.map((answer) => {
-      const currentQuestion = quiz.questions[answer.questionIndex];
+      const actualQuestionIndex = quizProgress.selectedQuestions[answer.questionIndex];
+      const currentQuestion = quiz.questions[actualQuestionIndex];
       const selectedIndex = currentQuestion.options.findIndex(opt => opt.fr === answer.selectedAnswer);
       const selectedInLang = selectedIndex !== -1 ? currentQuestion.options[selectedIndex][lang] : answer.selectedAnswer;
 
@@ -339,7 +344,7 @@ const getQuizResult = async (req, res) => {
     res.json({
       quizName: quiz.name,
       score: quizProgress.score,
-      totalQuestions: quizProgress.totalQuestions,
+      totalQuestions: quizProgress.selectedQuestions.length,
       percentage: quizProgress.percentage,
       passed: quizProgress.percentage >= 50,
       completedAt: quizProgress.completedAt,
