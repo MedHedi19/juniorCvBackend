@@ -1,160 +1,178 @@
 const VarkTest = require('../models/varkTest');
 const varkData = require('../data/vark/vark.json');
 
-const TOTAL_DAYS = 21;
-
-const getLanguage = (req) => {
-  const lang = (req.params.lang || 'fr').toLowerCase();
-  return ['fr', 'en', 'ar'].includes(lang) ? lang : 'fr';
+// Helper: transform options object to array format
+const transformOptionsToArray = (optionsObj, lang) => {
+  return Object.entries(optionsObj).map(([style, texts]) => ({
+    style,
+    text: texts[lang] || texts['fr']
+  }));
 };
 
-const getDayIndex = (req) => {
-  const dayNumber = parseInt(req.params.day, 10);
-  if (isNaN(dayNumber) || dayNumber < 1 || dayNumber > TOTAL_DAYS) return null;
-  return dayNumber - 1;
-};
-
-const getOrCreateVarkTest = async (userId) => {
-  let test = await VarkTest.findOne({ userId });
-  if (!test) {
-    test = await VarkTest.create({ userId });
-  }
-  return test;
-};
-
-// GET /vark/:day/start?lang=fr
-exports.getVarkQuestion = async (req, res, next) => {
+// Get VARK question for a specific day (1..21)
+const getVarkQuestion = async (req, res) => {
   try {
-    const lang = getLanguage(req);
-    const idx = getDayIndex(req);
-    if (idx === null) {
-      return res.status(400).json({ error: 'Invalid day. Must be between 1 and 21.' });
+    const language = (req.query.language || 'fr').toLowerCase();
+    const day = parseInt(req.query.day, 10);
+
+    if (!day || day < 1 || day > 21) {
+      return res.status(400).json({ message: 'Invalid day. Must be between 1 and 21.' });
     }
 
-    const item = varkData.VARK[idx];
-    if (!item) {
-      return res.status(404).json({ error: 'Question not found' });
+    const questions = varkData?.VARK || [];
+    if (!questions.length) {
+      return res.status(404).json({ message: 'VARK questions not found' });
     }
 
-    const question = item.question?.[lang] || item.question?.fr;
-    const optionsRaw = item.options || {};
-    const options = {};
-    for (const key of Object.keys(optionsRaw)) {
-      const opt = optionsRaw[key];
-      options[key] = opt?.[lang] || opt?.fr;
+    const idx = day - 1;
+    const q = questions[idx];
+    if (!q) {
+      return res.status(404).json({ message: 'Question not found for this day' });
     }
 
-    // Progress data
-    const test = await getOrCreateVarkTest(req.user._id || req.user.id);
-    const answeredDays = new Set(test.answers.map(a => a.questionIndex + 1));
+    const questionText = q.question[language] || q.question['fr'];
+    const options = transformOptionsToArray(q.options, language);
 
-    res.json({
-      day: idx + 1,
-      question,
-      options, // { V, A, R, K }: localized strings
-      progress: {
-        totalAnswered: test.answers.length,
-        completed: !!test.completed,
-        answeredDays: Array.from(answeredDays).sort((a,b)=>a-b),
-      },
+    return res.json({
+      day,
+      question: questionText,
+      options,
+      totalDays: 21,
+      testName: 'VARK'
     });
-  } catch (err) {
-    next(err);
+  } catch (error) {
+    console.error('Error getting VARK question:', error);
+    res.status(500).json({ message: 'Server error', error });
   }
 };
 
-// POST /vark/:day/submit { selectedStyle: 'V'|'A'|'R'|'K' }
-exports.submitVarkAnswer = async (req, res, next) => {
+// Submit VARK answer for a specific day
+const submitVarkAnswer = async (req, res) => {
   try {
-    const idx = getDayIndex(req);
-    if (idx === null) {
-      return res.status(400).json({ error: 'Invalid day. Must be between 1 and 21.' });
-    }
-    const { selectedStyle } = req.body;
-    if (!['V', 'A', 'R', 'K'].includes(selectedStyle)) {
-      return res.status(400).json({ error: 'Invalid style. Must be one of V, A, R, K.' });
-    }
+    const userId = req.user.id;
+    const { day, selectedStyle } = req.body;
+    const language = (req.body.language || req.query.language || 'fr').toLowerCase();
 
-    const test = await getOrCreateVarkTest(req.user._id || req.user.id);
-
-    // Replace or insert answer for this day
-    const existingIdx = test.answers.findIndex(a => a.questionIndex === idx);
-    if (existingIdx >= 0) {
-      // Adjust counts: decrement previous, increment new
-      const prev = test.answers[existingIdx].selectedStyle;
-      if (prev !== selectedStyle) {
-        test.styleCounts[prev] = Math.max(0, (test.styleCounts[prev] || 0) - 1);
-        test.answers[existingIdx].selectedStyle = selectedStyle;
-        test.styleCounts[selectedStyle] = (test.styleCounts[selectedStyle] || 0) + 1;
-      }
-    } else {
-      test.answers.push({ questionIndex: idx, selectedStyle });
-      test.styleCounts[selectedStyle] = (test.styleCounts[selectedStyle] || 0) + 1;
+    const dayNum = parseInt(day, 10);
+    if (!dayNum || dayNum < 1 || dayNum > 21) {
+      return res.status(400).json({ message: 'Invalid day. Must be between 1 and 21.' });
     }
 
-    // If all 21 answered, mark completed and compute dominant style
-    if (test.answers.length === TOTAL_DAYS) {
-      test.completed = true;
-      test.completedAt = new Date();
-      const entries = Object.entries(test.styleCounts);
-      let dominant = null;
-      let max = -1;
-      for (const [style, count] of entries) {
-        if (count > max) { max = count; dominant = style; }
-      }
-      test.dominantStyle = dominant;
-    } else {
-      test.completed = false;
-      test.dominantStyle = undefined;
-      test.completedAt = undefined;
+    const validStyles = ['V', 'A', 'R', 'K'];
+    if (!validStyles.includes(selectedStyle)) {
+      return res.status(400).json({ message: 'Invalid style. Must be one of V, A, R, K.' });
     }
 
-    await test.save();
-
-    res.json({
-      success: true,
-      day: idx + 1,
-      styleCounts: test.styleCounts,
-      totalAnswered: test.answers.length,
-      completed: test.completed,
-    });
-  } catch (err) {
-    next(err);
-  }
-};
-
-// GET /vark/result
-exports.getVarkResult = async (req, res, next) => {
-  try {
-    const test = await getOrCreateVarkTest(req.user._id || req.user.id);
-    if (!test.completed || test.answers.length !== TOTAL_DAYS) {
-      return res.status(400).json({
-        error: 'VARK result unavailable until all 21 days are completed.'
+    // Find or create user VARK test progress
+    let varkTest = await VarkTest.findOne({ userId });
+    if (!varkTest) {
+      varkTest = new VarkTest({
+        userId,
+        completed: false,
+        answers: [],
+        styleCounts: { V: 0, A: 0, R: 0, K: 0 },
+        dominantStyle: null,
       });
     }
-    res.json({
-      totalAnswered: test.answers.length,
-      styleCounts: test.styleCounts,
-      dominantStyle: test.dominantStyle,
-      completedAt: test.completedAt,
-    });
-  } catch (err) {
-    next(err);
+
+    const questionIndex = dayNum - 1;
+
+    // Update or add answer
+    const existingIdx = varkTest.answers.findIndex(a => a.questionIndex === questionIndex);
+    if (existingIdx >= 0) {
+      // decrement old style count
+      const oldStyle = varkTest.answers[existingIdx].selectedStyle;
+      if (oldStyle && varkTest.styleCounts[oldStyle] !== undefined) {
+        varkTest.styleCounts[oldStyle] = Math.max(0, (varkTest.styleCounts[oldStyle] || 0) - 1);
+      }
+      // update answer
+      varkTest.answers[existingIdx] = { questionIndex, selectedStyle };
+    } else {
+      varkTest.answers.push({ questionIndex, selectedStyle });
+    }
+
+    // increment new style count
+    varkTest.styleCounts[selectedStyle] = (varkTest.styleCounts[selectedStyle] || 0) + 1;
+
+    const response = { day: dayNum, saved: true };
+
+    // Check completion (all 21 answered)
+    const uniqueAnswered = new Set(varkTest.answers.map(a => a.questionIndex));
+    if (uniqueAnswered.size === 21) {
+      varkTest.completed = true;
+      varkTest.completedAt = new Date();
+      // Compute dominant style
+      const styles = Object.keys(varkTest.styleCounts);
+      varkTest.dominantStyle = styles.reduce((a, b) => 
+        (varkTest.styleCounts[a] || 0) >= (varkTest.styleCounts[b] || 0) ? a : b
+      );
+      response.testCompleted = true;
+      response.styleCounts = varkTest.styleCounts;
+      response.dominantStyle = varkTest.dominantStyle;
+    } else {
+      response.testCompleted = false;
+      response.nextDay = dayNum < 21 ? dayNum + 1 : null;
+    }
+
+    await varkTest.save();
+    return res.json(response);
+  } catch (error) {
+    console.error('Error submitting VARK answer:', error);
+    res.status(500).json({ message: 'Server error', error });
   }
 };
 
-// POST /vark/reset
-exports.resetVarkQuiz = async (req, res, next) => {
+// Get VARK result (only after completion)
+const getVarkResult = async (req, res) => {
   try {
-    const test = await getOrCreateVarkTest(req.user._id || req.user.id);
-    test.answers = [];
-    test.styleCounts = { V: 0, A: 0, R: 0, K: 0 };
-    test.dominantStyle = undefined;
-    test.completed = false;
-    test.completedAt = undefined;
-    await test.save();
-    res.json({ success: true });
-  } catch (err) {
-    next(err);
+    const userId = req.user.id;
+    const varkTest = await VarkTest.findOne({ userId });
+
+    if (!varkTest) {
+      return res.status(404).json({ message: 'No VARK results found' });
+    }
+    if (!varkTest.completed) {
+      return res.status(400).json({ message: 'VARK test not completed yet' });
+    }
+
+    return res.json({
+      styleCounts: varkTest.styleCounts,
+      dominantStyle: varkTest.dominantStyle,
+      completedAt: varkTest.completedAt,
+      answers: varkTest.answers,
+    });
+  } catch (error) {
+    console.error('Error getting VARK result:', error);
+    res.status(500).json({ message: 'Server error', error });
   }
+};
+
+// Optional: reset VARK test
+const resetVarkTest = async (req, res) => {
+  try {
+    const userId = req.user.id;
+    const varkTest = await VarkTest.findOne({ userId });
+    if (!varkTest) {
+      return res.status(400).json({ message: 'VARK test not found' });
+    }
+
+    varkTest.completed = false;
+    varkTest.answers = [];
+    varkTest.styleCounts = { V: 0, A: 0, R: 0, K: 0 };
+    varkTest.dominantStyle = null;
+    varkTest.completedAt = null;
+
+    await varkTest.save();
+    return res.json({ message: 'VARK test reset successfully' });
+  } catch (error) {
+    console.error('Error resetting VARK test:', error);
+    res.status(500).json({ message: 'Server error', error });
+  }
+};
+
+module.exports = {
+  getVarkQuestion,
+  submitVarkAnswer,
+  getVarkResult,
+  resetVarkTest,
 };

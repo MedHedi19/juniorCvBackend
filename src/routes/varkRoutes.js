@@ -1,24 +1,24 @@
 const express = require('express');
+const { authMiddleware } = require('../middleware/authMiddleware');
 const {
   getVarkQuestion,
   submitVarkAnswer,
   getVarkResult,
-  resetVarkQuiz,
+  resetVarkTest,
 } = require('../controllers/varkController');
-const { authMiddleware } = require('../middleware/authMiddleware');
 
 const router = express.Router();
 
-// Get a single VARK question by day (1..21) and language
-router.get('/:lang/:day/start', authMiddleware, getVarkQuestion);
+// Get a specific day question (day=1..21, language=fr|en|ar)
+router.get('/day', authMiddleware, getVarkQuestion);
 
-// Submit answer for specific day
-router.post('/:lang/:day/submit', authMiddleware, submitVarkAnswer);
+// Submit answer for a specific day
+router.post('/submit', authMiddleware, submitVarkAnswer);
 
-// Get VARK result (only after completing 21 days)
+// Get VARK result (only if completed all 21 days)
 router.get('/result', authMiddleware, getVarkResult);
 
-// Reset VARK quiz to retake
-router.post('/reset', authMiddleware, resetVarkQuiz);
+// Reset VARK test (optional)
+router.post('/reset', authMiddleware, resetVarkTest);
 
 module.exports = router;

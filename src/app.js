@@ -9,7 +9,6 @@ const session = require('express-session');
 const app = express();
 const quizRoutes = require('./routes/quizRoutes');
 const personalityRoutes = require('./routes/personalityRoutes');
-const varkRoutes = require('./routes/varkRoutes');
 const jobScrapingRoutes = require('./routes/jobScraping');
 const jobApplicationRoutes = require('./routes/jobApplications');
 const userDataDeletionRoutes = require('./routes/userDataDeletion');
@@ -91,7 +90,6 @@ app.get('/', (req, res) => {
             profile: '/profile',
             quiz: '/quiz',
             personality: '/personality',
-            vark: '/vark',
             jobs: '/jobs',
             applications: '/applications',
             certification: '/certification',
@@ -105,7 +103,6 @@ app.use('/auth', authRoutes);
 app.use('/profile', profileRoutes);
 app.use('/quiz', quizRoutes);
 app.use('/personality', personalityRoutes);
-app.use('/vark', varkRoutes);
 app.use('/jobs', jobScrapingRoutes);
 app.use('/applications', jobApplicationRoutes);
 app.use('/api/user', userDataDeletionRoutes);
