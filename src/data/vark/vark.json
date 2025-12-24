@@ -1,0 +1,278 @@
+{
+	"VARK": [
+		{
+			"question": {
+				"fr": "Quand tu découvres un nouveau sujet, tu préfères :",
+				"en": "When you discover a new topic, you prefer:",
+				"ar": "عندما تكتشف موضوعًا جديدًا، تفضّل:"
+			},
+			"options": {
+				"V": { "fr": "Voir un schéma", "en": "See a diagram", "ar": "رؤية مخطط" },
+				"A": { "fr": "Écouter une explication", "en": "Listen to an explanation", "ar": "سماع شرح" },
+				"R": { "fr": "Lire un texte clair", "en": "Read a clear text", "ar": "قراءة نص واضح" },
+				"K": { "fr": "Tester directement", "en": "Try it directly", "ar": "التجربة مباشرة" }
+			}
+		},
+		{
+			"question": {
+				"fr": "En formation, tu comprends mieux quand :",
+				"en": "During training, you understand better when:",
+				"ar": "في التدريب، تفهم بشكل أفضل عندما:"
+			},
+			"options": {
+				"V": { "fr": "Il y a des slides visuels", "en": "There are visual slides", "ar": "توجد شرائح مرئية" },
+				"A": { "fr": "Le formateur explique oralement", "en": "The trainer explains orally", "ar": "يشرح المدرّب شفهيًا" },
+				"R": { "fr": "Tu prends des notes écrites", "en": "You take written notes", "ar": "تأخذ ملاحظات مكتوبة" },
+				"K": { "fr": "Tu fais un exercice pratique", "en": "You do a practical exercise", "ar": "تقوم بتمرين عملي" }
+			}
+		},
+		{
+			"question": {
+				"fr": "Pour mémoriser une information :",
+				"en": "To memorize information:",
+				"ar": "لحفظ معلومة:"
+			},
+			"options": {
+				"V": { "fr": "Tu la visualises", "en": "You visualize it", "ar": "تتخيلها بصريًا" },
+				"A": { "fr": "Tu la répètes à voix haute", "en": "You repeat it out loud", "ar": "تكررها بصوت عالٍ" },
+				"R": { "fr": "Tu l’écris", "en": "You write it", "ar": "تكتبها" },
+				"K": { "fr": "Tu l’appliques", "en": "You apply it", "ar": "تطبّقها" }
+			}
+		},
+		{
+			"question": {
+				"fr": "Face à une consigne complexe, tu :",
+				"en": "When faced with complex instructions, you:",
+				"ar": "عند مواجهة تعليمات معقّدة، أنت:"
+			},
+			"options": {
+				"V": { "fr": "Cherches un exemple visuel", "en": "Look for a visual example", "ar": "تبحث عن مثال بصري" },
+				"A": { "fr": "Demandes des explications", "en": "Ask for explanations", "ar": "تطلب توضيحات" },
+				"R": { "fr": "Lis attentivement les instructions", "en": "Read the instructions carefully", "ar": "تقرأ التعليمات بعناية" },
+				"K": { "fr": "Commences et ajustes en cours de route", "en": "Start and adjust along the way", "ar": "تبدأ وتعدّل أثناء التنفيذ" }
+			}
+		},
+		{
+			"question": {
+				"fr": "Quand tu révises :",
+				"en": "When you revise:",
+				"ar": "عندما تراجع:"
+			},
+			"options": {
+				"V": { "fr": "Tu utilises des couleurs/schémas", "en": "You use colors/diagrams", "ar": "تستخدم الألوان/المخططات" },
+				"A": { "fr": "Tu expliques à quelqu’un", "en": "You explain to someone", "ar": "تشرح لشخص ما" },
+				"R": { "fr": "Tu fais des fiches écrites", "en": "You make written notes/cards", "ar": "تُعدّ بطاقات/ملاحظات مكتوبة" },
+				"K": { "fr": "Tu refais les exercices", "en": "You redo the exercises", "ar": "تعيد التمارين" }
+			}
+		},
+		{
+			"question": {
+				"fr": "Tu te souviens mieux :",
+				"en": "You remember better:",
+				"ar": "تتذكر بشكل أفضل:"
+			},
+			"options": {
+				"V": { "fr": "D’une image", "en": "An image", "ar": "صورة" },
+				"A": { "fr": "D’une voix", "en": "A voice", "ar": "صوت" },
+				"R": { "fr": "D’un texte", "en": "A text", "ar": "نص" },
+				"K": { "fr": "D’une expérience vécue", "en": "A lived experience", "ar": "تجربة معاشة" }
+			}
+		},
+		{
+			"question": {
+				"fr": "En réunion, tu es plus attentif quand :",
+				"en": "In a meeting, you are more attentive when:",
+				"ar": "في الاجتماع، تكون أكثر انتباهًا عندما:"
+			},
+			"options": {
+				"V": { "fr": "Il y a un support visuel", "en": "There is visual support", "ar": "يوجد دعم بصري" },
+				"A": { "fr": "Les échanges sont dynamiques", "en": "The discussions are dynamic", "ar": "تكون النقاشات ديناميكية" },
+				"R": { "fr": "Il y a un compte rendu écrit", "en": "There is a written report", "ar": "يوجد تقرير مكتوب" },
+				"K": { "fr": "Tu participes activement", "en": "You participate actively", "ar": "تشارك بفعالية" }
+			}
+		},
+		{
+			"question": {
+				"fr": "Pour apprendre une nouvelle compétence :",
+				"en": "To learn a new skill:",
+				"ar": "لتعلّم مهارة جديدة:"
+			},
+			"options": {
+				"V": { "fr": "Tu regardes un tutoriel vidéo", "en": "You watch a video tutorial", "ar": "تشاهد شرحًا بالفيديو" },
+				"A": { "fr": "Tu écoutes un podcast", "en": "You listen to a podcast", "ar": "تستمع إلى بودكاست" },
+				"R": { "fr": "Tu lis un guide", "en": "You read a guide", "ar": "تقرأ دليلًا" },
+				"K": { "fr": "Tu passes à l’action", "en": "You jump into action", "ar": "تنتقل مباشرة إلى التطبيق" }
+			}
+		},
+		{
+			"question": {
+				"fr": "Quand tu bloques, tu préfères :",
+				"en": "When you get stuck, you prefer:",
+				"ar": "عندما تتعطل، تفضّل:"
+			},
+			"options": {
+				"V": { "fr": "Voir un autre exemple", "en": "See another example", "ar": "رؤية مثال آخر" },
+				"A": { "fr": "En parler", "en": "Talk about it", "ar": "التحدث عنه" },
+				"R": { "fr": "Relire calmement", "en": "Re-read calmly", "ar": "إعادة القراءة بهدوء" },
+				"K": { "fr": "Essayer autrement", "en": "Try another way", "ar": "التجربة بطريقة أخرى" }
+			}
+		},
+		{
+			"question": {
+				"fr": "Tu te motives surtout par :",
+				"en": "You are mostly motivated by:",
+				"ar": "تتحفّز غالبًا بواسطة:"
+			},
+			"options": {
+				"V": { "fr": "Une vision claire", "en": "A clear vision", "ar": "رؤية واضحة" },
+				"A": { "fr": "Des encouragements verbaux", "en": "Verbal encouragement", "ar": "تشجيع لفظي" },
+				"R": { "fr": "Un plan écrit", "en": "A written plan", "ar": "خطة مكتوبة" },
+				"K": { "fr": "Un défi concret", "en": "A concrete challenge", "ar": "تحدٍ عملي" }
+			}
+		},
+		{
+			"question": {
+				"fr": "Pour t’organiser :",
+				"en": "To organize yourself:",
+				"ar": "لتنظيم نفسك:"
+			},
+			"options": {
+				"V": { "fr": "Tu visualises ton planning", "en": "You visualize your schedule", "ar": "تُصوّر جدولك" },
+				"A": { "fr": "Tu en parles à voix haute", "en": "You talk about it out loud", "ar": "تتحدث بصوت عالٍ" },
+				"R": { "fr": "Tu écris des listes", "en": "You write lists", "ar": "تكتب قوائم" },
+				"K": { "fr": "Tu avances étape par étape", "en": "You proceed step by step", "ar": "تتقدّم خطوة بخطوة" }
+			}
+		},
+		{
+			"question": {
+				"fr": "Tu préfères apprendre :",
+				"en": "You prefer to learn:",
+				"ar": "تفضّل التعلّم:"
+			},
+			"options": {
+				"V": { "fr": "En regardant", "en": "By watching", "ar": "بالمشاهدة" },
+				"A": { "fr": "En écoutant", "en": "By listening", "ar": "بالاستماع" },
+				"R": { "fr": "En lisant", "en": "By reading", "ar": "بالقراءة" },
+				"K": { "fr": "En faisant", "en": "By doing", "ar": "بالممارسة" }
+			}
+		},
+		{
+			"question": {
+				"fr": "Lors d’un feedback, tu préfères :",
+				"en": "During feedback, you prefer:",
+				"ar": "أثناء التغذية الراجعة، تفضّل:"
+			},
+			"options": {
+				"V": { "fr": "Des exemples visuels", "en": "Visual examples", "ar": "أمثلة مرئية" },
+				"A": { "fr": "Une discussion", "en": "A discussion", "ar": "نقاش" },
+				"R": { "fr": "Un retour écrit", "en": "Written feedback", "ar": "ملاحظات مكتوبة" },
+				"K": { "fr": "Des actions à corriger", "en": "Actions to correct", "ar": "إجراءات عملية للتصحيح" }
+			}
+		},
+		{
+			"question": {
+				"fr": "Quand tu comprends vite, c’est parce que :",
+				"en": "When you understand quickly, it's because:",
+				"ar": "عندما تفهم بسرعة، فذلك لأن:"
+			},
+			"options": {
+				"V": { "fr": "Le contenu est clair visuellement", "en": "The content is visually clear", "ar": "المحتوى واضح بصريًا" },
+				"A": { "fr": "L’explication est fluide", "en": "The explanation is fluid", "ar": "الشرح سلس" },
+				"R": { "fr": "Le texte est bien structuré", "en": "The text is well structured", "ar": "النص مُنظَّم جيدًا" },
+				"K": { "fr": "Tu es impliqué physiquement", "en": "You are physically involved", "ar": "تكون منخرطًا جسديًا" }
+			}
+		},
+		{
+			"question": {
+				"fr": "Tu préfères les formations :",
+				"en": "You prefer trainings that are:",
+				"ar": "تفضّل الدورات التي تكون:"
+			},
+			"options": {
+				"V": { "fr": "Vidéo & infographies", "en": "Video & infographics", "ar": "فيديو وإنفوجرافيك" },
+				"A": { "fr": "Interactives à l’oral", "en": "Interactive and oral", "ar": "تفاعلية شفهية" },
+				"R": { "fr": "Basées sur des supports écrits", "en": "Based on written materials", "ar": "تعتمد على مواد مكتوبة" },
+				"K": { "fr": "Très pratiques", "en": "Very practical", "ar": "عملية جدًا" }
+			}
+		},
+		{
+			"question": {
+				"fr": "Quand tu prépares un examen/projet :",
+				"en": "When you prepare for an exam/project:",
+				"ar": "عند التحضير لامتحان/مشروع:"
+			},
+			"options": {
+				"V": { "fr": "Tu fais des schémas", "en": "You make diagrams", "ar": "ترسم مخططات" },
+				"A": { "fr": "Tu expliques à quelqu’un", "en": "You explain to someone", "ar": "تشرح لشخص ما" },
+				"R": { "fr": "Tu écris et réécris", "en": "You write and rewrite", "ar": "تكتب وتعيد الكتابة" },
+				"K": { "fr": "Tu t’entraînes concrètement", "en": "You practice concretely", "ar": "تتدرّب عمليًا" }
+			}
+		},
+		{
+			"question": {
+				"fr": "Tu te décrirais comme quelqu’un qui :",
+				"en": "You would describe yourself as someone who:",
+				"ar": "تصف نفسك بأنك شخص:"
+			},
+			"options": {
+				"V": { "fr": "Observe beaucoup", "en": "Observes a lot", "ar": "يراقب كثيرًا" },
+				"A": { "fr": "Écoute beaucoup", "en": "Listens a lot", "ar": "يستمع كثيرًا" },
+				"R": { "fr": "Lit et analyse", "en": "Reads and analyzes", "ar": "يقرأ ويحلل" },
+				"K": { "fr": "Bouge et agit", "en": "Moves and acts", "ar": "يتحرك ويعمل" }
+			}
+		},
+		{
+			"question": {
+				"fr": "Tu apprends mieux quand :",
+				"en": "You learn better when:",
+				"ar": "تتعلّم بشكل أفضل عندما:"
+			},
+			"options": {
+				"V": { "fr": "C’est illustré", "en": "It’s illustrated", "ar": "يكون مُصوّرًا" },
+				"A": { "fr": "C’est expliqué oralement", "en": "It’s explained orally", "ar": "يُشرح شفهيًا" },
+				"R": { "fr": "C’est détaillé par écrit", "en": "It’s detailed in writing", "ar": "يكون مفصلًا كتابيًا" },
+				"K": { "fr": "C’est expérimental", "en": "It’s experimental", "ar": "يكون تجريبيًا/عمليًا" }
+			}
+		},
+		{
+			"question": {
+				"fr": "Tu préfères recevoir une consigne :",
+				"en": "You prefer receiving instructions:",
+				"ar": "تفضّل تلقّي التعليمات:" 
+			},
+			"options": {
+				"V": { "fr": "Avec un visuel", "en": "With a visual", "ar": "مع مرئي" },
+				"A": { "fr": "À l’oral", "en": "Orally", "ar": "شفهيًا" },
+				"R": { "fr": "Par écrit", "en": "In writing", "ar": "كتابيًا" },
+				"K": { "fr": "En démonstration", "en": "By demonstration", "ar": "بالعرض/التجربة" }
+			}
+		},
+		{
+			"question": {
+				"fr": "Quand tu enseignes à quelqu’un :",
+				"en": "When you teach someone:",
+				"ar": "عند تعليم شخص ما:" 
+			},
+			"options": {
+				"V": { "fr": "Tu montres", "en": "You show", "ar": "تُظهر" },
+				"A": { "fr": "Tu expliques", "en": "You explain", "ar": "تشرح" },
+				"R": { "fr": "Tu écris", "en": "You write", "ar": "تكتب" },
+				"K": { "fr": "Tu fais avec lui", "en": "You do it with them", "ar": "تفعل معه عمليًا" }
+			}
+		},
+		{
+			"question": {
+				"fr": "Pour apprendre efficacement, tu as surtout besoin de :",
+				"en": "To learn effectively, you mostly need to:",
+				"ar": "للتعلّم بفعالية، تحتاج غالبًا إلى:" 
+			},
+			"options": {
+				"V": { "fr": "Voir", "en": "To see", "ar": "أن ترى" },
+				"A": { "fr": "Entendre", "en": "To hear", "ar": "أن تسمع" },
+				"R": { "fr": "Lire/écrire", "en": "To read/write", "ar": "أن تقرأ/تكتب" },
+				"K": { "fr": "Faire", "en": "To do", "ar": "أن تفعل" }
+			}
+		}
+	]
+}
+
