@@ -15,6 +15,7 @@ const userDataDeletionRoutes = require('./routes/userDataDeletion');
 const facebookDataDeletionRoutes = require('./routes/facebookDataDeletion');
 const certification = require('./routes/certification');
 const challengeRoutes = require('./routes/challenges');
+const varkRoutes = require('./routes/varkRoutes');
 
 // Initialize Passport
 require('./config/passport')(app);
@@ -108,6 +109,7 @@ app.use('/applications', jobApplicationRoutes);
 app.use('/api/user', userDataDeletionRoutes);
 app.use('/certification', certification);
 app.use('/challenges', challengeRoutes);
+app.use('/vark', varkRoutes);
 
 // Facebook Data Deletion Endpoint - Required for Facebook App Compliance
 // This is the dedicated endpoint we'll use in the Facebook Developer Console
