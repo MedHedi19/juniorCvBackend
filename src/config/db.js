@@ -6,13 +6,26 @@ const connectDB = async () => {
         return;
     }
     try {
-        await mongoose.connect(process.env.MONGODB_URI, {
+        const uri = process.env.MONGODB_URI;
+        console.log('🔌 Connecting to MongoDB:', uri.replace(/\/\/[^:]+:[^@]+@/, '//***:***@')); // Hide credentials
+        
+        await mongoose.connect(uri, {
             useNewUrlParser: true,
             useUnifiedTopology: true
         });
-        console.log('MongoDB connected successfully');
+        
+        const dbName = mongoose.connection.db.databaseName;
+        console.log('✅ MongoDB connected successfully to database:', dbName);
+        
+        // Log database stats
+        const stats = await mongoose.connection.db.stats();
+        console.log('📊 Database stats:', {
+            collections: stats.collections,
+            dataSize: `${(stats.dataSize / 1024 / 1024).toFixed(2)} MB`,
+            storageSize: `${(stats.storageSize / 1024 / 1024).toFixed(2)} MB`
+        });
     } catch (error) {
-        console.error('MongoDB connection failed:', error.message);
+        console.error('❌ MongoDB connection failed:', error.message);
         process.exit(1);
     }
 };

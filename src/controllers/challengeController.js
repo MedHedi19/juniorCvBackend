@@ -45,17 +45,27 @@ exports.initializeChallenges = async (req, res) => {
         let upskillingProgress = await UpskillingProgress.findOne({ userId });
         
         if (upskillingProgress) {
-            // If already exists, update it
-            upskillingProgress.personalityColor = personalityColor.toLowerCase();
-            upskillingProgress.challenges = Array.from({ length: 21 }, (_, i) => ({
-                day: i + 1,
-                completed: false,
-                notes: ''
-            }));
-            upskillingProgress.startedAt = new Date();
-            upskillingProgress.lastAccessedDay = 1;
+            // ⚠️ IMPORTANT: Don't reset existing progress!
+            // Only update personality color if it changed
+            if (upskillingProgress.personalityColor !== personalityColor.toLowerCase()) {
+                console.log(`⚠️ User ${userId} changing personality color from ${upskillingProgress.personalityColor} to ${personalityColor}`);
+                upskillingProgress.personalityColor = personalityColor.toLowerCase();
+                // Keep existing challenge progress, don't reset it!
+            }
+            
+            // Return existing progress without changes
+            return res.status(200).json({
+                success: true,
+                message: 'Challenges already initialized',
+                data: {
+                    personalityColor: upskillingProgress.personalityColor,
+                    totalChallenges: 21,
+                    completedChallenges: upskillingProgress.challenges.filter(c => c.completed).length,
+                    startedAt: upskillingProgress.startedAt
+                }
+            });
         } else {
-            // Create new progress
+            // Create new progress ONLY if doesn't exist
             upskillingProgress = new UpskillingProgress({
                 userId,
                 personalityColor: personalityColor.toLowerCase(),
