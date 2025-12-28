@@ -181,13 +181,15 @@ const getAllDailyResults = async (req, res) => {
     }
 
     // Create a map of answered days for quick lookup
+    // Note: answers are stored with questionIndex (0-20), we need to convert to day (1-21)
     const answeredDays = {};
     varkTest.answers.forEach(answer => {
-      answeredDays[answer.day] = {
-        day: answer.day,
+      const day = answer.questionIndex + 1; // Convert questionIndex to day
+      answeredDays[day] = {
+        day,
         completed: true,
         selectedStyle: answer.selectedStyle,
-        answeredAt: answer.answeredAt
+        answeredAt: answer.answeredAt || null
       };
     });
 
