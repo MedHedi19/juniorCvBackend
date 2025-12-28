@@ -5,6 +5,7 @@ const {
   submitVarkAnswer,
   getVarkResult,
   resetVarkTest,
+  getAllDailyResults,
 } = require('../controllers/varkController');
 
 const router = express.Router();
@@ -17,6 +18,9 @@ router.post('/submit', authMiddleware, submitVarkAnswer);
 
 // Get VARK result (only if completed all 21 days)
 router.get('/result', authMiddleware, getVarkResult);
+
+// Get all daily results with completion status
+router.get('/daily-results', authMiddleware, getAllDailyResults);
 
 // Reset VARK test (optional)
 router.post('/reset', authMiddleware, resetVarkTest);

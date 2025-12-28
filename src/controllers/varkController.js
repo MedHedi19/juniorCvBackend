@@ -170,9 +170,60 @@ const resetVarkTest = async (req, res) => {
   }
 };
 
+// Get all daily VARK results with completion status
+const getAllDailyResults = async (req, res) => {
+  try {
+    const userId = req.user.id;
+    const varkTest = await VarkTest.findOne({ userId });
+
+    if (!varkTest) {
+      return res.status(404).json({ message: 'No VARK test found' });
+    }
+
+    // Create a map of answered days for quick lookup
+    const answeredDays = {};
+    varkTest.answers.forEach(answer => {
+      answeredDays[answer.day] = {
+        day: answer.day,
+        completed: true,
+        selectedStyle: answer.selectedStyle,
+        answeredAt: answer.answeredAt
+      };
+    });
+
+    // Build array of all 21 days with their status
+    const dailyResults = [];
+    for (let day = 1; day <= 21; day++) {
+      if (answeredDays[day]) {
+        dailyResults.push(answeredDays[day]);
+      } else {
+        dailyResults.push({
+          day,
+          completed: false,
+          selectedStyle: null,
+          answeredAt: null
+        });
+      }
+    }
+
+    return res.json({
+      dailyResults,
+      totalDays: 21,
+      completedDays: varkTest.answers.length,
+      overallCompleted: varkTest.completed,
+      styleCounts: varkTest.styleCounts,
+      dominantStyle: varkTest.dominantStyle
+    });
+  } catch (error) {
+    console.error('Error getting all daily results:', error);
+    res.status(500).json({ message: 'Server error', error });
+  }
+};
+
 module.exports = {
   getVarkQuestion,
   submitVarkAnswer,
   getVarkResult,
   resetVarkTest,
+  getAllDailyResults,
 };
