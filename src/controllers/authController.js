@@ -1,4 +1,9 @@
 const User = require('../models/user');
+const JobApplication = require('../models/jobApplication');
+const PersonalityTest = require('../models/personalityTest');
+const UpskillingProgress = require('../models/upskillingProgress');
+const UserProgress = require('../models/userProgress');
+const VarkTest = require('../models/varkTest');
 const { generateToken, generateTokens, verifyRefreshToken } = require('../utils/token');
 const { sendPasswordResetEmail, sendWelcomeEmail } = require('../utils/emailService');
 const crypto = require('crypto');
@@ -35,49 +40,44 @@ const register = async (req, res) => {
         const newUser = new User({ firstName, lastName, phone, email, password, profilePhoto: '', });
         await newUser.save();
 
-        // Send welcome email and handle success/failure
-        let emailSent = false;
-        let emailError = null;
-        
-        try {
-            // Try with direct nodemailer call
-            const nodemailer = require('nodemailer');
-            const transporter = nodemailer.createTransport({
-                service: 'gmail',
-                auth: {
-                    user: process.env.EMAIL_USER,
-                    pass: process.env.EMAIL_PASS
-                }
-            });
-            
-            const mailOptions = {
-                from: `"JuniorsCV Support" <${process.env.EMAIL_USER}>`,
-                to: email,
-                subject: 'Bienvenue sur JuniorsCV !',
-                html: `<!DOCTYPE html><html><head><style>body{font-family:Arial;}</style></head><body><h2>Bienvenue sur JuniorsCV, ${firstName}!</h2><p>Votre compte a été créé avec succès.</p><p>Merci de rejoindre notre communauté!</p></body></html>`
-            };
-            
+        // Send welcome email asynchronously (don't wait for it to complete)
+        // This prevents the registration response from being delayed
+        setImmediate(async () => {
             try {
-                const info = await transporter.sendMail(mailOptions);
-                emailSent = true;
-            } catch (err) {
-                // Try the regular method as fallback
-                const emailResult = await sendWelcomeEmail(email, firstName);
-                emailSent = emailResult.success;
+                // Try with direct nodemailer call
+                const nodemailer = require('nodemailer');
+                const transporter = nodemailer.createTransport({
+                    service: 'gmail',
+                    auth: {
+                        user: process.env.EMAIL_USER,
+                        pass: process.env.EMAIL_PASS
+                    }
+                });
+                
+                const mailOptions = {
+                    from: `"JuniorsCV Support" <${process.env.EMAIL_USER}>`,
+                    to: email,
+                    subject: 'Bienvenue sur JuniorsCV !',
+                    html: `<!DOCTYPE html><html><head><style>body{font-family:Arial;}</style></head><body><h2>Bienvenue sur JuniorsCV, ${firstName}!</h2><p>Votre compte a été créé avec succès.</p><p>Merci de rejoindre notre communauté!</p></body></html>`
+                };
+                
+                try {
+                    await transporter.sendMail(mailOptions);
+                    console.log(`✅ Welcome email sent successfully to ${email}`);
+                } catch (err) {
+                    // Try the regular method as fallback
+                    console.log('⚠️ First email method failed, trying fallback...');
+                    await sendWelcomeEmail(email, firstName);
+                }
+            } catch (error) {
+                console.error(`❌ Failed to send welcome email to ${email}:`, error.message);
+                // Don't fail registration if email fails
             }
-        } catch (error) {
-            emailError = {
-                message: error.message,
-                code: error.code || 'UNKNOWN'
-            };
-            // Don't fail registration if email fails
-        }
+        });
 
-        // Return success with email status information
+        // Return success immediately without waiting for email
         res.status(201).json({ 
-            message: 'User registered successfully',
-            emailSent: emailSent,
-            emailError: emailSent ? null : emailError
+            message: 'User registered successfully'
         });
     } catch (error) {
         res.status(500).json({ 
@@ -280,6 +280,64 @@ const logout = async (req, res) => {
     }
 };
 
+const deleteAccount = async (req, res) => {
+    try {
+        const userId = req.user.id; // From authMiddleware
+        const { password } = req.body;
+
+        // Find the user
+        const user = await User.findById(userId);
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+
+        // If the user has a password (classic registration), verify it
+        // Social auth users might not have a password
+        if (user.password && password) {
+            const isMatch = await user.comparePassword(password);
+            if (!isMatch) {
+                return res.status(401).json({ 
+                    message: 'Invalid password',
+                    field: 'password',
+                    error: 'invalid'
+                });
+            }
+        } else if (user.password && !password) {
+            // User has a password but didn't provide one
+            return res.status(400).json({ 
+                message: 'Password is required to delete your account',
+                field: 'password',
+                error: 'required'
+            });
+        }
+        // For social auth users without password, no password verification needed
+
+        // Delete all user-related data
+        await Promise.all([
+            // Delete job applications
+            JobApplication.deleteMany({ userId }),
+            // Delete personality test results
+            PersonalityTest.deleteOne({ userId }),
+            // Delete upskilling progress
+            UpskillingProgress.deleteOne({ userId }),
+            // Delete user progress (quizzes)
+            UserProgress.deleteOne({ userId }),
+            // Delete VARK test results
+            VarkTest.deleteOne({ userId }),
+            // Delete the user account
+            User.findByIdAndDelete(userId)
+        ]);
+
+        res.status(200).json({ 
+            message: 'Account and all related data deleted successfully'
+        });
+    } catch (error) {
+        res.status(500).json({ 
+            message: 'Server error', 
+            error: error.message 
+        });
+    }
+};
 
 
 
@@ -290,4 +348,5 @@ module.exports = {
     resetPassword,
     refreshToken,
     logout,
+    deleteAccount,
 };

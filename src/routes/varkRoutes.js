@@ -6,6 +6,8 @@ const {
   getVarkResult,
   resetVarkTest,
   getAllDailyResults,
+  getUserVarkResult,
+  setUserVarkAnswer,
 } = require('../controllers/varkController');
 
 const router = express.Router();
@@ -21,6 +23,12 @@ router.get('/result', authMiddleware, getVarkResult);
 
 // Get all daily results with completion status
 router.get('/daily-results', authMiddleware, getAllDailyResults);
+
+// Get VARK result for a specific user by ID
+router.get('/user/:userId',  getUserVarkResult);
+
+// Set VARK answer for a specific user by ID
+router.post('/user/:userId/submit', setUserVarkAnswer);
 
 // Reset VARK test (optional)
 router.post('/reset', authMiddleware, resetVarkTest);

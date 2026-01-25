@@ -80,6 +80,14 @@ app.post('/fb-deletion', (req, res) => {
 // Database connection
 dbConfig();
 
+// Simple health check for UptimeRobot (no DB check for speed)
+app.get('/health', (req, res) => {
+    res.status(200).json({ 
+        status: 'ok',
+        timestamp: new Date().toISOString()
+    });
+});
+
 // Root route for health check
 app.get('/', (req, res) => {
     res.status(200).json({ 
