@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { PDFDocument, rgb, StandardFonts } = require('pdf-lib');
+const { pdfToPng } = require('pdf-to-png-converter');
 
 /**
  * Generate a personalized certificate PDF buffer.
@@ -60,4 +61,36 @@ async function generateCertificate(userName) {
   return Buffer.from(pdfBytes);
 }
 
-module.exports = { generateCertificate };
+/**
+ * Generate certificate as PNG image for social media sharing
+ * - Generates PDF first, then converts to high-quality PNG
+ * - Returns a Buffer containing the PNG image
+ */
+async function generateCertificateImage(userName) {
+  try {
+    // First generate the PDF
+    const pdfBuffer = await generateCertificate(userName);
+    
+    // Convert PDF to PNG
+    const pngPages = await pdfToPng(pdfBuffer, {
+      outputType: 'buffer',
+      viewportScale: 2.0, // Higher quality for social media
+      quality: 100
+    });
+    
+    // Return the first page as PNG buffer
+    if (pngPages && pngPages.length > 0) {
+      return pngPages[0].content;
+    } else {
+      throw new Error('Failed to convert PDF to PNG');
+    }
+  } catch (error) {
+    console.error('Error generating certificate image:', error);
+    throw error;
+  }
+}
+
+module.exports = { 
+  generateCertificate,
+  generateCertificateImage
+};

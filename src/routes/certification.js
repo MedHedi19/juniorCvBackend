@@ -2,6 +2,7 @@ const express = require('express');
 const { authMiddleware } = require('../middleware/authMiddleware');
 const { 
     downloadCertificate,
+    downloadCertificateImage,
     download21DaysCertificate,
     sendCertificateByEmail,
     generateCertificate, 
@@ -12,6 +13,7 @@ const router = express.Router();
 
 // NEW ROUTES: Download certificate as base64 (for app display & sharing)
 router.get('/download-certificate/:userId?', authMiddleware, downloadCertificate);
+router.get('/download-certificate-image/:userId?', authMiddleware, downloadCertificateImage);
 router.get('/download-21days-certificate/:userId?', authMiddleware, download21DaysCertificate);
 
 // EMAIL ROUTES: Send certificate via email (optional feature)

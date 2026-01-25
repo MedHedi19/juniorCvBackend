@@ -1,4 +1,4 @@
-const { generateCertificate: generateCertificatePdf } = require('../utils/generateCertificate');
+const { generateCertificate: generateCertificatePdf, generateCertificateImage } = require('../utils/generateCertificate');
 const emailService = require('../utils/emailService');
 const User = require('../models/user');
 
@@ -26,6 +26,34 @@ const downloadCertificate = async (req, res) => {
         });
     } catch (err) {
         console.error('downloadCertificate error:', err);
+        return res.status(500).json({ success: false, message: 'Internal server error', error: err.message });
+    }
+};
+
+// NEW: Download certificate as PNG image - for social media sharing
+const downloadCertificateImage = async (req, res) => {
+    try {
+        const userId = req.params.userId || (req.user && req.user.id);
+        if (!userId) return res.status(400).json({ success: false, message: 'Missing userId (no param and no authenticated user)' });
+
+        const user = await User.findById(userId);
+        if (!user) return res.status(404).json({ success: false, message: 'User not found' });
+
+        const fullName = `${user.firstName} ${user.lastName}`.trim();
+        // generate PNG image buffer
+        const imageBuffer = await generateCertificateImage(fullName);
+
+        // Convert to base64 for frontend
+        const imageBase64 = imageBuffer.toString('base64');
+
+        return res.json({ 
+            success: true, 
+            imageBase64: imageBase64,
+            fileName: `JuniorsCV-Certificate-${user.firstName}-${user.lastName}.png`,
+            userName: fullName
+        });
+    } catch (err) {
+        console.error('downloadCertificateImage error:', err);
         return res.status(500).json({ success: false, message: 'Internal server error', error: err.message });
     }
 };
@@ -137,6 +165,7 @@ const getCertificateSentCount = async (req, res) => {
 
 module.exports = {
     downloadCertificate,           // NEW: Returns PDF as base64 for app display/sharing
+    downloadCertificateImage,      // NEW: Returns PNG image as base64 for social media
     download21DaysCertificate,     // NEW: Returns 21-days PDF as base64
     sendCertificateByEmail,        // Send certificate via email (optional)
     generateCertificate,           // Legacy - alias for sendCertificateByEmail
