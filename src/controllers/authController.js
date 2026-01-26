@@ -283,7 +283,6 @@ const logout = async (req, res) => {
 const deleteAccount = async (req, res) => {
     try {
         const userId = req.user.id; // From authMiddleware
-        const { password } = req.body;
 
         // Find the user
         const user = await User.findById(userId);
@@ -291,27 +290,8 @@ const deleteAccount = async (req, res) => {
             return res.status(404).json({ message: 'User not found' });
         }
 
-        // If the user has a password (classic registration), verify it
-        // Social auth users might not have a password
-        if (user.password && password) {
-            const isMatch = await user.comparePassword(password);
-            if (!isMatch) {
-                return res.status(401).json({ 
-                    message: 'Invalid password',
-                    field: 'password',
-                    error: 'invalid'
-                });
-            }
-        } else if (user.password && !password) {
-            // User has a password but didn't provide one
-            return res.status(400).json({ 
-                message: 'Password is required to delete your account',
-                field: 'password',
-                error: 'required'
-            });
-        }
-        // For social auth users without password, no password verification needed
-
+        // No password verification needed - user is already authenticated via JWT token
+        
         // Delete all user-related data
         await Promise.all([
             // Delete job applications
