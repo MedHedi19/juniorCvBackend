@@ -107,6 +107,23 @@ app.get('/', (req, res) => {
     });
 });
 
+// GET handler for browser access to delete-account endpoint
+app.get('/auth/delete-account', (req, res) => {
+    res.status(200).json({
+        message: 'Account deletion endpoint',
+        method: 'DELETE',
+        description: 'This endpoint requires DELETE method with valid JWT token in Authorization header',
+        usage: {
+            method: 'DELETE',
+            headers: {
+                'Authorization': 'Bearer <your_jwt_token>',
+                'Content-Type': 'application/json'
+            },
+            example: 'Use this endpoint from your mobile app, not directly from browser'
+        }
+    });
+});
+
 // Routes
 app.use('/auth', authRoutes);
 app.use('/profile', profileRoutes);
