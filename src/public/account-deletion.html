@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppression de compte - Boostify Skills</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #003B73 0%, #0074D9 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: #003B73;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .info-box {
+            background: #f8f9fa;
+            border-left: 4px solid #003B73;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .info-box h3 {
+            color: #003B73;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .info-box p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: #003B73;
+        }
+        
+        .btn {
+            width: 100%;
+            padding: 14px;
+            background: #003B73;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #002a54;
+        }
+        
+        .btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        
+        .message {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+        }
+        
+        .message.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .message.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        
+        .warning-box h4 {
+            color: #856404;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .warning-box ul {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 13px;
+            color: #856404;
+        }
+        
+        .warning-box li {
+            margin-bottom: 5px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px 30px 30px;
+            color: #666;
+            font-size: 13px;
+        }
+        
+        .footer a {
+            color: #003B73;
+            text-decoration: none;
+        }
+        
+        .app-note {
+            background: #e3f2fd;
+            border: 1px solid #2196f3;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #1565c0;
+        }
+        
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🗑️ Suppression de compte</h1>
+            <p>Boostify Skills (JuniorsCV)</p>
+        </div>
+        
+        <div class="content">
+            <div class="info-box">
+                <h3>📋 Comment ça fonctionne ?</h3>
+                <p>Pour supprimer votre compte et toutes les données associées, entrez l'adresse email liée à votre compte. Nous vous enverrons un lien de confirmation sécurisé par email.</p>
+            </div>
+            
+            <div class="warning-box">
+                <h4>⚠️ Cette action est irréversible</h4>
+                <ul>
+                    <li>Votre profil et informations personnelles</li>
+                    <li>Vos résultats de tests de personnalité</li>
+                    <li>Votre progression et certificats</li>
+                    <li>Toutes vos candidatures enregistrées</li>
+                </ul>
+            </div>
+            
+            <div id="message" class="message"></div>
+            
+            <form id="deletionForm">
+                <div class="form-group">
+                    <label for="email">Adresse email de votre compte</label>
+                    <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+                </div>
+                
+                <button type="submit" class="btn" id="submitBtn">
+                    <span id="btnText">Envoyer la demande de suppression</span>
+                    <span id="btnLoader" class="spinner hidden"></span>
+                </button>
+            </form>
+            
+            <div class="app-note">
+                💡 <strong>Vous avez encore l'application ?</strong> Vous pouvez supprimer votre compte directement depuis les paramètres de l'app (Profil → Supprimer mon compte).
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 Boostify Skills. Tous droits réservés.</p>
+            <p style="margin-top: 10px;">
+                <a href="mailto:support@boostifyskills.com">Besoin d'aide ?</a>
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        const form = document.getElementById('deletionForm');
+        const message = document.getElementById('message');
+        const submitBtn = document.getElementById('submitBtn');
+        const btnText = document.getElementById('btnText');
+        const btnLoader = document.getElementById('btnLoader');
+        
+        function showMessage(text, type) {
+            message.textContent = text;
+            message.className = 'message ' + type;
+            message.style.display = 'block';
+        }
+        
+        function setLoading(loading) {
+            submitBtn.disabled = loading;
+            btnText.textContent = loading ? 'Envoi en cours...' : 'Envoyer la demande de suppression';
+            btnLoader.classList.toggle('hidden', !loading);
+        }
+        
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value.trim();
+            
+            if (!email) {
+                showMessage('Veuillez entrer votre adresse email.', 'error');
+                return;
+            }
+            
+            setLoading(true);
+            message.style.display = 'none';
+            
+            try {
+                const response = await fetch('/account-deletion/request', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ email })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showMessage(data.message, 'success');
+                    form.reset();
+                } else {
+                    showMessage(data.message || 'Une erreur est survenue. Veuillez réessayer.', 'error');
+                }
+            } catch (error) {
+                showMessage('Erreur de connexion. Veuillez vérifier votre connexion internet et réessayer.', 'error');
+            } finally {
+                setLoading(false);
+            }
+        });
+    </script>
+</body>
+</html>

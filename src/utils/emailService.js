@@ -382,10 +382,148 @@ const sendSocialWelcomeEmail = async (email, firstName, provider) => {
     }
   }
 
+/**
+ * Send account deletion confirmation email
+ * Required for Google Play compliance - allows users to delete account via web
+ */
+const sendAccountDeletionEmail = async (email, firstName, confirmationUrl) => {
+  try {
+    const transporter = createTransporter();
+    
+    const mailOptions = {
+      from: `"Boostify Skills" <${process.env.EMAIL_USER}>`,
+      to: email,
+      subject: '⚠️ Confirmation de suppression de compte - Boostify Skills',
+      html: `
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <meta charset="utf-8">
+          <style>
+            body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+            .container { max-width: 600px; margin: 0 auto; padding: 0; }
+            .header { background-color: #dc3545; color: white; padding: 30px 20px; text-align: center; border-radius: 8px 8px 0 0; }
+            .header h1 { margin: 0; font-size: 24px; }
+            .content { padding: 35px 25px; background-color: #f9f9f9; border-left: 1px solid #ddd; border-right: 1px solid #ddd; }
+            .warning-box { 
+              background-color: #fff3cd; 
+              border: 1px solid #ffc107; 
+              padding: 20px; 
+              border-radius: 8px; 
+              margin: 20px 0;
+            }
+            .warning-box h3 { color: #856404; margin: 0 0 10px 0; }
+            .warning-box ul { margin: 0; padding-left: 20px; color: #856404; }
+            .warning-box li { margin-bottom: 5px; }
+            .button-container { text-align: center; margin: 30px 0; }
+            .button { 
+              display: inline-block; 
+              background-color: #dc3545; 
+              color: white; 
+              padding: 15px 35px; 
+              text-decoration: none; 
+              border-radius: 8px; 
+              font-weight: bold;
+              font-size: 16px;
+            }
+            .expire-note {
+              background: #e3f2fd;
+              border: 1px solid #2196f3;
+              padding: 12px;
+              border-radius: 8px;
+              font-size: 14px;
+              color: #1565c0;
+              text-align: center;
+            }
+            .footer { 
+              padding: 20px; 
+              text-align: center; 
+              font-size: 12px; 
+              color: #666; 
+              background-color: #f0f0f0; 
+              border-radius: 0 0 8px 8px; 
+              border: 1px solid #ddd; 
+              border-top: none; 
+            }
+          </style>
+        </head>
+        <body>
+          <div class="container">
+            <div class="header">
+              <h1>⚠️ Suppression de compte</h1>
+            </div>
+            <div class="content">
+              <p>Bonjour ${firstName},</p>
+              <p>Vous avez demandé la suppression de votre compte Boostify Skills. Cette action est <strong>irréversible</strong>.</p>
+              
+              <div class="warning-box">
+                <h3>🗑️ Les données suivantes seront supprimées :</h3>
+                <ul>
+                  <li>Votre profil et informations personnelles</li>
+                  <li>Vos résultats de tests de personnalité</li>
+                  <li>Votre progression et certificats</li>
+                  <li>Toutes vos candidatures enregistrées</li>
+                </ul>
+              </div>
+              
+              <p><strong>Si vous souhaitez vraiment supprimer votre compte</strong>, cliquez sur le bouton ci-dessous :</p>
+              
+              <div class="button-container">
+                <a href="${confirmationUrl}" class="button" style="color: white;">Confirmer la suppression</a>
+              </div>
+              
+              <div class="expire-note">
+                ⏰ Ce lien expire dans <strong>48 heures</strong>. Après cette date, vous devrez faire une nouvelle demande.
+              </div>
+              
+              <p style="margin-top: 25px; color: #666; font-size: 14px;">
+                Si vous n'avez pas demandé cette suppression, ignorez simplement cet email. Votre compte restera actif.
+              </p>
+            </div>
+            <div class="footer">
+              <p>Si vous avez des questions, contactez-nous à <a href="mailto:support@boostifyskills.com">support@boostifyskills.com</a></p>
+              <p>© 2025 Boostify Skills. Tous droits réservés.</p>
+            </div>
+          </div>
+        </body>
+        </html>
+      `,
+      text: `
+Bonjour ${firstName},
+
+Vous avez demandé la suppression de votre compte Boostify Skills. Cette action est IRRÉVERSIBLE.
+
+Les données suivantes seront supprimées :
+- Votre profil et informations personnelles
+- Vos résultats de tests de personnalité
+- Votre progression et certificats
+- Toutes vos candidatures enregistrées
+
+Pour confirmer la suppression, cliquez sur ce lien :
+${confirmationUrl}
+
+Ce lien expire dans 48 heures.
+
+Si vous n'avez pas demandé cette suppression, ignorez cet email.
+
+© 2025 Boostify Skills. Tous droits réservés.
+      `
+    };
+    
+    const info = await transporter.sendMail(mailOptions);
+    return { success: true, messageId: info.messageId };
+    
+  } catch (error) {
+    console.error('Error sending account deletion email:', error);
+    throw new Error('Failed to send account deletion email');
+  }
+};
+
 module.exports = {
   sendPasswordResetEmail,
   sendWelcomeEmail,
   sendSocialWelcomeEmail,
   sendCertificateEmail,
-  sendCertificateEmail_21
+  sendCertificateEmail_21,
+  sendAccountDeletionEmail
 };

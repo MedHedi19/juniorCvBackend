@@ -57,6 +57,12 @@ const userSchema = new mongoose.Schema({
     resetPasswordExpires: {
         type: Date,
     },
+    deletionToken: {
+        type: String,
+    },
+    deletionTokenExpires: {
+        type: Date,
+    },
     refreshToken: {
         type: String,
     },

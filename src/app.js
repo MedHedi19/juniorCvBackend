@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const path = require('path');
 const errorHandler = require('./middleware/errorHandler');
 const authRoutes = require('./routes/auth');
 const profileRoutes = require('./routes/profile');
@@ -16,6 +17,7 @@ const facebookDataDeletionRoutes = require('./routes/facebookDataDeletion');
 const certification = require('./routes/certification');
 const challengeRoutes = require('./routes/challenges');
 const varkRoutes = require('./routes/varkRoutes');
+const accountDeletionRoutes = require('./routes/accountDeletion');
 
 // Initialize Passport
 require('./config/passport')(app);
@@ -75,6 +77,9 @@ app.post('/fb-deletion', (req, res) => {
     });
 });
 
+// Serve static files from public folder
+app.use('/public', express.static(path.join(__dirname, 'public')));
+
 // Database connection
 
 // Database connection
@@ -92,7 +97,7 @@ app.get('/health', (req, res) => {
 app.get('/', (req, res) => {
     res.status(200).json({ 
         message: 'Junior CV Backend API is running successfully!', 
-        version: '1.0.1',
+        version: '1.0.2',
         timestamp: new Date().toISOString(),
         endpoints: {
             auth: '/auth',
@@ -102,26 +107,16 @@ app.get('/', (req, res) => {
             jobs: '/jobs',
             applications: '/applications',
             certification: '/certification',
-            challenges: '/challenges'
+            challenges: '/challenges',
+            accountDeletion: '/account-deletion'
         }
     });
 });
 
 // GET handler for browser access to delete-account endpoint
+// Redirects to the public deletion request page (Google Play compliance)
 app.get('/auth/delete-account', (req, res) => {
-    res.status(200).json({
-        message: 'Account deletion endpoint',
-        method: 'DELETE',
-        description: 'This endpoint requires DELETE method with valid JWT token in Authorization header',
-        usage: {
-            method: 'DELETE',
-            headers: {
-                'Authorization': 'Bearer <your_jwt_token>',
-                'Content-Type': 'application/json'
-            },
-            example: 'Use this endpoint from your mobile app, not directly from browser'
-        }
-    });
+    res.redirect('/account-deletion');
 });
 
 // Routes
@@ -135,6 +130,10 @@ app.use('/api/user', userDataDeletionRoutes);
 app.use('/certification', certification);
 app.use('/challenges', challengeRoutes);
 app.use('/vark', varkRoutes);
+
+// Public Account Deletion Routes (Google Play Compliance)
+// URL to declare: https://yourdomain.com/account-deletion
+app.use('/account-deletion', accountDeletionRoutes);
 
 // Facebook Data Deletion Endpoint - Required for Facebook App Compliance
 // This is the dedicated endpoint we'll use in the Facebook Developer Console
