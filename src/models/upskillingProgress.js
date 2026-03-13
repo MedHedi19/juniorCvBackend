@@ -66,35 +66,35 @@ const upskillingProgressSchema = new mongoose.Schema({
         type: Number,
         default: 0
     }
-}, { 
-    timestamps: true 
+}, {
+    timestamps: true
 });
 
 // Ensure one upskilling progress document per user
 upskillingProgressSchema.index({ userId: 1 }, { unique: true });
 
 // Virtual for total completed challenges
-upskillingProgressSchema.virtual('totalCompleted').get(function() {
+upskillingProgressSchema.virtual('totalCompleted').get(function () {
     return this.challenges.filter(c => c.completed).length;
 });
 
 // Virtual for progress percentage
-upskillingProgressSchema.virtual('progressPercentage').get(function() {
+upskillingProgressSchema.virtual('progressPercentage').get(function () {
     return Math.round((this.totalCompleted / 21) * 100);
 });
 
 // Virtual for remaining challenges
-upskillingProgressSchema.virtual('remainingChallenges').get(function() {
+upskillingProgressSchema.virtual('remainingChallenges').get(function () {
     return 21 - this.totalCompleted;
 });
 
 // Method to check if all challenges are completed
-upskillingProgressSchema.methods.isFullyCompleted = function() {
+upskillingProgressSchema.methods.isFullyCompleted = function () {
     return this.challenges.filter(c => c.completed).length === 21;
 };
 
 // Method to get next uncompleted challenge
-upskillingProgressSchema.methods.getNextChallenge = function() {
+upskillingProgressSchema.methods.getNextChallenge = function () {
     const uncompletedChallenge = this.challenges.find(c => !c.completed);
     return uncompletedChallenge ? uncompletedChallenge.day : null;
 };

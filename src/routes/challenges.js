@@ -72,4 +72,11 @@ router.post('/:day/submit-media', authMiddleware, challengeController.submitMedi
  */
 router.get('/:day/submission', authMiddleware, challengeController.getSubmission);
 
+/**
+ * @route   GET /api/challenges/config
+ * @desc    Get Cloudinary configuration for mobile app
+ * @access  Private
+ */
+router.get('/config', authMiddleware, challengeController.getCloudinaryConfig);
+
 module.exports = router;

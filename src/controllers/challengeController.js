@@ -17,7 +17,7 @@ const loadChallengeData = (color) => {
     }
 
     const filePath = path.join(__dirname, '../data/upskilling', fileName);
-    
+
     if (!fs.existsSync(filePath)) {
         throw new Error(`Challenge file not found for color: ${color}`);
     }
@@ -43,7 +43,7 @@ exports.initializeChallenges = async (req, res) => {
 
         // Find or create upskilling progress
         let upskillingProgress = await UpskillingProgress.findOne({ userId });
-        
+
         if (upskillingProgress) {
             // ⚠️ IMPORTANT: Don't reset existing progress!
             // Only update personality color if it changed
@@ -52,7 +52,7 @@ exports.initializeChallenges = async (req, res) => {
                 upskillingProgress.personalityColor = personalityColor.toLowerCase();
                 // Keep existing challenge progress, don't reset it!
             }
-            
+
             // Return existing progress without changes
             return res.status(200).json({
                 success: true,
@@ -108,7 +108,7 @@ exports.getAllChallenges = async (req, res) => {
         const { lang = 'fr' } = req.query;
 
         const upskillingProgress = await UpskillingProgress.findOne({ userId });
-        
+
         if (!upskillingProgress) {
             return res.status(404).json({
                 success: false,
@@ -172,7 +172,7 @@ exports.getChallengeByDay = async (req, res) => {
         }
 
         const userProgress = await UpskillingProgress.findOne({ userId });
-        
+
         if (!userProgress) {
             return res.status(404).json({
                 success: false,
@@ -238,7 +238,7 @@ exports.completeChallenge = async (req, res) => {
         }
 
         const userProgress = await UpskillingProgress.findOne({ userId });
-        
+
         if (!userProgress) {
             return res.status(404).json({
                 success: false,
@@ -296,7 +296,7 @@ exports.getChallengeProgress = async (req, res) => {
         const userId = req.user.id;
 
         const userProgress = await UpskillingProgress.findOne({ userId });
-        
+
         if (!userProgress) {
             return res.status(404).json({
                 success: false,
@@ -376,7 +376,7 @@ exports.submitText = async (req, res) => {
         }
 
         const userProgress = await UpskillingProgress.findOne({ userId });
-        
+
         if (!userProgress) {
             return res.status(404).json({
                 success: false,
@@ -456,7 +456,7 @@ exports.submitMedia = async (req, res) => {
         }
 
         const userProgress = await UpskillingProgress.findOne({ userId });
-        
+
         if (!userProgress) {
             return res.status(404).json({
                 success: false,
@@ -524,7 +524,7 @@ exports.getSubmission = async (req, res) => {
         }
 
         const userProgress = await UpskillingProgress.findOne({ userId });
-        
+
         if (!userProgress) {
             return res.status(404).json({
                 success: false,
@@ -558,4 +558,29 @@ exports.getSubmission = async (req, res) => {
     }
 };
 
+// Get Cloudinary configuration for mobile app
+exports.getCloudinaryConfig = async (req, res) => {
+    try {
+        // We only return public configuration needed for unsigned uploads
+        // DO NOT return the API SECRET here!
+        res.status(200).json({
+            success: true,
+            data: {
+                cloudName: process.env.CLOUDINARY_CLOUD_NAME || 'your_cloud_name',
+                uploadPreset: process.env.CLOUDINARY_UPLOAD_PRESET || 'your_unsigned_preset'
+            }
+        });
+    } catch (error) {
+        console.error('Get Cloudinary config error:', error);
+        res.status(500).json({
+            success: false,
+            message: 'Error fetching configuration',
+            error: error.message
+        });
+    }
+};
+
+
 module.exports = exports;
+
+
