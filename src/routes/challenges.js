@@ -29,13 +29,20 @@ router.get('/', authMiddleware, challengeController.getAllChallenges);
 router.get('/progress', authMiddleware, challengeController.getChallengeProgress);
 
 /**
+ * @route   GET /api/challenges/config
+ * @desc    Get Cloudinary configuration for mobile app
+ * @access  Private
+ */
+router.get('/config', authMiddleware, challengeController.getCloudinaryConfig);
+
+/**
  * @route   GET /api/challenges/:day
  * @desc    Get a specific challenge by day (1-21)
  * @access  Private
  * @params  day - Day number (1-21)
  * @query   lang=fr|en|ar (optional, default: fr)
  */
-router.get('/:day', authMiddleware, challengeController.getChallengeByDay);
+router.get('/:day(\\d+)', authMiddleware, challengeController.getChallengeByDay);
 
 /**
  * @route   POST /api/challenges/:day/complete
@@ -44,7 +51,7 @@ router.get('/:day', authMiddleware, challengeController.getChallengeByDay);
  * @params  day - Day number (1-21)
  * @body    { notes: 'optional user notes' }
  */
-router.post('/:day/complete', authMiddleware, challengeController.completeChallenge);
+router.post('/:day(\\d+)/complete', authMiddleware, challengeController.completeChallenge);
 
 /**
  * @route   POST /api/challenges/:day/submit-text
@@ -53,7 +60,7 @@ router.post('/:day/complete', authMiddleware, challengeController.completeChalle
  * @params  day - Day number (1-21)
  * @body    { textContent: 'user text submission' }
  */
-router.post('/:day/submit-text', authMiddleware, challengeController.submitText);
+router.post('/:day(\\d+)/submit-text', authMiddleware, challengeController.submitText);
 
 /**
  * @route   POST /api/challenges/:day/submit-media
@@ -62,7 +69,7 @@ router.post('/:day/submit-text', authMiddleware, challengeController.submitText)
  * @params  day - Day number (1-21)
  * @body    { mediaUrl: 'cloud storage URL', mediaType: 'mime type', submissionType: 'audio' | 'video' }
  */
-router.post('/:day/submit-media', authMiddleware, challengeController.submitMedia);
+router.post('/:day(\\d+)/submit-media', authMiddleware, challengeController.submitMedia);
 
 /**
  * @route   GET /api/challenges/:day/submission
@@ -70,13 +77,6 @@ router.post('/:day/submit-media', authMiddleware, challengeController.submitMedi
  * @access  Private
  * @params  day - Day number (1-21)
  */
-router.get('/:day/submission', authMiddleware, challengeController.getSubmission);
-
-/**
- * @route   GET /api/challenges/config
- * @desc    Get Cloudinary configuration for mobile app
- * @access  Private
- */
-router.get('/config', authMiddleware, challengeController.getCloudinaryConfig);
+router.get('/:day(\\d+)/submission', authMiddleware, challengeController.getSubmission);
 
 module.exports = router;
