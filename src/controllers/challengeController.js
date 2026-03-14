@@ -561,13 +561,28 @@ exports.getSubmission = async (req, res) => {
 // Get Cloudinary configuration for mobile app
 exports.getCloudinaryConfig = async (req, res) => {
     try {
+        const cloudName = process.env.CLOUDINARY_CLOUD_NAME;
+        const uploadPreset = process.env.CLOUDINARY_UPLOAD_PRESET;
+
+        const hasMissingConfig = !cloudName || !uploadPreset;
+        const hasPlaceholderConfig =
+            cloudName === 'your_cloud_name' ||
+            uploadPreset === 'your_unsigned_preset';
+
+        if (hasMissingConfig || hasPlaceholderConfig) {
+            return res.status(500).json({
+                success: false,
+                message: 'Cloudinary is not configured on server. Please set CLOUDINARY_CLOUD_NAME and CLOUDINARY_UPLOAD_PRESET.'
+            });
+        }
+
         // We only return public configuration needed for unsigned uploads
         // DO NOT return the API SECRET here!
         res.status(200).json({
             success: true,
             data: {
-                cloudName: process.env.CLOUDINARY_CLOUD_NAME || 'your_cloud_name',
-                uploadPreset: process.env.CLOUDINARY_UPLOAD_PRESET || 'your_unsigned_preset'
+                cloudName,
+                uploadPreset
             }
         });
     } catch (error) {
