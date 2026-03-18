@@ -10,7 +10,7 @@ const createTransporter = () => {
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS,
-    }
+    },
   });
 };
 
@@ -18,7 +18,7 @@ const createTransporter = () => {
 const sendPasswordResetEmail = async (email, resetPin, firstName) => {
   try {
     const transporter = createTransporter();
-    
+
     // Email content
     const mailOptions = {
       from: `"JuniorsCV Support" <${process.env.EMAIL_USER}>`,
@@ -97,13 +97,12 @@ const sendPasswordResetEmail = async (email, resetPin, firstName) => {
         Important : Ne partagez jamais ce code avec quelqu'un d'autre.
         
         © 2025 JuniorsCV. Tous droits réservés.
-      `
+      `,
     };
 
     // Send email
     const info = await transporter.sendMail(mailOptions);
     return { success: true, messageId: info.messageId };
-    
   } catch (error) {
     console.error('Error sending password reset email:', error);
     throw new Error('Failed to send password reset email');
@@ -117,14 +116,14 @@ const sendWelcomeEmail = async (email, firstName) => {
     if (!email) {
       return { success: false, error: 'Missing recipient email address' };
     }
-    
+
     if (!firstName) {
       firstName = 'User';
     }
-    
+
     // Create email transport
     const transporter = createTransporter();
-    
+
     const mailOptions = {
       from: `"JuniorsCV Support" <${process.env.EMAIL_USER}>`,
       to: email,
@@ -191,18 +190,17 @@ const sendWelcomeEmail = async (email, firstName) => {
           </div>
         </body>
         </html>
-      `
+      `,
     };
-    
+
     // Send email
     const info = await transporter.sendMail(mailOptions);
     return { success: true, messageId: info.messageId };
-    
   } catch (error) {
-    return { 
-      success: false, 
-      error: error.message, 
-      code: error.code 
+    return {
+      success: false,
+      error: error.message,
+      code: error.code,
     };
   }
 };
@@ -211,28 +209,31 @@ const sendWelcomeEmail = async (email, firstName) => {
 const sendSocialWelcomeEmail = async (email, firstName, provider) => {
   try {
     const transporter = createTransporter();
-    
+
     // Get provider information
     const providerInfo = {
       google: {
         name: 'Google',
         color: '#DB4437',
-        icon: '🔍'
+        icon: '🔍',
       },
       facebook: {
         name: 'Facebook',
         color: '#4267B2',
-        icon: '👥'
+        icon: '👥',
       },
       linkedin: {
         name: 'LinkedIn',
         color: '#0077B5',
-        icon: '💼'
-      }
+        icon: '💼',
+      },
     };
-    
-    const { name: providerName, icon } = providerInfo[provider] || { name: 'Social Media', icon: '🌐' };
-    
+
+    const { name: providerName, icon } = providerInfo[provider] || {
+      name: 'Social Media',
+      icon: '🌐',
+    };
+
     const mailOptions = {
       from: `"JuniorsCV Support" <${process.env.EMAIL_USER}>`,
       to: email,
@@ -313,74 +314,73 @@ const sendSocialWelcomeEmail = async (email, firstName, provider) => {
           </div>
         </body>
         </html>
-      `
+      `,
     };
 
     const info = await transporter.sendMail(mailOptions);
     return { success: true, messageId: info.messageId };
-    
   } catch (error) {
     return { success: false, error: error.message };
   }
 };
 
 // Send a certificate email with PDF attachment
-  const sendCertificateEmail= async (email, firstName, pdfBuffer) => {
-    try {
-      const transporter = createTransporter();
-      const mailOptions = {
-        from: `"JuniorsCV Support" <${process.env.EMAIL_USER}>`,
-        to: email,
-        subject: 'Votre certificat JuniorsCV',
-        html: `
+const sendCertificateEmail = async (email, firstName, pdfBuffer) => {
+  try {
+    const transporter = createTransporter();
+    const mailOptions = {
+      from: `"JuniorsCV Support" <${process.env.EMAIL_USER}>`,
+      to: email,
+      subject: 'Votre certificat JuniorsCV',
+      html: `
           <p>Bonjour ${firstName},</p>
           <p>Félicitations pour avoir complété le parcours 7P. Veuillez trouver votre certificat en pièce jointe.</p>
           <p>Cordialement,<br/>L'équipe JuniorsCV</p>
         `,
-        attachments: [
-          {
-            filename: 'JuniorsCV-Certificate.pdf',
-            content: pdfBuffer,
-            contentType: 'application/pdf'
-          }
-        ]
-      };
+      attachments: [
+        {
+          filename: 'JuniorsCV-Certificate.pdf',
+          content: pdfBuffer,
+          contentType: 'application/pdf',
+        },
+      ],
+    };
 
-      const info = await transporter.sendMail(mailOptions);
-      return { success: true, messageId: info.messageId };
-    } catch (error) {
-      console.error('Error sending certificate email:', error);
-      return { success: false, error: error.message };
-    }
+    const info = await transporter.sendMail(mailOptions);
+    return { success: true, messageId: info.messageId };
+  } catch (error) {
+    console.error('Error sending certificate email:', error);
+    return { success: false, error: error.message };
   }
-  const sendCertificateEmail_21= async (email, firstName, pdfBuffer) => {
-    try {
-      const transporter = createTransporter();
-      const mailOptions = {
-        from: `"JuniorsCV Support" <${process.env.EMAIL_USER}>`,
-        to: email,
-        subject: 'Votre certificat JuniorsCV',
-        html: `
+};
+const sendCertificateEmail_21 = async (email, firstName, pdfBuffer) => {
+  try {
+    const transporter = createTransporter();
+    const mailOptions = {
+      from: `"JuniorsCV Support" <${process.env.EMAIL_USER}>`,
+      to: email,
+      subject: 'Votre certificat JuniorsCV',
+      html: `
           <p>Bonjour ${firstName},</p>
           <p>Félicitations pour avoir complété le "21 day challenge". Veuillez trouver votre certificat en pièce jointe.</p>
           <p>Cordialement,<br/>L'équipe JuniorsCV</p>
         `,
-        attachments: [
-          {
-            filename: 'JuniorsCV-Certificate.pdf',
-            content: pdfBuffer,
-            contentType: 'application/pdf'
-          }
-        ]
-      };
+      attachments: [
+        {
+          filename: 'JuniorsCV-Certificate.pdf',
+          content: pdfBuffer,
+          contentType: 'application/pdf',
+        },
+      ],
+    };
 
-      const info = await transporter.sendMail(mailOptions);
-      return { success: true, messageId: info.messageId };
-    } catch (error) {
-      console.error('Error sending certificate email:', error);
-      return { success: false, error: error.message };
-    }
+    const info = await transporter.sendMail(mailOptions);
+    return { success: true, messageId: info.messageId };
+  } catch (error) {
+    console.error('Error sending certificate email:', error);
+    return { success: false, error: error.message };
   }
+};
 
 /**
  * Send account deletion confirmation email
@@ -389,7 +389,7 @@ const sendSocialWelcomeEmail = async (email, firstName, provider) => {
 const sendAccountDeletionEmail = async (email, firstName, confirmationUrl) => {
   try {
     const transporter = createTransporter();
-    
+
     const mailOptions = {
       from: `"Boostify Skills" <${process.env.EMAIL_USER}>`,
       to: email,
@@ -507,12 +507,11 @@ Ce lien expire dans 48 heures.
 Si vous n'avez pas demandé cette suppression, ignorez cet email.
 
 © 2025 Boostify Skills. Tous droits réservés.
-      `
+      `,
     };
-    
+
     const info = await transporter.sendMail(mailOptions);
     return { success: true, messageId: info.messageId };
-    
   } catch (error) {
     console.error('Error sending account deletion email:', error);
     throw new Error('Failed to send account deletion email');
@@ -525,5 +524,5 @@ module.exports = {
   sendSocialWelcomeEmail,
   sendCertificateEmail,
   sendCertificateEmail_21,
-  sendAccountDeletionEmail
+  sendAccountDeletionEmail,
 };

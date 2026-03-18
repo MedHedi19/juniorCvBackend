@@ -25,7 +25,7 @@ router.get('/result', authMiddleware, getVarkResult);
 router.get('/daily-results', authMiddleware, getAllDailyResults);
 
 // Get VARK result for a specific user by ID
-router.get('/user/:userId',  getUserVarkResult);
+router.get('/user/:userId', getUserVarkResult);
 
 // Set VARK answer for a specific user by ID
 router.post('/user/:userId/submit', setUserVarkAnswer);

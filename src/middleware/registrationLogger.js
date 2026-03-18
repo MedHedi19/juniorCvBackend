@@ -15,18 +15,18 @@ function logRegistration(req, res, next) {
   if (req.originalUrl.includes('/auth/register') && req.method === 'POST') {
     const timestamp = new Date().toISOString();
     const { email, firstName, lastName, phone } = req.body;
-    
+
     // Save sensitive info
     const logEntry = `[${timestamp}] REGISTRATION ATTEMPT - Email: ${email}, Name: ${firstName} ${lastName}, Phone: ${phone}\n`;
-    
+
     // Log to file
     fs.appendFile(registrationLogFile, logEntry, (err) => {
       if (err) console.error('Error writing to registration log:', err);
     });
-    
+
     // Create response interceptor to log the result
     const originalSend = res.send;
-    res.send = function(body) {
+    res.send = function (body) {
       const responseBody = body instanceof Buffer ? body.toString() : body;
       let parsedBody;
       try {
@@ -34,13 +34,13 @@ function logRegistration(req, res, next) {
       } catch (e) {
         parsedBody = { raw: responseBody };
       }
-      
+
       const resultLogEntry = `[${timestamp}] REGISTRATION RESULT - Email: ${email}, Status: ${res.statusCode}, Success: ${res.statusCode === 201 ? 'true' : 'false'}, EmailSent: ${parsedBody.emailSent || 'unknown'}\n`;
-      
+
       fs.appendFile(registrationLogFile, resultLogEntry, (err) => {
         if (err) console.error('Error writing registration result to log:', err);
       });
-      
+
       originalSend.call(this, body);
     };
   }

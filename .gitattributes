@@ -1,0 +1,7 @@
+# Keep repository text files normalized as LF across platforms
+* text=auto eol=lf
+
+# Preserve Windows scripts with CRLF for compatibility
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf

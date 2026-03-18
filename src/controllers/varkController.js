@@ -5,7 +5,7 @@ const varkData = require('../data/vark/vark.json');
 const transformOptionsToArray = (optionsObj, lang) => {
   return Object.entries(optionsObj).map(([style, texts]) => ({
     style,
-    text: texts[lang] || texts['fr']
+    text: texts[lang] || texts['fr'],
   }));
 };
 
@@ -38,7 +38,7 @@ const getVarkQuestion = async (req, res) => {
       question: questionText,
       options,
       totalDays: 21,
-      testName: 'VARK'
+      testName: 'VARK',
     });
   } catch (error) {
     console.error('Error getting VARK question:', error);
@@ -78,7 +78,7 @@ const submitVarkAnswer = async (req, res) => {
     const questionIndex = dayNum - 1;
 
     // Update or add answer
-    const existingIdx = varkTest.answers.findIndex(a => a.questionIndex === questionIndex);
+    const existingIdx = varkTest.answers.findIndex((a) => a.questionIndex === questionIndex);
     if (existingIdx >= 0) {
       // decrement old style count
       const oldStyle = varkTest.answers[existingIdx].selectedStyle;
@@ -97,13 +97,13 @@ const submitVarkAnswer = async (req, res) => {
     const response = { day: dayNum, saved: true };
 
     // Check completion (all 21 answered)
-    const uniqueAnswered = new Set(varkTest.answers.map(a => a.questionIndex));
+    const uniqueAnswered = new Set(varkTest.answers.map((a) => a.questionIndex));
     if (uniqueAnswered.size === 21) {
       varkTest.completed = true;
       varkTest.completedAt = new Date();
       // Compute dominant style
       const styles = Object.keys(varkTest.styleCounts);
-      varkTest.dominantStyle = styles.reduce((a, b) => 
+      varkTest.dominantStyle = styles.reduce((a, b) =>
         (varkTest.styleCounts[a] || 0) >= (varkTest.styleCounts[b] || 0) ? a : b
       );
       response.testCompleted = true;
@@ -183,13 +183,13 @@ const getAllDailyResults = async (req, res) => {
     // Create a map of answered days for quick lookup
     // Note: answers are stored with questionIndex (0-20), we need to convert to day (1-21)
     const answeredDays = {};
-    varkTest.answers.forEach(answer => {
+    varkTest.answers.forEach((answer) => {
       const day = answer.questionIndex + 1; // Convert questionIndex to day
       answeredDays[day] = {
         day,
         completed: true,
         selectedStyle: answer.selectedStyle,
-        answeredAt: answer.answeredAt || null
+        answeredAt: answer.answeredAt || null,
       };
     });
 
@@ -203,7 +203,7 @@ const getAllDailyResults = async (req, res) => {
           day,
           completed: false,
           selectedStyle: null,
-          answeredAt: null
+          answeredAt: null,
         });
       }
     }
@@ -214,7 +214,7 @@ const getAllDailyResults = async (req, res) => {
       completedDays: varkTest.answers.length,
       overallCompleted: varkTest.completed,
       styleCounts: varkTest.styleCounts,
-      dominantStyle: varkTest.dominantStyle
+      dominantStyle: varkTest.dominantStyle,
     });
   } catch (error) {
     console.error('Error getting all daily results:', error);
@@ -226,7 +226,7 @@ const getAllDailyResults = async (req, res) => {
 const getUserVarkResult = async (req, res) => {
   try {
     const { userId } = req.params;
-    
+
     if (!userId) {
       return res.status(400).json({ message: 'User ID is required' });
     }
@@ -239,13 +239,13 @@ const getUserVarkResult = async (req, res) => {
 
     // Create a map of answered days
     const answeredDays = {};
-    varkTest.answers.forEach(answer => {
+    varkTest.answers.forEach((answer) => {
       const day = answer.questionIndex + 1;
       answeredDays[day] = {
         day,
         completed: true,
         selectedStyle: answer.selectedStyle,
-        answeredAt: answer.answeredAt || null
+        answeredAt: answer.answeredAt || null,
       };
     });
 
@@ -259,7 +259,7 @@ const getUserVarkResult = async (req, res) => {
           day,
           completed: false,
           selectedStyle: null,
-          answeredAt: null
+          answeredAt: null,
         });
       }
     }
@@ -272,7 +272,7 @@ const getUserVarkResult = async (req, res) => {
       overallCompleted: varkTest.completed,
       styleCounts: varkTest.styleCounts,
       dominantStyle: varkTest.dominantStyle,
-      completedAt: varkTest.completedAt
+      completedAt: varkTest.completedAt,
     });
   } catch (error) {
     console.error('Error getting user VARK result:', error);
@@ -315,7 +315,7 @@ const setUserVarkAnswer = async (req, res) => {
     const questionIndex = dayNum - 1;
 
     // Update or add answer
-    const existingIdx = varkTest.answers.findIndex(a => a.questionIndex === questionIndex);
+    const existingIdx = varkTest.answers.findIndex((a) => a.questionIndex === questionIndex);
     if (existingIdx >= 0) {
       // decrement old style count
       const oldStyle = varkTest.answers[existingIdx].selectedStyle;
@@ -334,13 +334,13 @@ const setUserVarkAnswer = async (req, res) => {
     const response = { userId, day: dayNum, saved: true };
 
     // Check completion (all 21 answered)
-    const uniqueAnswered = new Set(varkTest.answers.map(a => a.questionIndex));
+    const uniqueAnswered = new Set(varkTest.answers.map((a) => a.questionIndex));
     if (uniqueAnswered.size === 21) {
       varkTest.completed = true;
       varkTest.completedAt = new Date();
       // Compute dominant style
       const styles = Object.keys(varkTest.styleCounts);
-      varkTest.dominantStyle = styles.reduce((a, b) => 
+      varkTest.dominantStyle = styles.reduce((a, b) =>
         (varkTest.styleCounts[a] || 0) >= (varkTest.styleCounts[b] || 0) ? a : b
       );
       response.testCompleted = true;

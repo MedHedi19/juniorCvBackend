@@ -9,17 +9,17 @@ const sanitizeInput = (req, res, next) => {
     const sanitized = sanitizeObject(req.body);
     req.body = sanitized;
   }
-  
+
   if (req.params) {
     const sanitized = sanitizeObject(req.params);
     req.params = sanitized;
   }
-  
+
   if (req.query) {
     const sanitized = sanitizeObject(req.query);
     req.query = sanitized;
   }
-  
+
   next();
 };
 
@@ -32,13 +32,13 @@ const sanitizeObject = (obj) => {
   if (!obj || typeof obj !== 'object') {
     return obj;
   }
-  
+
   const result = Array.isArray(obj) ? [] : {};
-  
+
   for (const key in obj) {
     if (Object.prototype.hasOwnProperty.call(obj, key)) {
       const value = obj[key];
-      
+
       if (typeof value === 'string') {
         // Skip password fields from sanitization
         if (key === 'password' || key === 'newPassword' || key === 'confirmPassword') {
@@ -56,7 +56,7 @@ const sanitizeObject = (obj) => {
       }
     }
   }
-  
+
   return result;
 };
 

@@ -1,10 +1,10 @@
 const express = require('express');
-const { 
-    applyToJob,
-    getUserApplications,
-    getApplicationStatistics,
-    updateApplicationStatus,
-    withdrawApplication
+const {
+  applyToJob,
+  getUserApplications,
+  getApplicationStatistics,
+  updateApplicationStatus,
+  withdrawApplication,
 } = require('../controllers/jobApplicationController');
 const { authMiddleware } = require('../middleware/authMiddleware');
 

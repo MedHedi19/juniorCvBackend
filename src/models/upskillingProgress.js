@@ -1,102 +1,107 @@
 const mongoose = require('mongoose');
 
-const upskillingProgressSchema = new mongoose.Schema({
+const upskillingProgressSchema = new mongoose.Schema(
+  {
     userId: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User',
-        required: true,
-        unique: true
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User',
+      required: true,
+      unique: true,
     },
     personalityColor: {
-        type: String,
-        enum: ['rouge', 'jaune', 'vert', 'bleu'],
-        required: true
+      type: String,
+      enum: ['rouge', 'jaune', 'vert', 'bleu'],
+      required: true,
     },
-    challenges: [{
+    challenges: [
+      {
         day: {
-            type: Number,
-            required: true,
-            min: 1,
-            max: 21
+          type: Number,
+          required: true,
+          min: 1,
+          max: 21,
         },
         completed: {
-            type: Boolean,
-            default: false
+          type: Boolean,
+          default: false,
         },
         completedAt: {
-            type: Date
+          type: Date,
         },
         notes: {
-            type: String,
-            default: ''
+          type: String,
+          default: '',
         },
         // Media submission fields
         submission: {
-            type: {
-                type: String,
-                enum: ['text', 'audio', 'video', 'none'],
-                default: 'none'
-            },
-            textContent: {
-                type: String
-            },
-            mediaUrl: {
-                type: String
-            },
-            mediaType: {
-                type: String // e.g., 'audio/mp3', 'video/mp4'
-            },
-            uploadedAt: {
-                type: Date
-            }
-        }
-    }],
+          type: {
+            type: String,
+            enum: ['text', 'audio', 'video', 'none'],
+            default: 'none',
+          },
+          textContent: {
+            type: String,
+          },
+          mediaUrl: {
+            type: String,
+          },
+          mediaType: {
+            type: String, // e.g., 'audio/mp3', 'video/mp4'
+          },
+          uploadedAt: {
+            type: Date,
+          },
+        },
+      },
+    ],
     startedAt: {
-        type: Date,
-        default: Date.now
+      type: Date,
+      default: Date.now,
     },
     lastAccessedDay: {
-        type: Number,
-        default: 0
+      type: Number,
+      default: 0,
     },
     completedAt: {
-        type: Date
+      type: Date,
     },
     currentStreak: {
-        type: Number,
-        default: 0
-    }
-}, {
-    timestamps: true
-});
+      type: Number,
+      default: 0,
+    },
+  },
+  {
+    timestamps: true,
+  }
+);
 
 // Ensure one upskilling progress document per user
 upskillingProgressSchema.index({ userId: 1 }, { unique: true });
 
 // Virtual for total completed challenges
 upskillingProgressSchema.virtual('totalCompleted').get(function () {
-    return this.challenges.filter(c => c.completed).length;
+  return this.challenges.filter((c) => c.completed).length;
 });
 
 // Virtual for progress percentage
 upskillingProgressSchema.virtual('progressPercentage').get(function () {
-    return Math.round((this.totalCompleted / 21) * 100);
+  return Math.round((this.totalCompleted / 21) * 100);
 });
 
 // Virtual for remaining challenges
 upskillingProgressSchema.virtual('remainingChallenges').get(function () {
-    return 21 - this.totalCompleted;
+  return 21 - this.totalCompleted;
 });
 
 // Method to check if all challenges are completed
 upskillingProgressSchema.methods.isFullyCompleted = function () {
-    return this.challenges.filter(c => c.completed).length === 21;
+  return this.challenges.filter((c) => c.completed).length === 21;
 };
 
 // Method to get next uncompleted challenge
 upskillingProgressSchema.methods.getNextChallenge = function () {
-    const uncompletedChallenge = this.challenges.find(c => !c.completed);
-    return uncompletedChallenge ? uncompletedChallenge.day : null;
+  const uncompletedChallenge = this.challenges.find((c) => !c.completed);
+  return uncompletedChallenge ? uncompletedChallenge.day : null;
 };
 
 // Ensure virtuals are included in JSON

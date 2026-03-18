@@ -16,36 +16,36 @@ function debugToFile(message) {
 // Route to check if emails can be sent
 router.post('/test-email', async (req, res) => {
   const { email, firstName } = req.body;
-  
+
   if (!email) {
     return res.status(400).json({ message: 'Email is required' });
   }
-  
+
   try {
     debugToFile(`DIAGNOSTIC: test-email endpoint called for ${email}`);
     console.log(`DIAGNOSTIC: test-email endpoint called for ${email}`);
-    
+
     // Try to send the email
     const result = await sendWelcomeEmail(email, firstName || 'Test User');
-    
+
     // Log the result
     debugToFile(`DIAGNOSTIC: Email result - ${JSON.stringify(result)}`);
     console.log(`DIAGNOSTIC: Email result - ${JSON.stringify(result)}`);
-    
+
     return res.status(200).json({
       message: result.success ? 'Email sent successfully' : 'Email sending failed',
       emailSent: result.success,
-      details: result
+      details: result,
     });
   } catch (error) {
     debugToFile(`DIAGNOSTIC ERROR: ${error.message}`);
     debugToFile(`DIAGNOSTIC STACK: ${error.stack}`);
     console.error('DIAGNOSTIC ERROR:', error);
-    
+
     return res.status(500).json({
       message: 'Error sending test email',
       error: error.message,
-      stack: process.env.NODE_ENV === 'production' ? null : error.stack
+      stack: process.env.NODE_ENV === 'production' ? null : error.stack,
     });
   }
 });
@@ -59,12 +59,12 @@ router.get('/env-check', (req, res) => {
     EMAIL_HOST: process.env.EMAIL_HOST || 'not set',
     EMAIL_PORT: process.env.EMAIL_PORT || 'not set',
     EMAIL_PASS_SET: process.env.EMAIL_PASS ? true : false,
-    EMAIL_PASS_LENGTH: process.env.EMAIL_PASS ? process.env.EMAIL_PASS.length : 0
+    EMAIL_PASS_LENGTH: process.env.EMAIL_PASS ? process.env.EMAIL_PASS.length : 0,
   };
-  
+
   debugToFile(`DIAGNOSTIC: env-check endpoint called, result: ${JSON.stringify(envInfo)}`);
   console.log('DIAGNOSTIC: env-check endpoint called');
-  
+
   return res.status(200).json(envInfo);
 });
 

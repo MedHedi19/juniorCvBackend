@@ -3,148 +3,154 @@ const cheerio = require('cheerio');
 const axios = require('axios');
 
 class JobScraper {
-    constructor() {
-        this.userAgents = [
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-        ];
-    }
+  constructor() {
+    this.userAgents = [
+      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+      'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+      'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+    ];
+  }
 
-    getRandomUserAgent() {
-        return this.userAgents[Math.floor(Math.random() * this.userAgents.length)];
-    }
+  getRandomUserAgent() {
+    return this.userAgents[Math.floor(Math.random() * this.userAgents.length)];
+  }
 
-    async delay(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-    }
+  async delay(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
 
-    async scrapeLinkedInJobs(searchTerm, location = 'Tunisia', maxJobs = 10) {
-        let browser;
-        try {
-            console.log('[LinkedIn] Launching Puppeteer...');
-            browser = await puppeteer.launch({
-                headless: true,
-                args: ['--no-sandbox', '--disable-setuid-sandbox']
+  async scrapeLinkedInJobs(searchTerm, location = 'Tunisia', maxJobs = 10) {
+    let browser;
+    try {
+      console.log('[LinkedIn] Launching Puppeteer...');
+      browser = await puppeteer.launch({
+        headless: true,
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+      });
+
+      const page = await browser.newPage();
+      const userAgent = this.getRandomUserAgent();
+      await page.setUserAgent(userAgent);
+      console.log(`[LinkedIn] Using user agent: ${userAgent}`);
+
+      // LinkedIn job search URL
+      const searchUrl = `https://www.linkedin.com/jobs/search/?keywords=${encodeURIComponent(searchTerm)}&location=${encodeURIComponent(location)}`;
+      console.log(`[LinkedIn] Navigating to: ${searchUrl}`);
+      await page.goto(searchUrl, { waitUntil: 'networkidle2' });
+
+      // Wait for job listings to load
+      await page.waitForSelector('.base-search-card', { timeout: 10000 });
+      console.log('[LinkedIn] Job cards loaded. Extracting data...');
+
+      // Extract job data
+      const jobs = await page.evaluate((maxJobs) => {
+        /* global document */
+        const jobCards = document.querySelectorAll('.base-search-card');
+        const jobData = [];
+        for (let i = 0; i < Math.min(jobCards.length, maxJobs); i++) {
+          const card = jobCards[i];
+          const titleElement = card.querySelector('.base-search-card__title');
+          const companyElement = card.querySelector('.base-search-card__subtitle');
+          const locationElement = card.querySelector('.job-search-card__location');
+          const linkElement = card.querySelector('.base-card__full-link');
+          const timeElement = card.querySelector('time');
+          if (titleElement && companyElement) {
+            jobData.push({
+              title: titleElement.textContent.trim(),
+              company: companyElement.textContent.trim(),
+              location: locationElement ? locationElement.textContent.trim() : '',
+              link: linkElement ? linkElement.href : '',
+              postedTime: timeElement ? timeElement.textContent.trim() : '',
+              source: 'LinkedIn',
             });
-
-            const page = await browser.newPage();
-            const userAgent = this.getRandomUserAgent();
-            await page.setUserAgent(userAgent);
-            console.log(`[LinkedIn] Using user agent: ${userAgent}`);
-
-            // LinkedIn job search URL
-            const searchUrl = `https://www.linkedin.com/jobs/search/?keywords=${encodeURIComponent(searchTerm)}&location=${encodeURIComponent(location)}`;
-            console.log(`[LinkedIn] Navigating to: ${searchUrl}`);
-            await page.goto(searchUrl, { waitUntil: 'networkidle2' });
-
-            // Wait for job listings to load
-            await page.waitForSelector('.base-search-card', { timeout: 10000 });
-            console.log('[LinkedIn] Job cards loaded. Extracting data...');
-
-            // Extract job data
-            const jobs = await page.evaluate((maxJobs) => {
-                const jobCards = document.querySelectorAll('.base-search-card');
-                const jobData = [];
-                for (let i = 0; i < Math.min(jobCards.length, maxJobs); i++) {
-                    const card = jobCards[i];
-                    const titleElement = card.querySelector('.base-search-card__title');
-                    const companyElement = card.querySelector('.base-search-card__subtitle');
-                    const locationElement = card.querySelector('.job-search-card__location');
-                    const linkElement = card.querySelector('.base-card__full-link');
-                    const timeElement = card.querySelector('time');
-                    if (titleElement && companyElement) {
-                        jobData.push({
-                            title: titleElement.textContent.trim(),
-                            company: companyElement.textContent.trim(),
-                            location: locationElement ? locationElement.textContent.trim() : '',
-                            link: linkElement ? linkElement.href : '',
-                            postedTime: timeElement ? timeElement.textContent.trim() : '',
-                            source: 'LinkedIn'
-                        });
-                    }
-                }
-                return jobData;
-            }, maxJobs);
-            console.log(`[LinkedIn] Extracted ${jobs.length} jobs.`);
-            return jobs;
-        } catch (error) {
-            console.error('[LinkedIn] Scraping error:', error);
-            return [];
-        } finally {
-            if (browser) {
-                await browser.close();
-                console.log('[LinkedIn] Browser closed.');
-            }
+          }
         }
+        return jobData;
+      }, maxJobs);
+      console.log(`[LinkedIn] Extracted ${jobs.length} jobs.`);
+      return jobs;
+    } catch (error) {
+      console.error('[LinkedIn] Scraping error:', error);
+      return [];
+    } finally {
+      if (browser) {
+        await browser.close();
+        console.log('[LinkedIn] Browser closed.');
+      }
     }
+  }
 
-    async scrapeTanitJobs(searchTerm, maxJobs = 10) {
-        try {
-            console.log(`[TanitJobs] Scraping for: ${searchTerm}`);
-            const userAgent = this.getRandomUserAgent();
-            console.log(`[TanitJobs] Using user agent: ${userAgent}`);
-            const response = await axios.get('https://www.tanitjobs.com/emploi/', {
-                headers: {
-                    'User-Agent': userAgent
-                },
-                params: {
-                    q: searchTerm
-                }
-            });
-            console.log(`[TanitJobs] HTTP status: ${response.status}`);
-            const $ = cheerio.load(response.data);
-            const jobs = [];
-            $('.job-item, .job-listing, .offer-item').each((index, element) => {
-                if (index >= maxJobs) return false;
-                const $element = $(element);
-                const title = $element.find('.job-title, .offer-title, h3 a, h2 a').first().text().trim();
-                const company = $element.find('.company-name, .company, .employer').first().text().trim();
-                const location = $element.find('.location, .job-location').first().text().trim();
-                const link = $element.find('a').first().attr('href');
-                const postedTime = $element.find('.date, .posted-date, .time').first().text().trim();
-                if (title && company) {
-                    jobs.push({
-                        title,
-                        company,
-                        location,
-                        link: link ? (link.startsWith('http') ? link : `https://www.tanitjobs.com${link}`) : '',
-                        postedTime,
-                        source: 'TanitJobs'
-                    });
-                }
-            });
-            console.log(`[TanitJobs] Extracted ${jobs.length} jobs.`);
-            return jobs;
-        } catch (error) {
-            console.error('[TanitJobs] Scraping error:', error);
-            return [];
+  async scrapeTanitJobs(searchTerm, maxJobs = 10) {
+    try {
+      console.log(`[TanitJobs] Scraping for: ${searchTerm}`);
+      const userAgent = this.getRandomUserAgent();
+      console.log(`[TanitJobs] Using user agent: ${userAgent}`);
+      const response = await axios.get('https://www.tanitjobs.com/emploi/', {
+        headers: {
+          'User-Agent': userAgent,
+        },
+        params: {
+          q: searchTerm,
+        },
+      });
+      console.log(`[TanitJobs] HTTP status: ${response.status}`);
+      const $ = cheerio.load(response.data);
+      const jobs = [];
+      $('.job-item, .job-listing, .offer-item').each((index, element) => {
+        if (index >= maxJobs) return false;
+        const $element = $(element);
+        const title = $element.find('.job-title, .offer-title, h3 a, h2 a').first().text().trim();
+        const company = $element.find('.company-name, .company, .employer').first().text().trim();
+        const location = $element.find('.location, .job-location').first().text().trim();
+        const link = $element.find('a').first().attr('href');
+        const postedTime = $element.find('.date, .posted-date, .time').first().text().trim();
+        if (title && company) {
+          jobs.push({
+            title,
+            company,
+            location,
+            link: link ? (link.startsWith('http') ? link : `https://www.tanitjobs.com${link}`) : '',
+            postedTime,
+            source: 'TanitJobs',
+          });
         }
+      });
+      console.log(`[TanitJobs] Extracted ${jobs.length} jobs.`);
+      return jobs;
+    } catch (error) {
+      console.error('[TanitJobs] Scraping error:', error);
+      return [];
     }
+  }
 
-    async scrapeAllJobs(searchTerm, location = 'Tunisia', maxJobsPerSite = 10) {
-        console.log(`[Scraper] Starting job scraping for: ${searchTerm}, location: ${location}, maxJobsPerSite: ${maxJobsPerSite}`);
-        const [linkedInJobs, tanitJobs] = await Promise.allSettled([
-            this.scrapeLinkedInJobs(searchTerm, location, maxJobsPerSite),
-            this.scrapeTanitJobs(searchTerm, maxJobsPerSite)
-        ]);
-        if (linkedInJobs.status === 'rejected') {
-            console.error('[Scraper] LinkedIn scraper failed:', linkedInJobs.reason);
-        }
-        if (tanitJobs.status === 'rejected') {
-            console.error('[Scraper] TanitJobs scraper failed:', tanitJobs.reason);
-        }
-        const allJobs = [
-            ...(linkedInJobs.status === 'fulfilled' ? linkedInJobs.value : []),
-            ...(tanitJobs.status === 'fulfilled' ? tanitJobs.value : [])
-        ];
-        // Remove duplicates based on title and company
-        const uniqueJobs = allJobs.filter((job, index, self) => 
-            index === self.findIndex(j => j.title === job.title && j.company === job.company)
-        );
-        console.log(`[Scraper] Found ${uniqueJobs.length} unique jobs (LinkedIn: ${linkedInJobs.status === 'fulfilled' ? linkedInJobs.value.length : 0}, TanitJobs: ${tanitJobs.status === 'fulfilled' ? tanitJobs.value.length : 0})`);
-        return uniqueJobs;
+  async scrapeAllJobs(searchTerm, location = 'Tunisia', maxJobsPerSite = 10) {
+    console.log(
+      `[Scraper] Starting job scraping for: ${searchTerm}, location: ${location}, maxJobsPerSite: ${maxJobsPerSite}`
+    );
+    const [linkedInJobs, tanitJobs] = await Promise.allSettled([
+      this.scrapeLinkedInJobs(searchTerm, location, maxJobsPerSite),
+      this.scrapeTanitJobs(searchTerm, maxJobsPerSite),
+    ]);
+    if (linkedInJobs.status === 'rejected') {
+      console.error('[Scraper] LinkedIn scraper failed:', linkedInJobs.reason);
     }
+    if (tanitJobs.status === 'rejected') {
+      console.error('[Scraper] TanitJobs scraper failed:', tanitJobs.reason);
+    }
+    const allJobs = [
+      ...(linkedInJobs.status === 'fulfilled' ? linkedInJobs.value : []),
+      ...(tanitJobs.status === 'fulfilled' ? tanitJobs.value : []),
+    ];
+    // Remove duplicates based on title and company
+    const uniqueJobs = allJobs.filter(
+      (job, index, self) =>
+        index === self.findIndex((j) => j.title === job.title && j.company === job.company)
+    );
+    console.log(
+      `[Scraper] Found ${uniqueJobs.length} unique jobs (LinkedIn: ${linkedInJobs.status === 'fulfilled' ? linkedInJobs.value.length : 0}, TanitJobs: ${tanitJobs.status === 'fulfilled' ? tanitJobs.value.length : 0})`
+    );
+    return uniqueJobs;
+  }
 }
 
 module.exports = JobScraper;

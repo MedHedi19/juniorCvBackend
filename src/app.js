@@ -24,11 +24,11 @@ require('./config/passport')(app);
 
 // CORS Configuration - More permissive for development
 const corsOptions = {
-    origin: true, // Allow all origins during development
-    credentials: true,
-    optionsSuccessStatus: 200,
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
+  origin: true, // Allow all origins during development
+  credentials: true,
+  optionsSuccessStatus: 200,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
 };
 
 // Middleware
@@ -37,44 +37,46 @@ app.use(bodyParser.json({ limit: '10mb' })); // Reduced limit since no file uplo
 app.use(bodyParser.urlencoded({ extended: true, limit: '10mb' }));
 
 // Session middleware - required for Facebook data deletion API
-app.use(session({
+app.use(
+  session({
     secret: process.env.JWT_SECRET || 'your-secret-key',
     resave: false,
     saveUninitialized: false,
-    cookie: { 
-        secure: process.env.NODE_ENV === 'production',
-        maxAge: 24 * 60 * 60 * 1000 // 24 hours
-    }
-}));
+    cookie: {
+      secure: process.env.NODE_ENV === 'production',
+      maxAge: 24 * 60 * 60 * 1000, // 24 hours
+    },
+  })
+);
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
-    res.json({ 
-        status: 'ok', 
-        timestamp: new Date().toISOString(),
-        environment: process.env.NODE_ENV || 'development',
-        auth: {
-            googleAuth: !!process.env.GOOGLE_CLIENT_ID,
-            facebookAuth: !!process.env.FACEBOOK_APP_ID,
-            linkedinAuth: !!process.env.LINKEDIN_CLIENT_ID
-        },
-        baseUrl: process.env.BASE_URL
-    });
+  res.json({
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+    environment: process.env.NODE_ENV || 'development',
+    auth: {
+      googleAuth: !!process.env.GOOGLE_CLIENT_ID,
+      facebookAuth: !!process.env.FACEBOOK_APP_ID,
+      linkedinAuth: !!process.env.LINKEDIN_CLIENT_ID,
+    },
+    baseUrl: process.env.BASE_URL,
+  });
 });
 
 // Facebook Data Deletion endpoint at root level
 app.get('/fb-deletion', (req, res) => {
-    res.status(200).json({
-        url_confirmation: "success",
-        confirmation_code: process.env.FACEBOOK_CONFIRMATION_CODE || "1234567890"
-    });
+  res.status(200).json({
+    url_confirmation: 'success',
+    confirmation_code: process.env.FACEBOOK_CONFIRMATION_CODE || '1234567890',
+  });
 });
 
 app.post('/fb-deletion', (req, res) => {
-    res.status(200).json({
-        url_confirmation: "success",
-        confirmation_code: process.env.FACEBOOK_CONFIRMATION_CODE || "1234567890"
-    });
+  res.status(200).json({
+    url_confirmation: 'success',
+    confirmation_code: process.env.FACEBOOK_CONFIRMATION_CODE || '1234567890',
+  });
 });
 
 // Serve static files from public folder
@@ -87,36 +89,36 @@ dbConfig();
 
 // Simple health check for UptimeRobot (no DB check for speed)
 app.get('/health', (req, res) => {
-    res.status(200).json({ 
-        status: 'ok',
-        timestamp: new Date().toISOString()
-    });
+  res.status(200).json({
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+  });
 });
 
 // Root route for health check
 app.get('/', (req, res) => {
-    res.status(200).json({ 
-        message: 'Junior CV Backend API is running successfully!', 
-        version: '1.0.2',
-        timestamp: new Date().toISOString(),
-        endpoints: {
-            auth: '/auth',
-            profile: '/profile',
-            quiz: '/quiz',
-            personality: '/personality',
-            jobs: '/jobs',
-            applications: '/applications',
-            certification: '/certification',
-            challenges: '/challenges',
-            accountDeletion: '/account-deletion'
-        }
-    });
+  res.status(200).json({
+    message: 'Junior CV Backend API is running successfully!',
+    version: '1.0.2',
+    timestamp: new Date().toISOString(),
+    endpoints: {
+      auth: '/auth',
+      profile: '/profile',
+      quiz: '/quiz',
+      personality: '/personality',
+      jobs: '/jobs',
+      applications: '/applications',
+      certification: '/certification',
+      challenges: '/challenges',
+      accountDeletion: '/account-deletion',
+    },
+  });
 });
 
 // GET handler for browser access to delete-account endpoint
 // Redirects to the public deletion request page (Google Play compliance)
 app.get('/auth/delete-account', (req, res) => {
-    res.redirect('/account-deletion');
+  res.redirect('/account-deletion');
 });
 
 // Routes

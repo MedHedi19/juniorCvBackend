@@ -1,5 +1,13 @@
 const express = require('express');
-const { register, login, forgotPassword, resetPassword, refreshToken, logout, deleteAccount } = require('../controllers/authController');
+const {
+  register,
+  login,
+  forgotPassword,
+  resetPassword,
+  refreshToken,
+  logout,
+  deleteAccount,
+} = require('../controllers/authController');
 const { authMiddleware } = require('../middleware/authMiddleware');
 const socialAuthRoutes = require('./socialAuth');
 const router = express.Router();

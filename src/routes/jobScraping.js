@@ -1,9 +1,9 @@
 const express = require('express');
-const { 
-    scrapeAndSaveJobs, 
-    getScrapedJobs, 
-    getJobStatistics, 
-    cleanupOldJobs 
+const {
+  scrapeAndSaveJobs,
+  getScrapedJobs,
+  getJobStatistics,
+  cleanupOldJobs,
 } = require('../controllers/jobScrapingController');
 const { authMiddleware } = require('../middleware/authMiddleware');
 

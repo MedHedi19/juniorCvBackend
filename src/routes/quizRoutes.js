@@ -1,10 +1,10 @@
 const express = require('express');
 const {
-    getQuizzes,
-    startQuiz,
-    submitAnswer,
-    getQuizResult,
-    resetQuiz
+  getQuizzes,
+  startQuiz,
+  submitAnswer,
+  getQuizResult,
+  resetQuiz,
 } = require('../controllers/quizController');
 const { authMiddleware } = require('../middleware/authMiddleware');
 

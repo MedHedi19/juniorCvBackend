@@ -10,7 +10,7 @@ router.get('/data-deletion', (req, res) => {
   // Return a confirmation code for Facebook verification
   res.status(200).json({
     confirmation_code: 'URL_VERIFICATION_SUCCESSFUL',
-    message: 'This endpoint is properly configured for Facebook data deletion requests'
+    message: 'This endpoint is properly configured for Facebook data deletion requests',
   });
 });
 

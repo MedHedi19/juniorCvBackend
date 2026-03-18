@@ -23,3 +23,20 @@ email-*.log
 # Optional: OS-specific files
 .DS_Store
 Thumbs.db
+
+# Generated security/lint/audit artifacts
+audit-readable.txt
+audit-report.txt
+audit.json
+security-scan.txt
+
+# Generated lint and analysis outputs
+eslint-errors.txt
+eslint-results.json
+eslint-sec.json
+lint-results.txt
+results.json
+summary.json
+remaining.json
+final_errors.json
+final_errors2.json

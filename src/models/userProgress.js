@@ -1,53 +1,61 @@
 const mongoose = require('mongoose');
 
-const userProgressSchema = new mongoose.Schema({
+const userProgressSchema = new mongoose.Schema(
+  {
     userId: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User',
-        required: true
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User',
+      required: true,
     },
-    quizProgress: [{
+    quizProgress: [
+      {
         quizName: {
-            type: String,
-            required: true
+          type: String,
+          required: true,
         },
         completed: {
-            type: Boolean,
-            default: false
+          type: Boolean,
+          default: false,
         },
         score: {
-            type: Number,
-            default: 0
+          type: Number,
+          default: 0,
         },
         totalQuestions: {
-            type: Number,
-            default: 10
+          type: Number,
+          default: 10,
         },
         percentage: {
-            type: Number,
-            default: 0
+          type: Number,
+          default: 0,
         },
         completedAt: {
-            type: Date
+          type: Date,
         },
-        selectedQuestions: [{
-            type: Number
-        }],
-        answers: [{
+        selectedQuestions: [
+          {
+            type: Number,
+          },
+        ],
+        answers: [
+          {
             questionIndex: Number,
             selectedAnswer: String,
-            isCorrect: Boolean
-        }]
-    }],
+            isCorrect: Boolean,
+          },
+        ],
+      },
+    ],
     currentQuizIndex: {
-        type: Number,
-        default: 0
-    }
-}, { timestamps: true });
+      type: Number,
+      default: 0,
+    },
+  },
+  { timestamps: true }
+);
 
 // Ensure one progress document per user
 userProgressSchema.index({ userId: 1 }, { unique: true });
 
 const UserProgress = mongoose.model('UserProgress', userProgressSchema);
 module.exports = UserProgress;
-

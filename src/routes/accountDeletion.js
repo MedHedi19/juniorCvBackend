@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const { 
-    serveAccountDeletionPage, 
-    requestAccountDeletion, 
-    confirmAccountDeletion 
+const {
+  serveAccountDeletionPage,
+  requestAccountDeletion,
+  confirmAccountDeletion,
 } = require('../controllers/accountDeletionController');
 
 // =====================================================

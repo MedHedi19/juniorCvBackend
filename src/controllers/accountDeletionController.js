@@ -13,7 +13,7 @@ const path = require('path');
  * This page is accessible without authentication (required by Google Play)
  */
 const serveAccountDeletionPage = (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/account-deletion.html'));
+  res.sendFile(path.join(__dirname, '../public/account-deletion.html'));
 };
 
 /**
@@ -21,71 +21,69 @@ const serveAccountDeletionPage = (req, res) => {
  * Sends a confirmation email with a secure token
  */
 const requestAccountDeletion = async (req, res) => {
-    try {
-        const { email } = req.body;
+  try {
+    const { email } = req.body;
 
-        if (!email) {
-            return res.status(400).json({ 
-                success: false,
-                message: 'Adresse email requise' 
-            });
-        }
-
-        // Normalize email
-        const normalizedEmail = email.toLowerCase().trim();
-
-        // Find user by email
-        const user = await User.findOne({ email: normalizedEmail });
-
-        // Return error if user not found
-        if (!user) {
-            return res.status(404).json({ 
-                success: false,
-                message: 'Aucun compte trouvé avec cet email'
-            });
-        }
-
-        // Generate secure deletion token
-        const deletionToken = crypto.randomBytes(32).toString('hex');
-        const deletionTokenExpires = new Date(Date.now() + 48 * 60 * 60 * 1000); // 48 hours
-
-        // Save token to user
-        user.deletionToken = deletionToken;
-        user.deletionTokenExpires = deletionTokenExpires;
-        await user.save();
-
-        // Generate confirmation URL
-        const baseUrl = process.env.BASE_URL || 'https://juniorcvbackend-mxog.onrender.com';
-        const confirmationUrl = `${baseUrl}/account-deletion/confirm?token=${deletionToken}`;
-
-        // Send confirmation email
-        try {
-            await sendAccountDeletionEmail(
-                user.email, 
-                user.firstName || 'Utilisateur', 
-                confirmationUrl
-            );
-            console.log(`✅ Account deletion email sent to ${user.email}`);
-        } catch (emailError) {
-            console.error(`❌ Failed to send deletion email to ${user.email}:`, emailError.message);
-            return res.status(500).json({
-                success: false,
-                message: 'Erreur lors de l\'envoi de l\'email. Veuillez réessayer.'
-            });
-        }
-
-        res.status(200).json({ 
-            success: true,
-            message: 'Un email de confirmation a été envoyé à ' + normalizedEmail + '. Vérifiez votre boîte de réception et vos spams.'
-        });
-
-    } catch (error) {
-        console.error('Error in requestAccountDeletion:', error);
-        res.status(500).json({ 
-            success: false,
-            message: 'Une erreur est survenue. Veuillez réessayer plus tard.' 
-        });
+    if (!email) {
+      return res.status(400).json({
+        success: false,
+        message: 'Adresse email requise',
+      });
     }
+
+    // Normalize email
+    const normalizedEmail = email.toLowerCase().trim();
+
+    // Find user by email
+    const user = await User.findOne({ email: normalizedEmail });
+
+    // Return error if user not found
+    if (!user) {
+      return res.status(404).json({
+        success: false,
+        message: 'Aucun compte trouvé avec cet email',
+      });
+    }
+
+    // Generate secure deletion token
+    const deletionToken = crypto.randomBytes(32).toString('hex');
+    const deletionTokenExpires = new Date(Date.now() + 48 * 60 * 60 * 1000); // 48 hours
+
+    // Save token to user
+    user.deletionToken = deletionToken;
+    user.deletionTokenExpires = deletionTokenExpires;
+    await user.save();
+
+    // Generate confirmation URL
+    const baseUrl = process.env.BASE_URL || 'https://juniorcvbackend-mxog.onrender.com';
+    const confirmationUrl = `${baseUrl}/account-deletion/confirm?token=${deletionToken}`;
+
+    // Send confirmation email
+    try {
+      await sendAccountDeletionEmail(user.email, user.firstName || 'Utilisateur', confirmationUrl);
+      console.log(`✅ Account deletion email sent to ${user.email}`);
+    } catch (emailError) {
+      console.error(`❌ Failed to send deletion email to ${user.email}:`, emailError.message);
+      return res.status(500).json({
+        success: false,
+        message: "Erreur lors de l'envoi de l'email. Veuillez réessayer.",
+      });
+    }
+
+    res.status(200).json({
+      success: true,
+      message:
+        'Un email de confirmation a été envoyé à ' +
+        normalizedEmail +
+        '. Vérifiez votre boîte de réception et vos spams.',
+    });
+  } catch (error) {
+    console.error('Error in requestAccountDeletion:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Une erreur est survenue. Veuillez réessayer plus tard.',
+    });
+  }
 };
 
 /**
@@ -93,78 +91,93 @@ const requestAccountDeletion = async (req, res) => {
  * Called when user clicks the link in the confirmation email
  */
 const confirmAccountDeletion = async (req, res) => {
-    try {
-        const { token } = req.query;
+  try {
+    const { token } = req.query;
 
-        if (!token) {
-            return res.status(400).send(generateResultPage(
-                'error',
-                'Lien invalide',
-                'Le lien de suppression est invalide ou a expiré.'
-            ));
-        }
-
-        // Find user with valid deletion token
-        const user = await User.findOne({
-            deletionToken: token,
-            deletionTokenExpires: { $gt: new Date() }
-        });
-
-        if (!user) {
-            return res.status(400).send(generateResultPage(
-                'error',
-                'Lien expiré',
-                'Ce lien de suppression est invalide ou a expiré. Veuillez faire une nouvelle demande.'
-            ));
-        }
-
-        const userId = user._id;
-        const userEmail = user.email;
-        const userName = user.firstName || 'Utilisateur';
-
-        // Delete all user-related data
-        await Promise.all([
-            // Delete job applications
-            JobApplication.deleteMany({ userId }),
-            // Delete personality test results
-            PersonalityTest.deleteOne({ userId }),
-            // Delete upskilling progress
-            UpskillingProgress.deleteOne({ userId }),
-            // Delete user progress (quizzes)
-            UserProgress.deleteOne({ userId }),
-            // Delete VARK test results
-            VarkTest.deleteOne({ userId }),
-            // Delete the user account
-            User.findByIdAndDelete(userId)
-        ]);
-
-        console.log(`✅ Account deleted successfully: ${userEmail}`);
-
-        res.status(200).send(generateResultPage(
-            'success',
-            'Compte supprimé',
-            `Votre compte (${userEmail}) et toutes les données associées ont été supprimés avec succès.`
-        ));
-
-    } catch (error) {
-        console.error('Error in confirmAccountDeletion:', error);
-        res.status(500).send(generateResultPage(
+    if (!token) {
+      return res
+        .status(400)
+        .send(
+          generateResultPage(
             'error',
-            'Erreur',
-            'Une erreur est survenue lors de la suppression. Veuillez réessayer ou contacter le support.'
-        ));
+            'Lien invalide',
+            'Le lien de suppression est invalide ou a expiré.'
+          )
+        );
     }
+
+    // Find user with valid deletion token
+    const user = await User.findOne({
+      deletionToken: token,
+      deletionTokenExpires: { $gt: new Date() },
+    });
+
+    if (!user) {
+      return res
+        .status(400)
+        .send(
+          generateResultPage(
+            'error',
+            'Lien expiré',
+            'Ce lien de suppression est invalide ou a expiré. Veuillez faire une nouvelle demande.'
+          )
+        );
+    }
+
+    const userId = user._id;
+    const userEmail = user.email;
+    const userName = user.firstName || 'Utilisateur';
+
+    // Delete all user-related data
+    await Promise.all([
+      // Delete job applications
+      JobApplication.deleteMany({ userId }),
+      // Delete personality test results
+      PersonalityTest.deleteOne({ userId }),
+      // Delete upskilling progress
+      UpskillingProgress.deleteOne({ userId }),
+      // Delete user progress (quizzes)
+      UserProgress.deleteOne({ userId }),
+      // Delete VARK test results
+      VarkTest.deleteOne({ userId }),
+      // Delete the user account
+      User.findByIdAndDelete(userId),
+    ]);
+
+    console.log(`✅ Account deleted successfully: ${userEmail}`);
+
+    res
+      .status(200)
+      .send(
+        generateResultPage(
+          'success',
+          'Compte supprimé',
+          `Votre compte (${userEmail}) et toutes les données associées ont été supprimés avec succès.`
+        )
+      );
+  } catch (error) {
+    console.error('Error in confirmAccountDeletion:', error);
+    res
+      .status(500)
+      .send(
+        generateResultPage(
+          'error',
+          'Erreur',
+          'Une erreur est survenue lors de la suppression. Veuillez réessayer ou contacter le support.'
+        )
+      );
+  }
 };
 
 /**
  * Generate HTML result page
  */
 function generateResultPage(type, title, message) {
-    const isSuccess = type === 'success';
-    const icon = isSuccess ? '✅' : '❌';
-    const color = isSuccess ? '#28a745' : '#dc3545';
-    
-    return `
+  const isSuccess = type === 'success';
+  const icon = isSuccess ? '✅' : '❌';
+  const color = isSuccess ? '#28a745' : '#dc3545';
+
+  return `
     <!DOCTYPE html>
     <html lang="fr">
     <head>
@@ -252,7 +265,7 @@ function generateResultPage(type, title, message) {
 }
 
 module.exports = {
-    serveAccountDeletionPage,
-    requestAccountDeletion,
-    confirmAccountDeletion
+  serveAccountDeletionPage,
+  requestAccountDeletion,
+  confirmAccountDeletion,
 };

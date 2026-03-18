@@ -43,7 +43,7 @@ async function generateCertificate(userName) {
 
   firstPage.drawText(nameText, {
     x: nameX,
-    y: nameY-20,
+    y: nameY - 20,
     size: fontSize,
     font: helvetica,
     color: rgb(0.0, 0.0, 0.0),
@@ -51,7 +51,7 @@ async function generateCertificate(userName) {
 
   firstPage.drawText(dateText, {
     x: dateX,
-    y: dateY-30,
+    y: dateY - 30,
     size: 12,
     font: helvetica,
     color: rgb(0.0, 0.0, 0.0),
@@ -70,14 +70,14 @@ async function generateCertificateImage(userName) {
   try {
     // First generate the PDF
     const pdfBuffer = await generateCertificate(userName);
-    
+
     // Convert PDF to PNG
     const pngPages = await pdfToPng(pdfBuffer, {
       outputType: 'buffer',
       viewportScale: 2.0, // Higher quality for social media
-      quality: 100
+      quality: 100,
     });
-    
+
     // Return the first page as PNG buffer
     if (pngPages && pngPages.length > 0) {
       return pngPages[0].content;
@@ -90,7 +90,7 @@ async function generateCertificateImage(userName) {
   }
 }
 
-module.exports = { 
+module.exports = {
   generateCertificate,
-  generateCertificateImage
+  generateCertificateImage,
 };

@@ -1,9 +1,9 @@
 const express = require('express');
 const {
-    startPersonalityTest,
-    submitPersonalityAnswer,
-    getPersonalityResult,
-    resetPersonalityTest
+  startPersonalityTest,
+  submitPersonalityAnswer,
+  getPersonalityResult,
+  resetPersonalityTest,
 } = require('../controllers/personalityController');
 const { authMiddleware } = require('../middleware/authMiddleware');
 
