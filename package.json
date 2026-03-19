@@ -12,6 +12,7 @@
     "test:auth": "node test-google-auth-integration.js",
     "test:client": "node test-google-auth.js",
     "setup:oauth": "node setup-oauth-testing.js",
+    "migrate:quiz-progress": "node migrate-legacy-quiz-progress.js",
     "lint": "eslint \"src/**/*.js\"",
     "lint:fix": "eslint \"src/**/*.js\" --fix",
     "format": "prettier --write \"src/**/*.js\""

@@ -1,280 +1,422 @@
 const UserProgress = require('../models/userProgress');
-const { getQuizByIndex, getAllQuizNames } = require('../utils/quizData');
+const {
+  MAX_QUESTIONS_PER_ATTEMPT,
+  getAllQuizModules,
+  getQuizModuleByOrder,
+  buildQuestionSnapshotsFromIds,
+  buildQuestionSnapshotsFromIndexes,
+  pickRandomQuestionSnapshots,
+} = require('../utils/quizModuleService');
+
+const SUPPORTED_LANGUAGES = new Set(['fr', 'en', 'ar']);
+const DEFAULT_LANGUAGE = 'fr';
+
+const normalizeLanguage = (language) =>
+  SUPPORTED_LANGUAGES.has(language) ? language : DEFAULT_LANGUAGE;
+
+const parseQuizOrder = (quizId) => {
+  const parsed = Number.parseInt(quizId, 10);
+  return Number.isNaN(parsed) ? null : parsed;
+};
+
+const getLocalizedText = (value, language) => {
+  if (!value || typeof value !== 'object') {
+    return null;
+  }
+
+  if (language === 'fr' && value.fr) {
+    return value.fr;
+  }
+
+  if (language === 'en' && value.en) {
+    return value.en;
+  }
+
+  if (language === 'ar' && value.ar) {
+    return value.ar;
+  }
+
+  return value.fr || value.en || value.ar || null;
+};
+
+const getItemByIndex = (items, targetIndex) => {
+  if (!Array.isArray(items) || !Number.isInteger(targetIndex) || targetIndex < 0) {
+    return null;
+  }
+
+  return items.find((item, index) => index === targetIndex) || null;
+};
+
+const createInitialQuizProgress = (quizModule) => ({
+  moduleId: quizModule._id,
+  moduleSlug: quizModule.slug,
+  moduleVersion: quizModule.version,
+  quizName: quizModule.name,
+  completed: false,
+  score: 0,
+  totalQuestions: Math.min(MAX_QUESTIONS_PER_ATTEMPT, quizModule.questions.length),
+  percentage: 0,
+  completedAt: null,
+  selectedQuestions: [],
+  selectedQuestionIds: [],
+  selectedQuestionSnapshots: [],
+  answers: [],
+});
+
+const ensureQuizProgressMetadata = (quizProgress, quizModule) => {
+  quizProgress.moduleId = quizModule._id;
+  quizProgress.moduleSlug = quizModule.slug;
+  quizProgress.moduleVersion = quizModule.version;
+  quizProgress.quizName = quizModule.name;
+};
+
+const isProgressForModule = (quizProgress, quizModule) => {
+  if (!quizProgress || !quizModule) {
+    return false;
+  }
+
+  if (quizProgress.moduleId && String(quizProgress.moduleId) === String(quizModule._id)) {
+    return true;
+  }
+
+  if (quizProgress.moduleSlug && quizProgress.moduleSlug === quizModule.slug) {
+    return true;
+  }
+
+  return quizProgress.quizName === quizModule.name;
+};
+
+const findQuizProgress = (quizProgressList, quizModule) =>
+  quizProgressList.find((entry) => isProgressForModule(entry, quizModule));
+
+const getMaxQuizOrder = (quizModules) => {
+  if (!Array.isArray(quizModules) || quizModules.length === 0) {
+    return 0;
+  }
+
+  return Math.max(...quizModules.map((quizModule) => quizModule.order));
+};
+
+const getNextQuizOrder = (quizModules, currentQuizOrder) => {
+  const sortedOrders = (quizModules || [])
+    .map((quizModule) => quizModule.order)
+    .sort((a, b) => a - b);
+
+  const currentIndex = sortedOrders.indexOf(currentQuizOrder);
+  if (currentIndex === -1 || currentIndex >= sortedOrders.length - 1) {
+    return currentQuizOrder;
+  }
+
+  return sortedOrders[currentIndex + 1];
+};
+
+const ensureBaseUserProgress = async (userId) => {
+  const quizModules = await getAllQuizModules();
+  let userProgress = await UserProgress.findOne({ userId });
+  let shouldSave = false;
+
+  if (!userProgress) {
+    userProgress = new UserProgress({
+      userId,
+      quizProgress: quizModules.map((quizModule) => createInitialQuizProgress(quizModule)),
+      currentQuizIndex: 0,
+    });
+    await userProgress.save();
+    return { userProgress, quizModules };
+  }
+
+  quizModules.forEach((quizModule) => {
+    const existingProgress = findQuizProgress(userProgress.quizProgress, quizModule);
+    if (!existingProgress) {
+      userProgress.quizProgress.push(createInitialQuizProgress(quizModule));
+      shouldSave = true;
+      return;
+    }
+
+    const previousModuleId = existingProgress.moduleId ? String(existingProgress.moduleId) : null;
+    ensureQuizProgressMetadata(existingProgress, quizModule);
+
+    if (previousModuleId !== String(quizModule._id)) {
+      shouldSave = true;
+    }
+
+    if (!existingProgress.totalQuestions) {
+      existingProgress.totalQuestions = Math.min(
+        MAX_QUESTIONS_PER_ATTEMPT,
+        quizModule.questions.length
+      );
+      shouldSave = true;
+    }
+  });
+
+  const maxQuizOrder = getMaxQuizOrder(quizModules);
+  if (userProgress.currentQuizIndex > maxQuizOrder) {
+    userProgress.currentQuizIndex = maxQuizOrder;
+    shouldSave = true;
+  }
+
+  if (shouldSave) {
+    await userProgress.save();
+  }
+
+  return { userProgress, quizModules };
+};
+
+const ensureQuestionSnapshots = (quizProgress, quizModule) => {
+  let snapshots = Array.isArray(quizProgress.selectedQuestionSnapshots)
+    ? quizProgress.selectedQuestionSnapshots.filter((snapshot) => snapshot && snapshot.question)
+    : [];
+
+  if (snapshots.length === 0) {
+    snapshots = buildQuestionSnapshotsFromIds(quizModule, quizProgress.selectedQuestionIds);
+  }
+
+  if (snapshots.length === 0) {
+    snapshots = buildQuestionSnapshotsFromIndexes(quizModule, quizProgress.selectedQuestions);
+  }
+
+  if (snapshots.length === 0) {
+    snapshots = pickRandomQuestionSnapshots(quizModule, MAX_QUESTIONS_PER_ATTEMPT);
+  }
+
+  quizProgress.selectedQuestionSnapshots = snapshots;
+  quizProgress.selectedQuestionIds = snapshots.map((snapshot) => snapshot.questionId);
+
+  if (!Array.isArray(quizProgress.selectedQuestions)) {
+    quizProgress.selectedQuestions = [];
+  }
+
+  quizProgress.totalQuestions = snapshots.length;
+
+  return snapshots;
+};
+
+const attachSnapshotsToLegacyAnswers = (quizProgress, questionSnapshots) => {
+  if (!Array.isArray(quizProgress.answers) || quizProgress.answers.length === 0) {
+    return;
+  }
+
+  quizProgress.answers.forEach((answer) => {
+    if (!answer || (answer.questionSnapshot && answer.questionSnapshot.question)) {
+      return;
+    }
+
+    const snapshot = getItemByIndex(questionSnapshots, answer.questionIndex);
+    if (!snapshot) {
+      return;
+    }
+
+    answer.questionId = answer.questionId || snapshot.questionId;
+    answer.questionSnapshot = snapshot;
+  });
+};
+
+const toQuestionPayload = (snapshot, language, questionIndex, quizName, totalQuestions) => ({
+  questionIndex,
+  question: getLocalizedText(snapshot.question, language),
+  options: (snapshot.options || []).map((option) => getLocalizedText(option, language)),
+  totalQuestions,
+  quizName,
+});
+
+const findOptionIndexByLanguageValue = (options, language, selectedValue) => {
+  if (!Array.isArray(options)) {
+    return -1;
+  }
+
+  return options.findIndex((option) => getLocalizedText(option, language) === selectedValue);
+};
 
 // Get all quizzes with user progress
 const getQuizzes = async (req, res) => {
-  console.log('Step: Entering getQuizzes');
   try {
     const userId = req.user.id;
-    console.log(`Step: Fetching quizzes for user ${userId}`);
-    const allQuizzes = getAllQuizNames();
+    const { userProgress, quizModules } = await ensureBaseUserProgress(userId);
 
-    // Get or create user progress
-    let userProgress = await UserProgress.findOne({ userId });
-    console.log(`Step: User progress found: ${!!userProgress}`);
-    if (!userProgress) {
-      console.log('Step: Initializing new user progress');
-      // Initialize progress for new user
-      const initialProgress = allQuizzes.map((quiz) => ({
-        quizName: quiz.name,
-        completed: false,
-        score: 0,
-        totalQuestions: 10, // Each quiz will have 10 random questions
-        percentage: 0,
-        answers: [],
-        selectedQuestions: [],
-      }));
-
-      userProgress = new UserProgress({
-        userId,
-        quizProgress: initialProgress,
-        currentQuizIndex: 0,
-      });
-      await userProgress.save();
-      console.log('Step: New user progress saved');
-    }
-
-    // Format response with lock status
-    const quizzesWithProgress = allQuizzes.map((quiz, index) => {
-      const progress = userProgress.quizProgress.find((p) => p.quizName === quiz.name) || {
-        completed: false,
-        score: 0,
-        percentage: 0,
-        totalQuestions: 10,
-      };
+    const quizzesWithProgress = quizModules.map((quizModule) => {
+      const progress =
+        findQuizProgress(userProgress.quizProgress, quizModule) ||
+        createInitialQuizProgress(quizModule);
 
       return {
-        id: quiz.id,
-        name: quiz.name,
-        totalQuestions: 10, // Each quiz now has 10 questions
-        completed: progress.completed,
-        score: progress.score,
-        percentage: progress.percentage,
-        locked: index > userProgress.currentQuizIndex,
-        completedAt: progress.completedAt,
+        id: quizModule.order,
+        name: quizModule.name,
+        totalQuestions:
+          progress.totalQuestions ||
+          Math.min(MAX_QUESTIONS_PER_ATTEMPT, quizModule.questions.length),
+        completed: Boolean(progress.completed),
+        score: progress.score || 0,
+        percentage: progress.percentage || 0,
+        locked: quizModule.order > userProgress.currentQuizIndex,
+        completedAt: progress.completedAt || null,
       };
     });
-    console.log(`Step: Formatted ${quizzesWithProgress.length} quizzes`);
 
     res.json({
       quizzes: quizzesWithProgress,
       currentQuizIndex: userProgress.currentQuizIndex,
     });
-    console.log('Step: getQuizzes response sent');
   } catch (error) {
-    console.error('Error getting quizzes:', error);
     res.status(500).json({ message: 'Server error', error });
   }
 };
 
 // Start a quiz (get first question)
 const startQuiz = async (req, res) => {
-  console.log('Step: Entering startQuiz');
   try {
-    const { quizId } = req.params;
-    const lang = req.query.lang || 'fr';
-    console.log(`Step: Starting quiz ${quizId} with lang ${lang}`);
+    const quizOrder = parseQuizOrder(req.params.quizId);
+    if (quizOrder === null) {
+      return res.status(400).json({ message: 'Invalid quiz id' });
+    }
+
+    const language = normalizeLanguage(req.query.lang || DEFAULT_LANGUAGE);
     const userId = req.user.id;
 
-    const quiz = getQuizByIndex(parseInt(quizId));
-    if (!quiz) {
-      console.log('Step: Quiz not found');
+    const quizModule = await getQuizModuleByOrder(quizOrder);
+    if (!quizModule) {
       return res.status(404).json({ message: 'Quiz not found' });
     }
 
-    // Check if quiz is unlocked
-    const userProgress = await UserProgress.findOne({ userId });
-    console.log(`Step: User progress found: ${!!userProgress}`);
-    if (!userProgress) {
-      return res.status(400).json({ message: 'User progress not found' });
-    }
-
-    if (parseInt(quizId) > userProgress.currentQuizIndex) {
-      console.log('Step: Quiz is locked');
+    const { userProgress } = await ensureBaseUserProgress(userId);
+    if (quizOrder > userProgress.currentQuizIndex) {
       return res.status(403).json({ message: 'Quiz is locked. Complete previous quizzes first.' });
     }
 
-    // Find or create quiz progress
-    let quizProgress = userProgress.quizProgress.find((p) => p.quizName === quiz.name);
+    let quizProgress = findQuizProgress(userProgress.quizProgress, quizModule);
     if (!quizProgress) {
-      console.log('Step: Creating new quiz progress');
-      quizProgress = {
-        quizName: quiz.name,
-        completed: false,
-        score: 0,
-        totalQuestions: 10, // Now we only use 10 questions
-        percentage: 0,
-        answers: [],
-        selectedQuestions: [], // Store which questions were selected
-      };
+      quizProgress = createInitialQuizProgress(quizModule);
       userProgress.quizProgress.push(quizProgress);
-    } else if (!quizProgress.completed) {
-      // Reset progress if quiz is not completed, but keep previously selected questions
-      console.log('Step: Resetting incomplete quiz progress (preserving selected questions)');
-      quizProgress.answers = [];
-      quizProgress.score = 0;
-      quizProgress.percentage = 0;
-      quizProgress.completedAt = null;
-      quizProgress.totalQuestions = 10;
-      if (!Array.isArray(quizProgress.selectedQuestions)) {
-        quizProgress.selectedQuestions = [];
-      }
     }
 
-    // Check if quiz is already completed
+    ensureQuizProgressMetadata(quizProgress, quizModule);
+
     if (quizProgress.completed) {
-      console.log('Step: Quiz already completed');
       return res.status(400).json({ message: 'Quiz already completed' });
     }
 
-    // Randomly select up to 10 unique questions from available pool
-    const totalAvailableQuestions = quiz.questions.length;
-    let questionsToSelect = Math.min(10, totalAvailableQuestions);
+    // Restart incomplete attempts from question 1 while preserving selected question set.
+    quizProgress.answers = [];
+    quizProgress.score = 0;
+    quizProgress.percentage = 0;
+    quizProgress.completedAt = null;
 
-    if (!quizProgress.selectedQuestions || quizProgress.selectedQuestions.length === 0) {
-      const selectedSet = new Set();
-      while (selectedSet.size < questionsToSelect) {
-        selectedSet.add(Math.floor(Math.random() * totalAvailableQuestions));
-      }
-      quizProgress.selectedQuestions = Array.from(selectedSet);
-      console.log(
-        `Step: Randomly selected ${questionsToSelect} unique questions:`,
-        quizProgress.selectedQuestions
-      );
-    } else {
-      // Reuse previously selected questions to ensure consistency
-      questionsToSelect = quizProgress.selectedQuestions.length;
-      console.log(`Step: Using previously selected questions:`, quizProgress.selectedQuestions);
+    const questionSnapshots = ensureQuestionSnapshots(quizProgress, quizModule);
+    const firstQuestionSnapshot = getItemByIndex(questionSnapshots, 0);
+    if (!firstQuestionSnapshot) {
+      return res.status(400).json({ message: 'No questions configured for this quiz' });
     }
 
-    // Always start from first question (index 0 in our selected array)
-    const questionIndex = 0;
-    const actualQuestionIndex = quizProgress.selectedQuestions[questionIndex];
-    const firstQuestion = {
-      questionIndex,
-      question: quiz.questions[actualQuestionIndex].question[lang],
-      options: quiz.questions[actualQuestionIndex].options.map((opt) => opt[lang]),
-      totalQuestions: questionsToSelect,
-      quizName: quiz.name,
-    };
-    console.log('Step: Prepared first question');
+    const firstQuestion = toQuestionPayload(
+      firstQuestionSnapshot,
+      language,
+      0,
+      quizProgress.quizName,
+      questionSnapshots.length
+    );
 
     await userProgress.save();
-    console.log('Step: User progress saved');
-    res.json(firstQuestion);
-    console.log('Step: startQuiz response sent');
+    return res.json(firstQuestion);
   } catch (error) {
-    console.error('Error starting quiz:', error);
-    res.status(500).json({ message: 'Server error', error });
+    return res.status(500).json({ message: 'Server error', error });
   }
 };
 
 // Submit answer for a question
 const submitAnswer = async (req, res) => {
-  console.log('Step: Entering submitAnswer');
   try {
-    const { quizId } = req.params;
-    const { questionIndex, selectedAnswer, lang = 'fr' } = req.body;
-    console.log(
-      `Step: Submitting answer for quiz ${quizId}, question ${questionIndex}, answer: ${selectedAnswer}, lang: ${lang}`
-    );
-    const userId = req.user.id;
-
-    const quiz = getQuizByIndex(parseInt(quizId));
-    if (!quiz) {
-      console.log('Step: Quiz not found');
-      return res.status(404).json({ message: 'Quiz not found' });
+    const quizOrder = parseQuizOrder(req.params.quizId);
+    if (quizOrder === null) {
+      return res.status(400).json({ message: 'Invalid quiz id' });
     }
 
-    const userProgress = await UserProgress.findOne({ userId });
-    console.log(`Step: User progress found: ${!!userProgress}`);
-    if (!userProgress) {
-      return res.status(400).json({ message: 'User progress not found' });
-    }
-
-    let quizProgress = userProgress.quizProgress.find((p) => p.quizName === quiz.name);
-    if (!quizProgress) {
-      console.log('Step: Creating new quiz progress');
-      quizProgress = {
-        quizName: quiz.name,
-        completed: false,
-        score: 0,
-        totalQuestions: 10,
-        percentage: 0,
-        answers: [],
-        selectedQuestions: [],
-      };
-      userProgress.quizProgress.push(quizProgress);
-    }
-
-    if (quizProgress.completed) {
-      console.log('Step: Quiz already completed');
-      return res.status(400).json({ message: 'Quiz already completed' });
-    }
-
-    // Validate question index against selected questions
-    if (questionIndex < 0 || questionIndex >= quizProgress.selectedQuestions.length) {
-      console.log('Step: Invalid question index');
+    const parsedQuestionIndex = Number.parseInt(req.body.questionIndex, 10);
+    if (Number.isNaN(parsedQuestionIndex)) {
       return res.status(400).json({ message: 'Invalid question index' });
     }
 
-    if (quizProgress.answers.find((a) => a.questionIndex === questionIndex)) {
-      console.log(`Step: Question ${questionIndex} already answered`);
+    const selectedAnswer = req.body.selectedAnswer || null;
+    const language = normalizeLanguage(req.body.lang || DEFAULT_LANGUAGE);
+    const userId = req.user.id;
+
+    const { userProgress, quizModules } = await ensureBaseUserProgress(userId);
+    const quizModule = quizModules.find((module) => module.order === quizOrder);
+    if (!quizModule) {
+      return res.status(404).json({ message: 'Quiz not found' });
+    }
+
+    if (quizOrder > userProgress.currentQuizIndex) {
+      return res.status(403).json({ message: 'Quiz is locked. Complete previous quizzes first.' });
+    }
+
+    let quizProgress = findQuizProgress(userProgress.quizProgress, quizModule);
+    if (!quizProgress) {
+      quizProgress = createInitialQuizProgress(quizModule);
+      userProgress.quizProgress.push(quizProgress);
+    }
+
+    ensureQuizProgressMetadata(quizProgress, quizModule);
+
+    if (quizProgress.completed) {
+      return res.status(400).json({ message: 'Quiz already completed' });
+    }
+
+    const questionSnapshots = ensureQuestionSnapshots(quizProgress, quizModule);
+    if (parsedQuestionIndex < 0 || parsedQuestionIndex >= questionSnapshots.length) {
+      return res.status(400).json({ message: 'Invalid question index' });
+    }
+
+    if (quizProgress.answers.find((answer) => answer.questionIndex === parsedQuestionIndex)) {
       return res.status(400).json({ message: 'Question already answered' });
     }
 
-    // Get the actual question index from the selected questions array
-    const actualQuestionIndex = quizProgress.selectedQuestions[questionIndex];
-    const currentQuestion = quiz.questions[actualQuestionIndex];
-    const isCorrect = selectedAnswer ? currentQuestion.correct[lang] === selectedAnswer : false;
-    console.log(`Step: Answer correct: ${isCorrect}`);
+    const currentQuestionSnapshot = getItemByIndex(questionSnapshots, parsedQuestionIndex);
+    if (!currentQuestionSnapshot) {
+      return res.status(400).json({ message: 'Question not found' });
+    }
 
-    // Handle null or invalid answers
-    let selectedFr = null;
+    const correctAnswerInLanguage = getLocalizedText(currentQuestionSnapshot.correct, language);
+    const isCorrect = Boolean(selectedAnswer) && selectedAnswer === correctAnswerInLanguage;
+
+    let selectedAnswerInFrench = null;
     if (selectedAnswer) {
-      const selectedIndex = currentQuestion.options.findIndex(
-        (opt) => opt[lang] === selectedAnswer
+      const selectedOptionIndex = findOptionIndexByLanguageValue(
+        currentQuestionSnapshot.options,
+        language,
+        selectedAnswer
       );
-      if (selectedIndex === -1) {
-        console.log('Step: Invalid selected answer, treating as incorrect');
-      } else {
-        selectedFr = currentQuestion.options[selectedIndex].fr;
-        console.log(`Step: Selected French answer: ${selectedFr}`);
+
+      if (selectedOptionIndex !== -1) {
+        const selectedOption = getItemByIndex(currentQuestionSnapshot.options, selectedOptionIndex);
+        selectedAnswerInFrench = selectedOption ? selectedOption.fr : null;
       }
     }
 
-    // Save answer
     quizProgress.answers.push({
-      questionIndex,
-      selectedAnswer: selectedFr,
+      questionIndex: parsedQuestionIndex,
+      questionId: currentQuestionSnapshot.questionId,
+      selectedAnswer: selectedAnswerInFrench,
       isCorrect,
+      questionSnapshot: currentQuestionSnapshot,
+      answeredAt: new Date(),
     });
-    console.log('Step: Answer saved in French');
 
-    // Update score and percentage (based on 10 questions)
-    quizProgress.score = quizProgress.answers.filter((a) => a.isCorrect).length;
-    const totalQuestionsInQuiz = quizProgress.selectedQuestions.length;
-    quizProgress.percentage = Math.round((quizProgress.score / totalQuestionsInQuiz) * 100);
-    console.log(
-      `Step: Updated score: ${quizProgress.score}, percentage: ${quizProgress.percentage}`
-    );
+    quizProgress.score = quizProgress.answers.filter((answer) => answer.isCorrect).length;
+    quizProgress.percentage = Math.round((quizProgress.score / questionSnapshots.length) * 100);
 
     const response = {
       isCorrect,
-      correctAnswer: currentQuestion.correct[lang],
+      correctAnswer: correctAnswerInLanguage,
       currentScore: quizProgress.score,
-      totalQuestions: totalQuestionsInQuiz,
+      totalQuestions: questionSnapshots.length,
     };
 
-    // Check if this is the last question
-    if (questionIndex + 1 >= totalQuestionsInQuiz) {
-      console.log('Step: All questions answered, marking quiz as completed');
+    const isLastQuestion = parsedQuestionIndex + 1 >= questionSnapshots.length;
+    if (isLastQuestion) {
       quizProgress.completed = true;
       quizProgress.completedAt = new Date();
 
-      // Unlock next quiz if this one is passed
-      if (userProgress.currentQuizIndex === parseInt(quizId)) {
-        userProgress.currentQuizIndex = Math.min(userProgress.currentQuizIndex + 1, 6);
+      if (userProgress.currentQuizIndex === quizOrder) {
+        userProgress.currentQuizIndex = getNextQuizOrder(quizModules, quizOrder);
       }
 
       response.quizCompleted = true;
@@ -282,132 +424,132 @@ const submitAnswer = async (req, res) => {
       response.percentage = quizProgress.percentage;
       response.passed = quizProgress.percentage >= 50;
     } else {
-      console.log('Step: Preparing next question');
-      const nextQuestionIndex = questionIndex + 1;
-      const nextActualQuestionIndex = quizProgress.selectedQuestions[nextQuestionIndex];
-      const nextQuestion = quiz.questions[nextActualQuestionIndex];
-      response.nextQuestion = {
-        questionIndex: nextQuestionIndex,
-        question: nextQuestion.question[lang],
-        options: nextQuestion.options.map((opt) => opt[lang]),
-        totalQuestions: totalQuestionsInQuiz,
-        quizName: quiz.name,
-      };
+      const nextQuestionIndex = parsedQuestionIndex + 1;
+      const nextQuestionSnapshot = getItemByIndex(questionSnapshots, nextQuestionIndex);
+      if (!nextQuestionSnapshot) {
+        return res.status(400).json({ message: 'Next question not found' });
+      }
+
+      response.nextQuestion = toQuestionPayload(
+        nextQuestionSnapshot,
+        language,
+        nextQuestionIndex,
+        quizProgress.quizName,
+        questionSnapshots.length
+      );
     }
 
     await userProgress.save();
-    console.log('Step: User progress saved');
-    res.json(response);
-    console.log('Step: submitAnswer response sent');
+    return res.json(response);
   } catch (error) {
-    console.error('Error submitting answer:', error);
-    res.status(500).json({ message: 'Server error', error });
+    return res.status(500).json({ message: 'Server error', error });
   }
 };
 
 // Get quiz results
 const getQuizResult = async (req, res) => {
-  console.log('Step: Entering getQuizResult');
   try {
-    const { quizId } = req.params;
-    const lang = req.query.lang || 'fr';
-    console.log(`Step: Getting result for quiz ${quizId}, lang ${lang}`);
+    const quizOrder = parseQuizOrder(req.params.quizId);
+    if (quizOrder === null) {
+      return res.status(400).json({ message: 'Invalid quiz id' });
+    }
+
+    const language = normalizeLanguage(req.query.lang || DEFAULT_LANGUAGE);
     const userId = req.user.id;
 
-    const quiz = getQuizByIndex(parseInt(quizId));
-    if (!quiz) {
-      console.log('Step: Quiz not found');
+    const quizModule = await getQuizModuleByOrder(quizOrder);
+    if (!quizModule) {
       return res.status(404).json({ message: 'Quiz not found' });
     }
 
-    const userProgress = await UserProgress.findOne({ userId });
-    console.log(`Step: User progress found: ${!!userProgress}`);
-    if (!userProgress) {
-      return res.status(400).json({ message: 'User progress not found' });
-    }
+    const { userProgress } = await ensureBaseUserProgress(userId);
+    const quizProgress = findQuizProgress(userProgress.quizProgress, quizModule);
 
-    const quizProgress = userProgress.quizProgress.find((p) => p.quizName === quiz.name);
     if (!quizProgress || !quizProgress.completed) {
-      console.log('Step: Quiz not completed');
       return res.status(400).json({ message: 'Quiz not completed yet' });
     }
 
-    // Format answers with language
+    ensureQuizProgressMetadata(quizProgress, quizModule);
+    const questionSnapshots = ensureQuestionSnapshots(quizProgress, quizModule);
+    attachSnapshotsToLegacyAnswers(quizProgress, questionSnapshots);
+
     const formattedAnswers = quizProgress.answers.map((answer) => {
-      const actualQuestionIndex = quizProgress.selectedQuestions[answer.questionIndex];
-      const currentQuestion = quiz.questions[actualQuestionIndex];
-      const selectedIndex = currentQuestion.options.findIndex(
-        (opt) => opt.fr === answer.selectedAnswer
+      const questionSnapshot =
+        answer.questionSnapshot && answer.questionSnapshot.question
+          ? answer.questionSnapshot
+          : getItemByIndex(questionSnapshots, answer.questionIndex);
+
+      if (!questionSnapshot || !questionSnapshot.question) {
+        return {
+          questionIndex: answer.questionIndex,
+          question: null,
+          selectedAnswer: answer.selectedAnswer,
+          correctAnswer: null,
+          isCorrect: answer.isCorrect,
+        };
+      }
+
+      const selectedOptionIndex = (questionSnapshot.options || []).findIndex(
+        (option) => option.fr === answer.selectedAnswer
       );
-      const selectedInLang =
-        selectedIndex !== -1 ? currentQuestion.options[selectedIndex][lang] : answer.selectedAnswer;
+
+      const selectedOption = getItemByIndex(questionSnapshot.options, selectedOptionIndex);
+      const selectedAnswerInLanguage = selectedOption
+        ? getLocalizedText(selectedOption, language)
+        : answer.selectedAnswer;
 
       return {
         questionIndex: answer.questionIndex,
-        question: currentQuestion.question[lang],
-        selectedAnswer: selectedInLang,
-        correctAnswer: currentQuestion.correct[lang],
+        question: getLocalizedText(questionSnapshot.question, language),
+        selectedAnswer: selectedAnswerInLanguage,
+        correctAnswer: getLocalizedText(questionSnapshot.correct, language),
         isCorrect: answer.isCorrect,
       };
     });
-    console.log(`Step: Formatted ${formattedAnswers.length} answers`);
 
-    res.json({
-      quizName: quiz.name,
+    await userProgress.save();
+
+    return res.json({
+      quizName: quizProgress.quizName,
       score: quizProgress.score,
-      totalQuestions: quizProgress.selectedQuestions.length,
+      totalQuestions: quizProgress.totalQuestions || questionSnapshots.length,
       percentage: quizProgress.percentage,
       passed: quizProgress.percentage >= 50,
       completedAt: quizProgress.completedAt,
       answers: formattedAnswers,
     });
-    console.log('Step: getQuizResult response sent');
   } catch (error) {
-    console.error('Error getting quiz result:', error);
-    res.status(500).json({ message: 'Server error', error });
+    return res.status(500).json({ message: 'Server error', error });
   }
 };
 
 // Reset quiz progress (for retaking)
 const resetQuiz = async (req, res) => {
-  console.log('Step: Entering resetQuiz');
   try {
-    const { quizId } = req.params;
-    const userId = req.user.id;
-    console.log(`Step: Resetting quiz ${quizId} for user ${userId}`);
+    const quizOrder = parseQuizOrder(req.params.quizId);
+    if (quizOrder === null) {
+      return res.status(400).json({ message: 'Invalid quiz id' });
+    }
 
-    const quiz = getQuizByIndex(parseInt(quizId));
-    if (!quiz) {
-      console.log('Step: Quiz not found');
+    const userId = req.user.id;
+    const quizModule = await getQuizModuleByOrder(quizOrder);
+    if (!quizModule) {
       return res.status(404).json({ message: 'Quiz not found' });
     }
 
-    const userProgress = await UserProgress.findOne({ userId });
-    console.log(`Step: User progress found: ${!!userProgress}`);
-    if (!userProgress) {
-      return res.status(400).json({ message: 'User progress not found' });
-    }
+    const { userProgress } = await ensureBaseUserProgress(userId);
+    const quizProgressIndex = userProgress.quizProgress.findIndex((progress) =>
+      isProgressForModule(progress, quizModule)
+    );
 
-    const quizProgressIndex = userProgress.quizProgress.findIndex((p) => p.quizName === quiz.name);
     if (quizProgressIndex >= 0) {
-      userProgress.quizProgress[quizProgressIndex] = {
-        quizName: quiz.name,
-        completed: false,
-        score: 0,
-        totalQuestions: 10,
-        percentage: 0,
-        answers: [],
-        selectedQuestions: [],
-      };
+      userProgress.quizProgress.splice(quizProgressIndex, 1, createInitialQuizProgress(quizModule));
       await userProgress.save();
-      console.log('Step: Quiz progress reset');
     }
 
-    res.json({ message: 'Quiz reset successfully' });
-    console.log('Step: resetQuiz response sent');
+    return res.json({ message: 'Quiz reset successfully' });
   } catch (error) {
-    console.error('Error resetting quiz:', error);
-    res.status(500).json({ message: 'Server error', error });
+    return res.status(500).json({ message: 'Server error', error });
   }
 };
 

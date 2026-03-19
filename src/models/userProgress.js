@@ -1,5 +1,54 @@
 const mongoose = require('mongoose');
 
+const localizedTextSchema = new mongoose.Schema(
+  {
+    fr: {
+      type: String,
+    },
+    en: {
+      type: String,
+    },
+    ar: {
+      type: String,
+    },
+  },
+  { _id: false }
+);
+
+const questionSnapshotSchema = new mongoose.Schema(
+  {
+    questionId: {
+      type: mongoose.Schema.Types.ObjectId,
+    },
+    question: {
+      type: localizedTextSchema,
+    },
+    options: {
+      type: [localizedTextSchema],
+      default: [],
+    },
+    correct: {
+      type: localizedTextSchema,
+    },
+  },
+  { _id: false }
+);
+
+const answerSchema = new mongoose.Schema(
+  {
+    questionIndex: Number,
+    questionId: mongoose.Schema.Types.ObjectId,
+    selectedAnswer: String,
+    isCorrect: Boolean,
+    questionSnapshot: questionSnapshotSchema,
+    answeredAt: {
+      type: Date,
+      default: Date.now,
+    },
+  },
+  { _id: false }
+);
+
 const userProgressSchema = new mongoose.Schema(
   {
     userId: {
@@ -9,6 +58,17 @@ const userProgressSchema = new mongoose.Schema(
     },
     quizProgress: [
       {
+        moduleId: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: 'QuizModule',
+        },
+        moduleSlug: {
+          type: String,
+        },
+        moduleVersion: {
+          type: Number,
+          default: 1,
+        },
         quizName: {
           type: String,
           required: true,
@@ -37,13 +97,18 @@ const userProgressSchema = new mongoose.Schema(
             type: Number,
           },
         ],
-        answers: [
-          {
-            questionIndex: Number,
-            selectedAnswer: String,
-            isCorrect: Boolean,
-          },
-        ],
+        selectedQuestionIds: {
+          type: [mongoose.Schema.Types.ObjectId],
+          default: [],
+        },
+        selectedQuestionSnapshots: {
+          type: [questionSnapshotSchema],
+          default: [],
+        },
+        answers: {
+          type: [answerSchema],
+          default: [],
+        },
       },
     ],
     currentQuizIndex: {
