@@ -1,7 +1,10 @@
 const express = require('express');
 const passport = require('passport');
-const { socialLoginCallback } = require('../controllers/socialAuthController');
+const { socialLoginCallback, appleMobileLogin } = require('../controllers/socialAuthController');
 const router = express.Router();
+
+// Apple Sign-In (mobile native token flow)
+router.post('/apple/mobile', appleMobileLogin);
 
 // Google Auth Routes
 router.get('/google', (req, res, next) => {

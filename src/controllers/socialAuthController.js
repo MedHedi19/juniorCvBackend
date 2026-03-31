@@ -1,5 +1,24 @@
 const { generateTokens } = require('../utils/token');
 const { sendSocialWelcomeEmail } = require('../utils/emailService');
+const appleSigninAuth = require('apple-signin-auth');
+const User = require('../models/user');
+
+const buildUserPayload = (user) => ({
+  id: user._id,
+  firstName: user.firstName,
+  lastName: user.lastName,
+  phone: user.phone,
+  email: user.email,
+  profilePhoto: user.profilePhoto,
+  createdAt: user.createdAt,
+  updatedAt: user.updatedAt,
+});
+
+const normalizeName = (value, fallback) => {
+  if (!value || typeof value !== 'string') return fallback;
+  const trimmed = value.trim();
+  return trimmed || fallback;
+};
 
 // Function to handle successful social authentication
 const socialLoginCallback = async (req, res) => {
@@ -137,4 +156,101 @@ const socialLoginCallback = async (req, res) => {
   }
 };
 
-module.exports = { socialLoginCallback };
+const appleMobileLogin = async (req, res) => {
+  try {
+    const {
+      identityToken,
+      user: appleUser,
+      email: emailFromClient,
+      firstName: firstNameFromClient,
+      lastName: lastNameFromClient,
+    } = req.body;
+
+    if (!identityToken) {
+      return res.status(400).json({ message: 'Apple identity token is required' });
+    }
+
+    const audience = process.env.APPLE_CLIENT_ID || process.env.APPLE_BUNDLE_ID;
+    if (!audience) {
+      return res.status(500).json({ message: 'Apple Sign-In is not configured on server' });
+    }
+
+    const appleProfile = await appleSigninAuth.verifyIdToken(identityToken, {
+      audience,
+      ignoreExpiration: false,
+    });
+
+    const appleId = appleProfile.sub;
+    const email = appleProfile.email || emailFromClient;
+
+    if (!appleId) {
+      return res.status(400).json({ message: 'Invalid Apple token payload' });
+    }
+
+    let user = await User.findOne({ 'socialAuth.appleId': appleId });
+    let isNewUser = false;
+
+    if (!user) {
+      if (!email) {
+        return res.status(400).json({
+          message: 'Apple account email is required on first sign in',
+        });
+      }
+
+      user = await User.findOne({ email: email.toLowerCase() });
+
+      if (user) {
+        user.socialAuth = user.socialAuth || {};
+        user.socialAuth.appleId = appleId;
+        await user.save();
+      } else {
+        isNewUser = true;
+
+        const firstName = normalizeName(firstNameFromClient, 'Apple');
+        const lastName = normalizeName(lastNameFromClient, 'User');
+
+        user = new User({
+          firstName,
+          lastName,
+          email: email.toLowerCase(),
+          phone: undefined,
+          profilePhoto: '',
+          socialAuth: {
+            appleId,
+          },
+        });
+
+        await user.save();
+      }
+    }
+
+    const { accessToken, refreshToken } = generateTokens(user._id);
+    user.refreshToken = refreshToken;
+    await user.save();
+
+    if (isNewUser) {
+      try {
+        await sendSocialWelcomeEmail(user.email, user.firstName, 'apple');
+      } catch (emailError) {
+        console.warn('[Apple Auth] Welcome email failed:', emailError.message);
+      }
+    }
+
+    return res.status(200).json({
+      message: 'Apple login successful',
+      token: accessToken,
+      refreshToken,
+      user: buildUserPayload(user),
+      provider: 'apple',
+      appleUser,
+    });
+  } catch (error) {
+    console.error('[Apple Auth] Mobile login error:', error);
+    return res.status(401).json({
+      message: 'Apple authentication failed',
+      error: error.message,
+    });
+  }
+};
+
+module.exports = { socialLoginCallback, appleMobileLogin };

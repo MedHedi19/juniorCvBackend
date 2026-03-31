@@ -41,6 +41,10 @@ const userSchema = new mongoose.Schema(
         type: String,
         sparse: true,
       },
+      appleId: {
+        type: String,
+        sparse: true,
+      },
       facebookId: {
         type: String,
         sparse: true,
@@ -80,6 +84,7 @@ const userSchema = new mongoose.Schema(
 // Create sparse indexes to allow multiple null values
 userSchema.index({ phone: 1 }, { sparse: true, unique: true });
 userSchema.index({ 'socialAuth.googleId': 1 }, { sparse: true, unique: true });
+userSchema.index({ 'socialAuth.appleId': 1 }, { sparse: true, unique: true });
 userSchema.index({ 'socialAuth.facebookId': 1 }, { sparse: true, unique: true });
 userSchema.index({ 'socialAuth.linkedinId': 1 }, { sparse: true, unique: true });
 

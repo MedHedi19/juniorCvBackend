@@ -57,6 +57,7 @@ app.get('/api/health', (req, res) => {
     environment: process.env.NODE_ENV || 'development',
     auth: {
       googleAuth: !!process.env.GOOGLE_CLIENT_ID,
+      appleAuth: !!(process.env.APPLE_CLIENT_ID || process.env.APPLE_BUNDLE_ID),
       facebookAuth: !!process.env.FACEBOOK_APP_ID,
       linkedinAuth: !!process.env.LINKEDIN_CLIENT_ID,
     },
