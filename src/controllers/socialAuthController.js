@@ -170,13 +170,19 @@ const appleMobileLogin = async (req, res) => {
       return res.status(400).json({ message: 'Apple identity token is required' });
     }
 
-    const audience = process.env.APPLE_CLIENT_ID || process.env.APPLE_BUNDLE_ID;
-    if (!audience) {
+    const primaryAudience = process.env.APPLE_CLIENT_ID || process.env.APPLE_BUNDLE_ID;
+    const extraAudiences = (process.env.APPLE_ALLOWED_AUDIENCES || '')
+      .split(',')
+      .map((value) => value.trim())
+      .filter(Boolean);
+    const audiences = [primaryAudience, ...extraAudiences].filter(Boolean);
+
+    if (audiences.length === 0) {
       return res.status(500).json({ message: 'Apple Sign-In is not configured on server' });
     }
 
     const appleProfile = await appleSigninAuth.verifyIdToken(identityToken, {
-      audience,
+      audience: audiences.length === 1 ? audiences[0] : audiences,
       ignoreExpiration: false,
     });
 

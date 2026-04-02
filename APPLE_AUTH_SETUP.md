@@ -10,9 +10,14 @@ Add these variables in backend `.env`:
 APPLE_CLIENT_ID=com.JuniorsCV.app
 # Optional alias used by code (one of the two must exist)
 APPLE_BUNDLE_ID=com.JuniorsCV.app
+# Optional (comma-separated): additional accepted audiences for development only
+# Example for Expo Go testing:
+# APPLE_ALLOWED_AUDIENCES=host.exp.Exponent
 ```
 
 `APPLE_CLIENT_ID` must match your iOS bundle identifier and Apple Service ID audience expected in Apple ID token.
+
+`APPLE_ALLOWED_AUDIENCES` can be used to accept extra token audiences (for example `host.exp.Exponent` while testing in Expo Go). Keep this empty in production unless you explicitly need additional trusted audiences.
 
 ## 2) Backend Endpoint
 
