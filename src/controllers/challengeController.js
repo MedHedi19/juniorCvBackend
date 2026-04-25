@@ -2,6 +2,55 @@ const UpskillingProgress = require('../models/upskillingProgress');
 const fs = require('fs');
 const path = require('path');
 
+// Helper functions for daily challenge locking logic
+function getChallengeLockStatus(upskillingProgress) {
+  const completedChallenges = (upskillingProgress.challenges || []).filter((c) => c.completed);
+  let maxCompletedDay = 0;
+  let hasCompletedChallengeToday = false;
+
+  if (completedChallenges.length > 0) {
+    const latestChallenge = completedChallenges.reduce((prev, current) => 
+      (prev.day > current.day) ? prev : current
+    );
+    maxCompletedDay = latestChallenge.day;
+    
+    if (latestChallenge.completedAt) {
+      const lastCompletionDate = new Date(latestChallenge.completedAt);
+      const today = new Date();
+      
+      // Compare calendar dates
+      if (
+        lastCompletionDate.getFullYear() === today.getFullYear() &&
+        lastCompletionDate.getMonth() === today.getMonth() &&
+        lastCompletionDate.getDate() === today.getDate()
+      ) {
+        hasCompletedChallengeToday = true;
+      }
+    }
+  }
+
+  const nextAllowedDay = maxCompletedDay + 1;
+  return { nextAllowedDay, hasCompletedChallengeToday };
+}
+
+function calculateIsLocked(day, completed, nextAllowedDay, hasCompletedChallengeToday) {
+  if (completed) return false;
+  // Rule 1: We must do challenges in order
+  if (day > nextAllowedDay) return true;
+  // Rule 2: We can only do one challenge per day
+  if (day === nextAllowedDay && hasCompletedChallengeToday) return true;
+  
+  return false;
+}
+
+function isDayLocked(dayNumber, upskillingProgress) {
+  const { nextAllowedDay, hasCompletedChallengeToday } = getChallengeLockStatus(upskillingProgress);
+  const userChallenge = upskillingProgress.challenges.find((c) => c.day === dayNumber);
+  const completed = userChallenge ? userChallenge.completed : false;
+  
+  return calculateIsLocked(dayNumber, completed, nextAllowedDay, hasCompletedChallengeToday);
+}
+
 // Load challenge data from JSON files
 const loadChallengeData = (color) => {
   const colorFiles = {
@@ -121,11 +170,20 @@ exports.getAllChallenges = async (req, res) => {
     const color = upskillingProgress.personalityColor;
     const challengeData = loadChallengeData(color);
 
+    const { nextAllowedDay, hasCompletedChallengeToday } = getChallengeLockStatus(upskillingProgress);
+
     // Merge challenge data with user progress
     const challenges = challengeData.challenges.map((challenge, index) => {
       const userChallengeProgress = upskillingProgress.challenges.find(
         (c) => c.day === challenge.day
       ) || { completed: false, notes: '', day: challenge.day };
+
+      const isLocked = calculateIsLocked(
+        challenge.day,
+        userChallengeProgress.completed,
+        nextAllowedDay,
+        hasCompletedChallengeToday
+      );
 
       return {
         day: challenge.day,
@@ -136,9 +194,9 @@ exports.getAllChallenges = async (req, res) => {
         completed: userChallengeProgress.completed,
         completedAt: userChallengeProgress.completedAt,
         notes: userChallengeProgress.notes,
+        locked: isLocked,
       };
     });
-
     res.status(200).json({
       success: true,
       data: {
@@ -199,6 +257,8 @@ exports.getChallengeByDay = async (req, res) => {
       day: dayNumber,
     };
 
+    const locked = isDayLocked(dayNumber, userProgress);
+
     // Update last accessed day
     userProgress.lastAccessedDay = dayNumber;
     await userProgress.save();
@@ -214,9 +274,9 @@ exports.getChallengeByDay = async (req, res) => {
         completed: userChallengeProgress.completed,
         completedAt: userChallengeProgress.completedAt,
         notes: userChallengeProgress.notes,
+        locked: locked,
       },
-    });
-  } catch (error) {
+    });  } catch (error) {
     console.error('Get challenge by day error:', error);
     res.status(500).json({
       success: false,
@@ -247,6 +307,13 @@ exports.completeChallenge = async (req, res) => {
       return res.status(404).json({
         success: false,
         message: 'No challenges initialized',
+      });
+    }
+
+    if (isDayLocked(dayNumber, userProgress)) {
+      return res.status(403).json({
+        success: false,
+        message: 'This challenge is locked. You can only complete one set per day, in order.',
       });
     }
 
@@ -308,6 +375,10 @@ exports.getChallengeProgress = async (req, res) => {
 
     const completedChallenges = userProgress.challenges.filter((c) => c.completed).length;
     const currentStreak = calculateStreak(userProgress.challenges);
+    
+    // Check if the next challenge is locked
+    const { nextAllowedDay, hasCompletedChallengeToday } = getChallengeLockStatus(userProgress);
+    const nextChallengeLocked = calculateIsLocked(nextAllowedDay, false, nextAllowedDay, hasCompletedChallengeToday);
 
     res.status(200).json({
       success: true,
@@ -321,6 +392,8 @@ exports.getChallengeProgress = async (req, res) => {
         lastAccessedDay: userProgress.lastAccessedDay,
         startedAt: userProgress.startedAt,
         allCompleted: completedChallenges === 21,
+        nextAllowedDay: nextAllowedDay,
+        nextChallengeLocked: nextChallengeLocked,
       },
     });
   } catch (error) {
@@ -381,6 +454,13 @@ exports.submitText = async (req, res) => {
       return res.status(404).json({
         success: false,
         message: 'No challenges initialized',
+      });
+    }
+
+    if (isDayLocked(dayNumber, userProgress)) {
+      return res.status(403).json({
+        success: false,
+        message: 'This challenge is locked. You can only submit items 1 challenge per day, in order.',
       });
     }
 
@@ -461,6 +541,13 @@ exports.submitMedia = async (req, res) => {
       return res.status(404).json({
         success: false,
         message: 'No challenges initialized',
+      });
+    }
+
+    if (isDayLocked(dayNumber, userProgress)) {
+      return res.status(403).json({
+        success: false,
+        message: 'This challenge is locked. You can only submit items 1 challenge per day, in order.',
       });
     }
 
