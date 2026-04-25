@@ -37,8 +37,8 @@ function calculateIsLocked(day, completed, nextAllowedDay, hasCompletedChallenge
   if (completed) return false;
   // Rule 1: We must do challenges in order
   if (day > nextAllowedDay) return true;
-  // Rule 2: We can only do one challenge per day
-  if (day === nextAllowedDay && hasCompletedChallengeToday) return true;
+  // Rule 2: We can only do one challenge per day, EXCEPT for the first 3 days (for testing/onboarding)
+  if (day === nextAllowedDay && hasCompletedChallengeToday && day > 3) return true;
   
   return false;
 }
