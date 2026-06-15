@@ -27,7 +27,9 @@ const userSchema = new mongoose.Schema(
       validate: {
         validator: function (v) {
           // Hardened regex against ReDoS attacks (RFC 5322 approximation without catastrophic backtracking)
-          return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(v);
+          return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(
+            v
+          );
         },
         message: (props) => `${props.value} is not a valid email address!`,
       },
@@ -71,6 +73,20 @@ const userSchema = new mongoose.Schema(
     },
     refreshToken: {
       type: String,
+    },
+    domaine: {
+      type: String,
+      trim: true,
+      default: null,
+    },
+    speciality: {
+      type: String,
+      trim: true,
+      default: null,
+    },
+    hasGuideShown: {
+      type: Boolean,
+      default: false,
     },
     // number of times a certificate was sent to this user
     certificateSentCount: {
