@@ -4,10 +4,10 @@ const { authMiddleware } = require('../middleware/authMiddleware');
 
 const router = express.Router();
 
-// GET /guide/status — fetch hasGuideShown + domaine + speciality
+// GET /guide/status — fetch hasGuideShown + domaine/speciality indices
 router.get('/status', authMiddleware, getGuideStatus);
 
-// PUT /guide/profile — set domaine and speciality
+// PUT /guide/profile — set domaine and speciality indices
 router.put('/profile', authMiddleware, updateGuideProfile);
 
 // PATCH /guide/shown — mark guide as shown

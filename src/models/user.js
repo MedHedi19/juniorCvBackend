@@ -75,13 +75,11 @@ const userSchema = new mongoose.Schema(
       type: String,
     },
     domaine: {
-      type: String,
-      trim: true,
+      type: Number,
       default: null,
     },
     speciality: {
-      type: String,
-      trim: true,
+      type: Number,
       default: null,
     },
     hasGuideShown: {
