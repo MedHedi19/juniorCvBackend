@@ -16,11 +16,26 @@ const getGuideStatus = async (req, res) => {
   }
 };
 
+// GET /guide/profile
+// Returns domaine and speciality indices for the authenticated user
+const getGuideProfile = async (req, res) => {
+  try {
+    const user = await User.findById(req.user.id).select('domaine speciality');
+    if (!user) return res.status(404).json({ message: 'User not found' });
+    res.json({
+      domaine: user.domaine,
+      speciality: user.speciality,
+    });
+  } catch (error) {
+    res.status(500).json({ message: 'Server error', error: error.message });
+  }
+};
+
 // PUT /guide/profile
 // Update domaine and speciality together in one call (stored as numeric indices)
 const updateGuideProfile = async (req, res) => {
   try {
-    const { domaine, speciality } = req.body;
+    const { domaine, speciality, hasGuideShown } = req.body;
     const update = {};
 
     if (domaine !== undefined) {
@@ -35,6 +50,12 @@ const updateGuideProfile = async (req, res) => {
       }
       update.speciality = speciality;
     }
+    if (hasGuideShown !== undefined) {
+      if (typeof hasGuideShown !== 'boolean') {
+        return res.status(400).json({ message: 'hasGuideShown must be a boolean' });
+      }
+      update.hasGuideShown = hasGuideShown;
+    }
 
     const user = await User.findByIdAndUpdate(
       req.user.id,
@@ -43,7 +64,12 @@ const updateGuideProfile = async (req, res) => {
     ).select('hasGuideShown domaine speciality');
 
     if (!user) return res.status(404).json({ message: 'User not found' });
-    res.json({ message: 'Profile updated', domaine: user.domaine, speciality: user.speciality });
+    res.json({
+      message: 'Profile updated',
+      domaine: user.domaine,
+      speciality: user.speciality,
+      hasGuideShown: user.hasGuideShown,
+    });
   } catch (error) {
     res.status(500).json({ message: 'Server error', error: error.message });
   }
@@ -66,4 +92,4 @@ const markGuideShown = async (req, res) => {
   }
 };
 
-module.exports = { getGuideStatus, updateGuideProfile, markGuideShown };
+module.exports = { getGuideStatus, getGuideProfile, updateGuideProfile, markGuideShown };
