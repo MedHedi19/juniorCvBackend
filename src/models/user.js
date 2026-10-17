@@ -107,11 +107,11 @@ userSchema.index({ 'socialAuth.appleId': 1 }, { sparse: true, unique: true });
 userSchema.index({ 'socialAuth.facebookId': 1 }, { sparse: true, unique: true });
 userSchema.index({ 'socialAuth.linkedinId': 1 }, { sparse: true, unique: true });
 
-userSchema.pre('save', async function (next) {
-  if (!this.isModified('password')) return next();
+// Async middleware must not use `next` — Mongoose 9+ doesn't pass it (causes "next is not a function")
+userSchema.pre('save', async function () {
+  if (!this.isModified('password') || !this.password) return;
   const salt = await bcrypt.genSalt(10);
   this.password = await bcrypt.hash(this.password, salt);
-  next();
 });
 
 userSchema.methods.comparePassword = async function (candidatePassword) {
