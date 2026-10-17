@@ -17,6 +17,21 @@ const localizedTextSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
+    de: {
+      type: String,
+      required: false,
+      trim: true,
+    },
+    esp: {
+      type: String,
+      required: false,
+      trim: true,
+    },
+    it: {
+      type: String,
+      required: false,
+      trim: true,
+    },
   },
   { _id: false }
 );

@@ -1,144 +1,884 @@
 {
   "Physique": [
     {
-      "question": {"fr": "Quelle est la durée pour un recruteur de construire une première impression selon votre apparence ?", "en": "How long does it take for a recruiter to form a first impression based on your appearance?", "ar": "كم من الوقت يستغرق المجند لتكوين انطباع أول بناءً على مظهرك؟"},
+      "question": {
+        "fr": "Avant un entretien, la préparation mentale inclut :",
+        "en": "Before an interview, mental preparation includes:",
+        "ar": "قبل المقابلة، تشمل الاستعداد العقلي:",
+        "de": "Before an interview, mental preparation includes:",
+        "esp": "Before an interview, mental preparation includes:",
+        "it": "Before an interview, mental preparation includes:"
+      },
       "options": [
-        {"fr": "5 minutes", "en": "5 minutes", "ar": "5 دقائق"},
-        {"fr": "2 minutes", "en": "2 minutes", "ar": "2 دقائق"},
-        {"fr": "30 secondes", "en": "30 seconds", "ar": "30 ثانية"}
+        {
+          "fr": "Ne rien préparer mentalement",
+          "en": "Prepare nothing mentally",
+          "ar": "عدم التحضير ذهنيًا",
+          "de": "Prepare nothing mentally",
+          "esp": "Prepare nothing mentally",
+          "it": "Prepare nothing mentally"
+        },
+        {
+          "fr": "Respiration, visualisation et révision des points clés",
+          "en": "Breathing, visualization and reviewing key points",
+          "ar": "التنفس، التصور ومراجعة النقاط الرئيسية",
+          "de": "Breathing, visualization and reviewing key points",
+          "esp": "Breathing, visualization and reviewing key points",
+          "it": "Breathing, visualization and reviewing key points"
+        },
+        {
+          "fr": "Regarder des vidéos de divertissement juste avant",
+          "en": "Watch entertainment videos just before",
+          "ar": "مشاهدة مقاطع ترفيهية قبل المقابلة مباشرة",
+          "de": "Watch entertainment videos just before",
+          "esp": "Watch entertainment videos just before",
+          "it": "Watch entertainment videos just before"
+        }
       ],
-      "correct": {"fr": "30 secondes", "en": "30 seconds", "ar": "30 ثانية"}
+      "correct": {
+        "fr": "Respiration, visualisation et révision des points clés",
+        "en": "Breathing, visualization and reviewing key points",
+        "ar": "التنفس، التصور ومراجعة النقاط الرئيسية",
+        "de": "Breathing, visualization and reviewing key points",
+        "esp": "Breathing, visualization and reviewing key points",
+        "it": "Breathing, visualization and reviewing key points"
+      }
     },
     {
-      "question": {"fr": "Pensez vous que l’apparence physique d’un candidat peut être un facteur de discrimination ?", "en": "Do you think a candidate's physical appearance can be a factor of discrimination?", "ar": "هل تعتقد أن مظهر المرشح يمكن أن يكون عامل تمييز؟"},
+      "question": {
+        "fr": "Quel exercice aide à réduire le stress avant l’entretien ?",
+        "en": "Which exercise helps reduce stress before the interview?",
+        "ar": "أي تمرين يساعد على تقليل التوتر قبل المقابلة؟",
+        "de": "Which exercise helps reduce stress before the interview?",
+        "esp": "Which exercise helps reduce stress before the interview?",
+        "it": "Which exercise helps reduce stress before the interview?"
+      },
       "options": [
-        {"fr": "Oui", "en": "Yes", "ar": "نعم"},
-        {"fr": "Non", "en": "No", "ar": "لا"},
-        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
+        {
+          "fr": "Mâcher du chewing-gum sans réfléchir",
+          "en": "Chew gum without thinking",
+          "ar": "مضغ العلكة دون تفكير",
+          "de": "Chew gum without thinking",
+          "esp": "Chew gum without thinking",
+          "it": "Chew gum without thinking"
+        },
+        {
+          "fr": "Respiration profonde et ancrage",
+          "en": "Deep breathing and grounding",
+          "ar": "التنفس العميق والتأريض",
+          "de": "Deep breathing and grounding",
+          "esp": "Deep breathing and grounding",
+          "it": "Deep breathing and grounding"
+        },
+        {
+          "fr": "Se mettre la pression en revoyant tout",
+          "en": "Put pressure on yourself by reviewing everything",
+          "ar": "الضغط على نفسك بمراجعة كل شيء",
+          "de": "Put pressure on yourself by reviewing everything",
+          "esp": "Put pressure on yourself by reviewing everything",
+          "it": "Put pressure on yourself by reviewing everything"
+        }
       ],
-      "correct": {"fr": "Oui", "en": "Yes", "ar": "نعم"}
+      "correct": {
+        "fr": "Respiration profonde et ancrage",
+        "en": "Deep breathing and grounding",
+        "ar": "التنفس العميق والتأريض",
+        "de": "Deep breathing and grounding",
+        "esp": "Deep breathing and grounding",
+        "it": "Deep breathing and grounding"
+      }
     },
     {
-      "question": {"fr": "Est ce que votre apparence peut refléter votre personnalité ?", "en": "Can your appearance reflect your personality?", "ar": "هل يمكن أن يعكس مظهرك شخصيتك؟"},
+      "question": {
+        "fr": "Si on te demande tes points faibles, que faire ?",
+        "en": "If asked about your weaknesses, what to do?",
+        "ar": "إذا سُئلت عن نقاط ضعفك، ماذا تفعل؟",
+        "de": "If asked about your weaknesses, what to do?",
+        "esp": "If asked about your weaknesses, what to do?",
+        "it": "If asked about your weaknesses, what to do?"
+      },
       "options": [
-        {"fr": "Oui", "en": "Yes", "ar": "نعم"},
-        {"fr": "Non", "en": "No", "ar": "لا"},
-        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
+        {
+          "fr": "Dire “aucun”",
+          "en": "Say 'none'",
+          "ar": "قول 'لا يوجد'",
+          "de": "Say 'none'",
+          "esp": "Say 'none'",
+          "it": "Say 'none'"
+        },
+        {
+          "fr": "Mentionner un vrai point et expliquer comment tu le travailles",
+          "en": "Mention a real point and explain how you're working on it",
+          "ar": "ذكر نقطة حقيقية وشرح كيف تعمل على تحسينها",
+          "de": "Mention a real point and explain how you're working on it",
+          "esp": "Mention a real point and explain how you're working on it",
+          "it": "Mention a real point and explain how you're working on it"
+        },
+        {
+          "fr": "Inventer un point non crédible",
+          "en": "Invent a non-credible weakness",
+          "ar": "اختراع نقطة غير قابلة للتصديق",
+          "de": "Invent a non-credible weakness",
+          "esp": "Invent a non-credible weakness",
+          "it": "Invent a non-credible weakness"
+        }
       ],
-      "correct": {"fr": "Oui", "en": "Yes", "ar": "نعم"}
+      "correct": {
+        "fr": "Mentionner un vrai point et expliquer comment tu le travailles",
+        "en": "Mention a real point and explain how you're working on it",
+        "ar": "ذكر نقطة حقيقية وشرح كيف تعمل على تحسينها",
+        "de": "Mention a real point and explain how you're working on it",
+        "esp": "Mention a real point and explain how you're working on it",
+        "it": "Mention a real point and explain how you're working on it"
+      }
     },
     {
-      "question": {"fr": "Pensez vous qu’une tenue appropriée est :", "en": "Do you think appropriate attire is:", "ar": "هل تعتقد أن اللباس المناسب هو:"},
+      "question": {
+        "fr": "Face à une question difficile, il est conseillé de :",
+        "en": "Facing a difficult question, it is advisable to:",
+        "ar": "أمام سؤال صعب، يُنصح بـ:",
+        "de": "Facing a difficult question, it is advisable to:",
+        "esp": "Facing a difficult question, it is advisable to:",
+        "it": "Facing a difficult question, it is advisable to:"
+      },
       "options": [
-        {"fr": "Une tenue à la mode colorées avec des accessoires", "en": "Fashionable colorful outfit with accessories", "ar": "ملابس عصرية ملونة مع إكسسوارات"},
-        {"fr": "Une tenue sobre et propre", "en": "Simple and clean outfit", "ar": "ملابس بسيطة ونظيفة"},
-        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
+        {
+          "fr": "Répondre immédiatement sans réfléchir",
+          "en": "Answer immediately without thinking",
+          "ar": "الرد فورًا دون تفكير",
+          "de": "Answer immediately without thinking",
+          "esp": "Answer immediately without thinking",
+          "it": "Answer immediately without thinking"
+        },
+        {
+          "fr": "Prendre un instant, demander clarification et répondre",
+          "en": "Take a moment, ask for clarification and answer",
+          "ar": "أخذ لحظة، طلب توضيح ثم الرد",
+          "de": "Take a moment, ask for clarification and answer",
+          "esp": "Take a moment, ask for clarification and answer",
+          "it": "Take a moment, ask for clarification and answer"
+        },
+        {
+          "fr": "Rester silencieux",
+          "en": "Remain silent",
+          "ar": "البقاء صامتًا",
+          "de": "Remain silent",
+          "esp": "Remain silent",
+          "it": "Remain silent"
+        }
       ],
-      "correct": {"fr": "Une tenue sobre et propre", "en": "Simple and clean outfit", "ar": "ملابس بسيطة ونظيفة"}
+      "correct": {
+        "fr": "Prendre un instant, demander clarification et répondre",
+        "en": "Take a moment, ask for clarification and answer",
+        "ar": "أخذ لحظة، طلب توضيح ثم الرد",
+        "de": "Take a moment, ask for clarification and answer",
+        "esp": "Take a moment, ask for clarification and answer",
+        "it": "Take a moment, ask for clarification and answer"
+      }
     },
     {
-      "question": {"fr": "Même si vous êtes stagiaire :", "en": "Even if you are an intern:", "ar": "حتى لو كنت متدربًا:"},
+      "question": {
+        "fr": "Comment gérer l’anxiété qui bloque la parole ?",
+        "en": "How to manage anxiety that blocks speech?",
+        "ar": "كيف تتعامل مع القلق الذي يعيق الكلام؟",
+        "de": "How to manage anxiety that blocks speech?",
+        "esp": "How to manage anxiety that blocks speech?",
+        "it": "How to manage anxiety that blocks speech?"
+      },
       "options": [
-        {"fr": "Le respect de la tenue est obligatoire", "en": "Respecting attire is mandatory", "ar": "احترام اللباس إلزامي"},
-        {"fr": "Le respect de la tenue est facultatif", "en": "Respecting attire is optional", "ar": "احترام اللباس اختياري"},
-        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
+        {
+          "fr": "Paniquer davantage",
+          "en": "Panic more",
+          "ar": "الذعر أكثر",
+          "de": "Panic more",
+          "esp": "Panic more",
+          "it": "Panic more"
+        },
+        {
+          "fr": "Respirer, reformuler la question et parler calmement",
+          "en": "Breathe, reformulate the question and speak calmly",
+          "ar": "التنفس، إعادة صياغة السؤال والتحدث بهدوء",
+          "de": "Breathe, reformulate the question and speak calmly",
+          "esp": "Breathe, reformulate the question and speak calmly",
+          "it": "Breathe, reformulate the question and speak calmly"
+        },
+        {
+          "fr": "Répondre par des monosyllabes",
+          "en": "Answer with monosyllables",
+          "ar": "الرد بمونوسيليفables",
+          "de": "Answer with monosyllables",
+          "esp": "Answer with monosyllables",
+          "it": "Answer with monosyllables"
+        }
       ],
-      "correct": {"fr": "Le respect de la tenue est obligatoire", "en": "Respecting attire is mandatory", "ar": "احترام اللباس إلزامي"}
+      "correct": {
+        "fr": "Respirer, reformuler la question et parler calmement",
+        "en": "Breathe, reformulate the question and speak calmly",
+        "ar": "التنفس، إعادة صياغة السؤال والتحدث بهدوء",
+        "de": "Breathe, reformulate the question and speak calmly",
+        "esp": "Breathe, reformulate the question and speak calmly",
+        "it": "Breathe, reformulate the question and speak calmly"
+      }
     },
     {
-      "question": {"fr": "A votre avis, le gestuel :", "en": "In your opinion, gestures:", "ar": "برأيك، الإيماءات:"},
+      "question": {
+        "fr": "Quelle attitude montre de la résilience en entretien ?",
+        "en": "Which attitude shows resilience in an interview?",
+        "ar": "أي سلوك يُظهر المرونة في المقابلة؟",
+        "de": "Which attitude shows resilience in an interview?",
+        "esp": "Which attitude shows resilience in an interview?",
+        "it": "Which attitude shows resilience in an interview?"
+      },
       "options": [
-        {"fr": "A un impact direct sur votre image", "en": "Has a direct impact on your image", "ar": "لها تأثير مباشر على صورتك"},
-        {"fr": "N’a aucun impact sur votre image", "en": "Has no impact on your image", "ar": "ليس لها أي تأثير على صورتك"},
-        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
+        {
+          "fr": "Se focaliser sur les erreurs passées",
+          "en": "Focus on past mistakes",
+          "ar": "التركيز على الأخطاء الماضية",
+          "de": "Focus on past mistakes",
+          "esp": "Focus on past mistakes",
+          "it": "Focus on past mistakes"
+        },
+        {
+          "fr": "Reconnaître les difficultés et montrer comment tu as progressé",
+          "en": "Acknowledge difficulties and show how you've progressed",
+          "ar": "الاعتراف بالصعوبات وإظهار كيفية تقدمك",
+          "de": "Acknowledge difficulties and show how you've progressed",
+          "esp": "Acknowledge difficulties and show how you've progressed",
+          "it": "Acknowledge difficulties and show how you've progressed"
+        },
+        {
+          "fr": "Dire que tout est parfait",
+          "en": "Say everything is perfect",
+          "ar": "قول أن كل شيء مثالي",
+          "de": "Say everything is perfect",
+          "esp": "Say everything is perfect",
+          "it": "Say everything is perfect"
+        }
       ],
-      "correct": {"fr": "A un impact direct sur votre image", "en": "Has a direct impact on your image", "ar": "لها تأثير مباشر على صورتك"}
+      "correct": {
+        "fr": "Reconnaître les difficultés et montrer comment tu as progressé",
+        "en": "Acknowledge difficulties and show how you've progressed",
+        "ar": "الاعتراف بالصعوبات وإظهار كيفية تقدمك",
+        "de": "Acknowledge difficulties and show how you've progressed",
+        "esp": "Acknowledge difficulties and show how you've progressed",
+        "it": "Acknowledge difficulties and show how you've progressed"
+      }
     },
     {
-      "question": {"fr": "Quels sont les trucs que vous pouvez faire sous stress et qui peuvent agir sur votre apparence ?", "en": "What things can you do under stress that can affect your appearance?", "ar": "ما هي الأشياء التي يمكنك فعلها تحت الضغط والتي يمكن أن تؤثر على مظهرك؟"},
+      "question": {
+        "fr": "Pourquoi est-il utile de préparer des exemples concrets ?",
+        "en": "Why is it useful to prepare concrete examples?",
+        "ar": "لماذا من المفيد تحضير أمثلة ملموسة؟",
+        "de": "Why is it useful to prepare concrete examples?",
+        "esp": "Why is it useful to prepare concrete examples?",
+        "it": "Why is it useful to prepare concrete examples?"
+      },
       "options": [
-        {"fr": "Parler les yeux dans les yeux, montrer vos mains, maîtriser votre voix.", "en": "Speak eye to eye, show your hands, control your voice.", "ar": "التحدث بالعين، إظهار اليدين، التحكم في الصوت"},
-        {"fr": "Passer la main dans les cheveux, se frotter les mains, se mordre la lèvre", "en": "Run your hand through your hair, rub your hands, bite your lip", "ar": "تمرير اليد في الشعر، فرك اليدين، عض الشفة"},
-        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
+        {
+          "fr": "Pour meubler le silence",
+          "en": "To fill the silence",
+          "ar": "لملء الصمت",
+          "de": "To fill the silence",
+          "esp": "To fill the silence",
+          "it": "To fill the silence"
+        },
+        {
+          "fr": "Pour illustrer tes compétences et rassurer le recruteur",
+          "en": "To illustrate your skills and reassure the recruiter",
+          "ar": "لتوضيح مهاراتك وطمأنة المجند",
+          "de": "To illustrate your skills and reassure the recruiter",
+          "esp": "To illustrate your skills and reassure the recruiter",
+          "it": "To illustrate your skills and reassure the recruiter"
+        },
+        {
+          "fr": "Pour allonger la conversation inutilement",
+          "en": "To lengthen the conversation unnecessarily",
+          "ar": "لإطالة المحادثة دون داع",
+          "de": "To lengthen the conversation unnecessarily",
+          "esp": "To lengthen the conversation unnecessarily",
+          "it": "To lengthen the conversation unnecessarily"
+        }
       ],
-      "correct": {"fr": "Passer la main dans les cheveux, se frotter les mains, se mordre la lèvre", "en": "Run your hand through your hair, rub your hands, bite your lip", "ar": "تمرير اليد في الشعر، فرك اليدين، عض الشفة"}
+      "correct": {
+        "fr": "Pour illustrer tes compétences et rassurer le recruteur",
+        "en": "To illustrate your skills and reassure the recruiter",
+        "ar": "لتوضيح مهاراتك وطمأنة المجند",
+        "de": "To illustrate your skills and reassure the recruiter",
+        "esp": "To illustrate your skills and reassure the recruiter",
+        "it": "To illustrate your skills and reassure the recruiter"
+      }
     },
     {
-      "question": {"fr": "Le recruteur pense à un candidat souriant et sociable :", "en": "The recruiter thinks of a smiling and sociable candidate as:", "ar": "يفكر المجند في المرشح المبتسم والاجتماعي كالتالي:"},
+      "question": {
+        "fr": "Comment réagir à une question sur un échec professionnel ?",
+        "en": "How to react to a question about a professional failure?",
+        "ar": "كيفية الرد على سؤال حول فشل مهني؟",
+        "de": "How to react to a question about a professional failure?",
+        "esp": "How to react to a question about a professional failure?",
+        "it": "How to react to a question about a professional failure?"
+      },
       "options": [
-        {"fr": "Quelqu’un qui peut s’intégrer très rapidement dans une équipe de travail", "en": "Someone who can integrate very quickly into a work team", "ar": "شخص يمكنه الاندماج بسرعة في فريق العمل"},
-        {"fr": "Quelqu’un qui n’est pas sérieux", "en": "Someone who is not serious", "ar": "شخص غير جاد"},
-        {"fr": "Neutre", "en": "Neutral", "ar": "محايد"}
+        {
+          "fr": "Blâmer les autres",
+          "en": "Blame others",
+          "ar": "لوم الآخرين",
+          "de": "Blame others",
+          "esp": "Blame others",
+          "it": "Blame others"
+        },
+        {
+          "fr": "Expliquer la situation, ce que tu as appris et le résultat",
+          "en": "Explain the situation, what you learned and the outcome",
+          "ar": "شرح الوضع، ما تعلمته والنتيجة",
+          "de": "Explain the situation, what you learned and the outcome",
+          "esp": "Explain the situation, what you learned and the outcome",
+          "it": "Explain the situation, what you learned and the outcome"
+        },
+        {
+          "fr": "Nier l’échec",
+          "en": "Deny the failure",
+          "ar": "إنكار الفشل",
+          "de": "Deny the failure",
+          "esp": "Deny the failure",
+          "it": "Deny the failure"
+        }
       ],
-      "correct": {"fr": "Quelqu’un qui peut s’intégrer très rapidement dans une équipe de travail", "en": "Someone who can integrate very quickly into a work team", "ar": "شخص يمكنه الاندماج بسرعة في فريق العمل"}
+      "correct": {
+        "fr": "Expliquer la situation, ce que tu as appris et le résultat",
+        "en": "Explain the situation, what you learned and the outcome",
+        "ar": "شرح الوضع، ما تعلمته والنتيجة",
+        "de": "Explain the situation, what you learned and the outcome",
+        "esp": "Explain the situation, what you learned and the outcome",
+        "it": "Explain the situation, what you learned and the outcome"
+      }
     },
     {
-      "question": {"fr": "Pourquoi le recruteur s’intéresse à l’apparence d’un candidat ?", "en": "Why does the recruiter care about a candidate's appearance?", "ar": "لماذا يهتم المجند بمظهر المرشح؟"},
+      "question": {
+        "fr": "Pour être à l’aise, que faut-il travailler avant l’entretien ?",
+        "en": "To be comfortable, what should you work on before the interview?",
+        "ar": "لكي تكون مرتاحًا، ماذا يجب أن تعمل قبل المقابلة؟",
+        "de": "To be comfortable, what should you work on before the interview?",
+        "esp": "To be comfortable, what should you work on before the interview?",
+        "it": "To be comfortable, what should you work on before the interview?"
+      },
       "options": [
-        {"fr": "Parce qu’il représente l’image de l’entreprise au futur", "en": "Because he represents the company's future image", "ar": "لأنه يمثل صورة الشركة في المستقبل"},
-        {"fr": "Parce qu’il cherche un joli profil", "en": "Because he is looking for a nice profile", "ar": "لأنه يبحث عن ملف جميل"},
-        {"fr": "Parce qu’il cherche un candidat branché et à la mode", "en": "Because he is looking for a trendy and fashionable candidate", "ar": "لأنه يبحث عن مرشح عصري وعلى الموضة"}
+        {
+          "fr": "Rien du tout",
+          "en": "Nothing at all",
+          "ar": "لا شيء على الإطلاق",
+          "de": "Nothing at all",
+          "esp": "Nothing at all",
+          "it": "Nothing at all"
+        },
+        {
+          "fr": "Tes réponses principales, ton pitch et tes exemples",
+          "en": "Your main answers, your pitch and your examples",
+          "ar": "إجاباتك الرئيسية، عرضك وأمثلتك",
+          "de": "Your main answers, your pitch and your examples",
+          "esp": "Your main answers, your pitch and your examples",
+          "it": "Your main answers, your pitch and your examples"
+        },
+        {
+          "fr": "Seulement ton CV",
+          "en": "Only your CV",
+          "ar": "سيرتك الذاتية فقط",
+          "de": "Only your CV",
+          "esp": "Only your CV",
+          "it": "Only your CV"
+        }
       ],
-      "correct": {"fr": "Parce qu’il représente l’image de l’entreprise au futur", "en": "Because he represents the company's future image", "ar": "لأنه يمثل صورة الشركة في المستقبل"}
+      "correct": {
+        "fr": "Tes réponses principales, ton pitch et tes exemples",
+        "en": "Your main answers, your pitch and your examples",
+        "ar": "إجاباتك الرئيسية، عرضك وأمثلتك",
+        "de": "Your main answers, your pitch and your examples",
+        "esp": "Your main answers, your pitch and your examples",
+        "it": "Your main answers, your pitch and your examples"
+      }
     },
     {
-      "question": {"fr": "La tenue vestimentaire varie-t-elle d’un poste à un autre ?", "en": "Does dress code vary from one position to another?", "ar": "هل يختلف اللباس من وظيفة لأخرى؟"},
+      "question": {
+        "fr": "Face au stress, quel comportement éviter pendant l’entretien ?",
+        "en": "Faced with stress, which behavior to avoid during the interview?",
+        "ar": "في مواجهة التوتر، أي سلوك يجب تجنبه أثناء المقابلة؟",
+        "de": "Faced with stress, which behavior to avoid during the interview?",
+        "esp": "Faced with stress, which behavior to avoid during the interview?",
+        "it": "Faced with stress, which behavior to avoid during the interview?"
+      },
       "options": [
-        {"fr": "Non", "en": "No", "ar": "لا"},
-        {"fr": "Oui", "en": "Yes", "ar": "نعم"},
-        {"fr": "Parfois", "en": "Sometimes", "ar": "أحيانًا"}
+        {
+          "fr": "Montrer que tu es tendu sans rien dire",
+          "en": "Show that you are tense without saying anything",
+          "ar": "إظهار أنك متوتر دون قول شيء",
+          "de": "Show that you are tense without saying anything",
+          "esp": "Show that you are tense without saying anything",
+          "it": "Show that you are tense without saying anything"
+        },
+        {
+          "fr": "Se montrer fermé et impatient",
+          "en": "Be closed and impatient",
+          "ar": "الظهور بمظهر مغلق وغير صبور",
+          "de": "Be closed and impatient",
+          "esp": "Be closed and impatient",
+          "it": "Be closed and impatient"
+        },
+        {
+          "fr": "Communiquer calmement",
+          "en": "Communicate calmly",
+          "ar": "التواصل بهدوء",
+          "de": "Communicate calmly",
+          "esp": "Communicate calmly",
+          "it": "Communicate calmly"
+        }
       ],
-      "correct": {"fr": "Oui", "en": "Yes", "ar": "نعم"}
+      "correct": {
+        "fr": "Se montrer fermé et impatient",
+        "en": "Be closed and impatient",
+        "ar": "الظهور بمظهر مغلق وغير صبور",
+        "de": "Be closed and impatient",
+        "esp": "Be closed and impatient",
+        "it": "Be closed and impatient"
+      }
     },
     {
-      "question": {"fr": "Pourquoi faut-il soigner son apparence ?", "en": "Why should you take care of your appearance?", "ar": "لماذا يجب الاهتمام بالمظهر؟"},
+      "question": {
+        "fr": "Pourquoi la confiance en soi est-elle importante ?",
+        "en": "Why is self-confidence important?",
+        "ar": "لماذا الثقة بالنفس مهمة؟",
+        "de": "Why is self-confidence important?",
+        "esp": "Why is self-confidence important?",
+        "it": "Why is self-confidence important?"
+      },
       "options": [
-        {"fr": "Pour séduire", "en": "To seduce", "ar": "للإغراء"},
-        {"fr": "Pour faire bonne impression", "en": "To make a good impression", "ar": "لترك انطباع جيد"},
-        {"fr": "Par obligation", "en": "By obligation", "ar": "إلزامًا"},
-        {"fr": "Aucune importance", "en": "No importance", "ar": "بدون أهمية"}
+        {
+          "fr": "Elle remplace la compétence",
+          "en": "It replaces competence",
+          "ar": "تحل محل الكفاءة",
+          "de": "It replaces competence",
+          "esp": "It replaces competence",
+          "it": "It replaces competence"
+        },
+        {
+          "fr": "Elle facilite la communication et inspire confiance",
+          "en": "It facilitates communication and inspires confidence",
+          "ar": "تسهل التواصل وتلهم الثقة",
+          "de": "It facilitates communication and inspires confidence",
+          "esp": "It facilitates communication and inspires confidence",
+          "it": "It facilitates communication and inspires confidence"
+        },
+        {
+          "fr": "Elle permet d’éviter les questions",
+          "en": "It allows avoiding questions",
+          "ar": "تسمح بتجنب الأسئلة",
+          "de": "It allows avoiding questions",
+          "esp": "It allows avoiding questions",
+          "it": "It allows avoiding questions"
+        }
       ],
-      "correct": {"fr": "Pour faire bonne impression", "en": "To make a good impression", "ar": "لترك انطباع جيد"}
+      "correct": {
+        "fr": "Elle facilite la communication et inspire confiance",
+        "en": "It facilitates communication and inspires confidence",
+        "ar": "تسهل التواصل وتلهم الثقة",
+        "de": "It facilitates communication and inspires confidence",
+        "esp": "It facilitates communication and inspires confidence",
+        "it": "It facilitates communication and inspires confidence"
+      }
     },
     {
-      "question": {"fr": "Quel vêtement est déconseillé en entretien ?", "en": "Which clothing is not recommended in an interview?", "ar": "ما هو اللباس غير الموصى به في المقابلة؟"},
+      "question": {
+        "fr": "Que signifie “préparer des questions à poser” ?",
+        "en": "What does 'prepare questions to ask' mean?",
+        "ar": "ماذا يعني 'تحضير أسئلة لطرحها'؟",
+        "de": "What does 'prepare questions to ask' mean?",
+        "esp": "What does 'prepare questions to ask' mean?",
+        "it": "What does 'prepare questions to ask' mean?"
+      },
       "options": [
-        {"fr": "Jean", "en": "Jeans", "ar": "جينز"},
-        {"fr": "Costume", "en": "Suit", "ar": "بدلة"},
-        {"fr": "Chemise", "en": "Shirt", "ar": "قميص"},
-        {"fr": "Aucun", "en": "None", "ar": "لا شيء"}
+        {
+          "fr": "Ne pas poser de questions",
+          "en": "Not ask questions",
+          "ar": "عدم طرح أسئلة",
+          "de": "Not ask questions",
+          "esp": "Not ask questions",
+          "it": "Not ask questions"
+        },
+        {
+          "fr": "Préparer 2–3 questions pertinentes sur le poste ou l’entreprise",
+          "en": "Prepare 2–3 relevant questions about the role or the company",
+          "ar": "تحضير 2-3 أسئلة ذات صلة بالمنصب أو الشركة",
+          "de": "Prepare 2–3 relevant questions about the role or the company",
+          "esp": "Prepare 2–3 relevant questions about the role or the company",
+          "it": "Prepare 2–3 relevant questions about the role or the company"
+        },
+        {
+          "fr": "Demander le salaire directement",
+          "en": "Ask about salary directly",
+          "ar": "طلب الراتب مباشرة",
+          "de": "Ask about salary directly",
+          "esp": "Ask about salary directly",
+          "it": "Ask about salary directly"
+        }
       ],
-      "correct": {"fr": "Jean", "en": "Jeans", "ar": "جينز"}
+      "correct": {
+        "fr": "Préparer 2–3 questions pertinentes sur le poste ou l’entreprise",
+        "en": "Prepare 2–3 relevant questions about the role or the company",
+        "ar": "تحضير 2-3 أسئلة ذات صلة بالمنصب أو الشركة",
+        "de": "Prepare 2–3 relevant questions about the role or the company",
+        "esp": "Prepare 2–3 relevant questions about the role or the company",
+        "it": "Prepare 2–3 relevant questions about the role or the company"
+      }
     },
     {
-      "question": {"fr": "Quel est l’impact d’un sourire en entretien ?", "en": "What is the impact of a smile in an interview?", "ar": "ما هو تأثير الابتسامة في المقابلة؟"},
+      "question": {
+        "fr": "Quel état d’esprit favorise un bon entretien ?",
+        "en": "What mindset favors a good interview?",
+        "ar": "أي عقلية تُعزز مقابلة جيدة؟",
+        "de": "What mindset favors a good interview?",
+        "esp": "What mindset favors a good interview?",
+        "it": "What mindset favors a good interview?"
+      },
       "options": [
-        {"fr": "Aucun", "en": "None", "ar": "لا شيء"},
-        {"fr": "Crée du lien", "en": "Creates a connection", "ar": "يخلق رابطًا"},
-        {"fr": "Trop informel", "en": "Too informal", "ar": "غير رسمي جدًا"},
-        {"fr": "Inutile", "en": "Useless", "ar": "غير مفيد"}
+        {
+          "fr": "Se présenter comme supérieurs",
+          "en": "Present yourself as superior",
+          "ar": "تقديم نفسك على أنك متفوق",
+          "de": "Present yourself as superior",
+          "esp": "Present yourself as superior",
+          "it": "Present yourself as superior"
+        },
+        {
+          "fr": "Curiosité, humilité et volonté d’apprendre",
+          "en": "Curiosity, humility and willingness to learn",
+          "ar": "الفضول، التواضع والرغبة في التعلم",
+          "de": "Curiosity, humility and willingness to learn",
+          "esp": "Curiosity, humility and willingness to learn",
+          "it": "Curiosity, humility and willingness to learn"
+        },
+        {
+          "fr": "Indifférence",
+          "en": "Indifference",
+          "ar": "اللامبالاة",
+          "de": "Indifference",
+          "esp": "Indifference",
+          "it": "Indifference"
+        }
       ],
-      "correct": {"fr": "Crée du lien", "en": "Creates a connection", "ar": "يخلق رابطًا"}
+      "correct": {
+        "fr": "Curiosité, humilité et volonté d’apprendre",
+        "en": "Curiosity, humility and willingness to learn",
+        "ar": "الفضول، التواضع والرغبة في التعلم",
+        "de": "Curiosity, humility and willingness to learn",
+        "esp": "Curiosity, humility and willingness to learn",
+        "it": "Curiosity, humility and willingness to learn"
+      }
     },
     {
-      "question": {"fr": "Quelle couleur est préférable pour un entretien ?", "en": "Which color is preferable for an interview?", "ar": "ما هو اللون المفضل للمقابلة؟"},
+      "question": {
+        "fr": "Si tu échoues à un entretien, que faire ensuite ?",
+        "en": "If you fail an interview, what to do next?",
+        "ar": "إذا فشلت في مقابلة، ماذا تفعل بعد ذلك؟",
+        "de": "If you fail an interview, what to do next?",
+        "esp": "If you fail an interview, what to do next?",
+        "it": "If you fail an interview, what to do next?"
+      },
       "options": [
-        {"fr": "Noir", "en": "Black", "ar": "أسود"},
-        {"fr": "Fluo", "en": "Fluorescent", "ar": "فلوريسنت"},
-        {"fr": "Multicolore", "en": "Multicolored", "ar": "متعدد الألوان"},
-        {"fr": "Transparent", "en": "Transparent", "ar": "شفاف"}
+        {
+          "fr": "Abandonner la recherche",
+          "en": "Give up the search",
+          "ar": "التخلي عن البحث",
+          "de": "Give up the search",
+          "esp": "Give up the search",
+          "it": "Give up the search"
+        },
+        {
+          "fr": "Demander un feedback et en tirer des leçons",
+          "en": "Ask for feedback and learn from it",
+          "ar": "طلب ملاحظات والتعلم منها",
+          "de": "Ask for feedback and learn from it",
+          "esp": "Ask for feedback and learn from it",
+          "it": "Ask for feedback and learn from it"
+        },
+        {
+          "fr": "Blâmer le recruteur",
+          "en": "Blame the recruiter",
+          "ar": "لوم المجند",
+          "de": "Blame the recruiter",
+          "esp": "Blame the recruiter",
+          "it": "Blame the recruiter"
+        }
       ],
-      "correct": {"fr": "Noir", "en": "Black", "ar": "أسود"}
+      "correct": {
+        "fr": "Demander un feedback et en tirer des leçons",
+        "en": "Ask for feedback and learn from it",
+        "ar": "طلب ملاحظات والتعلم منها",
+        "de": "Ask for feedback and learn from it",
+        "esp": "Ask for feedback and learn from it",
+        "it": "Ask for feedback and learn from it"
+      }
     },
     {
-      "question": {"fr": "Quel est le premier élément observé par un recruteur ?", "en": "What is the first element observed by a recruiter?", "ar": "ما هو أول عنصر يلاحظه المجند؟"},
+      "question": {
+        "fr": "Comment gérer une question piège ?",
+        "en": "How to handle a trick question?",
+        "ar": "كيفية التعامل مع سؤال فخ؟",
+        "de": "How to handle a trick question?",
+        "esp": "How to handle a trick question?",
+        "it": "How to handle a trick question?"
+      },
       "options": [
-        {"fr": "Le regard", "en": "The look", "ar": "النظرة"},
-        {"fr": "La poignée de main", "en": "Handshake", "ar": "المصافحة"},
-        {"fr": "Les chaussures", "en": "Shoes", "ar": "الأحذية"},
-        {"fr": "La posture", "en": "Posture", "ar": "الوضعية"}
+        {
+          "fr": "Mentir",
+          "en": "Lie",
+          "ar": "الكذب",
+          "de": "Lie",
+          "esp": "Lie",
+          "it": "Lie"
+        },
+        {
+          "fr": "Prendre le temps, répondre honnêtement et montrer ton apprentissage",
+          "en": "Take time, answer honestly and show your learning",
+          "ar": "أخذ الوقت، الإجابة بصدق وإظهار ما تعلمته",
+          "de": "Take time, answer honestly and show your learning",
+          "esp": "Take time, answer honestly and show your learning",
+          "it": "Take time, answer honestly and show your learning"
+        },
+        {
+          "fr": "Ne pas répondre",
+          "en": "Not answer",
+          "ar": "عدم الإجابة",
+          "de": "Not answer",
+          "esp": "Not answer",
+          "it": "Not answer"
+        }
       ],
-      "correct": {"fr": "Le regard", "en": "The look", "ar": "النظرة"}
+      "correct": {
+        "fr": "Prendre le temps, répondre honnêtement et montrer ton apprentissage",
+        "en": "Take time, answer honestly and show your learning",
+        "ar": "أخذ الوقت، الإجابة بصدق وإظهار ما تعلمته",
+        "de": "Take time, answer honestly and show your learning",
+        "esp": "Take time, answer honestly and show your learning",
+        "it": "Take time, answer honestly and show your learning"
+      }
+    },
+    {
+      "question": {
+        "fr": "Lors d’un entretien, l’écoute active signifie :",
+        "en": "In an interview, active listening means:",
+        "ar": "في المقابلة، ماذا يعني الاستماع النشط؟",
+        "de": "In an interview, active listening means:",
+        "esp": "In an interview, active listening means:",
+        "it": "In an interview, active listening means:"
+      },
+      "options": [
+        {
+          "fr": "Attendre son tour pour parler",
+          "en": "Wait your turn to speak",
+          "ar": "انتظار دورك للتحدث",
+          "de": "Wait your turn to speak",
+          "esp": "Wait your turn to speak",
+          "it": "Wait your turn to speak"
+        },
+        {
+          "fr": "Écouter, reformuler et répondre de façon pertinente",
+          "en": "Listen, rephrase and respond relevantly",
+          "ar": "الاستماع، إعادة الصياغة والرد بشكل مناسب",
+          "de": "Listen, rephrase and respond relevantly",
+          "esp": "Listen, rephrase and respond relevantly",
+          "it": "Listen, rephrase and respond relevantly"
+        },
+        {
+          "fr": "Regarder son téléphone",
+          "en": "Look at your phone",
+          "ar": "مراقبة هاتفك",
+          "de": "Look at your phone",
+          "esp": "Look at your phone",
+          "it": "Look at your phone"
+        }
+      ],
+      "correct": {
+        "fr": "Écouter, reformuler et répondre de façon pertinente",
+        "en": "Listen, rephrase and respond relevantly",
+        "ar": "الاستماع، إعادة الصياغة والرد بشكل مناسب",
+        "de": "Listen, rephrase and respond relevantly",
+        "esp": "Listen, rephrase and respond relevantly",
+        "it": "Listen, rephrase and respond relevantly"
+      }
+    },
+    {
+      "question": {
+        "fr": "Quelle préparation mentale aide la performance ?",
+        "en": "Which mental preparation helps performance?",
+        "ar": "ما الاستعداد العقلي الذي يساعد الأداء؟",
+        "de": "Which mental preparation helps performance?",
+        "esp": "Which mental preparation helps performance?",
+        "it": "Which mental preparation helps performance?"
+      },
+      "options": [
+        {
+          "fr": "Sauter des repas pour être nerveux",
+          "en": "Skip meals to be nervous",
+          "ar": "تخطي الوجبات للشعور بالتوتر",
+          "de": "Skip meals to be nervous",
+          "esp": "Skip meals to be nervous",
+          "it": "Skip meals to be nervous"
+        },
+        {
+          "fr": "Bien dormir, manger léger et répéter son pitch",
+          "en": "Sleep well, eat light and rehearse your pitch",
+          "ar": "النوم جيدًا، تناول طعامًا خفيفًا وتكرار عرضك",
+          "de": "Sleep well, eat light and rehearse your pitch",
+          "esp": "Sleep well, eat light and rehearse your pitch",
+          "it": "Sleep well, eat light and rehearse your pitch"
+        },
+        {
+          "fr": "Ne rien faire la veille",
+          "en": "Do nothing the night before",
+          "ar": "لا تفعل شيئًا في الليلة السابقة",
+          "de": "Do nothing the night before",
+          "esp": "Do nothing the night before",
+          "it": "Do nothing the night before"
+        }
+      ],
+      "correct": {
+        "fr": "Bien dormir, manger léger et répéter son pitch",
+        "en": "Sleep well, eat light and rehearse your pitch",
+        "ar": "النوم جيدًا، تناول طعامًا خفيفًا وتكرار عرضك",
+        "de": "Sleep well, eat light and rehearse your pitch",
+        "esp": "Sleep well, eat light and rehearse your pitch",
+        "it": "Sleep well, eat light and rehearse your pitch"
+      }
+    },
+    {
+      "question": {
+        "fr": "Si tu es surpris par une question technique, tu peux :",
+        "en": "If you're surprised by a technical question, you can:",
+        "ar": "إذا فوجئت بسؤال تقني، يمكنك:",
+        "de": "If you're surprised by a technical question, you can:",
+        "esp": "If you're surprised by a technical question, you can:",
+        "it": "If you're surprised by a technical question, you can:"
+      },
+      "options": [
+        {
+          "fr": "Inventer une réponse",
+          "en": "Invent an answer",
+          "ar": "اختراع إجابة",
+          "de": "Invent an answer",
+          "esp": "Invent an answer",
+          "it": "Invent an answer"
+        },
+        {
+          "fr": "Dire honnêtement que tu ne sais pas mais expliquer comment tu tâcherais de résoudre",
+          "en": "Admit you don't know but explain how you'd try to solve it",
+          "ar": "الاعتراف بأنك لا تعرف ولكن شرح كيفية محاولتك للحل",
+          "de": "Admit you don't know but explain how you'd try to solve it",
+          "esp": "Admit you don't know but explain how you'd try to solve it",
+          "it": "Admit you don't know but explain how you'd try to solve it"
+        },
+        {
+          "fr": "Changer de sujet",
+          "en": "Change the subject",
+          "ar": "تغيير الموضوع",
+          "de": "Change the subject",
+          "esp": "Change the subject",
+          "it": "Change the subject"
+        }
+      ],
+      "correct": {
+        "fr": "Dire honnêtement que tu ne sais pas mais expliquer comment tu tâcherais de résoudre",
+        "en": "Admit you don't know but explain how you'd try to solve it",
+        "ar": "الاعتراف بأنك لا تعرف ولكن شرح كيفية محاولتك للحل",
+        "de": "Admit you don't know but explain how you'd try to solve it",
+        "esp": "Admit you don't know but explain how you'd try to solve it",
+        "it": "Admit you don't know but explain how you'd try to solve it"
+      }
+    },
+    {
+      "question": {
+        "fr": "Quel rôle joue l’empathie en entretien ?",
+        "en": "What role does empathy play in an interview?",
+        "ar": "ما دور التعاطف في المقابلة؟",
+        "de": "What role does empathy play in an interview?",
+        "esp": "What role does empathy play in an interview?",
+        "it": "What role does empathy play in an interview?"
+      },
+      "options": [
+        {
+          "fr": "Aucun rôle",
+          "en": "No role",
+          "ar": "لا دور",
+          "de": "No role",
+          "esp": "No role",
+          "it": "No role"
+        },
+        {
+          "fr": "Aide à créer un lien et comprendre les attentes",
+          "en": "Helps create a bond and understand expectations",
+          "ar": "يساعد على خلق صلة وفهم التوقعات",
+          "de": "Helps create a bond and understand expectations",
+          "esp": "Helps create a bond and understand expectations",
+          "it": "Helps create a bond and understand expectations"
+        },
+        {
+          "fr": "Remplace toutes les compétences",
+          "en": "Replaces all skills",
+          "ar": "يحل محل كل المهارات",
+          "de": "Replaces all skills",
+          "esp": "Replaces all skills",
+          "it": "Replaces all skills"
+        }
+      ],
+      "correct": {
+        "fr": "Aide à créer un lien et comprendre les attentes",
+        "en": "Helps create a bond and understand expectations",
+        "ar": "يساعد على خلق صلة وفهم التوقعات",
+        "de": "Helps create a bond and understand expectations",
+        "esp": "Helps create a bond and understand expectations",
+        "it": "Helps create a bond and understand expectations"
+      }
+    },
+    {
+      "question": {
+        "fr": "Pour rester serein, il est utile de :",
+        "en": "To stay calm, it is useful to:",
+        "ar": "للبقاء هادئًا، من المفيد:",
+        "de": "To stay calm, it is useful to:",
+        "esp": "To stay calm, it is useful to:",
+        "it": "To stay calm, it is useful to:"
+      },
+      "options": [
+        {
+          "fr": "Relativiser et se rappeler que l’entretien est un échange",
+          "en": "Put things into perspective and remember the interview is a conversation",
+          "ar": "وضع الأمور في نصابها وتذكّر أن المقابلة حوار",
+          "de": "Put things into perspective and remember the interview is a conversation",
+          "esp": "Put things into perspective and remember the interview is a conversation",
+          "it": "Put things into perspective and remember the interview is a conversation"
+        },
+        {
+          "fr": "Se dire que tout dépend uniquement du résultat",
+          "en": "Tell yourself that everything depends only on the result",
+          "ar": "إقناع نفسك أن كل شيء يعتمد فقط على النتيجة",
+          "de": "Tell yourself that everything depends only on the result",
+          "esp": "Tell yourself that everything depends only on the result",
+          "it": "Tell yourself that everything depends only on the result"
+        },
+        {
+          "fr": "Se comparer sans cesse aux autres",
+          "en": "Constantly compare yourself to others",
+          "ar": "مقارنة نفسك باستمرار بالآخرين",
+          "de": "Constantly compare yourself to others",
+          "esp": "Constantly compare yourself to others",
+          "it": "Constantly compare yourself to others"
+        }
+      ],
+      "correct": {
+        "fr": "Relativiser et se rappeler que l’entretien est un échange",
+        "en": "Put things into perspective and remember the interview is a conversation",
+        "ar": "وضع الأمور في نصابها وتذكّر أن المقابلة حوار",
+        "de": "Put things into perspective and remember the interview is a conversation",
+        "esp": "Put things into perspective and remember the interview is a conversation",
+        "it": "Put things into perspective and remember the interview is a conversation"
+      }
     }
   ]
 }

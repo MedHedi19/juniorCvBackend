@@ -6,17 +6,26 @@
       "intro": {
         "fr": "Ta patience et ta loyauté sont des atouts, mais l'initiative est essentielle pour progresser.",
         "en": "Your patience and loyalty are assets, but initiative is essential to progress.",
-        "ar": "صبرك وولائك من نقاط قوتك، لكن المبادرة ضرورية للتقدم."
+        "ar": "صبرك وولائك من نقاط قوتك، لكن المبادرة ضرورية للتقدم.",
+        "de": "Your patience and loyalty are assets, but initiative is essential to progress.",
+        "esp": "Your patience and loyalty are assets, but initiative is essential to progress.",
+        "it": "Your patience and loyalty are assets, but initiative is essential to progress."
       },
       "proverb": {
         "fr": "On n'avance jamais sans faire le premier pas.",
         "en": "You never move forward without taking the first step.",
-        "ar": "لن تتقدم أبدًا دون أخذ الخطوة الأولى."
+        "ar": "لن تتقدم أبدًا دون أخذ الخطوة الأولى.",
+        "de": "You never move forward without taking the first step.",
+        "esp": "You never move forward without taking the first step.",
+        "it": "You never move forward without taking the first step."
       },
       "challenge": {
         "fr": "Propose ton aide spontanément à quelqu'un aujourd'hui.",
         "en": "Spontaneously offer your help to someone today.",
-        "ar": "قدّم مساعدتك عفويًا لشخص ما اليوم."
+        "ar": "قدّم مساعدتك عفويًا لشخص ما اليوم.",
+        "de": "Spontaneously offer your help to someone today.",
+        "esp": "Spontaneously offer your help to someone today.",
+        "it": "Spontaneously offer your help to someone today."
       },
       "type": "T"
     },
@@ -25,17 +34,26 @@
       "intro": {
         "fr": "Exprimer son avis renforce la confiance mutuelle et t'aide à prendre ta place dans un groupe.",
         "en": "Expressing your opinion strengthens mutual trust and helps you take your place in a group.",
-        "ar": "التعبير عن رأيك يعزز الثقة المتبادلة ويساعدك على أخذ مكانك في المجموعة."
+        "ar": "التعبير عن رأيك يعزز الثقة المتبادلة ويساعدك على أخذ مكانك في المجموعة.",
+        "de": "Expressing your opinion strengthens mutual trust and helps you take your place in a group.",
+        "esp": "Expressing your opinion strengthens mutual trust and helps you take your place in a group.",
+        "it": "Expressing your opinion strengthens mutual trust and helps you take your place in a group."
       },
       "proverb": {
         "fr": "Celui qui parle avec sincérité bâtit des ponts.",
         "en": "Those who speak with sincerity build bridges.",
-        "ar": "من يتحدث بصدق يبني الجسور."
+        "ar": "من يتحدث بصدق يبني الجسور.",
+        "de": "Those who speak with sincerity build bridges.",
+        "esp": "Those who speak with sincerity build bridges.",
+        "it": "Those who speak with sincerity build bridges."
       },
       "challenge": {
         "fr": "Prends la parole une fois en réunion ou dans ton club.",
         "en": "Speak up once in a meeting or in your club.",
-        "ar": "تحدث مرة واحدة في اجتماع أو في ناديك."
+        "ar": "تحدث مرة واحدة في اجتماع أو في ناديك.",
+        "de": "Speak up once in a meeting or in your club.",
+        "esp": "Speak up once in a meeting or in your club.",
+        "it": "Speak up once in a meeting or in your club."
       },
       "type": "V"
     },
@@ -44,17 +62,26 @@
       "intro": {
         "fr": "Le feedback est une clé d'amélioration continue.",
         "en": "Feedback is a key to continuous improvement.",
-        "ar": "الملاحظات هي مفتاح التحسين المستمر."
+        "ar": "الملاحظات هي مفتاح التحسين المستمر.",
+        "de": "Feedback is a key to continuous improvement.",
+        "esp": "Feedback is a key to continuous improvement.",
+        "it": "Feedback is a key to continuous improvement."
       },
       "proverb": {
         "fr": "Qui demande conseil s'enrichit.",
         "en": "Those who seek advice enrich themselves.",
-        "ar": "من يطلب النصيحة يثري نفسه."
+        "ar": "من يطلب النصيحة يثري نفسه.",
+        "de": "Those who seek advice enrich themselves.",
+        "esp": "Those who seek advice enrich themselves.",
+        "it": "Those who seek advice enrich themselves."
       },
       "challenge": {
         "fr": "Demande un feedback constructif à un camarade ou à un encadrant.",
         "en": "Ask for constructive feedback from a peer or supervisor.",
-        "ar": "اطلب تعليقات بناءة من زميل أو مشرف."
+        "ar": "اطلب تعليقات بناءة من زميل أو مشرف.",
+        "de": "Ask for constructive feedback from a peer or supervisor.",
+        "esp": "Ask for constructive feedback from a peer or supervisor.",
+        "it": "Ask for constructive feedback from a peer or supervisor."
       },
       "type": "A"
     },
@@ -63,17 +90,26 @@
       "intro": {
         "fr": "Dire 'non' poliment mais fermement renforce ton assertivité.",
         "en": "Saying 'no' politely but firmly strengthens your assertiveness.",
-        "ar": "قول 'لا' بأدب ولكن بحزم يعزز حزمك."
+        "ar": "قول 'لا' بأدب ولكن بحزم يعزز حزمك.",
+        "de": "Saying 'no' politely but firmly strengthens your assertiveness.",
+        "esp": "Saying 'no' politely but firmly strengthens your assertiveness.",
+        "it": "Saying 'no' politely but firmly strengthens your assertiveness."
       },
       "proverb": {
         "fr": "Le respect commence par soi-même.",
         "en": "Respect starts with yourself.",
-        "ar": "الاحترام يبدأ بنفسك."
+        "ar": "الاحترام يبدأ بنفسك.",
+        "de": "Respect starts with yourself.",
+        "esp": "Respect starts with yourself.",
+        "it": "Respect starts with yourself."
       },
       "challenge": {
         "fr": "Refuse gentiment une demande qui ne te convient pas aujourd'hui.",
         "en": "Gently decline a request that doesn't suit you today.",
-        "ar": "ارفض بلطف طلبًا لا يناسبك اليوم."
+        "ar": "ارفض بلطف طلبًا لا يناسبك اليوم.",
+        "de": "Gently decline a request that doesn't suit you today.",
+        "esp": "Gently decline a request that doesn't suit you today.",
+        "it": "Gently decline a request that doesn't suit you today."
       },
       "type": "A"
     },
@@ -82,17 +118,26 @@
       "intro": {
         "fr": "Tes valeurs sont un guide puissant. Les clarifier te rend plus sûr dans tes choix.",
         "en": "Your values are a powerful guide. Clarifying them makes you more confident in your choices.",
-        "ar": "قيمك هي دليل قوي. توضيحها يجعلك أكثر ثقة في خياراتك."
+        "ar": "قيمك هي دليل قوي. توضيحها يجعلك أكثر ثقة في خياراتك.",
+        "de": "Your values are a powerful guide. Clarifying them makes you more confident in your choices.",
+        "esp": "Your values are a powerful guide. Clarifying them makes you more confident in your choices.",
+        "it": "Your values are a powerful guide. Clarifying them makes you more confident in your choices."
       },
       "proverb": {
         "fr": "Connais-toi toi-même.",
         "en": "Know yourself.",
-        "ar": "اعرف نفسك."
+        "ar": "اعرف نفسك.",
+        "de": "Know yourself.",
+        "esp": "Know yourself.",
+        "it": "Know yourself."
       },
       "challenge": {
         "fr": "Écris tes 3 valeurs principales et comment elles influencent tes décisions.",
         "en": "Write your 3 core values and how they influence your decisions.",
-        "ar": "اكتب قيمك الثلاث الأساسية وكيف تؤثر على قراراتك."
+        "ar": "اكتب قيمك الثلاث الأساسية وكيف تؤثر على قراراتك.",
+        "de": "Write your 3 core values and how they influence your decisions.",
+        "esp": "Write your 3 core values and how they influence your decisions.",
+        "it": "Write your 3 core values and how they influence your decisions."
       },
       "type": "T"
     },
@@ -101,17 +146,26 @@
       "intro": {
         "fr": "Encourager publiquement renforce la cohésion du groupe.",
         "en": "Encouraging publicly strengthens group cohesion.",
-        "ar": "التشجيع علنًا يعزز تماسك المجموعة."
+        "ar": "التشجيع علنًا يعزز تماسك المجموعة.",
+        "de": "Encouraging publicly strengthens group cohesion.",
+        "esp": "Encouraging publicly strengthens group cohesion.",
+        "it": "Encouraging publicly strengthens group cohesion."
       },
       "proverb": {
         "fr": "L'éloge est un rayon de soleil.",
         "en": "Praise is a ray of sunshine.",
-        "ar": "المديح شعاع من أشعة الشمس."
+        "ar": "المديح شعاع من أشعة الشمس.",
+        "de": "Praise is a ray of sunshine.",
+        "esp": "Praise is a ray of sunshine.",
+        "it": "Praise is a ray of sunshine."
       },
       "challenge": {
         "fr": "Félicite un camarade publiquement pour son effort ou succès.",
         "en": "Publicly congratulate a peer for their effort or success.",
-        "ar": "هنئ زميلاً علنًا على جهده أو نجاحه."
+        "ar": "هنئ زميلاً علنًا على جهده أو نجاحه.",
+        "de": "Publicly congratulate a peer for their effort or success.",
+        "esp": "Publicly congratulate a peer for their effort or success.",
+        "it": "Publicly congratulate a peer for their effort or success."
       },
       "type": "V"
     },
@@ -120,17 +174,26 @@
       "intro": {
         "fr": "Fixer de petits objectifs quotidiens t'aide à développer ton initiative.",
         "en": "Setting small daily goals helps you develop your initiative.",
-        "ar": "تحديد أهداف يومية صغيرة يساعدك على تطوير مبادرتك."
+        "ar": "تحديد أهداف يومية صغيرة يساعدك على تطوير مبادرتك.",
+        "de": "Setting small daily goals helps you develop your initiative.",
+        "esp": "Setting small daily goals helps you develop your initiative.",
+        "it": "Setting small daily goals helps you develop your initiative."
       },
       "proverb": {
         "fr": "Un pas après l'autre mène loin.",
         "en": "One step after another takes you far.",
-        "ar": "خطوة بعد خطوة توصلك بعيدًا."
+        "ar": "خطوة بعد خطوة توصلك بعيدًا.",
+        "de": "One step after another takes you far.",
+        "esp": "One step after another takes you far.",
+        "it": "One step after another takes you far."
       },
       "challenge": {
         "fr": "Note un mini-objectif à atteindre aujourd'hui et réalise-le.",
         "en": "Note a mini-goal to achieve today and accomplish it.",
-        "ar": "سجل هدفًا صغيرًا لتحقيقه اليوم وحققه."
+        "ar": "سجل هدفًا صغيرًا لتحقيقه اليوم وحققه.",
+        "de": "Note a mini-goal to achieve today and accomplish it.",
+        "esp": "Note a mini-goal to achieve today and accomplish it.",
+        "it": "Note a mini-goal to achieve today and accomplish it."
       },
       "type": "T"
     },
@@ -139,17 +202,26 @@
       "intro": {
         "fr": "Lancer une action collective te positionne en leader discret.",
         "en": "Launching a collective action positions you as a discreet leader.",
-        "ar": "إطلاق عمل جماعي يضعك كقائد هادئ."
+        "ar": "إطلاق عمل جماعي يضعك كقائد هادئ.",
+        "de": "Launching a collective action positions you as a discreet leader.",
+        "esp": "Launching a collective action positions you as a discreet leader.",
+        "it": "Launching a collective action positions you as a discreet leader."
       },
       "proverb": {
         "fr": "Une étincelle peut allumer un feu.",
         "en": "A spark can light a fire.",
-        "ar": "الشرارة يمكن أن تشعل النار."
+        "ar": "الشرارة يمكن أن تشعل النار.",
+        "de": "A spark can light a fire.",
+        "esp": "A spark can light a fire.",
+        "it": "A spark can light a fire."
       },
       "challenge": {
         "fr": "Crée un petit groupe WhatsApp ou propose une activité à plusieurs.",
         "en": "Create a small WhatsApp group or propose a group activity.",
-        "ar": "أنشئ مجموعة واتساب صغيرة أو اقترح نشاطًا جماعيًا."
+        "ar": "أنشئ مجموعة واتساب صغيرة أو اقترح نشاطًا جماعيًا.",
+        "de": "Create a small WhatsApp group or propose a group activity.",
+        "esp": "Create a small WhatsApp group or propose a group activity.",
+        "it": "Create a small WhatsApp group or propose a group activity."
       },
       "type": "T"
     },
@@ -158,17 +230,26 @@
       "intro": {
         "fr": "Écouter sans juger favorise la confiance et le dialogue.",
         "en": "Listening without judging promotes trust and dialogue.",
-        "ar": "الاستماع دون حكم يعزز الثقة والحوار."
+        "ar": "الاستماع دون حكم يعزز الثقة والحوار.",
+        "de": "Listening without judging promotes trust and dialogue.",
+        "esp": "Listening without judging promotes trust and dialogue.",
+        "it": "Listening without judging promotes trust and dialogue."
       },
       "proverb": {
         "fr": "Écouter, c'est accueillir l'autre.",
         "en": "Listening is welcoming the other.",
-        "ar": "الاستماع هو الترحيب بالآخر."
+        "ar": "الاستماع هو الترحيب بالآخر.",
+        "de": "Listening is welcoming the other.",
+        "esp": "Listening is welcoming the other.",
+        "it": "Listening is welcoming the other."
       },
       "challenge": {
         "fr": "Écoute un point de vue opposé au tien sans interrompre.",
         "en": "Listen to a viewpoint opposite to yours without interrupting.",
-        "ar": "استمع إلى وجهة نظر معارضة لك دون مقاطعة."
+        "ar": "استمع إلى وجهة نظر معارضة لك دون مقاطعة.",
+        "de": "Listen to a viewpoint opposite to yours without interrupting.",
+        "esp": "Listen to a viewpoint opposite to yours without interrupting.",
+        "it": "Listen to a viewpoint opposite to yours without interrupting."
       },
       "type": "A"
     },
@@ -177,17 +258,26 @@
       "intro": {
         "fr": "Proposer une amélioration concrète montre ton engagement.",
         "en": "Proposing a concrete improvement shows your commitment.",
-        "ar": "اقتراح تحسين ملموس يظهر التزامك."
+        "ar": "اقتراح تحسين ملموس يظهر التزامك.",
+        "de": "Proposing a concrete improvement shows your commitment.",
+        "esp": "Proposing a concrete improvement shows your commitment.",
+        "it": "Proposing a concrete improvement shows your commitment."
       },
       "proverb": {
         "fr": "Qui propose avance.",
         "en": "Those who propose move forward.",
-        "ar": "من يقترح يتقدم."
+        "ar": "من يقترح يتقدم.",
+        "de": "Those who propose move forward.",
+        "esp": "Those who propose move forward.",
+        "it": "Those who propose move forward."
       },
       "challenge": {
         "fr": "Identifie un petit aspect à améliorer dans ton club et fais une suggestion.",
         "en": "Identify a small aspect to improve in your club and make a suggestion.",
-        "ar": "حدد جانبًا صغيرًا للتحسين في ناديك وقدم اقتراحًا."
+        "ar": "حدد جانبًا صغيرًا للتحسين في ناديك وقدم اقتراحًا.",
+        "de": "Identify a small aspect to improve in your club and make a suggestion.",
+        "esp": "Identify a small aspect to improve in your club and make a suggestion.",
+        "it": "Identify a small aspect to improve in your club and make a suggestion."
       },
       "type": "T"
     },
@@ -196,17 +286,26 @@
       "intro": {
         "fr": "Accompagner un camarade en difficulté développe ton empathie et ta crédibilité.",
         "en": "Supporting a colleague in difficulty develops your empathy and credibility.",
-        "ar": "دعم زميل في صعوبة يطور تعاطفك ومصداقيتك."
+        "ar": "دعم زميل في صعوبة يطور تعاطفك ومصداقيتك.",
+        "de": "Supporting a colleague in difficulty develops your empathy and credibility.",
+        "esp": "Supporting a colleague in difficulty develops your empathy and credibility.",
+        "it": "Supporting a colleague in difficulty develops your empathy and credibility."
       },
       "proverb": {
         "fr": "Seul on va plus vite, ensemble on va plus loin.",
         "en": "Alone we go faster, together we go further.",
-        "ar": "وحدنا نذهب أسرع، معًا نذهب أبعد."
+        "ar": "وحدنا نذهب أسرع، معًا نذهب أبعد.",
+        "de": "Alone we go faster, together we go further.",
+        "esp": "Alone we go faster, together we go further.",
+        "it": "Alone we go faster, together we go further."
       },
       "challenge": {
         "fr": "Offre ton aide à un camarade aujourd'hui.",
         "en": "Offer your help to a peer today.",
-        "ar": "قدّم مساعدتك لزميل اليوم."
+        "ar": "قدّم مساعدتك لزميل اليوم.",
+        "de": "Offer your help to a peer today.",
+        "esp": "Offer your help to a peer today.",
+        "it": "Offer your help to a peer today."
       },
       "type": "T"
     },
@@ -215,17 +314,26 @@
       "intro": {
         "fr": "La proactivité est une compétence clé pour progresser.",
         "en": "Proactivity is a key skill for progress.",
-        "ar": "المبادرة مهارة أساسية للتقدم."
+        "ar": "المبادرة مهارة أساسية للتقدم.",
+        "de": "Proactivity is a key skill for progress.",
+        "esp": "Proactivity is a key skill for progress.",
+        "it": "Proactivity is a key skill for progress."
       },
       "proverb": {
         "fr": "Celui qui attend n'obtient que ce qu'il reste.",
         "en": "Those who wait only get what's left.",
-        "ar": "من ينتظر لا يحصل إلا على ما تبقى."
+        "ar": "من ينتظر لا يحصل إلا على ما تبقى.",
+        "de": "Those who wait only get what's left.",
+        "esp": "Those who wait only get what's left.",
+        "it": "Those who wait only get what's left."
       },
       "challenge": {
         "fr": "Liste 3 situations où tu pourrais être plus proactif cette semaine.",
         "en": "List 3 situations where you could be more proactive this week.",
-        "ar": "اكتب قائمة بـ 3 مواقف يمكنك أن تكون فيها أكثر استباقية هذا الأسبوع."
+        "ar": "اكتب قائمة بـ 3 مواقف يمكنك أن تكون فيها أكثر استباقية هذا الأسبوع.",
+        "de": "List 3 situations where you could be more proactive this week.",
+        "esp": "List 3 situations where you could be more proactive this week.",
+        "it": "List 3 situations where you could be more proactive this week."
       },
       "type": "T"
     },
@@ -234,17 +342,26 @@
       "intro": {
         "fr": "Le suivi régulier montre ton sérieux et inspire la confiance.",
         "en": "Regular follow-up shows your seriousness and inspires trust.",
-        "ar": "المتابعة المنتظمة تظهر جديتك وتلهم الثقة."
+        "ar": "المتابعة المنتظمة تظهر جديتك وتلهم الثقة.",
+        "de": "Regular follow-up shows your seriousness and inspires trust.",
+        "esp": "Regular follow-up shows your seriousness and inspires trust.",
+        "it": "Regular follow-up shows your seriousness and inspires trust."
       },
       "proverb": {
         "fr": "La constance est la clé de la réussite.",
         "en": "Consistency is the key to success.",
-        "ar": "الثبات هو مفتاح النجاح."
+        "ar": "الثبات هو مفتاح النجاح.",
+        "de": "Consistency is the key to success.",
+        "esp": "Consistency is the key to success.",
+        "it": "Consistency is the key to success."
       },
       "challenge": {
         "fr": "Fixe-toi un mini objectif quotidien et coche-le chaque soir.",
         "en": "Set a daily mini-goal and check it off every evening.",
-        "ar": "حدد هدفًا صغيرًا يوميًا وضع عليه علامة كل مساء."
+        "ar": "حدد هدفًا صغيرًا يوميًا وضع عليه علامة كل مساء.",
+        "de": "Set a daily mini-goal and check it off every evening.",
+        "esp": "Set a daily mini-goal and check it off every evening.",
+        "it": "Set a daily mini-goal and check it off every evening."
       },
       "type": "T"
     },
@@ -253,17 +370,26 @@
       "intro": {
         "fr": "Prendre conscience de ta motivation te donne de l'élan.",
         "en": "Being aware of your motivation gives you momentum.",
-        "ar": "الوعي بحوافزك يمنحك زخمًا."
+        "ar": "الوعي بحوافزك يمنحك زخمًا.",
+        "de": "Being aware of your motivation gives you momentum.",
+        "esp": "Being aware of your motivation gives you momentum.",
+        "it": "Being aware of your motivation gives you momentum."
       },
       "proverb": {
         "fr": "Sans but, point de vent favorable.",
         "en": "Without a goal, there's no favorable wind.",
-        "ar": "بدون هدف، لا توجد رياح مواتية."
+        "ar": "بدون هدف، لا توجد رياح مواتية.",
+        "de": "Without a goal, there's no favorable wind.",
+        "esp": "Without a goal, there's no favorable wind.",
+        "it": "Without a goal, there's no favorable wind."
       },
       "challenge": {
         "fr": "Note ce qui te motive à agir dans un petit carnet.",
         "en": "Note what motivates you to act in a small notebook.",
-        "ar": "سجل ما يحفزك على التصرف في دفتر صغير."
+        "ar": "سجل ما يحفزك على التصرف في دفتر صغير.",
+        "de": "Note what motivates you to act in a small notebook.",
+        "esp": "Note what motivates you to act in a small notebook.",
+        "it": "Note what motivates you to act in a small notebook."
       },
       "type": "T"
     },
@@ -272,17 +398,26 @@
       "intro": {
         "fr": "Apprendre à t'affirmer sans agresser est une force.",
         "en": "Learning to assert yourself without aggression is a strength.",
-        "ar": "تعلم تأكيد نفسك دون عدوان هو قوة."
+        "ar": "تعلم تأكيد نفسك دون عدوان هو قوة.",
+        "de": "Learning to assert yourself without aggression is a strength.",
+        "esp": "Learning to assert yourself without aggression is a strength.",
+        "it": "Learning to assert yourself without aggression is a strength."
       },
       "proverb": {
         "fr": "On peut dire la vérité avec douceur.",
         "en": "Truth can be spoken with gentleness.",
-        "ar": "يمكن قول الحقيقة بلطف."
+        "ar": "يمكن قول الحقيقة بلطف.",
+        "de": "Truth can be spoken with gentleness.",
+        "esp": "Truth can be spoken with gentleness.",
+        "it": "Truth can be spoken with gentleness."
       },
       "challenge": {
         "fr": "Exprime ton opinion sur un sujet important calmement et clairement.",
         "en": "Express your opinion on an important topic calmly and clearly.",
-        "ar": "عبّر عن رأيك في موضوع مهم بهدوء ووضوح."
+        "ar": "عبّر عن رأيك في موضوع مهم بهدوء ووضوح.",
+        "de": "Express your opinion on an important topic calmly and clearly.",
+        "esp": "Express your opinion on an important topic calmly and clearly.",
+        "it": "Express your opinion on an important topic calmly and clearly."
       },
       "type": "V"
     },
@@ -291,17 +426,26 @@
       "intro": {
         "fr": "Donner ton avis même s'il est différent enrichit le collectif.",
         "en": "Giving your opinion even if it's different enriches the collective.",
-        "ar": "إبداء رأيك حتى لو كان مختلفًا يثري الجماعة."
+        "ar": "إبداء رأيك حتى لو كان مختلفًا يثري الجماعة.",
+        "de": "Giving your opinion even if it's different enriches the collective.",
+        "esp": "Giving your opinion even if it's different enriches the collective.",
+        "it": "Giving your opinion even if it's different enriches the collective."
       },
       "proverb": {
         "fr": "La diversité est une richesse.",
         "en": "Diversity is a wealth.",
-        "ar": "التنوع ثروة."
+        "ar": "التنوع ثروة.",
+        "de": "Diversity is a wealth.",
+        "esp": "Diversity is a wealth.",
+        "it": "Diversity is a wealth."
       },
       "challenge": {
         "fr": "Partage ton point de vue dans une discussion de groupe aujourd'hui.",
         "en": "Share your point of view in a group discussion today.",
-        "ar": "شارك وجهة نظرك في نقاش جماعي اليوم."
+        "ar": "شارك وجهة نظرك في نقاش جماعي اليوم.",
+        "de": "Share your point of view in a group discussion today.",
+        "esp": "Share your point of view in a group discussion today.",
+        "it": "Share your point of view in a group discussion today."
       },
       "type": "V"
     },
@@ -310,17 +454,26 @@
       "intro": {
         "fr": "Encourager les idées des autres crée un climat de confiance.",
         "en": "Encouraging others' ideas creates a climate of trust.",
-        "ar": "تشجيع أفكار الآخرين يخلق مناخًا من الثقة."
+        "ar": "تشجيع أفكار الآخرين يخلق مناخًا من الثقة.",
+        "de": "Encouraging others' ideas creates a climate of trust.",
+        "esp": "Encouraging others' ideas creates a climate of trust.",
+        "it": "Encouraging others' ideas creates a climate of trust."
       },
       "proverb": {
         "fr": "Qui élève les autres s'élève lui-même.",
         "en": "Those who elevate others elevate themselves.",
-        "ar": "من يرفع الآخرين يرفع نفسه."
+        "ar": "من يرفع الآخرين يرفع نفسه.",
+        "de": "Those who elevate others elevate themselves.",
+        "esp": "Those who elevate others elevate themselves.",
+        "it": "Those who elevate others elevate themselves."
       },
       "challenge": {
         "fr": "Mets en avant l'idée d'un camarade lors d'une réunion.",
         "en": "Highlight a peer's idea during a meeting.",
-        "ar": "سلط الضوء على فكرة زميل أثناء اجتماع."
+        "ar": "سلط الضوء على فكرة زميل أثناء اجتماع.",
+        "de": "Highlight a peer's idea during a meeting.",
+        "esp": "Highlight a peer's idea during a meeting.",
+        "it": "Highlight a peer's idea during a meeting."
       },
       "type": "V"
     },
@@ -329,17 +482,26 @@
       "intro": {
         "fr": "Chercher un mentor te permet de progresser plus vite.",
         "en": "Seeking a mentor allows you to progress faster.",
-        "ar": "البحث عن مرشد يسمح لك بالتقدم بشكل أسرع."
+        "ar": "البحث عن مرشد يسمح لك بالتقدم بشكل أسرع.",
+        "de": "Seeking a mentor allows you to progress faster.",
+        "esp": "Seeking a mentor allows you to progress faster.",
+        "it": "Seeking a mentor allows you to progress faster."
       },
       "proverb": {
         "fr": "Qui marche avec un sage devient sage.",
         "en": "Those who walk with the wise become wise.",
-        "ar": "من يسير مع الحكماء يصبح حكيمًا."
+        "ar": "من يسير مع الحكماء يصبح حكيمًا.",
+        "de": "Those who walk with the wise become wise.",
+        "esp": "Those who walk with the wise become wise.",
+        "it": "Those who walk with the wise become wise."
       },
       "challenge": {
         "fr": "Identifie une personne inspirante et contacte-la pour un conseil.",
         "en": "Identify an inspiring person and contact them for advice.",
-        "ar": "حدد شخصًا ملهمًا واتصل به للحصول على نصيحة."
+        "ar": "حدد شخصًا ملهمًا واتصل به للحصول على نصيحة.",
+        "de": "Identify an inspiring person and contact them for advice.",
+        "esp": "Identify an inspiring person and contact them for advice.",
+        "it": "Identify an inspiring person and contact them for advice."
       },
       "type": "T"
     },
@@ -348,17 +510,26 @@
       "intro": {
         "fr": "Mettre en avant les réussites de ton équipe augmente la motivation collective.",
         "en": "Highlighting your team's successes increases collective motivation.",
-        "ar": "إبراز نجاحات فريقك يزيد التحفيز الجماعي."
+        "ar": "إبراز نجاحات فريقك يزيد التحفيز الجماعي.",
+        "de": "Highlighting your team's successes increases collective motivation.",
+        "esp": "Highlighting your team's successes increases collective motivation.",
+        "it": "Highlighting your team's successes increases collective motivation."
       },
       "proverb": {
         "fr": "Louer le travail d'autrui, c'est nourrir la réussite.",
         "en": "Praising others' work is nourishing success.",
-        "ar": "مدح عمل الآخرين هو تغذية النجاح."
+        "ar": "مدح عمل الآخرين هو تغذية النجاح.",
+        "de": "Praising others' work is nourishing success.",
+        "esp": "Praising others' work is nourishing success.",
+        "it": "Praising others' work is nourishing success."
       },
       "challenge": {
         "fr": "Publie ou partage un succès du groupe sur les réseaux ou en réunion.",
         "en": "Post or share a group success on social media or in a meeting.",
-        "ar": "انشر أو شارك نجاح المجموعة على وسائل التواصل أو في اجتماع."
+        "ar": "انشر أو شارك نجاح المجموعة على وسائل التواصل أو في اجتماع.",
+        "de": "Post or share a group success on social media or in a meeting.",
+        "esp": "Post or share a group success on social media or in a meeting.",
+        "it": "Post or share a group success on social media or in a meeting."
       },
       "type": "T"
     },
@@ -367,17 +538,26 @@
       "intro": {
         "fr": "Organiser une activité de groupe renforce tes qualités de fédérateur.",
         "en": "Organizing a group activity strengthens your unifying qualities.",
-        "ar": "تنظيم نشاط جماعي يعزز صفاتك التوحيدية."
+        "ar": "تنظيم نشاط جماعي يعزز صفاتك التوحيدية.",
+        "de": "Organizing a group activity strengthens your unifying qualities.",
+        "esp": "Organizing a group activity strengthens your unifying qualities.",
+        "it": "Organizing a group activity strengthens your unifying qualities."
       },
       "proverb": {
         "fr": "L'union fait la force.",
         "en": "Unity is strength.",
-        "ar": "الاتحاد قوة."
+        "ar": "الاتحاد قوة.",
+        "de": "Unity is strength.",
+        "esp": "Unity is strength.",
+        "it": "Unity is strength."
       },
       "challenge": {
         "fr": "Propose une petite activité conviviale (jeux, sortie, brainstorming).",
         "en": "Propose a small friendly activity (games, outing, brainstorming).",
-        "ar": "اقترح نشاطًا وديًا صغيرًا (ألعاب، نزهة، عصف ذهني)."
+        "ar": "اقترح نشاطًا وديًا صغيرًا (ألعاب، نزهة، عصف ذهني).",
+        "de": "Propose a small friendly activity (games, outing, brainstorming).",
+        "esp": "Propose a small friendly activity (games, outing, brainstorming).",
+        "it": "Propose a small friendly activity (games, outing, brainstorming)."
       },
       "type": "T"
     },
@@ -386,17 +566,26 @@
       "intro": {
         "fr": "Bilan et gratitude solidifient les acquis.",
         "en": "Assessment and gratitude solidify your achievements.",
-        "ar": "التقييم والامتنان يرسخان إنجازاتك."
+        "ar": "التقييم والامتنان يرسخان إنجازاتك.",
+        "de": "Assessment and gratitude solidify your achievements.",
+        "esp": "Assessment and gratitude solidify your achievements.",
+        "it": "Assessment and gratitude solidify your achievements."
       },
       "proverb": {
         "fr": "La reconnaissance est la mémoire du cœur.",
         "en": "Gratitude is the memory of the heart.",
-        "ar": "الامتنان هو ذاكرة القلب."
+        "ar": "الامتنان هو ذاكرة القلب.",
+        "de": "Gratitude is the memory of the heart.",
+        "esp": "Gratitude is the memory of the heart.",
+        "it": "Gratitude is the memory of the heart."
       },
       "challenge": {
         "fr": "Écris tes progrès et remercie ceux qui t'ont aidé pendant ces 21 jours.",
         "en": "Write down your progress and thank those who helped you during these 21 days.",
-        "ar": "اكتب تقدمك واشكر الذين ساعدوك خلال هذه الـ 21 يومًا."
+        "ar": "اكتب تقدمك واشكر الذين ساعدوك خلال هذه الـ 21 يومًا.",
+        "de": "Write down your progress and thank those who helped you during these 21 days.",
+        "esp": "Write down your progress and thank those who helped you during these 21 days.",
+        "it": "Write down your progress and thank those who helped you during these 21 days."
       },
       "type": "T"
     }

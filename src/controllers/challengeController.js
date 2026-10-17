@@ -187,9 +187,9 @@ exports.getAllChallenges = async (req, res) => {
 
       return {
         day: challenge.day,
-        intro: challenge.intro ? challenge.intro[lang] || challenge.intro.fr : undefined,
-        proverb: challenge.proverb[lang] || challenge.proverb.fr,
-        challenge: challenge.challenge[lang] || challenge.challenge.fr,
+        intro: challenge.intro ? challenge.intro[lang] || challenge.intro.fr || challenge.intro.en || challenge.intro.ar || challenge.intro.de || challenge.intro.esp || challenge.intro.it : undefined,
+        proverb: challenge.proverb[lang] || challenge.proverb.fr || challenge.proverb.en || challenge.proverb.ar || challenge.proverb.de || challenge.proverb.esp || challenge.proverb.it,
+        challenge: challenge.challenge[lang] || challenge.challenge.fr || challenge.challenge.en || challenge.challenge.ar || challenge.challenge.de || challenge.challenge.esp || challenge.challenge.it,
         type: challenge.type,
         completed: userChallengeProgress.completed,
         completedAt: userChallengeProgress.completedAt,
@@ -267,9 +267,9 @@ exports.getChallengeByDay = async (req, res) => {
       success: true,
       data: {
         day: challenge.day,
-        intro: challenge.intro ? challenge.intro[lang] || challenge.intro.fr : undefined,
-        proverb: challenge.proverb[lang] || challenge.proverb.fr,
-        challenge: challenge.challenge[lang] || challenge.challenge.fr,
+        intro: challenge.intro ? challenge.intro[lang] || challenge.intro.fr || challenge.intro.en || challenge.intro.ar || challenge.intro.de || challenge.intro.esp || challenge.intro.it : undefined,
+        proverb: challenge.proverb[lang] || challenge.proverb.fr || challenge.proverb.en || challenge.proverb.ar || challenge.proverb.de || challenge.proverb.esp || challenge.proverb.it,
+        challenge: challenge.challenge[lang] || challenge.challenge.fr || challenge.challenge.en || challenge.challenge.ar || challenge.challenge.de || challenge.challenge.esp || challenge.challenge.it,
         type: challenge.type,
         completed: userChallengeProgress.completed,
         completedAt: userChallengeProgress.completedAt,

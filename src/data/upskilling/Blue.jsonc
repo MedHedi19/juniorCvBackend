@@ -6,17 +6,26 @@
       "intro": {
         "fr": "Tu es structuré et précis, mais sortir du confort est aussi formateur.",
         "en": "You are structured and precise, but stepping out of your comfort zone is also educational.",
-        "ar": "أنت منظم ودقيق، لكن الخروج من منطقة الراحة مفيد أيضًا."
+        "ar": "أنت منظم ودقيق، لكن الخروج من منطقة الراحة مفيد أيضًا.",
+        "de": "You are structured and precise, but stepping out of your comfort zone is also educational.",
+        "esp": "You are structured and precise, but stepping out of your comfort zone is also educational.",
+        "it": "You are structured and precise, but stepping out of your comfort zone is also educational."
       },
       "proverb": {
         "fr": "Les grandes découvertes commencent hors du chemin tracé.",
         "en": "Great discoveries begin off the beaten path.",
-        "ar": "الاكتشافات العظيمة تبدأ خارج الطريق المرسوم."
+        "ar": "الاكتشافات العظيمة تبدأ خارج الطريق المرسوم.",
+        "de": "Great discoveries begin off the beaten path.",
+        "esp": "Great discoveries begin off the beaten path.",
+        "it": "Great discoveries begin off the beaten path."
       },
       "challenge": {
         "fr": "Prends aujourd'hui une décision rapidement sans trop analyser.",
         "en": "Make a quick decision today without over-analyzing.",
-        "ar": "اتخذ قرارًا سريعًا اليوم دون تحليل مفرط."
+        "ar": "اتخذ قرارًا سريعًا اليوم دون تحليل مفرط.",
+        "de": "Make a quick decision today without over-analyzing.",
+        "esp": "Make a quick decision today without over-analyzing.",
+        "it": "Make a quick decision today without over-analyzing."
       },
       "type": "T"
     },
@@ -25,17 +34,26 @@
       "intro": {
         "fr": "Accepter l'imperfection développe ta flexibilité.",
         "en": "Accepting imperfection develops your flexibility.",
-        "ar": "قبول النقص يطور مرونتك."
+        "ar": "قبول النقص يطور مرونتك.",
+        "de": "Accepting imperfection develops your flexibility.",
+        "esp": "Accepting imperfection develops your flexibility.",
+        "it": "Accepting imperfection develops your flexibility."
       },
       "proverb": {
         "fr": "La perfection est ennemie du progrès.",
         "en": "Perfection is the enemy of progress.",
-        "ar": "الكمال عدو التقدم."
+        "ar": "الكمال عدو التقدم.",
+        "de": "Perfection is the enemy of progress.",
+        "esp": "Perfection is the enemy of progress.",
+        "it": "Perfection is the enemy of progress."
       },
       "challenge": {
         "fr": "Note trois choses où tu pourrais lâcher prise cette semaine.",
         "en": "Note three things where you could let go this week.",
-        "ar": "سجل ثلاثة أشياء يمكنك التخلي عنها هذا الأسبوع."
+        "ar": "سجل ثلاثة أشياء يمكنك التخلي عنها هذا الأسبوع.",
+        "de": "Note three things where you could let go this week.",
+        "esp": "Note three things where you could let go this week.",
+        "it": "Note three things where you could let go this week."
       },
       "type": "T"
     },
@@ -44,17 +62,26 @@
       "intro": {
         "fr": "La créativité stimule ta vision analytique.",
         "en": "Creativity stimulates your analytical vision.",
-        "ar": "الإبداع يحفز رؤيتك التحليلية."
+        "ar": "الإبداع يحفز رؤيتك التحليلية.",
+        "de": "Creativity stimulates your analytical vision.",
+        "esp": "Creativity stimulates your analytical vision.",
+        "it": "Creativity stimulates your analytical vision."
       },
       "proverb": {
         "fr": "L'imagination est plus importante que le savoir.",
         "en": "Imagination is more important than knowledge.",
-        "ar": "الخيال أهم من المعرفة."
+        "ar": "الخيال أهم من المعرفة.",
+        "de": "Imagination is more important than knowledge.",
+        "esp": "Imagination is more important than knowledge.",
+        "it": "Imagination is more important than knowledge."
       },
       "challenge": {
         "fr": "Tente une activité nouvelle (ex : improvisation, pitch express).",
         "en": "Try a new activity (e.g., improvisation, quick pitch).",
-        "ar": "جرب نشاطًا جديدًا (مثل: الارتجال، العرض السريع)."
+        "ar": "جرب نشاطًا جديدًا (مثل: الارتجال، العرض السريع).",
+        "de": "Try a new activity (e.g., improvisation, quick pitch).",
+        "esp": "Try a new activity (e.g., improvisation, quick pitch).",
+        "it": "Try a new activity (e.g., improvisation, quick pitch)."
       },
       "type": "V"
     },
@@ -63,17 +90,26 @@
       "intro": {
         "fr": "Essayer des approches différentes élargit ton champ de vision.",
         "en": "Trying different approaches broadens your field of vision.",
-        "ar": "تجربة أساليب مختلفة توسع مجال رؤيتك."
+        "ar": "تجربة أساليب مختلفة توسع مجال رؤيتك.",
+        "de": "Trying different approaches broadens your field of vision.",
+        "esp": "Trying different approaches broadens your field of vision.",
+        "it": "Trying different approaches broadens your field of vision."
       },
       "proverb": {
         "fr": "Celui qui change de route découvre de nouveaux paysages.",
         "en": "Those who change routes discover new landscapes.",
-        "ar": "من يغير طريقه يكتشف مناظر جديدة."
+        "ar": "من يغير طريقه يكتشف مناظر جديدة.",
+        "de": "Those who change routes discover new landscapes.",
+        "esp": "Those who change routes discover new landscapes.",
+        "it": "Those who change routes discover new landscapes."
       },
       "challenge": {
         "fr": "Présente une idée sous un format inhabituel (dessin, schéma, audio).",
         "en": "Present an idea in an unusual format (drawing, diagram, audio).",
-        "ar": "اعرض فكرة بشكل غير معتاد (رسم، مخطط، صوت)."
+        "ar": "اعرض فكرة بشكل غير معتاد (رسم، مخطط، صوت).",
+        "de": "Present an idea in an unusual format (drawing, diagram, audio).",
+        "esp": "Present an idea in an unusual format (drawing, diagram, audio).",
+        "it": "Present an idea in an unusual format (drawing, diagram, audio)."
       },
       "type": "V"
     },
@@ -82,17 +118,26 @@
       "intro": {
         "fr": "Prendre des décisions rapides te fait gagner du temps et de l'assurance.",
         "en": "Making quick decisions saves you time and confidence.",
-        "ar": "اتخاذ قرارات سريعة يوفر لك الوقت والثقة."
+        "ar": "اتخاذ قرارات سريعة يوفر لك الوقت والثقة.",
+        "de": "Making quick decisions saves you time and confidence.",
+        "esp": "Making quick decisions saves you time and confidence.",
+        "it": "Making quick decisions saves you time and confidence."
       },
       "proverb": {
         "fr": "Qui hésite perd.",
         "en": "Those who hesitate lose.",
-        "ar": "من يتردد يخسر."
+        "ar": "من يتردد يخسر.",
+        "de": "Those who hesitate lose.",
+        "esp": "Those who hesitate lose.",
+        "it": "Those who hesitate lose."
       },
       "challenge": {
         "fr": "Choisis aujourd'hui entre deux options sans y passer plus de 5 minutes.",
         "en": "Choose between two options today without spending more than 5 minutes.",
-        "ar": "اختر بين خيارين اليوم دون قضاء أكثر من 5 دقائق."
+        "ar": "اختر بين خيارين اليوم دون قضاء أكثر من 5 دقائق.",
+        "de": "Choose between two options today without spending more than 5 minutes.",
+        "esp": "Choose between two options today without spending more than 5 minutes.",
+        "it": "Choose between two options today without spending more than 5 minutes."
       },
       "type": "T"
     },
@@ -101,17 +146,26 @@
       "intro": {
         "fr": "Exprimer une idée complexe en peu de mots t'oblige à aller à l'essentiel.",
         "en": "Expressing a complex idea in few words forces you to get to the point.",
-        "ar": "التعبير عن فكرة معقدة بكلمات قليلة يجبرك على الوصول للجوهر."
+        "ar": "التعبير عن فكرة معقدة بكلمات قليلة يجبرك على الوصول للجوهر.",
+        "de": "Expressing a complex idea in few words forces you to get to the point.",
+        "esp": "Expressing a complex idea in few words forces you to get to the point.",
+        "it": "Expressing a complex idea in few words forces you to get to the point."
       },
       "proverb": {
         "fr": "La clarté est la politesse de l'esprit.",
         "en": "Clarity is the courtesy of the mind.",
-        "ar": "الوضوح هو مجاملة العقل."
+        "ar": "الوضوح هو مجاملة العقل.",
+        "de": "Clarity is the courtesy of the mind.",
+        "esp": "Clarity is the courtesy of the mind.",
+        "it": "Clarity is the courtesy of the mind."
       },
       "challenge": {
         "fr": "Résume un sujet complexe en trois bullet points.",
         "en": "Summarize a complex topic in three bullet points.",
-        "ar": "لخص موضوعًا معقدًا في ثلاث نقاط."
+        "ar": "لخص موضوعًا معقدًا في ثلاث نقاط.",
+        "de": "Summarize a complex topic in three bullet points.",
+        "esp": "Summarize a complex topic in three bullet points.",
+        "it": "Summarize a complex topic in three bullet points."
       },
       "type": "T"
     },
@@ -120,17 +174,26 @@
       "intro": {
         "fr": "Sortir de la zone de confort développe la créativité et la résilience.",
         "en": "Stepping out of your comfort zone develops creativity and resilience.",
-        "ar": "الخروج من منطقة الراحة يطور الإبداع والمرونة."
+        "ar": "الخروج من منطقة الراحة يطور الإبداع والمرونة.",
+        "de": "Stepping out of your comfort zone develops creativity and resilience.",
+        "esp": "Stepping out of your comfort zone develops creativity and resilience.",
+        "it": "Stepping out of your comfort zone develops creativity and resilience."
       },
       "proverb": {
         "fr": "On n'apprend pas à nager sur le rivage.",
         "en": "You don't learn to swim on the shore.",
-        "ar": "لا تتعلم السباحة على الشاطئ."
+        "ar": "لا تتعلم السباحة على الشاطئ.",
+        "de": "You don't learn to swim on the shore.",
+        "esp": "You don't learn to swim on the shore.",
+        "it": "You don't learn to swim on the shore."
       },
       "challenge": {
         "fr": "Essaie une activité qui t'intimide un peu.",
         "en": "Try an activity that intimidates you a bit.",
-        "ar": "جرب نشاطًا يخيفك قليلاً."
+        "ar": "جرب نشاطًا يخيفك قليلاً.",
+        "de": "Try an activity that intimidates you a bit.",
+        "esp": "Try an activity that intimidates you a bit.",
+        "it": "Try an activity that intimidates you a bit."
       },
       "type": "T"
     },
@@ -139,17 +202,26 @@
       "intro": {
         "fr": "Tester tes hypothèses avant de les valider t'évite des erreurs.",
         "en": "Testing your hypotheses before validating them helps you avoid mistakes.",
-        "ar": "اختبار فرضياتك قبل التحقق منها يجنبك الأخطاء."
+        "ar": "اختبار فرضياتك قبل التحقق منها يجنبك الأخطاء.",
+        "de": "Testing your hypotheses before validating them helps you avoid mistakes.",
+        "esp": "Testing your hypotheses before validating them helps you avoid mistakes.",
+        "it": "Testing your hypotheses before validating them helps you avoid mistakes."
       },
       "proverb": {
         "fr": "Mesurer deux fois, couper une fois.",
         "en": "Measure twice, cut once.",
-        "ar": "قس مرتين واقطع مرة واحدة."
+        "ar": "قس مرتين واقطع مرة واحدة.",
+        "de": "Measure twice, cut once.",
+        "esp": "Measure twice, cut once.",
+        "it": "Measure twice, cut once."
       },
       "challenge": {
         "fr": "Valide aujourd'hui une idée en demandant un feedback rapide.",
         "en": "Validate an idea today by asking for quick feedback.",
-        "ar": "تحقق من صحة فكرة اليوم بطلب ملاحظات سريعة."
+        "ar": "تحقق من صحة فكرة اليوم بطلب ملاحظات سريعة.",
+        "de": "Validate an idea today by asking for quick feedback.",
+        "esp": "Validate an idea today by asking for quick feedback.",
+        "it": "Validate an idea today by asking for quick feedback."
       },
       "type": "A"
     },
@@ -158,17 +230,26 @@
       "intro": {
         "fr": "Présenter ton travail avant qu'il soit fini te permet d'obtenir des retours utiles.",
         "en": "Presenting your work before it's finished allows you to get useful feedback.",
-        "ar": "تقديم عملك قبل الانتهاء منه يتيح لك الحصول على ملاحظات مفيدة."
+        "ar": "تقديم عملك قبل الانتهاء منه يتيح لك الحصول على ملاحظات مفيدة.",
+        "de": "Presenting your work before it's finished allows you to get useful feedback.",
+        "esp": "Presenting your work before it's finished allows you to get useful feedback.",
+        "it": "Presenting your work before it's finished allows you to get useful feedback."
       },
       "proverb": {
         "fr": "Qui écoute le conseil d'autrui double son intelligence.",
         "en": "Those who listen to others' advice double their intelligence.",
-        "ar": "من يستمع إلى نصيحة الآخرين يضاعف ذكاءه."
+        "ar": "من يستمع إلى نصيحة الآخرين يضاعف ذكاءه.",
+        "de": "Those who listen to others' advice double their intelligence.",
+        "esp": "Those who listen to others' advice double their intelligence.",
+        "it": "Those who listen to others' advice double their intelligence."
       },
       "challenge": {
         "fr": "Montre ton brouillon à un camarade et demande son avis.",
         "en": "Show your draft to a peer and ask for their opinion.",
-        "ar": "أظهر مسودتك لزميل واطلب رأيه."
+        "ar": "أظهر مسودتك لزميل واطلب رأيه.",
+        "de": "Show your draft to a peer and ask for their opinion.",
+        "esp": "Show your draft to a peer and ask for their opinion.",
+        "it": "Show your draft to a peer and ask for their opinion."
       },
       "type": "V"
     },
@@ -177,17 +258,26 @@
       "intro": {
         "fr": "Complimenter sans raison t'entraîne à exprimer du positif spontanément.",
         "en": "Complimenting for no reason trains you to express positivity spontaneously.",
-        "ar": "المديح دون سبب يدربك على التعبير عن الإيجابية بشكل عفوي."
+        "ar": "المديح دون سبب يدربك على التعبير عن الإيجابية بشكل عفوي.",
+        "de": "Complimenting for no reason trains you to express positivity spontaneously.",
+        "esp": "Complimenting for no reason trains you to express positivity spontaneously.",
+        "it": "Complimenting for no reason trains you to express positivity spontaneously."
       },
       "proverb": {
         "fr": "Un sourire ne coûte rien et rapporte beaucoup.",
         "en": "A smile costs nothing and brings much.",
-        "ar": "الابتسامة لا تكلف شيئًا وتجلب الكثير."
+        "ar": "الابتسامة لا تكلف شيئًا وتجلب الكثير.",
+        "de": "A smile costs nothing and brings much.",
+        "esp": "A smile costs nothing and brings much.",
+        "it": "A smile costs nothing and brings much."
       },
       "challenge": {
         "fr": "Fais un compliment sincère à quelqu'un aujourd'hui.",
         "en": "Give a sincere compliment to someone today.",
-        "ar": "قدم مجاملة صادقة لشخص ما اليوم."
+        "ar": "قدم مجاملة صادقة لشخص ما اليوم.",
+        "de": "Give a sincere compliment to someone today.",
+        "esp": "Give a sincere compliment to someone today.",
+        "it": "Give a sincere compliment to someone today."
       },
       "type": "V"
     },
@@ -196,17 +286,26 @@
       "intro": {
         "fr": "Se fixer un délai court stimule la productivité et l'audace.",
         "en": "Setting a short deadline stimulates productivity and boldness.",
-        "ar": "تحديد موعد نهائي قصير يحفز الإنتاجية والجرأة."
+        "ar": "تحديد موعد نهائي قصير يحفز الإنتاجية والجرأة.",
+        "de": "Setting a short deadline stimulates productivity and boldness.",
+        "esp": "Setting a short deadline stimulates productivity and boldness.",
+        "it": "Setting a short deadline stimulates productivity and boldness."
       },
       "proverb": {
         "fr": "L'urgence fait jaillir le génie.",
         "en": "Urgency brings out genius.",
-        "ar": "الاستعجال يُظهر العبقرية."
+        "ar": "الاستعجال يُظهر العبقرية.",
+        "de": "Urgency brings out genius.",
+        "esp": "Urgency brings out genius.",
+        "it": "Urgency brings out genius."
       },
       "challenge": {
         "fr": "Donne-toi 15 minutes pour rédiger un texte et publie-le.",
         "en": "Give yourself 15 minutes to write a text and publish it.",
-        "ar": "امنح نفسك 15 دقيقة لكتابة نص ونشره."
+        "ar": "امنح نفسك 15 دقيقة لكتابة نص ونشره.",
+        "de": "Give yourself 15 minutes to write a text and publish it.",
+        "esp": "Give yourself 15 minutes to write a text and publish it.",
+        "it": "Give yourself 15 minutes to write a text and publish it."
       },
       "type": "T"
     },
@@ -215,17 +314,26 @@
       "intro": {
         "fr": "Identifier trois compétences soft à renforcer te donne un plan clair.",
         "en": "Identifying three soft skills to strengthen gives you a clear plan.",
-        "ar": "تحديد ثلاث مهارات ناعمة لتعزيزها يمنحك خطة واضحة."
+        "ar": "تحديد ثلاث مهارات ناعمة لتعزيزها يمنحك خطة واضحة.",
+        "de": "Identifying three soft skills to strengthen gives you a clear plan.",
+        "esp": "Identifying three soft skills to strengthen gives you a clear plan.",
+        "it": "Identifying three soft skills to strengthen gives you a clear plan."
       },
       "proverb": {
         "fr": "Qui se connaît se maîtrise.",
         "en": "Those who know themselves master themselves.",
-        "ar": "من يعرف نفسه يسيطر على نفسه."
+        "ar": "من يعرف نفسه يسيطر على نفسه.",
+        "de": "Those who know themselves master themselves.",
+        "esp": "Those who know themselves master themselves.",
+        "it": "Those who know themselves master themselves."
       },
       "challenge": {
         "fr": "Liste trois compétences relationnelles à travailler ce mois-ci.",
         "en": "List three relationship skills to work on this month.",
-        "ar": "اكتب قائمة بثلاث مهارات علائقية للعمل عليها هذا الشهر."
+        "ar": "اكتب قائمة بثلاث مهارات علائقية للعمل عليها هذا الشهر.",
+        "de": "List three relationship skills to work on this month.",
+        "esp": "List three relationship skills to work on this month.",
+        "it": "List three relationship skills to work on this month."
       },
       "type": "T"
     },
@@ -234,17 +342,26 @@
       "intro": {
         "fr": "Partager une idée 'inachevée' ouvre la porte à la co-création.",
         "en": "Sharing an 'unfinished' idea opens the door to co-creation.",
-        "ar": "مشاركة فكرة 'غير مكتملة' تفتح الباب للإبداع المشترك."
+        "ar": "مشاركة فكرة 'غير مكتملة' تفتح الباب للإبداع المشترك.",
+        "de": "Sharing an 'unfinished' idea opens the door to co-creation.",
+        "esp": "Sharing an 'unfinished' idea opens the door to co-creation.",
+        "it": "Sharing an 'unfinished' idea opens the door to co-creation."
       },
       "proverb": {
         "fr": "Tout seul on va vite, ensemble on va loin.",
         "en": "Alone we go fast, together we go far.",
-        "ar": "وحدنا نذهب بسرعة، معًا نذهب بعيدًا."
+        "ar": "وحدنا نذهب بسرعة، معًا نذهب بعيدًا.",
+        "de": "Alone we go fast, together we go far.",
+        "esp": "Alone we go fast, together we go far.",
+        "it": "Alone we go fast, together we go far."
       },
       "challenge": {
         "fr": "Partage une idée encore imparfaite avec un camarade.",
         "en": "Share an imperfect idea with a peer.",
-        "ar": "شارك فكرة غير كاملة مع زميل."
+        "ar": "شارك فكرة غير كاملة مع زميل.",
+        "de": "Share an imperfect idea with a peer.",
+        "esp": "Share an imperfect idea with a peer.",
+        "it": "Share an imperfect idea with a peer."
       },
       "type": "V"
     },
@@ -253,17 +370,26 @@
       "intro": {
         "fr": "Essayer un nouveau format de présentation stimule ton cerveau droit.",
         "en": "Trying a new presentation format stimulates your right brain.",
-        "ar": "تجربة تنسيق عرض جديد يحفز دماغك الأيمن."
+        "ar": "تجربة تنسيق عرض جديد يحفز دماغك الأيمن.",
+        "de": "Trying a new presentation format stimulates your right brain.",
+        "esp": "Trying a new presentation format stimulates your right brain.",
+        "it": "Trying a new presentation format stimulates your right brain."
       },
       "proverb": {
         "fr": "Qui change de point de vue change de vie.",
         "en": "Those who change perspective change their life.",
-        "ar": "من يغير وجهة نظره يغير حياته."
+        "ar": "من يغير وجهة نظره يغير حياته.",
+        "de": "Those who change perspective change their life.",
+        "esp": "Those who change perspective change their life.",
+        "it": "Those who change perspective change their life."
       },
       "challenge": {
         "fr": "Utilise un support visuel original pour expliquer un concept.",
         "en": "Use an original visual aid to explain a concept.",
-        "ar": "استخدم وسيلة بصرية أصلية لشرح مفهوم."
+        "ar": "استخدم وسيلة بصرية أصلية لشرح مفهوم.",
+        "de": "Use an original visual aid to explain a concept.",
+        "esp": "Use an original visual aid to explain a concept.",
+        "it": "Use an original visual aid to explain a concept."
       },
       "type": "V"
     },
@@ -272,17 +398,26 @@
       "intro": {
         "fr": "Proposer une méthode différente montre ton esprit d'innovation.",
         "en": "Proposing a different method shows your innovative spirit.",
-        "ar": "اقتراح طريقة مختلفة يظهر روحك الابتكارية."
+        "ar": "اقتراح طريقة مختلفة يظهر روحك الابتكارية.",
+        "de": "Proposing a different method shows your innovative spirit.",
+        "esp": "Proposing a different method shows your innovative spirit.",
+        "it": "Proposing a different method shows your innovative spirit."
       },
       "proverb": {
         "fr": "La nouveauté plaît et instruit.",
         "en": "Novelty pleases and teaches.",
-        "ar": "الجِدة تُسعد وتعلّم."
+        "ar": "الجِدة تُسعد وتعلّم.",
+        "de": "Novelty pleases and teaches.",
+        "esp": "Novelty pleases and teaches.",
+        "it": "Novelty pleases and teaches."
       },
       "challenge": {
         "fr": "Suggère une nouvelle façon de faire dans un projet ou cours.",
         "en": "Suggest a new way of doing things in a project or class.",
-        "ar": "اقترح طريقة جديدة للقيام بالأشياء في مشروع أو درس."
+        "ar": "اقترح طريقة جديدة للقيام بالأشياء في مشروع أو درس.",
+        "de": "Suggest a new way of doing things in a project or class.",
+        "esp": "Suggest a new way of doing things in a project or class.",
+        "it": "Suggest a new way of doing things in a project or class."
       },
       "type": "V"
     },
@@ -291,17 +426,26 @@
       "intro": {
         "fr": "Laisser quelqu'un d'autre diriger et observer t'apprend beaucoup.",
         "en": "Letting someone else lead and observing teaches you a lot.",
-        "ar": "السماح لشخص آخر بالقيادة والمراقبة يعلمك الكثير."
+        "ar": "السماح لشخص آخر بالقيادة والمراقبة يعلمك الكثير.",
+        "de": "Letting someone else lead and observing teaches you a lot.",
+        "esp": "Letting someone else lead and observing teaches you a lot.",
+        "it": "Letting someone else lead and observing teaches you a lot."
       },
       "proverb": {
         "fr": "Qui observe apprend.",
         "en": "Those who observe learn.",
-        "ar": "من يراقب يتعلم."
+        "ar": "من يراقب يتعلم.",
+        "de": "Those who observe learn.",
+        "esp": "Those who observe learn.",
+        "it": "Those who observe learn."
       },
       "challenge": {
         "fr": "Laisse un camarade prendre la tête d'une activité et analyse.",
         "en": "Let a peer take the lead in an activity and analyze.",
-        "ar": "دع زميلاً يتولى قيادة نشاط وراقب."
+        "ar": "دع زميلاً يتولى قيادة نشاط وراقب.",
+        "de": "Let a peer take the lead in an activity and analyze.",
+        "esp": "Let a peer take the lead in an activity and analyze.",
+        "it": "Let a peer take the lead in an activity and analyze."
       },
       "type": "T"
     },
@@ -310,17 +454,26 @@
       "intro": {
         "fr": "Poser des questions insolites ouvre des perspectives inédites.",
         "en": "Asking unusual questions opens up new perspectives.",
-        "ar": "طرح أسئلة غير عادية يفتح آفاقًا جديدة."
+        "ar": "طرح أسئلة غير عادية يفتح آفاقًا جديدة.",
+        "de": "Asking unusual questions opens up new perspectives.",
+        "esp": "Asking unusual questions opens up new perspectives.",
+        "it": "Asking unusual questions opens up new perspectives."
       },
       "proverb": {
         "fr": "La curiosité est le début de la sagesse.",
         "en": "Curiosity is the beginning of wisdom.",
-        "ar": "الفضول هو بداية الحكمة."
+        "ar": "الفضول هو بداية الحكمة.",
+        "de": "Curiosity is the beginning of wisdom.",
+        "esp": "Curiosity is the beginning of wisdom.",
+        "it": "Curiosity is the beginning of wisdom."
       },
       "challenge": {
         "fr": "Pose aujourd'hui une question inattendue dans une réunion.",
         "en": "Ask an unexpected question in a meeting today.",
-        "ar": "اطرح سؤالاً غير متوقع في اجتماع اليوم."
+        "ar": "اطرح سؤالاً غير متوقع في اجتماع اليوم.",
+        "de": "Ask an unexpected question in a meeting today.",
+        "esp": "Ask an unexpected question in a meeting today.",
+        "it": "Ask an unexpected question in a meeting today."
       },
       "type": "A"
     },
@@ -329,17 +482,26 @@
       "intro": {
         "fr": "Prendre un petit risque calculé te prépare aux grands défis.",
         "en": "Taking a small calculated risk prepares you for big challenges.",
-        "ar": "أخذ مخاطرة صغيرة محسوبة يعدك للتحديات الكبيرة."
+        "ar": "أخذ مخاطرة صغيرة محسوبة يعدك للتحديات الكبيرة.",
+        "de": "Taking a small calculated risk prepares you for big challenges.",
+        "esp": "Taking a small calculated risk prepares you for big challenges.",
+        "it": "Taking a small calculated risk prepares you for big challenges."
       },
       "proverb": {
         "fr": "Qui ne tente rien n'a rien.",
         "en": "Nothing ventured, nothing gained.",
-        "ar": "من لا يجازف لا يكسب شيئًا."
+        "ar": "من لا يجازف لا يكسب شيئًا.",
+        "de": "Nothing ventured, nothing gained.",
+        "esp": "Nothing ventured, nothing gained.",
+        "it": "Nothing ventured, nothing gained."
       },
       "challenge": {
         "fr": "Teste une idée audacieuse à petite échelle aujourd'hui.",
         "en": "Test a bold idea on a small scale today.",
-        "ar": "اختبر فكرة جريئة على نطاق صغير اليوم."
+        "ar": "اختبر فكرة جريئة على نطاق صغير اليوم.",
+        "de": "Test a bold idea on a small scale today.",
+        "esp": "Test a bold idea on a small scale today.",
+        "it": "Test a bold idea on a small scale today."
       },
       "type": "T"
     },
@@ -348,17 +510,26 @@
       "intro": {
         "fr": "Partager ton ressenti renforce la confiance avec les autres.",
         "en": "Sharing your feelings strengthens trust with others.",
-        "ar": "مشاركة مشاعرك تعزز الثقة مع الآخرين."
+        "ar": "مشاركة مشاعرك تعزز الثقة مع الآخرين.",
+        "de": "Sharing your feelings strengthens trust with others.",
+        "esp": "Sharing your feelings strengthens trust with others.",
+        "it": "Sharing your feelings strengthens trust with others."
       },
       "proverb": {
         "fr": "Le cœur a ses raisons que la raison ignore.",
         "en": "The heart has its reasons that reason knows not.",
-        "ar": "للقلب أسبابه التي لا يعرفها العقل."
+        "ar": "للقلب أسبابه التي لا يعرفها العقل.",
+        "de": "The heart has its reasons that reason knows not.",
+        "esp": "The heart has its reasons that reason knows not.",
+        "it": "The heart has its reasons that reason knows not."
       },
       "challenge": {
         "fr": "Dis à un camarade ce que tu as ressenti pendant une activité.",
         "en": "Tell a peer what you felt during an activity.",
-        "ar": "أخبر زميلاً بما شعرت به أثناء نشاط."
+        "ar": "أخبر زميلاً بما شعرت به أثناء نشاط.",
+        "de": "Tell a peer what you felt during an activity.",
+        "esp": "Tell a peer what you felt during an activity.",
+        "it": "Tell a peer what you felt during an activity."
       },
       "type": "A"
     },
@@ -367,17 +538,26 @@
       "intro": {
         "fr": "Observer ton évolution te permet de mesurer ton progrès.",
         "en": "Observing your evolution allows you to measure your progress.",
-        "ar": "مراقبة تطورك تتيح لك قياس تقدمك."
+        "ar": "مراقبة تطورك تتيح لك قياس تقدمك.",
+        "de": "Observing your evolution allows you to measure your progress.",
+        "esp": "Observing your evolution allows you to measure your progress.",
+        "it": "Observing your evolution allows you to measure your progress."
       },
       "proverb": {
         "fr": "Qui mesure avance.",
         "en": "Those who measure progress.",
-        "ar": "من يقيس يتقدم."
+        "ar": "من يقيس يتقدم.",
+        "de": "Those who measure progress.",
+        "esp": "Those who measure progress.",
+        "it": "Those who measure progress."
       },
       "challenge": {
         "fr": "Note chaque soir un apprentissage issu de tes expériences.",
         "en": "Note every evening a lesson learned from your experiences.",
-        "ar": "سجل كل مساء درسًا تعلمته من تجاربك."
+        "ar": "سجل كل مساء درسًا تعلمته من تجاربك.",
+        "de": "Note every evening a lesson learned from your experiences.",
+        "esp": "Note every evening a lesson learned from your experiences.",
+        "it": "Note every evening a lesson learned from your experiences."
       },
       "type": "T"
     },
@@ -386,17 +566,26 @@
       "intro": {
         "fr": "Le bilan final t'aide à ancrer tes nouveaux comportements.",
         "en": "The final assessment helps you anchor your new behaviors.",
-        "ar": "التقييم النهائي يساعدك على ترسيخ سلوكياتك الجديدة."
+        "ar": "التقييم النهائي يساعدك على ترسيخ سلوكياتك الجديدة.",
+        "de": "The final assessment helps you anchor your new behaviors.",
+        "esp": "The final assessment helps you anchor your new behaviors.",
+        "it": "The final assessment helps you anchor your new behaviors."
       },
       "proverb": {
         "fr": "Qui se retourne sur son chemin voit la route parcourue.",
         "en": "Those who look back on their path see the road traveled.",
-        "ar": "من ينظر إلى الوراء في طريقه يرى الطريق الذي قطعه."
+        "ar": "من ينظر إلى الوراء في طريقه يرى الطريق الذي قطعه.",
+        "de": "Those who look back on their path see the road traveled.",
+        "esp": "Those who look back on their path see the road traveled.",
+        "it": "Those who look back on their path see the road traveled."
       },
       "challenge": {
         "fr": "Résume tes trois plus grands progrès de ces 21 jours et partage-les.",
         "en": "Summarize your three greatest progress points from these 21 days and share them.",
-        "ar": "لخص أعظم ثلاث نقاط تقدم من هذه الـ 21 يومًا وشاركها."
+        "ar": "لخص أعظم ثلاث نقاط تقدم من هذه الـ 21 يومًا وشاركها.",
+        "de": "Summarize your three greatest progress points from these 21 days and share them.",
+        "esp": "Summarize your three greatest progress points from these 21 days and share them.",
+        "it": "Summarize your three greatest progress points from these 21 days and share them."
       },
       "type": "V"
     }

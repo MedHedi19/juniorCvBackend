@@ -5,7 +5,7 @@ const varkData = require('../data/vark/vark.json');
 const transformOptionsToArray = (optionsObj, lang) => {
   return Object.entries(optionsObj).map(([style, texts]) => ({
     style,
-    text: texts[lang] || texts['fr'],
+    text: texts[lang] || texts['fr'] || texts['en'] || texts['ar'] || texts['de'] || texts['esp'] || texts['it'],
   }));
 };
 
@@ -30,7 +30,7 @@ const getVarkQuestion = async (req, res) => {
       return res.status(404).json({ message: 'Question not found for this day' });
     }
 
-    const questionText = q.question[language] || q.question['fr'];
+    const questionText = q.question[language] || q.question['fr'] || q.question['en'] || q.question['ar'] || q.question['de'] || q.question['esp'] || q.question['it'];
     const options = transformOptionsToArray(q.options, language);
 
     return res.json({

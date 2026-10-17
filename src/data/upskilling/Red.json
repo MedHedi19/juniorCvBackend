@@ -6,17 +6,26 @@
       "intro": {
         "fr": "Prendre des initiatives est ta force mais elle peut être plus efficace avec une préparation.",
         "en": "Taking initiative is your strength but it can be more effective with preparation.",
-        "ar": "أخذ المبادرة هو قوتك لكن يمكن أن تكون أكثر فعالية مع التحضير."
+        "ar": "أخذ المبادرة هو قوتك لكن يمكن أن تكون أكثر فعالية مع التحضير.",
+        "de": "Taking initiative is your strength but it can be more effective with preparation.",
+        "esp": "Taking initiative is your strength but it can be more effective with preparation.",
+        "it": "Taking initiative is your strength but it can be more effective with preparation."
       },
       "proverb": {
         "fr": "Qui veut gravir une montagne commence par un pas.",
         "en": "Those who want to climb a mountain start with one step.",
-        "ar": "من يريد تسلق جبل يبدأ بخطوة واحدة."
+        "ar": "من يريد تسلق جبل يبدأ بخطوة واحدة.",
+        "de": "Those who want to climb a mountain start with one step.",
+        "esp": "Those who want to climb a mountain start with one step.",
+        "it": "Those who want to climb a mountain start with one step."
       },
       "challenge": {
         "fr": "Note trois initiatives que tu peux lancer cette semaine.",
         "en": "Write down three initiatives you can launch this week.",
-        "ar": "اكتب ثلاث مبادرات يمكنك إطلاقها هذا الأسبوع."
+        "ar": "اكتب ثلاث مبادرات يمكنك إطلاقها هذا الأسبوع.",
+        "de": "Write down three initiatives you can launch this week.",
+        "esp": "Write down three initiatives you can launch this week.",
+        "it": "Write down three initiatives you can launch this week."
       },
       "type": "T"
     },
@@ -25,17 +34,26 @@
       "intro": {
         "fr": "Ton énergie est précieuse, mais elle gagne en impact si tu sais la canaliser.",
         "en": "Your energy is precious, but it gains impact if you know how to channel it.",
-        "ar": "طاقتك ثمينة، لكنها تكتسب تأثيرًا إذا عرفت كيف توجهها."
+        "ar": "طاقتك ثمينة، لكنها تكتسب تأثيرًا إذا عرفت كيف توجهها.",
+        "de": "Your energy is precious, but it gains impact if you know how to channel it.",
+        "esp": "Your energy is precious, but it gains impact if you know how to channel it.",
+        "it": "Your energy is precious, but it gains impact if you know how to channel it."
       },
       "proverb": {
         "fr": "L'action sans réflexion est vaine, la réflexion sans action est stérile.",
         "en": "Action without reflection is futile, reflection without action is sterile.",
-        "ar": "العمل بدون تفكير عبث، والتفكير بدون عمل عقيم."
+        "ar": "العمل بدون تفكير عبث، والتفكير بدون عمل عقيم.",
+        "de": "Action without reflection is futile, reflection without action is sterile.",
+        "esp": "Action without reflection is futile, reflection without action is sterile.",
+        "it": "Action without reflection is futile, reflection without action is sterile."
       },
       "challenge": {
         "fr": "Choisis une idée et définis un plan en 3 étapes simples.",
         "en": "Choose an idea and define a plan in 3 simple steps.",
-        "ar": "اختر فكرة وحدد خطة في 3 خطوات بسيطة."
+        "ar": "اختر فكرة وحدد خطة في 3 خطوات بسيطة.",
+        "de": "Choose an idea and define a plan in 3 simple steps.",
+        "esp": "Choose an idea and define a plan in 3 simple steps.",
+        "it": "Choose an idea and define a plan in 3 simple steps."
       },
       "type": "T"
     },
@@ -44,17 +62,26 @@
       "intro": {
         "fr": "Le leadership s'exprime aussi par l'écoute.",
         "en": "Leadership is also expressed through listening.",
-        "ar": "القيادة تعبر عن نفسها أيضًا من خلال الاستماع."
+        "ar": "القيادة تعبر عن نفسها أيضًا من خلال الاستماع.",
+        "de": "Leadership is also expressed through listening.",
+        "esp": "Leadership is also expressed through listening.",
+        "it": "Leadership is also expressed through listening."
       },
       "proverb": {
         "fr": "Celui qui écoute construit mieux que celui qui parle.",
         "en": "Those who listen build better than those who speak.",
-        "ar": "من يستمع يبني أفضل من الذي يتكلم."
+        "ar": "من يستمع يبني أفضل من الذي يتكلم.",
+        "de": "Those who listen build better than those who speak.",
+        "esp": "Those who listen build better than those who speak.",
+        "it": "Those who listen build better than those who speak."
       },
       "challenge": {
         "fr": "Écoute 5 minutes un camarade sans l'interrompre et note une idée clé.",
         "en": "Listen to a colleague for 5 minutes without interrupting and note a key idea.",
-        "ar": "استمع إلى زميل لمدة 5 دقائق دون مقاطعة واكتب فكرة رئيسية."
+        "ar": "استمع إلى زميل لمدة 5 دقائق دون مقاطعة واكتب فكرة رئيسية.",
+        "de": "Listen to a colleague for 5 minutes without interrupting and note a key idea.",
+        "esp": "Listen to a colleague for 5 minutes without interrupting and note a key idea.",
+        "it": "Listen to a colleague for 5 minutes without interrupting and note a key idea."
       },
       "type": "A"
     },
@@ -63,17 +90,26 @@
       "intro": {
         "fr": "Savoir déléguer est une force du leader. Cela montre la confiance et libère ton énergie pour l'essentiel.",
         "en": "Knowing how to delegate is a leader's strength. It shows trust and frees your energy for what's essential.",
-        "ar": "معرفة كيفية التفويض هي قوة القائد. إنها تظهر الثقة وتحرر طاقتك للأساسيات."
+        "ar": "معرفة كيفية التفويض هي قوة القائد. إنها تظهر الثقة وتحرر طاقتك للأساسيات.",
+        "de": "Knowing how to delegate is a leader's strength. It shows trust and frees your energy for what's essential.",
+        "esp": "Knowing how to delegate is a leader's strength. It shows trust and frees your energy for what's essential.",
+        "it": "Knowing how to delegate is a leader's strength. It shows trust and frees your energy for what's essential."
       },
       "proverb": {
         "fr": "Celui qui veut tout faire seul n'accomplit rien de grand.",
         "en": "Those who want to do everything alone accomplish nothing great.",
-        "ar": "من يريد أن يفعل كل شيء بمفرده لا ينجز شيئًا عظيمًا."
+        "ar": "من يريد أن يفعل كل شيء بمفرده لا ينجز شيئًا عظيمًا.",
+        "de": "Those who want to do everything alone accomplish nothing great.",
+        "esp": "Those who want to do everything alone accomplish nothing great.",
+        "it": "Those who want to do everything alone accomplish nothing great."
       },
       "challenge": {
         "fr": "Délègue une petite tâche à un camarade et suis son avancement.",
         "en": "Delegate a small task to a colleague and follow its progress.",
-        "ar": "فوض مهمة صغيرة لزميل وتابع تقدمها."
+        "ar": "فوض مهمة صغيرة لزميل وتابع تقدمها.",
+        "de": "Delegate a small task to a colleague and follow its progress.",
+        "esp": "Delegate a small task to a colleague and follow its progress.",
+        "it": "Delegate a small task to a colleague and follow its progress."
       },
       "type": "T"
     },
@@ -82,17 +118,26 @@
       "intro": {
         "fr": "Fixer des objectifs clairs motive ton équipe et te donne une direction.",
         "en": "Setting clear goals motivates your team and gives you direction.",
-        "ar": "تحديد أهداف واضحة يحفز فريقك ويعطيك اتجاهًا."
+        "ar": "تحديد أهداف واضحة يحفز فريقك ويعطيك اتجاهًا.",
+        "de": "Setting clear goals motivates your team and gives you direction.",
+        "esp": "Setting clear goals motivates your team and gives you direction.",
+        "it": "Setting clear goals motivates your team and gives you direction."
       },
       "proverb": {
         "fr": "Un navire sans cap n'atteint aucun port.",
         "en": "A ship without direction reaches no port.",
-        "ar": "سفينة بدون وجهة لا تصل إلى أي ميناء."
+        "ar": "سفينة بدون وجهة لا تصل إلى أي ميناء.",
+        "de": "A ship without direction reaches no port.",
+        "esp": "A ship without direction reaches no port.",
+        "it": "A ship without direction reaches no port."
       },
       "challenge": {
         "fr": "Écris un objectif précis (SMART) à atteindre cette semaine.",
         "en": "Write a specific (SMART) goal to achieve this week.",
-        "ar": "اكتب هدفًا محددًا (SMART) لتحقيقه هذا الأسبوع."
+        "ar": "اكتب هدفًا محددًا (SMART) لتحقيقه هذا الأسبوع.",
+        "de": "Write a specific (SMART) goal to achieve this week.",
+        "esp": "Write a specific (SMART) goal to achieve this week.",
+        "it": "Write a specific (SMART) goal to achieve this week."
       },
       "type": "T"
     },
@@ -101,17 +146,26 @@
       "intro": {
         "fr": "Un bon leader reconnaît les efforts des autres. La reconnaissance renforce la cohésion.",
         "en": "A good leader recognizes others' efforts. Recognition strengthens cohesion.",
-        "ar": "القائد الجيد يعترف بجهود الآخرين. الاعتراف يعزز التماسك."
+        "ar": "القائد الجيد يعترف بجهود الآخرين. الاعتراف يعزز التماسك.",
+        "de": "A good leader recognizes others' efforts. Recognition strengthens cohesion.",
+        "esp": "A good leader recognizes others' efforts. Recognition strengthens cohesion.",
+        "it": "A good leader recognizes others' efforts. Recognition strengthens cohesion."
       },
       "proverb": {
         "fr": "La gratitude transforme ce que nous avons en suffisance.",
         "en": "Gratitude transforms what we have into enough.",
-        "ar": "الامتنان يحول ما لدينا إلى كفاية."
+        "ar": "الامتنان يحول ما لدينا إلى كفاية.",
+        "de": "Gratitude transforms what we have into enough.",
+        "esp": "Gratitude transforms what we have into enough.",
+        "it": "Gratitude transforms what we have into enough."
       },
       "challenge": {
         "fr": "Remercie publiquement quelqu'un pour sa contribution.",
         "en": "Publicly thank someone for their contribution.",
-        "ar": "اشكر شخصًا علنًا على مساهمته."
+        "ar": "اشكر شخصًا علنًا على مساهمته.",
+        "de": "Publicly thank someone for their contribution.",
+        "esp": "Publicly thank someone for their contribution.",
+        "it": "Publicly thank someone for their contribution."
       },
       "type": "V"
     },
@@ -120,17 +174,26 @@
       "intro": {
         "fr": "Le courage consiste à prendre des décisions même dans l'incertitude.",
         "en": "Courage consists of making decisions even in uncertainty.",
-        "ar": "الشجاعة تتمثل في اتخاذ قرارات حتى في عدم اليقين."
+        "ar": "الشجاعة تتمثل في اتخاذ قرارات حتى في عدم اليقين.",
+        "de": "Courage consists of making decisions even in uncertainty.",
+        "esp": "Courage consists of making decisions even in uncertainty.",
+        "it": "Courage consists of making decisions even in uncertainty."
       },
       "proverb": {
         "fr": "Mieux vaut une décision imparfaite qu'une indécision parfaite.",
         "en": "Better an imperfect decision than perfect indecision.",
-        "ar": "قرار غير مثالي أفضل من تردد مثالي."
+        "ar": "قرار غير مثالي أفضل من تردد مثالي.",
+        "de": "Better an imperfect decision than perfect indecision.",
+        "esp": "Better an imperfect decision than perfect indecision.",
+        "it": "Better an imperfect decision than perfect indecision."
       },
       "challenge": {
         "fr": "Prends une petite décision aujourd'hui sans attendre plus d'infos.",
         "en": "Make a small decision today without waiting for more information.",
-        "ar": "اتخذ قرارًا صغيرًا اليوم دون انتظار المزيد من المعلومات."
+        "ar": "اتخذ قرارًا صغيرًا اليوم دون انتظار المزيد من المعلومات.",
+        "de": "Make a small decision today without waiting for more information.",
+        "esp": "Make a small decision today without waiting for more information.",
+        "it": "Make a small decision today without waiting for more information."
       },
       "type": "T"
     },
@@ -139,17 +202,26 @@
       "intro": {
         "fr": "L'organisation est un levier puissant. Planifier tes actions augmente ton impact.",
         "en": "Organization is a powerful lever. Planning your actions increases your impact.",
-        "ar": "التنظيم رافعة قوية. تخطيط أفعالك يزيد من تأثيرك."
+        "ar": "التنظيم رافعة قوية. تخطيط أفعالك يزيد من تأثيرك.",
+        "de": "Organization is a powerful lever. Planning your actions increases your impact.",
+        "esp": "Organization is a powerful lever. Planning your actions increases your impact.",
+        "it": "Organization is a powerful lever. Planning your actions increases your impact."
       },
       "proverb": {
         "fr": "Qui veut aller loin ménage sa monture.",
         "en": "Those who want to go far take care of their mount.",
-        "ar": "من يريد الذهاب بعيدًا يعتني بمركوبته."
+        "ar": "من يريد الذهاب بعيدًا يعتني بمركوبته.",
+        "de": "Those who want to go far take care of their mount.",
+        "esp": "Those who want to go far take care of their mount.",
+        "it": "Those who want to go far take care of their mount."
       },
       "challenge": {
         "fr": "Planifie ta journée de demain en 3 priorités.",
         "en": "Plan tomorrow in 3 priorities.",
-        "ar": "خطط ليومك غدًا في 3 أولويات."
+        "ar": "خطط ليومك غدًا في 3 أولويات.",
+        "de": "Plan tomorrow in 3 priorities.",
+        "esp": "Plan tomorrow in 3 priorities.",
+        "it": "Plan tomorrow in 3 priorities."
       },
       "type": "T"
     },
@@ -158,17 +230,26 @@
       "intro": {
         "fr": "La vision inspire les autres. Savoir la communiquer les entraîne à tes côtés.",
         "en": "Vision inspires others. Knowing how to communicate it brings them to your side.",
-        "ar": "الرؤية تلهم الآخرين. معرفة كيفية إيصالها تجلبهم إلى جانبل."
+        "ar": "الرؤية تلهم الآخرين. معرفة كيفية إيصالها تجلبهم إلى جانبل.",
+        "de": "Vision inspires others. Knowing how to communicate it brings them to your side.",
+        "esp": "Vision inspires others. Knowing how to communicate it brings them to your side.",
+        "it": "Vision inspires others. Knowing how to communicate it brings them to your side."
       },
       "proverb": {
         "fr": "Là où il n'y a pas de vision, le peuple périt.",
         "en": "Where there is no vision, the people perish.",
-        "ar": "حيث لا توجد رؤية، يهلك الناس."
+        "ar": "حيث لا توجد رؤية، يهلك الناس.",
+        "de": "Where there is no vision, the people perish.",
+        "esp": "Where there is no vision, the people perish.",
+        "it": "Where there is no vision, the people perish."
       },
       "challenge": {
         "fr": "Partage ton idée d'avenir pour un projet avec ton équipe.",
         "en": "Share your future vision for a project with your team.",
-        "ar": "شارك رؤيتك المستقبلية لمشروع مع فريقك."
+        "ar": "شارك رؤيتك المستقبلية لمشروع مع فريقك.",
+        "de": "Share your future vision for a project with your team.",
+        "esp": "Share your future vision for a project with your team.",
+        "it": "Share your future vision for a project with your team."
       },
       "type": "V"
     },
@@ -177,17 +258,26 @@
       "intro": {
         "fr": "Gérer son stress te rend plus lucide et crédible.",
         "en": "Managing your stress makes you more lucid and credible.",
-        "ar": "إدارة التوتر تجعلك أكثر وضوحًا ومصداقية."
+        "ar": "إدارة التوتر تجعلك أكثر وضوحًا ومصداقية.",
+        "de": "Managing your stress makes you more lucid and credible.",
+        "esp": "Managing your stress makes you more lucid and credible.",
+        "it": "Managing your stress makes you more lucid and credible."
       },
       "proverb": {
         "fr": "La tempérance est le courage du fort.",
         "en": "Temperance is the courage of the strong.",
-        "ar": "الاعتدال هو شجاعة القوي."
+        "ar": "الاعتدال هو شجاعة القوي.",
+        "de": "Temperance is the courage of the strong.",
+        "esp": "Temperance is the courage of the strong.",
+        "it": "Temperance is the courage of the strong."
       },
       "challenge": {
         "fr": "Prends 5 minutes pour respirer profondément avant une réunion.",
         "en": "Take 5 minutes to breathe deeply before a meeting.",
-        "ar": "خذ 5 دقائق للتنفس بعمق قبل الاجتماع."
+        "ar": "خذ 5 دقائق للتنفس بعمق قبل الاجتماع.",
+        "de": "Take 5 minutes to breathe deeply before a meeting.",
+        "esp": "Take 5 minutes to breathe deeply before a meeting.",
+        "it": "Take 5 minutes to breathe deeply before a meeting."
       },
       "type": "A"
     },
@@ -196,17 +286,26 @@
       "intro": {
         "fr": "Accepter le feedback améliore ton leadership.",
         "en": "Accepting feedback improves your leadership.",
-        "ar": "قبول الملاحظات يحسن قيادتك."
+        "ar": "قبول الملاحظات يحسن قيادتك.",
+        "de": "Accepting feedback improves your leadership.",
+        "esp": "Accepting feedback improves your leadership.",
+        "it": "Accepting feedback improves your leadership."
       },
       "proverb": {
         "fr": "Qui se remet en question progresse.",
         "en": "Those who question themselves progress.",
-        "ar": "من يشكك في نفسه يتقدم."
+        "ar": "من يشكك في نفسه يتقدم.",
+        "de": "Those who question themselves progress.",
+        "esp": "Those who question themselves progress.",
+        "it": "Those who question themselves progress."
       },
       "challenge": {
         "fr": "Demande à un camarade ce qu'il apprécie et ce qu'il améliorerait chez toi.",
         "en": "Ask a colleague what they appreciate and what they would improve about you.",
-        "ar": "اسأل زميلًا عما يقدره وما يمكن تحسينه فيك."
+        "ar": "اسأل زميلًا عما يقدره وما يمكن تحسينه فيك.",
+        "de": "Ask a colleague what they appreciate and what they would improve about you.",
+        "esp": "Ask a colleague what they appreciate and what they would improve about you.",
+        "it": "Ask a colleague what they appreciate and what they would improve about you."
       },
       "type": "A"
     },
@@ -215,17 +314,26 @@
       "intro": {
         "fr": "L'exemplarité est la meilleure forme de leadership.",
         "en": "Leading by example is the best form of leadership.",
-        "ar": "القدوة هي أفضل شكل من أشكال القيادة."
+        "ar": "القدوة هي أفضل شكل من أشكال القيادة.",
+        "de": "Leading by example is the best form of leadership.",
+        "esp": "Leading by example is the best form of leadership.",
+        "it": "Leading by example is the best form of leadership."
       },
       "proverb": {
         "fr": "Montre-moi, ne me dis pas.",
         "en": "Show me, don't tell me.",
-        "ar": "أرني، لا تخبرني."
+        "ar": "أرني، لا تخبرني.",
+        "de": "Show me, don't tell me.",
+        "esp": "Show me, don't tell me.",
+        "it": "Show me, don't tell me."
       },
       "challenge": {
         "fr": "Montre l'exemple en arrivant en avance ou en préparant un sujet.",
         "en": "Lead by example by arriving early or preparing a topic.",
-        "ar": "كن قدوة بالوصول مبكرًا أو إعداد موضوع."
+        "ar": "كن قدوة بالوصول مبكرًا أو إعداد موضوع.",
+        "de": "Lead by example by arriving early or preparing a topic.",
+        "esp": "Lead by example by arriving early or preparing a topic.",
+        "it": "Lead by example by arriving early or preparing a topic."
       },
       "type": "T"
     },
@@ -234,17 +342,26 @@
       "intro": {
         "fr": "Communiquer clairement tes attentes évite les malentendus.",
         "en": "Communicating your expectations clearly avoids misunderstandings.",
-        "ar": "التواصل بوضوح حول توقعاتك يتجنب سوء الفهم."
+        "ar": "التواصل بوضوح حول توقعاتك يتجنب سوء الفهم.",
+        "de": "Communicating your expectations clearly avoids misunderstandings.",
+        "esp": "Communicating your expectations clearly avoids misunderstandings.",
+        "it": "Communicating your expectations clearly avoids misunderstandings."
       },
       "proverb": {
         "fr": "Ce qui est bien dit est à moitié fait.",
         "en": "What is well said is half done.",
-        "ar": "ما يُقال جيدًا يكون نصف منجز."
+        "ar": "ما يُقال جيدًا يكون نصف منجز.",
+        "de": "What is well said is half done.",
+        "esp": "What is well said is half done.",
+        "it": "What is well said is half done."
       },
       "challenge": {
         "fr": "Écris ton prochain message important en 3 phrases simples.",
         "en": "Write your next important message in 3 simple sentences.",
-        "ar": "اكتب رسالتك المهمة التالية في 3 جمل بسيطة."
+        "ar": "اكتب رسالتك المهمة التالية في 3 جمل بسيطة.",
+        "de": "Write your next important message in 3 simple sentences.",
+        "esp": "Write your next important message in 3 simple sentences.",
+        "it": "Write your next important message in 3 simple sentences."
       },
       "type": "T"
     },
@@ -253,17 +370,26 @@
       "intro": {
         "fr": "Gérer les conflits avec calme renforce ton autorité.",
         "en": "Managing conflicts calmly strengthens your authority.",
-        "ar": "إدارة النزاعات بهدوء تعزز سلطتك."
+        "ar": "إدارة النزاعات بهدوء تعزز سلطتك.",
+        "de": "Managing conflicts calmly strengthens your authority.",
+        "esp": "Managing conflicts calmly strengthens your authority.",
+        "it": "Managing conflicts calmly strengthens your authority."
       },
       "proverb": {
         "fr": "Une parole douce éteint la colère.",
         "en": "A gentle word extinguishes anger.",
-        "ar": "الكلمة اللطيفة تطفئ الغضب."
+        "ar": "الكلمة اللطيفة تطفئ الغضب.",
+        "de": "A gentle word extinguishes anger.",
+        "esp": "A gentle word extinguishes anger.",
+        "it": "A gentle word extinguishes anger."
       },
       "challenge": {
         "fr": "Écoute deux personnes en désaccord et propose une solution neutre.",
         "en": "Listen to two people in disagreement and propose a neutral solution.",
-        "ar": "استمع لشخصين مختلفين واقترح حلاً محايدًا."
+        "ar": "استمع لشخصين مختلفين واقترح حلاً محايدًا.",
+        "de": "Listen to two people in disagreement and propose a neutral solution.",
+        "esp": "Listen to two people in disagreement and propose a neutral solution.",
+        "it": "Listen to two people in disagreement and propose a neutral solution."
       },
       "type": "A"
     },
@@ -272,17 +398,26 @@
       "intro": {
         "fr": "Motiver ton équipe est essentiel : leur succès est aussi le tien.",
         "en": "Motivating your team is essential: their success is yours too.",
-        "ar": "تحفيز فريقك ضروري: نجاحهم هو نجاحك أيضًا."
+        "ar": "تحفيز فريقك ضروري: نجاحهم هو نجاحك أيضًا.",
+        "de": "Motivating your team is essential: their success is yours too.",
+        "esp": "Motivating your team is essential: their success is yours too.",
+        "it": "Motivating your team is essential: their success is yours too."
       },
       "proverb": {
         "fr": "On va plus loin ensemble que seul.",
         "en": "We go further together than alone.",
-        "ar": "نذهب أبعد معًا من وحدنا."
+        "ar": "نذهب أبعد معًا من وحدنا.",
+        "de": "We go further together than alone.",
+        "esp": "We go further together than alone.",
+        "it": "We go further together than alone."
       },
       "challenge": {
         "fr": "Donne un encouragement personnalisé à 2 camarades aujourd'hui.",
         "en": "Give personalized encouragement to 2 colleagues today.",
-        "ar": "قدم تشجيعًا شخصيًا لزميلين اليوم."
+        "ar": "قدم تشجيعًا شخصيًا لزميلين اليوم.",
+        "de": "Give personalized encouragement to 2 colleagues today.",
+        "esp": "Give personalized encouragement to 2 colleagues today.",
+        "it": "Give personalized encouragement to 2 colleagues today."
       },
       "type": "V"
     },
@@ -291,17 +426,26 @@
       "intro": {
         "fr": "Développer tes compétences en continu te rend plus crédible.",
         "en": "Continuously developing your skills makes you more credible.",
-        "ar": "التطوير المستمر لمهاراتك يجعلك أكثر مصداقية."
+        "ar": "التطوير المستمر لمهاراتك يجعلك أكثر مصداقية.",
+        "de": "Continuously developing your skills makes you more credible.",
+        "esp": "Continuously developing your skills makes you more credible.",
+        "it": "Continuously developing your skills makes you more credible."
       },
       "proverb": {
         "fr": "Qui cesse d'apprendre cesse de grandir.",
         "en": "Those who stop learning stop growing.",
-        "ar": "من يتوقف عن التعلم يتوقف عن النمو."
+        "ar": "من يتوقف عن التعلم يتوقف عن النمو.",
+        "de": "Those who stop learning stop growing.",
+        "esp": "Those who stop learning stop growing.",
+        "it": "Those who stop learning stop growing."
       },
       "challenge": {
         "fr": "Lis un article sur le leadership et note 1 idée à appliquer.",
         "en": "Read an article on leadership and note 1 idea to apply.",
-        "ar": "اقرأ مقالًا عن القيادة واكتب فكرة واحدة لتطبيقها."
+        "ar": "اقرأ مقالًا عن القيادة واكتب فكرة واحدة لتطبيقها.",
+        "de": "Read an article on leadership and note 1 idea to apply.",
+        "esp": "Read an article on leadership and note 1 idea to apply.",
+        "it": "Read an article on leadership and note 1 idea to apply."
       },
       "type": "T"
     },
@@ -310,17 +454,26 @@
       "intro": {
         "fr": "L'équilibre vie perso / vie pro te rend plus efficace.",
         "en": "Work-life balance makes you more effective.",
-        "ar": "التوازن بين الحياة الشخصية والمهنية يجعلك أكثر فعالية."
+        "ar": "التوازن بين الحياة الشخصية والمهنية يجعلك أكثر فعالية.",
+        "de": "Work-life balance makes you more effective.",
+        "esp": "Work-life balance makes you more effective.",
+        "it": "Work-life balance makes you more effective."
       },
       "proverb": {
         "fr": "Qui veut courir longtemps ménage ses forces.",
         "en": "Those who want to run long preserve their strength.",
-        "ar": "من يريد الجري طويلاً يحافظ على قوته."
+        "ar": "من يريد الجري طويلاً يحافظ على قوته.",
+        "de": "Those who want to run long preserve their strength.",
+        "esp": "Those who want to run long preserve their strength.",
+        "it": "Those who want to run long preserve their strength."
       },
       "challenge": {
         "fr": "Prends 30 minutes pour toi aujourd'hui sans écran.",
         "en": "Take 30 minutes for yourself today without screens.",
-        "ar": "خذ 30 دقيقة لنفسك اليوم بدون شاشات."
+        "ar": "خذ 30 دقيقة لنفسك اليوم بدون شاشات.",
+        "de": "Take 30 minutes for yourself today without screens.",
+        "esp": "Take 30 minutes for yourself today without screens.",
+        "it": "Take 30 minutes for yourself today without screens."
       },
       "type": "T"
     },
@@ -329,17 +482,26 @@
       "intro": {
         "fr": "Prendre du recul clarifie les décisions.",
         "en": "Taking a step back clarifies decisions.",
-        "ar": "الابتعاد خطوة يوضح القرارات."
+        "ar": "الابتعاد خطوة يوضح القرارات.",
+        "de": "Taking a step back clarifies decisions.",
+        "esp": "Taking a step back clarifies decisions.",
+        "it": "Taking a step back clarifies decisions."
       },
       "proverb": {
         "fr": "La nuit porte conseil.",
         "en": "Sleep on it.",
-        "ar": "الليل يحمل النصيحة."
+        "ar": "الليل يحمل النصيحة.",
+        "de": "Sleep on it.",
+        "esp": "Sleep on it.",
+        "it": "Sleep on it."
       },
       "challenge": {
         "fr": "Avant de répondre à un mail ou message difficile, attends 1 heure.",
         "en": "Before responding to a difficult email or message, wait 1 hour.",
-        "ar": "قبل الرد على بريد إلكتروني أو رسالة صعبة، انتظر ساعة واحدة."
+        "ar": "قبل الرد على بريد إلكتروني أو رسالة صعبة، انتظر ساعة واحدة.",
+        "de": "Before responding to a difficult email or message, wait 1 hour.",
+        "esp": "Before responding to a difficult email or message, wait 1 hour.",
+        "it": "Before responding to a difficult email or message, wait 1 hour."
       },
       "type": "T"
     },
@@ -348,17 +510,26 @@
       "intro": {
         "fr": "Savoir féliciter en privé et corriger en privé construit la confiance.",
         "en": "Knowing how to praise in private and correct in private builds trust.",
-        "ar": "معرفة كيفية الثناء على انفراد والتصحيح على انفراد تبني الثقة."
+        "ar": "معرفة كيفية الثناء على انفراد والتصحيح على انفراد تبني الثقة.",
+        "de": "Knowing how to praise in private and correct in private builds trust.",
+        "esp": "Knowing how to praise in private and correct in private builds trust.",
+        "it": "Knowing how to praise in private and correct in private builds trust."
       },
       "proverb": {
         "fr": "La critique est un art, l'encouragement une force.",
         "en": "Criticism is an art, encouragement a force.",
-        "ar": "النقد فن، والتشجيع قوة."
+        "ar": "النقد فن، والتشجيع قوة.",
+        "de": "Criticism is an art, encouragement a force.",
+        "esp": "Criticism is an art, encouragement a force.",
+        "it": "Criticism is an art, encouragement a force."
       },
       "challenge": {
         "fr": "Donne un feedback positif discret à un camarade.",
         "en": "Give discreet positive feedback to a colleague.",
-        "ar": "قدم ملاحظات إيجابية سرية لزميل."
+        "ar": "قدم ملاحظات إيجابية سرية لزميل.",
+        "de": "Give discreet positive feedback to a colleague.",
+        "esp": "Give discreet positive feedback to a colleague.",
+        "it": "Give discreet positive feedback to a colleague."
       },
       "type": "A"
     },
@@ -367,17 +538,26 @@
       "intro": {
         "fr": "Former les autres est un signe de leadership mature.",
         "en": "Training others is a sign of mature leadership.",
-        "ar": "تدريب الآخرين علامة على قيادة ناضجة."
+        "ar": "تدريب الآخرين علامة على قيادة ناضجة.",
+        "de": "Training others is a sign of mature leadership.",
+        "esp": "Training others is a sign of mature leadership.",
+        "it": "Training others is a sign of mature leadership."
       },
       "proverb": {
         "fr": "Enseigner, c'est apprendre deux fois.",
         "en": "To teach is to learn twice.",
-        "ar": "التعليم هو التعلم مرتين."
+        "ar": "التعليم هو التعلم مرتين.",
+        "de": "To teach is to learn twice.",
+        "esp": "To teach is to learn twice.",
+        "it": "To teach is to learn twice."
       },
       "challenge": {
         "fr": "Explique à un camarade une technique que tu maîtrises.",
         "en": "Explain to a colleague a technique you master.",
-        "ar": "اشرح لزميل تقنية تتقنها."
+        "ar": "اشرح لزميل تقنية تتقنها.",
+        "de": "Explain to a colleague a technique you master.",
+        "esp": "Explain to a colleague a technique you master.",
+        "it": "Explain to a colleague a technique you master."
       },
       "type": "V"
     },
@@ -386,17 +566,26 @@
       "intro": {
         "fr": "Célèbre les succès pour donner envie de continuer.",
         "en": "Celebrate successes to inspire continued effort.",
-        "ar": "احتفل بالنجاحات لتحفيز الاستمرار."
+        "ar": "احتفل بالنجاحات لتحفيز الاستمرار.",
+        "de": "Celebrate successes to inspire continued effort.",
+        "esp": "Celebrate successes to inspire continued effort.",
+        "it": "Celebrate successes to inspire continued effort."
       },
       "proverb": {
         "fr": "La victoire appartient à ceux qui y croient.",
         "en": "Victory belongs to those who believe in it.",
-        "ar": "النصر لمن يؤمن به."
+        "ar": "النصر لمن يؤمن به.",
+        "de": "Victory belongs to those who believe in it.",
+        "esp": "Victory belongs to those who believe in it.",
+        "it": "Victory belongs to those who believe in it."
       },
       "challenge": {
         "fr": "Organise un petit moment pour célébrer la fin de ce challenge.",
         "en": "Organize a small moment to celebrate the end of this challenge.",
-        "ar": "نظم لحظة صغيرة للاحتفال بنهاية هذا التحدي."
+        "ar": "نظم لحظة صغيرة للاحتفال بنهاية هذا التحدي.",
+        "de": "Organize a small moment to celebrate the end of this challenge.",
+        "esp": "Organize a small moment to celebrate the end of this challenge.",
+        "it": "Organize a small moment to celebrate the end of this challenge."
       },
       "type": "V"
     }

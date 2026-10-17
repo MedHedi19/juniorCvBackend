@@ -6,17 +6,26 @@
       "intro": {
         "fr": "La communication est ton point fort, mais elle peut être encore plus impactante si tu sais la structurer.",
         "en": "Communication is your strength, but it can be even more impactful if you know how to structure it.",
-        "ar": "التواصل هو نقطة قوتك، لكن يمكن أن يكون أكثر تأثيرًا إذا عرفت كيف تنظمه."
+        "ar": "التواصل هو نقطة قوتك، لكن يمكن أن يكون أكثر تأثيرًا إذا عرفت كيف تنظمه.",
+        "de": "Communication is your strength, but it can be even more impactful if you know how to structure it.",
+        "esp": "Communication is your strength, but it can be even more impactful if you know how to structure it.",
+        "it": "Communication is your strength, but it can be even more impactful if you know how to structure it."
       },
       "proverb": {
         "fr": "Ce qui se conçoit bien s'énonce clairement.",
         "en": "What is well conceived is clearly stated.",
-        "ar": "ما يُفهم جيدًا يُقال بوضوح."
+        "ar": "ما يُفهم جيدًا يُقال بوضوح.",
+        "de": "What is well conceived is clearly stated.",
+        "esp": "What is well conceived is clearly stated.",
+        "it": "What is well conceived is clearly stated."
       },
       "challenge": {
         "fr": "Écris ton pitch personnel en 3 phrases claires et lis-le à voix haute.",
         "en": "Write your personal pitch in 3 clear sentences and read it aloud.",
-        "ar": "اكتب عرضك الشخصي في 3 جمل واضحة واقرأه بصوت عالٍ."
+        "ar": "اكتب عرضك الشخصي في 3 جمل واضحة واقرأه بصوت عالٍ.",
+        "de": "Write your personal pitch in 3 clear sentences and read it aloud.",
+        "esp": "Write your personal pitch in 3 clear sentences and read it aloud.",
+        "it": "Write your personal pitch in 3 clear sentences and read it aloud."
       },
       "type": "A"
     },
@@ -25,17 +34,26 @@
       "intro": {
         "fr": "Écouter activement renforce la confiance et te permet de comprendre l'autre en profondeur.",
         "en": "Active listening strengthens trust and allows you to understand others deeply.",
-        "ar": "الاستماع النشط يعزز الثقة ويسمح لك بفهم الآخرين بعمق."
+        "ar": "الاستماع النشط يعزز الثقة ويسمح لك بفهم الآخرين بعمق.",
+        "de": "Active listening strengthens trust and allows you to understand others deeply.",
+        "esp": "Active listening strengthens trust and allows you to understand others deeply.",
+        "it": "Active listening strengthens trust and allows you to understand others deeply."
       },
       "proverb": {
         "fr": "Écouter, c'est aussi dire à l'autre qu'il existe.",
         "en": "Listening is also telling the other that they exist.",
-        "ar": "الاستماع هو أيضًا إخبار الآخر بأنه موجود."
+        "ar": "الاستماع هو أيضًا إخبار الآخر بأنه موجود.",
+        "de": "Listening is also telling the other that they exist.",
+        "esp": "Listening is also telling the other that they exist.",
+        "it": "Listening is also telling the other that they exist."
       },
       "challenge": {
         "fr": "Écoute un proche pendant 5 minutes sans l'interrompre et reformule ses propos en une phrase.",
         "en": "Listen to someone close for 5 minutes without interrupting and rephrase their words in one sentence.",
-        "ar": "استمع إلى شخص قريب لمدة 5 دقائق دون مقاطعة وأعد صياغة كلامه في جملة واحدة."
+        "ar": "استمع إلى شخص قريب لمدة 5 دقائق دون مقاطعة وأعد صياغة كلامه في جملة واحدة.",
+        "de": "Listen to someone close for 5 minutes without interrupting and rephrase their words in one sentence.",
+        "esp": "Listen to someone close for 5 minutes without interrupting and rephrase their words in one sentence.",
+        "it": "Listen to someone close for 5 minutes without interrupting and rephrase their words in one sentence."
       },
       "type": "A"
     },
@@ -44,17 +62,26 @@
       "intro": {
         "fr": "Les questions ouvertes stimulent la discussion et te donnent plus d'informations que les questions fermées.",
         "en": "Open-ended questions stimulate discussion and give you more information than closed questions.",
-        "ar": "الأسئلة المفتوحة تحفز النقاش وتمنحك معلومات أكثر من الأسئلة المغلقة."
+        "ar": "الأسئلة المفتوحة تحفز النقاش وتمنحك معلومات أكثر من الأسئلة المغلقة.",
+        "de": "Open-ended questions stimulate discussion and give you more information than closed questions.",
+        "esp": "Open-ended questions stimulate discussion and give you more information than closed questions.",
+        "it": "Open-ended questions stimulate discussion and give you more information than closed questions."
       },
       "proverb": {
         "fr": "Qui pose la question détient déjà la moitié de la réponse.",
         "en": "Those who ask the question already hold half the answer.",
-        "ar": "من يطرح السؤال يمتلك بالفعل نصف الإجابة."
+        "ar": "من يطرح السؤال يمتلك بالفعل نصف الإجابة.",
+        "de": "Those who ask the question already hold half the answer.",
+        "esp": "Those who ask the question already hold half the answer.",
+        "it": "Those who ask the question already hold half the answer."
       },
       "challenge": {
         "fr": "Pose trois questions ouvertes dans une conversation aujourd'hui (qui, quoi, comment, pourquoi…).",
         "en": "Ask three open-ended questions in a conversation today (who, what, how, why...).",
-        "ar": "اطرح ثلاثة أسئلة مفتوحة في محادثة اليوم (من، ماذا، كيف، لماذا...)."
+        "ar": "اطرح ثلاثة أسئلة مفتوحة في محادثة اليوم (من، ماذا، كيف، لماذا...).",
+        "de": "Ask three open-ended questions in a conversation today (who, what, how, why...).",
+        "esp": "Ask three open-ended questions in a conversation today (who, what, how, why...).",
+        "it": "Ask three open-ended questions in a conversation today (who, what, how, why...)."
       },
       "type": "A"
     },
@@ -63,17 +90,26 @@
       "intro": {
         "fr": "Structurer ton enthousiasme rend tes idées plus claires et convaincantes.",
         "en": "Structuring your enthusiasm makes your ideas clearer and more convincing.",
-        "ar": "هيكلة حماسك تجعل أفكارك أكثر وضوحًا وإقناعًا."
+        "ar": "هيكلة حماسك تجعل أفكارك أكثر وضوحًا وإقناعًا.",
+        "de": "Structuring your enthusiasm makes your ideas clearer and more convincing.",
+        "esp": "Structuring your enthusiasm makes your ideas clearer and more convincing.",
+        "it": "Structuring your enthusiasm makes your ideas clearer and more convincing."
       },
       "proverb": {
         "fr": "L'ordre est le plaisir de la raison.",
         "en": "Order is the pleasure of reason.",
-        "ar": "النظام هو متعة العقل."
+        "ar": "النظام هو متعة العقل.",
+        "de": "Order is the pleasure of reason.",
+        "esp": "Order is the pleasure of reason.",
+        "it": "Order is the pleasure of reason."
       },
       "challenge": {
         "fr": "Prépare une mini-présentation d'une minute sur un sujet qui te passionne.",
         "en": "Prepare a one-minute mini-presentation on a topic you're passionate about.",
-        "ar": "حضّر عرضًا قصيرًا لمدة دقيقة حول موضوع تحبه."
+        "ar": "حضّر عرضًا قصيرًا لمدة دقيقة حول موضوع تحبه.",
+        "de": "Prepare a one-minute mini-presentation on a topic you're passionate about.",
+        "esp": "Prepare a one-minute mini-presentation on a topic you're passionate about.",
+        "it": "Prepare a one-minute mini-presentation on a topic you're passionate about."
       },
       "type": "V"
     },
@@ -82,17 +118,26 @@
       "intro": {
         "fr": "Le langage non verbal est aussi puissant que les mots.",
         "en": "Non-verbal language is as powerful as words.",
-        "ar": "اللغة غير اللفظية قوية مثل الكلمات."
+        "ar": "اللغة غير اللفظية قوية مثل الكلمات.",
+        "de": "Non-verbal language is as powerful as words.",
+        "esp": "Non-verbal language is as powerful as words.",
+        "it": "Non-verbal language is as powerful as words."
       },
       "proverb": {
         "fr": "Les gestes parlent plus fort que les paroles.",
         "en": "Actions speak louder than words.",
-        "ar": "الأفعال أبلغ من الأقوال."
+        "ar": "الأفعال أبلغ من الأقوال.",
+        "de": "Actions speak louder than words.",
+        "esp": "Actions speak louder than words.",
+        "it": "Actions speak louder than words."
       },
       "challenge": {
         "fr": "Observe et ajuste ton langage corporel pendant que tu parles.",
         "en": "Observe and adjust your body language while speaking.",
-        "ar": "راقب واضبط لغة جسدك أثناء حديثك."
+        "ar": "راقب واضبط لغة جسدك أثناء حديثك.",
+        "de": "Observe and adjust your body language while speaking.",
+        "esp": "Observe and adjust your body language while speaking.",
+        "it": "Observe and adjust your body language while speaking."
       },
       "type": "V"
     },
@@ -101,17 +146,26 @@
       "intro": {
         "fr": "La créativité gagne en force lorsqu'elle est partagée.",
         "en": "Creativity gains strength when shared.",
-        "ar": "الإبداع يكتسب قوة عندما يتم مشاركته."
+        "ar": "الإبداع يكتسب قوة عندما يتم مشاركته.",
+        "de": "Creativity gains strength when shared.",
+        "esp": "Creativity gains strength when shared.",
+        "it": "Creativity gains strength when shared."
       },
       "proverb": {
         "fr": "Une idée partagée est une idée multipliée.",
         "en": "A shared idea is a multiplied idea.",
-        "ar": "الفكرة المشتركة هي فكرة مضاعفة."
+        "ar": "الفكرة المشتركة هي فكرة مضاعفة.",
+        "de": "A shared idea is a multiplied idea.",
+        "esp": "A shared idea is a multiplied idea.",
+        "it": "A shared idea is a multiplied idea."
       },
       "challenge": {
         "fr": "Partage aujourd'hui une idée créative avec ton entourage.",
         "en": "Share a creative idea with those around you today.",
-        "ar": "شارك فكرة إبداعية مع من حولك اليوم."
+        "ar": "شارك فكرة إبداعية مع من حولك اليوم.",
+        "de": "Share a creative idea with those around you today.",
+        "esp": "Share a creative idea with those around you today.",
+        "it": "Share a creative idea with those around you today."
       },
       "type": "T"
     },
@@ -120,17 +174,26 @@
       "intro": {
         "fr": "Savoir écouter tes interlocuteurs nourrit tes propres idées.",
         "en": "Knowing how to listen to your interlocutors feeds your own ideas.",
-        "ar": "معرفة كيفية الاستماع لمحاوريك يغذي أفكارك الخاصة."
+        "ar": "معرفة كيفية الاستماع لمحاوريك يغذي أفكارك الخاصة.",
+        "de": "Knowing how to listen to your interlocutors feeds your own ideas.",
+        "esp": "Knowing how to listen to your interlocutors feeds your own ideas.",
+        "it": "Knowing how to listen to your interlocutors feeds your own ideas."
       },
       "proverb": {
         "fr": "Qui sait écouter saura parler.",
         "en": "Those who know how to listen will know how to speak.",
-        "ar": "من يعرف كيف يستمع سيعرف كيف يتحدث."
+        "ar": "من يعرف كيف يستمع سيعرف كيف يتحدث.",
+        "de": "Those who know how to listen will know how to speak.",
+        "esp": "Those who know how to listen will know how to speak.",
+        "it": "Those who know how to listen will know how to speak."
       },
       "challenge": {
         "fr": "Dans une discussion, note une idée que tu pourrais réutiliser.",
         "en": "During a discussion, note an idea you could reuse.",
-        "ar": "في مناقشة، سجل فكرة يمكنك إعادة استخدامها."
+        "ar": "في مناقشة، سجل فكرة يمكنك إعادة استخدامها.",
+        "de": "During a discussion, note an idea you could reuse.",
+        "esp": "During a discussion, note an idea you could reuse.",
+        "it": "During a discussion, note an idea you could reuse."
       },
       "type": "T"
     },
@@ -139,17 +202,26 @@
       "intro": {
         "fr": "Reformuler sans répéter montre que tu comprends en profondeur.",
         "en": "Rephrasing without repeating shows that you understand deeply.",
-        "ar": "إعادة الصياغة دون تكرار تظهر أنك تفهم بعمق."
+        "ar": "إعادة الصياغة دون تكرار تظهر أنك تفهم بعمق.",
+        "de": "Rephrasing without repeating shows that you understand deeply.",
+        "esp": "Rephrasing without repeating shows that you understand deeply.",
+        "it": "Rephrasing without repeating shows that you understand deeply."
       },
       "proverb": {
         "fr": "La parole est d'argent, l'écoute est d'or.",
         "en": "Speech is silver, listening is golden.",
-        "ar": "الكلام من فضة والاستماع من ذهب."
+        "ar": "الكلام من فضة والاستماع من ذهب.",
+        "de": "Speech is silver, listening is golden.",
+        "esp": "Speech is silver, listening is golden.",
+        "it": "Speech is silver, listening is golden."
       },
       "challenge": {
         "fr": "Reformule 3 phrases entendues aujourd'hui dans tes propres mots.",
         "en": "Rephrase 3 sentences you heard today in your own words.",
-        "ar": "أعد صياغة 3 جمل سمعتها اليوم بكلماتك الخاصة."
+        "ar": "أعد صياغة 3 جمل سمعتها اليوم بكلماتك الخاصة.",
+        "de": "Rephrase 3 sentences you heard today in your own words.",
+        "esp": "Rephrase 3 sentences you heard today in your own words.",
+        "it": "Rephrase 3 sentences you heard today in your own words."
       },
       "type": "T"
     },
@@ -158,17 +230,26 @@
       "intro": {
         "fr": "La curiosité te permet d'ouvrir de nouvelles portes.",
         "en": "Curiosity allows you to open new doors.",
-        "ar": "الفضول يسمح لك بفتح أبواب جديدة."
+        "ar": "الفضول يسمح لك بفتح أبواب جديدة.",
+        "de": "Curiosity allows you to open new doors.",
+        "esp": "Curiosity allows you to open new doors.",
+        "it": "Curiosity allows you to open new doors."
       },
       "proverb": {
         "fr": "Celui qui pose des questions ne se perd pas en chemin.",
         "en": "Those who ask questions don't get lost along the way.",
-        "ar": "من يطرح الأسئلة لا يضل طريقه."
+        "ar": "من يطرح الأسئلة لا يضل طريقه.",
+        "de": "Those who ask questions don't get lost along the way.",
+        "esp": "Those who ask questions don't get lost along the way.",
+        "it": "Those who ask questions don't get lost along the way."
       },
       "challenge": {
         "fr": "Demande à une personne ce qui la passionne et écoute-la.",
         "en": "Ask someone what they're passionate about and listen to them.",
-        "ar": "اسأل شخصًا عما يحبه واستمع إليه."
+        "ar": "اسأل شخصًا عما يحبه واستمع إليه.",
+        "de": "Ask someone what they're passionate about and listen to them.",
+        "esp": "Ask someone what they're passionate about and listen to them.",
+        "it": "Ask someone what they're passionate about and listen to them."
       },
       "type": "A"
     },
@@ -177,17 +258,26 @@
       "intro": {
         "fr": "Savoir faire simple est un art.",
         "en": "Knowing how to keep things simple is an art.",
-        "ar": "معرفة كيفية التبسيط هي فن."
+        "ar": "معرفة كيفية التبسيط هي فن.",
+        "de": "Knowing how to keep things simple is an art.",
+        "esp": "Knowing how to keep things simple is an art.",
+        "it": "Knowing how to keep things simple is an art."
       },
       "proverb": {
         "fr": "Ce qui est simple est souvent vrai.",
         "en": "What is simple is often true.",
-        "ar": "ما هو بسيط غالبًا ما يكون صحيحًا."
+        "ar": "ما هو بسيط غالبًا ما يكون صحيحًا.",
+        "de": "What is simple is often true.",
+        "esp": "What is simple is often true.",
+        "it": "What is simple is often true."
       },
       "challenge": {
         "fr": "Résume un sujet complexe en 2 phrases claires.",
         "en": "Summarize a complex topic in 2 clear sentences.",
-        "ar": "لخص موضوعًا معقدًا في جملتين واضحتين."
+        "ar": "لخص موضوعًا معقدًا في جملتين واضحتين.",
+        "de": "Summarize a complex topic in 2 clear sentences.",
+        "esp": "Summarize a complex topic in 2 clear sentences.",
+        "it": "Summarize a complex topic in 2 clear sentences."
       },
       "type": "T"
     },
@@ -196,17 +286,26 @@
       "intro": {
         "fr": "Les compliments sincères construisent des ponts.",
         "en": "Sincere compliments build bridges.",
-        "ar": "المديح الصادق يبني الجسور."
+        "ar": "المديح الصادق يبني الجسور.",
+        "de": "Sincere compliments build bridges.",
+        "esp": "Sincere compliments build bridges.",
+        "it": "Sincere compliments build bridges."
       },
       "proverb": {
         "fr": "Un mot gentil est comme un jour de printemps.",
         "en": "A kind word is like a spring day.",
-        "ar": "الكلمة اللطيفة مثل يوم الربيع."
+        "ar": "الكلمة اللطيفة مثل يوم الربيع.",
+        "de": "A kind word is like a spring day.",
+        "esp": "A kind word is like a spring day.",
+        "it": "A kind word is like a spring day."
       },
       "challenge": {
         "fr": "Complimente sincèrement deux personnes aujourd'hui.",
         "en": "Sincerely compliment two people today.",
-        "ar": "امدح شخصين بصدق اليوم."
+        "ar": "امدح شخصين بصدق اليوم.",
+        "de": "Sincerely compliment two people today.",
+        "esp": "Sincerely compliment two people today.",
+        "it": "Sincerely compliment two people today."
       },
       "type": "V"
     },
@@ -215,17 +314,26 @@
       "intro": {
         "fr": "Adapter ton style à ton interlocuteur augmente ton impact.",
         "en": "Adapting your style to your interlocutor increases your impact.",
-        "ar": "تكييف أسلوبك مع محاورك يزيد من تأثيرك."
+        "ar": "تكييف أسلوبك مع محاورك يزيد من تأثيرك.",
+        "de": "Adapting your style to your interlocutor increases your impact.",
+        "esp": "Adapting your style to your interlocutor increases your impact.",
+        "it": "Adapting your style to your interlocutor increases your impact."
       },
       "proverb": {
         "fr": "Quand tu parles aux gens, parle leur langage.",
         "en": "When you speak to people, speak their language.",
-        "ar": "عندما تتحدث مع الناس، تحدث بلغتهم."
+        "ar": "عندما تتحدث مع الناس، تحدث بلغتهم.",
+        "de": "When you speak to people, speak their language.",
+        "esp": "When you speak to people, speak their language.",
+        "it": "When you speak to people, speak their language."
       },
       "challenge": {
         "fr": "Observe le style d'un interlocuteur et ajuste ton ton.",
         "en": "Observe a speaker's style and adjust your tone.",
-        "ar": "راقب أسلوب محاورك واضبط نبرة صوتك."
+        "ar": "راقب أسلوب محاورك واضبط نبرة صوتك.",
+        "de": "Observe a speaker's style and adjust your tone.",
+        "esp": "Observe a speaker's style and adjust your tone.",
+        "it": "Observe a speaker's style and adjust your tone."
       },
       "type": "A"
     },
@@ -234,17 +342,26 @@
       "intro": {
         "fr": "Gérer ton temps de parole laisse de la place aux autres.",
         "en": "Managing your speaking time leaves room for others.",
-        "ar": "إدارة وقت حديثك تترك مجالًا للآخرين."
+        "ar": "إدارة وقت حديثك تترك مجالًا للآخرين.",
+        "de": "Managing your speaking time leaves room for others.",
+        "esp": "Managing your speaking time leaves room for others.",
+        "it": "Managing your speaking time leaves room for others."
       },
       "proverb": {
         "fr": "Le silence est parfois la meilleure réponse.",
         "en": "Silence is sometimes the best answer.",
-        "ar": "الصمت أحيانًا هو أفضل إجابة."
+        "ar": "الصمت أحيانًا هو أفضل إجابة.",
+        "de": "Silence is sometimes the best answer.",
+        "esp": "Silence is sometimes the best answer.",
+        "it": "Silence is sometimes the best answer."
       },
       "challenge": {
         "fr": "Pendant une discussion, laisse l'autre finir et attends 3 secondes avant de répondre.",
         "en": "During a discussion, let the other person finish and wait 3 seconds before responding.",
-        "ar": "في مناقشة، دع الآخر ينتهي وانتظر 3 ثوانٍ قبل الرد."
+        "ar": "في مناقشة، دع الآخر ينتهي وانتظر 3 ثوانٍ قبل الرد.",
+        "de": "During a discussion, let the other person finish and wait 3 seconds before responding.",
+        "esp": "During a discussion, let the other person finish and wait 3 seconds before responding.",
+        "it": "During a discussion, let the other person finish and wait 3 seconds before responding."
       },
       "type": "A"
     },
@@ -253,17 +370,26 @@
       "intro": {
         "fr": "Poser des questions stimule l'engagement et l'intelligence collective.",
         "en": "Asking questions stimulates engagement and collective intelligence.",
-        "ar": "طرح الأسئلة يحفز المشاركة والذكاء الجماعي."
+        "ar": "طرح الأسئلة يحفز المشاركة والذكاء الجماعي.",
+        "de": "Asking questions stimulates engagement and collective intelligence.",
+        "esp": "Asking questions stimulates engagement and collective intelligence.",
+        "it": "Asking questions stimulates engagement and collective intelligence."
       },
       "proverb": {
         "fr": "Qui questionne apprend.",
         "en": "Those who question learn.",
-        "ar": "من يسأل يتعلم."
+        "ar": "من يسأل يتعلم.",
+        "de": "Those who question learn.",
+        "esp": "Those who question learn.",
+        "it": "Those who question learn."
       },
       "challenge": {
         "fr": "Prépare 3 questions pour ta prochaine réunion ou cours.",
         "en": "Prepare 3 questions for your next meeting or class.",
-        "ar": "حضّر 3 أسئلة لاجتماعك أو درسك القادم."
+        "ar": "حضّر 3 أسئلة لاجتماعك أو درسك القادم.",
+        "de": "Prepare 3 questions for your next meeting or class.",
+        "esp": "Prepare 3 questions for your next meeting or class.",
+        "it": "Prepare 3 questions for your next meeting or class."
       },
       "type": "T"
     },
@@ -272,17 +398,26 @@
       "intro": {
         "fr": "Le réseau se construit par de petites attentions régulières.",
         "en": "Networking is built through small regular attentions.",
-        "ar": "الشبكات تبنى من خلال اهتمامات صغيرة منتظمة."
+        "ar": "الشبكات تبنى من خلال اهتمامات صغيرة منتظمة.",
+        "de": "Networking is built through small regular attentions.",
+        "esp": "Networking is built through small regular attentions.",
+        "it": "Networking is built through small regular attentions."
       },
       "proverb": {
         "fr": "Les petits ruisseaux font les grandes rivières.",
         "en": "Little streams make great rivers.",
-        "ar": "الجداول الصغيرة تصنع الأنهار الكبيرة."
+        "ar": "الجداول الصغيرة تصنع الأنهار الكبيرة.",
+        "de": "Little streams make great rivers.",
+        "esp": "Little streams make great rivers.",
+        "it": "Little streams make great rivers."
       },
       "challenge": {
         "fr": "Envoie un message à 2 contacts pour prendre des nouvelles.",
         "en": "Send a message to 2 contacts to check in.",
-        "ar": "أرسل رسالة لـ 2 من جهات اتصالك للاطمئنان عليهم."
+        "ar": "أرسل رسالة لـ 2 من جهات اتصالك للاطمئنان عليهم.",
+        "de": "Send a message to 2 contacts to check in.",
+        "esp": "Send a message to 2 contacts to check in.",
+        "it": "Send a message to 2 contacts to check in."
       },
       "type": "T"
     },
@@ -291,17 +426,26 @@
       "intro": {
         "fr": "Les histoires captivent plus que les arguments seuls.",
         "en": "Stories captivate more than arguments alone.",
-        "ar": "القصص تأسر أكثر من الحجج وحدها."
+        "ar": "القصص تأسر أكثر من الحجج وحدها.",
+        "de": "Stories captivate more than arguments alone.",
+        "esp": "Stories captivate more than arguments alone.",
+        "it": "Stories captivate more than arguments alone."
       },
       "proverb": {
         "fr": "Raconte-moi une histoire et je m'en souviendrai.",
         "en": "Tell me a story and I will remember it.",
-        "ar": "أخبرني قصة وسأتذكرها."
+        "ar": "أخبرني قصة وسأتذكرها.",
+        "de": "Tell me a story and I will remember it.",
+        "esp": "Tell me a story and I will remember it.",
+        "it": "Tell me a story and I will remember it."
       },
       "challenge": {
         "fr": "Mets un exemple concret ou une anecdote dans ta prochaine explication.",
         "en": "Include a concrete example or anecdote in your next explanation.",
-        "ar": "أدرج مثالاً ملموسًا أو قصة قصيرة في شرحك القادم."
+        "ar": "أدرج مثالاً ملموسًا أو قصة قصيرة في شرحك القادم.",
+        "de": "Include a concrete example or anecdote in your next explanation.",
+        "esp": "Include a concrete example or anecdote in your next explanation.",
+        "it": "Include a concrete example or anecdote in your next explanation."
       },
       "type": "V"
     },
@@ -310,17 +454,26 @@
       "intro": {
         "fr": "Apprendre à dire non protège ton énergie et ta crédibilité.",
         "en": "Learning to say no protects your energy and credibility.",
-        "ar": "تعلم قول لا يحمي طاقتك ومصداقيتك."
+        "ar": "تعلم قول لا يحمي طاقتك ومصداقيتك.",
+        "de": "Learning to say no protects your energy and credibility.",
+        "esp": "Learning to say no protects your energy and credibility.",
+        "it": "Learning to say no protects your energy and credibility."
       },
       "proverb": {
         "fr": "Qui veut trop embrasser mal étreint.",
         "en": "Those who grasp at too much hold little.",
-        "ar": "من يريد أن يحتضن الكثير يمسك القليل."
+        "ar": "من يريد أن يحتضن الكثير يمسك القليل.",
+        "de": "Those who grasp at too much hold little.",
+        "esp": "Those who grasp at too much hold little.",
+        "it": "Those who grasp at too much hold little."
       },
       "challenge": {
         "fr": "Refuse poliment une demande non prioritaire aujourd'hui.",
         "en": "Politely decline a non-priority request today.",
-        "ar": "ارفض بأدب طلبًا غير ذي أولوية اليوم."
+        "ar": "ارفض بأدب طلبًا غير ذي أولوية اليوم.",
+        "de": "Politely decline a non-priority request today.",
+        "esp": "Politely decline a non-priority request today.",
+        "it": "Politely decline a non-priority request today."
       },
       "type": "A"
     },
@@ -329,17 +482,26 @@
       "intro": {
         "fr": "Partager des ressources utiles renforce ton image d'expert.",
         "en": "Sharing useful resources strengthens your image as an expert.",
-        "ar": "مشاركة موارد مفيدة تعزز صورتك كخبير."
+        "ar": "مشاركة موارد مفيدة تعزز صورتك كخبير.",
+        "de": "Sharing useful resources strengthens your image as an expert.",
+        "esp": "Sharing useful resources strengthens your image as an expert.",
+        "it": "Sharing useful resources strengthens your image as an expert."
       },
       "proverb": {
         "fr": "Donner, c'est semer.",
         "en": "Giving is sowing.",
-        "ar": "العطاء هو البذر."
+        "ar": "العطاء هو البذر.",
+        "de": "Giving is sowing.",
+        "esp": "Giving is sowing.",
+        "it": "Giving is sowing."
       },
       "challenge": {
         "fr": "Envoie un lien ou un conseil utile à ton réseau.",
         "en": "Send a useful link or advice to your network.",
-        "ar": "أرسل رابطًا أو نصيحة مفيدة لشبكتك."
+        "ar": "أرسل رابطًا أو نصيحة مفيدة لشبكتك.",
+        "de": "Send a useful link or advice to your network.",
+        "esp": "Send a useful link or advice to your network.",
+        "it": "Send a useful link or advice to your network."
       },
       "type": "T"
     },
@@ -348,17 +510,26 @@
       "intro": {
         "fr": "Essayer de nouveaux formats stimule ta créativité.",
         "en": "Trying new formats stimulates your creativity.",
-        "ar": "تجربة تنسيقات جديدة تحفز إبداعك."
+        "ar": "تجربة تنسيقات جديدة تحفز إبداعك.",
+        "de": "Trying new formats stimulates your creativity.",
+        "esp": "Trying new formats stimulates your creativity.",
+        "it": "Trying new formats stimulates your creativity."
       },
       "proverb": {
         "fr": "C'est en forgeant qu'on devient forgeron.",
         "en": "Practice makes perfect.",
-        "ar": "الممارسة تصنع الإتقان."
+        "ar": "الممارسة تصنع الإتقان.",
+        "de": "Practice makes perfect.",
+        "esp": "Practice makes perfect.",
+        "it": "Practice makes perfect."
       },
       "challenge": {
         "fr": "Essaie un nouveau format (dessin, carte mentale, audio…) pour présenter une idée.",
         "en": "Try a new format (drawing, mind map, audio...) to present an idea.",
-        "ar": "جرّب شكلاً جديدًا (رسم، خريطة ذهنية، صوت...) لعرض فكرة."
+        "ar": "جرّب شكلاً جديدًا (رسم، خريطة ذهنية، صوت...) لعرض فكرة.",
+        "de": "Try a new format (drawing, mind map, audio...) to present an idea.",
+        "esp": "Try a new format (drawing, mind map, audio...) to present an idea.",
+        "it": "Try a new format (drawing, mind map, audio...) to present an idea."
       },
       "type": "V"
     },
@@ -367,17 +538,26 @@
       "intro": {
         "fr": "Organiser un petit brainstorming développe ton esprit collectif.",
         "en": "Organizing a small brainstorming develops your collective spirit.",
-        "ar": "تنظيم عصف ذهني صغير يطور روحك الجماعية."
+        "ar": "تنظيم عصف ذهني صغير يطور روحك الجماعية.",
+        "de": "Organizing a small brainstorming develops your collective spirit.",
+        "esp": "Organizing a small brainstorming develops your collective spirit.",
+        "it": "Organizing a small brainstorming develops your collective spirit."
       },
       "proverb": {
         "fr": "Seul on va plus vite, ensemble on va plus loin.",
         "en": "Alone we go faster, together we go further.",
-        "ar": "وحدنا نذهب أسرع، معًا نذهب أبعد."
+        "ar": "وحدنا نذهب أسرع، معًا نذهب أبعد.",
+        "de": "Alone we go faster, together we go further.",
+        "esp": "Alone we go faster, together we go further.",
+        "it": "Alone we go faster, together we go further."
       },
       "challenge": {
         "fr": "Réunis 2 amis pour réfléchir à un sujet ensemble.",
         "en": "Gather 2 friends to brainstorm on a topic together.",
-        "ar": "اجمع صديقين للتفكير في موضوع معًا."
+        "ar": "اجمع صديقين للتفكير في موضوع معًا.",
+        "de": "Gather 2 friends to brainstorm on a topic together.",
+        "esp": "Gather 2 friends to brainstorm on a topic together.",
+        "it": "Gather 2 friends to brainstorm on a topic together."
       },
       "type": "V"
     },
@@ -386,17 +566,26 @@
       "intro": {
         "fr": "Le bilan te permet de mesurer tes progrès.",
         "en": "The assessment allows you to measure your progress.",
-        "ar": "التقييم يسمح لك بقياس تقدمك."
+        "ar": "التقييم يسمح لك بقياس تقدمك.",
+        "de": "The assessment allows you to measure your progress.",
+        "esp": "The assessment allows you to measure your progress.",
+        "it": "The assessment allows you to measure your progress."
       },
       "proverb": {
         "fr": "Qui ne sait d'où il vient ne sait où il va.",
         "en": "Those who don't know where they come from don't know where they're going.",
-        "ar": "من لا يعرف من أين أتى لا يعرف إلى أين يذهب."
+        "ar": "من لا يعرف من أين أتى لا يعرف إلى أين يذهب.",
+        "de": "Those who don't know where they come from don't know where they're going.",
+        "esp": "Those who don't know where they come from don't know where they're going.",
+        "it": "Those who don't know where they come from don't know where they're going."
       },
       "challenge": {
         "fr": "Résume tes 3 plus gros apprentissages de ces 21 jours.",
         "en": "Summarize your 3 biggest learnings from these 21 days.",
-        "ar": "لخص أكبر 3 دروس تعلمتها من هذه الـ 21 يومًا."
+        "ar": "لخص أكبر 3 دروس تعلمتها من هذه الـ 21 يومًا.",
+        "de": "Summarize your 3 biggest learnings from these 21 days.",
+        "esp": "Summarize your 3 biggest learnings from these 21 days.",
+        "it": "Summarize your 3 biggest learnings from these 21 days."
       },
       "type": "T"
     }

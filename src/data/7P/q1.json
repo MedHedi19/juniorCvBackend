@@ -2,390 +2,883 @@
   "Paperwork": [
     {
       "question": {
-        "fr": "Une CV de junior devrait idéalement être :",
-        "en": "A junior CV should ideally be:",
-        "ar": "يجب أن تتكون السيرة الذاتية للمبتدئين بشكل مثالي من:"
+        "fr": "Avant d’envoyer ta candidature, il est utile de :",
+        "en": "Before sending your application, it is useful to:",
+        "ar": "قبل إرسال طلبك، من المفيد أن:",
+        "de": "Before sending your application, it is useful to:",
+        "esp": "Before sending your application, it is useful to:",
+        "it": "Before sending your application, it is useful to:"
       },
       "options": [
         {
-          "fr": "Trois pages",
-          "en": "Three pages long",
-          "ar": "ثلاث صفحات"
+          "fr": "Ne rien vérifier",
+          "en": "Check nothing",
+          "ar": "عدم التحقق من أي شيء",
+          "de": "Check nothing",
+          "esp": "Check nothing",
+          "it": "Check nothing"
         },
         {
-          "fr": "Deux pages",
-          "en": "Two pages long",
-          "ar": "صفحتين"
+          "fr": "Vérifier l’offre et personnaliser ton dossier",
+          "en": "Check the job and customize your application",
+          "ar": "التحقق من العرض وتخصيص ملفك",
+          "de": "Check the job and customize your application",
+          "esp": "Check the job and customize your application",
+          "it": "Check the job and customize your application"
         },
         {
-          "fr": "Une page",
-          "en": "One page long",
-          "ar": "صفحة واحدة"
+          "fr": "Envoyer le même mail à tout le monde",
+          "en": "Send the same email to everyone",
+          "ar": "إرسال نفس البريد الإلكتروني للجميع",
+          "de": "Send the same email to everyone",
+          "esp": "Send the same email to everyone",
+          "it": "Send the same email to everyone"
         }
       ],
       "correct": {
-        "fr": "Une page",
-        "en": "One page long",
-        "ar": "صفحة واحدة"
+        "fr": "Vérifier l’offre et personnaliser ton dossier",
+        "en": "Check the job and customize your application",
+        "ar": "التحقق من العرض وتخصيص ملفك",
+        "de": "Check the job and customize your application",
+        "esp": "Check the job and customize your application",
+        "it": "Check the job and customize your application"
       }
     },
     {
       "question": {
-        "fr": "Qu’est-ce qui doit apparaître en haut de votre CV ?",
-        "en": "What should appear at the top of your CV?",
-        "ar": "ما العنصر الذي يجب أن يظهر في أعلى السيرة الذاتية؟"
+        "fr": "Quel site est essentiel pour la recherche d’emploi aujourd’hui ?",
+        "en": "Which site is essential for job searching today?",
+        "ar": "أي موقع ضروري للبحث عن عمل اليوم؟",
+        "de": "Which site is essential for job searching today?",
+        "esp": "Which site is essential for job searching today?",
+        "it": "Which site is essential for job searching today?"
       },
       "options": [
         {
-          "fr": "Une anecdote personnelle",
-          "en": "A personal anecdote",
-          "ar": "حكاية شخصية"
+          "fr": "Registre local papier",
+          "en": "Local paper register",
+          "ar": "سجل محلي ورقي",
+          "de": "Local paper register",
+          "esp": "Local paper register",
+          "it": "Local paper register"
         },
         {
-          "fr": "Votre nom et vos coordonnées",
-          "en": "Your name and contact details",
-          "ar": "الاسم وبيانات الاتصال"
+          "fr": "Jobboards et sites d’entreprises + LinkedIn",
+          "en": "Job boards and company sites + LinkedIn",
+          "ar": "مواقع الوظائف ومواقع الشركات + لينكد إن",
+          "de": "Job boards and company sites + LinkedIn",
+          "esp": "Job boards and company sites + LinkedIn",
+          "it": "Job boards and company sites + LinkedIn"
         },
         {
-          "fr": "Une liste de vos hobbies",
-          "en": "A list of hobbies",
-          "ar": "قائمة الهوايات"
+          "fr": "Petites annonces dans le journal uniquement",
+          "en": "Classified ads in the newspaper only",
+          "ar": "إعلانات مبوبة في الصحيفة فقط",
+          "de": "Classified ads in the newspaper only",
+          "esp": "Classified ads in the newspaper only",
+          "it": "Classified ads in the newspaper only"
         }
       ],
       "correct": {
-        "fr": "Votre nom et vos coordonnées",
-        "en": "Your name and contact details",
-        "ar": "الاسم وبيانات الاتصال"
+        "fr": "Jobboards et sites d’entreprises + LinkedIn",
+        "en": "Job boards and company sites + LinkedIn",
+        "ar": "مواقع الوظائف ومواقع الشركات + لينكد إن",
+        "de": "Job boards and company sites + LinkedIn",
+        "esp": "Job boards and company sites + LinkedIn",
+        "it": "Job boards and company sites + LinkedIn"
       }
     },
     {
       "question": {
-        "fr": "Le but du paragraphe d’ouverture d’un CV est de :",
-        "en": "The purpose of a CV’s opening paragraph is to:",
-        "ar": "الغرض من الفقرة الافتتاحية في السيرة الذاتية هو:"
+        "fr": "Quel objet d’e-mail est recommandé pour postuler ?",
+        "en": "Which email subject is recommended for applying?",
+        "ar": "ما هو موضوع البريد الإلكتروني الموصى به للتقدم للوظيفة؟",
+        "de": "Which email subject is recommended for applying?",
+        "esp": "Which email subject is recommended for applying?",
+        "it": "Which email subject is recommended for applying?"
       },
       "options": [
         {
-          "fr": "Résumer vos objectifs de carrière en quelques lignes",
-          "en": "Summarise your career goals in a few lines",
-          "ar": "تلخيص مشروعك المهني في بضع أسطر"
+          "fr": "Vide",
+          "en": "Empty",
+          "ar": "فارغ",
+          "de": "Empty",
+          "esp": "Empty",
+          "it": "Empty"
         },
         {
-          "fr": "Répéter votre parcours académique",
-          "en": "Repeat your educational background",
-          "ar": "تكرار تدريبك الأكاديمي"
+          "fr": "Clair et précis (poste + nom)",
+          "en": "Clear and precise (position + name)",
+          "ar": "واضح ودقيق (المنصب + الاسم)",
+          "de": "Clear and precise (position + name)",
+          "esp": "Clear and precise (position + name)",
+          "it": "Clear and precise (position + name)"
         },
         {
-          "fr": "Lister vos hobbies",
-          "en": "List your hobbies",
-          "ar": "سرد هواياتك"
+          "fr": "Très long et détaillé",
+          "en": "Very long and detailed",
+          "ar": "طويل ومفصل جدًا",
+          "de": "Very long and detailed",
+          "esp": "Very long and detailed",
+          "it": "Very long and detailed"
         }
       ],
       "correct": {
-        "fr": "Résumer vos objectifs de carrière en quelques lignes",
-        "en": "Summarise your career goals in a few lines",
-        "ar": "تلخيص مشروعك المهني في بضع أسطر"
+        "fr": "Clair et précis (poste + nom)",
+        "en": "Clear and precise (position + name)",
+        "ar": "واضح ودقيق (المنصب + الاسم)",
+        "de": "Clear and precise (position + name)",
+        "esp": "Clear and precise (position + name)",
+        "it": "Clear and precise (position + name)"
       }
     },
     {
       "question": {
-        "fr": "Pour qu’un recruteur lise votre CV, vous devez :",
-        "en": "For a CV to be read by a recruiter, you must:",
-        "ar": "لكي يقرأ مسؤول التوظيف سيرتك الذاتية، يجب أن:"
+        "fr": "Pour une candidature spontanée, que faire en plus du CV ?",
+        "en": "For a spontaneous application, what to do in addition to the CV?",
+        "ar": "بالنسبة لطلب تلقائي، ماذا تفعل بالإضافة إلى السيرة الذاتية؟",
+        "de": "For a spontaneous application, what to do in addition to the CV?",
+        "esp": "For a spontaneous application, what to do in addition to the CV?",
+        "it": "For a spontaneous application, what to do in addition to the CV?"
       },
       "options": [
         {
-          "fr": "Utiliser une mise en page claire et lisible",
-          "en": "Use a clear and legible layout",
-          "ar": "استخدام تخطيط واضح ومقروء"
+          "fr": "Rien d’autre",
+          "en": "Nothing else",
+          "ar": "لا شيء آخر",
+          "de": "Nothing else",
+          "esp": "Nothing else",
+          "it": "Nothing else"
         },
         {
-          "fr": "Utiliser une police très petite pour tout faire tenir",
-          "en": "Use small print to fit everything in",
-          "ar": "استخدام خط صغير حتى يتسع كل شيء"
+          "fr": "Rédiger une lettre expliquant ce que tu proposes",
+          "en": "Write a letter explaining what you offer",
+          "ar": "كتابة رسالة توضح ما الذي تقدمه",
+          "de": "Write a letter explaining what you offer",
+          "esp": "Write a letter explaining what you offer",
+          "it": "Write a letter explaining what you offer"
         },
         {
-          "fr": "Ajouter plusieurs images décoratives",
-          "en": "Add several decorative images",
-          "ar": "إضافة عدة صور زخرفية"
+          "fr": "Envoyer un message générique",
+          "en": "Send a generic message",
+          "ar": "إرسال رسالة عامة",
+          "de": "Send a generic message",
+          "esp": "Send a generic message",
+          "it": "Send a generic message"
         }
       ],
       "correct": {
-        "fr": "Utiliser une mise en page claire et lisible",
-        "en": "Use a clear and legible layout",
-        "ar": "استخدام تخطيط واضح ومقروء"
+        "fr": "Rédiger une lettre expliquant ce que tu proposes",
+        "en": "Write a letter explaining what you offer",
+        "ar": "كتابة رسالة توضح ما الذي تقدمه",
+        "de": "Write a letter explaining what you offer",
+        "esp": "Write a letter explaining what you offer",
+        "it": "Write a letter explaining what you offer"
       }
     },
     {
       "question": {
-        "fr": "Qu’est-ce qui améliore la visibilité d’un CV dans un logiciel de tri (ATS) ?",
-        "en": "What improves the visibility of a CV in ATS (sorting software)?",
-        "ar": "ما الذي يحسن ظهور السيرة الذاتية في برامج الفرز الآلي (ATS)؟"
+        "fr": "Quel document est parfois demandé en plus du CV ?",
+        "en": "Which document is sometimes required in addition to the CV?",
+        "ar": "أي مستند يتم طلبه أحيانًا بالإضافة إلى السيرة الذاتية؟",
+        "de": "Which document is sometimes required in addition to the CV?",
+        "esp": "Which document is sometimes required in addition to the CV?",
+        "it": "Which document is sometimes required in addition to the CV?"
       },
       "options": [
         {
-          "fr": "L’utilisation de mots-clés pertinents",
-          "en": "The use of relevant keywords",
-          "ar": "استخدام كلمات مفتاحية ذات صلة"
+          "fr": "Ton relevé de comptes",
+          "en": "Your bank statement",
+          "ar": "كشف حسابك البنكي",
+          "de": "Your bank statement",
+          "esp": "Your bank statement",
+          "it": "Your bank statement"
         },
         {
-          "fr": "Ajouter un fond coloré",
-          "en": "Adding a coloured background",
-          "ar": "إضافة خلفية ملونة"
+          "fr": "Attestations de stage ou certificats",
+          "en": "Internship certificates or attestations",
+          "ar": "شهادات التدريب أو الشهادات",
+          "de": "Internship certificates or attestations",
+          "esp": "Internship certificates or attestations",
+          "it": "Internship certificates or attestations"
         },
         {
-          "fr": "Écrire des phrases très longues",
-          "en": "Writing in long sentences",
-          "ar": "كتابة جمل طويلة"
+          "fr": "Tes notes complètes de lycée",
+          "en": "Your full high school grades",
+          "ar": "درجاتك الكاملة في المدرسة الثانوية",
+          "de": "Your full high school grades",
+          "esp": "Your full high school grades",
+          "it": "Your full high school grades"
         }
       ],
       "correct": {
-        "fr": "L’utilisation de mots-clés pertinents",
-        "en": "The use of relevant keywords",
-        "ar": "استخدام كلمات مفتاحية ذات صلة"
+        "fr": "Attestations de stage ou certificats",
+        "en": "Internship certificates or attestations",
+        "ar": "شهادات التدريب أو الشهادات",
+        "de": "Internship certificates or attestations",
+        "esp": "Internship certificates or attestations",
+        "it": "Internship certificates or attestations"
       }
     },
     {
       "question": {
-        "fr": "Qu’est-ce qu’un portfolio ?",
-        "en": "What is a portfolio?",
-        "ar": "ما هو الملف الشخصي (Portfolio)؟"
+        "fr": "Quand postuler à une offre, il est conseillé de :",
+        "en": "When applying to an offer, it is advisable to:",
+        "ar": "عند التقدم لعرض عمل، من المستحسن:",
+        "de": "When applying to an offer, it is advisable to:",
+        "esp": "When applying to an offer, it is advisable to:",
+        "it": "When applying to an offer, it is advisable to:"
       },
       "options": [
         {
-          "fr": "Un type de CV papier",
-          "en": "A type of paper CV",
-          "ar": "نوع من السيرة الذاتية الورقية"
+          "fr": "Répondre immédiatement si tu es intéressé",
+          "en": "Respond immediately if you are interested",
+          "ar": "الرد فورًا إذا كنت مهتمًا",
+          "de": "Respond immediately if you are interested",
+          "esp": "Respond immediately if you are interested",
+          "it": "Respond immediately if you are interested"
         },
         {
-          "fr": "Une collection de réalisations/projets professionnels",
-          "en": "A collection of professional achievements or projects",
-          "ar": "مجموعة من الإنجازات أو المشاريع المهنية"
+          "fr": "Attendre des mois",
+          "en": "Wait months",
+          "ar": "الانتظار لعدة أشهر",
+          "de": "Wait months",
+          "esp": "Wait months",
+          "it": "Wait months"
         },
         {
-          "fr": "Un simple « cover letter »",
-          "en": "A cover letter",
-          "ar": "خطاب تحفيزي"
+          "fr": "Envoyer des messages privés sans dossier",
+          "en": "Send private messages without an application",
+          "ar": "إرسال رسائل خاصة بدون تقديم ملف",
+          "de": "Send private messages without an application",
+          "esp": "Send private messages without an application",
+          "it": "Send private messages without an application"
         }
       ],
       "correct": {
-        "fr": "Une collection de réalisations/projets professionnels",
-        "en": "A collection of professional achievements or projects",
-        "ar": "مجموعة من الإنجازات أو المشاريع المهنية"
+        "fr": "Répondre immédiatement si tu es intéressé",
+        "en": "Respond immediately if you are interested",
+        "ar": "الرد فورًا إذا كنت مهتمًا",
+        "de": "Respond immediately if you are interested",
+        "esp": "Respond immediately if you are interested",
+        "it": "Respond immediately if you are interested"
       }
     },
     {
       "question": {
-        "fr": "Un bon « cover letter » doit :",
-        "en": "A cover letter should:",
-        "ar": "يجب أن يكون خطاب التحفيز:"
+        "fr": "Quel est l’avantage d’appliquer via le site de l’entreprise ?",
+        "en": "What is the advantage of applying via the company's site?",
+        "ar": "ما فائدة التقديم عبر موقع الشركة؟",
+        "de": "What is the advantage of applying via the company's site?",
+        "esp": "What is the advantage of applying via the company's site?",
+        "it": "What is the advantage of applying via the company's site?"
       },
       "options": [
         {
-          "fr": "Répéter le CV mot pour mot",
-          "en": "Repeat the CV word for word",
-          "ar": "تكرار السيرة الذاتية حرفياً"
+          "fr": "Aucune trace de ta candidature",
+          "en": "No trace of your application",
+          "ar": "لا أثر لطلبك",
+          "de": "No trace of your application",
+          "esp": "No trace of your application",
+          "it": "No trace of your application"
         },
         {
-          "fr": "Expliquer votre motivation et ce que vous avez à offrir",
-          "en": "Explain your motivation and what you have to offer",
-          "ar": "شرح دوافعك وما تقدمه"
+          "fr": "Ton dossier arrive directement au recruteur concerné",
+          "en": "Your file goes directly to the relevant recruiter",
+          "ar": "يصل ملفك مباشرة إلى المسؤول المعني",
+          "de": "Your file goes directly to the relevant recruiter",
+          "esp": "Your file goes directly to the relevant recruiter",
+          "it": "Your file goes directly to the relevant recruiter"
         },
         {
-          "fr": "Être une longue biographie",
-          "en": "Be a long biography",
-          "ar": "سيرة ذاتية طويلة"
+          "fr": "C’est plus long, donc meilleur",
+          "en": "It's longer, therefore better",
+          "ar": "أطول، لذلك أفضل",
+          "de": "It's longer, therefore better",
+          "esp": "It's longer, therefore better",
+          "it": "It's longer, therefore better"
         }
       ],
       "correct": {
-        "fr": "Expliquer votre motivation et ce que vous avez à offrir",
-        "en": "Explain your motivation and what you have to offer",
-        "ar": "شرح دوافعك وما تقدمه"
+        "fr": "Ton dossier arrive directement au recruteur concerné",
+        "en": "Your file goes directly to the relevant recruiter",
+        "ar": "يصل ملفك مباشرة إلى المسؤول المعني",
+        "de": "Your file goes directly to the relevant recruiter",
+        "esp": "Your file goes directly to the relevant recruiter",
+        "it": "Your file goes directly to the relevant recruiter"
       }
     },
     {
       "question": {
-        "fr": "Un CV de junior doit idéalement tenir sur :",
-        "en": "A junior's CV should ideally fit on:",
-        "ar": "يجب أن تتسع سيرة المبتدئ المثالية على:" 
+        "fr": "Que signifie “postuler stratégiquement” ?",
+        "en": "What does 'apply strategically' mean?",
+        "ar": "ماذا يعني 'التقدم بطريقة استراتيجية'؟",
+        "de": "What does 'apply strategically' mean?",
+        "esp": "What does 'apply strategically' mean?",
+        "it": "What does 'apply strategically' mean?"
       },
       "options": [
-        { "fr": "Trois pages", "en": "Three pages", "ar": "ثلاث صفحات" },
-        { "fr": "Deux pages", "en": "Two pages", "ar": "صفحتان" },
-        { "fr": "Une page", "en": "One page", "ar": "صفحة واحدة" }
+        {
+          "fr": "Postuler massivement sans tri",
+          "en": "Apply massively without filtering",
+          "ar": "التقدم بشكل جماعي دون تصفية",
+          "de": "Apply massively without filtering",
+          "esp": "Apply massively without filtering",
+          "it": "Apply massively without filtering"
+        },
+        {
+          "fr": "Cibler les offres correspondant réellement à ton profil",
+          "en": "Target offers that truly match your profile",
+          "ar": "استهداف العروض التي تتوافق حقًا مع ملفك",
+          "de": "Target offers that truly match your profile",
+          "esp": "Target offers that truly match your profile",
+          "it": "Target offers that truly match your profile"
+        },
+        {
+          "fr": "Postuler uniquement aux postes les mieux payés",
+          "en": "Apply only to the highest paid positions",
+          "ar": "التقدم فقط للوظائف الأعلى أجرًا",
+          "de": "Apply only to the highest paid positions",
+          "esp": "Apply only to the highest paid positions",
+          "it": "Apply only to the highest paid positions"
+        }
       ],
-      "correct": { "fr": "Une page", "en": "One page", "ar": "صفحة واحدة" }
+      "correct": {
+        "fr": "Cibler les offres correspondant réellement à ton profil",
+        "en": "Target offers that truly match your profile",
+        "ar": "استهداف العروض التي تتوافق حقًا مع ملفك",
+        "de": "Target offers that truly match your profile",
+        "esp": "Target offers that truly match your profile",
+        "it": "Target offers that truly match your profile"
+      }
     },
     {
-      "question": { "fr": "Quel élément doit figurer en haut du CV ?", "en": "Which element should appear at the top of the CV?", "ar": "ما العنصر الذي يجب أن يظهر في أعلى السيرة الذاتية؟" },
+      "question": {
+        "fr": "Quelle info vérifier dans l’annonce avant d’envoyer ton dossier ?",
+        "en": "What info to check in the ad before sending your application?",
+        "ar": "أي معلومات يجب التحقق منها في الإعلان قبل إرسال طلبك؟",
+        "de": "What info to check in the ad before sending your application?",
+        "esp": "What info to check in the ad before sending your application?",
+        "it": "What info to check in the ad before sending your application?"
+      },
       "options": [
-        { "fr": "Une anecdote personnelle", "en": "A personal anecdote", "ar": "حكاية شخصية" },
-        { "fr": "L’en-tête avec nom et coordonnées", "en": "Header with name and contact details", "ar": "العنوان مع الاسم وبيانات الاتصال" },
-        { "fr": "La liste des loisirs", "en": "List of hobbies", "ar": "قائمة الهوايات" }
+        {
+          "fr": "La couleur du logo de l’entreprise",
+          "en": "The company's logo color",
+          "ar": "لون شعار الشركة",
+          "de": "The company's logo color",
+          "esp": "The company's logo color",
+          "it": "The company's logo color"
+        },
+        {
+          "fr": "Les missions, compétences requises et modalités de candidature",
+          "en": "The tasks, required skills and application modalities",
+          "ar": "المهام، المهارات المطلوبة، وشروط التقديم",
+          "de": "The tasks, required skills and application modalities",
+          "esp": "The tasks, required skills and application modalities",
+          "it": "The tasks, required skills and application modalities"
+        },
+        {
+          "fr": "Le nombre d’employés uniquement",
+          "en": "The number of employees only",
+          "ar": "عدد الموظفين فقط",
+          "de": "The number of employees only",
+          "esp": "The number of employees only",
+          "it": "The number of employees only"
+        }
       ],
-      "correct": { "fr": "L’en-tête avec nom et coordonnées", "en": "Header with name and contact details", "ar": "العنوان مع الاسم وبيانات الاتصال" }
+      "correct": {
+        "fr": "Les missions, compétences requises et modalités de candidature",
+        "en": "The tasks, required skills and application modalities",
+        "ar": "المهام، المهارات المطلوبة، وشروط التقديم",
+        "de": "The tasks, required skills and application modalities",
+        "esp": "The tasks, required skills and application modalities",
+        "it": "The tasks, required skills and application modalities"
+      }
     },
     {
-      "question": { "fr": "L’accroche d’un CV sert à :", "en": "The CV headline is used to:", "ar": "ما الغرض من ملخص السيرة الذاتية؟" },
+      "question": {
+        "fr": "Pourquoi est-il utile d’ajouter une phrase personnalisée dans l’e-mail de candidature ?",
+        "en": "Why is it useful to add a personalized sentence in the application email?",
+        "ar": "لماذا من المفيد إضافة جملة مخصصة في بريد التقديم؟",
+        "de": "Why is it useful to add a personalized sentence in the application email?",
+        "esp": "Why is it useful to add a personalized sentence in the application email?",
+        "it": "Why is it useful to add a personalized sentence in the application email?"
+      },
       "options": [
-        { "fr": "Résumer en quelques lignes ton projet professionnel", "en": "Summarize your career project in a few lines", "ar": "تلخيص مشروعك المهني في بضعة أسطر" },
-        { "fr": "Répéter ta formation", "en": "Repeat your education", "ar": "تكرار تعليمك" },
-        { "fr": "Lister tes loisirs", "en": "List your hobbies", "ar": "قائمة هواياتك" }
+        {
+          "fr": "Pour remplir des lignes",
+          "en": "To fill lines",
+          "ar": "لملء السطور",
+          "de": "To fill lines",
+          "esp": "To fill lines",
+          "it": "To fill lines"
+        },
+        {
+          "fr": "Pour montrer que tu as compris l’offre et l’entreprise",
+          "en": "To show you understood the offer and the company",
+          "ar": "لإظهار أنك فهمت العرض والشركة",
+          "de": "To show you understood the offer and the company",
+          "esp": "To show you understood the offer and the company",
+          "it": "To show you understood the offer and the company"
+        },
+        {
+          "fr": "Pour demander un salaire tout de suite",
+          "en": "To ask for a salary immediately",
+          "ar": "لطلب راتب فورًا",
+          "de": "To ask for a salary immediately",
+          "esp": "To ask for a salary immediately",
+          "it": "To ask for a salary immediately"
+        }
       ],
-      "correct": { "fr": "Résumer en quelques lignes ton projet professionnel", "en": "Summarize your career project in a few lines", "ar": "تلخيص مشروعك المهني في بضعة أسطر" }
+      "correct": {
+        "fr": "Pour montrer que tu as compris l’offre et l’entreprise",
+        "en": "To show you understood the offer and the company",
+        "ar": "لإظهار أنك فهمت العرض والشركة",
+        "de": "To show you understood the offer and the company",
+        "esp": "To show you understood the offer and the company",
+        "it": "To show you understood the offer and the company"
+      }
     },
     {
-      "question": { "fr": "Pour qu’un CV soit lu par un recruteur, il faut :", "en": "To get a CV read by a recruiter, you must:", "ar": "لكي يقرأ المجند السيرة الذاتية يجب:" },
+      "question": {
+        "fr": "Quel format doit avoir ton portfolio numérique ?",
+        "en": "What format should your digital portfolio have?",
+        "ar": "ما هي صيغة ملفك الرقمي؟",
+        "de": "What format should your digital portfolio have?",
+        "esp": "What format should your digital portfolio have?",
+        "it": "What format should your digital portfolio have?"
+      },
       "options": [
-        { "fr": "Utiliser une mise en page claire et lisible", "en": "Use a clear, readable layout", "ar": "استخدام تنسيق واضح وسهل القراءة" },
-        { "fr": "Mettre le texte en petits caractères pour tout rentrer", "en": "Use tiny text to fit everything", "ar": "استخدام نص صغير جدًا لجعل كل شيء مناسبًا" },
-        { "fr": "Ajouter plusieurs images décoratives", "en": "Add multiple decorative images", "ar": "إضافة صور زخرفية متعددة" }
+        {
+          "fr": "Un PDF ou un site web facile à parcourir",
+          "en": "A PDF or an easy-to-navigate website",
+          "ar": "PDF أو موقع ويب سهل التصفح",
+          "de": "A PDF or an easy-to-navigate website",
+          "esp": "A PDF or an easy-to-navigate website",
+          "it": "A PDF or an easy-to-navigate website"
+        },
+        {
+          "fr": "Un dossier compressé sans organisation",
+          "en": "A compressed folder without organization",
+          "ar": "مجلد مضغوط بدون تنظيم",
+          "de": "A compressed folder without organization",
+          "esp": "A compressed folder without organization",
+          "it": "A compressed folder without organization"
+        },
+        {
+          "fr": "Plusieurs fichiers non nommés",
+          "en": "Multiple unnamed files",
+          "ar": "عدة ملفات غير مسماة",
+          "de": "Multiple unnamed files",
+          "esp": "Multiple unnamed files",
+          "it": "Multiple unnamed files"
+        }
       ],
-      "correct": { "fr": "Utiliser une mise en page claire et lisible", "en": "Use a clear, readable layout", "ar": "استخدام تنسيق واضح وسهل القراءة" }
+      "correct": {
+        "fr": "Un PDF ou un site web facile à parcourir",
+        "en": "A PDF or an easy-to-navigate website",
+        "ar": "PDF أو موقع ويب سهل التصفح",
+        "de": "A PDF or an easy-to-navigate website",
+        "esp": "A PDF or an easy-to-navigate website",
+        "it": "A PDF or an easy-to-navigate website"
+      }
     },
     {
-      "question": { "fr": "Quel élément améliore la visibilité d’un CV dans les ATS (logiciels de tri) ?", "en": "Which element improves a CV's visibility in ATS (sorting software)?", "ar": "ما العنصر الذي يحسن رؤية السيرة الذاتية في أنظمة فرز السير الذاتية؟" },
+      "question": {
+        "fr": "Comment vérifier si ta candidature est parfaite ?",
+        "en": "How to check if your application is perfect?",
+        "ar": "كيف تتحقق مما إذا كان طلبك مثاليًا؟",
+        "de": "How to check if your application is perfect?",
+        "esp": "How to check if your application is perfect?",
+        "it": "How to check if your application is perfect?"
+      },
       "options": [
-        { "fr": "L’utilisation de mots-clés pertinents", "en": "Using relevant keywords", "ar": "استخدام كلمات رئيسية مناسبة" },
-        { "fr": "L’ajout d’un fond coloré", "en": "Adding a colored background", "ar": "إضافة خلفية ملونة" },
-        { "fr": "L’écriture en phrases longues", "en": "Writing long sentences", "ar": "الكتابة بجمل طويلة" }
+        {
+          "fr": "Envoyer sans relecture",
+          "en": "Send without proofreading",
+          "ar": "الإرسال بدون مراجعة",
+          "de": "Send without proofreading",
+          "esp": "Send without proofreading",
+          "it": "Send without proofreading"
+        },
+        {
+          "fr": "Faire relire par quelqu’un et vérifier orthographe",
+          "en": "Have someone proofread and check spelling",
+          "ar": "جعل شخص ما يراجع والتحقق من الإملاء",
+          "de": "Have someone proofread and check spelling",
+          "esp": "Have someone proofread and check spelling",
+          "it": "Have someone proofread and check spelling"
+        },
+        {
+          "fr": "La publier sur un forum public",
+          "en": "Publish it on a public forum",
+          "ar": "نشرها على منتدى عام",
+          "de": "Publish it on a public forum",
+          "esp": "Publish it on a public forum",
+          "it": "Publish it on a public forum"
+        }
       ],
-      "correct": { "fr": "L’utilisation de mots-clés pertinents", "en": "Using relevant keywords", "ar": "استخدام كلمات رئيسية مناسبة" }
+      "correct": {
+        "fr": "Faire relire par quelqu’un et vérifier orthographe",
+        "en": "Have someone proofread and check spelling",
+        "ar": "جعل شخص ما يراجع والتحقق من الإملاء",
+        "de": "Have someone proofread and check spelling",
+        "esp": "Have someone proofread and check spelling",
+        "it": "Have someone proofread and check spelling"
+      }
     },
     {
-      "question": { "fr": "Qu’est-ce qu’un portfolio ?", "en": "What is a portfolio?", "ar": "ما هو الملف المهني (portfolio)؟" },
+      "question": {
+        "fr": "Quel élément augmente tes chances d’être remarqué ?",
+        "en": "What increases your chances of being noticed?",
+        "ar": "ما الذي يزيد فرصك في لفت الانتباه؟",
+        "de": "What increases your chances of being noticed?",
+        "esp": "What increases your chances of being noticed?",
+        "it": "What increases your chances of being noticed?"
+      },
       "options": [
-        { "fr": "Un type de CV papier", "en": "A paper CV type", "ar": "نوع من السيرة الذاتية الورقية" },
-        { "fr": "Un recueil de réalisations professionnelles ou projets", "en": "A collection of professional works or projects", "ar": "مجموعة من الأعمال المهنية أو المشاريع" },
-        { "fr": "Une lettre de motivation", "en": "A cover letter", "ar": "خطاب التغطية" }
+        {
+          "fr": "Envoyer une candidature en retard",
+          "en": "Send a late application",
+          "ar": "إرسال طلب متأخر",
+          "de": "Send a late application",
+          "esp": "Send a late application",
+          "it": "Send a late application"
+        },
+        {
+          "fr": "Adapter ton CV au poste et mentionner un projet concret",
+          "en": "Adapt your CV to the job and mention a concrete project",
+          "ar": "تكييف سيرتك الذاتية للوظيفة وذكر مشروع ملموس",
+          "de": "Adapt your CV to the job and mention a concrete project",
+          "esp": "Adapt your CV to the job and mention a concrete project",
+          "it": "Adapt your CV to the job and mention a concrete project"
+        },
+        {
+          "fr": "Mettre des couleurs vives partout",
+          "en": "Use bright colors everywhere",
+          "ar": "استخدام ألوان زاهية في كل مكان",
+          "de": "Use bright colors everywhere",
+          "esp": "Use bright colors everywhere",
+          "it": "Use bright colors everywhere"
+        }
       ],
-      "correct": { "fr": "Un recueil de réalisations professionnelles ou projets", "en": "A collection of professional works or projects", "ar": "مجموعة من الأعمال المهنية أو المشاريع" }
+      "correct": {
+        "fr": "Adapter ton CV au poste et mentionner un projet concret",
+        "en": "Adapt your CV to the job and mention a concrete project",
+        "ar": "تكييف سيرتك الذاتية للوظيفة وذكر مشروع ملموس",
+        "de": "Adapt your CV to the job and mention a concrete project",
+        "esp": "Adapt your CV to the job and mention a concrete project",
+        "it": "Adapt your CV to the job and mention a concrete project"
+      }
     },
     {
-      "question": { "fr": "Une lettre de motivation doit :", "en": "A cover letter should:", "ar": "ما الذي يجب أن يفعله خطاب التغطية؟" },
+      "question": {
+        "fr": "Que faire si l’annonce demande un document précis (ex. portfolio) ?",
+        "en": "What to do if the ad requests a specific document (e.g., portfolio)?",
+        "ar": "ماذا تفعل إذا طلب الإعلان مستندًا محددًا (مثل المحفظة)؟",
+        "de": "What to do if the ad requests a specific document (e.g., portfolio)?",
+        "esp": "What to do if the ad requests a specific document (e.g., portfolio)?",
+        "it": "What to do if the ad requests a specific document (e.g., portfolio)?"
+      },
       "options": [
-        { "fr": "Répéter mot pour mot le CV", "en": "Repeat the CV word for word", "ar": "تكرار السيرة الذاتية كلمة بكلمة" },
-        { "fr": "Expliquer ta motivation et ce que tu apportes", "en": "Explain your motivation and what you bring", "ar": "شرح دوافعك وما الذي تضيفه" },
-        { "fr": "Être une longue biographie", "en": "Be a long biography", "ar": "أن تكون سيرة ذاتية طويلة" }
+        {
+          "fr": "L’ignorer",
+          "en": "Ignore it",
+          "ar": "تجاهله",
+          "de": "Ignore it",
+          "esp": "Ignore it",
+          "it": "Ignore it"
+        },
+        {
+          "fr": "Fournir exactement ce qui est demandé",
+          "en": "Provide exactly what is requested",
+          "ar": "توفير ما هو مطلوب تمامًا",
+          "de": "Provide exactly what is requested",
+          "esp": "Provide exactly what is requested",
+          "it": "Provide exactly what is requested"
+        },
+        {
+          "fr": "Remplacer par autre chose",
+          "en": "Replace with something else",
+          "ar": "استبداله بشيء آخر",
+          "de": "Replace with something else",
+          "esp": "Replace with something else",
+          "it": "Replace with something else"
+        }
       ],
-      "correct": { "fr": "Expliquer ta motivation et ce que tu apportes", "en": "Explain your motivation and what you bring", "ar": "شرح دوافعك وما الذي تضيفه" }
+      "correct": {
+        "fr": "Fournir exactement ce qui est demandé",
+        "en": "Provide exactly what is requested",
+        "ar": "توفير ما هو مطلوب تمامًا",
+        "de": "Provide exactly what is requested",
+        "esp": "Provide exactly what is requested",
+        "it": "Provide exactly what is requested"
+      }
     },
     {
-      "question": { "fr": "Quel conseil pour la photo de CV ?", "en": "What advice for the CV photo?", "ar": "ما هي النصيحة بشأن صورة السيرة الذاتية؟" },
+      "question": {
+        "fr": "Pour un envoi par LinkedIn, que faut-il faire ?",
+        "en": "For sending via LinkedIn, what should you do?",
+        "ar": "لإرسال عبر LinkedIn، ماذا يجب أن تفعل؟",
+        "de": "For sending via LinkedIn, what should you do?",
+        "esp": "For sending via LinkedIn, what should you do?",
+        "it": "For sending via LinkedIn, what should you do?"
+      },
       "options": [
-        { "fr": "Photo professionnelle, sobre", "en": "Professional, sober photo", "ar": "صورة مهنية وراقية" },
-        { "fr": "Selfie pris dans la rue", "en": "Selfie taken in the street", "ar": "سيلفي التقط في الشارع" },
-        { "fr": "Photo avec amis pour montrer sociabilité", "en": "Photo with friends to show sociability", "ar": "صورة مع الأصدقاء لإظهار الاجتماعية" }
+        {
+          "fr": "Envoyer le CV en message sans introduction",
+          "en": "Send the CV in a message without introduction",
+          "ar": "إرسال السيرة الذاتية في رسالة دون مقدمة",
+          "de": "Send the CV in a message without introduction",
+          "esp": "Send the CV in a message without introduction",
+          "it": "Send the CV in a message without introduction"
+        },
+        {
+          "fr": "Écrire un court message personnalisé expliquant ton intérêt",
+          "en": "Write a short personalized message explaining your interest",
+          "ar": "اكتب رسالة قصيرة ومخصصة تشرح اهتمامك",
+          "de": "Write a short personalized message explaining your interest",
+          "esp": "Write a short personalized message explaining your interest",
+          "it": "Write a short personalized message explaining your interest"
+        },
+        {
+          "fr": "Envoyer le CV en commentaire",
+          "en": "Send the CV in a comment",
+          "ar": "إرسال السيرة الذاتية في تعليق",
+          "de": "Send the CV in a comment",
+          "esp": "Send the CV in a comment",
+          "it": "Send the CV in a comment"
+        }
       ],
-      "correct": { "fr": "Photo professionnelle, sobre", "en": "Professional, sober photo", "ar": "صورة مهنية وراقية" }
+      "correct": {
+        "fr": "Écrire un court message personnalisé expliquant ton intérêt",
+        "en": "Write a short personalized message explaining your interest",
+        "ar": "اكتب رسالة قصيرة ومخصصة تشرح اهتمامك",
+        "de": "Write a short personalized message explaining your interest",
+        "esp": "Write a short personalized message explaining your interest",
+        "it": "Write a short personalized message explaining your interest"
+      }
     },
     {
-      "question": { "fr": "Quelle rubrique n’est pas recommandée sur un CV en Tunisie (pour un junior) ?", "en": "Which section is not recommended on a CV in Tunisia (for a junior)?", "ar": "أي قسم غير موصى به في السيرة الذاتية في تونس (للمبتدئين)؟" },
+      "question": {
+        "fr": "Quelle est la meilleure attitude lors de candidatures multiples ?",
+        "en": "What is the best attitude when applying to multiple jobs?",
+        "ar": "ما هو أفضل سلوك عند التقديم لعدة وظائف؟",
+        "de": "What is the best attitude when applying to multiple jobs?",
+        "esp": "What is the best attitude when applying to multiple jobs?",
+        "it": "What is the best attitude when applying to multiple jobs?"
+      },
       "options": [
-        { "fr": "Formations", "en": "Education/Training", "ar": "التكوين/التعليم" },
-        { "fr": "Détails personnels trop intimes (état civil complet, religion)", "en": "Overly intimate personal details (full civil status, religion)", "ar": "تفاصيل شخصية حميمة جدًا (الحالة المدنية الكاملة، الدين)" },
-        { "fr": "Expériences de stage", "en": "Internship experiences", "ar": "تجارب التدريب" }
+        {
+          "fr": "Envoyer le même message automatique",
+          "en": "Send the same automated message",
+          "ar": "إرسال نفس الرسالة الآلية",
+          "de": "Send the same automated message",
+          "esp": "Send the same automated message",
+          "it": "Send the same automated message"
+        },
+        {
+          "fr": "Adapter chaque candidature au poste ciblé",
+          "en": "Adapt each application to the targeted position",
+          "ar": "تكييف كل طلب للمنصب المستهدف",
+          "de": "Adapt each application to the targeted position",
+          "esp": "Adapt each application to the targeted position",
+          "it": "Adapt each application to the targeted position"
+        },
+        {
+          "fr": "Postuler uniquement au hasard",
+          "en": "Apply only randomly",
+          "ar": "التقديم عشوائيًا فقط",
+          "de": "Apply only randomly",
+          "esp": "Apply only randomly",
+          "it": "Apply only randomly"
+        }
       ],
-      "correct": { "fr": "Détails personnels trop intimes (état civil complet, religion)", "en": "Overly intimate personal details (full civil status, religion)", "ar": "تفاصيل شخصية حميمة جدًا (الحالة المدنية الكاملة، الدين)" }
+      "correct": {
+        "fr": "Adapter chaque candidature au poste ciblé",
+        "en": "Adapt each application to the targeted position",
+        "ar": "تكييف كل طلب للمنصب المستهدف",
+        "de": "Adapt each application to the targeted position",
+        "esp": "Adapt each application to the targeted position",
+        "it": "Adapt each application to the targeted position"
+      }
     },
     {
-      "question": { "fr": "Pour un premier CV, quelle rubrique est importante à valoriser ?", "en": "For a first CV, which section is important to highlight?", "ar": "بالنسبة لأول سيرة ذاتية، أي قسم من المهم تسليط الضوء عليه؟" },
+      "question": {
+        "fr": "Pourquoi indiquer un titre de poste précis dans ton CV ?",
+        "en": "Why indicate a specific job title in your CV?",
+        "ar": "لماذا تشير إلى عنوان وظيفة محدد في سيرتك الذاتية؟",
+        "de": "Why indicate a specific job title in your CV?",
+        "esp": "Why indicate a specific job title in your CV?",
+        "it": "Why indicate a specific job title in your CV?"
+      },
       "options": [
-        { "fr": "Centres d’intérêt uniquement", "en": "Hobbies only", "ar": "الهوايات فقط" },
-        { "fr": "Stages et projets concrets", "en": "Internships and concrete projects", "ar": "التدريبات والمشاريع الملموسة" },
-        { "fr": "Les expériences non professionnelles sans lien", "en": "Unrelated non-professional experiences", "ar": "تجارب غير مهنية غير ذات صلة" }
+        {
+          "fr": "Pour tromper le recruteur",
+          "en": "To deceive the recruiter",
+          "ar": "لتضليل المجند",
+          "de": "To deceive the recruiter",
+          "esp": "To deceive the recruiter",
+          "it": "To deceive the recruiter"
+        },
+        {
+          "fr": "Pour montrer clairement le rôle que tu vises",
+          "en": "To clearly show the role you target",
+          "ar": "لإظهار الدور الذي تستهدفه بوضوح",
+          "de": "To clearly show the role you target",
+          "esp": "To clearly show the role you target",
+          "it": "To clearly show the role you target"
+        },
+        {
+          "fr": "Pour masquer ta situation",
+          "en": "To hide your situation",
+          "ar": "لإخفاء وضعك",
+          "de": "To hide your situation",
+          "esp": "To hide your situation",
+          "it": "To hide your situation"
+        }
       ],
-      "correct": { "fr": "Stages et projets concrets", "en": "Internships and concrete projects", "ar": "التدريبات والمشاريع الملموسة" }
+      "correct": {
+        "fr": "Pour montrer clairement le rôle que tu vises",
+        "en": "To clearly show the role you target",
+        "ar": "لإظهار الدور الذي تستهدفه بوضوح",
+        "de": "To clearly show the role you target",
+        "esp": "To clearly show the role you target",
+        "it": "To clearly show the role you target"
+      }
     },
     {
-      "question": { "fr": "Quand personnaliser son CV ?", "en": "When should you customize your CV?", "ar": "متى يجب تخصيص سيرتك الذاتية؟" },
+      "question": {
+        "fr": "Quand suivre sa candidature après l’envoi ?",
+        "en": "When to follow up on your application after sending?",
+        "ar": "متى تتابع طلبك بعد الإرسال؟",
+        "de": "When to follow up on your application after sending?",
+        "esp": "When to follow up on your application after sending?",
+        "it": "When to follow up on your application after sending?"
+      },
       "options": [
-        { "fr": "Jamais, un CV suffit pour tout", "en": "Never, one CV fits all", "ar": "أبدًا، سيرة ذاتية واحدة تكفي للجميع" },
-        { "fr": "Toujours : adapter aux exigences de l’offre", "en": "Always: adapt to the job's requirements", "ar": "دائمًا: التكيف مع متطلبات العرض" },
-        { "fr": "Seulement si on postule à l'étranger", "en": "Only when applying abroad", "ar": "فقط عند التقديم إلى الخارج" }
+        {
+          "fr": "Jamais",
+          "en": "Never",
+          "ar": "أبدًا",
+          "de": "Never",
+          "esp": "Never",
+          "it": "Never"
+        },
+        {
+          "fr": "Après une semaine ou deux, par mail poli",
+          "en": "After a week or two, by polite email",
+          "ar": "بعد أسبوع أو أسبوعين، عبر بريد إلكتروني مهذب",
+          "de": "After a week or two, by polite email",
+          "esp": "After a week or two, by polite email",
+          "it": "After a week or two, by polite email"
+        },
+        {
+          "fr": "Tous les jours par téléphone",
+          "en": "Every day by phone",
+          "ar": "كل يوم عبر الهاتف",
+          "de": "Every day by phone",
+          "esp": "Every day by phone",
+          "it": "Every day by phone"
+        }
       ],
-      "correct": { "fr": "Toujours : adapter aux exigences de l’offre", "en": "Always: adapt to the job's requirements", "ar": "دائمًا: التكيف مع متطلبات العرض" }
+      "correct": {
+        "fr": "Après une semaine ou deux, par mail poli",
+        "en": "After a week or two, by polite email",
+        "ar": "بعد أسبوع أو أسبوعين، عبر بريد إلكتروني مهذب",
+        "de": "After a week or two, by polite email",
+        "esp": "After a week or two, by polite email",
+        "it": "After a week or two, by polite email"
+      }
     },
     {
-      "question": { "fr": "Quel est l’objectif premier d’un bon CV ?", "en": "What is the primary objective of a good CV?", "ar": "ما الهدف الرئيسي من سيرة ذاتية جيدة؟" },
+      "question": {
+        "fr": "Quel est l’intérêt d’écrire une accroche synthétique dans ton CV ?",
+        "en": "What is the benefit of writing a concise headline in your CV?",
+        "ar": "ما فائدة كتابة ملخص موجز في سيرتك الذاتية؟",
+        "de": "What is the benefit of writing a concise headline in your CV?",
+        "esp": "What is the benefit of writing a concise headline in your CV?",
+        "it": "What is the benefit of writing a concise headline in your CV?"
+      },
       "options": [
-        { "fr": "Remplir une page A4", "en": "To fill an A4 page", "ar": "ملء صفحة A4" },
-        { "fr": "Obtenir une invitation en entretien", "en": "Obtain an interview invitation", "ar": "الحصول على دعوة للمقابلة" },
-        { "fr": "Montrer toutes tes expériences même non pertinentes", "en": "Show all your experiences even if irrelevant", "ar": "إظهار جميع تجاربك حتى غير المناسبة" }
+        {
+          "fr": "Remplir l’espace",
+          "en": "Fill space",
+          "ar": "ملء المساحة",
+          "de": "Fill space",
+          "esp": "Fill space",
+          "it": "Fill space"
+        },
+        {
+          "fr": "Résumer ta proposition de valeur en 2-3 lignes",
+          "en": "Summarize your value proposition in 2-3 lines",
+          "ar": "تلخيص عرض القيمة الخاص بك في 2-3 أسطر",
+          "de": "Summarize your value proposition in 2-3 lines",
+          "esp": "Summarize your value proposition in 2-3 lines",
+          "it": "Summarize your value proposition in 2-3 lines"
+        },
+        {
+          "fr": "Mettre un slogan",
+          "en": "Put a slogan",
+          "ar": "وضع شعار",
+          "de": "Put a slogan",
+          "esp": "Put a slogan",
+          "it": "Put a slogan"
+        }
       ],
-      "correct": { "fr": "Obtenir une invitation en entretien", "en": "Obtain an interview invitation", "ar": "الحصول على دعوة للمقابلة" }
+      "correct": {
+        "fr": "Résumer ta proposition de valeur en 2-3 lignes",
+        "en": "Summarize your value proposition in 2-3 lines",
+        "ar": "تلخيص عرض القيمة الخاص بك في 2-3 أسطر",
+        "de": "Summarize your value proposition in 2-3 lines",
+        "esp": "Summarize your value proposition in 2-3 lines",
+        "it": "Summarize your value proposition in 2-3 lines"
+      }
     },
     {
-      "question": { "fr": "Un bon titre de CV (sous ton nom) devrait :", "en": "A good CV title (under your name) should:", "ar": "ما الذي يجب أن يحتويه عنوان جيد في السيرة الذاتية (تحت اسمك)؟" },
+      "question": {
+        "fr": "Quel est l’impact d’un CV mal formaté pour la postulation en ligne ?",
+        "en": "What is the impact of a poorly formatted CV for online applications?",
+        "ar": "ما تأثير سيرة ذاتية غير منسقة بشكل جيد على التقديم عبر الإنترنت؟",
+        "de": "What is the impact of a poorly formatted CV for online applications?",
+        "esp": "What is the impact of a poorly formatted CV for online applications?",
+        "it": "What is the impact of a poorly formatted CV for online applications?"
+      },
       "options": [
-        { "fr": "Être vague pour plaire à tout le monde", "en": "Be vague to please everyone", "ar": "أن يكون غامضًا لإرضاء الجميع" },
-        { "fr": "Indiquer ton poste ciblé ou ton profil (ex. 'Assistant marketing')", "en": "Indicate your targeted position or profile (e.g., 'Assistant Marketing')", "ar": "الإشارة إلى المنصب المستهدف أو ملفك الشخصي (مثال: 'مساعد تسويق')" },
-        { "fr": "Donner ton âge", "en": "State your age", "ar": "ذكر عمرك" }
+        {
+          "fr": "Aucun",
+          "en": "None",
+          "ar": "لا شيء",
+          "de": "None",
+          "esp": "None",
+          "it": "None"
+        },
+        {
+          "fr": "Ton CV peut être rejeté ou mal lu",
+          "en": "Your CV may be rejected or poorly read",
+          "ar": "قد يتم رفض سيرتك الذاتية أو قراءتها بشكل خاطئ",
+          "de": "Your CV may be rejected or poorly read",
+          "esp": "Your CV may be rejected or poorly read",
+          "it": "Your CV may be rejected or poorly read"
+        },
+        {
+          "fr": "Il sera préféré car original",
+          "en": "It will be preferred because it is original",
+          "ar": "سيتم تفضيله لكونه أصليًا",
+          "de": "It will be preferred because it is original",
+          "esp": "It will be preferred because it is original",
+          "it": "It will be preferred because it is original"
+        }
       ],
-      "correct": { "fr": "Indiquer ton poste ciblé ou ton profil (ex. \"Assistant marketing\")", "en": "Indicate your targeted position or profile (e.g., \"Assistant Marketing\")", "ar": "الإشارة إلى المنصب المستهدف أو ملفك الشخصي (مثال: 'مساعد تسويق')" }
-    },
-    {
-      "question": { "fr": "Quel style d’écriture privilégier dans un CV ?", "en": "Which writing style should you favor in a CV?", "ar": "ما نمط الكتابة المفضل في السيرة الذاتية؟" },
-      "options": [
-        { "fr": "Des phrases longues et théoriques", "en": "Long theoretical sentences", "ar": "جمل طويلة ونظرية" },
-        { "fr": "Des bullets points clairs et quantifiés", "en": "Clear, quantified bullet points", "ar": "نقاط واضحة ومقاسة" },
-        { "fr": "Des formulations humoristiques", "en": "Humorous formulations", "ar": "صياغات فكاهية" }
-      ],
-      "correct": { "fr": "Des bullets points clairs et quantifiés", "en": "Clear, quantified bullet points", "ar": "نقاط واضحة ومقاسة" }
-    },
-    {
-      "question": { "fr": "Pour améliorer un portfolio, il est conseillé de :", "en": "To improve a portfolio, it is recommended to:", "ar": "لتحسين الملف المهني يوصى بـ:" },
-      "options": [
-        { "fr": "Mettre tous les fichiers possibles", "en": "Include all possible files", "ar": "إضافة جميع الملفات الممكنة" },
-        { "fr": "Choisir projets représentatifs et expliquer ton rôle", "en": "Choose representative projects and explain your role", "ar": "اختيار مشاريع تمثيلية وشرح دورك" },
-        { "fr": "Ne mettre que des titres sans détails", "en": "Include only titles without details", "ar": "إدراج عناوين فقط دون تفاصيل" }
-      ],
-      "correct": { "fr": "Choisir projets représentatifs et expliquer ton rôle", "en": "Choose representative projects and explain your role", "ar": "اختيار مشاريع تمثيلية وشرح دورك" }
-    },
-    {
-      "question": { "fr": "Les certificats et formations complémentaires doivent :", "en": "Certificates and additional training should:", "ar": "ينبغي للوثائق والشهادات والدورات الإضافية أن:" },
-      "options": [
-        { "fr": "Être listés s’ils sont pertinents pour le poste", "en": "Be listed if they are relevant to the position", "ar": "أن تُدرج إذا كانت ذات صلة بالمنصب" },
-        { "fr": "Être tous cités sans tri", "en": "All be listed without selection", "ar": "أن تُذكر جميعها دون انتقاء" },
-        { "fr": "Jamais être mentionnés", "en": "Never be mentioned", "ar": "عدم ذكرها أبدًا" }
-      ],
-      "correct": { "fr": "Être listés s’ils sont pertinents pour le poste", "en": "Be listed if they are relevant to the position", "ar": "أن تُدرج إذا كانت ذات صلة بالمنصب" }
-    },
-    {
-      "question": { "fr": "Quelle erreur fréquente sur la paperasse ?", "en": "What is a common mistake on paperwork?", "ar": "ما الخطأ الشائع في الأوراق؟" },
-      "options": [
-        { "fr": "Relire le document", "en": "Reread the document", "ar": "إعادة قراءة المستند" },
-        { "fr": "Fautes d’orthographe ou de grammaire", "en": "Spelling or grammar mistakes", "ar": "أخطاء إملائية أو نحوية" },
-        { "fr": "Mettre un téléphone de contact", "en": "Include a contact phone", "ar": "وضع رقم هاتف للتواصل" }
-      ],
-      "correct": { "fr": "Fautes d’orthographe ou de grammaire", "en": "Spelling or grammar mistakes", "ar": "أخطاء إملائية أو نحوية" }
-    },
-    {
-      "question": { "fr": "Pour un CV destiné à un poste digital, que vaut la section “compétences” ?", "en": "For a CV aimed at a digital position, what about the 'skills' section?", "ar": "بالنسبة لسيرة ذاتية لوظيفة رقمية، ماذا عن قسم 'المهارات'؟" },
-      "options": [
-        { "fr": "Indiquer uniquement “informatique”", "en": "Indicate only 'IT'", "ar": "ذكر 'معلوماتية' فقط" },
-        { "fr": "Détail des outils maîtrisés (ex. Excel, Photoshop)", "en": "Detail the tools mastered (e.g., Excel, Photoshop)", "ar": "تفصيل الأدوات المتقنة (مثل Excel، Photoshop)" },
-        { "fr": "Omettre cette section", "en": "Omit this section", "ar": "حذف هذا القسم" }
-      ],
-      "correct": { "fr": "Détail des outils maîtrisés (ex. Excel, Photoshop)", "en": "Detail the tools mastered (e.g., Excel, Photoshop)", "ar": "تفصيل الأدوات المتقنة (مثل Excel، Photoshop)" }
-    },
-    {
-      "question": { "fr": "Quel format envoyer aux recruteurs pour le CV ?", "en": "Which format should you send to recruiters for the CV?", "ar": "أي صيغة يجب إرسالها إلى المجندين للسيرة الذاتية؟" },
-      "options": [
-        { "fr": "Papier uniquement", "en": "Paper only", "ar": "ورقي فقط" },
-        { "fr": "PDF pour préserver la mise en page", "en": "PDF to preserve formatting", "ar": "PDF للحفاظ على التنسيق" },
-        { "fr": "Un lien Word modifiable", "en": "A modifiable Word link", "ar": "رابط Word قابل للتعديل" }
-      ],
-      "correct": { "fr": "PDF pour préserver la mise en page", "en": "PDF to preserve formatting", "ar": "PDF للحفاظ على التنسيق" }
-    },
-    {
-      "question": { "fr": "Une lettre de motivation efficace :", "en": "An effective cover letter:", "ar": "ما الذي يميز خطاب التغطية الفعال؟" },
-      "options": [
-        { "fr": "Contient des répétitions du CV", "en": "Contains repetitions of the CV", "ar": "يتضمن تكرارًا للسيرة الذاتية" },
-        { "fr": "Se concentre sur pourquoi tu veux ce poste et ce que tu apportes", "en": "Focuses on why you want the position and what you bring", "ar": "يركز على سبب رغبتك في هذا المنصب وما الذي تضيفه" },
-        { "fr": "Est très générale", "en": "Is very general", "ar": "عام جدًا" }
-      ],
-      "correct": { "fr": "Se concentre sur pourquoi tu veux ce poste et ce que tu apportes", "en": "Focuses on why you want the position and what you bring", "ar": "يركز على سبب رغبتك في هذا المنصب وما الذي تضيفه" }
+      "correct": {
+        "fr": "Ton CV peut être rejeté ou mal lu",
+        "en": "Your CV may be rejected or poorly read",
+        "ar": "قد يتم رفض سيرتك الذاتية أو قراءتها بشكل خاطئ",
+        "de": "Your CV may be rejected or poorly read",
+        "esp": "Your CV may be rejected or poorly read",
+        "it": "Your CV may be rejected or poorly read"
+      }
     }
   ]
 }

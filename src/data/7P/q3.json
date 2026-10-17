@@ -1,184 +1,664 @@
 {
   "Prospection": [
     {
-      "question": { "fr": "Avant de contacter un recruteur, il faut :", "en": "Before contacting a recruiter, you should:", "ar": "قبل الاتصال بالمجند، يجب:" },
+      "question": {
+        "fr": "A votre avis, quelle est la durée pour une bonne présentation de soi dans un entretien d’embauche ?",
+        "en": "In your opinion, what is the ideal duration for a good self-presentation in a job interview?",
+        "ar": "برأيك، ما هي المدة المثالية لتقديم نفسك في مقابلة عمل؟",
+        "de": "In your opinion, what is the ideal duration for a good self-presentation in a job interview?",
+        "esp": "In your opinion, what is the ideal duration for a good self-presentation in a job interview?",
+        "it": "In your opinion, what is the ideal duration for a good self-presentation in a job interview?"
+      },
       "options": [
-        { "fr": "Lancer un appel à froid sans préparation", "en": "Make a cold call without preparation", "ar": "إجراء مكالمة باردة دون تحضير" },
-        { "fr": "Se renseigner sur l’entreprise et préparer son pitch", "en": "Research the company and prepare your pitch", "ar": "البحث عن الشركة والتحضير للعرض" },
-        { "fr": "Envoyer un SMS générique", "en": "Send a generic SMS", "ar": "إرسال رسالة نصية عامة" }
+        {
+          "fr": "Rester vague",
+          "en": "Remain vague",
+          "ar": "البقاء غامضًا",
+          "de": "Remain vague",
+          "esp": "Remain vague",
+          "it": "Remain vague"
+        },
+        {
+          "fr": "Donner le contexte, ton rôle, l’action et le résultat (méthode CAR)",
+          "en": "Give the context, your role, the action and the result (CAR method)",
+          "ar": "تقديم السياق ودورك والإجراء والنتيجة (طريقة CAR)",
+          "de": "Give the context, your role, the action and the result (CAR method)",
+          "esp": "Give the context, your role, the action and the result (CAR method)",
+          "it": "Give the context, your role, the action and the result (CAR method)"
+        },
+        {
+          "fr": "Se concentrer uniquement sur la difficulté",
+          "en": "Focus only on the difficulty",
+          "ar": "التركيز فقط على الصعوبة",
+          "de": "Focus only on the difficulty",
+          "esp": "Focus only on the difficulty",
+          "it": "Focus only on the difficulty"
+        }
       ],
-      "correct": { "fr": "Se renseigner sur l’entreprise et préparer son pitch", "en": "Research the company and prepare your pitch", "ar": "البحث عن الشركة والتحضير للعرض" }
+      "correct": {
+        "fr": "Donner le contexte, ton rôle, l’action et le résultat (méthode CAR)",
+        "en": "Give the context, your role, the action and the result (CAR method)",
+        "ar": "تقديم السياق ودورك والإجراء والنتيجة (طريقة CAR)",
+        "de": "Give the context, your role, the action and the result (CAR method)",
+        "esp": "Give the context, your role, the action and the result (CAR method)",
+        "it": "Give the context, your role, the action and the result (CAR method)"
+      }
     },
     {
-      "question": { "fr": "Quel est l’objectif d’un pitch de prospection ?", "en": "What is the objective of a prospecting pitch?", "ar": "ما هو هدف عرض التنقيب؟" },
+      "question": {
+        "fr": "Lors d’une présentation, il faut :",
+        "en": "During a presentation, you should:",
+        "ar": "أثناء العرض، يجب:",
+        "de": "During a presentation, you should:",
+        "esp": "During a presentation, you should:",
+        "it": "During a presentation, you should:"
+      },
       "options": [
-        { "fr": "Monopoliser la conversation", "en": "Monopolize the conversation", "ar": "الاستحواذ على المحادثة" },
-        { "fr": "Présenter en 30–60s ce que tu proposes et pourquoi c’est utile", "en": "Present in 30–60s what you offer and why it’s useful", "ar": "تقديم ما تعرضه ولماذا هو مفيد في 30-60 ثانية" },
-        { "fr": "Demander un emploi immédiatement", "en": "Ask for a job immediately", "ar": "طلب وظيفة فورًا" }
+        {
+          "fr": "Mentir",
+          "en": "Lie",
+          "ar": "الكذب",
+          "de": "Lie",
+          "esp": "Lie",
+          "it": "Lie"
+        },
+        {
+          "fr": "Respirer, reformuler la question et répondre calmement",
+          "en": "Breathe, rephrase the question and answer calmly",
+          "ar": "التنفس، إعادة صياغة السؤال والرد بهدوء",
+          "de": "Breathe, rephrase the question and answer calmly",
+          "esp": "Breathe, rephrase the question and answer calmly",
+          "it": "Breathe, rephrase the question and answer calmly"
+        },
+        {
+          "fr": "S’enfuir",
+          "en": "Run away",
+          "ar": "الهروب",
+          "de": "Run away",
+          "esp": "Run away",
+          "it": "Run away"
+        }
       ],
-      "correct": { "fr": "Présenter en 30–60s ce que tu proposes et pourquoi c’est utile", "en": "Present in 30–60s what you offer and why it’s useful", "ar": "تقديم ما تعرضه ولماذا هو مفيد في 30-60 ثانية" }
+      "correct": {
+        "fr": "Respirer, reformuler la question et répondre calmement",
+        "en": "Breathe, rephrase the question and answer calmly",
+        "ar": "التنفس، إعادة صياغة السؤال والرد بهدوء",
+        "de": "Breathe, rephrase the question and answer calmly",
+        "esp": "Breathe, rephrase the question and answer calmly",
+        "it": "Breathe, rephrase the question and answer calmly"
+      }
     },
     {
-      "question": { "fr": "Lors d’un premier contact téléphonique, tu dois :", "en": "During a first phone contact, you should:", "ar": "أثناء الاتصال الهاتفي الأول، يجب عليك:" },
+      "question": {
+        "fr": "Une présentation doit comprendre :",
+        "en": "A presentation should include:",
+        "ar": "يجب أن يتضمن العرض:",
+        "de": "A presentation should include:",
+        "esp": "A presentation should include:",
+        "it": "A presentation should include:"
+      },
       "options": [
-        { "fr": "Parler de ta vie privée", "en": "Talk about your private life", "ar": "التحدث عن حياتك الخاصة" },
-        { "fr": "Exposer brièvement ton intérêt et proposer d’envoyer ton CV", "en": "Briefly state your interest and offer to send your CV", "ar": "عرض اهتمامك بإيجاز وعرض إرسال سيرتك الذاتية" },
-        { "fr": "Insister jusqu’à obtenir un entretien", "en": "Insist until you get an interview", "ar": "الإصرار حتى تحصل على مقابلة" }
+        {
+          "fr": "Votre nom et situation actuelle",
+          "en": "Your name and current situation",
+          "ar": "اسمك ووضعك الحالي",
+          "de": "Your name and current situation",
+          "esp": "Your name and current situation",
+          "it": "Your name and current situation"
+        },
+        {
+          "fr": "Votre parcours académique",
+          "en": "Your academic background",
+          "ar": "مسارك الأكاديمي",
+          "de": "Your academic background",
+          "esp": "Your academic background",
+          "it": "Your academic background"
+        },
+        {
+          "fr": "Vos Stages et/ou expériences professionnelles",
+          "en": "Your internships and/or professional experiences",
+          "ar": "تدريباتك وخبراتك المهنية",
+          "de": "Your internships and/or professional experiences",
+          "esp": "Your internships and/or professional experiences",
+          "it": "Your internships and/or professional experiences"
+        }
       ],
-      "correct": { "fr": "Exposer brièvement ton intérêt et proposer d’envoyer ton CV", "en": "Briefly state your interest and offer to send your CV", "ar": "عرض اهتمامك بإيجاز وعرض إرسال سيرتك الذاتية" }
+      "correct": {
+        "fr": "Vos Stages et/ou expériences professionnelles",
+        "en": "Your internships and/or professional experiences",
+        "ar": "تدريباتك وخبراتك المهنية",
+        "de": "Your internships and/or professional experiences",
+        "esp": "Your internships and/or professional experiences",
+        "it": "Your internships and/or professional experiences"
+      }
     },
     {
-      "question": { "fr": "Dans la prospection physique (porte-à-porte), il est essentiel de :", "en": "In physical prospecting (door-to-door), it is essential to:", "ar": "في التنقيب المادي (من الباب إلى الباب)، من الضروري:" },
+      "question": {
+        "fr": "Pensez-vous que dans une présentation, il faut :",
+        "en": "Do you think in a presentation you should:",
+        "ar": "هل تعتقد أنه في العرض يجب:",
+        "de": "Do you think in a presentation you should:",
+        "esp": "Do you think in a presentation you should:",
+        "it": "Do you think in a presentation you should:"
+      },
       "options": [
-        { "fr": "Être pressant", "en": "Be pushy", "ar": "أن تكون ملحًا" },
-        { "fr": "Présenter ton profil clairement et poliment", "en": "Present your profile clearly and politely", "ar": "عرض ملفك الشخصي بوضوح وبأدب" },
-        { "fr": "Laisser ton CV sur une table sans dire un mot", "en": "Leave your CV on a table without saying a word", "ar": "ترك سيرتك الذاتية على طاولة دون قول كلمة" }
+        {
+          "fr": "Trop monotone",
+          "en": "Too monotone",
+          "ar": "رتيب جدًا",
+          "de": "Too monotone",
+          "esp": "Too monotone",
+          "it": "Too monotone"
+        },
+        {
+          "fr": "Naturel, assuré et adapté au contexte",
+          "en": "Natural, confident and adapted to the context",
+          "ar": "طبيعي، واثق ومتكيف مع السياق",
+          "de": "Natural, confident and adapted to the context",
+          "esp": "Natural, confident and adapted to the context",
+          "it": "Natural, confident and adapted to the context"
+        },
+        {
+          "fr": "Trop théâtral",
+          "en": "Too theatrical",
+          "ar": "مفرط في التمثيل",
+          "de": "Too theatrical",
+          "esp": "Too theatrical",
+          "it": "Too theatrical"
+        }
       ],
-      "correct": { "fr": "Présenter ton profil clairement et poliment", "en": "Present your profile clearly and politely", "ar": "عرض ملفك الشخصي بوضوح وبأدب" }
+      "correct": {
+        "fr": "Naturel, assuré et adapté au contexte",
+        "en": "Natural, confident and adapted to the context",
+        "ar": "طبيعي، واثق ومتكيف مع السياق",
+        "de": "Natural, confident and adapted to the context",
+        "esp": "Natural, confident and adapted to the context",
+        "it": "Natural, confident and adapted to the context"
+      }
     },
     {
-      "question": { "fr": "Quelle information rechercher avant une prospection ?", "en": "Which information to research before prospecting?", "ar": "ما المعلومات التي يجب البحث عنها قبل التنقيب؟" },
+      "question": {
+        "fr": "A votre avis, quelles sont les astuces nécessaires pour réussir une présentation lors d’un entretien d’embauche ?",
+        "en": "In your opinion, what are the necessary tips for a successful presentation in a job interview?",
+        "ar": "برأيك، ما هي النصائح اللازمة لنجاح العرض في مقابلة العمل؟",
+        "de": "In your opinion, what are the necessary tips for a successful presentation in a job interview?",
+        "esp": "In your opinion, what are the necessary tips for a successful presentation in a job interview?",
+        "it": "In your opinion, what are the necessary tips for a successful presentation in a job interview?"
+      },
       "options": [
-        { "fr": "Le nombre d’employés uniquement", "en": "Number of employees only", "ar": "عدد الموظفين فقط" },
-        { "fr": "Les missions liées au poste et les valeurs de l’entreprise", "en": "The tasks related to the position and the company's values", "ar": "المهام المتعلقة بالمنصب وقيم الشركة" },
-        { "fr": "Les horaires d’ouverture seulement", "en": "Opening hours only", "ar": "ساعات العمل فقط" }
+        {
+          "fr": "Tous les détails techniques",
+          "en": "All technical details",
+          "ar": "جميع التفاصيل الفنية",
+          "de": "All technical details",
+          "esp": "All technical details",
+          "it": "All technical details"
+        },
+        {
+          "fr": "Les éléments qui démontrent ta valeur pour le poste",
+          "en": "Elements that demonstrate your value for the role",
+          "ar": "العناصر التي تُظهر قيمتك للوظيفة",
+          "de": "Elements that demonstrate your value for the role",
+          "esp": "Elements that demonstrate your value for the role",
+          "it": "Elements that demonstrate your value for the role"
+        },
+        {
+          "fr": "Les anecdotes personnelles longues",
+          "en": "Long personal anecdotes",
+          "ar": "حكايات شخصية طويلة",
+          "de": "Long personal anecdotes",
+          "esp": "Long personal anecdotes",
+          "it": "Long personal anecdotes"
+        }
       ],
-      "correct": { "fr": "Les missions liées au poste et les valeurs de l’entreprise", "en": "The tasks related to the position and the company's values", "ar": "المهام المتعلقة بالمنصب وقيم الشركة" }
+      "correct": {
+        "fr": "Les éléments qui démontrent ta valeur pour le poste",
+        "en": "Elements that demonstrate your value for the role",
+        "ar": "العناصر التي تُظهر قيمتك للوظيفة",
+        "de": "Elements that demonstrate your value for the role",
+        "esp": "Elements that demonstrate your value for the role",
+        "it": "Elements that demonstrate your value for the role"
+      }
     },
     {
-      "question": { "fr": "Sur LinkedIn, pour approcher un recruteur, il est conseillé de :", "en": "On LinkedIn, to approach a recruiter, it is advisable to:", "ar": "على LinkedIn، للاقتراب من المجند، يُنصح بـ:" },
+      "question": {
+        "fr": "Comment peut-on diminuer le taux du stress au cours d’une présentation ?",
+        "en": "How can you reduce stress during a presentation?",
+        "ar": "كيف يمكن تقليل التوتر أثناء العرض؟",
+        "de": "How can you reduce stress during a presentation?",
+        "esp": "How can you reduce stress during a presentation?",
+        "it": "How can you reduce stress during a presentation?"
+      },
       "options": [
-        { "fr": "Envoyer une invitation sans message", "en": "Send an invitation without a message", "ar": "إرسال دعوة بدون رسالة" },
-        { "fr": "Envoyer un message personnalisé expliquant ton intérêt", "en": "Send a personalized message explaining your interest", "ar": "إرسال رسالة مخصصة تشرح اهتمامك" },
-        { "fr": "Liker toutes ses publications sans message", "en": "Like all their posts without a message", "ar": "الإعجاب بجميع منشوراتهم دون رسالة" }
+        {
+          "fr": "Faire une structure du discours",
+          "en": "Structure your speech",
+          "ar": "هيكلة الخطاب",
+          "de": "Structure your speech",
+          "esp": "Structure your speech",
+          "it": "Structure your speech"
+        },
+        {
+          "fr": "Etre clair, net et précis lors de la présentation",
+          "en": "Be clear, concise and precise during the presentation",
+          "ar": "كن واضحًا ودقيقًا أثناء العرض",
+          "de": "Be clear, concise and precise during the presentation",
+          "esp": "Be clear, concise and precise during the presentation",
+          "it": "Be clear, concise and precise during the presentation"
+        },
+        {
+          "fr": "Se Concentrer sur le mouvement des mains",
+          "en": "Focus on hand movements",
+          "ar": "التركيز على حركة اليدين",
+          "de": "Focus on hand movements",
+          "esp": "Focus on hand movements",
+          "it": "Focus on hand movements"
+        }
       ],
-      "correct": { "fr": "Envoyer un message personnalisé expliquant ton intérêt", "en": "Send a personalized message explaining your interest", "ar": "إرسال رسالة مخصصة تشرح اهتمامك" }
+      "correct": {
+        "fr": "Des exemples précis d’impacts et réalisations",
+        "en": "Specific examples of impacts and achievements",
+        "ar": "أمثلة دقيقة على التأثيرات والإنجازات",
+        "de": "Specific examples of impacts and achievements",
+        "esp": "Specific examples of impacts and achievements",
+        "it": "Specific examples of impacts and achievements"
+      }
     },
     {
-      "question": { "fr": "Quelle est une bonne pratique lors d’un appel RH ?", "en": "What is a good practice during an HR call?", "ar": "ما هي ممارسة جيدة أثناء مكالمة الموارد البشرية؟" },
+      "question": {
+        "fr": "Pour avoir une bonne impression en entretien, il faut :",
+        "en": "To make a good impression in an interview, you must:",
+        "ar": "لترك انطباع جيد في المقابلة، يجب:",
+        "de": "To make a good impression in an interview, you must:",
+        "esp": "To make a good impression in an interview, you must:",
+        "it": "To make a good impression in an interview, you must:"
+      },
       "options": [
-        { "fr": "Couper la personne pour parler", "en": "Cut the person off to speak", "ar": "مقاطعة الشخص للحديث" },
-        { "fr": "Poser une question claire en fin d’échange", "en": "Ask a clear question at the end of the exchange", "ar": "طرح سؤال واضح في نهاية الحوار" },
-        { "fr": "Demander des informations confidentielles", "en": "Ask for confidential information", "ar": "طلب معلومات سرية" }
+        {
+          "fr": "Maîtriser le langage corporel durant l’échange",
+          "en": "Master body language during the exchange",
+          "ar": "إتقان لغة الجسد أثناء الحوار",
+          "de": "Master body language during the exchange",
+          "esp": "Master body language during the exchange",
+          "it": "Master body language during the exchange"
+        },
+        {
+          "fr": "Respecter l’heure d’arrivée à l'entretien",
+          "en": "Respect the arrival time at the interview",
+          "ar": "احترام وقت الوصول للمقابلة",
+          "de": "Respect the arrival time at the interview",
+          "esp": "Respect the arrival time at the interview",
+          "it": "Respect the arrival time at the interview"
+        },
+        {
+          "fr": "Toutes les réponses précédentes",
+          "en": "All previous answers",
+          "ar": "جميع الإجابات السابقة",
+          "de": "All previous answers",
+          "esp": "All previous answers",
+          "it": "All previous answers"
+        }
       ],
-      "correct": { "fr": "Poser une question claire en fin d’échange", "en": "Ask a clear question at the end of the exchange", "ar": "طرح سؤال واضح في نهاية الحوار" }
+      "correct": {
+        "fr": "Situation / Tâche / Action / Résultat (STAR/CAR)",
+        "en": "Situation / Task / Action / Result (STAR/CAR)",
+        "ar": "الموقف / المهمة / الإجراء / النتيجة (STAR/CAR)",
+        "de": "Situation / Task / Action / Result (STAR/CAR)",
+        "esp": "Situation / Task / Action / Result (STAR/CAR)",
+        "it": "Situation / Task / Action / Result (STAR/CAR)"
+      }
     },
     {
-      "question": { "fr": "Si le recruteur demande d’envoyer un CV, tu dois :", "en": "If the recruiter asks to send a CV, you should:", "ar": "إذا طلب المجند إرسال السيرة الذاتية، يجب عليك:" },
+      "question": {
+        "fr": "Est-il nécessaire de faire une recherche à propos des questions posées dans un entretien qui peuvent être en relation avec la poste ?",
+        "en": "Is it necessary to research questions asked in an interview that may be related to the position?",
+        "ar": "هل من الضروري البحث عن الأسئلة المطروحة في المقابلة والتي قد تكون مرتبطة بالوظيفة؟",
+        "de": "Is it necessary to research questions asked in an interview that may be related to the position?",
+        "esp": "Is it necessary to research questions asked in an interview that may be related to the position?",
+        "it": "Is it necessary to research questions asked in an interview that may be related to the position?"
+      },
       "options": [
-        { "fr": "L’envoyer en pièce jointe et remercier", "en": "Send it as an attachment and thank them", "ar": "إرساله كمرفق وشكرهم" },
-        { "fr": "L’envoyer plus tard sans relance", "en": "Send it later without follow-up", "ar": "إرساله لاحقًا دون متابعة" },
-        { "fr": "Ne pas l’envoyer", "en": "Do not send it", "ar": "عدم إرساله" }
+        {
+          "fr": "Répondre n’importe quoi",
+          "en": "Answer anything",
+          "ar": "الإجابة بأي شيء",
+          "de": "Answer anything",
+          "esp": "Answer anything",
+          "it": "Answer anything"
+        },
+        {
+          "fr": "Prendre un instant pour réfléchir puis répondre clairement",
+          "en": "Take a moment to think then answer clearly",
+          "ar": "أخذ لحظة للتفكير ثم الرد بوضوح",
+          "de": "Take a moment to think then answer clearly",
+          "esp": "Take a moment to think then answer clearly",
+          "it": "Take a moment to think then answer clearly"
+        },
+        {
+          "fr": "Ignorer la question",
+          "en": "Ignore the question",
+          "ar": "تجاهل السؤال",
+          "de": "Ignore the question",
+          "esp": "Ignore the question",
+          "it": "Ignore the question"
+        }
       ],
-      "correct": { "fr": "L’envoyer en pièce jointe et remercier", "en": "Send it as an attachment and thank them", "ar": "إرساله كمرفق وشكرهم" }
+      "correct": {
+        "fr": "Prendre un instant pour réfléchir puis répondre clairement",
+        "en": "Take a moment to think then answer clearly",
+        "ar": "أخذ لحظة للتفكير ثم الرد بوضوح",
+        "de": "Take a moment to think then answer clearly",
+        "esp": "Take a moment to think then answer clearly",
+        "it": "Take a moment to think then answer clearly"
+      }
     },
     {
-      "question": { "fr": "Pourquoi préparer un script de prospection ?", "en": "Why prepare a prospecting script?", "ar": "لماذا تحضير نص للتنقيب؟" },
+      "question": {
+        "fr": "Avant de passer un entretien, est-il nécessaire de faire une recherche sur l’entreprise d'accueil ?",
+        "en": "Before attending an interview, is it necessary to research the host company?",
+        "ar": "قبل إجراء المقابلة، هل من الضروري البحث عن الشركة المستضيفة؟",
+        "de": "Before attending an interview, is it necessary to research the host company?",
+        "esp": "Before attending an interview, is it necessary to research the host company?",
+        "it": "Before attending an interview, is it necessary to research the host company?"
+      },
       "options": [
-        { "fr": "Pour réciter mécaniquement", "en": "To recite mechanically", "ar": "للحفظ آليًا" },
-        { "fr": "Pour se sentir plus confiant et structurer le message", "en": "To feel more confident and structure the message", "ar": "للشعور بمزيد من الثقة وتنظيم الرسالة" },
-        { "fr": "Pour éviter toute improvisation même naturelle", "en": "To avoid any improvisation even if natural", "ar": "لتجنب أي ارتجال حتى لو كان طبيعيًا" }
+        {
+          "fr": "Regarder le sol",
+          "en": "Look at the floor",
+          "ar": "النظر إلى الأرض",
+          "de": "Look at the floor",
+          "esp": "Look at the floor",
+          "it": "Look at the floor"
+        },
+        {
+          "fr": "Maintenir le regard, posture droite, gestes mesurés",
+          "en": "Maintain eye contact, straight posture, measured gestures",
+          "ar": "الحفاظ على التواصل البصري، وضعية مستقيمة، إيماءات محسوبة",
+          "de": "Maintain eye contact, straight posture, measured gestures",
+          "esp": "Maintain eye contact, straight posture, measured gestures",
+          "it": "Maintain eye contact, straight posture, measured gestures"
+        },
+        {
+          "fr": "Croiser les bras",
+          "en": "Cross your arms",
+          "ar": "تقبيل الذراعين",
+          "de": "Cross your arms",
+          "esp": "Cross your arms",
+          "it": "Cross your arms"
+        }
       ],
-      "correct": { "fr": "Pour se sentir plus confiant et structurer le message", "en": "To feel more confident and structure the message", "ar": "للشعور بمزيد من الثقة وتنظيم الرسالة" }
+      "correct": {
+        "fr": "Maintenir le regard, posture droite, gestes mesurés",
+        "en": "Maintain eye contact, straight posture, measured gestures",
+        "ar": "الحفاظ على التواصل البصري، وضعية مستقيمة، إيماءات محسوبة",
+        "de": "Maintain eye contact, straight posture, measured gestures",
+        "esp": "Maintain eye contact, straight posture, measured gestures",
+        "it": "Maintain eye contact, straight posture, measured gestures"
+      }
     },
     {
-      "question": { "fr": "Quelle attitude adopter face à un refus lors de prospection ?", "en": "What attitude to adopt in the face of rejection during prospecting?", "ar": "أي سلوك يجب اتباعه عند الرفض أثناء التنقيب؟" },
+      "question": {
+        "fr": "Pensez-vous qu’il est nécessaire de s’entraîner à une situation similaire avant l’entretien ?",
+        "en": "Do you think it's necessary to practice a similar situation before the interview?",
+        "ar": "هل تعتقد أنه من الضروري التدرب على موقف مشابه قبل المقابلة؟",
+        "de": "Do you think it's necessary to practice a similar situation before the interview?",
+        "esp": "Do you think it's necessary to practice a similar situation before the interview?",
+        "it": "Do you think it's necessary to practice a similar situation before the interview?"
+      },
       "options": [
-        { "fr": "S’emporter", "en": "Lose your temper", "ar": "فقدان التحكم" },
-        { "fr": "Remercier, demander un feedback et rester positif", "en": "Thank them, ask for feedback and stay positive", "ar": "شكرهم، طلب ملاحظات والبقاء إيجابيًا" },
-        { "fr": "Continuer à insister agressivement", "en": "Continue to insist aggressively", "ar": "الاستمرار في الإصرار بشكل عدواني" }
+        {
+          "fr": "Sans conclusion",
+          "en": "Without conclusion",
+          "ar": "بدون خاتمة",
+          "de": "Without conclusion",
+          "esp": "Without conclusion",
+          "it": "Without conclusion"
+        },
+        {
+          "fr": "Par un résumé et une ouverture (question ou intérêt pour le poste)",
+          "en": "With a summary and an opening (question or interest in the position)",
+          "ar": "بملخص وفتح (سؤال أو إظهار الاهتمام بالوظيفة)",
+          "de": "With a summary and an opening (question or interest in the position)",
+          "esp": "With a summary and an opening (question or interest in the position)",
+          "it": "With a summary and an opening (question or interest in the position)"
+        },
+        {
+          "fr": "En demandant le salaire immédiatement",
+          "en": "By asking for the salary immediately",
+          "ar": "بالمطالبة بالراتب فورًا",
+          "de": "By asking for the salary immediately",
+          "esp": "By asking for the salary immediately",
+          "it": "By asking for the salary immediately"
+        }
       ],
-      "correct": { "fr": "Remercier, demander un feedback et rester positif", "en": "Thank them, ask for feedback and stay positive", "ar": "شكرهم، طلب ملاحظات والبقاء إيجابيًا" }
+      "correct": {
+        "fr": "Par un résumé et une ouverture (question ou intérêt pour le poste)",
+        "en": "With a summary and an opening (question or interest in the position)",
+        "ar": "بملخص وفتح (سؤال أو إظهار الاهتمام بالوظيفة)",
+        "de": "With a summary and an opening (question or interest in the position)",
+        "esp": "With a summary and an opening (question or interest in the position)",
+        "it": "With a summary and an opening (question or interest in the position)"
+      }
     },
     {
-      "question": { "fr": "Lors d’une prospection, que vaut la qualité par rapport à la quantité ?", "en": "In prospecting, what is the value of quality compared to quantity?", "ar": "في التنقيب، ما قيمة الجودة مقارنة بالكمية؟" },
+      "question": {
+        "fr": "Quel est le but d’une bonne présentation en entretien ?",
+        "en": "What is the purpose of a good presentation in an interview?",
+        "ar": "ما هو هدف العرض الجيد في المقابلة؟",
+        "de": "What is the purpose of a good presentation in an interview?",
+        "esp": "What is the purpose of a good presentation in an interview?",
+        "it": "What is the purpose of a good presentation in an interview?"
+      },
       "options": [
-        { "fr": "La quantité l’emporte toujours", "en": "Quantity always wins", "ar": "الكمية دائمًا هي الفائزة" },
-        { "fr": "La qualité des contacts ciblés", "en": "The quality of targeted contacts", "ar": "جودة جهات الاتصال المستهدفة" },
-        { "fr": "Négligeable", "en": "Negligible", "ar": "لا يذكر" }
+        {
+          "fr": "Raconter une histoire pertinente en lien avec le poste",
+          "en": "Tell a relevant story related to the role",
+          "ar": "رواية قصة ذات صلة بالوظيفة",
+          "de": "Tell a relevant story related to the role",
+          "esp": "Tell a relevant story related to the role",
+          "it": "Tell a relevant story related to the role"
+        },
+        {
+          "fr": "Ajouter des blagues sans rapport",
+          "en": "Add unrelated jokes",
+          "ar": "إضافة نكات غير مرتبطة",
+          "de": "Add unrelated jokes",
+          "esp": "Add unrelated jokes",
+          "it": "Add unrelated jokes"
+        },
+        {
+          "fr": "Lister des termes techniques",
+          "en": "List technical terms",
+          "ar": "سرد مصطلحات تقنية",
+          "de": "List technical terms",
+          "esp": "List technical terms",
+          "it": "List technical terms"
+        }
       ],
-      "correct": { "fr": "La qualité des contacts ciblés", "en": "The quality of targeted contacts", "ar": "جودة جهات الاتصال المستهدفة" }
+      "correct": {
+        "fr": "Raconter une histoire pertinente en lien avec le poste",
+        "en": "Tell a relevant story related to the role",
+        "ar": "رواية قصة ذات صلة بالوظيفة",
+        "de": "Tell a relevant story related to the role",
+        "esp": "Tell a relevant story related to the role",
+        "it": "Tell a relevant story related to the role"
+      }
     },
     {
-      "question": { "fr": "Quel canal peut compléter la prospection téléphonique ?", "en": "Which channel can complement phone prospecting?", "ar": "أي قناة يمكن أن تكمل التنقيب عبر الهاتف؟" },
+      "question": {
+        "fr": "Combien de minutes dure une bonne introduction ?",
+        "en": "How many minutes does a good introduction last?",
+        "ar": "كم دقيقة تستغرق المقدمة الجيدة؟",
+        "de": "How many minutes does a good introduction last?",
+        "esp": "How many minutes does a good introduction last?",
+        "it": "How many minutes does a good introduction last?"
+      },
       "options": [
-        { "fr": "Un seul canal suffit", "en": "A single channel is enough", "ar": "قناة واحدة كافية" },
-        { "fr": "E-mail de suivi et message LinkedIn", "en": "Follow-up email and LinkedIn message", "ar": "بريد متابعة ورسالة LinkedIn" },
-        { "fr": "Poste une lettre manuscrite uniquement", "en": "Send a handwritten letter only", "ar": "إرسال رسالة مكتوبة بخط اليد فقط" }
+        {
+          "fr": "En supposant que le recruteur comprend tout",
+          "en": "Assuming the recruiter understands everything",
+          "ar": "افتراض أن المجند يفهم كل شيء",
+          "de": "Assuming the recruiter understands everything",
+          "esp": "Assuming the recruiter understands everything",
+          "it": "Assuming the recruiter understands everything"
+        },
+        {
+          "fr": "En donnant un exemple concret où tu as fait la différence",
+          "en": "By giving a concrete example where you made a difference",
+          "ar": "بتقديم مثال ملموس حيث أحدثت فرقًا",
+          "de": "By giving a concrete example where you made a difference",
+          "esp": "By giving a concrete example where you made a difference",
+          "it": "By giving a concrete example where you made a difference"
+        },
+        {
+          "fr": "En parlant uniquement de responsabilités",
+          "en": "By talking only about responsibilities",
+          "ar": "التحدث عن المسؤوليات فقط",
+          "de": "By talking only about responsibilities",
+          "esp": "By talking only about responsibilities",
+          "it": "By talking only about responsibilities"
+        }
       ],
-      "correct": { "fr": "E-mail de suivi et message LinkedIn", "en": "Follow-up email and LinkedIn message", "ar": "بريد متابعة ورسالة LinkedIn" }
+      "correct": {
+        "fr": "En donnant un exemple concret où tu as fait la différence",
+        "en": "By giving a concrete example where you made a difference",
+        "ar": "بتقديم مثال ملموس حيث أحدثت فرقًا",
+        "de": "By giving a concrete example where you made a difference",
+        "esp": "By giving a concrete example where you made a difference",
+        "it": "By giving a concrete example where you made a difference"
+      }
     },
     {
-      "question": { "fr": "Comment capter l’attention rapidement dans un pitch ?", "en": "How to capture attention quickly in a pitch?", "ar": "كيفية جذب الانتباه بسرعة في العرض؟" },
+      "question": {
+        "fr": "Quels éléments doivent figurer dans une présentation ?",
+        "en": "What elements should be included in a presentation?",
+        "ar": "ما هي العناصر التي يجب أن تتضمنها العرض؟",
+        "de": "What elements should be included in a presentation?",
+        "esp": "What elements should be included in a presentation?",
+        "it": "What elements should be included in a presentation?"
+      },
       "options": [
-        { "fr": "Commencer par une anecdote longue", "en": "Start with a long anecdote", "ar": "البدء بحكاية طويلة" },
-        { "fr": "Utiliser une phrase d’accroche claire sur ta valeur", "en": "Use a clear hook about your value", "ar": "استخدم جملة تعريفية واضحة حول قيمتك" },
-        { "fr": "Donner ton CV sans parler", "en": "Give your CV without speaking", "ar": "إعطاء سيرتك الذاتية دون التحدث" }
+        {
+          "fr": "Trop de préparation",
+          "en": "Too much preparation",
+          "ar": "التحضير المفرط",
+          "de": "Too much preparation",
+          "esp": "Too much preparation",
+          "it": "Too much preparation"
+        },
+        {
+          "fr": "Vouloir tout dire au lieu de choisir l’essentiel",
+          "en": "Wanting to say everything instead of choosing the essential",
+          "ar": "الرغبة في قول كل شيء بدل اختيار الأساسي",
+          "de": "Wanting to say everything instead of choosing the essential",
+          "esp": "Wanting to say everything instead of choosing the essential",
+          "it": "Wanting to say everything instead of choosing the essential"
+        },
+        {
+          "fr": "Être concis",
+          "en": "Being concise",
+          "ar": "الاختصار",
+          "de": "Being concise",
+          "esp": "Being concise",
+          "it": "Being concise"
+        }
       ],
-      "correct": { "fr": "Utiliser une phrase d’accroche claire sur ta valeur", "en": "Use a clear hook about your value", "ar": "استخدم جملة تعريفية واضحة حول قيمتك" }
+      "correct": {
+        "fr": "Vouloir tout dire au lieu de choisir l’essentiel",
+        "en": "Wanting to say everything instead of choosing the essential",
+        "ar": "الرغبة في قول كل شيء بدل اختيار الأساسي",
+        "de": "Wanting to say everything instead of choosing the essential",
+        "esp": "Wanting to say everything instead of choosing the essential",
+        "it": "Wanting to say everything instead of choosing the essential"
+      }
     },
     {
-      "question": { "fr": "Que faut-il éviter lors d’un message de prospection LinkedIn ?", "en": "What should you avoid in a prospecting LinkedIn message?", "ar": "ما الذي يجب تجنبه في رسالة LinkedIn للتنقيب؟" },
+      "question": {
+        "fr": "Pourquoi faut-il éviter de réciter un texte appris ?",
+        "en": "Why should you avoid reciting a learned text?",
+        "ar": "لماذا يجب تجنب تلاوة نص محفوظ؟",
+        "de": "Why should you avoid reciting a learned text?",
+        "esp": "Why should you avoid reciting a learned text?",
+        "it": "Why should you avoid reciting a learned text?"
+      },
       "options": [
-        { "fr": "Être poli", "en": "Being polite", "ar": "أن تكون مهذبًا" },
-        { "fr": "Un message trop long et impersonnel", "en": "A message that is too long and impersonal", "ar": "رسالة طويلة جدًا وغير شخصية" },
-        { "fr": "Indiquer clairement la raison du contact", "en": "Clearly state the reason for contact", "ar": "الإشارة بوضوح إلى سبب الاتصال" }
+        {
+          "fr": "Les lire intégralement",
+          "en": "Read them in full",
+          "ar": "قراءتها بالكامل",
+          "de": "Read them in full",
+          "esp": "Read them in full",
+          "it": "Read them in full"
+        },
+        {
+          "fr": "S’en servir pour illustrer quelques points clés",
+          "en": "Use them to illustrate a few key points",
+          "ar": "استخدامها لتوضيح بعض النقاط الرئيسية",
+          "de": "Use them to illustrate a few key points",
+          "esp": "Use them to illustrate a few key points",
+          "it": "Use them to illustrate a few key points"
+        },
+        {
+          "fr": "Les oublier complètement",
+          "en": "Forget them completely",
+          "ar": "نسيانها تمامًا",
+          "de": "Forget them completely",
+          "esp": "Forget them completely",
+          "it": "Forget them completely"
+        }
       ],
-      "correct": { "fr": "Un message trop long et impersonnel", "en": "A message that is too long and impersonal", "ar": "رسالة طويلة جدًا وغير شخصية" }
+      "correct": {
+        "fr": "S’en servir pour illustrer quelques points clés",
+        "en": "Use them to illustrate a few key points",
+        "ar": "استخدامها لتوضيح بعض النقاط الرئيسية",
+        "de": "Use them to illustrate a few key points",
+        "esp": "Use them to illustrate a few key points",
+        "it": "Use them to illustrate a few key points"
+      }
     },
     {
-      "question": { "fr": "Pourquoi garder un suivi après une prospection ?", "en": "Why keep follow-up after prospecting?", "ar": "لماذا الاحتفاظ بمتابعة بعد التنقيب؟" },
+      "question": {
+        "fr": "Quel est le secret d'une bonne communication orale ?",
+        "en": "What is the secret to good oral communication?",
+        "ar": "ما هو سر التواصل الشفوي الجيد؟",
+        "de": "What is the secret to good oral communication?",
+        "esp": "What is the secret to good oral communication?",
+        "it": "What is the secret to good oral communication?"
+      },
       "options": [
-        { "fr": "Pour harceler le recruteur", "en": "To harass the recruiter", "ar": "لمضايقة المجند" },
-        { "fr": "Pour montrer ton intérêt et rester dans les radars", "en": "To show your interest and stay on the radar", "ar": "لإظهار اهتمامك والبقاء في الرادار" },
-        { "fr": "Il n’est pas utile", "en": "It is not useful", "ar": "ليس مفيدًا" }
+        {
+          "fr": "Placer tous les mots appris",
+          "en": "Place all learned words",
+          "ar": "استخدام كل الكلمات المتعلمة",
+          "de": "Place all learned words",
+          "esp": "Place all learned words",
+          "it": "Place all learned words"
+        },
+        {
+          "fr": "Convaincre le recruteur que tu es apte pour le poste",
+          "en": "Convince the recruiter that you are fit for the role",
+          "ar": "إقناع المجند بأنك مؤهل للوظيفة",
+          "de": "Convince the recruiter that you are fit for the role",
+          "esp": "Convince the recruiter that you are fit for the role",
+          "it": "Convince the recruiter that you are fit for the role"
+        },
+        {
+          "fr": "Impressionner par le vocabulaire",
+          "en": "Impress with vocabulary",
+          "ar": "الإبهار بالمفردات",
+          "de": "Impress with vocabulary",
+          "esp": "Impress with vocabulary",
+          "it": "Impress with vocabulary"
+        }
       ],
-      "correct": { "fr": "Pour montrer ton intérêt et rester dans les radars", "en": "To show your interest and stay on the radar", "ar": "لإظهار اهتمامك والبقاء في الرادار" }
-    },
-    {
-      "question": { "fr": "Quel élément inclure dans un e-mail de prospection ?", "en": "What element to include in a prospecting email?", "ar": "ما العنصر الذي يجب تضمينه في بريد التنقيب؟" },
-      "options": [
-        { "fr": "Un seul mot", "en": "A single word", "ar": "كلمة واحدة" },
-        { "fr": "Une présentation courte, ton CV en pièce jointe, proposition d’action", "en": "A short introduction, your CV attached, proposed action", "ar": "مقدمة قصيرة، سيرتك الذاتية كمرفق، اقتراح إجراء" },
-        { "fr": "Un lien vers des pages non professionnelles", "en": "A link to non-professional pages", "ar": "رابط لصفحات غير مهنية" }
-      ],
-      "correct": { "fr": "Une présentation courte, ton CV en pièce jointe, proposition d’action", "en": "A short introduction, your CV attached, proposed action", "ar": "مقدمة قصيرة، سيرتك الذاتية كمرفق، اقتراح إجراء" }
-    },
-    {
-      "question": { "fr": "Quelle est la meilleure durée d’un premier appel professionnel ?", "en": "What is the best duration for a first professional call?", "ar": "ما هي أفضل مدة للمكالمة المهنية الأولى؟" },
-      "options": [
-        { "fr": "1–2 minutes si simple, jusqu’à 10 minutes si opportunité", "en": "1–2 minutes if simple, up to 10 minutes if opportunity", "ar": "1-2 دقيقة إذا كانت بسيطة، حتى 10 دقائق إذا كانت هناك فرصة" },
-        { "fr": "1 heure systématiquement", "en": "1 hour systematically", "ar": "ساعة واحدة بشكل دائم" },
-        { "fr": "30 secondes toujours", "en": "30 seconds always", "ar": "30 ثانية دائمًا" }
-      ],
-      "correct": { "fr": "1–2 minutes si simple, jusqu’à 10 minutes si opportunité", "en": "1–2 minutes if simple, up to 10 minutes if opportunity", "ar": "1-2 دقيقة إذا كانت بسيطة، حتى 10 دقائق إذا كانت هناك فرصة" }
-    },
-    {
-      "question": { "fr": "Lors d’une prospection B2B, il est utile de :", "en": "During B2B prospecting, it is useful to:", "ar": "أثناء التنقيب بين الشركات، من المفيد:" },
-      "options": [
-        { "fr": "Ignorer la hiérarchie", "en": "Ignore the hierarchy", "ar": "تجاهل الهيكل التنظيمي" },
-        { "fr": "Identifier la bonne personne à contacter (RRH, manager)", "en": "Identify the right person to contact (HR, manager)", "ar": "تحديد الشخص المناسب للاتصال به (الموارد البشرية، المدير)" },
-        { "fr": "Appeler le standard sans préparation", "en": "Call the switchboard without preparation", "ar": "الاتصال بالمكتب الرئيسي دون تحضير" }
-      ],
-      "correct": { "fr": "Identifier la bonne personne à contacter (RRH, manager)", "en": "Identify the right person to contact (HR, manager)", "ar": "تحديد الشخص المناسب للاتصال به (الموارد البشرية، المدير)" }
-    },
-    {
-      "question": { "fr": "En prospection, une relance efficace se fait :", "en": "In prospecting, an effective follow-up is done:", "ar": "في التنقيب، يتم إجراء متابعة فعالة:" },
-      "options": [
-        { "fr": "Tous les jours sans cesse", "en": "Every day without stopping", "ar": "كل يوم دون توقف" },
-        { "fr": "Après un délai poli (par ex. 7–10 jours) avec un message court", "en": "After a polite delay (e.g., 7–10 days) with a short message", "ar": "بعد مهلة مهذبة (مثلا 7-10 أيام) مع رسالة قصيرة" },
-        { "fr": "Jamais", "en": "Never", "ar": "أبدًا" }
-      ],
-      "correct": { "fr": "Après un délai poli (par ex. 7–10 jours) avec un message court", "en": "After a polite delay (e.g., 7–10 days) with a short message", "ar": "بعد مهلة مهذبة (مثلا 7-10 أيام) مع رسالة قصيرة" }
-    },
-    {
-      "question": { "fr": "Quelle attitude favorise la réussite d’une prospection ?", "en": "Which attitude favors the success of prospecting?", "ar": "أي سلوك يعزز نجاح التنقيب؟" },
-      "options": [
-        { "fr": "Être agressif", "en": "Be aggressive", "ar": "كن عدوانيًا" },
-        { "fr": "Être professionnel, préparé et persévérant", "en": "Be professional, prepared and persistent", "ar": "كن محترفًا، مستعدًا ومصرًا" },
-        { "fr": "Être passif", "en": "Be passive", "ar": "كن سلبيًا" }
-      ],
-      "correct": { "fr": "Être professionnel, préparé et persévérant", "en": "Be professional, prepared and persistent", "ar": "كن محترفًا، مستعدًا ومصرًا" }
+      "correct": {
+        "fr": "Convaincre le recruteur que tu es apte pour le poste",
+        "en": "Convince the recruiter that you are fit for the role",
+        "ar": "إقناع المجند بأنك مؤهل للوظيفة",
+        "de": "Convince the recruiter that you are fit for the role",
+        "esp": "Convince the recruiter that you are fit for the role",
+        "it": "Convince the recruiter that you are fit for the role"
+      }
     }
   ]
 }

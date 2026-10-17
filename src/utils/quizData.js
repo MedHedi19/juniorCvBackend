@@ -17,11 +17,11 @@ const loadPersonalityTest = (language = 'fr') => {
 
       const testName = Object.keys(testData)[0];
       const questions = testData[testName].map((question) => ({
-        question: question.question[language] || question.question['fr'], // Fallback to French
+        question: question.question[language] || question.question['fr'] || question.question['en'] || question.question['ar'] || question.question['de'] || question.question['esp'] || question.question['it'],
         options: Object.fromEntries(
           Object.entries(question.options).map(([color, texts]) => [
             color,
-            texts[language] || texts['fr'], // Fallback to French
+            texts[language] || texts['fr'] || texts['en'] || texts['ar'] || texts['de'] || texts['esp'] || texts['it'],
           ])
         ),
       }));

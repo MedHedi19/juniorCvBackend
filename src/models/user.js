@@ -91,6 +91,11 @@ const userSchema = new mongoose.Schema(
       type: Number,
       default: 0,
     },
+    // certificate reference number (e.g., 2207-01, 2207-02)
+    certificateReference: {
+      type: String,
+      default: null,
+    },
   },
   { timestamps: true }
 );

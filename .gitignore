@@ -1,15 +1,7 @@
-# Node modules
+# Dependencies
 node_modules/
 
-# Test files
-__tests__/
-tests/
-test-*
-*.test.js
-jest.*.js
-*.spec.js
-
-# Environment variables
+# Environment
 .env
 
 # Logs
@@ -18,25 +10,20 @@ logs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-email-*.log
 
-# Optional: OS-specific files
+# Tests / coverage
+coverage/
+.nyc_output/
+
+# OS
 .DS_Store
 Thumbs.db
 
-# Generated security/lint/audit artifacts
-audit-readable.txt
-audit-report.txt
-audit.json
-security-scan.txt
+# IDE
+.vscode/
+.idea/
 
-# Generated lint and analysis outputs
-eslint-errors.txt
-eslint-results.json
-eslint-sec.json
-lint-results.txt
-results.json
-summary.json
-remaining.json
-final_errors.json
-final_errors2.json
+# Temp / generated
+tmp/
+temp/
+*.tmp

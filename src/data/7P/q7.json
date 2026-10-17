@@ -1,184 +1,884 @@
 {
   "Positivité": [
     {
-      "question": { "fr": "Après un entretien, il est recommandé de :", "en": "After an interview, it is recommended to:", "ar": "بعد المقابلة، يُنصح بـ:" },
+      "question": {
+        "fr": "Après un entretien, il est recommandé de :",
+        "en": "After an interview, it is recommended to:",
+        "ar": "بعد المقابلة، يُنصح بـ:",
+        "de": "After an interview, it is recommended to:",
+        "esp": "After an interview, it is recommended to:",
+        "it": "After an interview, it is recommended to:"
+      },
       "options": [
-        { "fr": "Ne rien faire et oublier", "en": "Do nothing and forget", "ar": "لا تفعل شيئًا وتنسى" },
-        { "fr": "Envoyer un mail de remerciement et faire une auto-évaluation", "en": "Send a thank-you email and do a self-evaluation", "ar": "إرسال بريد شكر وإجراء تقييم ذاتي" },
-        { "fr": "Appeler toutes les heures", "en": "Call every hour", "ar": "الاتصال كل ساعة" }
+        {
+          "fr": "Ne rien faire et oublier",
+          "en": "Do nothing and forget",
+          "ar": "لا تفعل شيئًا وتنسى",
+          "de": "Do nothing and forget",
+          "esp": "Do nothing and forget",
+          "it": "Do nothing and forget"
+        },
+        {
+          "fr": "Envoyer un mail de remerciement et faire une auto-évaluation",
+          "en": "Send a thank-you email and do a self-evaluation",
+          "ar": "إرسال بريد شكر وإجراء تقييم ذاتي",
+          "de": "Send a thank-you email and do a self-evaluation",
+          "esp": "Send a thank-you email and do a self-evaluation",
+          "it": "Send a thank-you email and do a self-evaluation"
+        },
+        {
+          "fr": "Appeler toutes les heures",
+          "en": "Call every hour",
+          "ar": "الاتصال كل ساعة",
+          "de": "Call every hour",
+          "esp": "Call every hour",
+          "it": "Call every hour"
+        }
       ],
-      "correct": { "fr": "Envoyer un mail de remerciement et faire une auto-évaluation", "en": "Send a thank-you email and do a self-evaluation", "ar": "إرسال بريد شكر وإجراء تقييم ذاتي" }
+      "correct": {
+        "fr": "Envoyer un mail de remerciement et faire une auto-évaluation",
+        "en": "Send a thank-you email and do a self-evaluation",
+        "ar": "إرسال بريد شكر وإجراء تقييم ذاتي",
+        "de": "Send a thank-you email and do a self-evaluation",
+        "esp": "Send a thank-you email and do a self-evaluation",
+        "it": "Send a thank-you email and do a self-evaluation"
+      }
     },
     {
-      "question": { "fr": "Qu’est-ce que la positivité professionnelle ?", "en": "What is professional positivity?", "ar": "ما هي الإيجابية المهنية؟" },
+      "question": {
+        "fr": "Qu’est-ce que la positivité professionnelle ?",
+        "en": "What is professional positivity?",
+        "ar": "ما هي الإيجابية المهنية؟",
+        "de": "What is professional positivity?",
+        "esp": "What is professional positivity?",
+        "it": "What is professional positivity?"
+      },
       "options": [
-        { "fr": "Ignorer les problèmes", "en": "Ignore problems", "ar": "تجاهل المشكلات" },
-        { "fr": "Avoir une attitude constructive, apprendre et relancer poliment", "en": "Have a constructive attitude, learn and follow up politely", "ar": "امتلاك موقف بنّاء، التعلم والمتابعة بأدب" },
-        { "fr": "Toujours dire oui sans réfléchir", "en": "Always say yes without thinking", "ar": "دائمًا قل نعم دون تفكير" }
+        {
+          "fr": "Ignorer les problèmes",
+          "en": "Ignore problems",
+          "ar": "تجاهل المشكلات",
+          "de": "Ignore problems",
+          "esp": "Ignore problems",
+          "it": "Ignore problems"
+        },
+        {
+          "fr": "Avoir une attitude constructive, apprendre et relancer poliment",
+          "en": "Have a constructive attitude, learn and follow up politely",
+          "ar": "امتلاك موقف بنّاء، التعلم والمتابعة بأدب",
+          "de": "Have a constructive attitude, learn and follow up politely",
+          "esp": "Have a constructive attitude, learn and follow up politely",
+          "it": "Have a constructive attitude, learn and follow up politely"
+        },
+        {
+          "fr": "Toujours dire oui sans réfléchir",
+          "en": "Always say yes without thinking",
+          "ar": "دائمًا قل نعم دون تفكير",
+          "de": "Always say yes without thinking",
+          "esp": "Always say yes without thinking",
+          "it": "Always say yes without thinking"
+        }
       ],
-      "correct": { "fr": "Avoir une attitude constructive, apprendre et relancer poliment", "en": "Have a constructive attitude, learn and follow up politely", "ar": "امتلاك موقف بنّاء، التعلم والمتابعة بأدب" }
+      "correct": {
+        "fr": "Avoir une attitude constructive, apprendre et relancer poliment",
+        "en": "Have a constructive attitude, learn and follow up politely",
+        "ar": "امتلاك موقف بنّاء، التعلم والمتابعة بأدب",
+        "de": "Have a constructive attitude, learn and follow up politely",
+        "esp": "Have a constructive attitude, learn and follow up politely",
+        "it": "Have a constructive attitude, learn and follow up politely"
+      }
     },
     {
-      "question": { "fr": "Pourquoi demander un feedback après un refus ?", "en": "Why ask for feedback after a rejection?", "ar": "لماذا تطلب ملاحظات بعد الرفض؟" },
+      "question": {
+        "fr": "Pourquoi demander un feedback après un refus ?",
+        "en": "Why ask for feedback after a rejection?",
+        "ar": "لماذا تطلب ملاحظات بعد الرفض؟",
+        "de": "Why ask for feedback after a rejection?",
+        "esp": "Why ask for feedback after a rejection?",
+        "it": "Why ask for feedback after a rejection?"
+      },
       "options": [
-        { "fr": "Pour se plaindre", "en": "To complain", "ar": "للشكوى" },
-        { "fr": "Pour comprendre et progresser", "en": "To understand and improve", "ar": "للفهم والتقدم" },
-        { "fr": "Pour contester la décision", "en": "To contest the decision", "ar": "للاستئناف على القرار" }
+        {
+          "fr": "Pour se plaindre",
+          "en": "To complain",
+          "ar": "للشكوى",
+          "de": "To complain",
+          "esp": "To complain",
+          "it": "To complain"
+        },
+        {
+          "fr": "Pour comprendre et progresser",
+          "en": "To understand and improve",
+          "ar": "للفهم والتقدم",
+          "de": "To understand and improve",
+          "esp": "To understand and improve",
+          "it": "To understand and improve"
+        },
+        {
+          "fr": "Pour contester la décision",
+          "en": "To contest the decision",
+          "ar": "للاستئناف على القرار",
+          "de": "To contest the decision",
+          "esp": "To contest the decision",
+          "it": "To contest the decision"
+        }
       ],
-      "correct": { "fr": "Pour comprendre et progresser", "en": "To understand and improve", "ar": "للفهم والتقدم" }
+      "correct": {
+        "fr": "Pour comprendre et progresser",
+        "en": "To understand and improve",
+        "ar": "للفهم والتقدم",
+        "de": "To understand and improve",
+        "esp": "To understand and improve",
+        "it": "To understand and improve"
+      }
     },
     {
-      "question": { "fr": "Une relance efficace se fait :", "en": "An effective follow-up is done:", "ar": "المتابعة الفعّالة تتم:" },
+      "question": {
+        "fr": "Une relance efficace se fait :",
+        "en": "An effective follow-up is done:",
+        "ar": "المتابعة الفعّالة تتم:",
+        "de": "An effective follow-up is done:",
+        "esp": "An effective follow-up is done:",
+        "it": "An effective follow-up is done:"
+      },
       "options": [
-        { "fr": "Immédiatement plusieurs fois par jour", "en": "Immediately several times a day", "ar": "فورًا عدة مرات في اليوم" },
-        { "fr": "Après un délai poli (ex. 7–10 jours) et de façon concise", "en": "After a polite delay (e.g., 7–10 days) and concisely", "ar": "بعد مهلة مؤدبة (مثل 7-10 أيام) وبشكل موجز" },
-        { "fr": "Sans objet ni message", "en": "Without subject or message", "ar": "بدون موضوع أو رسالة" }
+        {
+          "fr": "Immédiatement plusieurs fois par jour",
+          "en": "Immediately several times a day",
+          "ar": "فورًا عدة مرات في اليوم",
+          "de": "Immediately several times a day",
+          "esp": "Immediately several times a day",
+          "it": "Immediately several times a day"
+        },
+        {
+          "fr": "Après un délai poli (ex. 7–10 jours) et de façon concise",
+          "en": "After a polite delay (e.g., 7–10 days) and concisely",
+          "ar": "بعد مهلة مؤدبة (مثل 7-10 أيام) وبشكل موجز",
+          "de": "After a polite delay (e.g., 7–10 days) and concisely",
+          "esp": "After a polite delay (e.g., 7–10 days) and concisely",
+          "it": "After a polite delay (e.g., 7–10 days) and concisely"
+        },
+        {
+          "fr": "Sans objet ni message",
+          "en": "Without subject or message",
+          "ar": "بدون موضوع أو رسالة",
+          "de": "Without subject or message",
+          "esp": "Without subject or message",
+          "it": "Without subject or message"
+        }
       ],
-      "correct": { "fr": "Après un délai poli (ex. 7–10 jours) et de façon concise", "en": "After a polite delay (e.g., 7–10 days) and concisely", "ar": "بعد مهلة مؤدبة (مثل 7-10 أيام) وبشكل موجز" }
+      "correct": {
+        "fr": "Après un délai poli (ex. 7–10 jours) et de façon concise",
+        "en": "After a polite delay (e.g., 7–10 days) and concisely",
+        "ar": "بعد مهلة مؤدبة (مثل 7-10 أيام) وبشكل موجز",
+        "de": "After a polite delay (e.g., 7–10 days) and concisely",
+        "esp": "After a polite delay (e.g., 7–10 days) and concisely",
+        "it": "After a polite delay (e.g., 7–10 days) and concisely"
+      }
     },
     {
-      "question": { "fr": "Comment se remettre d’un refus de manière constructive ?", "en": "How to recover from a rejection constructively?", "ar": "كيف تتعافى من الرفض بطريقة بناءة؟" },
+      "question": {
+        "fr": "Comment se remettre d’un refus de manière constructive ?",
+        "en": "How to recover from a rejection constructively?",
+        "ar": "كيف تتعافى من الرفض بطريقة بناءة؟",
+        "de": "How to recover from a rejection constructively?",
+        "esp": "How to recover from a rejection constructively?",
+        "it": "How to recover from a rejection constructively?"
+      },
       "options": [
-        { "fr": "Laisser la situation te définir", "en": "Let the situation define you", "ar": "دع الوضع يحددك" },
-        { "fr": "Prendre du recul, analyser et améliorer", "en": "Take a step back, analyze and improve", "ar": "التراجع، التحليل والتحسين" },
-        { "fr": "Abandonner définitivement", "en": "Give up permanently", "ar": "الاستسلام نهائيًا" }
+        {
+          "fr": "Laisser la situation te définir",
+          "en": "Let the situation define you",
+          "ar": "دع الوضع يحددك",
+          "de": "Let the situation define you",
+          "esp": "Let the situation define you",
+          "it": "Let the situation define you"
+        },
+        {
+          "fr": "Prendre du recul, analyser et améliorer",
+          "en": "Take a step back, analyze and improve",
+          "ar": "التراجع، التحليل والتحسين",
+          "de": "Take a step back, analyze and improve",
+          "esp": "Take a step back, analyze and improve",
+          "it": "Take a step back, analyze and improve"
+        },
+        {
+          "fr": "Abandonner définitivement",
+          "en": "Give up permanently",
+          "ar": "الاستسلام نهائيًا",
+          "de": "Give up permanently",
+          "esp": "Give up permanently",
+          "it": "Give up permanently"
+        }
       ],
-      "correct": { "fr": "Prendre du recul, analyser et améliorer", "en": "Take a step back, analyze and improve", "ar": "التراجع، التحليل والتحسين" }
+      "correct": {
+        "fr": "Prendre du recul, analyser et améliorer",
+        "en": "Take a step back, analyze and improve",
+        "ar": "التراجع، التحليل والتحسين",
+        "de": "Take a step back, analyze and improve",
+        "esp": "Take a step back, analyze and improve",
+        "it": "Take a step back, analyze and improve"
+      }
     },
     {
-      "question": { "fr": "Quel comportement favorise la confiance en soi ?", "en": "Which behavior promotes self-confidence?", "ar": "أي سلوك يعزز الثقة بالنفس؟" },
+      "question": {
+        "fr": "Quel comportement favorise la confiance en soi ?",
+        "en": "Which behavior promotes self-confidence?",
+        "ar": "أي سلوك يعزز الثقة بالنفس؟",
+        "de": "Which behavior promotes self-confidence?",
+        "esp": "Which behavior promotes self-confidence?",
+        "it": "Which behavior promotes self-confidence?"
+      },
       "options": [
-        { "fr": "Critiquer constamment ses actions", "en": "Constantly criticize your actions", "ar": "انتقاد تصرفاتك باستمرار" },
-        { "fr": "Reconnaître ses forces et travailler ses axes d’amélioration", "en": "Acknowledge your strengths and work on improvement areas", "ar": "الاعتراف بنقاط قوتك والعمل على مجالات التحسين" },
-        { "fr": "Se comparer sans cesse", "en": "Constantly compare yourself", "ar": "مقارنة نفسك باستمرار" }
+        {
+          "fr": "Critiquer constamment ses actions",
+          "en": "Constantly criticize your actions",
+          "ar": "انتقاد تصرفاتك باستمرار",
+          "de": "Constantly criticize your actions",
+          "esp": "Constantly criticize your actions",
+          "it": "Constantly criticize your actions"
+        },
+        {
+          "fr": "Reconnaître ses forces et travailler ses axes d’amélioration",
+          "en": "Acknowledge your strengths and work on improvement areas",
+          "ar": "الاعتراف بنقاط قوتك والعمل على مجالات التحسين",
+          "de": "Acknowledge your strengths and work on improvement areas",
+          "esp": "Acknowledge your strengths and work on improvement areas",
+          "it": "Acknowledge your strengths and work on improvement areas"
+        },
+        {
+          "fr": "Se comparer sans cesse",
+          "en": "Constantly compare yourself",
+          "ar": "مقارنة نفسك باستمرار",
+          "de": "Constantly compare yourself",
+          "esp": "Constantly compare yourself",
+          "it": "Constantly compare yourself"
+        }
       ],
-      "correct": { "fr": "Reconnaître ses forces et travailler ses axes d’amélioration", "en": "Acknowledge your strengths and work on improvement areas", "ar": "الاعتراف بنقاط قوتك والعمل على مجالات التحسين" }
+      "correct": {
+        "fr": "Reconnaître ses forces et travailler ses axes d’amélioration",
+        "en": "Acknowledge your strengths and work on improvement areas",
+        "ar": "الاعتراف بنقاط قوتك والعمل على مجالات التحسين",
+        "de": "Acknowledge your strengths and work on improvement areas",
+        "esp": "Acknowledge your strengths and work on improvement areas",
+        "it": "Acknowledge your strengths and work on improvement areas"
+      }
     },
     {
-      "question": { "fr": "Pourquoi garder une attitude positive dans la recherche d’emploi ?", "en": "Why keep a positive attitude in job search?", "ar": "لماذا تحافظ على موقف إيجابي أثناء البحث عن عمل؟" },
+      "question": {
+        "fr": "Pourquoi garder une attitude positive dans la recherche d’emploi ?",
+        "en": "Why keep a positive attitude in job search?",
+        "ar": "لماذا تحافظ على موقف إيجابي أثناء البحث عن عمل؟",
+        "de": "Why keep a positive attitude in job search?",
+        "esp": "Why keep a positive attitude in job search?",
+        "it": "Why keep a positive attitude in job search?"
+      },
       "options": [
-        { "fr": "Cela ne change rien", "en": "It changes nothing", "ar": "لا يغير شيئًا" },
-        { "fr": "Cela maintient la motivation et l’énergie dans la recherche", "en": "It keeps motivation and energy in the search", "ar": "يحافظ على الحافز والطاقة أثناء البحث" },
-        { "fr": "Pour donner de faux espoirs", "en": "To give false hopes", "ar": "لمنح آمالًا زائفة" }
+        {
+          "fr": "Cela ne change rien",
+          "en": "It changes nothing",
+          "ar": "لا يغير شيئًا",
+          "de": "It changes nothing",
+          "esp": "It changes nothing",
+          "it": "It changes nothing"
+        },
+        {
+          "fr": "Cela maintient la motivation et l’énergie dans la recherche",
+          "en": "It keeps motivation and energy in the search",
+          "ar": "يحافظ على الحافز والطاقة أثناء البحث",
+          "de": "It keeps motivation and energy in the search",
+          "esp": "It keeps motivation and energy in the search",
+          "it": "It keeps motivation and energy in the search"
+        },
+        {
+          "fr": "Pour donner de faux espoirs",
+          "en": "To give false hopes",
+          "ar": "لمنح آمالًا زائفة",
+          "de": "To give false hopes",
+          "esp": "To give false hopes",
+          "it": "To give false hopes"
+        }
       ],
-      "correct": { "fr": "Cela maintient la motivation et l’énergie dans la recherche", "en": "It keeps motivation and energy in the search", "ar": "يحافظ على الحافز والطاقة أثناء البحث" }
+      "correct": {
+        "fr": "Cela maintient la motivation et l’énergie dans la recherche",
+        "en": "It keeps motivation and energy in the search",
+        "ar": "يحافظ على الحافز والطاقة أثناء البحث",
+        "de": "It keeps motivation and energy in the search",
+        "esp": "It keeps motivation and energy in the search",
+        "it": "It keeps motivation and energy in the search"
+      }
     },
     {
-      "question": { "fr": "À quoi sert une auto-évaluation après un entretien ?", "en": "What is the purpose of a self-evaluation after an interview?", "ar": "ما الغرض من التقييم الذاتي بعد المقابلة؟" },
+      "question": {
+        "fr": "À quoi sert une auto-évaluation après un entretien ?",
+        "en": "What is the purpose of a self-evaluation after an interview?",
+        "ar": "ما الغرض من التقييم الذاتي بعد المقابلة؟",
+        "de": "What is the purpose of a self-evaluation after an interview?",
+        "esp": "What is the purpose of a self-evaluation after an interview?",
+        "it": "What is the purpose of a self-evaluation after an interview?"
+      },
       "options": [
-        { "fr": "À se juger sévèrement", "en": "To judge yourself harshly", "ar": "للحكم على نفسك بقسوة" },
-        { "fr": "À noter ce qui a marché et ce qu’il faut améliorer", "en": "To note what worked and what needs improvement", "ar": "لتدوين ما نجح وما يحتاج إلى تحسين" },
-        { "fr": "À inventer des excuses", "en": "To invent excuses", "ar": "للاختراع أعذار" }
+        {
+          "fr": "À se juger sévèrement",
+          "en": "To judge yourself harshly",
+          "ar": "للحكم على نفسك بقسوة",
+          "de": "To judge yourself harshly",
+          "esp": "To judge yourself harshly",
+          "it": "To judge yourself harshly"
+        },
+        {
+          "fr": "À noter ce qui a marché et ce qu’il faut améliorer",
+          "en": "To note what worked and what needs improvement",
+          "ar": "لتدوين ما نجح وما يحتاج إلى تحسين",
+          "de": "To note what worked and what needs improvement",
+          "esp": "To note what worked and what needs improvement",
+          "it": "To note what worked and what needs improvement"
+        },
+        {
+          "fr": "À inventer des excuses",
+          "en": "To invent excuses",
+          "ar": "للاختراع أعذار",
+          "de": "To invent excuses",
+          "esp": "To invent excuses",
+          "it": "To invent excuses"
+        }
       ],
-      "correct": { "fr": "À noter ce qui a marché et ce qu’il faut améliorer", "en": "To note what worked and what needs improvement", "ar": "لتدوين ما نجح وما يحتاج إلى تحسين" }
+      "correct": {
+        "fr": "À noter ce qui a marché et ce qu’il faut améliorer",
+        "en": "To note what worked and what needs improvement",
+        "ar": "لتدوين ما نجح وما يحتاج إلى تحسين",
+        "de": "To note what worked and what needs improvement",
+        "esp": "To note what worked and what needs improvement",
+        "it": "To note what worked and what needs improvement"
+      }
     },
     {
-      "question": { "fr": "Quel ton utiliser lors d’une relance par mail ?", "en": "What tone to use when following up by email?", "ar": "ما النبرة التي يجب استخدامها عند المتابعة عبر البريد الإلكتروني؟" },
+      "question": {
+        "fr": "Quel ton utiliser lors d’une relance par mail ?",
+        "en": "What tone to use when following up by email?",
+        "ar": "ما النبرة التي يجب استخدامها عند المتابعة عبر البريد الإلكتروني؟",
+        "de": "What tone to use when following up by email?",
+        "esp": "What tone to use when following up by email?",
+        "it": "What tone to use when following up by email?"
+      },
       "options": [
-        { "fr": "Accusateur", "en": "Accusatory", "ar": "متهجم" },
-        { "fr": "Poli, bref et rappel du point clé", "en": "Polite, brief and reminder of the key point", "ar": "مؤدب، موجز وتذكير بالنقطة الأساسية" },
-        { "fr": "Très familier", "en": "Very familiar", "ar": "ودي جدًا" }
+        {
+          "fr": "Accusateur",
+          "en": "Accusatory",
+          "ar": "متهجم",
+          "de": "Accusatory",
+          "esp": "Accusatory",
+          "it": "Accusatory"
+        },
+        {
+          "fr": "Poli, bref et rappel du point clé",
+          "en": "Polite, brief and reminder of the key point",
+          "ar": "مؤدب، موجز وتذكير بالنقطة الأساسية",
+          "de": "Polite, brief and reminder of the key point",
+          "esp": "Polite, brief and reminder of the key point",
+          "it": "Polite, brief and reminder of the key point"
+        },
+        {
+          "fr": "Très familier",
+          "en": "Very familiar",
+          "ar": "ودي جدًا",
+          "de": "Very familiar",
+          "esp": "Very familiar",
+          "it": "Very familiar"
+        }
       ],
-      "correct": { "fr": "Poli, bref et rappel du point clé", "en": "Polite, brief and reminder of the key point", "ar": "مؤدب، موجز وتذكير بالنقطة الأساسية" }
+      "correct": {
+        "fr": "Poli, bref et rappel du point clé",
+        "en": "Polite, brief and reminder of the key point",
+        "ar": "مؤدب، موجز وتذكير بالنقطة الأساسية",
+        "de": "Polite, brief and reminder of the key point",
+        "esp": "Polite, brief and reminder of the key point",
+        "it": "Polite, brief and reminder of the key point"
+      }
     },
     {
-      "question": { "fr": "Pourquoi conserver les contacts professionnels après un entretien ?", "en": "Why keep professional contacts after an interview?", "ar": "لماذا تحتفظ بالاتصالات المهنية بعد المقابلة؟" },
+      "question": {
+        "fr": "Pourquoi conserver les contacts professionnels après un entretien ?",
+        "en": "Why keep professional contacts after an interview?",
+        "ar": "لماذا تحتفظ بالاتصالات المهنية بعد المقابلة؟",
+        "de": "Why keep professional contacts after an interview?",
+        "esp": "Why keep professional contacts after an interview?",
+        "it": "Why keep professional contacts after an interview?"
+      },
       "options": [
-        { "fr": "Ils n’ont aucune valeur", "en": "They have no value", "ar": "ليس لديهم قيمة" },
-        { "fr": "Ils peuvent devenir des sources d’opportunités futures", "en": "They can become sources of future opportunities", "ar": "يمكن أن تصبح مصادر لفرص مستقبلية" },
-        { "fr": "Pour envoyer des messages non sollicités", "en": "To send unsolicited messages", "ar": "لإرسال رسائل غير مرغوب فيها" }
+        {
+          "fr": "Ils n’ont aucune valeur",
+          "en": "They have no value",
+          "ar": "ليس لديهم قيمة",
+          "de": "They have no value",
+          "esp": "They have no value",
+          "it": "They have no value"
+        },
+        {
+          "fr": "Ils peuvent devenir des sources d’opportunités futures",
+          "en": "They can become sources of future opportunities",
+          "ar": "يمكن أن تصبح مصادر لفرص مستقبلية",
+          "de": "They can become sources of future opportunities",
+          "esp": "They can become sources of future opportunities",
+          "it": "They can become sources of future opportunities"
+        },
+        {
+          "fr": "Pour envoyer des messages non sollicités",
+          "en": "To send unsolicited messages",
+          "ar": "لإرسال رسائل غير مرغوب فيها",
+          "de": "To send unsolicited messages",
+          "esp": "To send unsolicited messages",
+          "it": "To send unsolicited messages"
+        }
       ],
-      "correct": { "fr": "Ils peuvent devenir des sources d’opportunités futures", "en": "They can become sources of future opportunities", "ar": "يمكن أن تصبح مصادر لفرص مستقبلية" }
+      "correct": {
+        "fr": "Ils peuvent devenir des sources d’opportunités futures",
+        "en": "They can become sources of future opportunities",
+        "ar": "يمكن أن تصبح مصادر لفرص مستقبلية",
+        "de": "They can become sources of future opportunities",
+        "esp": "They can become sources of future opportunities",
+        "it": "They can become sources of future opportunities"
+      }
     },
     {
-      "question": { "fr": "Quelle phrase est appropriée dans un mail de remerciement ?", "en": "Which phrase is appropriate in a thank-you email?", "ar": "أي عبارة مناسبة في رسالة شكر؟" },
+      "question": {
+        "fr": "Quelle phrase est appropriée dans un mail de remerciement ?",
+        "en": "Which phrase is appropriate in a thank-you email?",
+        "ar": "أي عبارة مناسبة في رسالة شكر؟",
+        "de": "Which phrase is appropriate in a thank-you email?",
+        "esp": "Which phrase is appropriate in a thank-you email?",
+        "it": "Which phrase is appropriate in a thank-you email?"
+      },
       "options": [
-        { "fr": "Merci pour votre temps, j’ai apprécié cet échange.", "en": "Thank you for your time, I appreciated this conversation.", "ar": "شكرًا لوقتك، لقد سرّت بهذا الحوار." },
-        { "fr": "Pourquoi ne m’avez-vous pas pris ?", "en": "Why didn't you hire me?", "ar": "لماذا لم توظفوني؟" },
-        { "fr": "Donnez-moi le poste svp", "en": "Give me the job please", "ar": "أعطني الوظيفة من فضلك" }
+        {
+          "fr": "Merci pour votre temps, j’ai apprécié cet échange.",
+          "en": "Thank you for your time, I appreciated this conversation.",
+          "ar": "شكرًا لوقتك، لقد سرّت بهذا الحوار.",
+          "de": "Thank you for your time, I appreciated this conversation.",
+          "esp": "Thank you for your time, I appreciated this conversation.",
+          "it": "Thank you for your time, I appreciated this conversation."
+        },
+        {
+          "fr": "Pourquoi ne m’avez-vous pas pris ?",
+          "en": "Why didn't you hire me?",
+          "ar": "لماذا لم توظفوني؟",
+          "de": "Why didn't you hire me?",
+          "esp": "Why didn't you hire me?",
+          "it": "Why didn't you hire me?"
+        },
+        {
+          "fr": "Donnez-moi le poste svp",
+          "en": "Give me the job please",
+          "ar": "أعطني الوظيفة من فضلك",
+          "de": "Give me the job please",
+          "esp": "Give me the job please",
+          "it": "Give me the job please"
+        }
       ],
-      "correct": { "fr": "Merci pour votre temps, j’ai apprécié cet échange.", "en": "Thank you for your time, I appreciated this conversation.", "ar": "شكرًا لوقتك، لقد سرّت بهذا الحوار." }
+      "correct": {
+        "fr": "Merci pour votre temps, j’ai apprécié cet échange.",
+        "en": "Thank you for your time, I appreciated this conversation.",
+        "ar": "شكرًا لوقتك، لقد سرّت بهذا الحوار.",
+        "de": "Thank you for your time, I appreciated this conversation.",
+        "esp": "Thank you for your time, I appreciated this conversation.",
+        "it": "Thank you for your time, I appreciated this conversation."
+      }
     },
     {
-      "question": { "fr": "Comment exprimer sa motivation sans paraître désespéré ?", "en": "How to express your motivation without seeming desperate?", "ar": "كيف تعبر عن حماسك دون أن تبدو يائسًا؟" },
+      "question": {
+        "fr": "Comment exprimer sa motivation sans paraître désespéré ?",
+        "en": "How to express your motivation without seeming desperate?",
+        "ar": "كيف تعبر عن حماسك دون أن تبدو يائسًا؟",
+        "de": "How to express your motivation without seeming desperate?",
+        "esp": "How to express your motivation without seeming desperate?",
+        "it": "How to express your motivation without seeming desperate?"
+      },
       "options": [
-        { "fr": "Insister à tout prix", "en": "Insist at all costs", "ar": "الإصرار بأي ثمن" },
-        { "fr": "Exprimer clairement ton intérêt et ce que tu peux apporter", "en": "Clearly express your interest and what you can bring", "ar": "التعبير بوضوح عن اهتمامك وما يمكنك تقديمه" },
-        { "fr": "Envoyer des messages agressifs", "en": "Send aggressive messages", "ar": "إرسال رسائل عدوانية" }
+        {
+          "fr": "Insister à tout prix",
+          "en": "Insist at all costs",
+          "ar": "الإصرار بأي ثمن",
+          "de": "Insist at all costs",
+          "esp": "Insist at all costs",
+          "it": "Insist at all costs"
+        },
+        {
+          "fr": "Exprimer clairement ton intérêt et ce que tu peux apporter",
+          "en": "Clearly express your interest and what you can bring",
+          "ar": "التعبير بوضوح عن اهتمامك وما يمكنك تقديمه",
+          "de": "Clearly express your interest and what you can bring",
+          "esp": "Clearly express your interest and what you can bring",
+          "it": "Clearly express your interest and what you can bring"
+        },
+        {
+          "fr": "Envoyer des messages agressifs",
+          "en": "Send aggressive messages",
+          "ar": "إرسال رسائل عدوانية",
+          "de": "Send aggressive messages",
+          "esp": "Send aggressive messages",
+          "it": "Send aggressive messages"
+        }
       ],
-      "correct": { "fr": "Exprimer clairement ton intérêt et ce que tu peux apporter", "en": "Clearly express your interest and what you can bring", "ar": "التعبير بوضوح عن اهتمامك وما يمكنك تقديمه" }
+      "correct": {
+        "fr": "Exprimer clairement ton intérêt et ce que tu peux apporter",
+        "en": "Clearly express your interest and what you can bring",
+        "ar": "التعبير بوضوح عن اهتمامك وما يمكنك تقديمه",
+        "de": "Clearly express your interest and what you can bring",
+        "esp": "Clearly express your interest and what you can bring",
+        "it": "Clearly express your interest and what you can bring"
+      }
     },
     {
-      "question": { "fr": "Que faire si un recruteur propose un retour tardif ?", "en": "What to do if a recruiter proposes a late reply?", "ar": "ماذا تفعل إذا اقترح المجند ردًا متأخرًا؟" },
+      "question": {
+        "fr": "Que faire si un recruteur propose un retour tardif ?",
+        "en": "What to do if a recruiter proposes a late reply?",
+        "ar": "ماذا تفعل إذا اقترح المجند ردًا متأخرًا؟",
+        "de": "What to do if a recruiter proposes a late reply?",
+        "esp": "What to do if a recruiter proposes a late reply?",
+        "it": "What to do if a recruiter proposes a late reply?"
+      },
       "options": [
-        { "fr": "Rester passif en attendant", "en": "Remain passive while waiting", "ar": "البقاء سلبيًا أثناء الانتظار" },
-        { "fr": "Relancer poliment à la date annoncée", "en": "Follow up politely on the announced date", "ar": "المتابعة بأدب في التاريخ المعلن" },
-        { "fr": "Harceler le recruteur", "en": "Harass the recruiter", "ar": "مضايقة المجند" }
+        {
+          "fr": "Rester passif en attendant",
+          "en": "Remain passive while waiting",
+          "ar": "البقاء سلبيًا أثناء الانتظار",
+          "de": "Remain passive while waiting",
+          "esp": "Remain passive while waiting",
+          "it": "Remain passive while waiting"
+        },
+        {
+          "fr": "Relancer poliment à la date annoncée",
+          "en": "Follow up politely on the announced date",
+          "ar": "المتابعة بأدب في التاريخ المعلن",
+          "de": "Follow up politely on the announced date",
+          "esp": "Follow up politely on the announced date",
+          "it": "Follow up politely on the announced date"
+        },
+        {
+          "fr": "Harceler le recruteur",
+          "en": "Harass the recruiter",
+          "ar": "مضايقة المجند",
+          "de": "Harass the recruiter",
+          "esp": "Harass the recruiter",
+          "it": "Harass the recruiter"
+        }
       ],
-      "correct": { "fr": "Relancer poliment à la date annoncée", "en": "Follow up politely on the announced date", "ar": "المتابعة بأدب في التاريخ المعلن" }
+      "correct": {
+        "fr": "Relancer poliment à la date annoncée",
+        "en": "Follow up politely on the announced date",
+        "ar": "المتابعة بأدب في التاريخ المعلن",
+        "de": "Follow up politely on the announced date",
+        "esp": "Follow up politely on the announced date",
+        "it": "Follow up politely on the announced date"
+      }
     },
     {
-      "question": { "fr": "Pourquoi célébrer les petites victoires pendant la recherche ?", "en": "Why celebrate small victories during the search?", "ar": "لماذا نحتفل بالانتصارات الصغيرة أثناء البحث؟" },
+      "question": {
+        "fr": "Pourquoi célébrer les petites victoires pendant la recherche ?",
+        "en": "Why celebrate small victories during the search?",
+        "ar": "لماذا نحتفل بالانتصارات الصغيرة أثناء البحث؟",
+        "de": "Why celebrate small victories during the search?",
+        "esp": "Why celebrate small victories during the search?",
+        "it": "Why celebrate small victories during the search?"
+      },
       "options": [
-        { "fr": "Ce n’est pas utile", "en": "It's not useful", "ar": "ليس مفيدًا" },
-        { "fr": "Pour maintenir la motivation et reconnaître les progrès", "en": "To maintain motivation and acknowledge progress", "ar": "للحفاظ على الدافعية والاعتراف بالتقدم" },
-        { "fr": "Pour se reposer uniquement", "en": "To rest only", "ar": "للاستراحة فقط" }
+        {
+          "fr": "Ce n’est pas utile",
+          "en": "It's not useful",
+          "ar": "ليس مفيدًا",
+          "de": "It's not useful",
+          "esp": "It's not useful",
+          "it": "It's not useful"
+        },
+        {
+          "fr": "Pour maintenir la motivation et reconnaître les progrès",
+          "en": "To maintain motivation and acknowledge progress",
+          "ar": "للحفاظ على الدافعية والاعتراف بالتقدم",
+          "de": "To maintain motivation and acknowledge progress",
+          "esp": "To maintain motivation and acknowledge progress",
+          "it": "To maintain motivation and acknowledge progress"
+        },
+        {
+          "fr": "Pour se reposer uniquement",
+          "en": "To rest only",
+          "ar": "للاستراحة فقط",
+          "de": "To rest only",
+          "esp": "To rest only",
+          "it": "To rest only"
+        }
       ],
-      "correct": { "fr": "Pour maintenir la motivation et reconnaître les progrès", "en": "To maintain motivation and acknowledge progress", "ar": "للحفاظ على الدافعية والاعتراف بالتقدم" }
+      "correct": {
+        "fr": "Pour maintenir la motivation et reconnaître les progrès",
+        "en": "To maintain motivation and acknowledge progress",
+        "ar": "للحفاظ على الدافعية والاعتراف بالتقدم",
+        "de": "To maintain motivation and acknowledge progress",
+        "esp": "To maintain motivation and acknowledge progress",
+        "it": "To maintain motivation and acknowledge progress"
+      }
     },
     {
-      "question": { "fr": "En cas de feedback négatif, il faut :", "en": "In case of negative feedback, you should:", "ar": "في حالة وجود ملاحظات سلبية، يجب عليك:" },
+      "question": {
+        "fr": "En cas de feedback négatif, il faut :",
+        "en": "In case of negative feedback, you should:",
+        "ar": "في حالة وجود ملاحظات سلبية، يجب عليك:",
+        "de": "In case of negative feedback, you should:",
+        "esp": "In case of negative feedback, you should:",
+        "it": "In case of negative feedback, you should:"
+      },
       "options": [
-        { "fr": "Le nier", "en": "Deny it", "ar": "إنكاره" },
-        { "fr": "L’écouter, remercier et utiliser pour s’améliorer", "en": "Listen to it, thank and use it to improve", "ar": "الاستماع إليه، والشكر، واستخدامه للتحسين" },
-        { "fr": "Se fâcher", "en": "Get angry", "ar": "الغضب" }
+        {
+          "fr": "Le nier",
+          "en": "Deny it",
+          "ar": "إنكاره",
+          "de": "Deny it",
+          "esp": "Deny it",
+          "it": "Deny it"
+        },
+        {
+          "fr": "L’écouter, remercier et utiliser pour s’améliorer",
+          "en": "Listen to it, thank and use it to improve",
+          "ar": "الاستماع إليه، والشكر، واستخدامه للتحسين",
+          "de": "Listen to it, thank and use it to improve",
+          "esp": "Listen to it, thank and use it to improve",
+          "it": "Listen to it, thank and use it to improve"
+        },
+        {
+          "fr": "Se fâcher",
+          "en": "Get angry",
+          "ar": "الغضب",
+          "de": "Get angry",
+          "esp": "Get angry",
+          "it": "Get angry"
+        }
       ],
-      "correct": { "fr": "L’écouter, remercier et utiliser pour s’améliorer", "en": "Listen to it, thank and use it to improve", "ar": "الاستماع إليه، والشكر، واستخدامه للتحسين" }
+      "correct": {
+        "fr": "L’écouter, remercier et utiliser pour s’améliorer",
+        "en": "Listen to it, thank and use it to improve",
+        "ar": "الاستماع إليه، والشكر، واستخدامه للتحسين",
+        "de": "Listen to it, thank and use it to improve",
+        "esp": "Listen to it, thank and use it to improve",
+        "it": "Listen to it, thank and use it to improve"
+      }
     },
     {
-      "question": { "fr": "Qu’est-ce qu’une relance intelligente ?", "en": "What is a 'smart' follow-up?", "ar": "ما هي المتابعة الذكية؟" },
+      "question": {
+        "fr": "Qu’est-ce qu’une relance intelligente ?",
+        "en": "What is a 'smart' follow-up?",
+        "ar": "ما هي المتابعة الذكية؟",
+        "de": "What is a 'smart' follow-up?",
+        "esp": "What is a 'smart' follow-up?",
+        "it": "What is a 'smart' follow-up?"
+      },
       "options": [
-        { "fr": "Envoyer un long message répétitif", "en": "Send a long repetitive message", "ar": "إرسال رسالة طويلة متكررة" },
-        { "fr": "Rappeler brièvement le contexte, ton intérêt et proposer une action", "en": "Briefly recall the context, your interest and propose an action", "ar": "تذكّر السياق بإيجاز، واهتمامك، واقتراح إجراء" },
-        { "fr": "Copier-coller le même message partout", "en": "Copy-paste the same message everywhere", "ar": "نسخ ولصق نفس الرسالة في كل مكان" }
+        {
+          "fr": "Envoyer un long message répétitif",
+          "en": "Send a long repetitive message",
+          "ar": "إرسال رسالة طويلة متكررة",
+          "de": "Send a long repetitive message",
+          "esp": "Send a long repetitive message",
+          "it": "Send a long repetitive message"
+        },
+        {
+          "fr": "Rappeler brièvement le contexte, ton intérêt et proposer une action",
+          "en": "Briefly recall the context, your interest and propose an action",
+          "ar": "تذكّر السياق بإيجاز، واهتمامك، واقتراح إجراء",
+          "de": "Briefly recall the context, your interest and propose an action",
+          "esp": "Briefly recall the context, your interest and propose an action",
+          "it": "Briefly recall the context, your interest and propose an action"
+        },
+        {
+          "fr": "Copier-coller le même message partout",
+          "en": "Copy-paste the same message everywhere",
+          "ar": "نسخ ولصق نفس الرسالة في كل مكان",
+          "de": "Copy-paste the same message everywhere",
+          "esp": "Copy-paste the same message everywhere",
+          "it": "Copy-paste the same message everywhere"
+        }
       ],
-      "correct": { "fr": "Rappeler brièvement le contexte, ton intérêt et proposer une action", "en": "Briefly recall the context, your interest and propose an action", "ar": "تذكّر السياق بإيجاز، واهتمامك، واقتراح إجراء" }
+      "correct": {
+        "fr": "Rappeler brièvement le contexte, ton intérêt et proposer une action",
+        "en": "Briefly recall the context, your interest and propose an action",
+        "ar": "تذكّر السياق بإيجاز، واهتمامك، واقتراح إجراء",
+        "de": "Briefly recall the context, your interest and propose an action",
+        "esp": "Briefly recall the context, your interest and propose an action",
+        "it": "Briefly recall the context, your interest and propose an action"
+      }
     },
     {
-      "question": { "fr": "Pourquoi garder une posture positive lors d’un refus ?", "en": "Why keep a positive posture when rejected?", "ar": "لماذا تحافظ على موقف إيجابي عند الرفض؟" },
+      "question": {
+        "fr": "Pourquoi garder une posture positive lors d’un refus ?",
+        "en": "Why keep a positive posture when rejected?",
+        "ar": "لماذا تحافظ على موقف إيجابي عند الرفض؟",
+        "de": "Why keep a positive posture when rejected?",
+        "esp": "Why keep a positive posture when rejected?",
+        "it": "Why keep a positive posture when rejected?"
+      },
       "options": [
-        { "fr": "Parce que le recruteur va revenir", "en": "Because the recruiter will come back", "ar": "لأن المجند سيعود" },
-        { "fr": "Cela t’aide à rebondir et à rester attractif pour d’autres offres", "en": "It helps you bounce back and remain attractive for other offers", "ar": "يساعدك على التعافي والبقاء جذابًا لعروض أخرى" },
-        { "fr": "Cela n’a aucun effet", "en": "It has no effect", "ar": "لا تأثير له" }
+        {
+          "fr": "Parce que le recruteur va revenir",
+          "en": "Because the recruiter will come back",
+          "ar": "لأن المجند سيعود",
+          "de": "Because the recruiter will come back",
+          "esp": "Because the recruiter will come back",
+          "it": "Because the recruiter will come back"
+        },
+        {
+          "fr": "Cela t’aide à rebondir et à rester attractif pour d’autres offres",
+          "en": "It helps you bounce back and remain attractive for other offers",
+          "ar": "يساعدك على التعافي والبقاء جذابًا لعروض أخرى",
+          "de": "It helps you bounce back and remain attractive for other offers",
+          "esp": "It helps you bounce back and remain attractive for other offers",
+          "it": "It helps you bounce back and remain attractive for other offers"
+        },
+        {
+          "fr": "Cela n’a aucun effet",
+          "en": "It has no effect",
+          "ar": "لا تأثير له",
+          "de": "It has no effect",
+          "esp": "It has no effect",
+          "it": "It has no effect"
+        }
       ],
-      "correct": { "fr": "Cela t’aide à rebondir et à rester attractif pour d’autres offres", "en": "It helps you bounce back and remain attractive for other offers", "ar": "يساعدك على التعافي والبقاء جذابًا لعروض أخرى" }
+      "correct": {
+        "fr": "Cela t’aide à rebondir et à rester attractif pour d’autres offres",
+        "en": "It helps you bounce back and remain attractive for other offers",
+        "ar": "يساعدك على التعافي والبقاء جذابًا لعروض أخرى",
+        "de": "It helps you bounce back and remain attractive for other offers",
+        "esp": "It helps you bounce back and remain attractive for other offers",
+        "it": "It helps you bounce back and remain attractive for other offers"
+      }
     },
     {
-      "question": { "fr": "Quel élément renforce la confiance après un entretien ?", "en": "Which element strengthens confidence after an interview?", "ar": "أي عنصر يعزز الثقة بعد المقابلة؟" },
+      "question": {
+        "fr": "Quel élément renforce la confiance après un entretien ?",
+        "en": "Which element strengthens confidence after an interview?",
+        "ar": "أي عنصر يعزز الثقة بعد المقابلة؟",
+        "de": "Which element strengthens confidence after an interview?",
+        "esp": "Which element strengthens confidence after an interview?",
+        "it": "Which element strengthens confidence after an interview?"
+      },
       "options": [
-        { "fr": "Ignorer les retours", "en": "Ignore feedback", "ar": "تجاهل التعليقات" },
-        { "fr": "Travailler sur un point d’amélioration concret puis l’appliquer", "en": "Work on a concrete improvement point and then apply it", "ar": "العمل على نقطة تحسين ملموسة ثم تطبيقها" },
-        { "fr": "Partager ton échec en boucle", "en": "Share your failure repeatedly", "ar": "مشاركة فشلك بشكل متكرر" }
+        {
+          "fr": "Ignorer les retours",
+          "en": "Ignore feedback",
+          "ar": "تجاهل التعليقات",
+          "de": "Ignore feedback",
+          "esp": "Ignore feedback",
+          "it": "Ignore feedback"
+        },
+        {
+          "fr": "Travailler sur un point d’amélioration concret puis l’appliquer",
+          "en": "Work on a concrete improvement point and then apply it",
+          "ar": "العمل على نقطة تحسين ملموسة ثم تطبيقها",
+          "de": "Work on a concrete improvement point and then apply it",
+          "esp": "Work on a concrete improvement point and then apply it",
+          "it": "Work on a concrete improvement point and then apply it"
+        },
+        {
+          "fr": "Partager ton échec en boucle",
+          "en": "Share your failure repeatedly",
+          "ar": "مشاركة فشلك بشكل متكرر",
+          "de": "Share your failure repeatedly",
+          "esp": "Share your failure repeatedly",
+          "it": "Share your failure repeatedly"
+        }
       ],
-      "correct": { "fr": "Travailler sur un point d’amélioration concret puis l’appliquer", "en": "Work on a concrete improvement point and then apply it", "ar": "العمل على نقطة تحسين ملموسة ثم تطبيقها" }
+      "correct": {
+        "fr": "Travailler sur un point d’amélioration concret puis l’appliquer",
+        "en": "Work on a concrete improvement point and then apply it",
+        "ar": "العمل على نقطة تحسين ملموسة ثم تطبيقها",
+        "de": "Work on a concrete improvement point and then apply it",
+        "esp": "Work on a concrete improvement point and then apply it",
+        "it": "Work on a concrete improvement point and then apply it"
+      }
     },
     {
-      "question": { "fr": "Comment construire une routine de recherche d’emploi positive ?", "en": "How to build a positive job search routine?", "ar": "كيفية بناء روتين بحث عن عمل إيجابي؟" },
+      "question": {
+        "fr": "Comment construire une routine de recherche d’emploi positive ?",
+        "en": "How to build a positive job search routine?",
+        "ar": "كيفية بناء روتين بحث عن عمل إيجابي؟",
+        "de": "How to build a positive job search routine?",
+        "esp": "How to build a positive job search routine?",
+        "it": "How to build a positive job search routine?"
+      },
       "options": [
-        { "fr": "Ne rien planifier", "en": "Plan nothing", "ar": "عدم التخطيط" },
-        { "fr": "Planifier actions, pauses, apprentissage et suivi", "en": "Plan actions, breaks, learning and follow-up", "ar": "تخطيط الأفعال، الفترات، التعلم والمتابعة" },
-        { "fr": "Tout faire à la dernière minute", "en": "Do everything at the last minute", "ar": "عمل كل شيء في اللحظة الأخيرة" }
+        {
+          "fr": "Ne rien planifier",
+          "en": "Plan nothing",
+          "ar": "عدم التخطيط",
+          "de": "Plan nothing",
+          "esp": "Plan nothing",
+          "it": "Plan nothing"
+        },
+        {
+          "fr": "Planifier actions, pauses, apprentissage et suivi",
+          "en": "Plan actions, breaks, learning and follow-up",
+          "ar": "تخطيط الأفعال، الفترات، التعلم والمتابعة",
+          "de": "Plan actions, breaks, learning and follow-up",
+          "esp": "Plan actions, breaks, learning and follow-up",
+          "it": "Plan actions, breaks, learning and follow-up"
+        },
+        {
+          "fr": "Tout faire à la dernière minute",
+          "en": "Do everything at the last minute",
+          "ar": "عمل كل شيء في اللحظة الأخيرة",
+          "de": "Do everything at the last minute",
+          "esp": "Do everything at the last minute",
+          "it": "Do everything at the last minute"
+        }
       ],
-      "correct": { "fr": "Planifier actions, pauses, apprentissage et suivi", "en": "Plan actions, breaks, learning and follow-up", "ar": "تخطيط الأفعال، الفترات، التعلم والمتابعة" }
+      "correct": {
+        "fr": "Planifier actions, pauses, apprentissage et suivi",
+        "en": "Plan actions, breaks, learning and follow-up",
+        "ar": "تخطيط الأفعال، الفترات، التعلم والمتابعة",
+        "de": "Plan actions, breaks, learning and follow-up",
+        "esp": "Plan actions, breaks, learning and follow-up",
+        "it": "Plan actions, breaks, learning and follow-up"
+      }
     },
     {
-      "question": { "fr": "Que faut-il retenir au final pendant la recherche ?", "en": "What should be remembered ultimately during the search?", "ar": "ما الذي يجب تذكره في النهاية أثناء البحث؟" },
+      "question": {
+        "fr": "Que faut-il retenir au final pendant la recherche ?",
+        "en": "What should be remembered ultimately during the search?",
+        "ar": "ما الذي يجب تذكره في النهاية أثناء البحث؟",
+        "de": "What should be remembered ultimately during the search?",
+        "esp": "What should be remembered ultimately during the search?",
+        "it": "What should be remembered ultimately during the search?"
+      },
       "options": [
-        { "fr": "Tout est contre toi", "en": "Everything is against you", "ar": "كل شيء ضدك" },
-        { "fr": "La persévérance, la réflexion et l’apprentissages sont essentiels", "en": "Perseverance, reflection and learning are essential", "ar": "المثابرة، التفكير والتعلم أساسية" },
-        { "fr": "Se concentrer uniquement sur les offres passives", "en": "Focus only on passive offers", "ar": "التركيز فقط على العروض السلبية" }
+        {
+          "fr": "Tout est contre toi",
+          "en": "Everything is against you",
+          "ar": "كل شيء ضدك",
+          "de": "Everything is against you",
+          "esp": "Everything is against you",
+          "it": "Everything is against you"
+        },
+        {
+          "fr": "La persévérance, la réflexion et l’apprentissages sont essentiels",
+          "en": "Perseverance, reflection and learning are essential",
+          "ar": "المثابرة، التفكير والتعلم أساسية",
+          "de": "Perseverance, reflection and learning are essential",
+          "esp": "Perseverance, reflection and learning are essential",
+          "it": "Perseverance, reflection and learning are essential"
+        },
+        {
+          "fr": "Se concentrer uniquement sur les offres passives",
+          "en": "Focus only on passive offers",
+          "ar": "التركيز فقط على العروض السلبية",
+          "de": "Focus only on passive offers",
+          "esp": "Focus only on passive offers",
+          "it": "Focus only on passive offers"
+        }
       ],
-      "correct": { "fr": "La persévérance, la réflexion et l’apprentissages sont essentiels", "en": "Perseverance, reflection and learning are essential", "ar": "المثابرة، التفكير والتعلم أساسية" }
+      "correct": {
+        "fr": "La persévérance, la réflexion et l’apprentissages sont essentiels",
+        "en": "Perseverance, reflection and learning are essential",
+        "ar": "المثابرة، التفكير والتعلم أساسية",
+        "de": "Perseverance, reflection and learning are essential",
+        "esp": "Perseverance, reflection and learning are essential",
+        "it": "Perseverance, reflection and learning are essential"
+      }
     }
   ]
 }

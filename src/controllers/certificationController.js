@@ -1,6 +1,7 @@
 const {
   generateCertificate: generateCertificatePdf,
   generateCertificateImage,
+  generateNextReferenceNumber,
 } = require('../utils/generateCertificate');
 const emailService = require('../utils/emailService');
 const User = require('../models/user');
@@ -18,8 +19,26 @@ const downloadCertificate = async (req, res) => {
     if (!user) return res.status(404).json({ success: false, message: 'User not found' });
 
     const fullName = `${user.firstName} ${user.lastName}`.trim();
-    // generate PDF buffer
-    const pdfBuffer = await generateCertificatePdf(fullName);
+
+    // Generate or retrieve reference number
+    let referenceNumber = user.certificateReference;
+    if (!referenceNumber) {
+      // Get the last reference number from the database
+      const lastUser = await User.findOne({ certificateReference: { $ne: null } })
+        .sort({ certificateReference: -1 })
+        .select('certificateReference');
+      const lastReference = lastUser ? lastUser.certificateReference : null;
+      referenceNumber = generateNextReferenceNumber(lastReference);
+
+      // Save reference to user (use updateOne to avoid pre-save hook)
+      await User.updateOne(
+        { _id: user._id },
+        { certificateReference: referenceNumber }
+      );
+    }
+
+    // Generate PDF buffer with reference number
+    const pdfBuffer = await generateCertificatePdf(fullName, referenceNumber);
 
     // Convert to base64 for frontend
     const pdfBase64 = pdfBuffer.toString('base64');
@@ -29,6 +48,7 @@ const downloadCertificate = async (req, res) => {
       pdfBase64: pdfBase64,
       fileName: `JuniorsCV-Certificate-${user.firstName}-${user.lastName}.pdf`,
       userName: fullName,
+      referenceNumber: referenceNumber,
     });
   } catch (err) {
     console.error('downloadCertificate error:', err);
@@ -51,8 +71,24 @@ const downloadCertificateImage = async (req, res) => {
     if (!user) return res.status(404).json({ success: false, message: 'User not found' });
 
     const fullName = `${user.firstName} ${user.lastName}`.trim();
-    // generate PNG image buffer
-    const imageBuffer = await generateCertificateImage(fullName);
+
+    // Generate or retrieve reference number
+    let referenceNumber = user.certificateReference;
+    if (!referenceNumber) {
+      const lastUser = await User.findOne({ certificateReference: { $ne: null } })
+        .sort({ certificateReference: -1 })
+        .select('certificateReference');
+      const lastReference = lastUser ? lastUser.certificateReference : null;
+      referenceNumber = generateNextReferenceNumber(lastReference);
+
+      await User.updateOne(
+        { _id: user._id },
+        { certificateReference: referenceNumber }
+      );
+    }
+
+    // Generate PNG image buffer with reference number
+    const imageBuffer = await generateCertificateImage(fullName, referenceNumber);
 
     // Convert to base64 for frontend
     const imageBase64 = imageBuffer.toString('base64');
@@ -62,6 +98,7 @@ const downloadCertificateImage = async (req, res) => {
       imageBase64: imageBase64,
       fileName: `JuniorsCV-Certificate-${user.firstName}-${user.lastName}.png`,
       userName: fullName,
+      referenceNumber: referenceNumber,
     });
   } catch (err) {
     console.error('downloadCertificateImage error:', err);
@@ -74,7 +111,6 @@ const downloadCertificateImage = async (req, res) => {
 // MODIFIED: Now sends certificate via email (kept as optional feature)
 const sendCertificateByEmail = async (req, res) => {
   try {
-    // Prefer explicit userId param (admin/dev use), otherwise fall back to authenticated user id
     const userId = req.params.userId || (req.user && req.user.id);
     if (!userId)
       return res
@@ -85,10 +121,26 @@ const sendCertificateByEmail = async (req, res) => {
     if (!user) return res.status(404).json({ success: false, message: 'User not found' });
 
     const fullName = `${user.firstName} ${user.lastName}`.trim();
-    // generate PDF buffer
-    const pdfBuffer = await generateCertificatePdf(fullName);
 
-    // send email with attachment
+    // Generate or retrieve reference number
+    let referenceNumber = user.certificateReference;
+    if (!referenceNumber) {
+      const lastUser = await User.findOne({ certificateReference: { $ne: null } })
+        .sort({ certificateReference: -1 })
+        .select('certificateReference');
+      const lastReference = lastUser ? lastUser.certificateReference : null;
+      referenceNumber = generateNextReferenceNumber(lastReference);
+
+      await User.updateOne(
+        { _id: user._id },
+        { certificateReference: referenceNumber }
+      );
+    }
+
+    // Generate PDF buffer with reference number
+    const pdfBuffer = await generateCertificatePdf(fullName, referenceNumber);
+
+    // Send email with attachment
     const emailResult = await emailService.sendCertificateEmail(
       user.email,
       user.firstName || fullName,
@@ -102,14 +154,17 @@ const sendCertificateByEmail = async (req, res) => {
       });
     }
 
-    // increment counter
-    user.certificateSentCount = (user.certificateSentCount || 0) + 1;
-    await user.save();
+    // Increment counter
+    await User.updateOne(
+      { _id: user._id },
+      { $inc: { certificateSentCount: 1 } }
+    );
 
     return res.json({
       success: true,
       message: 'Certificate sent via email',
       messageId: emailResult.messageId,
+      referenceNumber: referenceNumber,
     });
   } catch (err) {
     console.error('sendCertificateByEmail error:', err);
@@ -133,10 +188,26 @@ const generateCertificate_21 = async (req, res) => {
     if (!user) return res.status(404).json({ success: false, message: 'User not found' });
 
     const fullName = `${user.firstName} ${user.lastName}`.trim();
-    // generate PDF buffer
-    const pdfBuffer = await generateCertificatePdf(fullName);
 
-    // send email with attachment
+    // Generate or retrieve reference number
+    let referenceNumber = user.certificateReference;
+    if (!referenceNumber) {
+      const lastUser = await User.findOne({ certificateReference: { $ne: null } })
+        .sort({ certificateReference: -1 })
+        .select('certificateReference');
+      const lastReference = lastUser ? lastUser.certificateReference : null;
+      referenceNumber = generateNextReferenceNumber(lastReference);
+
+      await User.updateOne(
+        { _id: user._id },
+        { certificateReference: referenceNumber }
+      );
+    }
+
+    // Generate PDF buffer with reference number
+    const pdfBuffer = await generateCertificatePdf(fullName, referenceNumber);
+
+    // Send email with attachment
     const emailResult = await emailService.sendCertificateEmail_21(
       user.email,
       user.firstName || fullName,
@@ -150,14 +221,17 @@ const generateCertificate_21 = async (req, res) => {
       });
     }
 
-    // increment counter
-    user.certificateSentCount = (user.certificateSentCount || 0) + 1;
-    await user.save();
+    // Increment counter
+    await User.updateOne(
+      { _id: user._id },
+      { $inc: { certificateSentCount: 1 } }
+    );
 
     return res.json({
       success: true,
       message: 'Certificate sent via email',
       messageId: emailResult.messageId,
+      referenceNumber: referenceNumber,
     });
   } catch (err) {
     console.error('generate21DaysCertificate error:', err);
@@ -180,8 +254,24 @@ const download21DaysCertificate = async (req, res) => {
     if (!user) return res.status(404).json({ success: false, message: 'User not found' });
 
     const fullName = `${user.firstName} ${user.lastName}`.trim();
-    // generate PDF buffer
-    const pdfBuffer = await generateCertificatePdf(fullName);
+
+    // Generate or retrieve reference number
+    let referenceNumber = user.certificateReference;
+    if (!referenceNumber) {
+      const lastUser = await User.findOne({ certificateReference: { $ne: null } })
+        .sort({ certificateReference: -1 })
+        .select('certificateReference');
+      const lastReference = lastUser ? lastUser.certificateReference : null;
+      referenceNumber = generateNextReferenceNumber(lastReference);
+
+      await User.updateOne(
+        { _id: user._id },
+        { certificateReference: referenceNumber }
+      );
+    }
+
+    // Generate PDF buffer with reference number
+    const pdfBuffer = await generateCertificatePdf(fullName, referenceNumber);
 
     // Convert to base64 for frontend
     const pdfBase64 = pdfBuffer.toString('base64');
@@ -191,6 +281,7 @@ const download21DaysCertificate = async (req, res) => {
       pdfBase64: pdfBase64,
       fileName: `JuniorsCV-21Days-Certificate-${user.firstName}-${user.lastName}.pdf`,
       userName: fullName,
+      referenceNumber: referenceNumber,
     });
   } catch (err) {
     console.error('download21DaysCertificate error:', err);

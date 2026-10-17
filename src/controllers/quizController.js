@@ -8,7 +8,7 @@ const {
   pickRandomQuestionSnapshots,
 } = require('../utils/quizModuleService');
 
-const SUPPORTED_LANGUAGES = new Set(['fr', 'en', 'ar']);
+const SUPPORTED_LANGUAGES = new Set(['fr', 'en', 'ar', 'de', 'esp', 'it']);
 const DEFAULT_LANGUAGE = 'fr';
 
 const normalizeLanguage = (language) =>
@@ -24,19 +24,20 @@ const getLocalizedText = (value, language) => {
     return null;
   }
 
-  if (language === 'fr' && value.fr) {
-    return value.fr;
+  // Try to get the text in the requested language
+  if (value[language]) {
+    return value[language];
   }
 
-  if (language === 'en' && value.en) {
-    return value.en;
+  // Fallback chain: requested language -> fr -> en -> ar -> de -> esp -> it -> null
+  const fallbackLanguages = ['fr', 'en', 'ar', 'de', 'esp', 'it'];
+  for (const lang of fallbackLanguages) {
+    if (value[lang]) {
+      return value[lang];
+    }
   }
 
-  if (language === 'ar' && value.ar) {
-    return value.ar;
-  }
-
-  return value.fr || value.en || value.ar || null;
+  return null;
 };
 
 const getItemByIndex = (items, targetIndex) => {
