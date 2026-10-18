@@ -19,6 +19,7 @@ const challengeRoutes = require('./routes/challenges');
 const varkRoutes = require('./routes/varkRoutes');
 const accountDeletionRoutes = require('./routes/accountDeletion');
 const guideRoutes = require('./routes/guide');
+const partnerRoutes = require('./routes/partnerRoutes');
 
 // Initialize Passport
 require('./config/passport')(app);
@@ -136,6 +137,7 @@ app.use('/certification', certification);
 app.use('/challenges', challengeRoutes);
 app.use('/vark', varkRoutes);
 app.use('/guide', guideRoutes);
+app.use('/partner', partnerRoutes);
 
 // Public Account Deletion Routes (Google Play Compliance)
 // URL to declare: https://yourdomain.com/account-deletion
