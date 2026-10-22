@@ -1,13 +1,13 @@
 const fs = require('fs');
 const path = require('path');
 const { PDFDocument, rgb, StandardFonts } = require('pdf-lib');
-const fontkit = require('pdf-fontkit'); // fixes Ballet empty-glyph crash in @pdf-lib/fontkit
+const fontkit = require('pdf-fontkit');
 const { pdfToPng } = require('pdf-to-png-converter');
 
 /**
  * Generate a personalized certificate PDF buffer with the new design.
  * - Loads the template from data/Certificate.pdf
- * - Uses Ballet font for the name (elegant script)
+ * - Uses Better Saturday font for the name (elegant script)
  * - Uses Helvetica for date and reference
  * - Places text at precise coordinates
  * - Returns a Buffer containing the modified PDF
@@ -26,12 +26,12 @@ async function generateCertificate(userName, referenceNumber) {
   const firstPage = pages[0];
   const { width } = firstPage.getSize();
 
-  // Ballet for the recipient name (subset required for this TTF)
-  const balletPath = path.join(__dirname, '..', 'Fonts', 'Ballet_60pt-Regular.ttf');
-  if (!fs.existsSync(balletPath)) {
-    throw new Error(`Ballet font not found at ${balletPath}`);
+  // Better Saturday for the recipient name
+  const betterSaturdayPath = path.join(__dirname, '..', 'Fonts', 'Better Saturday free.ttf');
+  if (!fs.existsSync(betterSaturdayPath)) {
+    throw new Error(`Better Saturday font not found at ${betterSaturdayPath}`);
   }
-  const balletFont = await pdfDoc.embedFont(fs.readFileSync(balletPath), {
+  const betterSaturdayFont = await pdfDoc.embedFont(fs.readFileSync(betterSaturdayPath), {
     subset: true,
   });
 
@@ -53,7 +53,7 @@ async function generateCertificate(userName, referenceNumber) {
   // Gray panel starts ~after the white left strip / seal (~130pt).
   const grayLeft = 130;
   const grayRight = width;
-  const nameX = (grayLeft + grayRight) / 2; // ~486 on A4 landscape
+  const nameX = (grayLeft + grayRight) / 2 + 30; // ~516 on A4 landscape (aligned with title & text)
   const nameY = 280;
   const nameFontSize = 36;
 
@@ -67,13 +67,13 @@ async function generateCertificate(userName, referenceNumber) {
   const referenceY = 25;
   const referenceFontSize = 12;
 
-  // Draw name (Ballet, centered)
-  const nameWidth = balletFont.widthOfTextAtSize(nameText, nameFontSize);
+  // Draw name (Better Saturday, centered)
+  const nameWidth = betterSaturdayFont.widthOfTextAtSize(nameText, nameFontSize);
   firstPage.drawText(nameText, {
     x: nameX - nameWidth / 2,
     y: nameY,
     size: nameFontSize,
-    font: balletFont,
+    font: betterSaturdayFont,
     color: rgb(1.0, 1.0, 1.0),
   });
 
