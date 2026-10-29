@@ -2,6 +2,7 @@ const User = require('../models/user');
 const PersonalityTest = require('../models/personalityTest');
 const UpskillingProgress = require('../models/upskillingProgress');
 const VarkTest = require('../models/varkTest');
+const UserProgress = require('../models/userProgress');
 
 /**
  * GET /partner/users
@@ -236,8 +237,59 @@ const getUserChallenges = async (req, res) => {
   }
 };
 
+/**
+ * GET /partner/users/:id/quiz-progress
+ * Returns the user's coaching quiz (7P) progress from UserProgress model.
+ */
+const getUserQuizProgress = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const user = await User.findById(id).select('firstName lastName email profilePhoto payment').lean();
+    if (!user) {
+      return res.status(404).json({ message: 'User not found' });
+    }
+
+    const userProgress = await UserProgress.findOne({ userId: id }).lean();
+
+    if (!userProgress) {
+      return res.json({
+        user: {
+          id: user._id.toString(),
+          firstName: user.firstName,
+          lastName: user.lastName,
+          email: user.email,
+          profilePhoto: user.profilePhoto || null,
+          subscriptionType: user.payment?.subscriptionType || 'Gratuit',
+        },
+        quizProgress: [],
+        currentQuizIndex: 0,
+        updatedAt: null,
+      });
+    }
+
+    return res.json({
+      user: {
+        id: user._id.toString(),
+        firstName: user.firstName,
+        lastName: user.lastName,
+        email: user.email,
+        profilePhoto: user.profilePhoto || null,
+        subscriptionType: user.payment?.subscriptionType || 'Gratuit',
+      },
+      quizProgress: userProgress.quizProgress || [],
+      currentQuizIndex: userProgress.currentQuizIndex || 0,
+      updatedAt: userProgress.updatedAt || null,
+    });
+  } catch (error) {
+    console.error('Partner: Error fetching user quiz progress:', error);
+    return res.status(500).json({ message: 'Server error', error: error.message });
+  }
+};
+
 module.exports = {
   getUsers,
   getUserById,
   getUserChallenges,
+  getUserQuizProgress,
 };

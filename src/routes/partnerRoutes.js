@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getUsers, getUserById, getUserChallenges } = require('../controllers/partnerController');
+const { getUsers, getUserById, getUserChallenges, getUserQuizProgress } = require('../controllers/partnerController');
 
 /**
  * @route   GET /partner/users
@@ -22,5 +22,12 @@ router.get('/users/:id', getUserById);
  * @access  Public (partner dashboard)
  */
 router.get('/users/:id/challenges', getUserChallenges);
+
+/**
+ * @route   GET /partner/users/:id/quiz-progress
+ * @desc    Get user's coaching quiz (7P) progress
+ * @access  Public (partner dashboard)
+ */
+router.get('/users/:id/quiz-progress', getUserQuizProgress);
 
 module.exports = router;
