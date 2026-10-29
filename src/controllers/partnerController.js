@@ -20,7 +20,7 @@ const getUsers = async (req, res) => {
     // For each user, also grab personality + challenge progress summary
     const userIds = users.map((u) => u._id);
 
-    const [personalityTests, upskillingProgresses, varkTests] = await Promise.all([
+    const [personalityTests, upskillingProgresses, varkTests, userProgresses] = await Promise.all([
       PersonalityTest.find({ userId: { $in: userIds } })
         .select('userId dominantColor completed')
         .lean(),
@@ -29,6 +29,9 @@ const getUsers = async (req, res) => {
         .lean(),
       VarkTest.find({ userId: { $in: userIds } })
         .select('userId dominantStyle completed styleCounts')
+        .lean(),
+      UserProgress.find({ userId: { $in: userIds } })
+        .select('userId quizProgress currentQuizIndex')
         .lean(),
     ]);
 
@@ -47,15 +50,25 @@ const getUsers = async (req, res) => {
       varkMap[v.userId.toString()] = v;
     });
 
+    const userProgressMap = {};
+    userProgresses.forEach((up) => {
+      userProgressMap[up.userId.toString()] = up;
+    });
+
     const result = users.map((user) => {
       const uid = user._id.toString();
       const personality = personalityMap[uid];
       const upskilling = upskillingMap[uid];
       const vark = varkMap[uid];
+      const userProgress = userProgressMap[uid];
 
       const completedChallenges = upskilling
         ? upskilling.challenges.filter((c) => c.completed).length
         : 0;
+
+      const quizProgress = userProgress?.quizProgress || [];
+      const completedQuizzes = quizProgress.filter((q) => q.completed).length;
+      const totalQuizzes = quizProgress.length;
 
       return {
         id: uid,
@@ -87,6 +100,10 @@ const getUsers = async (req, res) => {
               styleCounts: vark.styleCounts,
             }
           : null,
+        quiz7p: {
+          completed: completedQuizzes,
+          total: totalQuizzes,
+        },
       };
     });
 
