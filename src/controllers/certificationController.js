@@ -313,6 +313,70 @@ const getCertificateSentCount = async (req, res) => {
   }
 };
 
+// Get payment status — works for the authenticated user themselves (no param)
+// or for an admin querying any userId via the route param.
+const getCertificatePaymentStatus = async (req, res) => {
+  try {
+    const userId = req.params.userId === 'me'
+      ? (req.user && req.user.id)
+      : (req.params.userId || (req.user && req.user.id));
+    if (!userId)
+      return res.status(400).json({ success: false, message: 'Missing userId' });
+
+    const user = await User.findById(userId).select(
+      'certificatePaid certificatePaidAt certificatePaidNote firstName lastName email'
+    );
+    if (!user) return res.status(404).json({ success: false, message: 'User not found' });
+
+    return res.json({
+      success: true,
+      certificatePaid: user.certificatePaid || false,
+      certificatePaidAt: user.certificatePaidAt || null,
+      certificatePaidNote: user.certificatePaidNote || null,
+      user: { firstName: user.firstName, lastName: user.lastName, email: user.email },
+    });
+  } catch (err) {
+    console.error('getCertificatePaymentStatus error:', err);
+    return res.status(500).json({ success: false, message: 'Internal server error', error: err.message });
+  }
+};
+
+// ADMIN: Toggle (or explicitly set) payment status for a user's certificate
+const updateCertificatePaymentStatus = async (req, res) => {
+  try {
+    const userId = req.params.userId;
+    if (!userId)
+      return res.status(400).json({ success: false, message: 'Missing userId' });
+
+    // Accept explicit `paid` boolean or toggle if not provided
+    const { paid, note } = req.body;
+
+    const user = await User.findById(userId);
+    if (!user) return res.status(404).json({ success: false, message: 'User not found' });
+
+    const newPaid = typeof paid === 'boolean' ? paid : !user.certificatePaid;
+
+    await User.updateOne(
+      { _id: user._id },
+      {
+        certificatePaid: newPaid,
+        certificatePaidAt: newPaid ? new Date() : null,
+        certificatePaidNote: note !== undefined ? note : user.certificatePaidNote,
+      }
+    );
+
+    return res.json({
+      success: true,
+      certificatePaid: newPaid,
+      certificatePaidAt: newPaid ? new Date() : null,
+      message: newPaid ? 'Payment confirmed' : 'Payment removed',
+    });
+  } catch (err) {
+    console.error('updateCertificatePaymentStatus error:', err);
+    return res.status(500).json({ success: false, message: 'Internal server error', error: err.message });
+  }
+};
+
 module.exports = {
   downloadCertificate, // NEW: Returns PDF as base64 for app display/sharing
   downloadCertificateImage, // NEW: Returns PNG image as base64 for social media
@@ -321,4 +385,6 @@ module.exports = {
   generateCertificate, // Legacy - alias for sendCertificateByEmail
   generateCertificate_21, // Legacy - send 21-days cert via email
   getCertificateSentCount,
+  getCertificatePaymentStatus, // ADMIN: Get payment status
+  updateCertificatePaymentStatus, // ADMIN: Set/toggle payment status
 };

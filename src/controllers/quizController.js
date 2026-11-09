@@ -1,4 +1,5 @@
 const UserProgress = require('../models/userProgress');
+const User = require('../models/user');
 const {
   MAX_QUESTIONS_PER_ATTEMPT,
   getAllQuizModules,
@@ -536,6 +537,15 @@ const resetQuiz = async (req, res) => {
     const quizModule = await getQuizModuleByOrder(quizOrder);
     if (!quizModule) {
       return res.status(404).json({ message: 'Quiz not found' });
+    }
+
+    // Retaking a completed quiz requires payment (admin-confirmed certificatePaid)
+    const user = await User.findById(userId).select('certificatePaid').lean();
+    if (!user || !user.certificatePaid) {
+      return res.status(403).json({
+        message: 'Payment required to retake this quiz',
+        code: 'PAYMENT_REQUIRED',
+      });
     }
 
     const { userProgress } = await ensureBaseUserProgress(userId);

@@ -8,6 +8,8 @@ const {
   generateCertificate,
   getCertificateSentCount,
   generateCertificate_21,
+  getCertificatePaymentStatus,
+  updateCertificatePaymentStatus,
 } = require('../controllers/certificationController');
 const router = express.Router();
 
@@ -26,5 +28,13 @@ router.post('/generate-21days-certificate/:userId?', authMiddleware, generateCer
 
 // UTILITY ROUTES
 router.get('/sent-count/:userId?', authMiddleware, getCertificateSentCount);
+
+// ADMIN / USER ROUTES: Cash payment status (hand-to-hand payment management)
+// GET  /certification/payment-status/me         — authenticated user reads own status (mobile)
+// GET  /certification/payment-status/:userId    — admin reads any user's status
+// POST /certification/payment-status/:userId    — admin sets/toggles payment status
+router.get('/payment-status/me', authMiddleware, getCertificatePaymentStatus);
+router.get('/payment-status/:userId', authMiddleware, getCertificatePaymentStatus);
+router.post('/payment-status/:userId', authMiddleware, updateCertificatePaymentStatus);
 
 module.exports = router;

@@ -1,6 +1,20 @@
 const UpskillingProgress = require('../models/upskillingProgress');
+const User = require('../models/user');
 const fs = require('fs');
 const path = require('path');
+
+// Business rule: users can try the first FREE_CHALLENGE_DAYS days for free.
+// From day FREE_CHALLENGE_DAYS + 1 onward, payment (certificatePaid) is required.
+const FREE_CHALLENGE_DAYS = 3;
+
+// Returns true when the admin has confirmed the user's single payment
+const hasActivePayment = async (userId) => {
+  const user = await User.findById(userId).select('certificatePaid').lean();
+  return Boolean(user && user.certificatePaid);
+};
+
+const isPaymentLockedDay = (dayNumber, completed, paid) =>
+  !paid && !completed && dayNumber > FREE_CHALLENGE_DAYS;
 
 // Helper functions for daily challenge locking logic
 function getChallengeLockStatus(upskillingProgress) {
@@ -33,22 +47,24 @@ function getChallengeLockStatus(upskillingProgress) {
   return { nextAllowedDay, hasCompletedChallengeToday };
 }
 
-function calculateIsLocked(day, completed, nextAllowedDay, hasCompletedChallengeToday) {
+function calculateIsLocked(day, completed, nextAllowedDay, hasCompletedChallengeToday, paid = true) {
   if (completed) return false;
+  // Rule 0: Days beyond the free trial require payment
+  if (isPaymentLockedDay(day, completed, paid)) return true;
   // Rule 1: We must do challenges in order
   if (day > nextAllowedDay) return true;
   // Rule 2: We can only do one challenge per day, EXCEPT for the first 3 days (for testing/onboarding)
   if (day === nextAllowedDay && hasCompletedChallengeToday && day > 3) return true;
-  
+
   return false;
 }
 
-function isDayLocked(dayNumber, upskillingProgress) {
+function isDayLocked(dayNumber, upskillingProgress, paid = true) {
   const { nextAllowedDay, hasCompletedChallengeToday } = getChallengeLockStatus(upskillingProgress);
   const userChallenge = upskillingProgress.challenges.find((c) => c.day === dayNumber);
   const completed = userChallenge ? userChallenge.completed : false;
-  
-  return calculateIsLocked(dayNumber, completed, nextAllowedDay, hasCompletedChallengeToday);
+
+  return calculateIsLocked(dayNumber, completed, nextAllowedDay, hasCompletedChallengeToday, paid);
 }
 
 // Load challenge data from JSON files
@@ -169,6 +185,7 @@ exports.getAllChallenges = async (req, res) => {
 
     const color = upskillingProgress.personalityColor;
     const challengeData = loadChallengeData(color);
+    const paid = await hasActivePayment(userId);
 
     const { nextAllowedDay, hasCompletedChallengeToday } = getChallengeLockStatus(upskillingProgress);
 
@@ -178,11 +195,18 @@ exports.getAllChallenges = async (req, res) => {
         (c) => c.day === challenge.day
       ) || { completed: false, notes: '', day: challenge.day };
 
+      const paymentLocked = isPaymentLockedDay(
+        challenge.day,
+        userChallengeProgress.completed,
+        paid
+      );
+
       const isLocked = calculateIsLocked(
         challenge.day,
         userChallengeProgress.completed,
         nextAllowedDay,
-        hasCompletedChallengeToday
+        hasCompletedChallengeToday,
+        paid
       );
 
       return {
@@ -195,6 +219,7 @@ exports.getAllChallenges = async (req, res) => {
         completedAt: userChallengeProgress.completedAt,
         notes: userChallengeProgress.notes,
         locked: isLocked,
+        paymentLocked,
       };
     });
     res.status(200).json({
@@ -204,6 +229,10 @@ exports.getAllChallenges = async (req, res) => {
         totalChallenges: 21,
         completedChallenges: upskillingProgress.challenges.filter((c) => c.completed).length,
         challenges: challenges,
+        payment: {
+          paid,
+          freeDays: FREE_CHALLENGE_DAYS,
+        },
       },
     });
   } catch (error) {
@@ -257,7 +286,18 @@ exports.getChallengeByDay = async (req, res) => {
       day: dayNumber,
     };
 
-    const locked = isDayLocked(dayNumber, userProgress);
+    const paid = await hasActivePayment(userId);
+    const paymentLocked = isPaymentLockedDay(dayNumber, userChallengeProgress.completed, paid);
+
+    if (paymentLocked) {
+      return res.status(403).json({
+        success: false,
+        code: 'PAYMENT_REQUIRED',
+        message: 'Payment required to access this challenge. The first 3 days are free.',
+      });
+    }
+
+    const locked = isDayLocked(dayNumber, userProgress, paid);
 
     // Update last accessed day
     userProgress.lastAccessedDay = dayNumber;
@@ -275,6 +315,7 @@ exports.getChallengeByDay = async (req, res) => {
         completedAt: userChallengeProgress.completedAt,
         notes: userChallengeProgress.notes,
         locked: locked,
+        paymentLocked: false,
       },
     });  } catch (error) {
     console.error('Get challenge by day error:', error);
@@ -310,7 +351,18 @@ exports.completeChallenge = async (req, res) => {
       });
     }
 
-    if (isDayLocked(dayNumber, userProgress)) {
+    const paid = await hasActivePayment(userId);
+    const existingChallenge = userProgress.challenges.find((c) => c.day === dayNumber);
+
+    if (isPaymentLockedDay(dayNumber, existingChallenge ? existingChallenge.completed : false, paid)) {
+      return res.status(403).json({
+        success: false,
+        code: 'PAYMENT_REQUIRED',
+        message: 'Payment required to access this challenge. The first 3 days are free.',
+      });
+    }
+
+    if (isDayLocked(dayNumber, userProgress, paid)) {
       return res.status(403).json({
         success: false,
         message: 'This challenge is locked. You can only complete one set per day, in order.',
@@ -377,8 +429,9 @@ exports.getChallengeProgress = async (req, res) => {
     const currentStreak = calculateStreak(userProgress.challenges);
     
     // Check if the next challenge is locked
+    const paid = await hasActivePayment(userId);
     const { nextAllowedDay, hasCompletedChallengeToday } = getChallengeLockStatus(userProgress);
-    const nextChallengeLocked = calculateIsLocked(nextAllowedDay, false, nextAllowedDay, hasCompletedChallengeToday);
+    const nextChallengeLocked = calculateIsLocked(nextAllowedDay, false, nextAllowedDay, hasCompletedChallengeToday, paid);
 
     res.status(200).json({
       success: true,
@@ -394,6 +447,8 @@ exports.getChallengeProgress = async (req, res) => {
         allCompleted: completedChallenges === 21,
         nextAllowedDay: nextAllowedDay,
         nextChallengeLocked: nextChallengeLocked,
+        certificatePaid: paid,
+        freeDays: FREE_CHALLENGE_DAYS,
       },
     });
   } catch (error) {
@@ -457,7 +512,18 @@ exports.submitText = async (req, res) => {
       });
     }
 
-    if (isDayLocked(dayNumber, userProgress)) {
+    const paid = await hasActivePayment(userId);
+    const existingChallenge = userProgress.challenges.find((c) => c.day === dayNumber);
+
+    if (isPaymentLockedDay(dayNumber, existingChallenge ? existingChallenge.completed : false, paid)) {
+      return res.status(403).json({
+        success: false,
+        code: 'PAYMENT_REQUIRED',
+        message: 'Payment required to access this challenge. The first 3 days are free.',
+      });
+    }
+
+    if (isDayLocked(dayNumber, userProgress, paid)) {
       return res.status(403).json({
         success: false,
         message: 'This challenge is locked. You can only submit items 1 challenge per day, in order.',
@@ -544,7 +610,18 @@ exports.submitMedia = async (req, res) => {
       });
     }
 
-    if (isDayLocked(dayNumber, userProgress)) {
+    const paid = await hasActivePayment(userId);
+    const existingChallenge = userProgress.challenges.find((c) => c.day === dayNumber);
+
+    if (isPaymentLockedDay(dayNumber, existingChallenge ? existingChallenge.completed : false, paid)) {
+      return res.status(403).json({
+        success: false,
+        code: 'PAYMENT_REQUIRED',
+        message: 'Payment required to access this challenge. The first 3 days are free.',
+      });
+    }
+
+    if (isDayLocked(dayNumber, userProgress, paid)) {
       return res.status(403).json({
         success: false,
         message: 'This challenge is locked. You can only submit items 1 challenge per day, in order.',

@@ -96,6 +96,19 @@ const userSchema = new mongoose.Schema(
       type: String,
       default: null,
     },
+    // Cash payment status set by admin (hand-to-hand payment)
+    certificatePaid: {
+      type: Boolean,
+      default: false,
+    },
+    certificatePaidAt: {
+      type: Date,
+      default: null,
+    },
+    certificatePaidNote: {
+      type: String,
+      default: null,
+    },
   },
   { timestamps: true }
 );
