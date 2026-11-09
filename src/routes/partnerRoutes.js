@@ -1,6 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const { getUsers, getUserById, getUserChallenges, getUserQuizProgress } = require('../controllers/partnerController');
+const {
+  getUsers,
+  getUserById,
+  getUserPaymentStatus,
+  updateUserPaymentStatus,
+  getUserChallenges,
+  getUserQuizProgress,
+} = require('../controllers/partnerController');
 
 /**
  * @route   GET /partner/users
@@ -15,6 +22,9 @@ router.get('/users', getUsers);
  * @access  Public (partner dashboard)
  */
 router.get('/users/:id', getUserById);
+
+router.get('/users/:id/payment', getUserPaymentStatus);
+router.post('/users/:id/payment', updateUserPaymentStatus);
 
 /**
  * @route   GET /partner/users/:id/challenges

@@ -12,7 +12,7 @@ const getUsers = async (req, res) => {
   try {
     const users = await User.find()
       .select(
-        'firstName lastName email phone profilePhoto createdAt certificateSentCount domaine speciality'
+        'firstName lastName email phone profilePhoto createdAt certificateSentCount certificatePaid domaine speciality'
       )
       .sort({ createdAt: -1 })
       .lean();
@@ -79,6 +79,7 @@ const getUsers = async (req, res) => {
         profilePhoto: user.profilePhoto || null,
         joinDate: user.createdAt,
         certificates: user.certificateSentCount || 0,
+        certificatePaid: user.certificatePaid === true,
         domaine: user.domaine,
         speciality: user.speciality,
         personality: personality
@@ -144,6 +145,9 @@ const getUserById = async (req, res) => {
         updatedAt: user.updatedAt,
         certificates: user.certificateSentCount || 0,
         certificateReference: user.certificateReference || null,
+        certificatePaid: user.certificatePaid === true,
+        certificatePaidAt: user.certificatePaidAt || null,
+        certificatePaidNote: user.certificatePaidNote || null,
         domaine: user.domaine,
         speciality: user.speciality,
         socialAuth: {
@@ -166,6 +170,60 @@ const getUserById = async (req, res) => {
     });
   } catch (error) {
     console.error('Partner: Error fetching user by id:', error);
+    return res.status(500).json({ message: 'Server error', error: error.message });
+  }
+};
+
+/**
+ * GET /partner/users/:id/payment
+ * Returns the certificate payment status for a partner dashboard user.
+ */
+const getUserPaymentStatus = async (req, res) => {
+  try {
+    const user = await User.findById(req.params.id)
+      .select('certificatePaid certificatePaidAt certificatePaidNote')
+      .lean();
+
+    if (!user) return res.status(404).json({ message: 'User not found' });
+
+    return res.json({
+      certificatePaid: user.certificatePaid === true,
+      certificatePaidAt: user.certificatePaidAt || null,
+      certificatePaidNote: user.certificatePaidNote || null,
+    });
+  } catch (error) {
+    console.error('Partner: Error fetching payment status:', error);
+    return res.status(500).json({ message: 'Server error', error: error.message });
+  }
+};
+
+/**
+ * POST /partner/users/:id/payment
+ * Sets the certificate payment status from the partner dashboard.
+ */
+const updateUserPaymentStatus = async (req, res) => {
+  try {
+    const { paid, note } = req.body || {};
+    if (typeof paid !== 'boolean') {
+      return res.status(400).json({ message: '`paid` must be a boolean' });
+    }
+
+    const user = await User.findById(req.params.id);
+    if (!user) return res.status(404).json({ message: 'User not found' });
+
+    user.certificatePaid = paid;
+    user.certificatePaidAt = paid ? new Date() : null;
+    if (note !== undefined) user.certificatePaidNote = note;
+    await user.save();
+
+    return res.json({
+      success: true,
+      certificatePaid: user.certificatePaid,
+      certificatePaidAt: user.certificatePaidAt,
+      certificatePaidNote: user.certificatePaidNote || null,
+    });
+  } catch (error) {
+    console.error('Partner: Error updating payment status:', error);
     return res.status(500).json({ message: 'Server error', error: error.message });
   }
 };
@@ -307,6 +365,8 @@ const getUserQuizProgress = async (req, res) => {
 module.exports = {
   getUsers,
   getUserById,
+  getUserPaymentStatus,
+  updateUserPaymentStatus,
   getUserChallenges,
   getUserQuizProgress,
 };
